@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>informatikaxii</title>
+  <link href="/atom.xml" rel="self" />
+  <subtitle>haxcms import</subtitle>
+  <updated>1970-01-21T01:06:57.584Z</updated>
+  <author>
+      <name></name>
+  </author>
+  <id>/feed</id>
+  [object Promise]
+</feed>

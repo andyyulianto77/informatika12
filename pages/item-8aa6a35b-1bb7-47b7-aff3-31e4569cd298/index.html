@@ -1,0 +1,77 @@
+
+<p>Isi dari database adalah kumpulan tabel-tabel</p>
+<p></p>
+<learning-component subtitle="Tujuan Pembelajaran" type=""><p role="textbox">Pada akhir pelajaran, siswa seharusnya dapat ...</p><p></p><ol><li>Membedakan field dan record. </li><li>Menulis dan menjalankan perintah SQL untuk membuat tabel dengan struktur yang benar. </li><li>Mengganti nama tabel dengan perintah SQL..</li></ol><p></p></learning-component>
+<h6 data-original-level="H6" id="header-dc185309-d8a3-bee7-47ae-d5cf3dc1b1a7"><p role="textbox"></p></h6>
+<h5 data-original-level="H5" id="header-bd05b829-516c-793a-d303-4da5f53abf8e" data-design-treatment="horz-50p"><br></h5>
+<p>Mari kita membuat tabel tentang <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">localhost</code>.</p>
+<p>Tabel tersebut akan disebut wombat, dan akan memiliki bidang-bidang ini.</p>
+<editable-table downloadable accent-color="grey" data-hax-lock="data-hax-lock" bordered responsive column-header><table bordered="" downloadable="" responsive="">
+	<thead class="thead">
+		<tr class="thead-tr tr">
+			<th scope="col" class="th th-or-td">- Field</th>
+			<th scope="col" class="th th-or-td">- Type</th>
+			<th scope="col" class="th th-or-td">- Special<br></th>
+		</tr>
+	</thead>
+	<tbody class="tbody">
+		<tr class="tbody-tr tr">
+			<td class="td th-or-td">NIS<br></td>
+			<td class="td th-or-td">INT<br></td>
+			<td class="td th-or-td">-</td>
+		</tr>
+		<tr class="tbody-tr tr">
+			<td class="td th-or-td">nama<br></td>
+			<td class="td th-or-td">varchar 70<br></td>
+			<td class="td th-or-td">-</td>
+		</tr>
+		<tr class="tbody-tr tr">
+			<td class="td th-or-td">gender</td>
+			<td class="td th-or-td">varchar 70</td>
+			<td class="td th-or-td">-</td>
+		</tr>
+		<tr class="tbody-tr tr">
+			<td class="td th-or-td">-</td>
+			<td class="td th-or-td">-</td>
+			<td class="td th-or-td">-</td>
+		</tr>
+	</tbody>
+</table></editable-table>
+<p><code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">wombat_id</code>adalah <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">INT</code>kependekan dari integer, yaitu bilangan bulat. Ini adalah kunci utama tabel. Setiap wombat akan memiliki id yang berbeda, jadi meskipun dua wombat memiliki nama yang sama, program kami dapat menggunakan id tersebut untuk membedakannya.</p>
+<p><code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">wombat_id</code>akan bertambah secara otomatis. Saat kita menambahkan data baru ke dalam tabel, DBMS akan secara otomatis membuat nilai id baru untuk data tersebut. Satu hal yang tidak perlu kita pikirkan lagi.</p>
+<p><code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">wombat_id</code>tidak boleh null. (Kita sudah membahas null sebelumnya.) "Tidak null" berarti kolom tersebut wajib diisi. Setiap rekaman wombat harus memiliki id.</p>
+<p><code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">name</code>adalah <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">VARCHAR</code>, yang berarti dapat menampung sejumlah karakter yang bervariasi. Hingga 50, untuk bidang ini. Tidak boleh null, artinya, ini adalah bidang yang wajib diisi untuk setiap rekaman.</p>
+<p><code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">weight</code>adalah <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">FLOAT</code>. Seperti <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">Single</code>dalam VBA, sebuah angka, seperti 2.1. Itu bisa bernilai null, artinya tidak diperlukan. Jika bernilai null, kita tidak tahu berat wombat.</p>
+<p><code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">comments</code>adalah <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">TEXT</code>. Apa pun yang dapat Anda ketik, hingga 65.535 karakter. Bisa berupa null, jadi tidak diperlukan.</p>
+<h5 data-original-level="H5" id="header-bd05b829-516c-793a-d303-4da5f53abf8e" data-design-treatment="horz-50p"><br></h5>
+<p>Oke, mulai phpMyAdmin di localhost (ingat tombol CP Admin lama), dan pilih DB wombat.</p>
+<p><img alt="Pilih wombat DB" src="https://webapps.skilling.us/sites/default/files/lessons/databases/make-db/choose-db.png" title="Pilih wombat DB" ="false"=""="false"></p>
+<p>Pada tab Struktur, beri tahu phpMyAdmin bahwa Anda menginginkan tabel bernama <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">wombats</code>, dengan empat kolom. Klik tombol Buka di sebelah kanan.</p>
+<p><img alt="Membuat tabel" src="https://webapps.skilling.us/sites/default/files/lessons/databases/make-db/new-table.png" title="Membuat tabel" ="false"=""="false"></p>
+<p>(Itu mengingatkanku pada cuplikan salah satu film TMNT: "Ayo ninja, ayo ninja, ayo!")</p>
+<p>Sekarang beritahu phpMyAdmin bidang apa yang Anda inginkan.</p>
+<p><img alt="Lapangan" src="https://webapps.skilling.us/sites/default/files/lessons/databases/make-db/fields.png" title="Lapangan" ="false"=""="false"></p>
+<p>Klik tombol Simpan. Anda akan melihat struktur tabelnya.</p>
+<p><img alt="Struktur tabel" src="https://webapps.skilling.us/sites/default/files/lessons/databases/make-db/structure.png" title="Struktur tabel" ="false"=""="false"></p>
+<p><img src="https://webapps.skilling.us/sites/default/files/skilling/characters/adela-smile2.jpg" alt="Adela" ="false"=""="false">Adela</p>
+<p>Jadi kita punya DB yang disebut <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">wombats</code>, dan tabel yang disebut <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">wombats</code>. Apakah setiap DB memerlukan tabel dengan nama yang sama?</p>
+<p>Tidak. Beri nama tabel apa pun yang masuk akal. Jika kita ingin menyimpan data tentang wombat, maka tabel yang bernama <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">wombats</code>masuk akal.</p>
+<h5 data-original-level="H5" id="header-bd05b829-516c-793a-d303-4da5f53abf8e" data-design-treatment="horz-50p"><br></h5>
+<h3 data-original-level="H3" id="header-5e34134f-c52d-d069-a21d-66ff0aa59ac2">Ekspor DB ke server</h3>
+<p>Oke, kita punya database di <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">localhost</code>. Mari ekspor apa yang kita punya ke server.</p>
+<p>Jalankan phpMyAdmin di <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">localhost</code>. Setelah <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">wombats</code>memilih DB, pilih tab Ekspor.</p>
+<p><img alt="Ekspor" src="https://webapps.skilling.us/sites/default/files/lessons/databases/make-db/export-tab.png" title="Ekspor" ="false"=""="false"></p>
+<p>Biarkan semua pengaturan sebagaimana adanya, dan klik tombol Go (tombol Go, tombol Go, Go!). phpMyAdmin akan membuat file dengan perintah yang dibutuhkan untuk membuat ulang tabel, dan mengirimkannya ke PC Anda. Simpan file tersebut di suatu tempat.</p>
+<p><img alt="Simpan file yang diekspor" src="https://webapps.skilling.us/sites/default/files/lessons/databases/make-db/save-file.png" title="Simpan file yang diekspor" ="false"=""="false"></p>
+<p>(Jika Anda mau, buka berkasnya di Notepad dan periksa.)</p>
+<h5 data-original-level="H5" id="header-bd05b829-516c-793a-d303-4da5f53abf8e" data-design-treatment="horz-50p"><br></h5>
+<p>Sekarang jalankan phpMyAdmin di server Anda (dari cPanel), dan pilih DB wombats. Ingat, DB tersebut akan diberi nama rosie_wombats, atau apa pun nama pengguna Linux Anda.</p>
+<p>Klik tab Impor, klik tombol Pilih file, dan pilih file yang baru Anda simpan.</p>
+<p><img alt="Pilih tombol file" src="https://webapps.skilling.us/sites/default/files/lessons/databases/make-db/choose-file.png" title="Pilih tombol file" ="false"=""="false"></p>
+<p>Sekarang klik Go. phpMyAdmin akan membaca berkas tersebut, dan menjalankan pernyataan SQL di dalamnya.</p>
+<p><img alt="Impor sukses" src="https://webapps.skilling.us/sites/default/files/lessons/databases/make-db/import-success.png" title="Impor sukses" ="false"=""="false"></p>
+<p>Lihat pada tab Struktur, dan tabel wombat akan tercantum. Lihat struktur tabel, dan Anda akan melihat kolom yang Anda buat di <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">localhost</code>.</p>
+<p>Apaan nih!</p>
+<h5 data-original-level="H5" id="header-bd05b829-516c-793a-d303-4da5f53abf8e" data-design-treatment="horz-50p"><br></h5>
+<h3 data-original-level="H3" id="header-782c3e08-b698-71c0-bf8a-bf3fa1a06ad0">Berikutnya</h3>
+<p>Mari tambahkan beberapa catatan ke tabel.</p>

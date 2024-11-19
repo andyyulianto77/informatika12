@@ -1,0 +1,13 @@
+
+<p>Simulator bisa memutar media buzzer dengan perintah pada ESP32.</p>
+<media-image source="files/b087ab0a0c80f847dc5e71b745c54894-image.png" alt="files/b087ab0a0c80f847dc5e71b745c54894-image.png" accent-color="grey" size="wide" offset="narrow" card></media-image>
+<code-sample copy-clipboard-button type="html"><template preserve-content="preserve-content">int buzzer = 14;
+void setup() {
+  pinMode(buzzer, OUTPUT);
+}
+void loop() {
+  digitalWrite(buzzer, HIGH);
+  delay(1000);
+  digitalWrite(buzzer, LOW);
+  delay(1000);
+}</template></code-sample>

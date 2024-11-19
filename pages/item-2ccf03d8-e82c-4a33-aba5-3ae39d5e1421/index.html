@@ -1,0 +1,60 @@
+
+<video-player source="https://www.youtube.com/watch?v=pomgRbVLUGs&amp;pp=ygUTZmlyc3QgZ29vZ2xlIG9mZmljZQ%3D%3D" data-width="75" data-margin="center" accent-color="red" crossorigin="anonymous" sticky-corner="none" resource="#d759f135-5546-8d74-6e82-ff660e24d2d0" prefix="oer:http://oerschema.org/ schema:http://schema.org/ dc:http://purl.org/dc/terms/ foaf:http://xmlns.com/foaf/0.1/ cc:http://creativecommons.org/ns# bib:http://bib.schema.org " element-visible lang="en" media-title="Server Pertama Google" t="{&quot;embeddedMedia&quot;:&quot;embedded media&quot;}" source-type="youtube" sources="[]" source-data="[{&quot;src&quot;:&quot;https://www.youtube.com/embed/pomgRbVLUGs?pp=ygUTZmlyc3QgZ29vZ2xlIG9mZmljZQ%3D%3D&quot;,&quot;type&quot;:&quot;&quot;}]" tracks="[]"></video-player>
+<p></p>
+<learning-component subtitle="Klien dan Pelayan" type="objectives" icon="courseicons:learning-objectives" title="Learning Objectives" accent-color="indigo"><p>Pada akhir pelajaran, siswa seharusnya dapat ... </p><ol><li>Peserta didik memahami konsep dasar client-server dalam pengembangan aplikasi web. </li><li>Peserta didik dapat menjelaskan peran client dan server dalam proses komunikasi data.</li></ol></learning-component>
+<p>Web bekerja berdasarkan model klien/server. Yaitu saat satu komputer melakukan sesuatu untuk komputer lain.</p>
+<p>Istilah klien dan server bisa membingungkan. Terkadang, orang berbicara tentang mesin fisik, seperti PC (klien) dan server Reclaim Anda.</p>
+<p>Terkadang, orang-orang berbicara tentang perangkat lunak. Peramban web Anda, seperti Firefox, adalah klien, dan berkomunikasi dengan perangkat lunak server web, seperti Apache. Perangkat lunak klien dan server bahkan dapat berada di komputer yang sama. Itu hal yang umum, seperti yang akan kita lihat.</p>
+<p>___________</p>
+<h3 data-original-level="H3" id="header-f2474324-08c1-3cf6-c32c-aa53afa95195">Kucing di lingkungan Anda</h3>
+<p>Misalnya Anda menulis program yang menampilkan kucing-kucing di lingkungan Anda, berdasarkan rumah tangga. Berikut cuplikan layarnya:</p>
+<media-image source="files/server-pexels.JPG" card accent-color="grey" size="wide" offset="none" citation="www.pexels.com" caption="Informasi hasil dari membuka database" modal-title="Informasi hasil dari membuka database" _has-caption></media-image>
+<p>Anda dapat mencoba aplikasinya <a href="https://webappexamples.skilling.us/how-web-apps-work/clients-and-servers/dogs-in-neighborhood/" target="_blank">disini</a>.</p>
+<p><a href="https://www.pexels.com/id-id/pencarian/videos/kucing/" target="_blank">DB Kucing</a></p>
+<p data-border-radius="xs" data-padding="s" data-text-align="left" data-margin="xl" data-border="xs">Penampilan Aplikasi ini menggunakan framework front-end dan database. Aplikasi ini berfungsi di ponsel, tablet... layar dengan ukuran apa pun. Anda akan mempelajari caranya nanti, jika Anda mengikuti bagian tersebut.</p>
+<p>Setiap orang di lingkungan Anda mendapatkan salinan program tersebut, karena setiap orang ingin tahu tentang kucing-kucing lucu. Masalahnya, datanya selalu berubah, seiring orang-orang pindah masuk dan keluar dari lingkungan tersebut, mendapatkan lebih banyak kucing lucu, dan seterusnya. Apa yang harus dilakukan, agar setiap orang memiliki akses ke informasi terkini?</p>
+<h4 data-original-level="H4" id="header-8aac5c7b-9b32-2a62-2efc-2f2e6134c952"><p role="textbox"></p></h4>
+<p>Solusinya adalah dengan membagi aplikasi menjadi beberapa bagian. Letakkan data kucing di lokasi terpusat. Saat seseorang ingin tahu tentang kucing, aplikasi akan mengambil data dari sana.</p>
+<p>Jika data berubah, hanya <vocab-term term="basis data " information="Database adalah koleksi data yang sistematis dan sistematis yang disimpan secara elektronik. Ini dapat berisi semua jenis data, termasuk kata, angka, gambar, video, dan file. Anda dapat menggunakan perangkat lunak yang disebut sistem manajemen database (DBMS) untuk menyimpan, mengambil, dan mengedit data." popover-mode links="[{&quot;title&quot;:&quot;[{\&quot;title\&quot;:\&quot;[]\&quot;}]&quot;}]">basis data </vocab-term>
+
+
+pusat yang perlu diperbarui. Setiap orang yang menggunakan aplikasi tersebut akan mendapatkan data baru.</p>
+<media-image source="files/clients-server.png" card citation="https://webapps.skilling.us/lesson/clients-and-servers" accent-color="grey" size="wide" offset="none" caption="SERVER bertugas melayani permintaan data dari komputer Anda, Sarah, Teagan dan Joe" modal-title="SERVER bertugas melayani permintaan data dari komputer Anda, Sarah, Teagan dan Joe" _has-caption></media-image>
+<p>Mari kita uraikan lebih lanjut.</p>
+<h3 data-original-level="H3" id="header-35b8125e-3399-350d-d7e9-06bafb16b623">Klien</h3>
+<p>Klien adalah peramban web/browser. Ini menunjukkan UI, antarmuka pengguna.</p>
+<p><img alt="Kucing di lingkungan Anda" src="files/server-pexels.JPG" title="Kucing di lingkungan Anda" ="false"=""="false"></p>
+<code-sample copy-clipboard-button type="php" highlight-start="4" highlight-end="5"><template preserve-content="preserve-content"><h1>Kucing di lingkungan sekitar</h1>
+    <p>Pilih rumah tangga, dan Anda akan melihat kucing-kucing lucu mereka!</p>
+    ...
+    <h2 class="mt-4">Kucing</h2>
+    <p class="mt-4">Rumah tangga: Mathieson</p>
+    <p>Kucing yang lucu:</p></template></code-sample>
+<p>Antarmuka pengguna dibuat dari HTML. <a href="https://webappexamples.skilling.us/how-web-apps-work/clients-and-servers/dogs-in-neighborhood/" target="_blank" rel="noopener noreferrer">Cobalah aplikasinya</a></p>
+<p>(Kelas ini <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">mt-4</code>dilengkapi dengan Bootstrap.)</p>
+<p>Jadi, UI terbuat dari HTML.</p>
+<p>Browser:</p>
+<ul><li>Dapatkan HTML dari server.</li><li>Render HTML (membuat UI).</li><li>Tunggu sesuatu terjadi.</li></ul>
+<br/><ul><li><span>Ketika pengguna mengklik tombol:</span><br></li><li>Kirim rumah tangga yang dipilih pengguna ke program PHP di server.</li><li>Tunggu server mengirimkan kembali beberapa HTML.</li><li>Tampilkan HTML.</li></ul>
+<h4 data-original-level="H4" id="header-8d7c9edf-fcb9-8f8e-9f4e-ff1891fce768" data-margin="m" data-design-treatment="horz-50p"><br></h4>
+<h3 data-original-level="H3" id="header-3aca69bc-9394-d850-10ee-4fa257bff450">Server</h3>
+<p>Sementara itu, server perlu mengetahui apa yang harus dilakukan saat klien mengirimkannya sebuah rumah tangga.</p>
+<ul><li>Dapatkan data yang mengidentifikasi rumah tangga dari klien.</li><li>Carilah kucing-kucing di rumah itu.</li><li>Buat HTML untuk UI, yang menyertakan data cats.</li></ul>
+<p>Ada dua hal di server yang perlu kita ketahui.</p>
+<ul><li>Basis data (DB), dengan data tentang kucing mana yang berada di rumah tangga mana.</li><li>Program PHP yang akan memeriksa basis data, membuat HTML dari hasilnya, dan mengirimkan HTML kembali ke klien.</li></ul>
+<p>Begini situasinya.</p>
+<p><img alt="Pelayan" src="https://webapps.skilling.us/sites/default/files/lessons/how-web-apps-work/clients-and-servers/server.png" title="Pelayan" ="false"=""="false"></p>
+<h4 data-original-level="H4" id="header-8d7c9edf-fcb9-8f8e-9f4e-ff1891fce768" data-margin="m" data-design-treatment="horz-50p"><br></h4>
+<h5 data-original-level="H5" id="header-8b1c182c-5113-0b80-4044-ca6f7032ac57">Server web</h5>
+<p>Dalam gambar, program Anda tampak terhubung langsung ke web. Jika demikian, Anda harus menulis kode untuk mengemas data, membongkar data, mengirim dan menerima data di jaringan... Astaga! Kedengarannya sulit!</p>
+<p>Sulit <em>.</em> Jangan lakukan itu. Biarlah server web yang menanganinya untuk kita.</p>
+<p><img alt="Server web" src="https://webapps.skilling.us/sites/default/files/lessons/how-web-apps-work/clients-and-servers/with-apache.png" title="Server web" ="false"=""="false"></p>
+<p>Server web tidak memerlukan banyak perhatian. Mereka hanya berfungsi. Sebagian besar waktu. Kita tidak akan mengutak-atik konfigurasi server web di kelas.</p>
+<p>Apache adalah server web di Reclaim dan XAMPP. Ini adalah server web yang paling banyak digunakan.</p>
+<h4 data-original-level="H4" id="header-8d7c9edf-fcb9-8f8e-9f4e-ff1891fce768" data-margin="m" data-design-treatment="horz-50p"><br></h4>
+<h5 data-original-level="H5" id="header-fba3fb8e-e4cb-d404-ebc0-54373cfcd3ed">Bekerja bersama&#160;</h5>
+<p>Klien dan server bekerja sama untuk menyelesaikan pekerjaan. Klien menampilkan UI. Saat pengguna menginginkan sesuatu, klien mengirimkan permintaan ke server. Server melakukan apa yang perlu dilakukan, dan mengirimkan hasilnya kembali ke klien.&#160;</p>
+<p>Misalkan salah satu klien (mungkin milik Anda) dapat mengubah data doggo di server. Begitu data diubah, setiap klien akan mendapatkan data baru saat diminta. W00t!</p>
+<h4 data-original-level="H4" id="header-8d7c9edf-fcb9-8f8e-9f4e-ff1891fce768" data-margin="m" data-design-treatment="horz-50p"><br></h4>
+<h5 data-original-level="H5" id="header-c1f849f7-997c-7724-f8fe-e1ae1b517c09">Berikutnya</h5>
+<p>Mari kita periksa basis datanya lebih lanjut.</p>

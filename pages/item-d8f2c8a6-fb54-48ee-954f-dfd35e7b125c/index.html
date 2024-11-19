@@ -1,0 +1,50 @@
+
+<p></p>
+<media-image source="files/4a41f893d392b0ed071777edf08f220d-image.png" alt="files/4a41f893d392b0ed071777edf08f220d-image.png" accent-color="grey" size="wide" offset="none"></media-image>
+<code-sample copy-clipboard-button type="html">
+  
+<template preserve-content="preserve-content">void setup() {
+  // put your setup code here, to run once:
+pinMode(13, OUTPUT); 
+}
+
+void loop() {
+ digitalWrite(13,HIGH); //nyalakan LED 
+delay(1000); //beri jeda selama 1 detik 
+digitalWrite(13, LOW); //nyalakan LED
+delay(1000);//beri jeda selama 1 detik 
+}</template></code-sample>
+<stop-note title="Tugas Tantangan" accent-color="grey" icon="stopnoteicons:book-icon" status="info" message="
+  &#60;p data-hax-layout=&quot;true&quot; data-hax-grid=&quot;true&quot;&#62;Content goes here.&#60;/p&#62;
+&#60;code-sample copy-clipboard-button=&quot;&quot; type=&quot;html&quot;&#62;&#60;template preserve-content=&quot;preserve-content&quot;&#62;const great = &quot;example&quot;;
+            const great = &quot;example&quot;;
+            const great = &quot;example&quot;;&#60;/template&#62;&#60;/code-sample&#62;
+
+"><p slot="message"><strong>Tambahkan LED warna putih dan program supaya LED putih nyala bergantian dengan LED warna merah.</strong>
+</p><a11y-collapse heading="Jawaban" heading-button accent-color="grey" icon="icons:expand-more" tooltip="expand" slot="message" label="expand">
+  <p>Content goes here.</p>
+<code-sample copy-clipboard-button type="html"><template preserve-content="preserve-content">const great = "example";
+            const great = "example";
+            const great = "example";</template></code-sample>
+
+</a11y-collapse>
+
+
+<p></p>
+</stop-note>
+<code-sample copy-clipboard-button type="html"><template preserve-content="preserve-content">void setup() {
+// put your setup code here, to run once:
+pinMode(13, OUTPUT); 
+pinMode(12, OUTPUT); 
+}
+
+void loop() {
+ digitalWrite(13,HIGH); //nyalakan LED 
+delay(1000); //beri jeda selama 1 detik 
+digitalWrite(13, LOW); //nyalakan LED
+delay(1000);//beri jeda selama 1 detik 
+ digitalWrite(12,HIGH); //nyalakan LED 
+delay(1000); //beri jeda selama 1 detik 
+ digitalWrite(12,LOW); //nyalakan LED 
+delay(1000);//beri jeda selama 1 detik 
+}</template></code-sample>

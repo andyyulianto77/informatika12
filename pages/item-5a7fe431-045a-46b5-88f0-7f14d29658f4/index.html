@@ -1,0 +1,66 @@
+
+<p></p>
+<a11y-collapse icon="icons:expand-more" icon-expanded="av:fiber-manual-record" label="expand" heading="Tulis Q-2" tooltip="expand" accent-color="grey"><p part="heading-id"></p>
+  <p></p>
+  <p part="heading">Tulis Q-2</p>
+  <slot name="heading"></slot>
+  <p></p>
+  <simple-icon-button-lite part="icon" aria-controls="content" aria-expanded="false" value="" icon="icons:expand-more" type="button"><button part="button" aria-labelledby="" controls="" form="" label="expand" aria-label="expand" name="" type="button" value=""><simple-icon-lite part="icon" icon="icons:expand-more" dir="ltr"> </simple-icon-lite><slot></slot></button></simple-icon-button-lite>
+
+
+
+
+  <simple-tooltip for="expand" position="bottom" offset="14" margin-top="14"><p><slot>expand</slot></p></simple-tooltip>
+
+
+
+
+  <p></p>
+  <p aria-labelledby="heading" aria-live="polite" aria-hidden="true"></p>
+  <p></p></a11y-collapse>
+<p>Di era digital ini, pemrograman menjadi semakin penting untuk membangun aplikasi, website, dan siste</p>
+<p></p>
+<learning-component subtitle="Unit 1" type=""><p>By the end of this lesson, you should be able to...</p><p><ol><li>Dapat menggunakan struktur kontrol (if-else, perulangan).</li><li>Mampu menanamkan CSS dan PHP ke dalam struktur HTML.</li><li>Dapat membuat program PHP sederhana untuk melakukan perhitungan, manipulasi data, dan interaksi dengan pengguna.</li></ol></p></learning-component>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<a11y-collapse icon="icons:expand-more" icon-expanded="av:fiber-manual-record" label="expand" heading="Tulis Q-2" tooltip="expand" accent-color="grey"><p part="heading-id"></p>
+  <p></p>
+  <p part="heading">Tulis Q-2</p>
+  <slot name="heading"></slot>
+  <p></p>
+  <simple-icon-button-lite part="icon" aria-controls="content" aria-expanded="false" value="" icon="icons:expand-more" type="button"><button part="button" aria-labelledby="" controls="" form="" label="expand" aria-label="expand" name="" type="button" value=""><simple-icon-lite part="icon" icon="icons:expand-more" dir="ltr"> </simple-icon-lite><slot></slot></button></simple-icon-button-lite>
+
+
+
+
+  <simple-tooltip for="expand" position="bottom" offset="14" margin-top="14"><p><slot>expand</slot></p></simple-tooltip>
+
+
+
+
+  <p></p>
+  <p aria-labelledby="heading" aria-live="polite" aria-hidden="true"></p>
+  <p></p></a11y-collapse>
+<p>Di era digital ini, pemrograman menjadi semakin penting untuk membangun aplikasi, website, dan siste</p>
+<p>cara melakukan percabangan data dengan HTML dan PHP</p>
+<p><strong>Percabangan </strong>ini sangat berguna ketika kita ingin membuat halaman web yang dinamis berdasarkan kondisi tertentu, namun tidak memerlukan data yang disimpan dalam database. Contohnya, kita ingin menampilkan pesan yang berbeda-beda tergantung pada waktu saat halaman diakses, atau menampilkan konten yang berbeda berdasarkan pilihan pengguna.</p>
+<p><strong>Konsep Dasar Percabangan</strong></p>
+<p>Percabangan dalam pemrograman adalah suatu mekanisme untuk menjalankan kode tertentu berdasarkan kondisi yang diberikan. Dalam PHP, kita menggunakan struktur kontrol seperti <code>if</code>, <code>else if</code>, dan <code>else</code> untuk membuat percabangan.</p>
+<p><strong>Cara Melakukan Percabangan</strong></p>
+<ol><li> <p><strong>Membuat Kondisi:</strong></p> <ul> <li><strong>Variabel:</strong> Kita bisa membuat variabel yang berisi nilai tertentu, lalu membandingkannya dengan nilai lain.</li> <li><strong>Fungsi:</strong> Kita bisa menggunakan fungsi bawaan PHP atau fungsi yang kita buat sendiri untuk menghasilkan nilai boolean (true atau false) yang akan menentukan jalannya percabangan.</li> <li><strong>Waktu:</strong> Kita bisa menggunakan fungsi seperti <code>date()</code> untuk mendapatkan waktu saat ini dan membuat percabangan berdasarkan waktu tersebut.</li> </ul> </li> <li> <p><strong>Menulis Kode Percabangan:</strong></p> <ul> <li><strong>Struktur <code>if</code>:</strong> Jika kondisi terpenuhi, kode di dalam blok <code>if</code> akan dijalankan.</li> <li><strong>Struktur <code>else</code>:</strong> Jika kondisi tidak terpenuhi, kode di dalam blok <code>else</code> akan dijalankan.</li> <li><strong>Struktur <code>else if</code>:</strong> Digunakan untuk menambahkan kondisi tambahan.</li> </ul> </li> <li> <p><strong>Menampilkan Hasil:</strong></p> <ul> <li>Gunakan tag HTML untuk menampilkan hasil dari percabangan.</li> </ul> </li></ol>
+<p><strong>Contoh</strong></p>
+<p>Misalnya, kita ingin membuat halaman yang menampilkan pesan "Selamat Pagi" jika waktu sekarang antara pukul 06.00 sampai 12.00, "Selamat Siang" jika antara pukul 12.01 sampai 18.00, dan "Selamat Malam" untuk waktu lainnya.</p>
+<h2 data-original-level="H2" id="header-b75821fe-8e9d-ab29-0829-7253b1c57ee1">Selamat Pagi!</h2>
+<h2 data-original-level="H2" id="header-98e29be7-b319-fc38-9ee2-329018895650">Selamat Siang!</h2>
+<h2 data-original-level="H2" id="header-8525a66b-0dbb-0559-c693-0d694e5136c0">Selamat Malam!</h2>
+<code-sample type="php" copy-clipboard-button><template preserve-content="preserve-content">const great = "example";
+            const great = "example";
+            const great = "example";</template></code-sample>
+<p><strong>Penjelasan:</strong></p>
+<ul><li>Kode di atas mengambil jam saat ini menggunakan fungsi <code>date("H")</code>.</li> <li>Kemudian, menggunakan struktur <code>if</code>, <code>elseif</code>, dan <code>else</code>, kita membandingkan nilai <code>$jam_sekarang</code> dengan rentang waktu yang telah ditentukan.</li> <li>Terakhir, kita menampilkan pesan yang sesuai menggunakan tag HTML <code>&lt;h1&gt;</code>.</li></ul>
+<p><strong>Contoh Lain: Menampilkan Konten Berdasarkan Pilihan Pengguna</strong></p>
+<p></p>
+<p></p>
+<p></p>

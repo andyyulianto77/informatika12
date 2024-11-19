@@ -1,0 +1,110 @@
+
+<p>php bukan di prank&#160;😁</p>
+<a11y-collapse icon="icons:expand-more" icon-expanded="av:fiber-manual-record" label="expand" heading="Tulis Q-1" tooltip="expand" accent-color="grey"><p part="heading-id"></p>
+  <p></p>
+  <p part="heading">Tulis Q-2</p>
+  <slot name="heading"></slot>
+  <p></p>
+  <simple-icon-button-lite part="icon" aria-controls="content" aria-expanded="false" value="" icon="icons:expand-more" type="button"><button part="button" aria-labelledby="" controls="" form="" label="expand" aria-label="expand" name="" type="button" value=""><simple-icon-lite part="icon" icon="icons:expand-more" dir="ltr"> </simple-icon-lite><slot></slot></button></simple-icon-button-lite>
+
+
+
+
+
+  <simple-tooltip for="expand" position="bottom" offset="14" margin-top="14"><p><slot>expand</slot></p></simple-tooltip>
+
+
+
+
+
+  <p></p>
+  <p aria-labelledby="heading" aria-live="polite" aria-hidden="true"></p>
+  <p></p></a11y-collapse>
+<p>Di era digital ini, pemrograman menjadi semakin penting untuk membangun aplikasi, website, dan sistem</p>
+<video-player source="https://www.youtube.com/watch?v=2s6mIboARCM" data-width="75" data-margin="center" accent-color="grey" crossorigin="anonymous" sticky-corner="none" resource="#b2ca8a33-66b6-b186-b71f-ed8105f9f701" prefix="oer:http://oerschema.org/ schema:http://schema.org/ dc:http://purl.org/dc/terms/ foaf:http://xmlns.com/foaf/0.1/ cc:http://creativecommons.org/ns# bib:http://bib.schema.org " element-visible lang="en" t="{&quot;embeddedMedia&quot;:&quot;embedded media&quot;}" source-type="youtube" sources="[]" source-data="[{&quot;src&quot;:&quot;https://www.youtube.com/embed/2s6mIboARCM&quot;,&quot;type&quot;:&quot;&quot;}]" tracks="[]"></video-player>
+<p>_</p>
+<learning-component subtitle="Unit 1" type=""><p>By the end of this lesson, you should be able to... </p><p><ol role="textbox"><li>Dapat menjelaskan struktur dasar sebuah dokumen HTML.</li><li>Memahami konsep selektor, properti, dan nilai dalam CSS.</li><li>Memahami sintaks dasar PHP (tag pembuka dan penutup, variabel, operator, komentar).</li></ol></p><p></p></learning-component>
+<p></p>
+<p>Oke, jadi, Anda dapat mengetik HTML ke dalam sebuah berkas. Letakkan berkas tersebut di server. Saat server mendapatkan URL yang sesuai, server akan mengirimkan HTML dalam berkas tersebut ke browser.</p>
+<p>Namun, ada cara lain untuk membuat HTML. Anda dapat meminta program untuk menuliskannya. Itulah gunanya bahasa PHP.</p>
+<h3 data-original-level="H3" id="header-4281d37d-22bc-b089-4c9f-290740086dae">Siapa yang paling imut?</h3>
+<p>Coba tautan ini:</p>
+<p><a href="https://webappexamples.skilling.us/html/enter-php/rosie1.php" target="_blank" rel="noopener noreferrer">Siapa yang paling imut?</a></p>
+<p>Kelihatannya seperti ini:</p>
+<p><img alt="Keluaran" src="https://webapps.skilling.us/sites/default/files/lessons/html/enter-php/rosie1.png" title="Keluaran" ="false"=""="false"></p>
+<p>Cukup sederhana. <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">&lt;h1&gt;</code>, dan tiga <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">&lt;p&gt;</code>s.</p>
+<p>Mari kita periksa sumber HTML. Ctrl+U pada Windows.</p>
+<p><img alt="Bahasa Pemrograman HTML" src="https://webapps.skilling.us/sites/default/files/lessons/html/enter-php/html1.png" title="Bahasa Pemrograman HTML" ="false"=""="false"></p>
+<p>Oke, tidak ada yang baru.</p>
+<h6 data-original-level="H6" id="header-74a7e64e-3b11-0a3f-b293-2c5c0ceac6f1" data-design-treatment="horz-50p"><p role="textbox"></p></h6>
+<p>Apakah Anda memperhatikan URL-nya?</p>
+<p><img alt="Alamat URL-nya" src="https://webapps.skilling.us/sites/default/files/lessons/html/enter-php/url1.png" title="Alamat URL-nya" ="false"=""="false"></p>
+<p>Hmm, tidak <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">.html</code>. Itu <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">.php</code>.</p>
+<p>Mari kita pergi ke server, dan periksa berkas pada disk drive server:</p>
+<ol><li>Bahasa Indonesia:</li><li>    $cutestDog ​​= 'Rosie';</li><li>    $peringkat = 12;</li><li>?&gt;&lt;!DOCTYPE html&gt;</li><li>&lt;html lang="id"&gt;</li><li>    &lt;kepala&gt;</li><li>        &lt;meta charset="UTF-8"&gt;</li><li>        &lt;title&gt;Anjing Terlucu&lt;/title&gt;</li><li>        &lt;meta name="viewport" content="lebar=lebar-perangkat, skala-awal=1, menyusut-agar-sesuai=tidak"&gt;</li><li>    &lt;/kepala&gt;</li><li>    &lt;tubuh&gt;</li><li>        &lt;h1&gt;Anjing yang paling lucu&lt;/h1&gt;</li><li>        &lt;p&gt;Hasilnya sudah ada!&lt;/p&gt;</li><li>        &lt;p&gt;Anjing yang paling lucu: &lt;?php print $cutestDog; ?&gt;&lt;/p&gt;</li><li>        &lt;p&gt;Peringkat: &lt;?php print $rating; ?&gt; dari 10.&lt;/p&gt;</li><li>    &lt;/tubuh&gt;</li><li>Bahasa Indonesia:</li></ol>
+<p></p>
+<p><img src="https://webapps.skilling.us/sites/default/files/skilling/characters/ethan-smile15.png" alt="Etan" ="false"=""="false">Etan</p>
+<p>Tunggu, itu bukan HTML yang diterima browser.</p>
+<p>Benar! Peramban tidak mendapatkan berkas ini secara langsung. Peramban mendapatkan hasil dari menjalankan berkas ini di server.</p>
+<p>Baris 1-4, dan baris 13 dan 14, berisi kode PHP. PHP adalah bahasa yang dirancang untuk disematkan dalam HTML.</p>
+<p>Variabel dalam PHP dimulai dengan <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">$</code>. Baris...</p>
+<ul><li>$cutestDog ​​= 'Rosie';</li></ul>
+<p>...menempatkan teks <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">Rosie</code>ke dalam variabel <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">$cutestDog</code>.</p>
+<p>Seperti halnya bahasa apa pun, variabel menunjuk ke lokasi memori. <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">$cutestDog</code>adalah tempat di memori komputer. Anda dapat memasukkan nilai ke dalamnya, dan mendapatkan nilai darinya.</p>
+<p>Sekarang lompat ke baris 13:</p>
+<ul><li>&lt;p&gt;Anjing yang paling lucu: &lt;?php print $cutestDog; ?&gt;&lt;/p&gt;</li></ul>
+<p>Yang menghasilkan nilai <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">$cutestDog</code>. Outputnya di mana? Pada titik tersebut dalam HTML.</p>
+<h6 data-original-level="H6" id="header-2b222e94-7ad2-af65-49a5-2ff3d928974c" data-design-treatment="horz-50p"><p role="textbox"></p></h6>
+<p></p>
+<p>Kembali ke atas. Baris...</p>
+<ul><li>$peringkat = 12;</li></ul>
+<p>... memasukkan 12 ke dalam variabel <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">$rating</code>. Baris...</p>
+<ul><li>&lt;p&gt;Peringkat: &lt;?php print $rating; ?&gt; dari 10.&lt;/p&gt;</li></ul>
+<p>... output <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">$rating</code>dalam HTML halaman.</p>
+<p>Jalankan programnya, dan Anda mendapatkan HTML untuk dikirim ke peramban.</p>
+<h6 data-original-level="H6" id="header-e79258f9-d223-0e20-81bd-1043b4a85e25" data-design-treatment="horz-50p"><p role="textbox"></p></h6>
+<p>Kembali ke atas. Baris...</p>
+<ul><li>$peringkat = 12;</li></ul>
+<p>... memasukkan 12 ke dalam variabel <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">$rating</code>. Baris...</p>
+<ul><li>&lt;p&gt;Peringkat: &lt;?php print $rating; ?&gt; dari 10.&lt;/p&gt;</li></ul>
+<p>... output <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">$rating</code>dalam HTML halaman.</p>
+<p>Jalankan programnya, dan Anda mendapatkan HTML untuk dikirim ke peramban.</p>
+<h6 data-original-level="H6" id="header-d9db7fac-af8d-5f58-c7b6-fcb5db253d94" data-design-treatment="horz-50p"><p role="textbox"></p></h6>
+<h3 data-original-level="H3" id="header-5ea35397-3efd-dc8b-a9cf-243fbf4589c8">Itu ada di server</h3>
+<p>PHP berjalan di server. Peramban pengguna hanya menerima HTML. Peramban tidak tahu dari mana HTML itu berasal. Peramban hanya menampilkan apa yang diterimanya.</p>
+<p>Ketika XAMPP memasang Apache, ia juga memasang interpreter PHP, sebuah program yang dapat menjalankan program PHP. XAMPP menghubungkan interpreter PHP ke Apache.</p>
+<p><img alt="Menjalankan PHP" src="https://webapps.skilling.us/sites/default/files/lessons/html/enter-php/running-php.png" title="Menjalankan PHP" ="false"=""="false"></p>
+<p>Jadi:</p>
+<ol><li>Peramban mengirimkan URL yang diakhiri dengan PHP ke server web (Apache).</li><li>Apache mengambil berkas yang cocok dengan URL dari sistem berkas (disk drive).</li><li>Apache memperhatikan <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">.php</code>ekstensi tersebut. Apache mengirimkan file tersebut ke interpreter PHP.</li><li>Penerjemah menjalankan kodenya.</li><li>Interpreter mengirimkan HTML yang dihasilkan ke Apache.</li><li>Apache mengirimkan HTML ke klien (peramban).</li></ol>
+<h6 data-original-level="H6" id="header-143b5a16-0f8a-f72c-d8f8-294fcda0dd99" data-design-treatment="horz-50p"><p role="textbox"></p></h6>
+<h3 data-original-level="H3" id="header-af724b41-3c14-2ae3-0988-6a5309d17554">Renata juga imut</h3>
+<p>Mari kita ganti programnya. Anda dapat <a href="https://webappexamples.skilling.us/html/enter-php/renata1.php" target="_blank" rel="noopener noreferrer">mencoba yang baru</a></p>
+<p></p>
+<p></p>
+<ul><li>Bahasa Indonesia:</li><li>    $cutestDog ​​= ' Renata ';</li><li>    $rating = 10 ;</li><li>?&gt;&lt;!DOCTYPE html&gt;</li><li>        ...</li><li>        &lt;p&gt;Hasilnya sudah ada!&lt;/p&gt;</li><li>        &lt;p&gt;Anjing yang paling lucu: &lt;?php print $cutestDog; ?&gt;&lt;/p&gt;</li><li>        &lt;p&gt;Peringkat: &lt;?php print $rating; ?&gt; dari 10.&lt;/p&gt;</li><li>        ...</li></ul>
+<p>Hanya kode yang ditandai yang diubah. Berikut HTML yang diterima browser.</p>
+<p><img alt="Bahasa Pemrograman HTML" src="https://webapps.skilling.us/sites/default/files/lessons/html/enter-php/html2.png" title="Bahasa Pemrograman HTML" ="false"=""="false"></p>
+<p>Baris 10 dan 11 telah berubah. Tidak ada PHP, hanya hasil menjalankan PHP.</p>
+<h6 data-original-level="H6" id="header-25d1473c-edcf-3da7-0168-d2ad870b3af8" data-design-treatment="horz-50p"><p role="textbox"></p></h6>
+<p></p>
+<h3 data-original-level="H3" id="header-9d4f435c-9333-d067-d46a-e6f9e1b9a30d">Sintaksis</h3>
+<p>Sintaksnya berbeda dengan VBA. Berikut ini PHP-nya lagi:</p>
+<ul><li>Bahasa Indonesia:</li><li>    $cutestDog ​​= 'Renata';</li><li>    $peringkat = 10;</li><li>?&gt;&lt;!DOCTYPE html&gt;</li><li>        ...</li><li>        &lt;p&gt;Hasilnya sudah ada!&lt;/p&gt;</li><li>        &lt;p&gt;Anjing yang paling lucu: &lt;?php print $cutestDog; ?&gt;&lt;/p&gt;</li><li>        &lt;p&gt;Peringkat: &lt;?php print $rating; ?&gt; dari 10.&lt;/p&gt;</li><li>        ...</li></ul>
+<p>PHP berada di antara <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">&lt;?php</code>dan <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">?&gt;</code>. Ini agar penerjemah PHP tahu apa yang harus diperhatikan.</p>
+<p>Variabel dimulai dengan <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">$</code>, seperti yang saya katakan. Variabel tidak perlu dideklarasikan, artinya, tidak ada <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">Dim</code>pernyataan, seperti dalam VBA.</p>
+<p>Ingatlah bahwa dalam VBA, Anda memberi variabel sebuah tipe, biasanya <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">Single</code>atau <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">String</code>. PHP memperbolehkan variabel memiliki tipe apa pun yang diinginkan. Tipe bergantung pada bagaimana variabel digunakan, bukan bagaimana ia dideklarasikan. Anda akan melihatnya saat kita membahasnya.</p>
+<p>Setiap pernyataan dalam PHP harus diakhiri dengan titik koma (;). Hal ini berlaku untuk banyak bahasa.</p>
+<h6 data-original-level="H6" id="header-d78c6b09-b653-2e68-2933-9a7bb9a01f01" data-design-treatment="horz-50p"><p role="textbox"></p></h6>
+<h3 data-original-level="H3" id="header-d4514972-76c2-8e60-6f1a-56be9c211028">Standar penamaan</h3>
+<p>Kami akan menggunakan beberapa <a href="https://webapps.skilling.us/lesson/code-standards">standar pengkodean</a> dalam kursus ini.</p>
+<p>Gunakan camel case untuk nama variabel. Semua karakter menggunakan huruf kecil, kecuali jika Anda memiliki nama yang terdiri dari beberapa kata. Jadikan karakter pertama dari kata kedua dan selanjutnya menggunakan huruf besar. Contoh:</p>
+<ul><li>Jumlah anjing</li><li>$keasamanrata-rata</li><li>Pembayaran Bulanan</li></ul>
+<p>Periksa <a href="https://webapps.skilling.us/lesson/code-standards">halaman standar pengkodean</a> untuk semua informasi rinci.</p>
+<h6 data-original-level="H6" id="header-7837cf11-3335-caea-f307-ac9022da5d76" data-design-treatment="horz-50p"><p role="textbox"></p></h6>
+<h3 data-original-level="H3" id="header-20750c65-ff6c-3668-08a9-f1b856f5a199">Berikutnya</h3>
+<p>Bagaimana kita bisa mendapatkan nama anjing dan kelucuannya dari pengguna?</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>

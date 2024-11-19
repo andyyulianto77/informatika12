@@ -1,0 +1,71 @@
+
+<p>Setelah memahami percabangan ...</p>
+<a11y-collapse icon="icons:expand-more" icon-expanded="av:fiber-manual-record" label="expand" heading="Tulis Q-2" tooltip="expand" accent-color="grey"><p part="heading-id"></p>
+  <p></p>
+  <p part="heading">Tulis Q-2</p>
+  <slot name="heading"></slot>
+  <p></p>
+  <simple-icon-button-lite part="icon" aria-controls="content" aria-expanded="false" value="" icon="icons:expand-more" type="button"><button part="button" aria-labelledby="" controls="" form="" label="expand" aria-label="expand" name="" type="button" value=""><simple-icon-lite part="icon" icon="icons:expand-more" dir="ltr"> </simple-icon-lite><slot></slot></button></simple-icon-button-lite>
+
+
+
+
+  <simple-tooltip for="expand" position="bottom" offset="14" margin-top="14"><p><slot>expand</slot></p></simple-tooltip>
+
+
+
+
+  <p></p>
+  <p aria-labelledby="heading" aria-live="polite" aria-hidden="true"></p>
+  <p></p></a11y-collapse>
+<p>Di era digital ini, pemrograman menjadi semakin penting untuk membangun aplikasi, website, dan siste</p>
+<p></p>
+<learning-component subtitle="Unit 1" type=""><p>By the end of this lesson, you should be able to... </p><ol role="textbox"><li>Dapat membuat program PHP sederhana untuk melakukan perhitungan, manipulasi data, dan interaksi dengan pengguna dengan logika percabangan bersarang</li><li>Dapat membuat halaman web dinamis.</li><li>Mampu menulis kode yang mudah dipahami oleh orang lain.</li><li>Dapat mengidentifikasi dan memperbaiki kesalahan sintaks dan logika dalam kode.</li></ol><p></p></learning-component>
+<p></p>
+<a11y-collapse icon="icons:expand-more" icon-expanded="av:fiber-manual-record" label="expand" heading="Tulis Q-2" tooltip="expand" accent-color="grey"><p part="heading-id"></p>
+  <p></p>
+  <p part="heading">Tulis Q-2</p>
+  <slot name="heading"></slot>
+  <p></p>
+  <simple-icon-button-lite part="icon" aria-controls="content" aria-expanded="false" value="" icon="icons:expand-more" type="button"><button part="button" aria-labelledby="" controls="" form="" label="expand" aria-label="expand" name="" type="button" value=""><simple-icon-lite part="icon" icon="icons:expand-more" dir="ltr"> </simple-icon-lite><slot></slot></button></simple-icon-button-lite>
+
+
+
+
+  <simple-tooltip for="expand" position="bottom" offset="14" margin-top="14"><p><slot>expand</slot></p></simple-tooltip>
+
+
+
+
+  <p></p>
+  <p aria-labelledby="heading" aria-live="polite" aria-hidden="true"></p>
+  <p></p></a11y-collapse>
+<p>Di era digital ini, pemrograman menjadi semakin penting untuk membangun aplikasi, website, dan siste</p>
+<p>Tentu, mari kita bahas lebih dalam tentang percabangan bersarang dalam PHP.</p>
+<p><strong>Percabangan Bersarang</strong></p>
+<p>Percabangan bersarang adalah suatu kondisi di mana sebuah struktur percabangan (misalnya <code>if</code>, <code>else if</code>, atau <code>switch</code>) berada di dalam struktur percabangan lainnya. Hal ini memungkinkan kita untuk membuat keputusan yang lebih kompleks dan spesifik.</p>
+<p><strong>Mengapa Menggunakan Percabangan Bersarang?</strong></p>
+<ul><li><strong>Kondisi yang lebih kompleks:</strong> Ketika kita memiliki beberapa kondisi yang saling berkaitan, percabangan bersarang sangat berguna untuk mengevaluasi semua kondisi tersebut secara berurutan.</li> <li><strong>Keputusan yang lebih spesifik:</strong> Dengan percabangan bersarang, kita bisa membuat keputusan yang lebih spesifik berdasarkan kombinasi dari beberapa kondisi.</li></ul>
+<p><strong>Contoh Percabangan Bersarang</strong></p>
+<p>Misalnya, kita ingin membuat sebuah program sederhana untuk menentukan kategori umur seseorang:</p>
+<p>$umur = 25; if ($umur &#38;gt;= 18) {     if ($umur &#38;gt;= 65) {         echo "Anda termasuk kategori lansia.";     } else {         echo "Anda termasuk kategori dewasa.";     } } else {     echo "Anda termasuk kategori anak-anak atau remaja."; }</p>
+<code-sample type="php" copy-clipboard-button><template preserve-content="preserve-content">const great = "example";
+            const great = "example";
+            const great = "example";</template></code-sample>
+<p>$umur = 25; if ($umur &#38;gt;= 18) {     if ($umur &#38;gt;= 65) {         echo "Anda termasuk kategori lansia.";     } else {         echo "Anda termasuk kategori dewasa.";     } } else {     echo "Anda termasuk kategori anak-anak atau remaja."; }</p>
+<p>Pada contoh di atas:</p>
+<ul><li><strong>Kondisi pertama:</strong> Memeriksa apakah umur seseorang lebih besar sama dengan 18. <ul> <li><strong>Jika benar:</strong> Memasuki kondisi kedua, yaitu memeriksa apakah umur lebih besar sama dengan 65.</li> <li><strong>Jika benar:</strong> Menampilkan pesan "Anda termasuk kategori lansia".</li> <li><strong>Jika salah:</strong> Menampilkan pesan "Anda termasuk kategori dewasa".</li> </ul> </li> <li><strong>Jika kondisi pertama salah:</strong> Langsung menampilkan pesan "Anda termasuk kategori anak-anak atau remaja".</li></ul>
+<p>Contoh Lain: Menentukan Nilai Huruf</p>
+<p>$nilai = 75; if ($nilai &#38;gt;= 90) {     echo "Nilai Anda A"; } else if ($nilai &#38;gt;= 80) {     echo "Nilai Anda B"; } else if ($nilai &#38;gt;= 70) {     echo "Nilai Anda C"; } else {     echo "Nilai Anda kurang dari C"; }</p>
+<p></p>
+<code-sample copy-clipboard-button type="php"><template preserve-content="preserve-content">const great = "example";
+            const great = "example";
+            const great = "example";</template></code-sample>
+<p><strong>Tips Menggunakan Percabangan Bersarang:</strong></p>
+<ul><li><strong>Jaga kerapihan:</strong> Gunakan indentasi yang konsisten untuk memudahkan membaca kode.</li> <li><strong>Batasi kedalaman:</strong> Hindari membuat percabangan yang terlalu dalam, karena bisa membuat kode sulit dipahami.</li> <li><strong>Gunakan komentar:</strong> Tambahkan komentar untuk menjelaskan logika setiap bagian kode.</li> <li><strong>Pertimbangkan alternatif:</strong> Terkadang, menggunakan fungsi atau array bisa menjadi alternatif yang lebih baik untuk percabangan bersarang yang kompleks.</li></ul>
+<p><strong>Penting:</strong></p>
+<ul><li>Percabangan bersarang bisa menjadi sangat kompleks jika tidak digunakan dengan hati-hati.</li> <li>Pastikan logika percabangan Anda benar dan tidak menimbulkan hasil yang tidak diinginkan.</li></ul>
+<p><strong>Contoh Lebih Kompleks</strong></p>
+<p></p>
+<p></p>
+<p></p>

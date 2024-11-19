@@ -1,0 +1,50 @@
+
+<p>data presensi siswa</p>
+<a11y-collapse icon="icons:expand-more" icon-expanded="av:fiber-manual-record" label="expand" heading="Tulis Q-2" tooltip="expand" accent-color="grey"><p part="heading-id"></p>
+  <p></p>
+  <p part="heading">Tulis Q-2</p>
+  <slot name="heading"></slot>
+  <p></p>
+  <simple-icon-button-lite part="icon" aria-controls="content" aria-expanded="false" value="" icon="icons:expand-more" type="button"><button part="button" aria-labelledby="" controls="" form="" label="expand" aria-label="expand" name="" type="button" value=""><simple-icon-lite part="icon" icon="icons:expand-more" dir="ltr"> </simple-icon-lite><slot></slot></button></simple-icon-button-lite>
+
+
+
+  <simple-tooltip for="expand" position="bottom" offset="14" margin-top="14"><p><slot>expand</slot></p></simple-tooltip>
+
+
+
+  <p></p>
+  <p aria-labelledby="heading" aria-live="polite" aria-hidden="true"></p>
+  <p></p></a11y-collapse>
+<p>Di</p>
+<p></p>
+<learning-component subtitle="Unit 1" type=""><p>By the end of this lesson, you should be able to...</p></learning-component>
+<a11y-collapse icon="icons:expand-more" icon-expanded="av:fiber-manual-record" label="expand" heading="Tulis Q-2" tooltip="expand" accent-color="grey"><p part="heading-id"></p>
+  <p></p>
+  <p part="heading">Tulis Q-2</p>
+  <slot name="heading"></slot>
+  <p></p>
+  <simple-icon-button-lite part="icon" aria-controls="content" aria-expanded="false" value="" icon="icons:expand-more" type="button"><button part="button" aria-labelledby="" controls="" form="" label="expand" aria-label="expand" name="" type="button" value=""><simple-icon-lite part="icon" icon="icons:expand-more" dir="ltr"> </simple-icon-lite><slot></slot></button></simple-icon-button-lite>
+
+
+
+  <simple-tooltip for="expand" position="bottom" offset="14" margin-top="14"><p><slot>expand</slot></p></simple-tooltip>
+
+
+
+  <p></p>
+  <p aria-labelledby="heading" aria-live="polite" aria-hidden="true"></p>
+  <p></p></a11y-collapse>
+<p>Di</p>
+<p><strong>Memahami Laporan Data Presensi Lanjutan</strong></p>
+<p>Laporan data presensi lanjutan memungkinkan kita untuk menganalisis data kehadiran karyawan secara lebih mendalam. Beberapa contoh laporan yang umum dibutuhkan adalah:</p>
+<ul><li><strong>Laporan kehadiran per karyawan:</strong> Menampilkan rekap kehadiran seorang karyawan dalam periode tertentu, termasuk jumlah hari hadir, sakit, izin, dan lembur.</li> <li><strong>Laporan kehadiran per departemen:</strong> Menampilkan rekap kehadiran seluruh karyawan dalam satu departemen.</li> <li><strong>Laporan kehadiran per periode:</strong> Menampilkan rekap kehadiran seluruh karyawan dalam periode tertentu (misalnya, bulanan, tahunan).</li> <li><strong>Laporan keterlambatan:</strong> Menampilkan daftar karyawan yang sering terlambat dan jumlah keterlambatannya.</li> <li><strong>Laporan lembur:</strong> Menampilkan daftar karyawan yang sering melakukan lembur dan total jam lembur.</li></ul>
+<p><strong>Implementasi Laporan Data Presensi</strong></p>
+<p>Untuk membuat laporan data presensi, kita perlu:</p>
+<ol><li> <p><strong>Tabel Database:</strong></p> <ul> <li><strong>Tabel presensi:</strong> Menyimpan data presensi setiap karyawan, termasuk tanggal, waktu masuk, waktu keluar, status kehadiran (hadir, sakit, izin, lembur), dan ID karyawan.</li> <li><strong>Tabel karyawan:</strong> Menyimpan data master karyawan, seperti nama, departemen, dan posisi.</li> </ul> </li> <li> <p><strong>Query SQL:</strong></p> <ul role="textbox"> <li><strong>Query dasar:</strong> Gunakan query SELECT untuk mengambil data dari tabel presensi dan karyawan sesuai dengan kriteria laporan yang diinginkan.</li> <li><strong>Fungsi agregasi:</strong> Gunakan fungsi seperti COUNT, SUM, AVG untuk menghitung jumlah, total, dan rata-rata.</li> <li><strong>Grouping:</strong> Gunakan GROUP BY untuk mengelompokkan data berdasarkan karyawan, departemen, atau periode waktu.</li> </ul> </li> <li> <p><strong>Presentasi Data:</strong></p> <ul> <li><strong>Tabel HTML:</strong> Tampilkan data laporan dalam bentuk tabel HTML yang mudah dibaca.</li> <li><strong>Grafik:</strong> Gunakan library charting seperti Chart.js atau Google Charts untuk visualisasi data yang lebih menarik.</li> <li><strong>Export:</strong> Berikan opsi untuk mengekspor data laporan ke format seperti Excel atau PDF.</li> </ul> </li></ol>
+<p><strong>Contoh Laporan Kehadiran Per Karyawan</strong></p>
+<p>&#60;!--?php // Koneksi ke database // Ambil ID karyawan dari parameter URL (misalnya) $id_karyawan = $_GET['id']; // Query untuk mengambil data presensi karyawan $sql = "SELECT * FROM presensi WHERE id_karyawan = $id_karyawan AND tanggal BETWEEN '2023-01-01' AND '2023-12-31'"; $result = mysqli_query($conn, $sql); // Proses data dan tampilkan dalam tabel HTML // ... ?--&#62;</p>
+<code-sample copy-clipboard-button type="html"><template preserve-content="preserve-content">const great = "example";
+            const great = "example";
+            const great = "example";</template></code-sample>
+<p></p>
