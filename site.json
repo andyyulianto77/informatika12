@@ -2944,7 +2944,7 @@
     },
     {
       "id": "item-d95f5578-2cfb-4896-84a7-36b44de617a7",
-      "indent": 1,
+      "indent": 0,
       "location": "pages/item-d95f5578-2cfb-4896-84a7-36b44de617a7/index.html",
       "slug": "perancangan-basis-data/koneksi-ke-database-dalam-php",
       "order": 4,
@@ -2953,7 +2953,7 @@
       "description": "kalau tanpa database sudah paham\n\n  \n  Tulis Q-2\n  \n  \n  \n\n\n  expand\n\n\n\n\n\n\n\n  \n  \n  \nDi\n\nBy the end of this lesson, you should be able to...Dapat membuat program PHP sederhana untuk melakukan perhitu",
       "metadata": {
         "created": 1732016685,
-        "updated": 1732017567,
+        "updated": 1732337778,
         "images": {},
         "videos": {},
         "published": true,
