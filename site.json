@@ -4022,7 +4022,17 @@
         "readtime": 3,
         "status": "",
         "pageType": "project",
-        "icon": "hax:bulletin-board"
+        "icon": "hax:bulletin-board",
+        "files": [
+          {
+            "path": "[object Object]simpan-halaman-github.JPG",
+            "fullUrl": "/C:\\Users\\andyy\\Downloads\\git\\andyyulianto77\\informatika12/files/simpan-halaman-github.JPG",
+            "url": "files/simpan-halaman-github.JPG",
+            "type": "image/jpeg",
+            "name": "simpan-halaman-github.JPG",
+            "size": 72449
+          }
+        ]
       }
     },
     {
