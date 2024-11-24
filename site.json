@@ -2962,7 +2962,17 @@
         "readtime": 5,
         "status": "",
         "pageType": "activity",
-        "icon": "hax:ticket"
+        "icon": "hax:ticket",
+        "files": [
+          {
+            "path": "[object Object]data-siswa.JPG",
+            "fullUrl": "/C:\\Users\\andyy\\Downloads\\git\\andyyulianto77\\informatika12/files/data-siswa.JPG",
+            "url": "files/data-siswa.JPG",
+            "type": "image/jpeg",
+            "name": "data-siswa.JPG",
+            "size": 6097
+          }
+        ]
       }
     },
     {
