@@ -4384,7 +4384,7 @@
     },
     {
       "id": "item-8bcbbf68-c44f-42f9-97e4-43610e6684ac",
-      "indent": 1,
+      "indent": 0,
       "location": "pages/item-8bcbbf68-c44f-42f9-97e4-43610e6684ac/index.html",
       "slug": "perancangan-basis-data/menampilan-data-id-dengan-get",
       "order": 7,
@@ -4393,7 +4393,7 @@
       "description": "Pada pelajaran lalu kita sudah menampilkan data siswa? amazing khan\n\n  \n  Tulis nama perintah sql yang kamu ingat dan jelaskan\n  \n  \n  \n\n\n\n  expand\n\n\n\n\n  \n  \n  \nDi\nBy the end of this lesson, you shou",
       "metadata": {
         "created": 1732487713,
-        "updated": 1732488007,
+        "updated": 1732489338,
         "images": {},
         "videos": {},
         "published": true,
