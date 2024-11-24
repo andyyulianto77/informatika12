@@ -23,7 +23,7 @@
         "gaID": null
       },
       "created": 1732016691,
-      "updated": 1732446131,
+      "updated": 1732488035,
       "git": {
         "vendor": "github",
         "branch": "gh-pages"
@@ -2350,7 +2350,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1732446111,
+        "updated": 1732488014,
         "images": {},
         "videos": {},
         "published": true,
@@ -2373,7 +2373,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1732446111,
+        "updated": 1732488015,
         "images": {},
         "videos": {},
         "published": true,
@@ -2394,7 +2394,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1732446112,
+        "updated": 1732488015,
         "images": {},
         "videos": {},
         "published": true,
@@ -2415,7 +2415,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1732446112,
+        "updated": 1732488016,
         "images": {},
         "videos": {},
         "files": [
@@ -2454,7 +2454,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1732446112,
+        "updated": 1732488016,
         "images": {},
         "videos": {},
         "published": true,
@@ -2475,7 +2475,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1732446113,
+        "updated": 1732488017,
         "images": {},
         "videos": {},
         "files": [
@@ -2506,7 +2506,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1732446113,
+        "updated": 1732488017,
         "images": {},
         "videos": {},
         "published": true,
@@ -2530,7 +2530,7 @@
         "created": 1732016685,
         "images": {},
         "videos": {},
-        "updated": 1732446114,
+        "updated": 1732488017,
         "files": [
           {
             "path": "[object Object]jurnal.JPG",
@@ -2574,7 +2574,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1732446115,
+        "updated": 1732488018,
         "images": {},
         "videos": {},
         "published": true,
@@ -2605,7 +2605,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1732446115,
+        "updated": 1732488019,
         "images": {},
         "videos": {},
         "published": true,
@@ -2626,7 +2626,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1732446115,
+        "updated": 1732488019,
         "images": {},
         "videos": {},
         "published": true,
@@ -2647,7 +2647,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1732446119,
+        "updated": 1732488023,
         "images": {},
         "videos": {},
         "published": true,
@@ -2668,7 +2668,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1732446129,
+        "updated": 1732488033,
         "images": {},
         "videos": {},
         "published": false,
@@ -2691,7 +2691,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1732446100,
+        "updated": 1732488003,
         "images": {},
         "videos": {},
         "published": true,
@@ -2714,7 +2714,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1732446100,
+        "updated": 1732488004,
         "images": {},
         "videos": {},
         "published": true,
@@ -2737,7 +2737,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1732446097,
+        "updated": 1732488001,
         "images": {},
         "videos": {},
         "published": true,
@@ -2771,7 +2771,7 @@
       "description": "Buku yang mirip buku teks ini dibagi menjadi beberapa bagian. Bagian ini disebut \"Bersiap.\" Ada beberapa pelajaran di dalamnya. Anda dapat melihat daftarnya di bagian bawah halaman. Setiap pelajaran ",
       "metadata": {
         "created": 1732016685,
-        "updated": 1732446095,
+        "updated": 1732488000,
         "images": {},
         "videos": {},
         "published": true,
@@ -2794,7 +2794,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1732446097,
+        "updated": 1732488001,
         "images": {},
         "videos": {},
         "files": [
@@ -2859,7 +2859,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1732446098,
+        "updated": 1732488002,
         "images": {},
         "videos": {},
         "published": true,
@@ -2882,7 +2882,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1732446099,
+        "updated": 1732488002,
         "images": {},
         "videos": {},
         "published": true,
@@ -2900,13 +2900,13 @@
       "indent": 1,
       "location": "pages/item-3c245611-951b-4aa7-99d3-8daf8f48dae9/index.html",
       "slug": "berpikir-komputasional-dan-algoritma-pemrograman/pemrograman-web",
-      "order": 10,
+      "order": 9,
       "parent": "item-f6a56c5c-9bb8-4c09-9e18-a4a4e8060ef8",
       "title": "PEMROGRAMAN WEB",
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1732446109,
+        "updated": 1732488013,
         "images": {},
         "videos": {},
         "published": true,
@@ -2929,7 +2929,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1732446110,
+        "updated": 1732488013,
         "images": {},
         "videos": {},
         "published": true,
@@ -2944,7 +2944,7 @@
     },
     {
       "id": "item-d95f5578-2cfb-4896-84a7-36b44de617a7",
-      "indent": 0,
+      "indent": 1,
       "location": "pages/item-d95f5578-2cfb-4896-84a7-36b44de617a7/index.html",
       "slug": "perancangan-basis-data/koneksi-ke-database-dalam-php",
       "order": 6,
@@ -2953,7 +2953,7 @@
       "description": "kalau tanpa database sudah paham\n\n  \n  Tulis Q-2\n  \n  \n  \n\n\n  expand\n\n\n\n\n\n\n\n  \n  \n  \nDi\n\nBy the end of this lesson, you should be able to...Dapat membuat program PHP sederhana untuk melakukan perhitu",
       "metadata": {
         "created": 1732016685,
-        "updated": 1732487585,
+        "updated": 1732488006,
         "images": {},
         "videos": {},
         "published": true,
@@ -2979,14 +2979,14 @@
       "id": "item-423f3e75-dd3f-43a1-832a-2be6af784cad",
       "indent": 2,
       "location": "pages/item-423f3e75-dd3f-43a1-832a-2be6af784cad/index.html",
-      "slug": "berpikir-komputasional-dan-algoritma-pemrograman/pemrograman-php/phpstorm",
+      "slug": "perancangan-basis-data/pemrograman-php/phpstorm",
       "order": 0,
       "parent": "item-984bdbe3-eae5-4a78-9ccb-abb39ed59fab",
       "title": "PHPSTORM",
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1732446105,
+        "updated": 1732488008,
         "images": {},
         "videos": {},
         "published": true,
@@ -3007,7 +3007,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1732446106,
+        "updated": 1732488010,
         "images": {},
         "videos": {},
         "published": true,
@@ -3030,7 +3030,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1732446101,
+        "updated": 1732488004,
         "images": {},
         "videos": {},
         "published": true,
@@ -3071,7 +3071,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1732446110,
+        "updated": 1732488013,
         "published": true,
         "hideInMenu": false,
         "locked": false,
@@ -3105,7 +3105,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1732446114,
+        "updated": 1732488018,
         "images": {},
         "videos": {},
         "published": true,
@@ -3128,7 +3128,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1732446116,
+        "updated": 1732488020,
         "images": {},
         "videos": {},
         "published": true,
@@ -3149,7 +3149,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1732446117,
+        "updated": 1732488020,
         "images": {},
         "videos": {},
         "published": true,
@@ -3170,7 +3170,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1732446117,
+        "updated": 1732488021,
         "images": {},
         "videos": {},
         "published": true,
@@ -3191,7 +3191,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1732446117,
+        "updated": 1732488021,
         "images": {},
         "videos": {},
         "published": true,
@@ -3212,7 +3212,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1732446118,
+        "updated": 1732488021,
         "images": {},
         "videos": {},
         "published": true,
@@ -3235,7 +3235,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1732446118,
+        "updated": 1732488022,
         "images": {},
         "videos": {},
         "published": true,
@@ -3256,7 +3256,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1732446119,
+        "updated": 1732488022,
         "images": {},
         "videos": {},
         "published": true,
@@ -3281,7 +3281,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1732446120,
+        "updated": 1732488023,
         "images": {},
         "videos": {},
         "published": true,
@@ -3302,7 +3302,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1732446120,
+        "updated": 1732488024,
         "images": {},
         "videos": {},
         "files": [
@@ -3333,7 +3333,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1732446121,
+        "updated": 1732488024,
         "images": {},
         "videos": {},
         "published": true,
@@ -3354,7 +3354,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1732446121,
+        "updated": 1732488024,
         "images": {},
         "videos": {},
         "files": [
@@ -3385,7 +3385,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1732446121,
+        "updated": 1732488025,
         "images": {},
         "videos": {},
         "published": true,
@@ -3408,7 +3408,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1732446122,
+        "updated": 1732488025,
         "images": {},
         "videos": {},
         "published": true,
@@ -3429,7 +3429,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1732446122,
+        "updated": 1732488026,
         "images": {},
         "videos": {},
         "published": true,
@@ -3462,7 +3462,7 @@
       "description": "",
       "metadata": {
         "created": 1732016687,
-        "updated": 1732446123,
+        "updated": 1732488026,
         "images": {},
         "videos": {},
         "files": [
@@ -3495,7 +3495,7 @@
       "description": "",
       "metadata": {
         "created": 1732016687,
-        "updated": 1732446123,
+        "updated": 1732488027,
         "images": {},
         "videos": {},
         "published": true,
@@ -3528,7 +3528,7 @@
       "description": "",
       "metadata": {
         "created": 1732016687,
-        "updated": 1732446124,
+        "updated": 1732488027,
         "images": {},
         "videos": {},
         "published": true,
@@ -3549,7 +3549,7 @@
       "description": "",
       "metadata": {
         "created": 1732016687,
-        "updated": 1732446124,
+        "updated": 1732488027,
         "images": {},
         "videos": {},
         "published": true,
@@ -3572,7 +3572,7 @@
       "description": "",
       "metadata": {
         "created": 1732016687,
-        "updated": 1732446124,
+        "updated": 1732488028,
         "images": {},
         "videos": {},
         "published": true,
@@ -3594,7 +3594,7 @@
       "description": "",
       "metadata": {
         "created": 1732016687,
-        "updated": 1732446125,
+        "updated": 1732488028,
         "images": {},
         "videos": {},
         "published": true,
@@ -3615,7 +3615,7 @@
       "description": "",
       "metadata": {
         "created": 1732016687,
-        "updated": 1732446126,
+        "updated": 1732488029,
         "images": {},
         "videos": {},
         "published": true,
@@ -3638,7 +3638,7 @@
       "description": "",
       "metadata": {
         "created": 1732016687,
-        "updated": 1732446130,
+        "updated": 1732488035,
         "images": {},
         "videos": {},
         "published": true,
@@ -3664,14 +3664,14 @@
       "id": "item-984bdbe3-eae5-4a78-9ccb-abb39ed59fab",
       "indent": 1,
       "location": "pages/item-984bdbe3-eae5-4a78-9ccb-abb39ed59fab/index.html",
-      "slug": "berpikir-komputasional-dan-algoritma-pemrograman/pemrograman-php",
-      "order": 0,
-      "parent": "item-f6a56c5c-9bb8-4c09-9e18-a4a4e8060ef8",
+      "slug": "perancangan-basis-data/pemrograman-php",
+      "order": 9,
+      "parent": "item-13298894-5889-4b24-b28f-5bbde3a3c6f1",
       "title": "PEMROGRAMAN PHP",
       "description": "",
       "metadata": {
         "created": 1732016687,
-        "updated": 1732446104,
+        "updated": 1732488007,
         "images": {},
         "videos": {},
         "published": true,
@@ -3692,7 +3692,7 @@
       "description": "",
       "metadata": {
         "created": 1732016687,
-        "updated": 1732446125,
+        "updated": 1732488029,
         "images": {},
         "videos": {},
         "published": true,
@@ -3714,7 +3714,7 @@
       "description": "",
       "metadata": {
         "created": 1732016687,
-        "updated": 1732446126,
+        "updated": 1732488030,
         "images": {},
         "videos": {},
         "published": true,
@@ -3747,7 +3747,7 @@
       "description": "",
       "metadata": {
         "created": 1732016687,
-        "updated": 1732446127,
+        "updated": 1732488030,
         "images": {},
         "videos": {},
         "published": true,
@@ -3788,7 +3788,7 @@
       "description": "",
       "metadata": {
         "created": 1732016687,
-        "updated": 1732446127,
+        "updated": 1732488031,
         "images": {},
         "videos": {},
         "published": true,
@@ -3853,7 +3853,7 @@
       "description": "",
       "metadata": {
         "created": 1732016688,
-        "updated": 1732446127,
+        "updated": 1732488032,
         "images": {},
         "videos": {},
         "files": [
@@ -3910,7 +3910,7 @@
       "description": "",
       "metadata": {
         "created": 1732016688,
-        "updated": 1732446128,
+        "updated": 1732488032,
         "images": {},
         "videos": {},
         "published": true,
@@ -4014,7 +4014,7 @@
     },
     {
       "id": "item-c620782e-e848-44b3-97d9-66644745c69c",
-      "indent": 0,
+      "indent": 1,
       "location": "pages/item-c620782e-e848-44b3-97d9-66644745c69c/index.html",
       "slug": "jaringan-komputer-dan-internet/alur-penerbitan-tulisan",
       "order": 6,
@@ -4023,7 +4023,7 @@
       "description": "Ini untuk membuat catatan/refleksi dari materi yang sudah dipelajari. Ikuti tutorial dari blog\nGithub + Stickblitz + HAX = penerbitan web gratis\n\nSumber Tulisan\n#situs web hax#pengembang web#komponen",
       "metadata": {
         "created": 1732016688,
-        "updated": 1732448280,
+        "updated": 1732488032,
         "images": {},
         "videos": {},
         "published": true,
@@ -4080,7 +4080,7 @@
       "description": "",
       "metadata": {
         "created": 1732016688,
-        "updated": 1732446129,
+        "updated": 1732488033,
         "images": {},
         "videos": {},
         "published": true,
@@ -4103,7 +4103,7 @@
       "description": "",
       "metadata": {
         "created": 1732016688,
-        "updated": 1732446105,
+        "updated": 1732488009,
         "images": {},
         "videos": {},
         "published": true,
@@ -4126,7 +4126,7 @@
       "description": "",
       "metadata": {
         "created": 1732016688,
-        "updated": 1732446101,
+        "updated": 1732488005,
         "images": {},
         "videos": {},
         "published": true,
@@ -4183,7 +4183,7 @@
       "description": "",
       "metadata": {
         "created": 1732016688,
-        "updated": 1732446130,
+        "updated": 1732488034,
         "images": {},
         "videos": {},
         "published": false,
@@ -4206,7 +4206,7 @@
       "description": "",
       "metadata": {
         "created": 1732016688,
-        "updated": 1732446102,
+        "updated": 1732488005,
         "images": {},
         "videos": {},
         "published": true,
@@ -4229,7 +4229,7 @@
       "description": "",
       "metadata": {
         "created": 1732016688,
-        "updated": 1732446130,
+        "updated": 1732488034,
         "images": {},
         "videos": {},
         "published": false,
@@ -4270,7 +4270,7 @@
       "description": "",
       "metadata": {
         "created": 1732016688,
-        "updated": 1732446102,
+        "updated": 1732488005,
         "images": {},
         "videos": {},
         "published": true,
@@ -4303,7 +4303,7 @@
       "description": "",
       "metadata": {
         "created": 1732016688,
-        "updated": 1732446106,
+        "updated": 1732488009,
         "images": {},
         "videos": {},
         "published": true,
@@ -4324,7 +4324,7 @@
       "description": "",
       "metadata": {
         "created": 1732016689,
-        "updated": 1732446099,
+        "updated": 1732488003,
         "images": {},
         "videos": {},
         "published": true,
@@ -4347,7 +4347,7 @@
       "description": "",
       "metadata": {
         "created": 1732016689,
-        "updated": 1732446103,
+        "updated": 1732488006,
         "images": {},
         "videos": {},
         "published": true,
@@ -4364,13 +4364,13 @@
       "indent": 1,
       "location": "pages/item-0b7ddef5-2482-45f7-9467-12d8a15b5c42/index.html",
       "slug": "perancangan-basis-data/get-dan-post",
-      "order": 7,
+      "order": 8,
       "parent": "item-13298894-5889-4b24-b28f-5bbde3a3c6f1",
       "title": "GET dan POST",
       "description": "",
       "metadata": {
         "created": 1732016689,
-        "updated": 1732446103,
+        "updated": 1732488007,
         "images": {},
         "videos": {},
         "published": true,
@@ -4379,6 +4379,27 @@
         "locked": false,
         "readtime": 1,
         "icon": "lrn:page",
+        "status": ""
+      }
+    },
+    {
+      "id": "item-8bcbbf68-c44f-42f9-97e4-43610e6684ac",
+      "indent": 1,
+      "location": "pages/item-8bcbbf68-c44f-42f9-97e4-43610e6684ac/index.html",
+      "slug": "perancangan-basis-data/menampilan-data-id-dengan-get",
+      "order": 7,
+      "parent": "item-13298894-5889-4b24-b28f-5bbde3a3c6f1",
+      "title": "Menampilan Data Id dengan Get",
+      "description": "Pada pelajaran lalu kita sudah menampilkan data siswa? amazing khan\n\n  \n  Tulis nama perintah sql yang kamu ingat dan jelaskan\n  \n  \n  \n\n\n\n  expand\n\n\n\n\n  \n  \n  \nDi\nBy the end of this lesson, you shou",
+      "metadata": {
+        "created": 1732487713,
+        "updated": 1732488007,
+        "images": {},
+        "videos": {},
+        "published": true,
+        "hideInMenu": false,
+        "locked": false,
+        "readtime": 1,
         "status": ""
       }
     },
@@ -4393,7 +4414,7 @@
       "description": "",
       "metadata": {
         "created": 1732016689,
-        "updated": 1732446106,
+        "updated": 1732488010,
         "images": {},
         "videos": {},
         "published": true,
@@ -4416,7 +4437,7 @@
       "description": "",
       "metadata": {
         "created": 1732016689,
-        "updated": 1732446104,
+        "updated": 1732488008,
         "images": {},
         "videos": {},
         "published": false,
@@ -4434,13 +4455,13 @@
       "indent": 1,
       "location": "pages/item-c3812450-8eac-4ee9-8d56-842b77050a2a/index.html",
       "slug": "berpikir-komputasional-dan-algoritma-pemrograman/array",
-      "order": 4,
+      "order": 0,
       "parent": "item-f6a56c5c-9bb8-4c09-9e18-a4a4e8060ef8",
       "title": "Array",
       "description": "",
       "metadata": {
         "created": 1732016689,
-        "updated": 1732446107,
+        "updated": 1732488009,
         "images": {},
         "videos": {},
         "published": true,
@@ -4457,13 +4478,13 @@
       "indent": 1,
       "location": "pages/item-321262d4-5187-4ae3-a7d5-7504207ccfd1/index.html",
       "slug": "berpikir-komputasional-dan-algoritma-pemrograman/session",
-      "order": 5,
+      "order": 4,
       "parent": "item-f6a56c5c-9bb8-4c09-9e18-a4a4e8060ef8",
       "title": "SESSION",
       "description": "",
       "metadata": {
         "created": 1732016689,
-        "updated": 1732446107,
+        "updated": 1732488011,
         "images": {},
         "videos": {},
         "published": true,
@@ -4480,13 +4501,13 @@
       "indent": 1,
       "location": "pages/item-bd1b3d13-7abc-46d5-a7d7-c07831e68c29/index.html",
       "slug": "berpikir-komputasional-dan-algoritma-pemrograman/mengisi-data-siswa-dengan-form",
-      "order": 6,
+      "order": 5,
       "parent": "item-f6a56c5c-9bb8-4c09-9e18-a4a4e8060ef8",
       "title": "Mengisi Data Siswa dengan Form",
       "description": "",
       "metadata": {
         "created": 1732016689,
-        "updated": 1732446108,
+        "updated": 1732488011,
         "images": {},
         "videos": {},
         "published": true,
@@ -4501,13 +4522,13 @@
       "indent": 1,
       "location": "pages/item-586983b6-bd54-4459-b812-bdcb70e686e3/index.html",
       "slug": "berpikir-komputasional-dan-algoritma-pemrograman/mengedit-data-dengan-form",
-      "order": 7,
+      "order": 6,
       "parent": "item-f6a56c5c-9bb8-4c09-9e18-a4a4e8060ef8",
       "title": "Mengedit Data dengan Form",
       "description": "",
       "metadata": {
         "created": 1732016689,
-        "updated": 1732446108,
+        "updated": 1732488011,
         "images": {},
         "videos": {},
         "published": true,
@@ -4522,13 +4543,13 @@
       "indent": 1,
       "location": "pages/item-680d0d46-7ad4-457b-8d7e-594eae331bab/index.html",
       "slug": "berpikir-komputasional-dan-algoritma-pemrograman/menghapus-data-siswa",
-      "order": 8,
+      "order": 7,
       "parent": "item-f6a56c5c-9bb8-4c09-9e18-a4a4e8060ef8",
       "title": "Menghapus Data Siswa",
       "description": "",
       "metadata": {
         "created": 1732016690,
-        "updated": 1732446109,
+        "updated": 1732488012,
         "images": {},
         "videos": {},
         "published": true,
@@ -4543,13 +4564,13 @@
       "indent": 1,
       "location": "pages/item-8b826f34-9ac4-4235-9838-4ed25e8dbfd7/index.html",
       "slug": "berpikir-komputasional-dan-algoritma-pemrograman/laporan-data-presensi",
-      "order": 9,
+      "order": 8,
       "parent": "item-f6a56c5c-9bb8-4c09-9e18-a4a4e8060ef8",
       "title": "Laporan Data Presensi",
       "description": "",
       "metadata": {
         "created": 1732016690,
-        "updated": 1732446109,
+        "updated": 1732488012,
         "images": {},
         "videos": {},
         "published": true,
@@ -4559,26 +4580,6 @@
         "readtime": 2,
         "status": "",
         "icon": "hax:lesson"
-      }
-    },
-    {
-      "id": "item-8bcbbf68-c44f-42f9-97e4-43610e6684ac",
-      "indent": 0,
-      "location": "pages/item-8bcbbf68-c44f-42f9-97e4-43610e6684ac/index.html",
-      "slug": "berpikir-komputasional-dan-algoritma-pemrograman/mengedit-data-dengan-form-copy",
-      "order": 9,
-      "parent": "item-f6a56c5c-9bb8-4c09-9e18-a4a4e8060ef8",
-      "title": "Menampilan Data Id dengan Get",
-      "description": "Pada pelajaran lalu kita sudah menampilkan data siswa? amazing khan\n\n  \n  Tulis nama perintah sql yang kamu ingat dan jelaskan\n  \n  \n  \n\n\n\n  expand\n\n\n\n\n  \n  \n  \nDi\nBy the end of this lesson, you shou",
-      "metadata": {
-        "created": 1732487713,
-        "updated": 1732487911,
-        "images": {},
-        "videos": {},
-        "published": true,
-        "hideInMenu": false,
-        "locked": false,
-        "readtime": 1
       }
     },
     {
@@ -4592,7 +4593,7 @@
       "description": "",
       "metadata": {
         "created": 1732016690,
-        "updated": 1732446131,
+        "updated": 1732488035,
         "images": {},
         "videos": {},
         "published": false,
