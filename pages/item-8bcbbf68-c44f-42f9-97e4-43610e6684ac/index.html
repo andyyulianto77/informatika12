@@ -15,6 +15,7 @@
 
 
 
+
   <p></p>
   <p aria-labelledby="heading" aria-live="polite" aria-hidden="true"></p>
   <p></p></a11y-collapse>
@@ -22,10 +23,10 @@
 <learning-component subtitle="memunculkan data dengan get id" type="" accent-color="orange"><p>Pada akhir pelajaran, siswa dapat ... </p><ol><li>Dapat membuat program PHP sederhana untuk melakukan perhitungan, manipulasi data, dan interaksi dengan pengguna dengan menerapkan konsep GET </li><li>Dapat membuat halaman web dinamis.</li><li>Mampu menggunakan alat debugging untuk melacak masalah.</li><li>Dapat mengidentifikasi dan memperbaiki kesalahan sintaks dan logika dalam kod</li></ol><p></p></learning-component>
 <a11y-collapse icon="icons:expand-more" icon-expanded="av:fiber-manual-record" label="expand" heading="Tulis Q-2" tooltip="expand" accent-color="grey"><p part="heading-id"></p>
   <p></p>
-  <p part="heading">Tulis Q-2</p>
+  <p part="heading">Tulis tujuan yang paling dipahami dan alasannya!</p>
   <slot name="heading"></slot>
   <p></p>
-  <simple-icon-button-lite part="icon" aria-controls="content" aria-expanded="false" value="" icon="icons:expand-more" type="button"><button part="button" aria-labelledby="" controls="" form="" label="expand" aria-label="expand" name="" type="button" value=""><simple-icon-lite part="icon" icon="icons:expand-more" dir="ltr"> </simple-icon-lite><slot></slot></button></simple-icon-button-lite>
+  
 
 
 
@@ -37,35 +38,41 @@
 
 
 
+
   <p></p>
   <p aria-labelledby="heading" aria-live="polite" aria-hidden="true"></p>
   <p></p></a11y-collapse>
-<p>Di</p>
 <p>Tentu kita tahu, perintah yang telah kita buat sebelumnya.</p>
 <ul><li>$stmt-&gt;execute(['nis' =&gt; 202300]);</li></ul>
 <p>Misalkan kita ingin membiarkan pengguna mengetikkan id di akhir URL.</p>
-<ul><li>...?nis=5</li></ul>
+<ul><li>...?nis=202300</li></ul>
 <p>ID variabel, berikut kodenya</p>
 <code-sample copy-clipboard-button type="php"><template preserve-content="preserve-content"><!--?php
-// Get the id of the wombat the user wants to see.
-$id = $_GET['id'];
-...
-// Prepare SQL.
-$stmt = $dbConnection->prepare('SELECT * FROM siswa WHERE nis = :id');
-// Run it.
-$stmt->execute([':id' => '202300']);
+
 ...
 
-    <h1>Wombat <!--?php print $id; ?-->
+// Get the id of the wombat the user wants to see.
+$id = $_GET['id'];
+
+// Prepare SQL.
+$stmt = $dbConnection--->prepare('SELECT * FROM siswa WHERE nis = :id');
+// Run it.
+$stmt-&gt;execute(['id' =&gt; $id]);
+
+$row = $stmt-&gt;fetch();
+
+?&gt;
+
+
+
+
+    <h1>NIS Siswa <!--?php print $id; ?--></h1>
     <p>Name: <!--?php print $row['nama']; ?--></p>
-    <p>Jenis Kelamin: <!--?php print $row['gender']; ?--></p>
-    </template></code-sample>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
+    <p>Jenis Kelamin: <!--?php print $row['gender']; ?-->
+    
+    </p>
+    
+
+</template></code-sample>
+<p><ul><li>Dapatkan id dari URL (baris 4) </li><li>Buat placeholder untuk id di SQL (baris 6) </li><li>Jalankan kueri dengan placeholder (baris 8) </li></ul><br><span>Saya juga mengel</span><span>uarkan semua bidang, bukan hanya nama. Anda dapat mencobanya <a href="http://andy1.rf.gd/php/db/php/siswa-id.php?id=202300&amp;i=1" target="_blank">disini</a>.  Coba ID yang berbeda.</span></p>
+<p><span><br></span></p>
