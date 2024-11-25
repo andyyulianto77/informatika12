@@ -17,6 +17,7 @@
 
 
 
+
   <p></p>
   <p aria-labelledby="heading" aria-live="polite" aria-hidden="true"></p>
   <p></p></a11y-collapse>
@@ -34,6 +35,7 @@
 
 
   <simple-tooltip for="expand" position="bottom" offset="14" margin-top="14"><p><slot>expand</slot></p></simple-tooltip>
+
 
 
 
@@ -92,6 +94,7 @@ $dsn = "mysql:host=sql109.infinityfree.com;dbname=$dbName";
 
 // Connect.
 $dbConnection = new PDO($dsn, $dbUserName, $dbPassword);</template></code-sample>
+
 <p part="heading"></p><p part="heading"></p><p part="heading"></p>
 
     <slot name="heading"></slot>
@@ -114,14 +117,221 @@ $dbConnection = new PDO($dsn, $dbUserName, $dbPassword);</template></code-sample
 
 
 
+
     <p></p>
 
     <p aria-labelledby="heading" aria-live="polite" aria-hidden="true"></p>
 
     <p></p>
 </a11y-collapse>
-<h3 id="header-27191c9e-b6de-c05c-7696-570b671d4fb6">Dengan validasi</h3>
+<h3 data-original-level="H3" id="header-27191c9e-b6de-c05c-7696-570b671d4fb6">Dengan validasi</h3>
 <p>Mari kita validasi ID. Coba ini . Ubah id-nya, lalu lihat apa yang terjadi. Berikut kodenya. Saya menggunakan fungsi validasi di sini.</p>
 <p></p>
+<code-sample type="php" copy-clipboard-button><template preserve-content="preserve-content"><!--?php
+
+// Untuk terhubung ke DB, perlu nama DB, nama pengguna, dan kata sandi.
+$dbName = 'siswa';
+$dbUserName = 'sesuatu';
+$dbPassword = 'sesuatu';
+
+// Buat DSN.
+$dsn = "mysql:host=localhost;namadb=$namadb";
+
+// Hubungkan.
+koneksi $db global;
+$dbConnection = new PDO($dsn, $dbUserName, $dbPassword);
+$errorMessage = '';
+
+// Dapatkan id siswa yang ingin dilihat pengguna.
+$id = getParamFromGet('id');
+$errorMessage = checkSiswaId($id);
+jika ($errorMessage == '') {
+
+    // Siapkan SQL.
+    $stmt = $dbConnection------->prepare('SELECT * FROM siswa WHERE nis = :id');
+
+    // Jalankan.
+    $isQueryWorked = $stmt-&gt;execute(['id' =&gt; $id]);
+    jika ($isQueryWorked) {
+        $errorMessage = 'Maaf, terjadi kesalahan saat mencari siswa.';
+    }
+    else {
+        $row = $stmt-&gt;fetch();
+    }
+}
+?&gt;;
+
+
+
+    
+        <meta charset="UTF-8">
+        <title>Pertanyaan Siswa</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="styles.css">
+    
+    
+        <h1>Pertanyaan Siswa</h1>
+        <!--?php
+        if ($errorMessage != '') {
+	print "<p class='error-message'-->$errorMessage<p></p>";
+        }
+        else {
+            print "<p>Id: $id</p>";
+            print "<p>Name: {$row['name']}</p>";
+            print "<p>Weight: {$row['weight']}</p>";
+            print "<p>Comments: {$row['comments']}</p>";
+        }
+        ?&gt;
+    
+
+<!--?php	
+ 
+/**
+ * Dapatkan nilai untuk parameter dalam array GET.
+ * @param string $paramName Nama parameter.
+ * @return string|null Nilai, atau null jika tidak ditemukan.
+ */
+fungsi getParamFromGet(string $paramName) {
+    $nilaikembali = null;
+    jika (isset($_GET[$paramName])) {
+        $nilaikembali = $_GET[$namaparam];
+        jika ($nilaikembali == '') {
+            $nilaikembali = null;
+        }
+    }
+    kembalikan $returnValue;
+}
+ 
+
+/**
+ * Dapatkan nilai untuk parameter dalam array GET.
+ * @param string $paramName Name of the parameter.
+ * @return string|null Value, atau null jika tidak ditemukan.
+ */
+function getParamFromGet(string $paramName) {
+    $returnValue = null;
+    if (isset($_GET[$paramName])) {
+        $returnValue = $_GET[$paramName];
+        if ($returnValue == '') {
+            $returnValue = null;
+        }
+    }
+    return $returnValue;
+}
+ 
+/**
+ * Periksa identitas siswa.
+ * @param mixed $id ID siswa yang akan diperiksa.
+ * @return string Pesan kesalahan, MT jika tidak ada.
+ */
+function checkSiswaId($id) {
+    global $dbConnection;
+    $errorMessage = '';
+    if (is_null($id)) {
+        $errorMessage ='Maaf, Anda harus memberikan ID siswa';
+    }
+    if ($errorMessage == '') {
+        // Check id is numeric.
+        if (!is_numeric($id)) {
+            $errorMessage = 'Maaf, ID siswa harus berupa angka.<br-->';
+        }
+    }
+    if ($errorMessage == '') {
+        // Range check.
+        if ($id &lt; 1) {
+            $errorMessage = 'Maaf, id siswa harus satu atau lebih.<br>';
+        }
+    }
+    if ($errorMessage == '') {
+        // Existence check.
+        // Prepare SQL.
+        $stmt = $dbConnection-&gt;prepare('SELECT * FROM siswa WHERE nis = :id');
+        // Run it.
+        $stmt-&gt;execute(['id' =&gt; $id]);
+        // Anything returned?
+        if ($stmt-&gt;rowCount() == 0) {
+            $errorMessage = "Maaf, tidak ada siswa yang memiliki id $id.";
+        }
+    }
+    return $errorMessage;
+}</template></code-sample>
+<p>Koneksi DB sama seperti sebelumnya. Baris...&#160;</p>
+<code-sample type="javascript" copy-clipboard-button><template preserve-content="preserve-content">$id = getParamFromGet('id');</template></code-sample>
+<p>&#160;... memanggil fungsi yang kita buat sebelumnya. Fungsi ini mengembalikan nilai string, atau null jika nilainya hilang. Baris berikutnya memanggil fungsi validasi:&#160;</p>
+<code-sample type="javascript" copy-clipboard-button><template preserve-content="preserve-content">$errorMessage = checkSiswaId($id);</template></code-sample>
+<p>Seperti biasa, ia akan mengembalikan pesan kesalahan jika ada yang salah. Jika semuanya baik-baik saja, ia akan mengembalikan MT.&#160;</p>
+<p>Mari kita lihat fungsinya. Sebagian besar sama seperti sebelumnya, tetapi ada beberapa hal baru di bagian akhir.&#160;</p>
+<code-sample type="javascript" copy-clipboard-button highlight-start="68" highlight-end="100"><template preserve-content="preserve-content">/**
+ * Mulai baris 68
+ * Dapatkan nilai untuk parameter dalam array GET.
+ * @param string $paramName Nama parameter.
+ * @return string|null Nilai, atau null jika tidak ditemukan.
+ */
+fungsi getParamFromGet(string $paramName) {
+    $nilaikembali = null;
+    jika (isset($_GET[$paramName])) {
+        $nilaikembali = $_GET[$namaparam];
+        jika ($nilaikembali == '') {
+            $nilaikembali = null;
+        }
+    }
+    kembalikan $returnValue;
+}
+ 
+
+/**
+ * Dapatkan nilai untuk parameter dalam array GET.
+ * @param string $paramName Name of the parameter.
+ * @return string|null Value, atau null jika tidak ditemukan.
+ */
+function getParamFromGet(string $paramName) {
+    $returnValue = null;
+    if (isset($_GET[$paramName])) {
+        $returnValue = $_GET[$paramName];
+        if ($returnValue == '') {
+            $returnValue = null;
+        }
+    }
+    return $returnValue;
+}
+ 
+/**
+ * Periksa identitas siswa.
+ * @param mixed $id ID siswa yang akan diperiksa.
+ * @return string Pesan kesalahan, MT jika tidak ada.
+ */
+function checkSiswaId($id) {
+    global $dbConnection;
+    $errorMessage = '';
+    if (is_null($id)) {
+        $errorMessage ='Maaf, Anda harus memberikan ID siswa';
+    }
+    if ($errorMessage == '') {
+        // Check id is numeric.
+        if (!is_numeric($id)) {
+            $errorMessage = 'Maaf, ID siswa harus berupa angka.<br-->';
+        }
+    }
+    if ($errorMessage == '') {
+        // Range check.
+        if ($id &lt; 1) {
+            $errorMessage = 'Maaf, id siswa harus satu atau lebih.<br>';
+        }
+    }
+    if ($errorMessage == '') {
+        // Existence check.
+        // Prepare SQL.
+        $stmt = $dbConnection-&gt;prepare('SELECT * FROM siswa WHERE nis = :id');
+        // Run it.
+        $stmt-&gt;execute(['id' =&gt; $id]);
+        // Anything returned?
+        if ($stmt-&gt;rowCount() == 0) {
+            $errorMessage = "Maaf, tidak ada siswa yang memiliki id $id.";
+        }
+    }
+    return $errorMessage;
+}</br--></template></code-sample>
+<p>Mari tambahkan pemeriksaan untuk melihat apakah siswa itu ada. Tampaknya masuk akal jika itu menjadi bagian dari fungsi yang memvalidasi id siswa. Kode yang relevan adalah: Baris 98 memiliki sesuatu yang baru:</p>
 <p></p>
+<p>&#160;$stmt-&#38;gt;rowCount() Itulah jumlah rekaman dalam $stmt. Jika rowCount()nol, tidak ada yang dikembalikan, jadi wombat tidak ada.</p>
 <p><span><br></span></p>
