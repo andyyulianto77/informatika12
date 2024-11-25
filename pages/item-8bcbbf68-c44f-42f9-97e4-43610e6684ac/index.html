@@ -16,6 +16,7 @@
 
 
 
+
   <p></p>
   <p aria-labelledby="heading" aria-live="polite" aria-hidden="true"></p>
   <p></p></a11y-collapse>
@@ -33,6 +34,7 @@
 
 
   <simple-tooltip for="expand" position="bottom" offset="14" margin-top="14"><p><slot>expand</slot></p></simple-tooltip>
+
 
 
 
@@ -74,5 +76,52 @@ $row = $stmt-&gt;fetch();
     
 
 </template></code-sample>
-<p><ul><li>Dapatkan id dari URL (baris 4) </li><li>Buat placeholder untuk id di SQL (baris 6) </li><li>Jalankan kueri dengan placeholder (baris 8) </li></ul><br><span>Saya juga mengel</span><span>uarkan semua bidang, bukan hanya nama. Anda dapat mencobanya <a href="http://andy1.rf.gd/php/db/php/siswa-id.php?id=202300&amp;i=1" target="_blank">disini</a>.  Coba ID yang berbeda.</span></p>
+<p></p>
+<ul><li>Dapatkan id dari URL (baris 4) </li><li>Buat placeholder untuk id di SQL (baris 6) </li><li>Jalankan kueri dengan placeholder (baris 8) </li></ul>
+<br/><span>Saya juga mengel</span><span>uarkan semua bidang, bukan hanya nama. Anda dapat mencobanya <a href="http://andy1.rf.gd/php/db/php/siswa-id.php?id=202300&amp;i=1" target="_blank">disini</a>.  Coba ID yang berbeda.</span><a11y-collapse icon="icons:expand-more" icon-expanded="av:fiber-manual-record" label="expand" heading="Tulis Q-3 (Tulis kode untuk menghubungkan ke database)" tooltip="expand" accent-color="grey">  <p part="heading-id"></p>
+
+    <p></p>
+
+    <p part="heading">kode untuk menghubungkan ke database</p><code-sample type="javascript" copy-clipboard-button><template preserve-content="preserve-content">// To connect to a DB, need DB name, user name, and password.
+$dbName = 'if0_37345471_dblatihan';
+$dbUserName = 'if0_37345471';
+$dbPassword = 'zahzZt8usKL';
+
+// Create DSN.
+$dsn = "mysql:host=sql109.infinityfree.com;dbname=$dbName";
+
+// Connect.
+$dbConnection = new PDO($dsn, $dbUserName, $dbPassword);</template></code-sample>
+<p part="heading"></p><p part="heading"></p><p part="heading"></p>
+
+    <slot name="heading"></slot>
+
+    <p></p>
+
+  
+
+
+
+
+
+    <simple-tooltip for="expand" position="bottom" offset="14" margin-top="14"><p><slot>expand</slot></p></simple-tooltip>
+
+
+
+
+
+
+
+
+
+    <p></p>
+
+    <p aria-labelledby="heading" aria-live="polite" aria-hidden="true"></p>
+
+    <p></p>
+</a11y-collapse>
+<h3 id="header-27191c9e-b6de-c05c-7696-570b671d4fb6">Dengan validasi</h3>
+<p>Mari kita validasi ID. Coba ini . Ubah id-nya, lalu lihat apa yang terjadi. Berikut kodenya. Saya menggunakan fungsi validasi di sini.</p>
+<p></p>
+<p></p>
 <p><span><br></span></p>
