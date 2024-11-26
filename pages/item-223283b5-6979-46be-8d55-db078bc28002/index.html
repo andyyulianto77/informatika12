@@ -1,11 +1,11 @@
 
-<p>data sudah tersimpan di DB</p>
-<a11y-collapse icon="icons:expand-more" icon-expanded="av:fiber-manual-record" label="expand" heading="Tulis Q-2" tooltip="expand" accent-color="grey"><p part="heading-id"></p>
+<p>data siswa sudah tersimpan di tabel dan masuk ke database Latihan.</p>
+<a11y-collapse icon="icons:expand-more" icon-expanded="av:fiber-manual-record" label="collapse" heading="Tulis Q-1 Sebutkan nama kolom pada tabel siswa?" tooltip="collapse" accent-color="grey"><p part="heading-id"></p>
   <p></p>
-  <p part="heading">Tulis Q-2</p>
+  <p part="heading">kolom/field: nis, nama, alamat, dll</p>
   <slot name="heading"></slot>
   <p></p>
-  <simple-icon-button-lite part="icon" aria-controls="content" aria-expanded="false" value="" icon="icons:expand-more" type="button"><button part="button" aria-labelledby="" controls="" form="" label="expand" aria-label="expand" name="" type="button" value=""><simple-icon-lite part="icon" icon="icons:expand-more" dir="ltr"> </simple-icon-lite><slot></slot></button></simple-icon-button-lite>
+  
 
 
 
@@ -15,6 +15,7 @@
 
 
   <simple-tooltip for="expand" position="bottom" offset="14" margin-top="14"><p><slot>expand</slot></p></simple-tooltip>
+
 
 
 
@@ -26,15 +27,13 @@
   <p></p>
   <p aria-labelledby="heading" aria-live="polite" aria-hidden="true"></p>
   <p></p></a11y-collapse>
-<p>Di</p>
-<p></p>
 <learning-component subtitle="Unit 1" type=""><p><span>Pada akhir pelajaran, Siswa dapat ...</span></p><ol><li>Membedakan insert dan select.</li><li>Menulis dan menjalankan perintah SQL untuk menampilkan tabel dengan struktur yang benar.</li></ol><p></p><p></p></learning-component>
 <a11y-collapse icon="icons:expand-more" icon-expanded="av:fiber-manual-record" label="expand" heading="Tulis Q-2" tooltip="expand" accent-color="grey"><p part="heading-id"></p>
   <p></p>
-  <p part="heading">Tulis Q-2</p>
+  <p part="heading">Pilih tujuan yang paling penting dan alasannya?</p>
   <slot name="heading"></slot>
   <p></p>
-  <simple-icon-button-lite part="icon" aria-controls="content" aria-expanded="false" value="" icon="icons:expand-more" type="button"><button part="button" aria-labelledby="" controls="" form="" label="expand" aria-label="expand" name="" type="button" value=""><simple-icon-lite part="icon" icon="icons:expand-more" dir="ltr"> </simple-icon-lite><slot></slot></button></simple-icon-button-lite>
+  
 
 
 
@@ -44,6 +43,7 @@
 
 
   <simple-tooltip for="expand" position="bottom" offset="14" margin-top="14"><p><slot>expand</slot></p></simple-tooltip>
+
 
 
 
@@ -65,6 +65,43 @@
 <template preserve-content="preserve-content">SELECT * from siswa;</template></code-sample>
 <p>Beberapa orang suka menggunakan HURUF KAPITAL pada kata-kata yang merupakan bagian dari SQL, tetapi hal ini tidak memengaruhi cara program berjalan. Terserah Anda.&#160;</p>
 <p>Klik tab SQL di salah satu phpMyAdmin Anda, dan coba kueri tersebut.</p>
+<a11y-collapse icon="icons:expand-more" icon-expanded="av:fiber-manual-record" label="collapse" heading="Tulis Q-3" tooltip="collapse" accent-color="grey">  <p part="heading-id"></p>
+
+    <p></p>
+
+    <p part="heading">Pilih perintah yang paling kamu pahami dan jelaskan alasanmu?</p>
+
+    <slot name="heading"></slot>
+
+    <p></p>
+
+  
+
+
+
+
+
+
+
+
+    <simple-tooltip for="expand" position="bottom" offset="14" margin-top="14"><p><slot>expand</slot></p></simple-tooltip>
+
+
+
+
+
+
+
+
+
+
+
+    <p></p>
+
+    <p aria-labelledby="heading" aria-live="polite" aria-hidden="true"></p>
+
+    <p></p>
+</a11y-collapse>
 <p data-primary="1">_________________</p>
 <h3 data-original-level="H3" id="header-9d650e7c-5e73-4137-9650-683bca65fcc6">Penyortiran</h3>
 <p>Coba yang ini:</p>
@@ -83,6 +120,53 @@
   
 <template preserve-content="preserve-content">SELECT * from siswa  ORDER BY agama;</template></code-sample>
 <p>Sekarang kamu tahu.</p>
+<a11y-collapse icon="icons:expand-more" icon-expanded="av:fiber-manual-record" label="expand" heading="Tulis Q-4" tooltip="expand" accent-color="grey">    <p part="heading-id"></p>
+
+
+      <p></p>
+
+
+      <p part="heading">Tulis hasilnya dari perintah di atas!</p>
+
+
+      <slot name="heading"></slot>
+
+
+      <p></p>
+
+
+  
+
+
+
+
+
+
+
+
+      <simple-tooltip for="expand" position="bottom" offset="14" margin-top="14"><p><slot>expand</slot></p></simple-tooltip>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <p></p>
+
+
+      <p aria-labelledby="heading" aria-live="polite" aria-hidden="true"></p>
+
+
+      <p></p>
+
+</a11y-collapse>
 <h3 data-original-level="H3" id="header-6e0a79dc-0623-e3b0-d786-b56731b7ba3e">Pilih kolom Anda</h3>
 <p>Kami menggunakan * untuk menampilkan semua kolom. Anda dapat memilih satu subset, seperti ini:</p>
 <code-sample copy-clipboard-button type="html">  
@@ -111,12 +195,69 @@
 <code-sample type="javascript" copy-clipboard-button><template preserve-content="preserve-content">SELECT COUNT(*) AS num_records FROM siswa;</template></code-sample>
 <p>AS memungkinkan Anda menetapkan nama kolom dalam output SELECT, agar lebih mudah diprediksi. Saya mendapatkan:</p>
 <p></p>
-<media-image source="files/countAS.JPG" card citation="This is my citation." accent-color="grey" size="wide" offset="none"></media-image>
+<media-image source="files/countAS.JPG" card accent-color="grey" size="wide" offset="none" caption="select count (*) AS num_records FROM siswa" modal-title="select count (*) AS num_records FROM siswa" _has-caption></media-image>
 <p>Saya selalu menggunakan AS saat melakukan hitungan, total, dan semacamnya.</p>
 <p>Coba lagi:</p>
 <p></p>
 <code-sample type="javascript" copy-clipboard-button><template preserve-content="preserve-content">SELECT SUM(nis) AS total_weight FROM siswa;</template></code-sample>
 <p>Cobalah</p>
+<a11y-collapse icon="icons:expand-more" icon-expanded="av:fiber-manual-record" label="expand" heading="Tulis Q-4" tooltip="expand" accent-color="grey">      <p part="heading-id"></p>
+
+
+
+        <p></p>
+
+
+
+        <p part="heading">Tulis hasilnya dari perintah di atas!</p>
+
+
+
+        <slot name="heading"></slot>
+
+
+
+        <p></p>
+
+
+
+  
+
+
+
+
+
+
+
+
+        <simple-tooltip for="expand" position="bottom" offset="14" margin-top="14"><p><slot>expand</slot></p></simple-tooltip>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <p></p>
+
+
+
+        <p aria-labelledby="heading" aria-live="polite" aria-hidden="true"></p>
+
+
+
+        <p></p>
+
+
+</a11y-collapse>
 <h3 data-original-level="H3" id="h3--1537154410">Filter dengan WHERE</h3>
 <p>Kekuatan SELECT yang sebenarnya ada pada klausa WHERE, yang memungkinkan Anda memilih baris yang memenuhi kondisi yang Anda berikan. Misalnya:</p>
 <code-sample type="javascript" copy-clipboard-button><template preserve-content="preserve-content">SELECT nama, agama FROM siswa WHERE gender = "laki-laki"</template></code-sample>
@@ -128,14 +269,13 @@
 <template preserve-content="preserve-content">SELECT * FROM siswa WHERE berat &lt; 50;</template></code-sample>
 <h3 data-original-level="H3" id="header-0f853afd-7872-4e95-687a-187b542c28b2">DIMANA dengan yang lain</h3>
 <p>Anda dapat menggabungkan semua klausa ini bersama-sama. Khususnya, Anda dapat menggunakan WHERE dengan klausa lainnya. Misalnya:</p>
-<p></p>
 <code-sample type="javascript" copy-clipboard-button><template preserve-content="preserve-content">SELECT name, berat FROM siswa WHERE weight &gt;= 28 AND weight &lt;= 32 ORDER BY name;</template></code-sample>
-<h3 id="header-703626ae-60c5-6632-5848-bd1c343d5c18">Latihan</h3>
+<h3 data-original-level="H3" id="header-703626ae-60c5-6632-5848-bd1c343d5c18">Latihan</h3>
 <p>Pertanyaan tentang Siswa</p>
 <p>Gunakan basis data siswa Anda, dengan catatan yang Anda unduh.</p>
 <p>Anda akan diberikan beberapa pertanyaan untuk dituliskan SELECT-nya. Buat halaman web dengan nomor kueri, pertanyaan, SQL, tangkapan layar hasil. Letakkan nama Anda di bagian atas. Anda dapat melihat <a href="https://webappexamples.skilling.us/database/exercises/wombat-queries/wombat-queries-partial-solution.html" target="_blank" rel="noopener noreferrer">contoh</a></p>
 <ol><li>Apa saja id dan nama siswa yang beratnya kurang dari 25 kilogram?</li><li>Berapa berat siswa bernama Andy?</li><li>Berapa berat siswa yang diberi nama Andy, atau Ali?</li><li>Berapa banyak siswa yang beratnya kurang dari 30 kilogram?</li><li>Apa id dan nama siswa dengan id kurang dari 5, atau berat lebih dari 40 kilogram?</li><li>Berapa banyak siswa yang data beratnya hilang?</li><li>Berapa banyak siswa yang datanya hilang untuk bobot dan komentar?</li></ol>
 <p>Kirimkan URL halaman Anda.</p>
 <p>Jika Anda masuk sebagai siswa, Anda dapat mengirimkan solusi untuk latihan ini.</p>
-<h3 id="header-d3e8610b-0053-714c-0836-67ead4eb63a2">Berikutnya</h3>
+<h3 data-original-level="H3" id="header-d3e8610b-0053-714c-0836-67ead4eb63a2">Berikutnya</h3>
 <p>Mari kita lakukan beberapa pemilihan dalam PHP.</p>
