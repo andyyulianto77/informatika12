@@ -1,1 +1,21 @@
-<p></p>
+
+<p>Kita sudah menggunakan GET&#160;dengan aman di PHP, kita perlu membuat koneksi ke database menggunakan prepared statements, kita memastikan data yang dikirim aman dari serangan, seperti SQL injection, sehingga tidak ada yang bisa merusak database kita.</p>
+<a11y-collapse heading="Tulis Q1 Apa fungsi     require_once 'D:\secret-stuff\db-connect.php'; ?" heading-button accent-color="grey" icon="icons:expand-more" tooltip="collapse" label="expand"><p>Fungsi dari kode require_once 'D:\secret-stuff\db-connect.php'; adalah untuk menyertakan file db-connect.php ke dalam program PHP kita. File ini biasanya berisi kode untuk menghubungkan aplikasi ke database. </p><p>Penjelasan: </p><p><ol><li>require_once memastikan file hanya dimuat sekali, sehingga tidak ada kesalahan duplikasi jika file dipanggil lebih dari satu kali. </li><li>Dengan menaruh file di lokasi seperti D:\secret-stuff\, itu menjaga keamanan karena file ini tidak mudah diakses dari luar (misalnya, lewat browser). </li><li>Ini membantu program kita tetap rapi, karena koneksi database diatur dalam satu file terpisah dan dapat digunakan kembali di banyak tempat.</li></ol></p></a11y-collapse>
+<learning-component subtitle="1 Ke Banyak" type="objectives" accent-color="indigo" title="Tujuan Pembelajaran" icon="courseicons:learning-objectives"><p>Pada akhir pelajaran, siswa dapat ... </p><p><ol data-hax-lock="data-hax-lock"><li>Dapat membuat program PHP sederhana untuk melakukan perhitungan, manipulasi data, dan interaksi dengan pengguna dengan menerapkan konsep relasi DataBase 1 ke Banyak. </li><li>Dapat membuat halaman web dinamis.     Mampu menggunakan alat debugging untuk melacak masalah. </li><li>Dapat mengidentifikasi dan memperbaiki kesalahan sintaks dan logika dalam kode.</li></ol></p></learning-component>
+<p>Ini dia aplikasi anjing-di-lingkungan-sekitar lagi.</p>
+<media-image source="files/doggos-in-the-neighborhood.png" alt="doggos-in-the-neighborhood.png" accent-color="grey" size="wide" offset="narrow"></media-image>
+<p>Anda dapat mencoba aplikasinya .&#160;</p>
+<h2 id="header-5589475d-350c-684a-7fd3-64280ac3ecaa">Tabel, bidang, dan kunci&#160;</h2>
+<p>Basis data untuk aplikasi ini memiliki dua tabel. Pertama, ada rumah tangga:</p>
+<media-image source="files/households.png" alt="households.png" accent-color="grey" size="wide" offset="none"></media-image>
+<p>Ada dua kolom. household_id adalah bilangan bulat (bilangan bulat). Ini adalah kunci utama, yaitu, setiap baris memiliki id yang unik. Hanya ada satu rumah tangga 1, satu rumah tangga 2, dan seterusnya. Mungkin ada dua rumah tangga Mathieson yang berbeda. Mereka akan memiliki nama yang sama, tetapi kunci yang berbeda.&#160;</p>
+<p>Ini name adalah sebuah string.&#160;</p>
+<p>Meja lainnya adalah doggos.</p>
+<media-image source="files/doggos.png" alt="doggos.png" accent-color="grey" size="wide" offset="none"></media-image>
+<p>Memiliki tiga kolom: doggo_id kunci utama tabel, name: nama anjing, household: rumah tangga tempat anjing itu berada:&#160;</p>
+<ul><li>household berisi kunci dari households tabel. Jadi Renata dan Rosie tinggal di rumah tangga 1, yaitu Mathiesons. Tannis tinggal di rumah tangga 2, yaitu Sruay. </li><li>doggo.household (yaitu, household kolom tabel doggo) disebut kunci asing . Kunci ini menghubungkan tabel-tabel tersebut. Kunci asing adalah cara hubungan disimpan dalam sistem basis data relasional, seperti MySQL, Oracle, SQL Server, Access, dan lainnya.</li></ul>
+<p>Beberapa program dapat membaca struktur DB dan membuat diagramnya. Berikut ini adalah diagram yang digambar oleh phpMyAdmin.</p>
+<media-image source="files/phpMyAdmin.png" alt="phpMyAdmin.png" accent-color="grey" size="wide" offset="none"></media-image>
+<p>Berikut ini yang digambar PHPStorm.</p>
+<media-image source="files/phpstorm.png" alt="phpstorm.png" accent-color="grey" size="wide" offset="narrow"></media-image>
+<p><br></p>

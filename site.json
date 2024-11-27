@@ -4416,13 +4416,17 @@
       "slug": "perancangan-basis-data/page",
       "order": 9,
       "parent": "item-13298894-5889-4b24-b28f-5bbde3a3c6f1",
-      "title": "Page",
-      "description": "",
+      "title": "1 to Many (N)",
+      "description": "Kita sudah menggunakan GET&#160;dengan aman di PHP, kita perlu membuat koneksi ke database menggunakan prepared statements, kita memastikan data yang dikirim aman dari serangan, seperti SQL injection",
       "metadata": {
         "created": 1732701390,
-        "updated": 1732701390,
-        "images": [],
-        "videos": []
+        "updated": 1732703052,
+        "images": {},
+        "videos": {},
+        "published": true,
+        "hideInMenu": false,
+        "locked": false,
+        "readtime": 2
       }
     },
     {
