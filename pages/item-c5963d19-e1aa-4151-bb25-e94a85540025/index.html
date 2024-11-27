@@ -1,1 +1,90 @@
+
+<p>Kita sudah dapat mengambil data yang valid dengan PHP, kita harus memastikan data yang dimasukkan aman dan sesuai dengan yang dibutuhkan menggunakan fungsi tertentu.</p>
+<a11y-collapse heading="Tulis Q1 Apa fungsi dari global $thing;  dalam PHP? " heading-button accent-color="grey" icon="icons:expand-more" tooltip="expand" label="expand"><p>Fungsi dari `global $thing;` dalam PHP adalah untuk memberi tahu program bahwa kita ingin menggunakan variabel `$thing` yang didefinisikan di luar fungsi (di ruang lingkup global) di dalam fungsi.  Misalnya, kalau ada kotak mainan di luar kamar (variabel global) dan kamu mau mainkan isinya di dalam kamar (dalam fungsi), kamu harus bilang "global" dulu supaya boleh pakai isi kotak itu di dalam kamar. </p></a11y-collapse>
+<learning-component subtitle="Sembunyikan data koneksi" type="objectives" accent-color="indigo" title="Learning Objectives" icon="courseicons:learning-objectives"><p>Pada akhir pelajaran, siswa dapat ... </p><ol><li>Dapat membuat program PHP sederhana untuk melakukan perhitungan, manipulasi data, dan interaksi dengan pengguna dengan menerapkan konsep keamanan koneksi DB.</li><li>Dapat membuat halaman web dinamis. </li><li>Mampu menggunakan alat debugging untuk melacak masalah.     Dapat mengidentifikasi dan memperbaiki kesalahan sintaks dan logika dalam kode.</li></ol></learning-component>
+<a11y-collapse heading="Tulis Q2" heading-button accent-color="grey" icon="icons:expand-more" tooltip="expand" label="expand"><p>Tulis tujuan yang paling mudah dan alasannya!</p><p></p></a11y-collapse>
+<h3 data-original-level="H3" id="header-39bf3faf-ab43-8c52-9b36-ab5dc892b003">Masalahnya&#160;</h3>
+<p>Inilah yang telah kami lakukan.&#160;</p>
+<code-sample type="php" copy-clipboard-button data-hax-lock="data-hax-lock"><template preserve-content="preserve-content">// Untuk terhubung ke DB, perlu nama DB, nama pengguna, dan kata sandi.
+$dbName = 'sesuatu';
+$dbUserName = 'sesuatu';
+$dbPassword = 'sesuatu';
+// Buat DSN.
+$dsn = "mysql:host=localhost;namadb=$namadb";
+// Hubungkan.
+global $dbConnection;
+$dbConnection = new PDO($dsn, $dbUserName, $dbPassword);</template></code-sample>
+<p>Kami memiliki nama DB, nama pengguna, dan kata sandi di setiap halaman yang terhubung ke DB. Itu bisa berupa banyak halaman, dalam aplikasi web bisnis.</p>
+<h3 data-original-level="H3" id="header-dae5ecdb-fed4-b35c-999d-3fa83db36318">Memindahkan data koneksi DB&#160;</h3>
+<p>Kami ingin mempermudah perubahan data, jika kami ingin, misalnya, mengubah nama basis data. Yang kami lakukan, jika kami ingin memindahkan kode dari PC ke server Reclaim, yang menggunakan konvensi DB dan nama pengguna yang berbeda.&#160;</p>
+<p>DSN juga dapat berubah. Mungkin pada satu server aneh karena harus menggunakan SQL Server daripada MySQL. PDO dapat menanganinya, tetapi kita tidak dapat menggunakan port MySQL default 3306 lagi. Kita harus mengubah string DSN.&#160;</p>
+<p>Mari kita juga memindahkan data koneksi ke luar situs web sepenuhnya, untuk meningkatkan keamanan. Ini adalah sesuatu yang ditanyakan Ali sebelumnya.</p>
+<p>Tidak masalah. Mari kita ambil kode di atas, dan taruh di file .php terpisah, sebut saja db-connect.php:&#160;</p>
+<code-sample type="php" copy-clipboard-button><template preserve-content="preserve-content">// Untuk terhubung ke DB, perlu nama DB, nama pengguna, dan kata sandi.
+$dbName = 'sesuatu';
+$dbUserName = 'sesuatu';
+$dbPassword = 'sesuatu';
+// Buat DSN.
+$dsn = "mysql:host=localhost;namadb=$namadb";
+// Hubungkan.
+global $dbConnection;
+$dbConnection = new PDO($dsn, $dbUserName, $dbPassword);</template></code-sample>
+<p>(Perhatikan &#60;?php di bagian atas.)&#160;</p>
+<p>Mari kita taruh berkas di luar web root, mungkin di D:\secret-stuff\PC lokal Anda. Ingat bahwa web root XAMPP adalah seperti D:\xampp\htdocs\, jadi hanya berkas di bawah itu yang dapat diakses melalui localhost. Berkas apa pun di luar folder itu tidak akan memiliki URL, karena tidak dapat diakses melalui Apache.&#160;</p>
+<a11y-collapse heading="Tulis Q3" heading-button accent-color="grey" icon="icons:expand-more" tooltip="expand" label="expand"><p>Apa nama file tambahan untuk keamanan program php?</p></a11y-collapse>
+<p>Di server hosting Anda, exercise subdomain Anda berada dalam folder seperti /home/ali/exercises.mysite.com/. File-file dalam folder tersebut dapat diakses di https://exercises.mysite.com. Jadi, mari kita letakkan file dengan info koneksi DB di folder di luar folder tersebut, seperti /home/ali/secret-stuff/.</p>
+<p>Kemudian ubah program di aplikasi kita untuk melakukan sesuatu seperti ini:</p>
+<code-sample type="php" copy-clipboard-button data-hax-lock="data-hax-lock"><template preserve-content="preserve-content"><!--?php
+require_once 'D:\secret-stuff\db-connect.php';
+// Dapatkan id siswa yang ingin dilihat pengguna.
+$id = $_GET['id'];
+// Siapkan SQL.
+$stmt = $dbConnection--->prepare('SELECT * FROM siswa WHERE nis = :id');</template></code-sample>
+<p>Apaan nih!&#160;Pindahkan program ke server hosting kami, dan kami harus menyentuh setiap halaman.&#160; Dengan&#160;<span>require_once 'D:\secret-stuff\db-connect.php'; </span><span>Kita bisa menempelkannya di pustaka kode, yang disertakan pada setiap halaman.</span></p>
+<p><span>Oke, itu akan berhasil. Sebelumnya, kita telah membahas tentang membuat pustaka kode, dengan fungsi-fungsi bermanfaat yang dapat kita bagikan di seluruh aplikasi kita. Katakanlah kita memiliki pustaka kode yang disebut useful-stuff.php. Pustaka itu ada di dalam folder library. Program memuatnya seperti ini: </span></p>
+<p><span>// Muat fungsi yang berguna. </span></p>
+<ul><li>require_once 'D:\secret-stuff\db-connect.php';</li></ul>
+<p><span>Oke, kita sudah melakukannya sebelumnya. </span></p>
+<p><span>Dalam useful-stuff.php, kita menambahkan baris... </span></p>
+<ul><li>require_once 'D:\secret-stuff\db-connect.php';</li></ul>
+<p><span>Baris itu hanya akan ada dalam satu berkas, useful-stuff.php yang disertakan pada setiap halaman. Saat kita mengunggah aplikasi ke Reclaim, ubah satu baris itu ke useful-stuff.php lokasi baru.<br></span></p>
+<p><span>Mari kita bahas lagi. Saat kita menerapkan aplikasi dari PC ke hosting, kita perlu: </span></p>
+<p><span>Ubah tempat penyimpanan file rahasia, dari folder Windows ke folder Linux. </span></p>
+<p><span>Ubah berkas rahasia ke info koneksi DB Linux. </span></p>
+<p><span>Jadi, kami mengedit library/useful-stuff.php, untuk menunjuk ke berkas rahasia di server produksi. Dari: </span></p>
+<p><span>// Muat rahasia DB dari luar root web. </span></p>
 <p></p>
+<p><ul><li>require_once 'D:\secret-stuff\db-connect.php';</li></ul></p>
+<p><span>Ke: </span></p>
+<p><span>// Muat rahasia DB dari luar root web. </span></p>
+<p><ul><li>require_once '/home/rosie/secret-stuff/db-connect.php';</li></ul></p>
+<p>Kemudian ubah db-connect.php, dari versi Windows lokal:</p>
+<p></p>
+<p><br></p>
+<code-sample type="php" copy-clipboard-button data-hax-lock="data-hax-lock"><template preserve-content="preserve-content">// Untuk terhubung ke DB, perlu nama DB, nama pengguna, dan kata sandi.
+$dbName = 'sesuatu';
+$dbUserName = 'sesuatu';
+$dbPassword = 'sesuatu';
+// Buat DSN.
+$dsn = "mysql:host=localhost;namadb=$namadb";
+// Hubungkan.
+global $dbConnection;
+$dbConnection = new PDO($dsn, $dbUserName, $dbPassword);</template></code-sample>
+<p>Ke versi produksi Linux:</p>
+<code-sample copy-clipboard-button type="php" data-hax-lock="data-hax-lock">  
+<template preserve-content="preserve-content">// Untuk terhubung ke DB, perlu nama DB, nama pengguna, dan kata sandi.
+$dbName = 'rosie_siswa';
+$dbUserName = 'rosie_sesuatu';
+$dbPassword = 'sesuatu';
+// Buat DSN.
+$dsn = "mysql:host=localhost;namadb=$namadb";
+// Hubungkan.
+global $dbConnection;
+$dbConnection = new PDO($dsn, $dbUserName, $dbPassword);</template></code-sample>
+<a11y-collapse heading="Tulis Q5" heading-button accent-color="grey" icon="icons:expand-more" tooltip="collapse" label="collapse"><p>Apa perbedaan file di lokal dan di server hosting?</p></a11y-collapse>
+<h3 id="header-dcdc23be-49ad-fee7-4c87-7cb1d97ae145">Kami punya semuanya!&#160;</h3>
+<p>Sekarang data rahasia kami terlindungi, sembari memungkinkan penyebaran lintas sistem operasi, di waktu yang sama!&#160;</p>
+<h6 id="header-adda8b63-67d8-982a-d781-b8dde6ee1d76" data-instructional-action="listen" data-design-treatment="bg" data-primary="7">Wawancara kerja&#160;</h6>
+<p data-border-radius="xs" data-border="sm">Hal lain yang terdengar bagus dalam wawancara kerja: "Saya belajar cara mempermudah penerapan dari server pengembangan ke server produksi."&#160;</p>
+<h3 id="header-edf3e7d3-d4d0-d426-77e2-0a0e4c819847">Apa sekarang?&#160;</h3>
+<p>Mari kita bicarakan tentang kueri lintas tabel.</p>

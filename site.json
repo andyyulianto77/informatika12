@@ -4393,13 +4393,18 @@
       "slug": "perancangan-basis-data/menampilan-data-id-dengan-get/page",
       "order": 0,
       "parent": "item-b2770f4f-9a7e-4889-960a-ba11e858bc0b",
-      "title": "Page",
-      "description": "",
+      "title": "Sembunyikan data koneksi",
+      "description": "Kita sudah dapat mengambil data yang valid dengan PHP, kita harus memastikan data yang dimasukkan aman dan sesuai dengan yang dibutuhkan menggunakan fungsi tertentu.\nFungsi dari `global $thing;` dala",
       "metadata": {
         "created": 1732698500,
-        "updated": 1732698500,
-        "images": [],
-        "videos": []
+        "updated": 1732701250,
+        "images": {},
+        "videos": {},
+        "published": true,
+        "pageType": "content",
+        "hideInMenu": false,
+        "locked": false,
+        "readtime": 4
       }
     },
     {
