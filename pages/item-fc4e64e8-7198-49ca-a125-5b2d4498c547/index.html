@@ -1,11 +1,11 @@
 
 <p>Kita sudah menggunakan GET&#160;dengan aman di PHP, kita perlu membuat koneksi ke database menggunakan prepared statements, kita memastikan data yang dikirim aman dari serangan, seperti SQL injection, sehingga tidak ada yang bisa merusak database kita.</p>
-<a11y-collapse heading="Tulis Q1 Apa fungsi     require_once 'D:\secret-stuff\db-connect.php'; ?" heading-button accent-color="grey" icon="icons:expand-more" tooltip="collapse" label="expand"><p>Fungsi dari kode require_once 'D:\secret-stuff\db-connect.php'; adalah untuk menyertakan file db-connect.php ke dalam program PHP kita. File ini biasanya berisi kode untuk menghubungkan aplikasi ke database. </p><p>Penjelasan: </p><p><ol><li>require_once memastikan file hanya dimuat sekali, sehingga tidak ada kesalahan duplikasi jika file dipanggil lebih dari satu kali. </li><li>Dengan menaruh file di lokasi seperti D:\secret-stuff\, itu menjaga keamanan karena file ini tidak mudah diakses dari luar (misalnya, lewat browser). </li><li>Ini membantu program kita tetap rapi, karena koneksi database diatur dalam satu file terpisah dan dapat digunakan kembali di banyak tempat.</li></ol></p></a11y-collapse>
-<learning-component subtitle="1 Ke Banyak" type="objectives" accent-color="indigo" title="Tujuan Pembelajaran" icon="courseicons:learning-objectives"><p>Pada akhir pelajaran, siswa dapat ... </p><p><ol data-hax-lock="data-hax-lock"><li>Dapat membuat program PHP sederhana untuk melakukan perhitungan, manipulasi data, dan interaksi dengan pengguna dengan menerapkan konsep relasi DataBase 1 ke Banyak. </li><li>Dapat membuat halaman web dinamis.     Mampu menggunakan alat debugging untuk melacak masalah. </li><li>Dapat mengidentifikasi dan memperbaiki kesalahan sintaks dan logika dalam kode.</li></ol></p></learning-component>
+<a11y-collapse heading="Tulis Q1 Apa fungsi     require_once 'D:\secret-stuff\db-connect.php'; ?" heading-button accent-color="grey" icon="icons:expand-more" tooltip="expand" label="expand"><p>Fungsi dari kode require_once 'D:\secret-stuff\db-connect.php'; adalah untuk menyertakan file db-connect.php ke dalam program PHP kita. File ini biasanya berisi kode untuk menghubungkan aplikasi ke database. </p><p>Penjelasan: </p><p></p><ol><li>require_once memastikan file hanya dimuat sekali, sehingga tidak ada kesalahan duplikasi jika file dipanggil lebih dari satu kali. </li><li>Dengan menaruh file di lokasi seperti D:\secret-stuff\, itu menjaga keamanan karena file ini tidak mudah diakses dari luar (misalnya, lewat browser). </li><li>Ini membantu program kita tetap rapi, karena koneksi database diatur dalam satu file terpisah dan dapat digunakan kembali di banyak tempat.</li></ol><p></p></a11y-collapse>
+<learning-component subtitle="1 Ke Banyak" type="objectives" accent-color="indigo" title="Learning Objectives" icon="courseicons:learning-objectives"><p>Pada akhir pelajaran, siswa dapat ... </p><p></p><ol data-hax-lock="data-hax-lock"><li>Dapat membuat program PHP sederhana untuk melakukan perhitungan, manipulasi data, dan interaksi dengan pengguna dengan menerapkan konsep relasi DataBase 1 ke Banyak. </li><li>Dapat membuat halaman web dinamis.     Mampu menggunakan alat debugging untuk melacak masalah. </li><li>Dapat mengidentifikasi dan memperbaiki kesalahan sintaks dan logika dalam kode.</li></ol><p></p></learning-component>
 <p>Ini dia aplikasi anjing-di-lingkungan-sekitar lagi.</p>
 <media-image source="files/doggos-in-the-neighborhood.png" alt="doggos-in-the-neighborhood.png" accent-color="grey" size="wide" offset="narrow"></media-image>
 <p>Anda dapat mencoba aplikasinya .&#160;</p>
-<h2 id="header-5589475d-350c-684a-7fd3-64280ac3ecaa">Tabel, bidang, dan kunci&#160;</h2>
+<h2 data-original-level="H2" id="header-5589475d-350c-684a-7fd3-64280ac3ecaa">Tabel, bidang, dan kunci&#160;</h2>
 <p>Basis data untuk aplikasi ini memiliki dua tabel. Pertama, ada rumah tangga:</p>
 <media-image source="files/households.png" alt="households.png" accent-color="grey" size="wide" offset="none"></media-image>
 <p>Ada dua kolom. household_id adalah bilangan bulat (bilangan bulat). Ini adalah kunci utama, yaitu, setiap baris memiliki id yang unik. Hanya ada satu rumah tangga 1, satu rumah tangga 2, dan seterusnya. Mungkin ada dua rumah tangga Mathieson yang berbeda. Mereka akan memiliki nama yang sama, tetapi kunci yang berbeda.&#160;</p>
@@ -15,7 +15,48 @@
 <p>Memiliki tiga kolom: doggo_id kunci utama tabel, name: nama anjing, household: rumah tangga tempat anjing itu berada:&#160;</p>
 <ul><li>household berisi kunci dari households tabel. Jadi Renata dan Rosie tinggal di rumah tangga 1, yaitu Mathiesons. Tannis tinggal di rumah tangga 2, yaitu Sruay. </li><li>doggo.household (yaitu, household kolom tabel doggo) disebut kunci asing . Kunci ini menghubungkan tabel-tabel tersebut. Kunci asing adalah cara hubungan disimpan dalam sistem basis data relasional, seperti MySQL, Oracle, SQL Server, Access, dan lainnya.</li></ul>
 <p>Beberapa program dapat membaca struktur DB dan membuat diagramnya. Berikut ini adalah diagram yang digambar oleh phpMyAdmin.</p>
-<media-image source="files/phpMyAdmin.png" alt="phpMyAdmin.png" accent-color="grey" size="wide" offset="none"></media-image>
+<media-image source="files/phpMyAdmin.png" alt="phpMyAdmin.png" accent-color="grey" size="wide" offset="none" citation="https://webapps.skilling.us/lesson/1n" caption="phpmyadmin" modal-title="phpmyadmin" _has-caption></media-image>
 <p>Berikut ini yang digambar PHPStorm.</p>
-<media-image source="files/phpstorm.png" alt="phpstorm.png" accent-color="grey" size="wide" offset="narrow"></media-image>
+<media-image source="files/phpstorm.png" alt="phpstorm.png" accent-color="grey" size="wide" offset="narrow" caption="gambar di phpstrom" citation="https://webapps.skilling.us/lesson/1n" modal-title="gambar di phpstrom" _has-caption></media-image>
+<p>hubungan 1:N&#160;</p>
+<p>Berikut tabelnya lagi.&#160;</p>
+<grid-plate item-margin="16" item-padding="16" layout="1-1"><media-image source="files/households.png" alt="households.png" accent-color="grey" size="wide" offset="none" slot="col-1"></media-image>
+<p slot="col-1">Tabel Rumah tangga pemilik anjing</p><media-image source="files/doggos.png" alt="doggos.png" slot="col-2" accent-color="grey" size="wide" offset="none"></media-image>
+<p slot="col-2">Tabel Anjing terhubung dengan pemilik</p></grid-plate>
+<p>Setiap anjing hanya dapat berada dalam satu rumah tangga. Namun, satu rumah tangga dapat memiliki lebih dari satu anjing. Rumah tangga Mathiesons memiliki dua anjing.&#160;</p>
+<p>Ini disebut hubungan 1:N, atau satu ke banyak. Anda membuat hubungan 1:N dengan mengambil kunci utama tabel di sisi 1, dan menaruhnya di tabel di sisi N.&#8203;</p>
+<p>1:N kueri&#160;</p>
+<p>Misalnya Anda ingin mengetahui nama rumah tangga Warbler. Berikut langkah-langkahnya:&#160;</p>
+<ol><li>Temukan tabel dan kolom dengan hal yang Anda ketahui (yaitu Warbler, dalam doggos.name). </li><li>Temukan tabel dan kolom dengan hal yang ingin Anda ketahui (yaitu households.name). </li><li>Gunakan kunci untuk menemukan jalur antar tabel. </li></ol>
+<p>Mari kita bahas satu per satu. Pertama: Temukan tabel dan kolom dengan hal yang Anda ketahui</p>
 <p><br></p>
+<media-image source="files/query-a.png" alt="query-a.png" accent-color="grey" size="wide" offset="none"></media-image>
+<span>Kita tahu nama anjing itu adalah Warbler.<br><br></span><media-image source="files/query-b.png" alt="query-b.png" accent-color="grey" size="wide" offset="none"></media-image>
+<p>Kami ingin tahu nama rumah tangganya. Itu households.name.</p>
+<media-image source="files/query-c.png" alt="query-c.png" accent-color="grey" size="wide" offset="none"></media-image>
+<p>Ada jalur dari kunci asing doggos.householdke kunci utama households.household_id.</p>
+<p>Oke, mari kita ubah itu menjadi SQL. Mari kita mulai dengan template SELECT:</p>
+<ul><li>MEMILIH</li><li>DARI</li><li>DI MANA</li></ul>
+<p>Langkah pertama lagi: mulai dengan apa yang kita ketahui, yaitu nama anjing itu adalah Warbler.</p>
+<media-image source="files/query-a (1).png" alt="Temukan tabel dan kolom dengan hal yang Anda ketahui" accent-color="grey" size="wide" offset="none"></media-image>
+<ul><li>MEMILIH</li><li>DARI doggos</li><li>DI MANA doggos.nama = 'Warbler'</li></ul>
+<p>Tambahkan kondisi di WHERE. Letakkan tabel di FROM.</p>
+<p>Langkah 2: apa yang ingin kita ketahui.&#160;</p>
+<p></p>
+<media-image source="files/query-b (1).png" alt="Temukan tabel dan kolom dengan hal yang ingin Anda ketahui " accent-color="grey" size="wide" offset="none" citation="https://webapps.skilling.us/lesson/1n"></media-image>
+<p>Temukan tabel dan kolom dengan hal yang ingin Anda ketahui&#160;</p>
+<p><ul><li>PILIH rumah tangga.nama </li><li>DARI doggos , rumah tangga </li><li>DI MANA doggos.nama = 'Warbler' </li></ul></p>
+<p>Letakkan bidang target setelah SELECT, dan tambahkan tabel ke FROM.</p>
+<p>Langkah 3:&#160;<span>Tambahkan jalur </span></p>
+<p><span><br></span></p>
+<media-image source="files/query-c.png" alt="query-c.png" accent-color="grey" size="wide" offset="none" caption="Gunakan kunci untuk menemukan jalur antar tabel " citation="https://webapps.skilling.us/lesson/1n" modal-title="Gunakan kunci untuk menemukan jalur antar tabel " _has-caption></media-image>
+ <p><span>Tautan doggos.household dan households.household_id. </span></p>
+<span>PILIH rumah tangga.nama&#160;</span><p><span>DARI doggos, rumah tangga </span></p>
+<p><span>DI MANA doggos.nama = 'Warbler'   dan doggos.household = rumah tangga.household_id </span></p>
+<blockquote><span>Catatan </span></blockquote>
+<p><span>Cara menggabungkan tabel ini disebut key chain. Ada metode lain, menggunakan kata kunci seperti INNER JOIN. Profesor lain mungkin ingin Anda menggunakan metode itu dalam kursus mereka. </span></p>
+<blockquote><span>Saya menggunakan gantungan kunci di sini karena lebih mudah dipahami.</span></blockquote>
+<p><span><br></span></p>
+<p></p>
+<p></p>
+<p><span><br></span></p>
