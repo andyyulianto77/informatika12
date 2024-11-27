@@ -4387,6 +4387,22 @@
       }
     },
     {
+      "id": "item-c5963d19-e1aa-4151-bb25-e94a85540025",
+      "indent": 0,
+      "location": "pages/item-c5963d19-e1aa-4151-bb25-e94a85540025/index.html",
+      "slug": "perancangan-basis-data/menampilan-data-id-dengan-get/page",
+      "order": 0,
+      "parent": "item-b2770f4f-9a7e-4889-960a-ba11e858bc0b",
+      "title": "Page",
+      "description": "",
+      "metadata": {
+        "created": 1732698500,
+        "updated": 1732698500,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
       "id": "item-0b7ddef5-2482-45f7-9467-12d8a15b5c42",
       "indent": 1,
       "location": "pages/item-0b7ddef5-2482-45f7-9467-12d8a15b5c42/index.html",
