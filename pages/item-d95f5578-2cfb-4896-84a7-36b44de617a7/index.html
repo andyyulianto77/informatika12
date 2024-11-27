@@ -1,14 +1,15 @@
 
-<p>kalau tanpa database sudah paham</p>
+<p>Anda sudah memiliki kemampuan membuat database dan tabel di phpMyAdmin dengan perintah SQL dasar. Mulai dari memilih database yang dibuat, membuat tabel. Tabel siswa sudah siap untuk diisi dengan data siswa. Kamu bisa memasukkan data melalui tab Insert di phpMyAdmin. Dengan langkah-langkah ini, kamu sudah berhasil membuat database dan tabel sederhana.</p>
 <a11y-collapse icon="icons:expand-more" icon-expanded="av:fiber-manual-record" label="expand" heading="Tulis Q-1" tooltip="expand" accent-color="grey"><p part="heading-id"></p>
   <p></p>
-  <p part="heading">Apa nama database yang sudah dibuat?</p>
+  <p part="heading">Apa nama database, nama tabel, nama pengguna dan password yang sudah dibuat?</p>
   <slot name="heading"></slot>
   <p></p>
   
 
 
   <simple-tooltip for="expand" position="bottom" offset="14" margin-top="14"><p><slot>expand</slot></p></simple-tooltip>
+
 
 
 
@@ -21,9 +22,8 @@
   <p></p>
   <p aria-labelledby="heading" aria-live="polite" aria-hidden="true"></p>
   <p></p></a11y-collapse>
-<p></p>
 <learning-component subtitle="Koneksi ke DATABASE" type="objectives" accent-color="indigo" title="Learning Objectives" icon="courseicons:learning-objectives"><p role="textbox">Pada akhir pembelajaran, Anda dapat ...</p><ol role="textbox"><li>Dapat membuat program PHP sederhana untuk melakukan perhitungan, manipulasi data, dan interaksi dengan pengguna dengan menerapkan koneksi ke database</li><li>Dapat membuat halaman web dinamis.</li><li>Mampu menggunakan alat debugging untuk melacak masalah.</li><li>Dapat mengidentifikasi dan memperbaiki kesalahan sintaks dan logika dalam kode.</li></ol></learning-component>
-<a11y-collapse icon="icons:expand-more" icon-expanded="av:fiber-manual-record" label="collapse" heading="Tulis Q-2" tooltip="collapse" accent-color="grey"><p part="heading-id"></p>
+<a11y-collapse icon="icons:expand-more" icon-expanded="av:fiber-manual-record" label="expand" heading="Tulis Q-2" tooltip="expand" accent-color="grey"><p part="heading-id"></p>
   <p></p>
   <p part="heading">Tulis tujuan yang paling dipahami dan alasannya!</p>
   <slot name="heading"></slot>
@@ -32,6 +32,7 @@
 
 
   <simple-tooltip for="expand" position="bottom" offset="14" margin-top="14"><p><slot>expand</slot></p></simple-tooltip>
+
 
 
 
@@ -71,13 +72,12 @@ $dbConnection = new PDO($dsn, $dbUserName, $dbPassword);</template></code-sample
 <template preserve-content="preserve-content">$dsn = "mysql:host=localhost;dbname=$dbName";</template></code-sample>
 <p>Ini memberikan nama server dengan DB, dan nama DB.</p>
 <p>Nama server selalu <b><i>localhost </i></b>untuk kami, baik di PC Anda maupun di server <b><i>Infinityfree </i></b>Anda.</p>
-<p></p>
 <meme-maker alt="Cat stalking a small toy" image-url="files/Gambar-02.-PP-WA-Kucing-Gokil-selfie-di-kebun.jpg" top-text="Tunggu, apa?" bottom-text=" localhost di server InfinityFree?" data-width="50" data-margin="center">
     <div>Tunggu, apa?</div>
       <img src="files/Gambar-02.-PP-WA-Kucing-Gokil-selfie-di-kebun.jpg" alt="Cat stalking a small toy" preload="lazy" aria-describedby=""/>
     <div> localhost di server InfinityFree?</div></meme-maker>
 <p>Ini memang tampak aneh. Masalahnya, MySQL berjalan pada komputer yang sama tempat program PHP Anda berjalan.</p>
-<media-image source="files/with-apache.png" card citation="This is my citation." accent-color="grey" size="wide" offset="none"></media-image>
+<media-image source="files/with-apache.png" card citation="tutorial webapps skilling us" accent-color="grey" size="wide" offset="none"></media-image>
 <p>Jadi, sejauh menyangkut PHP, MySQL berjalan pada localhost.&#160;</p>
 <p>localhost sebenarnya tidak berarti "PC Anda." Ketika sebuah program merujuk ke localhost, artinya adalah "komputer apa pun yang saya gunakan."&#160;</p>
 <p>Jika suatu program PHP berjalan di PC Anda, localhostitu adalah PC Anda, sejauh menyangkut PHP.&#160;</p>
@@ -161,7 +161,7 @@ $row = $stmt-&gt;fetch();
 <template preserve-content="preserve-content">SELECT * FROM siswa WHERE nis = 202300;DELETE * FROM siswa;</template></code-sample>
 <p>Data siswa hilang! Tidak begitu bagus.</p>
 <p>Itu adalah serangan injeksi SQL. Itu adalah subjek <a href="https://xkcd.com/327/" target="_blank" rel="noopener noreferrer">kartun XKCD</a></p>
-<media-image source="files/exploits_of_a_mom.png" card citation="This is my citation." accent-color="grey" size="wide" offset="none"></media-image>
+<media-image source="files/exploits_of_a_mom.png" card citation="https://xkcd.com/327/" accent-color="grey" size="wide" offset="none" link="https://xkcd.com/327/" caption="kartun XKCD" modal-title="kartun XKCD" _has-caption></media-image>
 <p>Kami ingin <em>membersihkan</em> data dari pengguna sebelum kami menggunakannya. PDO tahu cara melakukannya.</p>
 <code-sample type="html" copy-clipboard-button><template preserve-content="preserve-content">// Siapkan SQL.
 $stmt = $dbConnection-&gt;prepare('SELECT * FROM siswa WHERE id_siswa = :nis');
@@ -171,7 +171,6 @@ $stmt-&gt;execute(['id_siswa' =&gt; 202300]);</template></code-sample>
 <p>Kami menyiapkan pernyataan SQL dengan placeholder, seperti <mark>:nis</mark> . Saat kami menjalankan pernyataan yang telah disiapkan, kami mengirimkan parameter untuk placeholder. PDO akan memastikan mereka tidak melakukan Hal-hal Jahat.</p>
 <h3 data-original-level="H3" id="header-303aed86-390e-7cf3-beb8-f7820764b021">Mengambil data dari DBMS</h3>
 <p>Jadi, kami meneruskan SQL ke DBMS. Bagaimana kami mendapatkan hasilnya?</p>
-<p></p>
 <code-sample type="php" copy-clipboard-button><template preserve-content="preserve-content">// Siapkan SQL.
 $stmt = $dbConnection-&gt;prepare('SELECT * FROM siswa WHERE id_siswa = :id');
 // Jalankan.
@@ -210,5 +209,5 @@ $row = $stmt-&gt;fetch();
 <p>Kami memiliki pernyataan seperti ini:</p>
 <ul><li>$dbConnection = new PDO ($dsn, $dbUserName, $dbPassword);</li></ul>
 <p>PHP memiliki lebih dari satu pustaka kode untuk menghubungkan ke DB. Dua pustaka utama untuk MySQL adalah mysqli dan PDO. Kami menggunakan pustaka PDO. Lebih mudah digunakan, dan mendukung lebih dari sekadar MySQL.</p>
-<p>Berikut <a href="https://phpdelusions.net/pdo" target="_blank" rel="noopener noreferrer">tutorial bagus</a></p>
+<p>Berikut <a href="https://phpdelusions.net/pdo" target="_blank" rel="noopener noreferrer" role="textbox">tutorial bagus</a>&#160;tentang PDO. Banyak contoh, dan sebagainya. Tutorial ini mencakup lebih dari yang kita butuhkan untuk kursus ini, tetapi tetap saja ada baiknya untuk dilihat.</p>
 <p><span>Mari dapatkan beberapa interaksi pengguna, melalui parameter URL.</span><br></p>
