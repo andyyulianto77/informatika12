@@ -43,7 +43,7 @@
   <a href="http://andy1.rf.gd/php/db/php/siswa-id.php?id=202300" target="_blank">
     <mark>disini</mark>
     </a>. Coba ID yang berbeda.</p>
-<a11y-collapse heading="Tulis Q-3 (Tulis kode untuk menghubungkan ke database)" heading-button accent-color="grey" icon="icons:expand-more" tooltip="expand" label="expand">
+<a11y-collapse heading="Tulis Q-3 (Tulis kode untuk menghubungkan ke database)" heading-button accent-color="grey" icon="icons:expand-more" tooltip="collapse" label="collapse">
   <p part="heading">kode untuk menghubungkan ke database</p>
   <code-sample copy-clipboard-button type="javascript">
     <slot style="color: rgb(255, 255, 255); font-family: Roboto, &quot;Franklin Gothic Medium&quot;, Tahoma, sans-serif; font-size: 20px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(38, 38, 38); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"></slot>
@@ -51,11 +51,17 @@
   </code-sample>
 
 
+
   <code-sample type="javascript" copy-clipboard-button>
-    <template preserve-content="preserve-content">// To connect to a DB, need DB name, user name, and password. $dbName = 'if0_37345471_dblatihan';
-      $dbUserName = 'if0_37345471'; $dbPassword = 'zahzZt8usKL'; // Buat DSN. $dsn ="mysql:host=sql109.infinityfree.com;dbname=$dbName";
-      // Connect. $dbConnection = new PDO($dsn, $dbUserName, $dbPassword);</template>
-  </code-sample>
+    
+  <template preserve-content="preserve-content">$dbName = 'if0_37345471_dblatihan';
+$dbUserName = 'if0_37345471';
+$dbPassword = 'oke';
+// Buat DSN.
+$dsn = "mysql:host=sql109.infinityfree.com;dbname=$dbName";
+// Hubungkan.koneksi global
+$dbConnection = new PDO($dsn, $dbUserName, $dbPassword);</template></code-sample>
+
 
 
 </a11y-collapse>
@@ -67,7 +73,7 @@
 <p>$id = getParamFromGet('id');</p>
 <p>.. memanggil fungsi yang kita buat sebelumnya. Fungsi ini mengembalikan nilai string, atau null jika nilainya hilang.</p>
 <p>Baris berikutnya memanggil fungsi validasi:</p>
-<p>$errorMessage = checkWombatId($id);</p>
+<p>$errorMessage = checkSiswaId($id);</p>
 <p>Seperti biasa, ia akan mengembalikan pesan kesalahan jika ada yang salah. Jika semuanya baik-baik saja, ia akan mengembalikan MT.&#160;</p>
 <p>Mari kita lihat fungsinya. Sebagian besar sama seperti sebelumnya, tetapi ada beberapa hal baru di bagian akhir.</p>
 <code-sample type="javascript" copy-clipboard-button><template preserve-content="preserve-content">/**
@@ -106,9 +112,9 @@ function checkSiswaId($id) {
     }
     return $errorMessage;
 }</template></code-sample>
-<p>Mari tambahkan pemeriksaan untuk melihat apakah wombat itu ada. Tampaknya masuk akal jika itu menjadi bagian dari fungsi yang memvalidasi id wombat. Kode yang relevan adalah:</p>
+<p>Mari tambahkan pemeriksaan untuk melihat apakah siswa itu ada. Tampaknya masuk akal jika itu menjadi bagian dari fungsi yang memvalidasi id siswa. Kode yang relevan adalah:</p>
 <p><br></p>
-<code-sample type="javascript" copy-clipboard-button><template preserve-content="preserve-content">     // Pemeriksaan keberadaan.
+<code-sample type="javascript" copy-clipboard-button><template preserve-content="preserve-content">// Pemeriksaan keberadaan.
         // Siapkan SQL.
         $stmt = $dbConnection-&gt;prepare('SELECT * FROM siswa WHERE nis = :id');
         // Jalankan.
@@ -117,9 +123,99 @@ function checkSiswaId($id) {
         if ($stmt-&gt;rowCount() == 0) {
             $errorMessage = "Maaf, tidak ada siswa yang memiliki id $id.";
         }</template></code-sample>
-<p>Baris 98 memiliki sesuatu yang baru:</p>
+<p>Baris ke 5 di atas memiliki sesuatu yang baru:</p>
 <p>$stmt-&#62;rowCount()</p>
-<p>Itulah jumlah rekaman dalam $stmt. Jika rowCount()nol, tidak ada yang dikembalikan, jadi nama siswa tidak ada.</p>
+<p>Itulah jumlah rekaman data dalam <mark>$stmt</mark>. Jika <mark>rowCount()</mark> nol, tidak ada yang dikembalikan, jadi nama siswa tidak ada.</p>
 <p><br></p>
-<a11y-collapse heading="Heading" heading-button accent-color="grey" icon="icons:expand-more" tooltip="expand" label="expand"><p>Content goes here.</p></a11y-collapse>
-<p></p>
+<a11y-collapse heading="Tulis Q-4 " heading-button accent-color="grey" icon="icons:expand-more" tooltip="collapse" label="collapse"><p>Tulis maksud kode $stmt-&amp;gt;execute(['id' =&amp;gt; $id]);</p></a11y-collapse>
+<p>Koneksi PDO&#160;</p>
+<p>Ada hal baru lagi di baris ke-74:</p>
+<p>global $dbConnection;</p>
+<p>checkSiswaId() akan memerlukan akses ke $dbConnection. Kita punya dua pilihan. Salah satunya adalah meneruskan $dbConnectionke checkSiswaId(), seperti ini:</p>
+<p>$errorMessage = checkSiswaId($id, $dbConnection);&#160;</p>
+<p><span>...</span></p>
+<p><span> function checkSiswaId($id, $dbConnection) { </span></p>
+<p>&#160;...</p>
+<p>Itu akan baik-baik saja. Kecuali nanti di kursus ini, kita akan membuat beberapa fungsi yang membutuhkan $dbConnection. Kita bisa meneruskannya $dbConnectionke semuanya, tetapi akan jadi berantakan.&#160;</p>
+<p>Sebagai gantinya, kita akan menggunakan variabel global .&#160;</p>
+<p>Saat Anda mempelajari fungsi, kita berbicara tentang cakupan. Satu-satunya cara data masuk ke fungsi adalah melalui parameter, dan satu-satunya cara keluar adalah melalui nilai yang dikembalikan.</p>
+<media-image source="files/walls.png" citation="webapp skilling us" accent-color="grey" size="wide" offset="narrow"></media-image>
+<p>Variabel global merupakan pengecualian. Anda dapat membuat variabel yang dapat digunakan bersama oleh semua orang:</p>
+<media-image source="files/global.png" card citation="webapps skilling us" accent-color="grey" size="wide" offset="narrow"></media-image>
+<p><br></p>
+<p>Bila satu fungsi, atau program utama (yang ada di kiri bawah), mengubah global, maka perubahan tersebut berlaku untuk semua orang. Variabel merujuk ke lokasi memori yang sama, di mana pun referensinya berada.&#160;</p>
+<p>Untuk membuat variabel global, tambahkan baris:</p>
+<p>function something($p1, $p2) {</p>
+<p>&#160;global $thing;&#160;</p>
+<p>&#160;...&#160;</p>
+<p>&#160;function somethingElse($p1, $p2) {&#160;</p>
+<p>&#160;global $thing;&#160;</p>
+<p>&#160;...</p>
+<p><span>Jika Anda tidak mendeklarasikannya sebagai global, variabel tersebut tetap lokal.</span></p>
+<p>function somethingElseAgain($p1, $p2) {&#160;</p>
+<p>&#160; // Ini adalah variabel lokal.</p>
+<p>&#160;$thing = 17;</p>
+<p>....</p>
+<p>Global harus digunakan dengan hati-hati. Kita hanya akan menggunakan satu global di seluruh kursus, untuk menyebarkan $dbConnection. Global sangat sering digunakan, sehingga membuatnya menjadi global akan mengurangi kerumitan kode. Berikut program utamanya lagi:</p>
+<code-sample type="php" copy-clipboard-button><template preserve-content="preserve-content">$dsn = "mysql:host=localhost;dbname=$dbName";
+// Connect.
+global $dbConnection;
+$dbConnection = new PDO($dsn, $dbUserName, $dbPassword);</template></code-sample>
+<p>Baris 4 menjadikannya $dbConnectionglobal, sehingga akan tersedia untuk kode apa pun yang menginginkannya.&#160;</p>
+<p>Berikut ini adalah awal fungsinya.</p>
+<code-sample type="php" copy-clipboard-button><template preserve-content="preserve-content">function checkSiswaId($id) {
+    global $dbConnection;
+    $errorMessage = '';</template></code-sample>
+<p>Bila suatu fungsi ingin menggunakan global, ia harus mengatakannya, seperti pada baris 4.</p>
+<p><br></p>
+<a11y-collapse heading="Tulis Q5" heading-button accent-color="grey" icon="icons:expand-more" tooltip="expand" label="expand"><p>Content goes here.</p></a11y-collapse>
+<h2 id="header-9775649c-8b2b-14a1-e96f-2fdb7ad164ca">Bukan hanya sekedar id</h2>
+<p>Data dalam GET dapat berupa apa saja, bukan hanya id. Misalnya Anda memiliki database kambing, dan ingin menemukan jumlah kambing yang kekurangan berat badan. Anda membuat halaman underweight.php, dan menamainya seperti ini: underweight.php?weight=12.</p>
+<code-sample type="php" copy-clipboard-button><template preserve-content="preserve-content"><!--?php
+$weight = $_GET['weight'];
+// Validate
+...
+// Make SQL.
+$sql = 'SELECT COUNT(*) AS underweight FROM goats WHERE weight < :weight';
+$stmt = $dbConnection--->prepare($sql);
+// Run it.
+$stmt-&gt;execute(['weight' =&gt; $weight]);
+// Get the row returned.
+$row = $stmt-&gt;fetch();
+// Get the count from the row.
+$count = $row['weight'];</template></code-sample>
+<p>Atau mungkin Anda memiliki database ulasan film. Anda ingin mengetahui berapa kali sebuah kata digunakan dalam komentar. Anda membuat halaman, dan menamainya seperti ini: count-word.php?word=suck, atau count-word.php?word=awesome.&#160;</p>
+<p>Dalam SQL, Anda dapat mencari bidang string dengan WHERE seperti ini:&#160;</p>
+<p>WHERE name LIKE '%skywalker%'</p>
+<p>LIKE '%skywalker%' mencocokkan string yang memiliki kata "skywalker" di mana pun di dalamnya.&#160;</p>
+<p>Berikut kode untuk pencari kata komentar:&#8203;</p>
+<code-sample type="javascript" copy-clipboard-button><template preserve-content="preserve-content">$word = $_GET['word'];
+// Validate
+...
+// Make SQL.
+$sql = "
+  SELECT COUNT(*) AS num_words
+  FROM movie_reviews
+  WHERE comments LIKE :findSpec;
+";
+$stmt = $dbConnection-&gt;prepare($sql);
+// Run it.
+$stmt-&gt;execute(['findSpec' =&gt; "%$word%"]);
+// Get the row returned.
+$row = $stmt-&gt;fetch();
+// Get the count from the row.
+$count = $row['num_words'];</template></code-sample>
+<p>Jadi, Anda dapat memasukkan data apa pun yang Anda inginkan dalam GET, dan melakukan apa pun yang Anda inginkan dengannya. Gunakan dalam SQL sebagai kunci utama, gunakan untuk memfilter baris berdasarkan bidang apa pun... terserah.</p>
+<p>Dari localhost ke InfinityFree</p>
+<p>Memindahkan program basis data dari PC ke InfinityFree bisa jadi agak rumit. Berikut penjelasannya.&#8203;</p>
+<video-player source="https://youtu.be/FPiTBzNvQWY" data-width="75" data-margin="center" accent-color="grey" crossorigin="anonymous" sticky-corner="none" resource="#e09006e8-e626-dd55-d5b7-4c50e8616d65" prefix="oer:http://oerschema.org/ schema:http://schema.org/ dc:http://purl.org/dc/terms/ foaf:http://xmlns.com/foaf/0.1/ cc:http://creativecommons.org/ns# bib:http://bib.schema.org " element-visible lang="en" t="{&quot;embeddedMedia&quot;:&quot;embedded media&quot;}" source-type="youtube" sources="[]" source-data="[{&quot;src&quot;:&quot;https://www.youtube.com/embed/FPiTBzNvQWY&quot;,&quot;type&quot;:&quot;&quot;}]" tracks="[]"></video-player>
+<h2 id="header-ba93f570-15f3-216a-546e-6690bd80e2d8">Latihan&#160;</h2>
+<p data-border-radius="xs" data-border="sm" data-accent="9">Latihan Id dari GET</p>
+<p data-border-radius="xs" data-border="sm" data-accent="9"><span>Buat database tentang sesuatu. Sepatu, film, kopi, apa saja. Taruh satu tabel di dalamnya, yang menyimpan data tentang sesuatu. Berikan tabel tersebut setidaknya dua kolom: </span></p>
+<p><ul><li>ID INT yang bertambah otomatis, itulah kunci utama. </li><li>Nama, seperti "Kopi Tubruk." </li></ul><span>Tambahkan beberapa baris ke tabel. </span></p>
+<p>Tulis program yang mengambil sebuah id sebagai parameter GET, seperti pada siswa, dan menampilkan rekaman dengan id tersebut.&#160;</p>
+<p>Sertakan fungsi validasi. Tampilkan kesalahan saat:&#160;</p>
+<p><ul><li>ID tidak ada. </li><li>Id bukan numerik.</li><li>Idnya nol atau kurang. </li><li>Id tidak ada dalam tabel. </li></ul></p>
+<p>Gunakan variabel global untuk koneksi DB.&#160;</p>
+<p>Kirimkan URL dan file zip Anda.&#160;</p>
+<p>Jika Anda masuk sebagai siswa, Anda dapat mengirimkan solusi untuk latihan ini.</p>
