@@ -208,36 +208,51 @@
 <p>Memindahkan program basis data dari PC ke InfinityFree bisa jadi agak rumit. Berikut
     penjelasannya.&#8203;</p>
 <video-player source="https://youtu.be/FPiTBzNvQWY" data-width="75" data-margin="center" accent-color="grey" crossorigin="anonymous" sticky-corner="none" resource="#e09006e8-e626-dd55-d5b7-4c50e8616d65" prefix="oer:http://oerschema.org/ schema:http://schema.org/ dc:http://purl.org/dc/terms/ foaf:http://xmlns.com/foaf/0.1/ cc:http://creativecommons.org/ns# bib:http://bib.schema.org " element-visible lang="en" t="{&quot;embeddedMedia&quot;:&quot;embedded media&quot;}" source-type="youtube" sources="[]" source-data="[{&quot;src&quot;:&quot;https://www.youtube.com/embed/FPiTBzNvQWY&quot;,&quot;type&quot;:&quot;&quot;}]" tracks="[]"></video-player>
-<h2 data-original-level="H2" id="header-ba93f570-15f3-216a-546e-6690bd80e2d8">Latihan&#160;</h2>
-<p data-border-radius="xs" data-border="sm" data-accent="9">Latihan Id dari GET
-    <br>Buat database tentang sesuatu. Sepatu, film, kopi, apa saja. Taruh satu tabel di
-    dalamnya, yang menyimpan data tentang sesuatu. Berikan tabel tersebut setidaknya
-    dua kolom:
-    <br>
+<h2 data-original-level="H2" id="header-ba93f570-15f3-216a-546e-6690bd80e2d8">Latihan 1</h2>
+<a11y-collapse heading="Latihan Id dari GET " heading-button accent-color="grey" icon="icons:expand-more" tooltip="expand" label="expand">
+    <p>Buat database tentang sesuatu. Sepatu, film, kopi, apa saja. Taruh satu tabel di
+      dalamnya, yang menyimpan data tentang sesuatu. Berikan tabel tersebut setidaknya
+      dua kolom:</p>
+    <ul role="textbox">
+      <li>ID INT yang bertambah otomatis, itulah kunci utama.</li>
+      <li>Nama, seperti "Kopi Tubruk."</li>
+    </ul>
+    <p></p>
+<span>Tambahkan beberapa baris ke tabel. </span>
 
-     </p>
-<ul>
-    <li>ID INT yang bertambah otomatis, itulah kunci utama.</li>
-    <li>Nama, seperti "Kopi Tubruk."</li>
-  </ul>
-<span>Tambahkan beberapa baris ke tabel. </span><p>Tulis program yang mengambil sebuah id sebagai parameter GET, seperti pada siswa,
-    dan menampilkan rekaman dengan id tersebut.&#160;</p>
-<p>Sertakan fungsi validasi. Tampilkan kesalahan saat:&#160;</p>
-<ul>
-    <li>ID tidak ada.</li>
-    <li>Id bukan numerik.</li>
-    <li>Idnya nol atau kurang.</li>
-    <li>Id tidak ada dalam tabel.</li>
-  </ul>
-<p>Gunakan variabel global untuk koneksi DB.&#160;</p>
-<p>Kirimkan URL dan file zip Anda.&#160;</p>
-<p>Jika Anda masuk sebagai siswa, Anda dapat mengirimkan solusi untuk latihan ini.</p>
-<p data-border="sm" data-border-radius="md">Akurasi supranatural
-  Supernatural adalah aplikasi latihan favorit Cthulhu untuk Oculus Quest. Pelatih Doc sedang menerjang untuk menyerang beberapa target virtual.<br>
+    <p>Tulis program yang mengambil sebuah id sebagai parameter GET, seperti pada siswa,
+      dan menampilkan rekaman dengan id tersebut.</p>
+    <p>Sertakan fungsi validasi. Tampilkan kesalahan saat:</p>
+    <ul>
+      <li>ID tidak ada.</li>
+      <li>Id bukan numerik.</li>
+      <li>Idnya nol atau kurang.</li>
+      <li>Id tidak ada dalam tabel.</li>
+    </ul>
+    <p>Gunakan variabel global untuk koneksi DB.</p>
+    <p>Kirimkan URL dan file zip Anda.</p>
+    <p>Jika Anda masuk sebagai siswa, Anda dapat mengirimkan solusi untuk latihan ini.</p>
+  </a11y-collapse>
+<h2 data-original-level="H2" id="header-026e4064-7895-7c89-a938-1a6bd9a82c69">Latihan 2</h2>
+<a11y-collapse heading="Akurasi supranatural " heading-button accent-color="grey" icon="icons:expand-more" tooltip="collapse" label="collapse">
+    <p>Supernatural adalah aplikasi latihan favorit Cthulhu untuk Oculus Quest. Pelatih
+      Doc sedang menerjang untuk menyerang beberapa target virtual.</p>
+    <grid-plate item-margin="16" item-padding="16" layout="2-1"><media-image source="files/doc.png" citation="This is my citation." slot="col-2" accent-color="grey" size="wide" offset="narrow"></media-image>
+<p slot="col-1">Supernatural adalah aplikasi latihan favorit Cthulhu untuk Oculus Quest. Pelatih Doc sedang menerjang untuk menyerang beberapa target virtual.</p><p slot="col-1">Beberapa teman kambing Cthulhu juga menggunakan aplikasi ini. Setiap latihan dinilai
+      berdasarkan akurasi dan kekuatan, dengan angka dari 0 hingga 100.</p><p slot="col-1"><a href="files/supernatural-db.zip">Unduh</a> file
+    zip yang dapat Anda impor ke dalam basis data, untuk membuat ulang tabel dan data.
+    Jadi, buat basis data di phpMyAdmin, lalu gunakan tab impor untuk mengimpor file
+    yang Anda unduh.</p></grid-plate>
 
-Beberapa teman kambing Cthulhu juga menggunakan aplikasi ini. Setiap latihan dinilai berdasarkan akurasi dan kekuatan, dengan angka dari 0 hingga 100.<br>
 <span>
   Skor latihan terbaru telah dimasukkan ke dalam basis data yang disebut supernatural. Ada satu tabel, yang disebut workout. Berikut ini beberapa datanya:</span>
-</p>
-<p data-border="sm" data-border-radius="md"><span><br></span></p>
-<p data-border="sm" data-border-radius="md"></p>
+
+  <media-image source="files/db.png" card citation="This is my citation." accent-color="grey" size="wide" offset="narrow"></media-image>
+<p>Tulis program untuk membantu Cthulhu melihat berapa banyak kambing yang memenuhi
+    standar akurasi minimum. Nilai minimum muncul melalui URL, seperti ini:</p>
+  <ul>
+    <li>sesuatu.php?min=90</li>
+  </ul>
+  <p>Jika Anda masuk sebagai siswa, Anda dapat mengirimkan solusi untuk latihan ini.</p>
+  </a11y-collapse>
+<p>Deep thoughts..</p>
