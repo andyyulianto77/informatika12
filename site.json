@@ -23,30 +23,34 @@
         "gaID": null
       },
       "created": 1732016691,
-      "updated": 1732488035,
+      "updated": 1732688222,
       "git": {
         "vendor": "github",
         "branch": "gh-pages"
       },
-      "version": "9.0.16",
+      "version": "9.0.21",
       "domain": null,
       "tags": null,
       "static": {}
     },
     "theme": {
-      "element": "polaris-invent-theme",
-      "path": "@haxtheweb/polaris-theme/lib/polaris-invent-theme.js",
-      "name": "Polaris - Invent",
+      "element": "polaris-theme",
+      "path": "@haxtheweb/polaris-theme/polaris-theme.js",
+      "name": "Polaris - Basic site",
       "thumbnail": "build/es6/node_modules/@haxtheweb/app-hax/lib/assets/images/PartyStyle.svg",
       "variables": {
         "image": "",
         "imageAlt": null,
         "imageLink": null,
         "hexCode": "#3f51b5",
-        "cssVariable": "--simple-colors-default-theme-light-green-7",
-        "icon": "av:skip-next"
+        "cssVariable": "--simple-colors-default-theme-purple-7",
+        "icon": "av:featured-play-list"
       },
-      "regions": {}
+      "regions": {
+        "header": [
+          "item-55a07d13-86b0-424d-b888-e39dd3d9a95b"
+        ]
+      }
     },
     "node": {
       "fields": {}
