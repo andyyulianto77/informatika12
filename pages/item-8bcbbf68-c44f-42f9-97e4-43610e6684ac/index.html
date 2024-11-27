@@ -19,11 +19,12 @@
 
 
 
+
   <p></p>
   <p aria-labelledby="heading" aria-live="polite" aria-hidden="true"></p>
   <p></p></a11y-collapse>
 <learning-component subtitle="memunculkan data dengan get id" type="" accent-color="orange"><p>Pada akhir pelajaran, siswa dapat ... </p><ol><li>Dapat membuat program PHP sederhana untuk melakukan perhitungan, manipulasi data, dan interaksi dengan pengguna dengan menerapkan konsep GET </li><li>Dapat membuat halaman web dinamis.</li><li>Mampu menggunakan alat debugging untuk melacak masalah.</li><li>Dapat mengidentifikasi dan memperbaiki kesalahan sintaks dan logika dalam kod</li></ol><p></p></learning-component>
-<a11y-collapse icon="icons:expand-more" icon-expanded="av:fiber-manual-record" label="collapse" heading="Tulis Q-2" tooltip="collapse" accent-color="grey"><p part="heading-id"></p>
+<a11y-collapse icon="icons:expand-more" icon-expanded="av:fiber-manual-record" label="expand" heading="Tulis Q-2" tooltip="expand" accent-color="grey"><p part="heading-id"></p>
   <p></p>
   <p part="heading">Tulis tujuan yang paling mudah dan alasannya!</p>
   <slot name="heading"></slot>
@@ -44,6 +45,7 @@
 
 
 
+
   <p></p>
   <p aria-labelledby="heading" aria-live="polite" aria-hidden="true"></p>
   <p></p></a11y-collapse>
@@ -52,8 +54,8 @@
 <p>Misalkan kita ingin membiarkan pengguna mengetikkan id di akhir URL.</p>
 <ul><li>...?nis=202300</li></ul>
 <p>ID variabel, berikut kodenya</p>
-<iframe-loader source="https://pastebin.com/nevMLeCB#mkz1TcNp" height="500" width="100%"><iframe-loader source="https://haxtheweb.org" height="500" width="100%"><iframe width="100%" height="500" src="https://pastebin.com/nevMLeCB#mkz1TcNp"></iframe></iframe-loader>
-</iframe-loader>
+<p><iframe-loader source="https://pastebin.com/embed_iframe/nevMLeCB" height="500" width="100%"><iframe src="https://pastebin.com/embed_iframe/nevMLeCB" style="border:none;width:100%" height="500" width="100%"></iframe></iframe-loader>
+</p>
 <code-sample copy-clipboard-button type="php"><template preserve-content="preserve-content"><!--?php
 
 ... (isi dengan koneksi database)
@@ -104,6 +106,7 @@ $dsn = "mysql:host=sql109.infinityfree.com;dbname=$dbName";
 $dbConnection = new PDO($dsn, $dbUserName, $dbPassword);</template></code-sample>
 
 
+
 <p part="heading"></p><p part="heading"></p><p part="heading"></p>
 
     <slot name="heading"></slot>
@@ -117,6 +120,7 @@ $dbConnection = new PDO($dsn, $dbUserName, $dbPassword);</template></code-sample
 
 
     <simple-tooltip for="expand" position="bottom" offset="14" margin-top="14"><p><slot>expand</slot></p></simple-tooltip>
+
 
 
 
