@@ -50,15 +50,76 @@
     <p></p>
   </code-sample>
 
+
   <code-sample type="javascript" copy-clipboard-button>
     <template preserve-content="preserve-content">// To connect to a DB, need DB name, user name, and password. $dbName = 'if0_37345471_dblatihan';
       $dbUserName = 'if0_37345471'; $dbPassword = 'zahzZt8usKL'; // Buat DSN. $dsn ="mysql:host=sql109.infinityfree.com;dbname=$dbName";
       // Connect. $dbConnection = new PDO($dsn, $dbUserName, $dbPassword);</template>
   </code-sample>
 
+
 </a11y-collapse>
 <h3 data-original-level="H3" id="header-d1af149e-596c-4241-c1a8-52f31436cdae">Dengan validasi</h3>
 <p>Mari kita validasi ID. Coba <a href="http://andy1.rf.gd/php/db/php/siswa-id-validation.php?id=202300" target="_blank"><mark>sini</mark></a>. Ubah id-nya, lalu lihat apa yang terjadi.
   Berikut kodenya. Saya menggunakan fungsi validasi di sini.</p>
-<iframe src="https://pastebin.com/embed_iframe/DBWXWHxU" style="border:none;width:100%"></iframe>
+<iframe-loader source="https://pastebin.com/embed_iframe/DBWXWHxU" height="500" width="100%"><iframe src="https://pastebin.com/embed_iframe/DBWXWHxU" style="border:none;width:100%" height="500" width="100%"></iframe></iframe-loader>
+<p>Koneksi DB sama seperti sebelumnya. Baris...</p>
+<p>$id = getParamFromGet('id');</p>
+<p>.. memanggil fungsi yang kita buat sebelumnya. Fungsi ini mengembalikan nilai string, atau null jika nilainya hilang.</p>
+<p>Baris berikutnya memanggil fungsi validasi:</p>
+<p>$errorMessage = checkWombatId($id);</p>
+<p>Seperti biasa, ia akan mengembalikan pesan kesalahan jika ada yang salah. Jika semuanya baik-baik saja, ia akan mengembalikan MT.&#160;</p>
+<p>Mari kita lihat fungsinya. Sebagian besar sama seperti sebelumnya, tetapi ada beberapa hal baru di bagian akhir.</p>
+<code-sample type="javascript" copy-clipboard-button><template preserve-content="preserve-content">/**
+ * Periksa identitas siswa.
+ * @param mixed $id ID siswa yang akan diperiksa.
+ * @return string Pesan kesalahan, MT jika tidak ada.
+ */
+function checkSiswaId($id) {
+    global $dbConnection;
+    $errorMessage = '';
+    if (is_null($id)) {
+        $errorMessage ='Maaf, Anda harus memberikan ID siswa.<br>';
+    }
+    if ($errorMessage == '') {
+        // Periksa apakah id bersifat numerik.
+        if (!is_numeric($id)) {
+            $errorMessage = 'Maaf, ID siswa harus berupa angka.<br>';
+        }
+    }
+    if ($errorMessage == '') {
+        // Pemeriksaan jangkauan.
+        if ($id &lt; 202300) {
+            $errorMessage = 'Maaf, id siswa harus 202300 atau lebih.<br>';
+        }
+    }
+    if ($errorMessage == '') {
+        // Pemeriksaan keberadaan.
+        // Siapkan SQL.
+        $stmt = $dbConnection-&gt;prepare('SELECT * FROM siswa WHERE nis = :id');
+        // Jalankan.
+        $stmt-&gt;execute(['id' =&gt; $id]);
+        // Ada yang dikembalikan?
+        if ($stmt-&gt;rowCount() == 0) {
+            $errorMessage = "Maaf, tidak ada siswa yang memiliki id $id.";
+        }
+    }
+    return $errorMessage;
+}</template></code-sample>
+<p>Mari tambahkan pemeriksaan untuk melihat apakah wombat itu ada. Tampaknya masuk akal jika itu menjadi bagian dari fungsi yang memvalidasi id wombat. Kode yang relevan adalah:</p>
+<p><br></p>
+<code-sample type="javascript" copy-clipboard-button><template preserve-content="preserve-content">     // Pemeriksaan keberadaan.
+        // Siapkan SQL.
+        $stmt = $dbConnection-&gt;prepare('SELECT * FROM siswa WHERE nis = :id');
+        // Jalankan.
+        $stmt-&gt;execute(['id' =&gt; $id]);
+        // Ada yang dikembalikan?
+        if ($stmt-&gt;rowCount() == 0) {
+            $errorMessage = "Maaf, tidak ada siswa yang memiliki id $id.";
+        }</template></code-sample>
+<p>Baris 98 memiliki sesuatu yang baru:</p>
+<p>$stmt-&#62;rowCount()</p>
+<p>Itulah jumlah rekaman dalam $stmt. Jika rowCount()nol, tidak ada yang dikembalikan, jadi nama siswa tidak ada.</p>
+<p><br></p>
+<a11y-collapse heading="Heading" heading-button accent-color="grey" icon="icons:expand-more" tooltip="expand" label="expand"><p>Content goes here.</p></a11y-collapse>
 <p></p>
