@@ -50,11 +50,13 @@
     <p></p>
   </code-sample>
 
+
   <code-sample type="javascript" copy-clipboard-button>
     <template preserve-content="preserve-content">$dbName = 'if0_37345471_dblatihan'; $dbUserName = 'if0_37345471'; $dbPassword =
       'oke'; // Buat DSN. $dsn = "mysql:host=sql109.infinityfree.com;dbname=$dbName"; //
       Hubungkan.koneksi global $dbConnection = new PDO($dsn, $dbUserName, $dbPassword);</template>
   </code-sample>
+
 
 </a11y-collapse>
 <h3 data-original-level="H3" id="header-d1af149e-596c-4241-c1a8-52f31436cdae">Dengan validasi</h3>
@@ -73,33 +75,60 @@
   baik-baik saja, ia akan mengembalikan MT.&#160;</p>
 <p>Mari kita lihat fungsinya. Sebagian besar sama seperti sebelumnya, tetapi ada beberapa
   hal baru di bagian akhir.</p>
-<code-sample type="javascript" copy-clipboard-button>
-  <template preserve-content="preserve-content">/** * Periksa identitas siswa. * @param mixed $id ID siswa yang akan diperiksa.
-    * @return string Pesan kesalahan, MT jika tidak ada. */ function checkSiswaId($id)
-    { global $dbConnection; $errorMessage = ''; if (is_null($id)) { $errorMessage ='Maaf,
-    Anda harus memberikan ID siswa.
-    <br>'; } if ($errorMessage == '') { // Periksa apakah id bersifat numerik. if (!is_numeric($id))
-    { $errorMessage = 'Maaf, ID siswa harus berupa angka.
-    <br>'; } } if ($errorMessage == '') { // Pemeriksaan jangkauan. if ($id &lt; 202300)
-    { $errorMessage = 'Maaf, id siswa harus 202300 atau lebih.
-    <br>'; } } if ($errorMessage == '') { // Pemeriksaan keberadaan. // Siapkan SQL. $stmt
-    = $dbConnection-&gt;prepare('SELECT * FROM siswa WHERE nis = :id'); // Jalankan.
-    $stmt-&gt;execute(['id' =&gt; $id]); // Ada yang dikembalikan? if ($stmt-&gt;rowCount()
-    == 0) { $errorMessage = "Maaf, tidak ada siswa yang memiliki id $id."; } } return
-    $errorMessage; }</template>
-</code-sample>
+<code-sample type="php" copy-clipboard-button data-hax-lock="data-hax-lock">
+  
+<template preserve-content="preserve-content">/**
+ * Periksa identitas siswa.
+ * @param mixed $id ID siswa yang akan diperiksa.
+ * @return string Pesan kesalahan, MT jika tidak ada.
+ */
+function checkSiswaId($id) {
+    global $dbConnection;
+    $errorMessage = '';
+    if (is_null($id)) {
+        $errorMessage ='Maaf, Anda harus memberikan ID siswa.<br>';
+    }
+    if ($errorMessage == '') {
+        // Periksa apakah id bersifat numerik.
+        if (!is_numeric($id)) {
+            $errorMessage = 'Maaf, ID siswa harus berupa angka.<br>';
+        }
+    }
+    if ($errorMessage == '') {
+        // Pemeriksaan jangkauan.
+        if ($id &lt; 202300) {
+            $errorMessage = 'Maaf, id siswa harus 202300 atau lebih.<br>';
+        }
+    }
+    if ($errorMessage == '') {
+        // Pemeriksaan keberadaan.
+        // Siapkan SQL.
+        $stmt = $dbConnection-&gt;prepare('SELECT * FROM siswa WHERE nis = :id');
+        // Jalankan.
+        $stmt-&gt;execute(['id' =&gt; $id]);
+        // Ada yang dikembalikan?
+        if ($stmt-&gt;rowCount() == 0) {
+            $errorMessage = "Maaf, tidak ada siswa yang memiliki id $id.";
+        }
+    }
+    return $errorMessage;
+}</template></code-sample>
 <p>Mari tambahkan pemeriksaan untuk melihat apakah siswa itu ada. Tampaknya masuk akal
   jika itu menjadi bagian dari fungsi yang memvalidasi id siswa. Kode yang relevan
   adalah:</p>
 <p>
   <br>
 </p>
-<code-sample type="javascript" copy-clipboard-button>
-  <template preserve-content="preserve-content">// Pemeriksaan keberadaan. // Siapkan SQL. $stmt = $dbConnection-&gt;prepare('SELECT
-    * FROM siswa WHERE nis = :id'); // Jalankan. $stmt-&gt;execute(['id' =&gt; $id]);
-    // Ada yang dikembalikan? if ($stmt-&gt;rowCount() == 0) { $errorMessage = "Maaf,
-    tidak ada siswa yang memiliki id $id."; }</template>
-</code-sample>
+<code-sample type="javascript" copy-clipboard-button data-hax-lock="data-hax-lock">
+  
+<template preserve-content="preserve-content">// Pemeriksaan keberadaan. 
+// Siapkan SQL. 
+$stmt = $dbConnection-&gt;prepare('SELECT * FROM siswa WHERE nis = :id'); 
+// Jalankan. 
+$stmt-&gt;execute(['id' =&gt; $id]);
+// Ada yang dikembalikan? 
+if ($stmt-&gt;rowCount() == 0) { $errorMessage = "Maaf,tidak ada siswa yang memiliki id $id."; 
+}</template></code-sample>
 <p>Baris ke 5 di atas memiliki sesuatu yang baru:</p>
 <p>$stmt-&#62;rowCount()</p>
 <p>Itulah jumlah rekaman data dalam
@@ -108,7 +137,7 @@
 <p>
   <br>
 </p>
-<a11y-collapse heading="Tulis Q-4 " heading-button accent-color="grey" icon="icons:expand-more" tooltip="expand" label="expand">
+<a11y-collapse heading="Tulis Q-4 " heading-button accent-color="grey" icon="icons:expand-more" tooltip="collapse" label="collapse">
   <p>Tulis maksud kode $stmt-&amp;gt;execute(['id' =&amp;gt; $id]);</p>
 </a11y-collapse>
 <p>Koneksi PDO&#160;</p>
@@ -159,16 +188,20 @@
   di seluruh kursus, untuk menyebarkan $dbConnection. Global sangat sering digunakan,
   sehingga membuatnya menjadi global akan mengurangi kerumitan kode. Berikut program
   utamanya lagi:</p>
-<code-sample type="php" copy-clipboard-button>
-  <template preserve-content="preserve-content">$dsn = "mysql:host=localhost;dbname=$dbName"; // Connect. global $dbConnection;
-    $dbConnection = new PDO($dsn, $dbUserName, $dbPassword);</template>
-</code-sample>
+<code-sample type="php" copy-clipboard-button data-hax-lock="data-hax-lock">
+  
+<template preserve-content="preserve-content">$dsn = "mysql:host=localhost;dbname=$dbName"; 
+// Connect. 
+global $dbConnection;
+$dbConnection = new PDO($dsn, $dbUserName, $dbPassword);</template></code-sample>
 <p>Baris 4 menjadikannya $dbConnectionglobal, sehingga akan tersedia untuk kode apa
   pun yang menginginkannya.&#160;</p>
 <p>Berikut ini adalah awal fungsinya.</p>
-<code-sample type="php" copy-clipboard-button>
-  <template preserve-content="preserve-content">function checkSiswaId($id) { global $dbConnection; $errorMessage = '';</template>
-</code-sample>
+<code-sample type="php" copy-clipboard-button data-hax-lock="data-hax-lock">
+  
+<template preserve-content="preserve-content">function checkSiswaId($id) { 
+  global $dbConnection; 
+  $errorMessage = '';</template></code-sample>
 <p>Bila suatu fungsi ingin menggunakan global, ia harus mengatakannya, seperti pada
   baris 4.</p>
 <p>
@@ -181,12 +214,19 @@
 <p>Data dalam GET dapat berupa apa saja, bukan hanya id. Misalnya Anda memiliki database
   kambing, dan ingin menemukan jumlah kambing yang kekurangan berat badan. Anda membuat
   halaman underweight.php, dan menamainya seperti ini: underweight.php?weight=12.</p>
-<code-sample type="php" copy-clipboard-button>
-  <template preserve-content="preserve-content">
-    <!--?php $weight=$ _GET['weight']; // Validate ... // Make SQL. $sql=' SELECT COUNT(*)
-    AS underweight FROM goats WHERE weight < :weight'; $stmt=$ dbConnection--->prepare($sql); // Run it. $stmt-&gt;execute(['weight' =&gt; $weight]); // Get the
-    row returned. $row = $stmt-&gt;fetch(); // Get the count from the row. $count = $row['weight'];</template>
-  </code-sample>
+<code-sample type="php" copy-clipboard-button data-hax-lock="data-hax-lock">
+  
+  <template preserve-content="preserve-content"><!--?php $weight=$ _GET['weight']; 
+// Validate ... 
+// Make SQL. 
+$sql=' SELECT COUNT(*) AS underweight FROM goats WHERE weight < :weight'; 
+$stmt=$dbConnection--->prepare($sql); 
+// Run it. 
+$stmt-&gt;execute(['weight' =&gt; $weight]); 
+// Get the row returned. 
+$row = $stmt-&gt;fetch(); 
+// Get the count from the row. 
+$count = $row['weight'];</template></code-sample>
 <p>Atau mungkin Anda memiliki database ulasan film. Anda ingin mengetahui berapa kali
     sebuah kata digunakan dalam komentar. Anda membuat halaman, dan menamainya seperti
     ini: count-word.php?word=suck, atau count-word.php?word=awesome.&#160;</p>
@@ -195,12 +235,24 @@
 <p>LIKE '%skywalker%' mencocokkan string yang memiliki kata "skywalker" di mana pun
     di dalamnya.&#160;</p>
 <p>Berikut kode untuk pencari kata komentar:&#8203;</p>
-<code-sample type="javascript" copy-clipboard-button>
-    <template preserve-content="preserve-content">$word = $_GET['word']; // Validate ... // Make SQL. $sql = " SELECT COUNT(*) AS
-      num_words FROM movie_reviews WHERE comments LIKE :findSpec; "; $stmt = $dbConnection-&gt;prepare($sql);
-      // Run it. $stmt-&gt;execute(['findSpec' =&gt; "%$word%"]); // Get the row returned.
-      $row = $stmt-&gt;fetch(); // Get the count from the row. $count = $row['num_words'];</template>
-  </code-sample>
+<code-sample type="javascript" copy-clipboard-button data-hax-lock="data-hax-lock">
+    
+  <template preserve-content="preserve-content">$word = $_GET['word'];
+// Validate
+...
+// Make SQL.
+$sql = "
+  SELECT COUNT(*) AS num_words
+  FROM movie_reviews
+  WHERE comments LIKE :findSpec;
+";
+$stmt = $dbConnection-&gt;prepare($sql);
+// Run it.
+$stmt-&gt;execute(['findSpec' =&gt; "%$word%"]);
+// Get the row returned.
+$row = $stmt-&gt;fetch();
+// Get the count from the row.
+$count = $row['num_words'];</template></code-sample>
 <p>Jadi, Anda dapat memasukkan data apa pun yang Anda inginkan dalam GET, dan melakukan
     apa pun yang Anda inginkan dengannya. Gunakan dalam SQL sebagai kunci utama, gunakan
     untuk memfilter baris berdasarkan bidang apa pun... terserah.</p>
@@ -209,7 +261,7 @@
     penjelasannya.&#8203;</p>
 <video-player source="https://youtu.be/FPiTBzNvQWY" data-width="75" data-margin="center" accent-color="grey" crossorigin="anonymous" sticky-corner="none" resource="#e09006e8-e626-dd55-d5b7-4c50e8616d65" prefix="oer:http://oerschema.org/ schema:http://schema.org/ dc:http://purl.org/dc/terms/ foaf:http://xmlns.com/foaf/0.1/ cc:http://creativecommons.org/ns# bib:http://bib.schema.org " element-visible lang="en" t="{&quot;embeddedMedia&quot;:&quot;embedded media&quot;}" source-type="youtube" sources="[]" source-data="[{&quot;src&quot;:&quot;https://www.youtube.com/embed/FPiTBzNvQWY&quot;,&quot;type&quot;:&quot;&quot;}]" tracks="[]"></video-player>
 <h2 data-original-level="H2" id="header-ba93f570-15f3-216a-546e-6690bd80e2d8">Latihan 1</h2>
-<a11y-collapse heading="Latihan Id dari GET " heading-button accent-color="grey" icon="icons:expand-more" tooltip="collapse" label="collapse">
+<a11y-collapse heading="Latihan Id dari GET " heading-button accent-color="grey" icon="icons:expand-more" tooltip="expand" label="expand">
     <p>Buat database tentang sesuatu. Sepatu, film, kopi, apa saja. Taruh satu tabel di
       dalamnya, yang menyimpan data tentang sesuatu. Berikan tabel tersebut setidaknya
       dua kolom:</p>
@@ -234,11 +286,12 @@
     <p>Jika Anda masuk sebagai siswa, Anda dapat mengirimkan solusi untuk latihan ini.</p>
   </a11y-collapse>
 <h2 data-original-level="H2" id="header-026e4064-7895-7c89-a938-1a6bd9a82c69">Latihan 2</h2>
-<a11y-collapse heading="Akurasi supranatural " heading-button accent-color="grey" icon="icons:expand-more" tooltip="collapse" label="collapse">
+<a11y-collapse heading="Akurasi supranatural " heading-button accent-color="grey" icon="icons:expand-more" tooltip="expand" label="expand">
     <p>Supernatural adalah aplikasi latihan favorit Cthulhu untuk Oculus Quest. Pelatih
       Doc sedang menerjang untuk menyerang beberapa target virtual.</p>
     <grid-plate item-margin="16" item-padding="16" layout="2-1">
       <media-image source="files/doc.png" citation="This is my citation." slot="col-2" accent-color="grey" size="wide" offset="narrow"></media-image>
+
 
       <p slot="col-1">Supernatural adalah aplikasi latihan favorit Cthulhu untuk Oculus Quest. Pelatih
         Doc sedang menerjang untuk menyerang beberapa target virtual.</p>
@@ -249,10 +302,12 @@
         lalu gunakan tab impor untuk mengimpor file yang Anda unduh.</p>
     </grid-plate>
 
+
 <span>
   Skor latihan terbaru telah dimasukkan ke dalam basis data yang disebut supernatural. Ada satu tabel, yang disebut workout. Berikut ini beberapa datanya:</span>
 
     <media-image source="files/db.png" card citation="This is my citation." accent-color="grey" size="wide" offset="narrow"></media-image>
+
 
       <p>Tulis program untuk membantu Cthulhu melihat berapa banyak kambing yang memenuhi
         standar akurasi minimum. Nilai minimum muncul melalui URL, seperti ini:</p>
