@@ -14,6 +14,7 @@
     </p>
   </simple-tooltip>
 
+
   <p></p>
   <p aria-labelledby="heading" aria-live="polite" aria-hidden="true"></p>
   <p></p>
@@ -41,6 +42,7 @@
     </p>
   </simple-tooltip>
 
+
   <p></p>
   <p aria-labelledby="heading" aria-live="polite" aria-hidden="true"></p>
   <p></p>
@@ -55,8 +57,8 @@
 </ul>
 <p class="blinkfocus">ID variabel, berikut kodenya</p>
 <code-sample copy-clipboard-button type="php" class="blinkfocus">
-  <template preserve-content="preserve-content">
-    <!--?php ... (isi dengan koneksi database) // Get the id of the wombat the user
+  
+<template preserve-content="preserve-content"><!--?php ... (isi dengan koneksi database) // Get the id of the wombat the user
     wants to see. $id=$ _GET['id']; // Prepare SQL. $stmt=$ dbConnection--->prepare('SELECT * FROM siswa WHERE nis = :id'); // Run it. $stmt-&gt;execute(['id'
     =&gt; $id]); $row = $stmt-&gt;fetch(); ?&gt;
      <h1>NIS Siswa <!--?php print $id; ?--></h1>
@@ -66,9 +68,7 @@
     </p>
     <p>Jenis Kelamin:
       <!--?php print $row['gender']; ?-->
-    </p>
-  </template>
-</code-sample>
+    </p></template></code-sample>
 <iframe-loader source="https://pastebin.com/nevMLeCB#mkz1TcNp" height="500" width="100%" loading="">
   
 <iframe width="100%" height="500" src="https://pastebin.com/nevMLeCB#mkz1TcNp"></iframe></iframe-loader>
@@ -88,6 +88,7 @@
       new PDO($dsn, $dbUserName, $dbPassword);</template>
   </code-sample>
 
+
   <p part="heading"></p>
   <p part="heading"></p>
   <p part="heading"></p>
@@ -98,6 +99,7 @@
       <slot>expand</slot>
     </p>
   </simple-tooltip>
+
 
   <p></p>
   <p aria-labelledby="heading" aria-live="polite" aria-hidden="true"></p>
