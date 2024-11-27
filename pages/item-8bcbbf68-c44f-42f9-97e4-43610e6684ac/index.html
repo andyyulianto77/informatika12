@@ -15,6 +15,7 @@
   </simple-tooltip>
 
 
+
   <p></p>
   <p aria-labelledby="heading" aria-live="polite" aria-hidden="true"></p>
   <p></p>
@@ -41,6 +42,7 @@
       <slot>expand</slot>
     </p>
   </simple-tooltip>
+
 
 
   <p></p>
@@ -77,7 +79,8 @@
   <li>Buat placeholder untuk id di SQL (baris 6)</li>
   <li>Jalankan kueri dengan placeholder (baris 8)</li>
 </ul>
-<br/><span>Saya juga mengel</span><span>uarkan semua bidang, bukan hanya nama. Anda dapat mencobanya <a href="http://andy1.rf.gd/php/db/php/siswa-id.php?id=202300&amp;i=1" target="_blank" class="blinkfocus">disini</a>.  Coba ID yang berbeda.</span><a11y-collapse icon="icons:expand-more" icon-expanded="av:fiber-manual-record" label="expand" heading="Tulis Q-3 (Tulis kode untuk menghubungkan ke database)" tooltip="expand" accent-color="grey">
+<p>Saya juga mengeluarkan semua bidang, bukan hanya nama. Anda dapat mencobanya <a href="http://andy1.rf.gd/php/db/php/siswa-id-validation.php?id=202300" target="_blank"><mark>disini</mark></a>. Coba ID yang berbeda/</p>
+<br/><br/><a11y-collapse icon="icons:expand-more" icon-expanded="av:fiber-manual-record" label="expand" heading="Tulis Q-3 (Tulis kode untuk menghubungkan ke database)" tooltip="expand" accent-color="grey">
   <p part="heading-id"></p>
   <p></p>
   <p part="heading">kode untuk menghubungkan ke database</p>
@@ -87,6 +90,7 @@
       "mysql:host=sql109.infinityfree.com;dbname=$dbName"; // Connect. $dbConnection =
       new PDO($dsn, $dbUserName, $dbPassword);</template>
   </code-sample>
+
 
 
   <p part="heading"></p>
@@ -101,6 +105,7 @@
   </simple-tooltip>
 
 
+
   <p></p>
   <p aria-labelledby="heading" aria-live="polite" aria-hidden="true"></p>
   <p></p>
@@ -108,10 +113,9 @@
 <h3 data-original-level="H3" id="header-27191c9e-b6de-c05c-7696-570b671d4fb6">Dengan validasi</h3>
 <p>Mari kita validasi ID. Coba ini . Ubah id-nya, lalu lihat apa yang terjadi. Berikut
     kodenya. Saya menggunakan fungsi validasi di sini.</p>
-<p></p>
 <code-sample type="php" copy-clipboard-button>
-    <template preserve-content="preserve-content">
-      <!--?php // Untuk terhubung ke DB, perlu nama DB, nama pengguna, dan kata sandi.
+    
+  <template preserve-content="preserve-content"><!--?php // Untuk terhubung ke DB, perlu nama DB, nama pengguna, dan kata sandi.
       $dbName=' siswa'; $dbUserName=' sesuatu'; $dbPassword=' sesuatu'; // Buat DSN. $dsn="
       mysql:host=localhost;namadb=$namadb"; // Hubungkan. koneksi $db global; $dbConnection=n
       ew PDO($dsn, $dbUserName, $dbPassword); $errorMessage=' '; // Dapatkan id siswa yang
@@ -150,8 +154,7 @@
       <br>'; } } if ($errorMessage == '') { // Existence check. // Prepare SQL. $stmt = $dbConnection-&gt;prepare('SELECT
       * FROM siswa WHERE nis = :id'); // Run it. $stmt-&gt;execute(['id' =&gt; $id]); //
       Anything returned? if ($stmt-&gt;rowCount() == 0) { $errorMessage = "Maaf, tidak
-      ada siswa yang memiliki id $id."; } } return $errorMessage; }</template>
-  </code-sample>
+      ada siswa yang memiliki id $id."; } } return $errorMessage; }</template></code-sample>
 <p>Koneksi DB sama seperti sebelumnya. Baris...&#160;</p>
 <code-sample type="javascript" copy-clipboard-button>
     <template preserve-content="preserve-content">$id = getParamFromGet('id');</template>
