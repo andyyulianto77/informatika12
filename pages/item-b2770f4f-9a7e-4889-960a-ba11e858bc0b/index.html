@@ -50,11 +50,13 @@
     <p></p>
   </code-sample>
 
+
   <code-sample type="javascript" copy-clipboard-button>
     <template preserve-content="preserve-content">$dbName = 'if0_37345471_dblatihan'; $dbUserName = 'if0_37345471'; $dbPassword =
       'oke'; // Buat DSN. $dsn = "mysql:host=sql109.infinityfree.com;dbname=$dbName"; //
       Hubungkan.koneksi global $dbConnection = new PDO($dsn, $dbUserName, $dbPassword);</template>
   </code-sample>
+
 
 </a11y-collapse>
 <h3 data-original-level="H3" id="header-d1af149e-596c-4241-c1a8-52f31436cdae">Dengan validasi</h3>
@@ -234,20 +236,23 @@
     <p>Jika Anda masuk sebagai siswa, Anda dapat mengirimkan solusi untuk latihan ini.</p>
   </a11y-collapse>
 <h2 data-original-level="H2" id="header-026e4064-7895-7c89-a938-1a6bd9a82c69">Latihan 2</h2>
-<a11y-collapse heading="Akurasi supranatural " heading-button accent-color="grey" icon="icons:expand-more" tooltip="collapse" label="collapse">
+<a11y-collapse heading="Akurasi supranatural " heading-button accent-color="grey" icon="icons:expand-more" tooltip="expand" label="expand">
     <p>Supernatural adalah aplikasi latihan favorit Cthulhu untuk Oculus Quest. Pelatih
       Doc sedang menerjang untuk menyerang beberapa target virtual.</p>
     <grid-plate item-margin="16" item-padding="16" layout="2-1"><media-image source="files/doc.png" citation="This is my citation." slot="col-2" accent-color="grey" size="wide" offset="narrow"></media-image>
+
 <p slot="col-1">Supernatural adalah aplikasi latihan favorit Cthulhu untuk Oculus Quest. Pelatih Doc sedang menerjang untuk menyerang beberapa target virtual.</p><p slot="col-1">Beberapa teman kambing Cthulhu juga menggunakan aplikasi ini. Setiap latihan dinilai
       berdasarkan akurasi dan kekuatan, dengan angka dari 0 hingga 100.</p><p slot="col-1"><a href="files/supernatural-db.zip">Unduh</a> file
     zip yang dapat Anda impor ke dalam basis data, untuk membuat ulang tabel dan data.
     Jadi, buat basis data di phpMyAdmin, lalu gunakan tab impor untuk mengimpor file
     yang Anda unduh.</p></grid-plate>
 
+
 <span>
   Skor latihan terbaru telah dimasukkan ke dalam basis data yang disebut supernatural. Ada satu tabel, yang disebut workout. Berikut ini beberapa datanya:</span>
 
   <media-image source="files/db.png" card citation="This is my citation." accent-color="grey" size="wide" offset="narrow"></media-image>
+
 <p>Tulis program untuk membantu Cthulhu melihat berapa banyak kambing yang memenuhi
     standar akurasi minimum. Nilai minimum muncul melalui URL, seperti ini:</p>
   <ul>
@@ -255,4 +260,5 @@
   </ul>
   <p>Jika Anda masuk sebagai siswa, Anda dapat mengirimkan solusi untuk latihan ini.</p>
   </a11y-collapse>
-<p>Deep thoughts..</p>
+<h3 id="header-da8a3ac5-e41f-3092-b159-59a838f9e0b4">Apa sekarang?</h3>
+<p>Mari kita sembunyikan data koneksi DB. Ini akan membuat program lebih aman dan lebih mudah diterapkan. Kemudian kita akan kembali ke beberapa hal SQL terakhir.</p>
