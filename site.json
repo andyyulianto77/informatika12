@@ -17,13 +17,13 @@
       "settings": {
         "lang": "en-US",
         "publishPagesOn": true,
-        "pathauto": true,
+        "pathauto": false,
         "sw": false,
         "forceUpgrade": false,
         "gaID": null
       },
       "created": 1732016691,
-      "updated": 1732794012,
+      "updated": 1732794496,
       "git": {
         "vendor": "github",
         "branch": "gh-pages"
@@ -4459,7 +4459,7 @@
       "id": "item-fc4e64e8-7198-49ca-a125-5b2d4498c547",
       "indent": 0,
       "location": "pages/item-fc4e64e8-7198-49ca-a125-5b2d4498c547/index.html",
-      "slug": "perancangan-basis-data/1-to-many-(n)",
+      "slug": "perancangan-basis-data/page",
       "order": 9,
       "parent": "item-13298894-5889-4b24-b28f-5bbde3a3c6f1",
       "title": "1 to Many (N)",
