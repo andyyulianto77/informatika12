@@ -59,7 +59,7 @@
 <media-image source="files/phpMyAdmin.png" alt="phpMyAdmin.png" accent-color="grey" size="wide" offset="none" citation="https://webapps.skilling.us/lesson/1n" caption="phpmyadmin" modal-title="phpmyadmin" _has-caption></media-image>
 <p>Berikut ini yang digambar PHPStorm.</p>
 <media-image source="files/phpstorm.png" alt="phpstorm.png" accent-color="grey" size="wide" offset="narrow" caption="gambar di phpstrom" citation="https://webapps.skilling.us/lesson/1n" modal-title="gambar di phpstrom" _has-caption></media-image>
-<h3>hubungan 1:N&#160;</h3>
+<h3 data-original-level="H3" id="h3-1481948181">hubungan 1:N&#160;</h3>
 <p>Berikut tabelnya lagi.&#160;</p>
 <grid-plate item-margin="16" item-padding="16" layout="1-1">
     <media-image source="files/households.png" alt="households.png" accent-color="grey" size="wide" offset="none" slot="col-1"></media-image>
@@ -73,18 +73,18 @@
     dapat memiliki lebih dari satu anjing. Rumah tangga Mathiesons memiliki dua anjing.&#160;</p>
 <p>Ini disebut hubungan 1:N, atau satu ke banyak. Anda membuat hubungan 1:N dengan
     mengambil kunci utama tabel di sisi 1, dan menaruhnya di tabel di sisi N.&#8203;</p>
-<h3>1:N kueri&#160;</h3>
+<h3 data-original-level="H3" id="h3-1512688745">1:N kueri&#160;</h3>
 <p>Misalnya Anda ingin mengetahui nama rumah tangga Warbler. Berikut langkah-langkahnya:&#160;</p>
 <ol>
-    <li>Temukan tabel dan kolom dengan hal yang Anda ketahui (yaitu Warbler, dalam doggos.name).</li>
-    <li>Temukan tabel dan kolom dengan hal yang ingin Anda ketahui (yaitu households.name).</li>
-    <li>Gunakan kunci untuk menemukan jalur antar tabel.</li>
-  </ol>
+      <li>Temukan tabel dan kolom dengan hal yang Anda ketahui (yaitu Warbler, dalam doggos.name).</li>
+      <li>Temukan tabel dan kolom dengan hal yang ingin Anda ketahui (yaitu households.name).</li>
+      <li>Gunakan kunci untuk menemukan jalur antar tabel.</li>
+    </ol>
 <p>Mari kita bahas satu per satu. Pertama: Temukan tabel dan kolom dengan hal yang
-    Anda ketahui</p>
+      Anda ketahui</p>
 <p>
-    <br>
-  </p>
+      <br>
+    </p>
 <media-image source="files/query-a.png" alt="query-a.png" accent-color="grey" size="wide" offset="none"></media-image>
 <span>Kita tahu nama anjing itu adalah Warbler.<br><br></span><media-image source="files/query-b.png" alt="query-b.png" accent-color="grey" size="wide" offset="none"></media-image>
 <p>Kami ingin tahu nama rumah tangganya. Itu households.name.</p>
@@ -92,61 +92,129 @@
 <p>Ada jalur dari kunci asing doggos.householdke kunci utama households.household_id.</p>
 <p>Oke, mari kita ubah itu menjadi SQL. Mari kita mulai dengan template SELECT:</p>
 <ul>
-      <li>MEMILIH</li>
-      <li>DARI</li>
-      <li>DI MANA</li>
-    </ul>
+        <ul>
+          <li>SELECT / MEMILIH</li>
+          <li>FROM / DARI</li>
+          <li>WHERE / DI MANA</li>
+        </ul>
+      </ul>
 <p>Langkah pertama lagi: mulai dengan apa yang kita ketahui, yaitu nama anjing itu
-      adalah Warbler.</p>
+        adalah Warbler.</p>
 <media-image source="files/query-a (1).png" alt="Temukan tabel dan kolom dengan hal yang Anda ketahui" accent-color="grey" size="wide" offset="none"></media-image>
 <ul>
-      <li>SELECT </li>
-      <li>FROM  doggos</li>
-      <li>WHERE  doggos.nama = 'Warbler'</li>
-    </ul>
+        <li>SELECT</li>
+        <li>FROM doggos</li>
+        <li>WHERE doggos.nama = 'Warbler'</li>
+      </ul>
 <p>Tambahkan kondisi di WHERE. Letakkan tabel di FROM.</p>
 <p>Langkah 2: apa yang ingin kita ketahui.&#160;</p>
 <media-image source="files/query-b (1).png" alt="Temukan tabel dan kolom dengan hal yang ingin Anda ketahui " accent-color="grey" size="wide" offset="none" citation="https://webapps.skilling.us/lesson/1n"></media-image>
 <p>Temukan tabel dan kolom dengan hal yang ingin Anda ketahui&#160;</p>
 <ul>
-      <li>SELECT households.name </li><li>FROM doggos, households </li><li>WHERE doggos.name = 'Warbler'</li>
-    </ul>
+        <li>SELECT households.name</li>
+        <li>FROM doggos, households</li>
+        <li>WHERE doggos.name = 'Warbler'</li>
+      </ul>
 <p>Letakkan bidang target setelah SELECT, dan tambahkan tabel ke FROM.</p>
 <p>Langkah 3:&#160;<span>Tambahkan jalur </span>
 
-    </p>
+      </p>
 <media-image source="files/query-c.png" alt="query-c.png" accent-color="grey" size="wide" offset="none" caption="Gunakan kunci untuk menemukan jalur antar tabel " citation="https://webapps.skilling.us/lesson/1n" modal-title="Gunakan kunci untuk menemukan jalur antar tabel " _has-caption></media-image>
 <p><span>Tautan doggos.household dan households.household_id. </span>
 
-    </p>
-<span>SELECT households.name FROM doggos, households WHERE doggos.name = 'Warbler'   and doggos.household = households.household_id</span><p><ul><li><span>SELECT households.name </span></li><li><span>FROM doggos, households </span></li><li><span>WHERE doggos.name = 'Warbler' </span></li></ul> <span>and doggos.household = households.household_id</span></p>
-<blockquote><span>Catatan </span>
-      <br>
+      </p>
+<span>SELECT households.name FROM doggos, households WHERE doggos.name = 'Warbler'   and doggos.household = households.household_id</span><ul>
+        <li><span>SELECT households.name </span>
+        </li>
+        <li><span>FROM doggos, households </span>
+        </li>
+        <li><span>WHERE doggos.name = 'Warbler' </span>
+        </li>
+      </ul>
+<span>and doggos.household = households.household_id</span><blockquote><span>Catatan </span>
+
+        <br>
 <span>Cara menggabungkan tabel ini disebut key chain. Ada metode lain, menggunakan kata kunci seperti INNER JOIN.      <br> Profesor lain mungkin ingin Anda menggunakan metode itu dalam kursus mereka. 
 <br>
 <span>Saya menggunakan gantungan kunci di sini karena lebih mudah dipahami.</span>
 </span>
-    </blockquote>
-<h3>1:N dalam PHP&#160;</h3>
+      </blockquote>
+<h3 data-original-level="H3" id="h3-1855721224">1:N dalam PHP&#160;</h3>
 <p>Mari kita masukkan kueri itu ke dalam PHP. Kita akan menggeneralisasikannya, sehingga
-      program dapat mencari nama anjing yang ditentukan pengguna.&#160;</p>
+        program dapat mencari nama anjing yang ditentukan pengguna.&#160;</p>
 <p>Anda dapat mencoba program tersebut , dan mengunduhnya .&#160;</p>
 <p>Program ini mengambil nama doggo dari URL:</p>
 <p>&#160;...?doggo_name=warbler&#160;</p>
 <p>Outputnya seperti ini:</p>
 <media-image source="files/output1.png" alt="output1.png" accent-color="grey" size="wide" offset="none"></media-image>
 <p>Berikut kodenya:</p>
-<iframe src="https://pastebin.com/embed_iframe/DjWKaVRF?theme=dark" style="border:none;width:100%"></iframe>
-<p>Sebagian besar. Halaman tersebut menggunakan kerangka Bootstrap untuk penataan gaya. Oleh karena itu, ada tag link dan script dan kelas seperti container. Anda akan melihatnya jika Anda mempelajari bagian front-end kursus tersebut.</p>
+<iframe-loader source="https://haxtheweb.org" height="500" width="100%">
+
+      <iframe src="https://haxtheweb.org" style="border:none;width:100%" height="500" width="100%"></iframe>
+      </iframe-loader>
+<p>Sebagian besar. Halaman tersebut menggunakan kerangka Bootstrap untuk penataan gaya.
+        Oleh karena itu, ada tag link dan script dan kelas seperti container. Anda akan melihatnya
+        jika Anda mempelajari bagian front-end kursus tersebut.</p>
 <p>Hal baru ada pada baris 16:</p>
-<p></p>
-<code-sample type="javascript" copy-clipboard-button><template preserve-content="preserve-content">/** @var PDO $dbConnection */
-$stmnt = $dbConnection-&gt;prepare($sql);</template></code-sample>
+<code-sample type="javascript" copy-clipboard-button data-hax-lock="data-hax-lock">
+        <template preserve-content="preserve-content">/** @var PDO $dbConnection */ $stmnt = $dbConnection-&gt;prepare($sql);</template>
+      </code-sample>
 <p>Tanpa komentar, PHPStorm mengeluh tentang $dbConnection:</p>
 <media-image source="files/undefined-variable.png" alt="undefined-variable.png" accent-color="grey" size="wide" offset="none"></media-image>
-<p>Itu masuk akal. $dbConnection didefinisikan dalam berkas yang disertakan, seperti ini: PHPStorm tidak cukup pintar untuk memeriksa semua file yang disertakan dan mencari tahu variabel mana yang didefinisikan di sana. Tidak masalah. Saya memberi tahu PHPStorm tentang variabel tersebut dengan sebuah komentar:</p>
+<p>Itu masuk akal. $dbConnection didefinisikan dalam berkas yang disertakan, seperti
+        ini: PHPStorm tidak cukup pintar untuk memeriksa semua file yang disertakan dan mencari
+        tahu variabel mana yang didefinisikan di sana. Tidak masalah. Saya memberi tahu PHPStorm
+        tentang variabel tersebut dengan sebuah komentar:</p>
 <media-image source="files/error-gone.png" alt="error-gone.png" accent-color="grey" size="wide" offset="none"></media-image>
-<p>Tapi tunggu, masih ada lagi! Sekarang setelah PHPStorm mengetahui bahwa itu $dbConnection adalah objek PDO, ia dapat memberi saya bantuan tambahan, seperti ini:</p>
+<p>Tapi tunggu, masih ada lagi! Sekarang setelah PHPStorm mengetahui bahwa itu $dbConnection
+        adalah objek PDO, ia dapat memberi saya bantuan tambahan, seperti ini:</p>
 <media-image source="files/extra-help.png" alt="extra-help.png" accent-color="grey" size="wide" offset="none"></media-image>
-<p>Ia menunjukkan kepada saya hal-hal $stmntyang dapat dilakukannya. Saya dapat memilih dari daftar. W00t!</p>
+<p>Ia menunjukkan kepada saya hal-hal $stmnt yang dapat dilakukannya. Saya dapat memilih
+          dari daftar. W00t!</p>
+<h3>Fungsi validasi&#160;</h3>
+<p>useful-stuff.phpmemiliki fungsi validasi:</p>
+<code-sample type="javascript" copy-clipboard-button data-hax-lock="data-hax-lock"><template preserve-content="preserve-content">/**
+ * Periksa nama anjingnya.
+ * @param mixed $name Nama dari pengguna.
+ * @return string Pesan kesalahan, MT jika OK.
+ */
+function checkName($name) {
+    global $dbConnection;
+    $errorMessage = '';
+    if (is_null($name)) {
+        $errorMessage = 'Maaf, butuh nama anjing.';
+    }
+    if ($errorMessage == '') {
+        // Siapkan SQL.
+        $stmt = $dbConnection-&gt;prepare('SELECT * FROM doggos WHERE name = :name');
+         // Jalankan.
+        $stmt-&gt;execute(['name' =&gt; $name]);
+        // Ada yang dikembalikan?
+        if ($stmt-&gt;rowCount() == 0) {
+            $errorMessage = "Sorry, no doggo called $name.";
+        }
+    }
+    // Mengembalikan hasil.
+    return $errorMessage;
+}</template></code-sample>
+<p>Tidak ada yang baru di sini.&#160;</p>
+<h2>Latihan</h2>
+<p></p>
+<simple-tags tags="eval1" auto-accent-color accent-color="pink"></simple-tags>
+<blockquote>Pencarian 1:N&#160;</blockquote>
+<blockquote><span>Sebelumnya, Anda membuat versi aplikasi wombat Anda sendiri. Mari kita gunakan kembali. </span></blockquote>
+<blockquote><span>Temukan hubungan 1:N yang dapat Anda tambahkan ke tabel Anda saat ini. Salah satu yang umum adalah kategori. Misalnya: </span></blockquote>
+<blockquote><ul><li></li><li><span>Sepatu memiliki pabrik pembuat, di mana setiap sepatu memiliki satu pabrik pembuat, tetapi satu pabrik pembuat dapat membuat lebih dari satu produk. Hal yang sama berlaku untuk mobil dan barang-barang buatan lainnya. </span></li><li><span>Film memiliki satu peringkat, tetapi lebih dari satu film memiliki peringkat tertentu. </span></li><li><span>Buku memiliki satu penerbit, tetapi satu penerbit menerbitkan lebih dari satu buku. </span></li><li><span>Mata kuliah ditawarkan oleh satu departemen, tetapi satu departemen menawarkan lebih dari satu mata kuliah.</span></li></ul></blockquote>
+<blockquote>Buatlah tabel untuk kategori dengan setidaknya tiga kolom:&#160;</blockquote>
+<blockquote><ul><li>Id (misalnya, id pabrikan, id kursus). INT, peningkatan otomatis, PK. </li><li>Nama. VARCHAR, Anda memilih panjangnya. </li><li>Catatan atau komentar. TEKS </li></ul></blockquote>
+<blockquote><span>Tambahkan kolom kunci asing ke tabel asli Anda. Misalnya, sepatu mungkin memiliki kolom produsen. </span></blockquote>
+<blockquote><span>Tambahkan data ke tabel baru Anda. Tambahkan tautan ke tabel asli Anda. </span></blockquote>
+<blockquote><span>Tulis aplikasi yang MENDAPATKAN nama entitas dari tabel asli Anda (film, sepatu, kursus, apa saja), dan menunjukkan nama kategori, dan catatan untuk kategori tersebut. Seperti aplikasi doggo yang mengambil nama doggo, dan menunjukkan rumahnya. </span></blockquote>
+<blockquote>(Petunjuk: URL tidak boleh memiliki spasi. Gunakan + sebagai gantinya, seperti pada: /url?var=foo+bar)&#160;</blockquote>
+<h5>Kirimkan URL Anda (yang menyertakan nama untuk dicari), dan file zip Anda.&#160;</h5>
+<p>Jika Anda masuk sebagai siswa, Anda dapat mengirimkan solusi untuk latihan ini.</p>
+<p>Apa selanjutnya?&#160;</p>
+<p>Mari kita balikkan pertanyaannya. Bagaimana Anda menunjukkan semua anjing dalam satu rumah tangga?<br></p>
+<p></p>
+<blockquote><br></blockquote>
 <p></p>
