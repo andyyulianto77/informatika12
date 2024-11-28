@@ -4420,7 +4420,7 @@
       "description": "Kita sudah menggunakan GET dengan aman di PHP, kita perlu membuat koneksi ke database menggunakan prepared statements, kita memastikan data yang dikirim aman dari serangan, seperti SQL injection",
       "metadata": {
         "created": 1732701390,
-        "updated": 1732787932,
+        "updated": 1732789290,
         "images": {},
         "videos": {},
         "published": true,
