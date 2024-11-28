@@ -4439,13 +4439,19 @@
       "slug": "perancangan-basis-data/page-1",
       "order": 10,
       "parent": "item-13298894-5889-4b24-b28f-5bbde3a3c6f1",
-      "title": "Page",
-      "description": "",
+      "title": "Banyak catatan Nama Kucing",
+      "description": "\n\n\n",
       "metadata": {
         "created": 1732774366,
-        "updated": 1732774366,
-        "images": [],
-        "videos": []
+        "updated": 1732774449,
+        "images": {},
+        "videos": {},
+        "published": true,
+        "pageType": "content",
+        "hideInMenu": false,
+        "tags": "sql",
+        "locked": false,
+        "readtime": 1
       }
     },
     {
