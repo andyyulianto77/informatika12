@@ -4443,15 +4443,16 @@
       "description": "Latihan\nPencarian 1:N\nSebelumnya, Anda membuat versi aplikasi wombat Anda sendiri. Mari kita gunakan kembali. \nTemukan hubungan 1:N yang dapat Anda tambahkan ke tabel Anda saat ini. Salah satu yang u",
       "metadata": {
         "created": 1732786885,
-        "updated": 1732787594,
+        "updated": 1732787623,
         "images": {},
         "videos": {},
-        "published": true,
+        "published": false,
         "pageType": "practice",
         "hideInMenu": false,
         "tags": "latihan",
         "locked": false,
-        "readtime": 1
+        "readtime": 1,
+        "icon": "hax:shovel"
       }
     },
     {
