@@ -59,7 +59,7 @@
 <media-image source="files/phpMyAdmin.png" alt="phpMyAdmin.png" accent-color="grey" size="wide" offset="none" citation="https://webapps.skilling.us/lesson/1n" caption="phpmyadmin" modal-title="phpmyadmin" _has-caption></media-image>
 <p>Berikut ini yang digambar PHPStorm.</p>
 <media-image source="files/phpstorm.png" alt="phpstorm.png" accent-color="grey" size="wide" offset="narrow" caption="gambar di phpstrom" citation="https://webapps.skilling.us/lesson/1n" modal-title="gambar di phpstrom" _has-caption></media-image>
-<p>hubungan 1:N&#160;</p>
+<h3>hubungan 1:N&#160;</h3>
 <p>Berikut tabelnya lagi.&#160;</p>
 <grid-plate item-margin="16" item-padding="16" layout="1-1">
     <media-image source="files/households.png" alt="households.png" accent-color="grey" size="wide" offset="none" slot="col-1"></media-image>
@@ -73,7 +73,7 @@
     dapat memiliki lebih dari satu anjing. Rumah tangga Mathiesons memiliki dua anjing.&#160;</p>
 <p>Ini disebut hubungan 1:N, atau satu ke banyak. Anda membuat hubungan 1:N dengan
     mengambil kunci utama tabel di sisi 1, dan menaruhnya di tabel di sisi N.&#8203;</p>
-<p>1:N kueri&#160;</p>
+<h3>1:N kueri&#160;</h3>
 <p>Misalnya Anda ingin mengetahui nama rumah tangga Warbler. Berikut langkah-langkahnya:&#160;</p>
 <ol>
     <li>Temukan tabel dan kolom dengan hal yang Anda ketahui (yaitu Warbler, dalam doggos.name).</li>
@@ -100,45 +100,34 @@
       adalah Warbler.</p>
 <media-image source="files/query-a (1).png" alt="Temukan tabel dan kolom dengan hal yang Anda ketahui" accent-color="grey" size="wide" offset="none"></media-image>
 <ul>
-      <li>MEMILIH</li>
-      <li>DARI doggos</li>
-      <li>DI MANA doggos.nama = 'Warbler'</li>
+      <li>SELECT </li>
+      <li>FROM  doggos</li>
+      <li>WHERE  doggos.nama = 'Warbler'</li>
     </ul>
 <p>Tambahkan kondisi di WHERE. Letakkan tabel di FROM.</p>
 <p>Langkah 2: apa yang ingin kita ketahui.&#160;</p>
 <media-image source="files/query-b (1).png" alt="Temukan tabel dan kolom dengan hal yang ingin Anda ketahui " accent-color="grey" size="wide" offset="none" citation="https://webapps.skilling.us/lesson/1n"></media-image>
 <p>Temukan tabel dan kolom dengan hal yang ingin Anda ketahui&#160;</p>
 <ul>
-      <li>PILIH rumah tangga.nama</li>
-      <li>DARI doggos , rumah tangga</li>
-      <li>DI MANA doggos.nama = 'Warbler'</li>
+      <li>SELECT households.name </li><li>FROM doggos, households </li><li>WHERE doggos.name = 'Warbler'</li>
     </ul>
 <p>Letakkan bidang target setelah SELECT, dan tambahkan tabel ke FROM.</p>
 <p>Langkah 3:&#160;<span>Tambahkan jalur </span>
-
-    </p>
-<p><span><br></span>
 
     </p>
 <media-image source="files/query-c.png" alt="query-c.png" accent-color="grey" size="wide" offset="none" caption="Gunakan kunci untuk menemukan jalur antar tabel " citation="https://webapps.skilling.us/lesson/1n" modal-title="Gunakan kunci untuk menemukan jalur antar tabel " _has-caption></media-image>
 <p><span>Tautan doggos.household dan households.household_id. </span>
 
     </p>
-<span>PILIH rumah tangga.nama&#160;</span><p><span>DARI doggos, rumah tangga </span>
-
-    </p>
-<p>DI MANA doggos.nama = 'Warbler'   dan doggos.household = rumah tangga.household_id 
-
-    </p>
+<span>SELECT households.name FROM doggos, households WHERE doggos.name = 'Warbler'   and doggos.household = households.household_id</span><p><ul><li><span>SELECT households.name </span></li><li><span>FROM doggos, households </span></li><li><span>WHERE doggos.name = 'Warbler' </span></li></ul> <span>and doggos.household = households.household_id</span></p>
 <blockquote><span>Catatan </span>
-
-   
-<span>Cara menggabungkan tabel ini disebut key chain. Ada metode lain, menggunakan kata kunci seperti INNER JOIN. Profesor lain mungkin ingin Anda menggunakan metode itu dalam kursus mereka. 
-
+      <br>
+<span>Cara menggabungkan tabel ini disebut key chain. Ada metode lain, menggunakan kata kunci seperti INNER JOIN.      <br> Profesor lain mungkin ingin Anda menggunakan metode itu dalam kursus mereka. 
+<br>
 <span>Saya menggunakan gantungan kunci di sini karena lebih mudah dipahami.</span>
-
-    </span></blockquote>
-<p>1:N dalam PHP&#160;</p>
+</span>
+    </blockquote>
+<h3>1:N dalam PHP&#160;</h3>
 <p>Mari kita masukkan kueri itu ke dalam PHP. Kita akan menggeneralisasikannya, sehingga
       program dapat mencari nama anjing yang ditentukan pengguna.&#160;</p>
 <p>Anda dapat mencoba program tersebut , dan mengunduhnya .&#160;</p>
@@ -147,3 +136,17 @@
 <p>Outputnya seperti ini:</p>
 <media-image source="files/output1.png" alt="output1.png" accent-color="grey" size="wide" offset="none"></media-image>
 <p>Berikut kodenya:</p>
+<iframe src="https://pastebin.com/embed_iframe/DjWKaVRF?theme=dark" style="border:none;width:100%"></iframe>
+<p>Sebagian besar. Halaman tersebut menggunakan kerangka Bootstrap untuk penataan gaya. Oleh karena itu, ada tag link dan script dan kelas seperti container. Anda akan melihatnya jika Anda mempelajari bagian front-end kursus tersebut.</p>
+<p>Hal baru ada pada baris 16:</p>
+<p></p>
+<code-sample type="javascript" copy-clipboard-button><template preserve-content="preserve-content">/** @var PDO $dbConnection */
+$stmnt = $dbConnection-&gt;prepare($sql);</template></code-sample>
+<p>Tanpa komentar, PHPStorm mengeluh tentang $dbConnection:</p>
+<media-image source="files/undefined-variable.png" alt="undefined-variable.png" accent-color="grey" size="wide" offset="none"></media-image>
+<p>Itu masuk akal. $dbConnection didefinisikan dalam berkas yang disertakan, seperti ini: PHPStorm tidak cukup pintar untuk memeriksa semua file yang disertakan dan mencari tahu variabel mana yang didefinisikan di sana. Tidak masalah. Saya memberi tahu PHPStorm tentang variabel tersebut dengan sebuah komentar:</p>
+<media-image source="files/error-gone.png" alt="error-gone.png" accent-color="grey" size="wide" offset="none"></media-image>
+<p>Tapi tunggu, masih ada lagi! Sekarang setelah PHPStorm mengetahui bahwa itu $dbConnection adalah objek PDO, ia dapat memberi saya bantuan tambahan, seperti ini:</p>
+<media-image source="files/extra-help.png" alt="extra-help.png" accent-color="grey" size="wide" offset="none"></media-image>
+<p>Ia menunjukkan kepada saya hal-hal $stmntyang dapat dilakukannya. Saya dapat memilih dari daftar. W00t!</p>
+<p></p>
