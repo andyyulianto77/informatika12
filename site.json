@@ -4439,13 +4439,19 @@
       "slug": "perancangan-basis-data/page/page",
       "order": 0,
       "parent": "item-fc4e64e8-7198-49ca-a125-5b2d4498c547",
-      "title": "Page",
-      "description": "",
+      "title": "Latihan SQL 1",
+      "description": "Latihan&#160;\nPencarian 1:N\nSebelumnya, Anda membuat versi aplikasi wombat Anda sendiri. Mari kita gunakan kembali.\nTemukan hubungan 1:N yang dapat Anda tambahkan ke tabel Anda saat ini. Salah satu y",
       "metadata": {
         "created": 1732786885,
-        "updated": 1732786885,
-        "images": [],
-        "videos": []
+        "updated": 1732787305,
+        "images": {},
+        "videos": {},
+        "published": true,
+        "pageType": "project",
+        "hideInMenu": false,
+        "tags": "latihan",
+        "locked": false,
+        "readtime": 1
       }
     },
     {
