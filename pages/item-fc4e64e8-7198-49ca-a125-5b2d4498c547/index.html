@@ -33,23 +33,23 @@
 </learning-component>
 <p>Ini dia aplikasi anjing-di-lingkungan-sekitar lagi.</p>
 <media-image source="files/doggos-in-the-neighborhood.png" alt="doggos-in-the-neighborhood.png" accent-color="grey" size="wide" offset="narrow"></media-image>
-<p>Anda dapat mencoba aplikasinya .&#160;</p>
-<h2 data-original-level="H2" id="header-5589475d-350c-684a-7fd3-64280ac3ecaa">Tabel, bidang, dan kunci&#160;</h2>
+<p>Anda dapat mencoba aplikasinya <a href="http://webappexamples.skilling.us/how-web-apps-work/clients-and-servers/dogs-in-neighborhood/" target="_blank">disini</a>.</p>
+<p><span>Tabel, bidang, dan kunci </span></p>
 <p>Basis data untuk aplikasi ini memiliki dua tabel. Pertama, ada rumah tangga:</p>
 <media-image source="files/households.png" alt="households.png" accent-color="grey" size="wide" offset="none"></media-image>
-<p>Ada dua kolom. household_id adalah bilangan bulat (bilangan bulat). Ini adalah kunci
+<p>Ada dua kolom. <code>household_id</code>adalah bilangan bulat (bilangan bulat). Ini adalah kunci
     utama, yaitu, setiap baris memiliki id yang unik. Hanya ada satu rumah tangga 1,
     satu rumah tangga 2, dan seterusnya. Mungkin ada dua rumah tangga Mathieson yang
     berbeda. Mereka akan memiliki nama yang sama, tetapi kunci yang berbeda.&#160;</p>
-<p>Ini name adalah sebuah string.&#160;</p>
+<p>Kolom <code>name</code>adalah string.&#160;</p>
 <p>Meja lainnya adalah doggos.</p>
 <media-image source="files/doggos.png" alt="doggos.png" accent-color="grey" size="wide" offset="none"></media-image>
-<p>Memiliki tiga kolom: doggo_id kunci utama tabel, name: nama anjing, household: rumah
+<p>Memiliki tiga kolom: <code>doggo_id</code> kunci utama tabel, <code>name</code>: nama anjing, <code>household</code>: rumah
     tangga tempat anjing itu berada:&#160;</p>
 <ul>
-    <li>household berisi kunci dari households tabel. Jadi Renata dan Rosie tinggal di rumah
+    <li>household berisi kunci dari <code>households</code>tabel. Jadi Renata dan Rosie tinggal di rumah
       tangga 1, yaitu Mathiesons. Tannis tinggal di rumah tangga 2, yaitu Sruay.</li>
-    <li>doggo.household (yaitu, household kolom tabel doggo) disebut kunci asing . Kunci
+    <li><code>doggo.household</code> (yaitu, <code>household</code>kolom tabel <code>doggo</code>) disebut kunci asing . Kunci
       ini menghubungkan tabel-tabel tersebut. Kunci asing adalah cara hubungan disimpan
       dalam sistem basis data relasional, seperti MySQL, Oracle, SQL Server, Access, dan
       lainnya.</li>
@@ -59,13 +59,15 @@
 <media-image source="files/phpMyAdmin.png" alt="phpMyAdmin.png" accent-color="grey" size="wide" offset="none" citation="https://webapps.skilling.us/lesson/1n" caption="phpmyadmin" modal-title="phpmyadmin" _has-caption></media-image>
 <p>Berikut ini yang digambar PHPStorm.</p>
 <media-image source="files/phpstorm.png" alt="phpstorm.png" accent-color="grey" size="wide" offset="narrow" caption="gambar di phpstrom" citation="https://webapps.skilling.us/lesson/1n" modal-title="gambar di phpstrom" _has-caption></media-image>
-<h3 data-original-level="H3" id="h3-1481948181">hubungan 1:N&#160;</h3>
+<h3 data-original-level="H3" id="h3-1481948181">Hubungan 1:N&#160;</h3>
 <p>Berikut tabelnya lagi.&#160;</p>
 <grid-plate item-margin="16" item-padding="16" layout="1-1">
     <media-image source="files/households.png" alt="households.png" accent-color="grey" size="wide" offset="none" slot="col-1"></media-image>
 
+
     <p slot="col-1">Tabel Rumah tangga pemilik anjing</p>
     <media-image source="files/doggos.png" alt="doggos.png" slot="col-2" accent-color="grey" size="wide" offset="none"></media-image>
+
 
     <p slot="col-2">Tabel Anjing terhubung dengan pemilik</p>
   </grid-plate>
@@ -76,8 +78,8 @@
 <h3 data-original-level="H3" id="h3-1512688745">1:N kueri&#160;</h3>
 <p>Misalnya Anda ingin mengetahui nama rumah tangga Warbler. Berikut langkah-langkahnya:&#160;</p>
 <ol>
-      <li>Temukan tabel dan kolom dengan hal yang Anda ketahui (yaitu Warbler, dalam doggos.name).</li>
-      <li>Temukan tabel dan kolom dengan hal yang ingin Anda ketahui (yaitu households.name).</li>
+      <li>Temukan tabel dan kolom dengan hal yang Anda ketahui (yaitu Warbler, dalam <code>doggos.name</code>).</li>
+      <li>Temukan tabel dan kolom dengan hal yang ingin Anda ketahui (yaitu <code>households.name</code>).</li>
       <li>Gunakan kunci untuk menemukan jalur antar tabel.</li>
     </ol>
 <p>Mari kita bahas satu per satu. Pertama: Temukan tabel dan kolom dengan hal yang
@@ -87,9 +89,9 @@
     </p>
 <media-image source="files/query-a.png" alt="query-a.png" accent-color="grey" size="wide" offset="none"></media-image>
 <span>Kita tahu nama anjing itu adalah Warbler.<br><br></span><media-image source="files/query-b.png" alt="query-b.png" accent-color="grey" size="wide" offset="none"></media-image>
-<p>Kami ingin tahu nama rumah tangganya. Itu households.name.</p>
+<p>Kami ingin tahu nama rumah tangganya. Itu <code>households.name</code>.</p>
 <media-image source="files/query-c.png" alt="query-c.png" accent-color="grey" size="wide" offset="none"></media-image>
-<p>Ada jalur dari kunci asing doggos.householdke kunci utama households.household_id.</p>
+<p>Ada jalur dari kunci asing <code>doggos.household</code> ke kunci utama <code>households.household_id</code>.</p>
 <p>Oke, mari kita ubah itu menjadi SQL. Mari kita mulai dengan template SELECT:</p>
 <ul>
         <ul>
@@ -103,16 +105,16 @@
 <media-image source="files/query-a (1).png" alt="Temukan tabel dan kolom dengan hal yang Anda ketahui" accent-color="grey" size="wide" offset="none"></media-image>
 <ul>
         <li>SELECT</li>
-        <li>FROM doggos</li>
-        <li>WHERE doggos.nama = 'Warbler'</li>
+        <li>FROM <mark>doggos</mark></li>
+        <li>WHERE <mark>doggos.nama = 'Wabier'</mark></li>
       </ul>
 <p>Tambahkan kondisi di WHERE. Letakkan tabel di FROM.</p>
 <p>Langkah 2: apa yang ingin kita ketahui.&#160;</p>
 <media-image source="files/query-b (1).png" alt="Temukan tabel dan kolom dengan hal yang ingin Anda ketahui " accent-color="grey" size="wide" offset="none" citation="https://webapps.skilling.us/lesson/1n"></media-image>
 <p>Temukan tabel dan kolom dengan hal yang ingin Anda ketahui&#160;</p>
 <ul>
-        <li>SELECT households.name</li>
-        <li>FROM doggos, households</li>
+        <li>SELECT <mark>households.name</mark></li>
+        <li>FROM <mark>doggos, households</mark></li>
         <li>WHERE doggos.name = 'Warbler'</li>
       </ul>
 <p>Letakkan bidang target setelah SELECT, dan tambahkan tabel ke FROM.</p>
@@ -153,26 +155,25 @@
       <iframe src="https://haxtheweb.org" style="border:none;width:100%" height="500" width="100%"></iframe>
       </iframe-loader>
 <p>Sebagian besar. Halaman tersebut menggunakan kerangka Bootstrap untuk penataan gaya.
-        Oleh karena itu, ada tag link dan script dan kelas seperti container. Anda akan melihatnya
+        Oleh karena itu, ada tag link dan script dan kelas seperti <mark>container</mark>. Anda akan melihatnya
         jika Anda mempelajari bagian front-end kursus tersebut.</p>
 <p>Hal baru ada pada baris 16:</p>
 <code-sample type="javascript" copy-clipboard-button data-hax-lock="data-hax-lock">
         <template preserve-content="preserve-content">/** @var PDO $dbConnection */ $stmnt = $dbConnection-&gt;prepare($sql);</template>
       </code-sample>
-<p>Tanpa komentar, PHPStorm mengeluh tentang $dbConnection:</p>
+<p>Tanpa komentar, PHPStorm mengeluh tentang <mark>$dbConnection</mark>:</p>
 <media-image source="files/undefined-variable.png" alt="undefined-variable.png" accent-color="grey" size="wide" offset="none"></media-image>
-<p>Itu masuk akal. $dbConnection didefinisikan dalam berkas yang disertakan, seperti
+<p>Itu masuk akal. <code>$dbConnection</code> didefinisikan dalam berkas yang disertakan, seperti
         ini: PHPStorm tidak cukup pintar untuk memeriksa semua file yang disertakan dan mencari
         tahu variabel mana yang didefinisikan di sana. Tidak masalah. Saya memberi tahu PHPStorm
         tentang variabel tersebut dengan sebuah komentar:</p>
 <media-image source="files/error-gone.png" alt="error-gone.png" accent-color="grey" size="wide" offset="none"></media-image>
-<p>Tapi tunggu, masih ada lagi! Sekarang setelah PHPStorm mengetahui bahwa itu $dbConnection
-        adalah objek PDO, ia dapat memberi saya bantuan tambahan, seperti ini:</p>
+<p>Tapi tunggu, masih ada lagi! Sekarang setelah PHPStorm mengetahui bahwa itu $<code>dbConnection</code>        adalah objek PDO, ia dapat memberi saya bantuan tambahan, seperti ini:</p>
 <media-image source="files/extra-help.png" alt="extra-help.png" accent-color="grey" size="wide" offset="none"></media-image>
-<p>Ia menunjukkan kepada saya hal-hal $stmnt yang dapat dilakukannya. Saya dapat memilih
+<p>Ia menunjukkan kepada saya hal-hal <code>$stmnt</code>yang dapat dilakukannya. Saya dapat memilih
           dari daftar. W00t!</p>
-<h3>Fungsi validasi&#160;</h3>
-<p>useful-stuff.phpmemiliki fungsi validasi:</p>
+<h3 data-original-level="H3" id="h3--1865334621">Fungsi validasi&#160;</h3>
+<p><mark>useful-stuff.php</mark> memiliki fungsi validasi:</p>
 <code-sample type="javascript" copy-clipboard-button data-hax-lock="data-hax-lock"><template preserve-content="preserve-content">/**
  * Periksa nama anjingnya.
  * @param mixed $name Nama dari pengguna.
@@ -198,23 +199,20 @@ function checkName($name) {
     return $errorMessage;
 }</template></code-sample>
 <p>Tidak ada yang baru di sini.&#160;</p>
-<h2>Latihan</h2>
+<h2 data-original-level="H2" id="h2-1618190219">Latihan</h2>
 <p></p>
 <simple-tags tags="eval1" auto-accent-color accent-color="pink"></simple-tags>
 <blockquote>Pencarian 1:N&#160;</blockquote>
 <blockquote><span>Sebelumnya, Anda membuat versi aplikasi wombat Anda sendiri. Mari kita gunakan kembali. </span></blockquote>
 <blockquote><span>Temukan hubungan 1:N yang dapat Anda tambahkan ke tabel Anda saat ini. Salah satu yang umum adalah kategori. Misalnya: </span></blockquote>
-<blockquote><ul><li></li><li><span>Sepatu memiliki pabrik pembuat, di mana setiap sepatu memiliki satu pabrik pembuat, tetapi satu pabrik pembuat dapat membuat lebih dari satu produk. Hal yang sama berlaku untuk mobil dan barang-barang buatan lainnya. </span></li><li><span>Film memiliki satu peringkat, tetapi lebih dari satu film memiliki peringkat tertentu. </span></li><li><span>Buku memiliki satu penerbit, tetapi satu penerbit menerbitkan lebih dari satu buku. </span></li><li><span>Mata kuliah ditawarkan oleh satu departemen, tetapi satu departemen menawarkan lebih dari satu mata kuliah.</span></li></ul></blockquote>
+<blockquote><br><ul><li><span>Sepatu memiliki pabrik pembuat, di mana setiap sepatu memiliki satu pabrik pembuat, tetapi satu pabrik pembuat dapat membuat lebih dari satu produk. Hal yang sama berlaku untuk mobil dan barang-barang buatan lainnya. </span></li><li><span>Film memiliki satu peringkat, tetapi lebih dari satu film memiliki peringkat tertentu. </span></li><li><span>Buku memiliki satu penerbit, tetapi satu penerbit menerbitkan lebih dari satu buku. </span></li><li><span>Mata kuliah ditawarkan oleh satu departemen, tetapi satu departemen menawarkan lebih dari satu mata kuliah.</span></li></ul></blockquote>
 <blockquote>Buatlah tabel untuk kategori dengan setidaknya tiga kolom:&#160;</blockquote>
 <blockquote><ul><li>Id (misalnya, id pabrikan, id kursus). INT, peningkatan otomatis, PK. </li><li>Nama. VARCHAR, Anda memilih panjangnya. </li><li>Catatan atau komentar. TEKS </li></ul></blockquote>
 <blockquote><span>Tambahkan kolom kunci asing ke tabel asli Anda. Misalnya, sepatu mungkin memiliki kolom produsen. </span></blockquote>
 <blockquote><span>Tambahkan data ke tabel baru Anda. Tambahkan tautan ke tabel asli Anda. </span></blockquote>
 <blockquote><span>Tulis aplikasi yang MENDAPATKAN nama entitas dari tabel asli Anda (film, sepatu, kursus, apa saja), dan menunjukkan nama kategori, dan catatan untuk kategori tersebut. Seperti aplikasi doggo yang mengambil nama doggo, dan menunjukkan rumahnya. </span></blockquote>
 <blockquote>(Petunjuk: URL tidak boleh memiliki spasi. Gunakan + sebagai gantinya, seperti pada: /url?var=foo+bar)&#160;</blockquote>
-<h5>Kirimkan URL Anda (yang menyertakan nama untuk dicari), dan file zip Anda.&#160;</h5>
+<h5 data-original-level="H5" id="h5--726085100">Kirimkan URL Anda (yang menyertakan nama untuk dicari), dan file zip Anda.&#160;</h5>
 <p>Jika Anda masuk sebagai siswa, Anda dapat mengirimkan solusi untuk latihan ini.</p>
 <p>Apa selanjutnya?&#160;</p>
 <p>Mari kita balikkan pertanyaannya. Bagaimana Anda menunjukkan semua anjing dalam satu rumah tangga?<br></p>
-<p></p>
-<blockquote><br></blockquote>
-<p></p>
