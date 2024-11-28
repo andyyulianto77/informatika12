@@ -4443,16 +4443,17 @@
       "description": "\n\n\n",
       "metadata": {
         "created": 1732774366,
-        "updated": 1732777168,
+        "updated": 1732777453,
         "images": {},
         "videos": {},
-        "published": true,
+        "published": false,
         "pageType": "content",
         "hideInMenu": false,
         "tags": "sql",
         "locked": false,
         "readtime": 1,
-        "icon": "lrn:page"
+        "icon": "lrn:page",
+        "image": "https://images-assets.nasa.gov/image/s64-29922/s64-29922~thumb.jpg"
       }
     },
     {
