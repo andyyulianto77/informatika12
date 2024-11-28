@@ -34,8 +34,7 @@
 <p>Ini dia aplikasi anjing-di-lingkungan-sekitar lagi.</p>
 <media-image source="files/doggos-in-the-neighborhood.png" alt="doggos-in-the-neighborhood.png" accent-color="grey" size="wide" offset="narrow"></media-image>
 <p>Anda dapat mencoba aplikasinya <a href="http://webappexamples.skilling.us/how-web-apps-work/clients-and-servers/dogs-in-neighborhood/" target="_blank">disini</a>.</p>
-<p><span>Tabel, bidang, dan kunci </span>
-</p>
+<h3 data-original-level="H3" id="header-bf117459-0ed2-14d4-3df3-8268dec9580a" data-hax-lock="data-hax-lock"><span>Tabel, bidang, dan kunci </span></h3>
 <p>Basis data untuk aplikasi ini memiliki dua tabel. Pertama, ada rumah tangga:</p>
 <media-image source="files/households.png" alt="households.png" accent-color="grey" size="wide" offset="none"></media-image>
 <p>Ada dua kolom. <code>household_id</code>adalah bilangan bulat (bilangan bulat). Ini
@@ -151,17 +150,18 @@
 <span>Saya menggunakan gantungan kunci di sini karena lebih mudah dipahami.</span>
 </span>
         </blockquote>
-<h3 data-original-level="H3" id="h3-1855721224">1:N dalam PHP&#160;</h3>
+<h3 data-original-level="H3" id="header-95f6c7fb-2c33-4bf5-a809-2f92f9b43149">1:N dalam PHP&#160;</h3>
 <p>Mari kita masukkan kueri itu ke dalam PHP. Kita akan menggeneralisasikannya, sehingga
           program dapat mencari nama anjing yang ditentukan pengguna.&#160;</p>
-<p>Anda dapat mencoba program tersebut , dan mengunduhnya .&#160;</p>
+<p>Anda dapat <a href="http://andy1.rf.gd/php/db/1-n/find-household/carirumahanjing.php?doggo_name=Warbler" target="_blank">mencoba program tersebut</a>, dan <a href="files/find-household.zip" target="_blank">mengunduhnya</a>.&#160;</p>
 <p>Program ini mengambil nama doggo dari URL:</p>
-<p>&#160;...?doggo_name=warbler&#160;</p>
+<p><code> ...?doggo_name=warbler </code>
+        </p>
 <p>Outputnya seperti ini:</p>
 <media-image source="files/output1.png" alt="output1.png" accent-color="grey" size="wide" offset="none"></media-image>
 <p>Berikut kodenya:</p>
 <iframe-loader source="https://pastebin.com/embed_iframe/DjWKaVRF" height="500" width="100%">
-<iframe src="https://pastebin.com/embed_iframe/DjWKaVRF" style="border:none;width:100%" height="500" width="100%"></iframe>
+          <iframe src="https://pastebin.com/embed_iframe/DjWKaVRF" style="border:none;width:100%" height="500" width="100%"></iframe>
         </iframe-loader>
 <p>Sebagian besar. Halaman tersebut menggunakan kerangka Bootstrap untuk penataan gaya.
           Oleh karena itu, ada tag link dan script dan kelas seperti
@@ -187,58 +187,30 @@
 <h3 data-original-level="H3" id="h3--1865334621">Fungsi validasi&#160;</h3>
 <p>
           <mark>useful-stuff.php</mark>memiliki fungsi validasi:</p>
-<code-sample type="javascript" copy-clipboard-button data-hax-lock="data-hax-lock">
-          <template preserve-content="preserve-content">/** * Periksa nama anjingnya. * @param mixed $name Nama dari pengguna. * @return
-            string Pesan kesalahan, MT jika OK. */ function checkName($name) { global $dbConnection;
-            $errorMessage = ''; if (is_null($name)) { $errorMessage = 'Maaf, butuh nama anjing.';
-            } if ($errorMessage == '') { // Siapkan SQL. $stmt = $dbConnection-&gt;prepare('SELECT
-            * FROM doggos WHERE name = :name'); // Jalankan. $stmt-&gt;execute(['name' =&gt;
-            $name]); // Ada yang dikembalikan? if ($stmt-&gt;rowCount() == 0) { $errorMessage
-            = "Sorry, no doggo called $name."; } } // Mengembalikan hasil. return $errorMessage;
-            }</template>
-        </code-sample>
+<code-sample type="php" copy-clipboard-button data-hax-lock="data-hax-lock">
+          
+        <template preserve-content="preserve-content">/**
+ * Periksa nama anjingnya. 
+ * @param mixed $name Nama dari pengguna
+ * @return string Pesan kesalahan, MT jika OK.
+ */
+function checkName($name) {
+    global $dbConnection;
+    $errorMessage = '';
+    if (is_null($name)) {
+        $errorMessage = 'Maaf, butuh nama anjing.';
+    }
+    if ($errorMessage == '') {
+        // Siapkan  SQL.
+        $stmt = $dbConnection-&gt;prepare('SELECT * FROM doggos WHERE name = :name');
+        // Run it.
+        $stmt-&gt;execute(['name' =&gt; $name]);
+        // Ada yang dikembalikan?
+        if ($stmt-&gt;rowCount() == 0) {
+            $errorMessage = "Sorry, no doggo called $name.";
+        }
+    }
+    // Mengembalikan hasil.
+    return $errorMessage;
+}</template></code-sample>
 <p>Tidak ada yang baru di sini.&#160;</p>
-<h2 data-original-level="H2" id="h2-1618190219">Latihan</h2>
-<p></p>
-<simple-tags tags="eval1" auto-accent-color accent-color="pink"></simple-tags>
-<blockquote>Pencarian 1:N&#160;</blockquote>
-<blockquote><span>Sebelumnya, Anda membuat versi aplikasi wombat Anda sendiri. Mari kita gunakan kembali. </span>
-        </blockquote>
-<blockquote><span>Temukan hubungan 1:N yang dapat Anda tambahkan ke tabel Anda saat ini. Salah satu yang umum adalah kategori. Misalnya: </span>
-        </blockquote>
-<blockquote>
-          <br>
-          <ul>
-            <li><span>Sepatu memiliki pabrik pembuat, di mana setiap sepatu memiliki satu pabrik pembuat, tetapi satu pabrik pembuat dapat membuat lebih dari satu produk. Hal yang sama berlaku untuk mobil dan barang-barang buatan lainnya. </span>
-            </li>
-            <li><span>Film memiliki satu peringkat, tetapi lebih dari satu film memiliki peringkat tertentu. </span>
-            </li>
-            <li><span>Buku memiliki satu penerbit, tetapi satu penerbit menerbitkan lebih dari satu buku. </span>
-            </li>
-            <li><span>Mata kuliah ditawarkan oleh satu departemen, tetapi satu departemen menawarkan lebih dari satu mata kuliah.</span>
-            </li>
-          </ul>
-        </blockquote>
-<blockquote>Buatlah tabel untuk kategori dengan setidaknya tiga kolom:&#160;</blockquote>
-<blockquote>
-          <ul>
-            <li>Id (misalnya, id pabrikan, id kursus). INT, peningkatan otomatis, PK.</li>
-            <li>Nama. VARCHAR, Anda memilih panjangnya.</li>
-            <li>Catatan atau komentar. TEKS</li>
-          </ul>
-        </blockquote>
-<blockquote><span>Tambahkan kolom kunci asing ke tabel asli Anda. Misalnya, sepatu mungkin memiliki kolom produsen. </span>
-        </blockquote>
-<blockquote><span>Tambahkan data ke tabel baru Anda. Tambahkan tautan ke tabel asli Anda. </span>
-        </blockquote>
-<blockquote><span>Tulis aplikasi yang MENDAPATKAN nama entitas dari tabel asli Anda (film, sepatu, kursus, apa saja), dan menunjukkan nama kategori, dan catatan untuk kategori tersebut. Seperti aplikasi doggo yang mengambil nama doggo, dan menunjukkan rumahnya. </span>
-        </blockquote>
-<blockquote>(Petunjuk: URL tidak boleh memiliki spasi. Gunakan + sebagai gantinya, seperti pada:
-          /url?var=foo+bar)&#160;</blockquote>
-<h5 data-original-level="H5" id="h5--726085100">Kirimkan URL Anda (yang menyertakan nama untuk dicari), dan file zip Anda.&#160;</h5>
-<p>Jika Anda masuk sebagai siswa, Anda dapat mengirimkan solusi untuk latihan ini.</p>
-<p>Apa selanjutnya?&#160;</p>
-<p>Mari kita balikkan pertanyaannya. Bagaimana Anda menunjukkan semua anjing dalam
-          satu rumah tangga?
-          <br>
-        </p>
