@@ -4457,7 +4457,7 @@
     },
     {
       "id": "item-fc4e64e8-7198-49ca-a125-5b2d4498c547",
-      "indent": 1,
+      "indent": 0,
       "location": "pages/item-fc4e64e8-7198-49ca-a125-5b2d4498c547/index.html",
       "slug": "perancangan-basis-data/1-to-many-(n)",
       "order": 9,
@@ -4466,7 +4466,7 @@
       "description": "Kita sudah menggunakan GET dengan aman di PHP, kita perlu membuat koneksi ke database menggunakan prepared statements, kita memastikan data yang dikirim aman dari serangan, seperti SQL injection",
       "metadata": {
         "created": 1732701390,
-        "updated": 1732793939,
+        "updated": 1732794285,
         "images": {},
         "videos": {},
         "published": true,
@@ -4483,7 +4483,7 @@
       "id": "item-184dce37-3730-47e9-a153-96c48a5d5d05",
       "indent": 2,
       "location": "pages/item-184dce37-3730-47e9-a153-96c48a5d5d05/index.html",
-      "slug": "perancangan-basis-data/1-to-many-(n)/latihan-sql-1",
+      "slug": "perancangan-basis-data/page/page",
       "order": 0,
       "parent": "item-fc4e64e8-7198-49ca-a125-5b2d4498c547",
       "title": "Latihan SQL 1",
