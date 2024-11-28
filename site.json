@@ -4443,7 +4443,7 @@
       "description": "\n\n\n",
       "metadata": {
         "created": 1732774366,
-        "updated": 1732774449,
+        "updated": 1732777168,
         "images": {},
         "videos": {},
         "published": true,
@@ -4451,7 +4451,8 @@
         "hideInMenu": false,
         "tags": "sql",
         "locked": false,
-        "readtime": 1
+        "readtime": 1,
+        "icon": "lrn:page"
       }
     },
     {
