@@ -4365,7 +4365,7 @@
     },
     {
       "id": "item-b2770f4f-9a7e-4889-960a-ba11e858bc0b",
-      "indent": 1,
+      "indent": 0,
       "location": "pages/item-b2770f4f-9a7e-4889-960a-ba11e858bc0b/index.html",
       "slug": "perancangan-basis-data/menampilan-data-id-dengan-get",
       "order": 7,
@@ -4374,7 +4374,7 @@
       "description": "Pada pelajaran lalu kita sudah menampilkan data siswa, membuat koneksi ke database.\n  Koneksi ini seperti pintu penghubung antara kode PHP dan database MySQL. Kita bisa\n  menulis kode PHP.  Amaz",
       "metadata": {
         "created": 1732682932,
-        "updated": 1732701288,
+        "updated": 1732761788,
         "images": {},
         "videos": {},
         "published": true,
