@@ -4507,6 +4507,22 @@
       }
     },
     {
+      "id": "item-5f80e0fc-aed6-4ef8-a5bd-c0ed6e843e52",
+      "indent": 0,
+      "location": "pages/item-5f80e0fc-aed6-4ef8-a5bd-c0ed6e843e52/index.html",
+      "slug": "perancangan-basis-data/page",
+      "order": 11,
+      "parent": "item-13298894-5889-4b24-b28f-5bbde3a3c6f1",
+      "title": "Page",
+      "description": "",
+      "metadata": {
+        "created": 1733044750,
+        "updated": 1733044750,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
       "id": "item-0b7ddef5-2482-45f7-9467-12d8a15b5c42",
       "indent": 1,
       "location": "pages/item-0b7ddef5-2482-45f7-9467-12d8a15b5c42/index.html",
