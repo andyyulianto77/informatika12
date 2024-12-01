@@ -28,7 +28,6 @@
   </ol>
   <p></p>
 </learning-component>
-<p></p>
 <a11y-collapse heading="Tulis Q-2" heading-button accent-color="grey" icon="icons:expand-more" tooltip="expand" label="expand">
   <p>Tuliskan tujuan yang paling disukai, dan alasannya</p>
 </a11y-collapse>
@@ -39,7 +38,9 @@
   <media-image source="files/households.png" alt="households.png" slot="col-1" accent-color="grey" size="wide" offset="none"></media-image>
 
 
+
   <media-image source="files/doggos.png" alt="doggos.png" slot="col-2" accent-color="grey" size="wide" offset="none"></media-image>
+
 
 
 </grid-plate>
@@ -52,7 +53,6 @@
   <li>Gunakan kunci untuk menemukan jalur antar tabel.</li>
 </ol>
 <p>Kita mulai dari rumah tangga, dan berlanjut ke anjing. Mari tambahkan tautan itu:</p>
-<p></p>
 <ul>
   <li>SELECT doggos.name</li>
   <li>FROM households, doggos</li>
@@ -62,7 +62,6 @@
   </ul>
   <li>ORDER BY doggos.name</li>
 </ul>
-<p></p>
 <p>Berikut cara lain untuk melihatnya.&#160;</p>
 <p>Mulailah pada households tabel dan temukan baris dengan 'Mathiesons' dalam kolom
   name .&#8203;</p>
@@ -78,10 +77,9 @@
 <li>Rosie</li>
 </ul></template></code-sample>
 <p>Seluruh daftar berada di antara awal dan ul akhir. Setiap item daftar berada dalam pasangan li.</p>
-<p>Mengubah kueri PHP&#160;</p>
+<h2 id="header-758f7a14-4421-a880-a7a7-b8362d5b82d8">Mengubah kueri PHP&#160;</h2>
 <p>Tidak banyak perubahan dalam PHP yang menjalankan kueri. Ini dia. Variabel <code>$householdName</code> berisi rumah tangga yang diinginkan pengguna, diambil dari akhir URL.&#160;</p>
 <p>Hanya beberapa hal yang perlu diperhatikan.&#8203;</p>
-<p><br></p>
 <code-sample type="php" copy-clipboard-button><template preserve-content="preserve-content">// // Cari anjingnya
 if ($errorMessage == '') {
     $sql = "
@@ -107,10 +105,87 @@ if ($errorMessage == '') {
 <p>PILIH doggos.name ...&#160;</p>
 <p>apakah bidang keluarannya akan disebut name, atau doggo.name? Saya tidak yakin, jadi saya menamakannya secara eksplisit, dengan AS. Itu akan disebut doggo_name. Tidak perlu menebak-nebak.&#160;</p>
 <p>Dalam contoh di mana kueri akan mengembalikan satu baris, kami menggunakan kode ini:&#160;</p>
-<p><ul><li><code>$row = $stmnt-&gt;fetch();</code></li></ul></p>
+<ul><li><code>$row = $stmnt-&gt;fetch();</code></li></ul>
 <p>Sekarang kita mungkin berada beberapa baris di belakang. Jadi kita ubah kodenya menjadi:&#160;</p>
-<p><ul><li><code>$rows = $stmnt-&gt;fetchAll();</code></li></ul></p>
+<ul><li><code>$rows = $stmnt-&gt;fetchAll();</code></li></ul>
 <p><code>$rows</code> alih-alih <code>$row,</code> dan <code>fetchAll</code>alih-alih <code>fetch</code>.&#160;</p>
 <p>Selain itu, kode kueri tidak berubah.&#160;</p>
 <p>Namun, kode keluarannya berbeda.</p>
+<h2 data-original-level="H2" id="header-92945b4c-1810-accd-749a-99c29d040cc1">Keluaran&#160;</h2>
+<p>Berikut ini adalah hasil kueri untuk keluarga Mathieson: Anjing Mathieson&#160;</p>
+<media-image source="files/query-results.png" alt="query-results.png" accent-color="grey" size="wide" offset="none"></media-image>
+<p>Kami ingin PHP mengubahnya menjadi HTML ini:</p>
+<code-sample type="html" copy-clipboard-button><template preserve-content="preserve-content"><ul>
+<li>Renata</li>
+<li>Rosie</li>
+</ul></template></code-sample>
+<p>Berikut ini beberapa pseudocode:</p>
+<code-sample type="javascript" copy-clipboard-button><template preserve-content="preserve-content">Print <ul>
+For each result row:
+  Print <li> doggo_name </li>
+Print </ul></template></code-sample>
+<p>Oke, mari kita lihat apa ini...</p>
+<code-sample type="javascript" copy-clipboard-button><template preserve-content="preserve-content">$rows = $stmnt-&gt;fetchAll();
+</template></code-sample>
+<p>Ia mengirimkan kembali sebuah array .</p>
+<p>&#160;Array adalah daftar berbagai hal, seperti kolom pada lembar kerja:&#8203;</p>
+<media-image source="files/worksheet-column.png" alt="worksheet-column.png" accent-color="grey" size="wide" offset="narrow" data-width="25"></media-image>
+<p>Array tersebut ada di memori PHP, bukan di lembar kerja.&#160;</p>
+<p>Setiap array berada dalam sebuah variabel. Misalnya, berikut ini adalah array nama kambing:</p>
+<media-image source="files/array.png" alt="array.png" accent-color="grey" size="wide" offset="narrow" data-width="25" caption="Beberapa kambing" citation="https://webapps.skilling.us/lesson/many-records" modal-title="Beberapa kambing" _has-caption></media-image>
+<p>$goatNames adalah keseluruhan array. Jika kita ingin mendapatkan nilai individual, kita perlu menggunakan indeks . Jadi:&#160;</p>
+<ul><li>$goatNames[0] adalah Dob </li><li>$goatNames[1] adalah Mug </li><li>$goatNames[2] adalah kain pel </li><li>$goatNames[3] adalah Jib </li></ul>
+<span>Dal</span><span>am PHP, indeks juga bisa berupa string. Berikut ini adalah array TMNT:&#160;</span><p><span>Array dengan indeks string Kekuatan kura-kura! </span></p>
+<ul><li>$tmnts['blue']adalah Leonardo </li><li>$tmnts['purple']adalah Donatello </li><li>$tmnts['red']adalah Raphael </li><li>$tmnts['orange']adalah Michelangelo </li></ul>
+<span>Anda bahkan dapat m</span><span>encampur jenis indeks.</span><p><span>Kembali ke anjing </span></p>
+<p><span>$stmnt-&gt;fetchAll() memberikan ini:<br></span></p>
+<p>$rows adalah array dari array. Buka array tersebut, dan Anda akan melihat:</p>
 <p></p>
+<p>PDO fetchAll() memberi Anda dua cara untuk mengakses setiap kolom, seperti yang dapat Anda lihat, berdasarkan nama atau nomor. Kami akan selalu menggunakan nama, karena membuat kode lebih mudah diikuti.&#160;</p>
+<h2 data-original-level="H2" id="header-5dc0d30a-01ba-8af2-14db-41c3eecf3e3b">Membuat daftar&#8203;</h2>
+<p>Inilah yang ingin kami buat:</p>
+<code-sample type="javascript" copy-clipboard-button><template preserve-content="preserve-content"><ul>
+<li>Renata</li>
+<li>Rosie</li>
+</ul></template></code-sample>
+<p>Berikut ini beberapa pseudocode:</p>
+<code-sample type="javascript" copy-clipboard-button><template preserve-content="preserve-content">Print <ul>
+For each result row:
+  Print <li> doggo_name </li>
+Print </ul></template></code-sample>
+<p>Berikut PHP untuk itu:</p>
+<code-sample type="javascript" copy-clipboard-button><template preserve-content="preserve-content">print "<ul>\n";
+foreach ($rows as $row) {
+    $doggoName = $row['doggo_name'];
+    print "<li>$doggoName</li>\n";
+}
+print "</ul>\n";</template></code-sample>
+<p>Pernyataan ini...</p>
+<ul><li>$rows = $stmnt-&gt;fetchAll();</li></ul>
+<p>... masukkan sejumlah rekaman ke dalam $rows. Kita ingin menelusurinya satu per satu. Ini...</p>
+<code-sample type="javascript" copy-clipboard-button><template preserve-content="preserve-content">foreach ($rows as $row) {
+    Loop body code
+}</template></code-sample>
+<p>... adalah suatu perulangan. foreach()menelusuri array yang Anda berikan, satu elemen dalam satu waktu.&#160;</p>
+<p><ol><li>Pertama kali melalui loop, $rows[0] dimasukkan ke $row, dan kode badan dijalankan. </li><li>Kali kedua melalui loop, $rows[1]dimasukkan ke $row, dan kode badan dijalankan. </li><li>Kali ketiga melalui loop, $rows[2]dimasukkan ke $row, dan kode badan dijalankan. </li><li>... </li></ol><span>Berik</span><span>ut kode badannya:</span></p>
+<code-sample type="javascript" copy-clipboard-button><template preserve-content="preserve-content">$doggoName = $row['doggo_name'];
+print "<li>$doggoName</li>\n";</template></code-sample>
+<p>$rowadalah salah satu baris. $row['doggo_name'] adalah salah satu bidang dalam baris tersebut.&#160;</p>
+<h3 id="header-fff8d935-a393-e0d2-1987-fa23060d7ac2">Semuanya&#160;</h3>
+<p>Tujuannya adalah agar pengguna dapat bertanya anjing apa saja yang ada di rumah. Anda dapat mencobanya , dan mengunduh kodenya .&#160;</p>
+<p>Kode:</p>
+<iframe-loader source="https://pastebin.com/embed_iframe/yJ0rGALu?theme=dark" height="500" width="100%"><iframe-loader source="https://haxtheweb.org" height="500" width="100%"><iframe width="100%" height="500" src="https://pastebin.com/embed_iframe/yJ0rGALu?theme=dark"></iframe></iframe-loader>
+</iframe-loader>
+<p>Baris 11-32 menjalankan kueri, dan meletakkan hasil fetchAll() into $rows@.&#160;</p>
+<h6 id="header-bd688ae0-725b-31dc-2eeb-940e68332a09">Baris 57 sampai 60 berulang $rows, menghasilkan kolom doggo_name dan untuk setiap baris.</h6>
+<code-sample type="javascript" copy-clipboard-button><template preserve-content="preserve-content">print "<ul>\n";
+foreach ($rows as $row) {
+    $doggoName = $row['doggo_name'];
+    print "<li>$doggoName</li>\n";
+}
+print "</ul>\n";</template></code-sample>
+<h3 id="header-9e6e4061-782b-f03f-36ec-eb101565ad1e">Menjadi nyata&#160;</h3>
+<p>Program kami semakin mendekati program yang digunakan dalam aplikasi web bisnis yang sebenarnya. Daftar doggo adalah sebuah laporan . Pengguna dapat mengajukan pertanyaan dalam istilah bisnis... Anjing apa saja yang ada di rumah tangga X? ... dan mendapatkan hasil yang membantu mereka melakukan pekerjaan mereka.</p>
+<p></p>
+<h3 id="header-d265e990-84c6-e056-b103-7ca7ceb7493e">Apa sekarang?&#160;</h3>
+<p>Pada pelajaran DB terakhir, mari kita lihat kueri banyak-ke-banyak.</p>
