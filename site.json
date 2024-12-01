@@ -4536,17 +4536,19 @@
       "order": 0,
       "parent": "item-5f80e0fc-aed6-4ef8-a5bd-c0ed6e843e52",
       "title": "Latihan 1 Ke Banyak",
-      "description": "Tampilkan daftar nama wombat. Setiap nama merupakan tautan ke halaman tentang detail wombat tersebut. Anda dapat mencoba solusi saya .&#160;\nBerikut halaman daftarnya:\n\nDaftar tersebut mesti berdasar",
+      "description": "Tampilkan daftar nama wombat. Setiap nama merupakan tautan ke halaman tentang detail wombat tersebut. Anda dapat mencoba solusi saya . \nBerikut halaman daftarnya:\n\nDaftar tersebut mesti berdasar",
       "metadata": {
         "created": 1733056908,
-        "updated": 1733057274,
+        "updated": 1733057429,
         "images": {},
         "videos": {},
         "published": true,
         "pageType": "practice",
         "hideInMenu": false,
         "locked": false,
-        "readtime": 1
+        "readtime": 1,
+        "tags": "latihan",
+        "icon": "hax:shovel"
       }
     },
     {
