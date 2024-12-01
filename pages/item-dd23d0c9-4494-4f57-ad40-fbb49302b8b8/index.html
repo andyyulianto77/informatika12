@@ -1,1 +1,21 @@
+
+<p>Saatnya untuk contoh baru. Podcast favorit saya adalah <a href="https://paulapoundstone.com/podcast/" target="_blank">Nobody Listens to Paula Poundstone</a> . Seorang pelawak, pelawak, komedian, dan penggembala, dengan tamu-tamu ahli dan grup musik house, berbicara tentang... apa saja.&#160;</p>
+<p>Mari kita buat DB episode dan orang. Kita dapat melihat orang mana yang telah mengikuti sebuah episode, dan episode mana yang telah diikuti seseorang. Anda dapat <a href="https://webappexamples.skilling.us/database/m-n/nobody/nobody-db.sql" target="_blank">mengunduh</a>file SQL yang membuat tabel dan menambahkan data. Impor ke DB Anda sendiri, jika Anda menginginkannya di komputer Anda sendiri.&#160;</p>
+<p>Berikut ini adalah dua tabel. Pertama, tabel people. tabel orang</p>
+<media-image source="files/people.png" alt="people.png" accent-color="grey" size="wide" offset="none"></media-image>
+<p>Ada empat bidang:&#160;</p>
+<ul><li>person_id, kunci utama. Diperlukan. </li><li>first_name, misalnya Paula. Wajib diisi. </li><li>last_name, misalnya, Poundstone. Opsional. </li><li>komentar, teks bebas. Opsional.</li></ul>
+<grid-plate item-margin="16" item-padding="16" layout="1-3" data-width="75" data-border-radius="xs" data-border="md" data-box-shadow="sm" data-margin="center"><media-image source="files/bingung.jpg" alt="bingung.jpg" accent-color="grey" size="wide" offset="narrow" slot="col-1" data-width="75"></media-image>
+<p slot="col-2" role="textbox">Tunggu, mengapa last_name opsional?</p></grid-plate>
+<p>Karena orang-orang seperti Cher. Hanya satu nama. Omong-omong, dia tidak akan membalas telepon Paula. Berikut tabel episodenya:</p>
+<grid-plate item-margin="16" item-padding="16" layout="1-3" data-width="75" data-margin="center" data-border-radius="xs" data-border="sm"><p slot="col-1">episode</p><media-image source="files/episodes.png" alt="episodes.png" slot="col-2" accent-color="grey" size="wide" offset="wide"></media-image>
+</grid-plate>
+<p>Ada empat bidang yang menjelaskan setiap&#160;</p>
 <p></p>
+<ul><li>episode: episode_id, PK. Diperlukan. </li><li>episode_number, nomor </li><li>episode. Diperlukan. Judul. Diperlukan. </li><li>komentar. Opsional.</li></ul>
+<grid-plate item-margin="16" item-padding="16" layout="1-3" data-width="75" data-margin="center" data-border-radius="xs" data-border="md"><media-image source="files/bingung2.jpg" alt="bingung2.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" data-width="25"></media-image>
+<p slot="col-2">Mengapa hanya menggunakan id untuk nomor episode?</p><p></p></grid-plate>
+<p></p>
+<p>Itulah hal pertama yang akan Anda pikirkan, tetapi itu bukanlah ide yang bagus. Misalkan produser acara memutuskan untuk menambahkan episode khusus, dan menyebutnya "XMAS 2021". Itu tidak dapat menjadi nilai untuk kunci utama.&#160;</p>
+<p>Simpan id sebagai angka yang tidak memiliki arti di dunia luar. Id hanya menghubungkan baris-baris dalam DB, dan itu saja.&#8203;</p>
+<media-image source="files/people-in-episodes.png" alt="people-in-episodes.png" accent-color="grey" size="wide" offset="narrow" data-width="50" data-float-position="center" data-margin="center"></media-image>
