@@ -38,7 +38,9 @@
 <grid-plate item-margin="16" item-padding="16" layout="1-1">
   <media-image source="files/households.png" alt="households.png" slot="col-1" accent-color="grey" size="wide" offset="none"></media-image>
 
+
   <media-image source="files/doggos.png" alt="doggos.png" slot="col-2" accent-color="grey" size="wide" offset="none"></media-image>
+
 
 </grid-plate>
 <h2 data-original-level="H2" id="header-c7088319-ea3d-23d0-a23f-dae93e2d6726">SQL</h2>
@@ -70,3 +72,45 @@
 <media-image source="files/output.png" alt="output.png" accent-color="grey" size="wide" offset="none"></media-image>
 <p>Daftar doggos berpoin. Ada tag HTML untuk membuat daftar seperti itu: ul, tag daftar
   tak berurutan.</p>
+<p>Berikut HTML dari halaman yang membuat tangkapan layar:</p>
+<code-sample type="html" copy-clipboard-button><template preserve-content="preserve-content"><ul>
+<li>Renata</li>
+<li>Rosie</li>
+</ul></template></code-sample>
+<p>Seluruh daftar berada di antara awal dan ul akhir. Setiap item daftar berada dalam pasangan li.</p>
+<p>Mengubah kueri PHP&#160;</p>
+<p>Tidak banyak perubahan dalam PHP yang menjalankan kueri. Ini dia. Variabel <code>$householdName</code> berisi rumah tangga yang diinginkan pengguna, diambil dari akhir URL.&#160;</p>
+<p>Hanya beberapa hal yang perlu diperhatikan.&#8203;</p>
+<p><br></p>
+<code-sample type="php" copy-clipboard-button><template preserve-content="preserve-content">// // Cari anjingnya
+if ($errorMessage == '') {
+    $sql = "
+        SELECT doggos.name as doggo_name
+        FROM households, doggos
+        WHERE households.name = :household_name
+           AND households.household_id = doggos.household
+        ORDER BY doggos.name;
+    ";
+    /** @var PDO $dbConnection */
+    $stmnt = $dbConnection-&gt;prepare($sql);
+    $result = $stmnt-&gt;execute(['household_name' =&gt; $householdName]);
+    // Menemukan catatan?
+    if ($stmnt-&gt;rowCount() == 0) {
+        $errorMessage = "Maaf, tidak dapat menemukan doggos di rumah tangga Bapak $householdName.";
+    }
+    else {
+        $rows = $stmnt-&gt;fetchAll();
+    }
+}
+?&gt;doctype html</template></code-sample>
+<p>Dengan ini...&#160;</p>
+<p>PILIH doggos.name ...&#160;</p>
+<p>apakah bidang keluarannya akan disebut name, atau doggo.name? Saya tidak yakin, jadi saya menamakannya secara eksplisit, dengan AS. Itu akan disebut doggo_name. Tidak perlu menebak-nebak.&#160;</p>
+<p>Dalam contoh di mana kueri akan mengembalikan satu baris, kami menggunakan kode ini:&#160;</p>
+<p><ul><li><code>$row = $stmnt-&gt;fetch();</code></li></ul></p>
+<p>Sekarang kita mungkin berada beberapa baris di belakang. Jadi kita ubah kodenya menjadi:&#160;</p>
+<p><ul><li><code>$rows = $stmnt-&gt;fetchAll();</code></li></ul></p>
+<p><code>$rows</code> alih-alih <code>$row,</code> dan <code>fetchAll</code>alih-alih <code>fetch</code>.&#160;</p>
+<p>Selain itu, kode kueri tidak berubah.&#160;</p>
+<p>Namun, kode keluarannya berbeda.</p>
+<p></p>
