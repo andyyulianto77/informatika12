@@ -4535,13 +4535,18 @@
       "slug": "perancangan-basis-data/page/page",
       "order": 0,
       "parent": "item-5f80e0fc-aed6-4ef8-a5bd-c0ed6e843e52",
-      "title": "Page",
-      "description": "",
+      "title": "Latihan 1 Ke Banyak",
+      "description": "Tampilkan daftar nama wombat. Setiap nama merupakan tautan ke halaman tentang detail wombat tersebut. Anda dapat mencoba solusi saya .&#160;\nBerikut halaman daftarnya:\n\nDaftar tersebut mesti berdasar",
       "metadata": {
         "created": 1733056908,
-        "updated": 1733056908,
-        "images": [],
-        "videos": []
+        "updated": 1733057274,
+        "images": {},
+        "videos": {},
+        "published": true,
+        "pageType": "practice",
+        "hideInMenu": false,
+        "locked": false,
+        "readtime": 1
       }
     },
     {
