@@ -4539,7 +4539,7 @@
       "description": "Tampilkan daftar nama wombat. Setiap nama merupakan tautan ke halaman tentang detail wombat tersebut. Anda dapat mencoba solusi saya . \nBerikut halaman daftarnya:\n\nDaftar tersebut mesti berdasar",
       "metadata": {
         "created": 1733056908,
-        "updated": 1733057429,
+        "updated": 1733057533,
         "images": {},
         "videos": {},
         "published": true,
@@ -4548,7 +4548,8 @@
         "locked": false,
         "readtime": 1,
         "tags": "latihan",
-        "icon": "hax:shovel"
+        "icon": "hax:shovel",
+        "image": "files/wombat-3.png"
       }
     },
     {
