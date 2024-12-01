@@ -1,1 +1,72 @@
+
+<p>Anda sudah mempelajari komponen dan jenis pengolahan database dengan 1 to many.
+  Mari kita memperdalam pengetahuan dengan lebih banyak contoh.</p>
+<p>tabel rumah tangga</p>
+<media-image source="files/households.png" alt="households.png" accent-color="grey" size="wide" offset="none"></media-image>
+<p>Daftar binatang anjing</p>
+<media-image source="files/doggos.png" alt="doggos.png" accent-color="grey" size="wide" offset="none"></media-image>
+<p>Ada hubungan satu ke banyak. Seekor anjing hanya dapat berada dalam satu rumah tangga,
+  tetapi satu rumah tangga dapat memiliki banyak anjing. Kami merepresentasikannya
+  dengan menggunakan kunci utama <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">households</code>sebagai
+  kunci asing dalam <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">doggos</code>.</p>
+<p>Kami lalu membuat kueri untuk mencari nama rumah tangga Warbler.</p>
+<p>Permintaan ini memberi kami satu hasil, karena Warbler hanya dapat berada di satu
+  rumah tangga.</p>
+<a11y-collapse heading="Tulis Q-1" heading-button accent-color="grey" icon="icons:expand-more" tooltip="expand" label="expand">
+  <p>Tulis perintah pemrograman php yang diingat dan jelaskan</p>
+</a11y-collapse>
+<learning-component accent-color="indigo" title="Learning Objectives" icon="courseicons:learning-objectives" subtitle="Banyak Data" type="objectives">
+  <p>Pada akhir pelajaran, Siswa dapat ... ​</p>
+  <p></p>
+  <ol>
+    <li>Menjelaskan pengertian one to many</li>
+    <li>Dapat membuat program PHP sederhana untuk melakukan perhitungan, manipulasi data,
+      dan interaksi dengan pengguna dengan menerapkan konsep relasi DataBase 1 ke Banyak.</li>
+    <li>Dapat membuat halaman web dinamis.</li>
+    <li>Mampu menggunakan alat debugging untuk melacak masalah.</li>
+    <li>Dapat mengidentifikasi dan memperbaiki kesalahan sintaks dan logika dalam kode.</li>
+  </ol>
+  <p></p>
+</learning-component>
 <p></p>
+<a11y-collapse heading="Tulis Q-2" heading-button accent-color="grey" icon="icons:expand-more" tooltip="expand" label="expand">
+  <p>Tuliskan tujuan yang paling disukai, dan alasannya</p>
+</a11y-collapse>
+<h3 data-original-level="H3" id="header-579f52f1-f769-02b5-de24-e198c91b8580">Anjing apa yang ada di rumah tangga?&#160;</h3>
+<p>Mari kita balik pertanyaannya: anjing apa saja yang ada di rumah tangga
+  <mark>Mathieson</mark>? Berikut datanya lagi:</p>
+<grid-plate item-margin="16" item-padding="16" layout="1-1">
+  <media-image source="files/households.png" alt="households.png" slot="col-1" accent-color="grey" size="wide" offset="none"></media-image>
+
+  <media-image source="files/doggos.png" alt="doggos.png" slot="col-2" accent-color="grey" size="wide" offset="none"></media-image>
+
+</grid-plate>
+<h2 data-original-level="H2" id="header-c7088319-ea3d-23d0-a23f-dae93e2d6726">SQL</h2>
+<p>Untuk membuat SQL untuk kueri tersebut, mari ikuti langkah-langkah yang sama seperti
+  sebelumnya.&#160;</p>
+<ol>
+  <li>Temukan tabel dan kolom dengan hal yang Anda ketahui.</li>
+  <li>Temukan tabel dan kolom dengan hal yang ingin Anda ketahui.</li>
+  <li>Gunakan kunci untuk menemukan jalur antar tabel.</li>
+</ol>
+<p>Kita mulai dari rumah tangga, dan berlanjut ke anjing. Mari tambahkan tautan itu:</p>
+<p></p>
+<ul>
+  <li>SELECT doggos.name</li>
+  <li>FROM households, doggos</li>
+  <li>WHERE households.name = 'Mathieson'</li>
+  <ul>
+    <li>AND households.household_id = doggos.household</li>
+  </ul>
+  <li>ORDER BY doggos.name</li>
+</ul>
+<p></p>
+<p>Berikut cara lain untuk melihatnya.&#160;</p>
+<p>Mulailah pada households tabel dan temukan baris dengan 'Mathiesons' dalam kolom
+  name .&#8203;</p>
+<media-image source="files/step3.png" alt="step3.png" accent-color="grey" size="wide" offset="none"></media-image>
+<h2 data-original-level="H2" id="header-c5dd70c0-e76f-b763-54ce-014c6f855e6e">Tag HTML baru: ul&#160;</h2>
+<p>Kami ingin outputnya terlihat seperti ini:</p>
+<media-image source="files/output.png" alt="output.png" accent-color="grey" size="wide" offset="none"></media-image>
+<p>Daftar doggos berpoin. Ada tag HTML untuk membuat daftar seperti itu: ul, tag daftar
+  tak berurutan.</p>
