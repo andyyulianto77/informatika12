@@ -4460,7 +4460,7 @@
     },
     {
       "id": "item-184dce37-3730-47e9-a153-96c48a5d5d05",
-      "indent": 2,
+      "indent": 0,
       "location": "pages/item-184dce37-3730-47e9-a153-96c48a5d5d05/index.html",
       "slug": "perancangan-basis-data/1-ke-n---tidak/latihan-sql-1",
       "order": 0,
@@ -4469,10 +4469,10 @@
       "description": "Latihan\nPencarian 1:N\nSebelumnya, Anda membuat versi aplikasi wombat Anda sendiri. Mari kita gunakan kembali. \nTemukan hubungan 1:N yang dapat Anda tambahkan ke tabel Anda saat ini. Salah satu yang u",
       "metadata": {
         "created": 1732786885,
-        "updated": 1732795453,
+        "updated": 1733044739,
         "images": {},
         "videos": {},
-        "published": true,
+        "published": false,
         "pageType": "practice",
         "hideInMenu": false,
         "tags": "latihan",
