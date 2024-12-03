@@ -17,6 +17,7 @@
 <grid-plate item-margin="16" item-padding="16" layout="1-3" data-width="75" data-border-radius="xs" data-border="md" data-box-shadow="sm" data-margin="center">
     <media-image source="files/bingung.jpg" alt="bingung.jpg" accent-color="grey" size="wide" offset="narrow" slot="col-1" data-width="25" data-margin="center"></media-image>
 
+
     <p slot="col-2" data-margin="center">Tunggu, mengapa last_name opsional?</p>
   </grid-plate>
 <p>Karena orang-orang seperti Cher. Hanya satu nama. Omong-omong, dia tidak akan membalas
@@ -24,6 +25,7 @@
 <grid-plate item-margin="16" item-padding="16" layout="1-3" data-width="75" data-margin="center" data-border-radius="xs" data-border="sm">
     <p slot="col-1" data-margin="center">episode</p>
     <media-image source="files/episodes.png" alt="episodes.png" slot="col-2" accent-color="grey" size="wide" offset="wide" data-margin="center"></media-image>
+
 
   </grid-plate>
 <p>Ada empat bidang yang menjelaskan setiap&#160;</p>
@@ -35,6 +37,7 @@
   </ul>
 <grid-plate item-margin="16" item-padding="16" layout="1-3" data-width="75" data-margin="center" data-border-radius="xs" data-border="md">
     <media-image source="files/bingung2.jpg" alt="bingung2.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" data-width="25" data-margin="center"></media-image>
+
 
     <p slot="col-2" data-margin="center">Mengapa hanya menggunakan id untuk nomor episode?</p>
     <p></p>
@@ -101,6 +104,7 @@
 <grid-plate item-margin="16" item-padding="16" layout="1-3" data-width="75" data-margin="center" data-border-radius="xs" data-border="sm">
       <media-image source="files/heran.jpg" alt="bingung.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" data-margin="center" data-width="50"></media-image>
 
+
       <p slot="col-2" data-margin="center" role="textbox">Hei, navbarnya berubah.
         <br>
       </p>
@@ -119,6 +123,7 @@
 <media-image source="files/navbar-narrow.png" alt="navbar-narrow.png" accent-color="grey" size="wide" offset="none"></media-image>
 <br/><grid-plate item-padding="16" item-margin="16" layout="1-3" data-width="75" data-margin="center" data-border-radius="xs" data-border="sm">
       <media-image source="files/senang_pi.jpg" alt="bingung.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" data-margin="center" data-width="50"></media-image>
+
 
       <p slot="col-2" data-margin="center">Wah, keren sekali!
         <br>
@@ -225,6 +230,7 @@
 <grid-plate item-padding="16" item-margin="16" layout="1-3" data-width="75" data-margin="center" data-border-radius="xs" data-border="sm">
       <media-image source="files/senang.jpg" alt="bingung.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" data-margin="center" data-width="50"></media-image>
 
+
       <p slot="col-2" data-margin="center">Hei, itu lebih sederhana dari yang saya kira.
         <br>
       </p>
@@ -236,6 +242,7 @@
     </p>
 <grid-plate item-padding="16" item-margin="16" layout="1-3" data-width="75" data-margin="center" data-border-radius="xs" data-border="sm">
       <media-image source="files/terkejut.jpg" alt="bingung.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" data-margin="center" data-width="50"></media-image>
+
 
       <p slot="col-2" data-margin="center">Bung, saya pasti akan ketakutan.
         <br>
@@ -342,11 +349,12 @@
 <grid-plate item-margin="0" item-padding="0" layout="1" data-margin="center" data-width="75">
           <collection-item line1="Menggunakan kembali" line2="Gunakan kembali kode Anda di seluruh program, menggunakan fungsi dan komponen halaman." url="perancangan-basis-data/page-3" tags="prinsip, reuse" icon="courseicons:chem-connection" accent-color="indigo" slot="col-2"></collection-item>
 
+
         </grid-plate>
 <collection-list accent-color="grey" data-margin="center" items-per-row="1" data-width="100" data-padding="data-padding" data-text-align="center">
-          <!--  ?lit$884298661$  -->
-          <!--   -->
-          <!--   -->
+          <!--   ?lit$884298661$   -->
+          <!--     -->
+          <!--     -->
         </collection-list>
 <p>Sebagian besarnya seharusnya sudah familier, tetapi ada beberapa kerutan. (Saya
           juga punya kerutan. Saya sudah sangat tua. Dan lelah. Sangat lelah.) Fungsi ini mengembalikan
@@ -363,20 +371,18 @@
 <p><code>return $result; </code>
 
         </p>
-<site-collection-list accent-color="grey" responsive-size="lg" published="" limit="8" sort="title" related-items="item-184dce37-3730-47e9-a153-96c48a5d5d05" tags="prinsip,reuse" sort-obj="{&quot;title&quot;:&quot;ASC&quot;}" edit-mode=""></site-collection-list>
+<site-collection-list accent-color="grey" responsive-size="lg" published="" limit="8" sort="title" related-items="item-184dce37-3730-47e9-a153-96c48a5d5d05" tags="prinsip,reuse" sort-obj="{&quot;title&quot;:&quot;ASC&quot;}" edit-mode></site-collection-list>
 <p>Jadi, inti dari kode di atas adalah untuk mengatur <code>$result</code>. Fungsi dimulai
           dengan membuatnya menjadi null (baris 8):</p>
 <p>$result = null;</p>
 <p>Jika semuanya berjalan lancar, data null tersebut akan diganti dengan data tentang
           suatu episode.&#160;</p>
 <p>Baris 10-17 membuat dan menjalankan kueri SQL. Berikut baris 17:</p>
-<p></p>
 <ul>
           <li><code>$isWorked = $stmt-&gt;execute(['id' =&gt; $episodeId]);</code>
 
           </li>
         </ul>
-<p></p>
 <p>Ada yang baru di sana. <code>execute()</code> mengembalikan nilai boolean (benar/salah),
           benar jika kueri berhasil, salah jika terjadi kesalahan. Tidak disebutkan apa yang
           salah. Mungkin Wildan dari IT menumpahkan kopi ke server DB. Sekali lagi. Dia butuh
@@ -396,9 +402,6 @@
 <p>Wah! <b>Alhamdulillah</b>.</p>
 <p>Kembali ke program utama, dan Anda dapat melihat bagaimana teman fungsional kita
           dipanggil:</p>
-<p>
-          <br>
-        </p>
 <code-sample type="javascript" copy-clipboard-button>
           <template preserve-content="preserve-content">if ($errorMessage == '') { // Dapatkan detail episodenya. $episodeEntity = getEpisodeWithId($episodeId);
             if (is_null($episodeEntity)) { $errorMessage = "Maaf, terjadi kesalahan saat mencari
@@ -436,6 +439,7 @@
 <grid-plate item-margin="16" item-padding="16" layout="1-3" data-width="75" data-margin="center" data-border-radius="xs" data-border="sm">
           <media-image source="files/senang.jpg" alt="bingung.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" data-margin="center" data-width="50" figure-label-title="Wildan" modal-title="Wildan" _has-caption=""></media-image>
 
+
           <p slot="col-2" data-margin="center">Hei, Anda membuat fungsi lain, untuk melakukan pekerjaan itu.</p>
         </grid-plate>
 <p>Benar! Fungsi lain yang dapat digunakan kembali di perpustakaan kami. Penggunaan
@@ -443,11 +447,13 @@
 <grid-plate item-padding="16" item-margin="16" layout="1" data-margin="center" data-width="75" style="">
           <collection-item line1="Menggunakan kembali" line2="Gunakan kembali kode Anda di seluruh program, menggunakan fungsi dan komponen halaman." url="perancangan-basis-data/page-3" tags="prinsip, reuse" icon="courseicons:chem-connection" accent-color="indigo" slot="col-2"></collection-item>
 
+
         </grid-plate>
 <p>Dengan uang sebanyak itu, kau bisa memelihara lebih banyak anjing, air mancur coklat,
           menyewa Pinkerton untuk menemukan Thomas Coyne... terserah.</p>
 <grid-plate item-padding="16" item-margin="16" layout="1-3" data-width="75" data-margin="center" data-border-radius="xs" data-border="sm">
           <media-image source="files/senang_pi.jpg" alt="bingung.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" data-margin="center" data-width="50" figure-label-title="Afina" modal-title="Afina" _has-caption=""></media-image>
+
 
           <p slot="col-2" data-margin="center">Hei, Anda membuat fungsi lain, untuk melakukan pekerjaan itu.</p>
         </grid-plate>
@@ -477,7 +483,6 @@
 <span>Ingat: beberapa orang tidak menyukai metode gantungan kunci ini, dan ingin menggunakan JOIN. </span><p></p>
 <p><span>Perbedaan kedua lebih halus. Lihat baris ke-25: </span>
         </p>
-<p></p>
 <ul>
             <li><code>$result = $stm<span>nt-&gt;fetchAll(); </span></code>
                
@@ -488,11 +493,45 @@
 <h2 data-original-level="H2" id="header-9fd0e44a-a4f1-be2d-8272-f16cf1405303">Membuat HTML </h2>
 <p><span>Setelah ini selesai...</span>
         </p>
-<p><ul><li><code>$episodeEntity = getEpisodeWithId($episodeId); </code></li></ul></p>
+<ul><li><code>$episodeEntity = getEpisodeWithId($episodeId); </code></li></ul>
 <p><span>... </span></p>
 <ul><li><code>$peopleEntities = getPeopleForEpisodeWithId($episodeId);</code></li></ul>
-<p><font color="#e4e5e7" face="monospace"><span>... kami memiliki data yang dibutuhkan untuk halaman tersebut. <code>$episodeEntity</code> memiliki baris DB tentang episode tersebut. Judul, deskripsi, seperti itu. <code>$peopleEntities</code> adalah larik baris DB. Setiap baris adalah baris untuk satu orang. Sekarang kita buat HTML dengan menggunakan data ini. Berikut kode untuk membuat HTML.<br></span></font></p>
-<p><font color="#e4e5e7" face="monospace"><span>Sekarang kita buat HTML dengan menggunakan data ini. Berikut kode untuk membuat HTML.</span></font></p>
+<p><font color="#e4e5e7" face="monospace"><span>... kami memiliki data yang dibutuhkan untuk halaman tersebut. <code>$episodeEntity</code> memiliki baris DB tentang episode tersebut. Judul, deskripsi, seperti itu. <code>$peopleEntities</code> adalah larik baris DB. Setiap baris adalah baris untuk satu orang. </span></font></p>
+<p><font color="#e4e5e7" face="monospace"><span>Sekarang kita buat HTML dengan menggunakan data ini. Berikut kode untuk membuat HTML.<br></span></font></p>
+<code-sample type="php" copy-clipboard-button data-hax-lock="data-hax-lock"><template preserve-content="preserve-content"><!--?php require_once 'library/regions/top.php'; ?-->
+<h1>Episode</h1>
+<!--?php
+if ($errorMessage != '') {
+    print "<p class='alert-danger text-danger m-2 p-2'-->$errorMessage<p></p>";
+}
+else {
+    print "<p>Here are the deets for the episode.</p>\n";
+    print "<p>Episode number: {$episodeEntity['episode_number']}</p>\n";
+    print "<p>Title: {$episodeEntity['title']}</p>\n";
+    print "<p>Comments: {$episodeEntity['comments']}</p>\n";
+    if (count($peopleEntities) == 0) {
+        print "<p>No people are listed for the show.</p>\n";
+    }
+    else {
+        print "<h3>People</h3>\n";
+        print "<ul>\n";
+        foreach ($peopleEntities as $personEntity) {
+            $personId = $personEntity['person_id'];
+            $firstName = $personEntity['first_name'];
+            $lastName = $personEntity['last_name'];
+            $link = "<a href="person.php?person_id=$personId">$firstName $lastName</a>";
+            print "<li>$link</li>\n";
+        }
+        print "</ul>\n";
+    }
+}
+?&gt;</template></code-sample>
+<p>Seperti biasa, uji kesalahan terlebih dahulu (baris 4). Jika tidak ada, tampilkan data dasar untuk episode tersebut (baris 9-11). Jika ada data orang, maka:&#160;</p>
+<p><ul><li><code>foreach ($peopleEntities as $personEntity) {</code></li></ul></p>
+<p>Jalankan $peopleEntitiesarray, satu elemen pada satu waktu. Untuk setiap elemen, buat HTML untuk menampilkan tautan ke halaman untuk orang tersebut:&#160;</p>
+<p><ul><li><code>$link = "&lt;a href='person.php?person_id=$personId'&gt;$firstName $lastName&lt;/a&gt;";</code></li></ul></p>
+<h2 id="header-cc651786-51b5-72e3-3675-a8365c9e02f5">Berikutnya&#160;</h2>
+<p>Pada bagian terakhir kursus yang diwajibkan, kita akan melihat cara membuat formulir, untuk membantu pengguna memasukkan data ke dalam DB.</p>
 <p><font color="#e4e5e7" face="monospace"> </font></p>
 <p><br></p>
 <p><span><br></span></p>
