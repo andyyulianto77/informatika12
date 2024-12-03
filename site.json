@@ -4559,17 +4559,18 @@
       "slug": "perancangan-basis-data/page-1",
       "order": 13,
       "parent": "item-13298894-5889-4b24-b28f-5bbde3a3c6f1",
-      "title": "Page",
+      "title": "Many to Many",
       "description": "Saatnya untuk contoh baru. Podcast favorit saya adalah Nobody Listens to Paula Poundstone . Seorang pelawak, pelawak, komedian, dan penggembala, dengan tamu-tamu ahli dan grup musik house, berbicara ",
       "metadata": {
         "created": 1733057699,
-        "updated": 1733063322,
+        "updated": 1733186930,
         "images": {},
         "videos": {},
         "published": true,
         "hideInMenu": false,
         "locked": false,
-        "readtime": 2
+        "readtime": 2,
+        "pageType": "content"
       }
     },
     {
