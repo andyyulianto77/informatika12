@@ -1,44 +1,203 @@
 
-<p>Saatnya untuk contoh baru. Podcast favorit saya adalah <a href="https://paulapoundstone.com/podcast/" target="_blank">Nobody Listens to Paula Poundstone</a> . Seorang pelawak, pelawak, komedian, dan penggembala, dengan tamu-tamu ahli dan grup musik house, berbicara tentang... apa saja.&#160;</p>
-<p>Mari kita buat DB episode dan orang. Kita dapat melihat orang mana yang telah mengikuti sebuah episode, dan episode mana yang telah diikuti seseorang. Anda dapat <a href="https://webappexamples.skilling.us/database/m-n/nobody/nobody-db.sql" target="_blank">mengunduh</a>file SQL yang membuat tabel dan menambahkan data. Impor ke DB Anda sendiri, jika Anda menginginkannya di komputer Anda sendiri.&#160;</p>
+<p>Saatnya untuk contoh baru. Podcast favorit saya adalah <a href="https://paulapoundstone.com/podcast/" target="_blank">Nobody Listens to Paula Poundstone</a> . Seorang pelawak, pelawak,
+  komedian, dan penggembala, dengan tamu-tamu ahli dan grup musik house, berbicara
+  tentang... apa saja.&#160;</p>
+<p>Mari kita buat DB episode dan orang. Kita dapat melihat orang mana yang telah mengikuti
+  sebuah episode, dan episode mana yang telah diikuti seseorang. Anda dapat <a href="https://webappexamples.skilling.us/database/m-n/nobody/nobody-db.sql" target="_blank">mengunduh</a>file SQL yang membuat tabel dan menambahkan data. Impor
+  ke DB Anda sendiri, jika Anda menginginkannya di komputer Anda sendiri.&#160;</p>
 <p>Berikut ini adalah dua tabel. Pertama, tabel people. tabel orang</p>
 <media-image source="files/people.png" alt="people.png" accent-color="grey" size="wide" offset="none"></media-image>
 <p>Ada empat bidang:&#160;</p>
-<ul><li>person_id, kunci utama. Diperlukan. </li><li>first_name, misalnya Paula. Wajib diisi. </li><li>last_name, misalnya, Poundstone. Opsional. </li><li>komentar, teks bebas. Opsional.</li></ul>
-<grid-plate item-margin="16" item-padding="16" layout="1-3" data-width="75" data-border-radius="xs" data-border="md" data-box-shadow="sm" data-margin="center"><media-image source="files/bingung.jpg" alt="bingung.jpg" accent-color="grey" size="wide" offset="narrow" slot="col-1" data-width="25" data-margin="center"></media-image>
+<ul>
+    <li>person_id, kunci utama. Diperlukan.</li>
+    <li>first_name, misalnya Paula. Wajib diisi.</li>
+    <li>last_name, misalnya, Poundstone. Opsional.</li>
+    <li>komentar, teks bebas. Opsional.</li>
+  </ul>
+<grid-plate item-margin="16" item-padding="16" layout="1-3" data-width="75" data-border-radius="xs" data-border="md" data-box-shadow="sm" data-margin="center">
+    <media-image source="files/bingung.jpg" alt="bingung.jpg" accent-color="grey" size="wide" offset="narrow" slot="col-1" data-width="25" data-margin="center"></media-image>
 
+    <p slot="col-2" data-margin="center">Tunggu, mengapa last_name opsional?</p>
+  </grid-plate>
+<p>Karena orang-orang seperti Cher. Hanya satu nama. Omong-omong, dia tidak akan membalas
+    telepon Paula. Berikut tabel episodenya:</p>
+<grid-plate item-margin="16" item-padding="16" layout="1-3" data-width="75" data-margin="center" data-border-radius="xs" data-border="sm">
+    <p slot="col-1" data-margin="center">episode</p>
+    <media-image source="files/episodes.png" alt="episodes.png" slot="col-2" accent-color="grey" size="wide" offset="wide" data-margin="center"></media-image>
 
-<p slot="col-2" data-margin="center">Tunggu, mengapa last_name opsional?</p></grid-plate>
-<p>Karena orang-orang seperti Cher. Hanya satu nama. Omong-omong, dia tidak akan membalas telepon Paula. Berikut tabel episodenya:</p>
-<grid-plate item-margin="16" item-padding="16" layout="1-3" data-width="75" data-margin="center" data-border-radius="xs" data-border="sm"><p slot="col-1" data-margin="center">episode</p><media-image source="files/episodes.png" alt="episodes.png" slot="col-2" accent-color="grey" size="wide" offset="wide" data-margin="center"></media-image>
-
-
-</grid-plate>
+  </grid-plate>
 <p>Ada empat bidang yang menjelaskan setiap&#160;</p>
-<ul><li>episode: episode_id, PK. Diperlukan. </li><li>episode_number, nomor </li><li>episode. Diperlukan. Judul. Diperlukan. </li><li>komentar. Opsional.</li></ul>
-<grid-plate item-margin="16" item-padding="16" layout="1-3" data-width="75" data-margin="center" data-border-radius="xs" data-border="md"><media-image source="files/bingung2.jpg" alt="bingung2.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" data-width="25"></media-image>
+<ul>
+    <li>episode: episode_id, PK. Diperlukan.</li>
+    <li>episode_number, nomor</li>
+    <li>episode. Diperlukan. Judul. Diperlukan.</li>
+    <li>komentar. Opsional.</li>
+  </ul>
+<grid-plate item-margin="16" item-padding="16" layout="1-3" data-width="75" data-margin="center" data-border-radius="xs" data-border="md">
+    <media-image source="files/bingung2.jpg" alt="bingung2.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" data-width="25" data-margin="center"></media-image>
 
-
-<p slot="col-2">Mengapa hanya menggunakan id untuk nomor episode?</p><p></p></grid-plate>
-<p>Itulah hal pertama yang akan Anda pikirkan, tetapi itu bukanlah ide yang bagus. Misalkan produser acara memutuskan untuk menambahkan episode khusus, dan menyebutnya "XMAS 2021". Itu tidak dapat menjadi nilai untuk kunci utama.&#160;</p>
-<p>Simpan id sebagai angka yang tidak memiliki arti di dunia luar. Id hanya menghubungkan baris-baris dalam DB, dan itu saja.&#8203;</p>
+    <p slot="col-2" data-margin="center">Mengapa hanya menggunakan id untuk nomor episode?</p>
+    <p></p>
+  </grid-plate>
+<p>Itulah hal pertama yang akan Anda pikirkan, tetapi itu bukanlah ide yang bagus.
+    Misalkan produser acara memutuskan untuk menambahkan episode khusus, dan menyebutnya
+    "XMAS 2021". Itu tidak dapat menjadi nilai untuk kunci utama.&#160;</p>
+<p>Simpan id sebagai angka yang tidak memiliki arti di dunia luar. Id hanya menghubungkan
+    baris-baris dalam DB, dan itu saja.&#8203;</p>
 <p>Menghubungkan orang dan episode&#160;</p>
-<p>Kami ingin tahu orang-orang mana yang ada di episode mana. Ini adalah hubungan M:N, atau banyak ke banyak, karena:&#160;</p>
-<p></p>
-<ul><li>Satu orang dapat muncul di banyak episode. </li><li>Satu episode dapat dihadiri banyak orang. </li><li>Aturan untuk merepresentasikan M:N adalah membuat tabel baru, dengan PK dari kedua sisi sebagai kunci asing. Berikut tabelnya: </li></ul>
-<p></p>
+<p>Kami ingin tahu orang-orang mana yang ada di episode mana. Ini adalah hubungan M:N,
+    atau banyak ke banyak, karena:&#160;</p>
+<ul>
+    <li>Satu orang dapat muncul di banyak episode.</li>
+    <li>Satu episode dapat dihadiri banyak orang.</li>
+    <li>Aturan untuk merepresentasikan M:N adalah membuat tabel baru, dengan PK dari kedua
+      sisi sebagai kunci asing. Berikut tabelnya:</li>
+  </ul>
 <media-image source="files/people-in-episodes.png" alt="people-in-episodes.png" accent-color="grey" size="wide" offset="narrow" data-width="25" data-float-position="center" data-margin="center" caption="tabel orang_dalam_episode" modal-title="tabel orang_dalam_episode" _has-caption></media-image>
-<p>Orang ke-3 ada di episode 1. Orang ke-3 juga ada di episode 2, 3, dan 4. Episode 2 ada orang ke-5. Dst.&#160;</p>
-<p>Yang telah kami lakukan adalah mengganti M:N dengan dua 1:N. <code>people</code>memiliki hubungan 1:N dengan <code>people_in_episodes</code>. Artinya, satu rekaman di <code>people</code>dapat dikaitkan dengan lebih dari satu rekaman di <code>people_in_episodes</code>.&#160;</p>
-<p>Juga, <code>episodes</code>memiliki hubungan 1:N dengan <code>people_in_episodes</code>. Artinya, satu rekaman di <code>episodes</code>dapat dikaitkan dengan lebih dari satu rekaman di <code>people_in_episodes</code>.</p>
+<p>Orang ke-3 ada di episode 1. Orang ke-3 juga ada di episode 2, 3, dan 4. Episode
+    2 ada orang ke-5. Dst.&#160;</p>
+<p>Yang telah kami lakukan adalah mengganti M:N dengan dua 1:N. <code>people</code>memiliki
+    hubungan 1:N dengan <code>people_in_episodes</code>. Artinya, satu rekaman di <code>people</code>dapat
+    dikaitkan dengan lebih dari satu rekaman di <code>people_in_episodes</code>.&#160;</p>
+<p>Juga, <code>episodes</code>memiliki hubungan 1:N dengan <code>people_in_episodes</code>.
+    Artinya, satu rekaman di <code>episodes</code>dapat dikaitkan dengan lebih dari satu
+    rekaman di <code>people_in_episodes</code>.</p>
 <p>Berikut ini gambar DB dari phpMyAdmin:</p>
 <media-image source="files/phpmyadmin-drawing_0.png" alt="phpmyadmin-drawing_0.png" accent-color="grey" size="wide" offset="none"></media-image>
-<p>Aplikasi web bisnis&#160;</p>
+<h2 data-original-level="H2" id="header-4c48755c-be32-a896-63d9-def5c6507c91">Aplikasi web bisnis&#160;</h2>
 <p>Sekarang mari kita tulis beberapa PHP untuk mendapatkan data ini. Anda dapat <a href="https://webappexamples.skilling.us/database/m-n/nobody/" target="_blank">mencobanya</a>. Anda juga dapat <a href="https://webappexamples.skilling.us/database/m-n/nobody/nobody.zip" target="_blank">mengunduh kodenya</a>.&#160;</p>
 <p>Mari kita lihat apa yang dilakukan aplikasi ini. Berikut halaman utamanya:&#8203;</p>
 <media-image source="files/main-page_0.png" alt="main-page_0.png" accent-color="grey" size="wide" offset="none"></media-image>
 <p>Ada navbar, dan tautan ke dua laporan:&#160;</p>
-<p></p>
-<ul><li>Daftar episode </li><li>Daftar orang </li></ul>
-<span>Berikut daftar episodenya:</span><p></p>
+<ul>
+      <li>Daftar episode</li>
+      <li>Daftar orang</li>
+    </ul>
+<p>Berikut daftar episodenya:</p>
+<p>Datanya tentu saja berasal dari basis data. Klik tautannya, dan Anda akan melihat
+      detail episodenya.</p>
+<p>Mari kita lihat beberapa HTML dari halaman daftar acara. Berikut adalah tautan ke
+      tiga acara pertama:</p>
+<code-sample type="javascript" copy-clipboard-button>
+      <template preserve-content="preserve-content">
+        <ul>
+          <li><a href="episode.php?episode_id=1">4. The Survivalist!</a>
+          </li>
+          <li><a href="episode.php?episode_id=2">6. In the House - Music and Mold</a>
+          </li>
+          <li><a href="episode.php?episode_id=5">81. The Late, Great, Early Man</a>
+          </li>
+        </ul>
+      </template>
+    </code-sample>
+<p>PHP yang membuat laman ini, membuat tautan yang menyertakan beberapa data GET di
+      bagian akhir, seperti episode.php?episode_id=1.</p>
+<p>Klik tautan pertama, dan Anda akan melihat detail acaranya:
+      <br>
+    </p>
+<media-image source="files/episode.png" alt="episode.png" accent-color="grey" size="wide" offset="none"></media-image>
+<grid-plate item-margin="16" item-padding="16" layout="1-3" data-width="75" data-margin="center" data-border-radius="xs" data-border="sm"><media-image source="files/bingung.jpg" alt="bingung.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" data-margin="center" data-width="50"></media-image>
+<p slot="col-2" data-margin="center" role="textbox">Hei, navbarnya berubah.<br></p></grid-plate>
+<p>Benar. Saya membuat jendela browser lebih sempit untuk tangkapan layar terakhir, untuk menangkap semua komentar.<br></p>
+<p>Ketika jendela browser lebar, seperti pada desktop atau laptop, navbar terlihat seperti:</p>
+<media-image source="files/wide-navbar.png" alt="wide-navbar.png" accent-color="grey" size="wide" offset="none"></media-image>
+<p>Itu meregang.<br><br>Saat jendela browser sempit, seperti pada ponsel atau tablet, navbar akan mengecil menjadi:</p>
+<media-image source="files/navbar-narrow.png" alt="navbar-narrow.png" accent-color="grey" size="wide" offset="none"></media-image>
+<br/><grid-plate item-padding="16" item-margin="16" layout="1-3" data-width="75" data-margin="center" data-border-radius="xs" data-border="sm">  <media-image source="files/bingung2.jpg" alt="bingung.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" data-margin="center" data-width="50"></media-image>
+
+
+  <p slot="col-2" data-margin="center">Wah, keren sekali!<br></p>
+</grid-plate>
+<p>Ya, benar. Anda akan mempelajarinya nanti. Situs Anda akan tampak hebat di layar berukuran apa pun.<br>Bagaimana pun, kembali ke layar detail episode.<br></p>
+<media-image source="files/episode.png" alt="episode.png" accent-color="grey" size="wide" offset="none"></media-image>
+<p>Ada informasi detail untuk episode tersebut, dan daftar orang-orang yang ada di episode tersebut. Nama setiap orang adalah tautan ke informasi detail mereka. Misalnya, klik tautan kedua, dan lihat:<br><br></p>
+<media-image source="files/person1.png" alt="person1.png" accent-color="grey" size="wide" offset="none"></media-image>
+<p>Rincian orang tersebut, dan daftar episode yang telah diikuti orang tersebut.<br target="_blank"><br><a href="https://webappexamples.skilling.us/database/m-n/nobody/" target="_blank">Cobalah aplikasinya</a> . Jelajahi dan jelajahi datanya. Cepat, mudah digunakan, dengan tampilan yang menarik. Apa yang Anda butuhkan dalam aplikasi bisnis.</p>
+<h2 id="header-4be0510e-7b6a-719f-33eb-b4aa9ffe7896">Halaman daftar episode</h2>
+<p>Berikut halaman daftar episodenya lagi:<br></p>
 <media-image source="files/episodes-list.png" alt="episodes-list.png" accent-color="grey" size="wide" offset="none"></media-image>
+<p>Berikut ini beberapa HTML yang membuat tampilan itu.<br></p>
+<code-sample type="javascript" copy-clipboard-button><template preserve-content="preserve-content"><ul>
+  <li><a href="episode.php?episode_id=1">4. The Survivalist!</a></li>
+  <li><a href="episode.php?episode_id=2">6. In the House - Music and Mold</a></li>
+  <li><a href="episode.php?episode_id=5">81. The Late, Great, Early Man</a></li></ul></template></code-sample>
+<p>Mari kita periksa PHP yang membuat HTML itu.<br></p>
+<code-sample type="javascript" copy-clipboard-button><template preserve-content="preserve-content"><!--?php
+require_once 'library/useful-stuff.php';
+$errorMessage = '';
+$sql = "
+    SELECT episode_id, episode_number, title
+    FROM episodes
+    ORDER BY episode_number;";
+/** @var PDO $dbConnection */
+$stmnt = $dbConnection--->prepare($sql);
+$stmnt-&gt;execute();
+// Found any records?
+if ($stmnt-&gt;rowCount() == 0) {
+    $errorMessage = "Sorry, couldn't find episodes in the database.";
+}
+else {
+    $episodeEntities = $stmnt-&gt;fetchAll();
+}
+?&gt;
+...
+<p>Here are the episodes. Click on one for deets.</p>
+<!--?php
+if ($errorMessage != '') {
+    print "<p class='alert-danger text-danger m-2 p-2'-->$errorMessage<p></p>";
+}
+else {
+    print "<ul>\n";
+    foreach ($episodeEntities as $episodeEntity) {
+        $id = $episodeEntity['episode_id'];
+        $episodeNumber = $episodeEntity['episode_number'];
+        $title = $episodeEntity['title'];
+        $link = "<a href="episode.php?episode_id=$id">$episodeNumber. $title</a>";
+        print "<li>$link</li>\n";
+    }
+    print "</ul>\n";
+}
+?&gt;
+
+==html&gt;</template></code-sample>
+<p>Pada baris ke-18, variabel <code>$episodeEntities</code> akan berupa array rekaman. Berikut ini adalah bagian dari array tersebut, menurut debugger.<br></p>
+<media-image source="files/debugger.png" alt="debugger.png" accent-color="grey" size="wide" offset="none"></media-image>
+<p>Setiap elemen $<code>episodeEntities</code>adalah data untuk satu episode. Ini adalah array, dengan kolom untuk episode tersebut.</p>
+<p>Mari kita lanjutkan ke PHP. Ingat, kita ingin HTML seperti ini:<br></p>
+<code-sample type="javascript" copy-clipboard-button><template preserve-content="preserve-content"><ul>
+  <li><a href="episode.php?episode_id=1">4. The Survivalist!</a></li>
+  <li><a href="episode.php?episode_id=2">6. In the House - Music and Mold</a></li>
+  <li><a href="episode.php?episode_id=5">81. The Late, Great, Early Man</a></li></ul></template></code-sample>
+<p>Berikut PHP yang membuatnya:<br></p>
+<code-sample type="javascript" copy-clipboard-button><template preserve-content="preserve-content">print "<ul>\n";
+foreach ($episodeEntities as $episodeEntity) {
+    $id = $episodeEntity['episode_id'];
+    $episodeNumber = $episodeEntity['episode_number'];
+    $title = $episodeEntity['title'];
+    $link = "<a href="episode.php?episode_id=$id">$episodeNumber. $title</a>";
+    print "<li>$link</li>\n";
+}
+print "</ul>\n";</template></code-sample>
+<p></p>
+<grid-plate item-padding="16" item-margin="16" layout="1-3" data-width="75" data-margin="center" data-border-radius="xs" data-border="sm">    <media-image source="files/bingung2.jpg" alt="bingung.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" data-margin="center" data-width="50"></media-image>
+
+
+
+
+    <p slot="col-2" data-margin="center">Hei, itu lebih sederhana dari yang saya kira.<br></p>
+
+</grid-plate>
+<p>Itu berarti Anda sedang belajar. Tunjukkan kode tersebut kepada Anda seperti saat Anda memulai kursus...<br><br></p>
+<grid-plate item-padding="16" item-margin="16" layout="1-3" data-width="75" data-margin="center" data-border-radius="xs" data-border="sm">      <media-image source="files/bingung2.jpg" alt="bingung.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" data-margin="center" data-width="50"></media-image>
+
+
+
+
+
+
+      <p slot="col-2" data-margin="center">Bung, saya pasti akan ketakutan.<br></p>
+
+
+</grid-plate>
+<p>Benar sekali.<br></p>
+<p></p>

@@ -4563,14 +4563,15 @@
       "description": "Saatnya untuk contoh baru. Podcast favorit saya adalah Nobody Listens to Paula Poundstone . Seorang pelawak, pelawak, komedian, dan penggembala, dengan tamu-tamu ahli dan grup musik house, berbicara ",
       "metadata": {
         "created": 1733057699,
-        "updated": 1733186930,
+        "updated": 1733190572,
         "images": {},
         "videos": {},
         "published": true,
         "hideInMenu": false,
         "locked": false,
-        "readtime": 2,
-        "pageType": "content"
+        "readtime": 4,
+        "pageType": "content",
+        "icon": "lrn:page"
       }
     },
     {
