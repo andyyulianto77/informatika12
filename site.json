@@ -4509,16 +4509,16 @@
     },
     {
       "id": "item-846a1e65-c3fc-4d9d-932b-be52694e904b",
-      "indent": 2,
+      "indent": 0,
       "location": "pages/item-846a1e65-c3fc-4d9d-932b-be52694e904b/index.html",
       "slug": "perancangan-basis-data/latihan-database-php/latihan-1-ke-banyak",
       "order": 0,
       "parent": "item-caba756f-fe00-43e8-a2cb-eaff3d8249a8",
-      "title": "Latihan 1 Ke Banyak",
+      "title": "Latihan 1 Ke Banyak Semua",
       "description": "Tampilkan daftar nama wombat. Setiap nama merupakan tautan ke halaman tentang detail wombat tersebut. Anda dapat mencoba solusi saya . \nBerikut halaman daftarnya:\n\nDaftar tersebut mesti berdasar",
       "metadata": {
         "created": 1733056908,
-        "updated": 1733264101,
+        "updated": 1733264286,
         "images": {},
         "videos": {},
         "published": true,
@@ -4526,7 +4526,7 @@
         "hideInMenu": false,
         "locked": false,
         "readtime": 1,
-        "tags": "latihan",
+        "tags": "latihan,1-n2",
         "icon": "hax:shovel",
         "image": "files/wombat-3.png",
         "status": ""
