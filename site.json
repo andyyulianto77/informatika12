@@ -4595,15 +4595,20 @@
       "indent": 0,
       "location": "pages/item-6c4b3e17-ff4c-46d3-bb17-b95049ec77ae/index.html",
       "slug": "perancangan-basis-data/page-3",
-      "order": 14,
+      "order": 15,
       "parent": "item-13298894-5889-4b24-b28f-5bbde3a3c6f1",
-      "title": "Page",
-      "description": "",
+      "title": "Menggunakan kembali",
+      "description": "Dalam aplikasi kambing, beberapa halaman memuat data kambing, dengan id kambing. Daripada menulis kode beberapa kali, saya menulisnya sekali, dan membuat fungsi untuknya:\n\n",
       "metadata": {
         "created": 1733208794,
-        "updated": 1733208794,
-        "images": [],
-        "videos": []
+        "updated": 1733208865,
+        "images": {},
+        "videos": {},
+        "published": true,
+        "hideInMenu": false,
+        "tags": "prinsip",
+        "locked": false,
+        "readtime": 1
       }
     },
     {
