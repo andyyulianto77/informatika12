@@ -4580,7 +4580,7 @@
     },
     {
       "id": "item-ce94eeaa-591e-4bb7-ae77-3853388ea25d",
-      "indent": 1,
+      "indent": 0,
       "location": "pages/item-ce94eeaa-591e-4bb7-ae77-3853388ea25d/index.html",
       "slug": "perancangan-basis-data/page",
       "order": 13,
@@ -4589,7 +4589,7 @@
       "description": "\nRead these important things!\n\n\n",
       "metadata": {
         "created": 1733186755,
-        "updated": 1733265576,
+        "updated": 1733266743,
         "images": {},
         "videos": {},
         "published": true,
