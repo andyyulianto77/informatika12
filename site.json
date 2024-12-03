@@ -4579,15 +4579,19 @@
       "indent": 0,
       "location": "pages/item-ce94eeaa-591e-4bb7-ae77-3853388ea25d/index.html",
       "slug": "perancangan-basis-data/page-2",
-      "order": 13,
+      "order": 14,
       "parent": "item-13298894-5889-4b24-b28f-5bbde3a3c6f1",
       "title": "Page",
-      "description": "",
+      "description": "\nRead these important things!\n\n\n",
       "metadata": {
         "created": 1733186755,
-        "updated": 1733186755,
-        "images": [],
-        "videos": []
+        "updated": 1733222193,
+        "images": {},
+        "videos": {},
+        "published": true,
+        "hideInMenu": false,
+        "locked": false,
+        "readtime": 1
       }
     },
     {
