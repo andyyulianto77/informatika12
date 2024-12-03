@@ -4601,14 +4601,15 @@
       "description": "Dalam aplikasi kambing, beberapa halaman memuat data kambing, dengan id kambing. Daripada menulis kode beberapa kali, saya menulisnya sekali, dan membuat fungsi untuknya:\n\n",
       "metadata": {
         "created": 1733208794,
-        "updated": 1733208865,
+        "updated": 1733210471,
         "images": {},
         "videos": {},
         "published": true,
         "hideInMenu": false,
-        "tags": "prinsip",
+        "tags": "prinsip, reuse",
         "locked": false,
-        "readtime": 1
+        "readtime": 1,
+        "pageType": "connection"
       }
     },
     {
