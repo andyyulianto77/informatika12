@@ -4601,7 +4601,7 @@
       "description": "Dalam aplikasi kambing, beberapa halaman memuat data kambing, dengan id kambing. Daripada menulis kode beberapa kali, saya menulisnya sekali, dan membuat fungsi untuknya:\n\n",
       "metadata": {
         "created": 1733208794,
-        "updated": 1733210471,
+        "updated": 1733212250,
         "images": {},
         "videos": {},
         "published": true,
@@ -4609,7 +4609,8 @@
         "tags": "prinsip, reuse",
         "locked": false,
         "readtime": 1,
-        "pageType": "connection"
+        "pageType": "connection",
+        "icon": "courseicons:chem-connection"
       }
     },
     {

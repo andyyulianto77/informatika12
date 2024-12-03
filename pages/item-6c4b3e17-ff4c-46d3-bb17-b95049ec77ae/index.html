@@ -1,3 +1,32 @@
 
-<p>Dalam aplikasi <a href="Dalam aplikasi kambing , beberapa halaman memuat data kambing, dengan id kambing. Daripada menulis kode beberapa kali, saya menulisnya sekali, dan membuat fungsi untuknya:" target="_blank" role="textbox">kambing</a>, beberapa halaman memuat data kambing, dengan id kambing. Daripada menulis kode beberapa kali, saya menulisnya sekali, dan membuat fungsi untuknya:</p>
+<p></p>
+<grid-plate item-margin="16" item-padding="16" layout="2-1"><p slot="col-1">Dalam aplikasi kambing, beberapa halaman memuat data kambing, dengan id kambing. Daripada menulis kode beberapa kali, saya menulisnya sekali, dan membuat fungsi untuknya:</p><code-sample type="javascript" copy-clipboard-button slot="col-1"><template preserve-content="preserve-content">/**
+  * Dapatkan catatan kambing untuk id yang diberikan.
+ * @param int $goatId Id yang akan dicari.
+ * @return array|null Rekaman dari DB, atau null tidak ditemukan, atau id salah.
+*/
+function getGoatWithId($goatId) {
+    global $dbConnection;
+    $result = null;
+    if (! is_null($goatId) &amp;&amp; is_numeric($goatId)) {
+        $sql = "select * from goats where goats.goat_id = :goat_id_to_show;";
+        /** @var PDO $dbConnection */
+        $stmnt = $dbConnection-&gt;prepare($sql);
+        $isQueryWorked = $stmnt-&gt;execute([':goat_id_to_show' =&gt; $goatId]);
+        if ($isQueryWorked &amp;&amp; $stmnt-&gt;rowCount() == 1) {
+            $result = $stmnt-&gt;fetch();
+        }
+    }
+    return $result;
+}</template></code-sample>
+<media-image source="files/sloth1.jpg" alt="sloth1.jpg" slot="col-2" accent-color="grey" size="wide" offset="narrow" round data-margin="center" data-width="25"></media-image>
+</grid-plate>
+<p>Saya menaruhnya di pustaka kode, yang disertakan di semua halaman, siap digunakan sesuai kebutuhan.&#160;</p>
+<p>Beberapa baris pertama mendokumentasikan fungsi tersebut. Semua orang tahu apa yang seharusnya dilakukan oleh fungsi tersebut, dan PHPStorm dapat memberikan bantuan untuk hal tersebut.&#160;</p>
+<p>Apa keuntungan menggunakan kembali kode seperti ini?</p>
+<grid-plate item-margin="16" item-padding="16" layout="1-1-1-1" data-margin="center"><media-image source="files/senang.jpg" alt="senang.jpg" accent-color="grey" size="wide" offset="none" figure-label-title="Wildan" data-width="25" slot="col-1" data-margin="center" caption="Nah, Anda menghemat waktu dengan menuliskannya sekali." modal-title="Wildan" _has-caption></media-image>
+<p slot="col-1">Ya. Waktu adalah uang, terutama dalam pemrograman, karena semuanya adalah kerja intelektual. Ada lagi?</p><media-image source="files/senang_pi.jpg" alt="senang_pi.jpg" slot="col-2" accent-color="grey" size="wide" offset="none" data-width="25" caption="Bagaimana dengan keandalan? Anda hanya perlu menguji satu bagian kode." figure-label-title="Afina" data-margin="center" modal-title="Afina" _has-caption></media-image>
+<p slot="col-2">Benar! Pemikiran yang bagus.</p><media-image source="files/senang2_pi.jpg" alt="senang2_pi.jpg" slot="col-4" accent-color="grey" size="wide" offset="none" data-width="25" caption="Oh, dan perubahan juga. Jika Anda perlu mengubah sesuatu, Anda cukup mengubahnya satu kali saja." figure-label-title="Izza" data-margin="center" modal-title="Izza" _has-caption></media-image>
+<p slot="col-4">Ya! Intinya: penggunaan ulang itu baik.</p><media-image accent-color="grey" __figure-label modal-title="Andy" _has-caption source="files/senang2.jpg" caption="Ya, tapi kalau ada masalah, pasti ada di mana-mana, kan?" alt="senang_pi.jpg" size="wide" offset="none" figure-label-title="Andy" slot="col-3" data-width="25" data-margin="center"></media-image>
+<p slot="col-3">Ya! Benar sekali. Pemikiran yang bagus! Tetap saja, lebih baik mengetahui di mana letak kesalahannya, dan memperbaikinya sekali, daripada tidak yakin dengan kesalahannya.</p></grid-plate>
 <p><br></p>
