@@ -4579,27 +4579,6 @@
       }
     },
     {
-      "id": "item-ce94eeaa-591e-4bb7-ae77-3853388ea25d",
-      "indent": 1,
-      "location": "pages/item-ce94eeaa-591e-4bb7-ae77-3853388ea25d/index.html",
-      "slug": "perancangan-basis-data/page",
-      "order": 12,
-      "parent": "item-13298894-5889-4b24-b28f-5bbde3a3c6f1",
-      "title": "Page",
-      "description": "\nRead these important things!\n\n\n",
-      "metadata": {
-        "created": 1733186755,
-        "updated": 1733302902,
-        "images": {},
-        "videos": {},
-        "published": true,
-        "hideInMenu": false,
-        "locked": false,
-        "readtime": 1,
-        "status": ""
-      }
-    },
-    {
       "id": "item-6c4b3e17-ff4c-46d3-bb17-b95049ec77ae",
       "indent": 1,
       "location": "pages/item-6c4b3e17-ff4c-46d3-bb17-b95049ec77ae/index.html",
