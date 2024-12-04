@@ -4533,6 +4533,22 @@
       }
     },
     {
+      "id": "item-824ac3ac-a451-4704-958b-196f6a8aca98",
+      "indent": 0,
+      "location": "pages/item-824ac3ac-a451-4704-958b-196f6a8aca98/index.html",
+      "slug": "perancangan-basis-data/latihan-database-php/page",
+      "order": 2,
+      "parent": "item-caba756f-fe00-43e8-a2cb-eaff3d8249a8",
+      "title": "Page",
+      "description": "",
+      "metadata": {
+        "created": 1733317762,
+        "updated": 1733317762,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
       "id": "item-5f80e0fc-aed6-4ef8-a5bd-c0ed6e843e52",
       "indent": 0,
       "location": "pages/item-5f80e0fc-aed6-4ef8-a5bd-c0ed6e843e52/index.html",
