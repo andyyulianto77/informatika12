@@ -20,6 +20,7 @@
 
 
 
+
     <p slot="col-2" data-margin="center">Tunggu, mengapa last_name opsional?</p>
   </grid-plate>
 <p>Karena orang-orang seperti Cher. Hanya satu nama. Omong-omong, dia tidak akan membalas
@@ -27,6 +28,7 @@
 <grid-plate item-margin="16" item-padding="16" layout="1-3" data-width="75" data-margin="center" data-border-radius="xs" data-border="sm">
     <p slot="col-1" data-margin="center">episode</p>
     <media-image source="files/episodes.png" alt="episodes.png" slot="col-2" accent-color="grey" size="wide" offset="wide" data-margin="center"></media-image>
+
 
 
 
@@ -41,6 +43,7 @@
   </ul>
 <grid-plate item-margin="16" item-padding="16" layout="1-3" data-width="75" data-margin="center" data-border-radius="xs" data-border="md">
     <media-image source="files/bingung2.jpg" alt="bingung2.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" data-width="25" data-margin="center"></media-image>
+
 
 
 
@@ -113,6 +116,7 @@
 
 
 
+
       <p slot="col-2" data-margin="center" role="textbox">Hei, navbarnya berubah.
         <br>
       </p>
@@ -131,6 +135,7 @@
 <media-image source="files/navbar-narrow.png" alt="navbar-narrow.png" accent-color="grey" size="wide" offset="none"></media-image>
 <br/><grid-plate item-padding="16" item-margin="16" layout="1-3" data-width="75" data-margin="center" data-border-radius="xs" data-border="sm">
       <media-image source="files/senang_pi.jpg" alt="bingung.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" data-margin="center" data-width="50"></media-image>
+
 
 
 
@@ -180,26 +185,10 @@
         </ul>
       </template>
     </code-sample>
-<p>Mari kita periksa PHP yang membuat HTML itu.
-      <br>
+<p>Mari kita periksa PHP yang membuat HTML itu. File episodes:<br>
     </p>
-<code-sample type="php" copy-clipboard-button data-hax-lock="data-hax-lock">
-      <template preserve-content="preserve-content">
-        <!--?php require_once 'library/useful-stuff.php'; $errorMessage=' '; $sql=" SELECT
-        episode_id, episode_number, title FROM episodes ORDER BY episode_number;"; /** @var
-        PDO $dbConnection */ $stmnt=$ dbConnection--->prepare($sql); $stmnt-&gt;execute(); // Menemukan catatan? if ($stmnt-&gt;rowCount()
-        == 0) { $errorMessage = "Maaf, tidak dapat menemukan episode dalam database."; }
-        else { $episodeEntities = $stmnt-&gt;fetchAll(); } ?&gt; ...
-        <p>Berikut episode-episodenya. Klik salah satu untuk mengetahui detailnya.</p>
-        <!--?php
-        if ($errorMessage !=' ') { print "<p class='alert-danger text-danger m-2 p-2'-->$errorMessage
-        <p></p>"; } else { print "
-        <ul>\n"; foreach ($episodeEntities as $episodeEntity) { $id = $episodeEntity['episode_id'];
-          $episodeNumber = $episodeEntity['episode_number']; $title = $episodeEntity['title'];
-          $link = "<a href="episode.php?episode_id=$id">$episodeNumber. $title</a>"; print
-          "
-          <li>$link</li>\n"; } print "</ul>\n"; } ?&gt; ==/html&gt;</template>
-    </code-sample>
+<iframe-loader source="https://pastebin.com/embed_iframe/VJjYfn0x?theme=dark" height="500" width="100%"><iframe-loader source="https://haxtheweb.org" height="500" width="100%"><iframe width="100%" height="500" src="https://pastebin.com/embed_iframe/VJjYfn0x?theme=dark"></iframe></iframe-loader>
+</iframe-loader>
 <p>Pada baris ke-18, variabel <code>$episodeEntities</code> akan berupa array rekaman.
       Berikut ini adalah bagian dari array tersebut, menurut debugger.
       <br>
@@ -243,6 +232,7 @@
 
 
 
+
       <p slot="col-2" data-margin="center">Hei, itu lebih sederhana dari yang saya kira.
         <br>
       </p>
@@ -254,6 +244,7 @@
     </p>
 <grid-plate item-padding="16" item-margin="16" layout="1-3" data-width="75" data-margin="center" data-border-radius="xs" data-border="sm">
       <media-image source="files/terkejut.jpg" alt="bingung.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" data-margin="center" data-width="50"></media-image>
+
 
 
 
@@ -321,22 +312,21 @@
 <h3 data-original-level="H3" id="header-0176df63-0fed-44e2-b9ec-13f691d6f8b9">Memuat data&#160;</h3>
 <p>Mari kita mulai dengan kode yang mengambil data dari basis data. Ini dia.&#8203;</p>
 <code-sample type="php" copy-clipboard-button data-hax-lock="data-hax-lock">
-        <template preserve-content="preserve-content">
-          <!--?php require_once 'library/useful-stuff.php'; $errorMessage=' '; $episodeId=g
+        
+        <template preserve-content="preserve-content"><!--?php require_once 'library/useful-stuff.php'; $errorMessage=' '; $episodeId=g
           etParamFromGet('episode_id'); $errorMessage=c heckEpisodeId($episodeId); if ($errorMessage=='
           ') { // Dapatkan detail episodenya. $episodeEntity=g etEpisodeWithId($episodeId);
           if (is_null($episodeEntity)) { $errorMessage=" Maaf, terjadi kesalahan saat mencari
           episode $episodeId."; } } if ($errorMessage==' ') { // Libatkan orang-orang dalam
           episode ini. $peopleEntities=g etPeopleForEpisodeWithId($episodeId); if (is_null($peopleEntities))
           { $errorMessage=" Maaf, terjadi kesalahan saat mencari orang dalam episode dengan
-          id $episodeId."; } } ?-->
-        </template>
-        </code-sample>
+          id $episodeId."; } } ?--></template></code-sample>
 <p>Kami mengikuti pola yang sama seperti sebelumnya. Dapatkan id episode dari URL,
           dengan memanggil <code>getParamFromGet()</code>. Kemudian panggil fungsi validasi.
           Mirip dengan yang lain yang telah kami tulis:</p>
 <code-sample type="php" copy-clipboard-button data-hax-lock="data-hax-lock">
-          <template preserve-content="preserve-content">/** * Check the episode id. * @param mixed $id Id. * @return string Error message,
+          
+        <template preserve-content="preserve-content">/** * Check the episode id. * @param mixed $id Id. * @return string Error message,
             MT if OK. */ function checkEpisodeId($id) { global $dbConnection; $errorMessage =
             ''; if (is_null($id)) { $errorMessage = 'Sorry, episode id is missing.'; } if ($errorMessage
             == '') { if (! is_numeric($id)) { $errorMessage = 'Sorry, episode id must be a number.';
@@ -346,8 +336,7 @@
             // Run it. $isWorked = $stmt-&gt;execute(['id' =&gt; $id]); if (!$isWorked) { $errorMessage
             = "Sorry, a problem connecting to the database."; } } if ($errorMessage == '') {
             // Anything returned? if ($stmt-&gt;rowCount() == 0) { $errorMessage = "Sorry, no
-            episode with an id of $id."; } } // Return results. return $errorMessage; }</template>
-        </code-sample>
+            episode with an id of $id."; } } // Return results. return $errorMessage; }</template></code-sample>
 <p>Sekali lagi, kami menggunakannya $errorMessagesebagai tanda. Jika MT, tidak ada
           kesalahan. Jika bukan MT, ada masalah, jadi lewati pemrosesan lebih lanjut.</p>
 <p>Mari kita kembali ke program utama. Anda akan melihat:</p>
@@ -366,11 +355,12 @@
 
 
 
+
         </grid-plate>
 <collection-list accent-color="grey" data-margin="center" items-per-row="1" data-width="100" data-padding="data-padding" data-text-align="center">
-          <!--     ?lit$884298661$     -->
-          <!--         -->
-          <!--         -->
+          <!--      ?lit$884298661$      -->
+          <!--           -->
+          <!--           -->
         </collection-list>
 <p>Sebagian besarnya seharusnya sudah familier, tetapi ada beberapa kerutan. (Saya
           juga punya kerutan. Saya sudah sangat tua. Dan lelah. Sangat lelah.) Fungsi ini mengembalikan
@@ -458,6 +448,7 @@
 
 
 
+
           <p slot="col-2" data-margin="center">Hei, Anda membuat fungsi lain, untuk melakukan pekerjaan itu.</p>
         </grid-plate>
 <p>Benar! Fungsi lain yang dapat digunakan kembali di perpustakaan kami. Penggunaan
@@ -468,11 +459,13 @@
 
 
 
+
         </grid-plate>
 <p>Dengan uang sebanyak itu, kau bisa memelihara lebih banyak anjing, air mancur coklat,
           menyewa Pinkerton untuk menemukan Thomas Coyne... terserah.</p>
 <grid-plate item-padding="16" item-margin="16" layout="1-3" data-width="75" data-margin="center" data-border-radius="xs" data-border="sm">
           <media-image source="files/senang_pi.jpg" alt="bingung.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" data-margin="center" data-width="50" figure-label-title="Afina" modal-title="Afina" _has-caption=""></media-image>
+
 
 
 
