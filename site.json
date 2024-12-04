@@ -4543,7 +4543,7 @@
       "description": "Sebuah proyek untuk Anda. Anda dapat mengerjakannya sendiri atau dalam tim yang terdiri dari dua orang. \nJika Anda mengerjakan proyek bersama orang lain, tuliskan nama Anda berdua di bagian bawa",
       "metadata": {
         "created": 1733317762,
-        "updated": 1733318625,
+        "updated": 1733318818,
         "images": {},
         "videos": {},
         "published": true,
@@ -4552,7 +4552,6 @@
         "tags": "latihan",
         "locked": false,
         "readtime": 1,
-        "image": "files/app-buku.jpeg",
         "icon": "hax:bulletin-board"
       }
     },
