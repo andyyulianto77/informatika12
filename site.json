@@ -4539,13 +4539,19 @@
       "slug": "perancangan-basis-data/latihan-database-php/page",
       "order": 2,
       "parent": "item-caba756f-fe00-43e8-a2cb-eaff3d8249a8",
-      "title": "Page",
-      "description": "",
+      "title": "Proyek: aplikasi buku",
+      "description": "Sebuah proyek untuk Anda. Anda dapat mengerjakannya sendiri atau dalam tim yang terdiri dari dua orang.&#160;\nJika Anda mengerjakan proyek bersama orang lain, tuliskan nama Anda berdua di bagian bawa",
       "metadata": {
         "created": 1733317762,
-        "updated": 1733317762,
-        "images": [],
-        "videos": []
+        "updated": 1733318278,
+        "images": {},
+        "videos": {},
+        "published": true,
+        "pageType": "project",
+        "hideInMenu": false,
+        "tags": "latihan",
+        "locked": false,
+        "readtime": 1
       }
     },
     {
