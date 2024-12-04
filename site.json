@@ -4540,10 +4540,10 @@
       "order": 2,
       "parent": "item-caba756f-fe00-43e8-a2cb-eaff3d8249a8",
       "title": "Proyek: aplikasi buku",
-      "description": "Sebuah proyek untuk Anda. Anda dapat mengerjakannya sendiri atau dalam tim yang terdiri dari dua orang.&#160;\nJika Anda mengerjakan proyek bersama orang lain, tuliskan nama Anda berdua di bagian bawa",
+      "description": "Sebuah proyek untuk Anda. Anda dapat mengerjakannya sendiri atau dalam tim yang terdiri dari dua orang. \nJika Anda mengerjakan proyek bersama orang lain, tuliskan nama Anda berdua di bagian bawa",
       "metadata": {
         "created": 1733317762,
-        "updated": 1733318278,
+        "updated": 1733318625,
         "images": {},
         "videos": {},
         "published": true,
@@ -4551,7 +4551,9 @@
         "hideInMenu": false,
         "tags": "latihan",
         "locked": false,
-        "readtime": 1
+        "readtime": 1,
+        "image": "files/app-buku.jpeg",
+        "icon": "hax:bulletin-board"
       }
     },
     {
