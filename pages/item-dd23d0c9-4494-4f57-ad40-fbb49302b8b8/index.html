@@ -21,6 +21,7 @@
 
 
 
+
     <p slot="col-2" data-margin="center">Tunggu, mengapa last_name opsional?</p>
   </grid-plate>
 <p>Karena orang-orang seperti Cher. Hanya satu nama. Omong-omong, dia tidak akan membalas
@@ -28,6 +29,7 @@
 <grid-plate item-margin="16" item-padding="16" layout="1-3" data-width="75" data-margin="center" data-border-radius="xs" data-border="sm">
     <p slot="col-1" data-margin="center">episode</p>
     <media-image source="files/episodes.png" alt="episodes.png" slot="col-2" accent-color="grey" size="wide" offset="wide" data-margin="center"></media-image>
+
 
 
 
@@ -43,6 +45,7 @@
   </ul>
 <grid-plate item-margin="16" item-padding="16" layout="1-3" data-width="75" data-margin="center" data-border-radius="xs" data-border="md">
     <media-image source="files/bingung2.jpg" alt="bingung2.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" data-width="25" data-margin="center"></media-image>
+
 
 
 
@@ -117,6 +120,7 @@
 
 
 
+
       <p slot="col-2" data-margin="center" role="textbox">Hei, navbarnya berubah.
         <br>
       </p>
@@ -135,6 +139,7 @@
 <media-image source="files/navbar-narrow.png" alt="navbar-narrow.png" accent-color="grey" size="wide" offset="none"></media-image>
 <br/><grid-plate item-padding="16" item-margin="16" layout="1-3" data-width="75" data-margin="center" data-border-radius="xs" data-border="sm">
       <media-image source="files/senang_pi.jpg" alt="bingung.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" data-margin="center" data-width="50"></media-image>
+
 
 
 
@@ -187,7 +192,8 @@
     </code-sample>
 <p>Mari kita periksa PHP yang membuat HTML itu. File episodes:<br>
     </p>
-<iframe-loader source="https://pastebin.com/embed_iframe/VJjYfn0x?theme=dark" height="500" width="100%"><iframe-loader source="https://haxtheweb.org" height="500" width="100%"><iframe width="100%" height="500" src="https://pastebin.com/embed_iframe/VJjYfn0x?theme=dark"></iframe></iframe-loader>
+<iframe-loader source="https://pastebin.com/embed_iframe/VJjYfn0x?theme=dark" height="500" width="100%">
+<iframe-loader source="https://pastebin.com/embed_iframe/VJjYfn0x?theme=dark" height="500" width="100%"><iframe width="100%" height="500" src="https://pastebin.com/embed_iframe/VJjYfn0x?theme=dark"></iframe></iframe-loader>
 </iframe-loader>
 <p>Pada baris ke-18, variabel <code>$episodeEntities</code> akan berupa array rekaman.
       Berikut ini adalah bagian dari array tersebut, menurut debugger.
@@ -217,17 +223,11 @@
 <p>Berikut PHP yang membuatnya:
       <br>
     </p>
-<code-sample type="javascript" copy-clipboard-button data-hax-lock="data-hax-lock">
-      <template preserve-content="preserve-content">print "
-        <ul>\n"; foreach ($episodeEntities as $episodeEntity) { $id = $episodeEntity['episode_id'];
-          $episodeNumber = $episodeEntity['episode_number']; $title = $episodeEntity['title'];
-          $link = "<a href="episode.php?episode_id=$id">$episodeNumber. $title</a>"; print
-          "
-          <li>$link</li>\n"; } print "</ul>\n";</template>
-    </code-sample>
+<media-image source="files/kode-cetak-episode.JPG" alt="kode-cetak-episode.JPG" accent-color="grey" size="wide" offset="wide" data-width="75" data-margin="center"></media-image>
 <p></p>
 <grid-plate item-padding="16" item-margin="16" layout="1-3" data-width="75" data-margin="center" data-border-radius="xs" data-border="sm">
       <media-image source="files/senang.jpg" alt="bingung.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" data-margin="center" data-width="50"></media-image>
+
 
 
 
@@ -244,6 +244,7 @@
     </p>
 <grid-plate item-padding="16" item-margin="16" layout="1-3" data-width="75" data-margin="center" data-border-radius="xs" data-border="sm">
       <media-image source="files/terkejut.jpg" alt="bingung.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" data-margin="center" data-width="50"></media-image>
+
 
 
 
@@ -311,32 +312,32 @@
       </code-sample>
 <h3 data-original-level="H3" id="header-0176df63-0fed-44e2-b9ec-13f691d6f8b9">Memuat data&#160;</h3>
 <p>Mari kita mulai dengan kode yang mengambil data dari basis data. Ini dia.&#8203;</p>
-<code-sample type="php" copy-clipboard-button data-hax-lock="data-hax-lock">
-        
-        <template preserve-content="preserve-content"><!--?php require_once 'library/useful-stuff.php'; $errorMessage=' '; $episodeId=g
-          etParamFromGet('episode_id'); $errorMessage=c heckEpisodeId($episodeId); if ($errorMessage=='
-          ') { // Dapatkan detail episodenya. $episodeEntity=g etEpisodeWithId($episodeId);
-          if (is_null($episodeEntity)) { $errorMessage=" Maaf, terjadi kesalahan saat mencari
-          episode $episodeId."; } } if ($errorMessage==' ') { // Libatkan orang-orang dalam
-          episode ini. $peopleEntities=g etPeopleForEpisodeWithId($episodeId); if (is_null($peopleEntities))
-          { $errorMessage=" Maaf, terjadi kesalahan saat mencari orang dalam episode dengan
-          id $episodeId."; } } ?--></template></code-sample>
+<code-sample type="php" copy-clipboard-button><template preserve-content="preserve-content"><!--?php
+require_once 'library/useful-stuff.php';
+$errorMessage = '';
+$episodeId = getParamFromGet('episode_id');
+$errorMessage = checkEpisodeId($episodeId);
+if ($errorMessage == '') {
+    // Get episode deets.
+    $episodeEntity = getEpisodeWithId($episodeId);
+    if (is_null($episodeEntity)) {
+        $errorMessage = "Sorry, error looking up episode $episodeId.";
+    }
+}--></template></code-sample>
+<code-sample copy-clipboard-button type="php">  
+<template preserve-content="preserve-content">if ($errorMessage == '') {
+    // Get people in the episode.
+    $peopleEntities = getPeopleForEpisodeWithId($episodeId);
+    if (is_null($peopleEntities)) {
+        $errorMessage = "Sorry, error looking up people in episode with id $episodeId.";
+    }
+}
+?&gt;==doctype html&gt;</template></code-sample>
 <p>Kami mengikuti pola yang sama seperti sebelumnya. Dapatkan id episode dari URL,
           dengan memanggil <code>getParamFromGet()</code>. Kemudian panggil fungsi validasi.
           Mirip dengan yang lain yang telah kami tulis:</p>
-<code-sample type="php" copy-clipboard-button data-hax-lock="data-hax-lock">
-          
-        <template preserve-content="preserve-content">/** * Check the episode id. * @param mixed $id Id. * @return string Error message,
-            MT if OK. */ function checkEpisodeId($id) { global $dbConnection; $errorMessage =
-            ''; if (is_null($id)) { $errorMessage = 'Sorry, episode id is missing.'; } if ($errorMessage
-            == '') { if (! is_numeric($id)) { $errorMessage = 'Sorry, episode id must be a number.';
-            } } if ($errorMessage == '') { if ($id &lt; 1) { $errorMessage = 'Sorry, episode
-            id must be one or more.'; } } if ($errorMessage == '') { // Prepare SQL. $sql = "
-            SELECT * FROM episodes WHERE episode_id = :id; "; $stmt = $dbConnection-&gt;prepare($sql);
-            // Run it. $isWorked = $stmt-&gt;execute(['id' =&gt; $id]); if (!$isWorked) { $errorMessage
-            = "Sorry, a problem connecting to the database."; } } if ($errorMessage == '') {
-            // Anything returned? if ($stmt-&gt;rowCount() == 0) { $errorMessage = "Sorry, no
-            episode with an id of $id."; } } // Return results. return $errorMessage; }</template></code-sample>
+<iframe-loader source="https://pastebin.com/embed_iframe/k5BibY26?theme=dark" height="500" width="100%"><iframe-loader source="https://haxtheweb.org" height="500" width="100%"><iframe width="100%" height="500" src="https://pastebin.com/embed_iframe/k5BibY26?theme=dark"></iframe></iframe-loader>
+</iframe-loader>
 <p>Sekali lagi, kami menggunakannya $errorMessagesebagai tanda. Jika MT, tidak ada
           kesalahan. Jika bukan MT, ada masalah, jadi lewati pemrosesan lebih lanjut.</p>
 <p>Mari kita kembali ke program utama. Anda akan melihat:</p>
@@ -349,18 +350,14 @@
           memindahkan kode tersebut ke fungsi yang dapat digunakan kembali. Itu umum dalam
           aplikasi web bisnis. Anda mengekstrak kode untuk tugas aplikasi umum, seperti memuat
           data tentang entitas bisnis.</p>
-<grid-plate item-margin="0" item-padding="0" layout="1" data-margin="center" data-width="75">
-          <collection-item line1="Menggunakan kembali" line2="Gunakan kembali kode Anda di seluruh program, menggunakan fungsi dan komponen halaman." url="perancangan-basis-data/page-3" tags="prinsip, reuse" icon="courseicons:chem-connection" accent-color="indigo" slot="col-2"></collection-item>
-
-
-
-
-
-        </grid-plate>
+<stop-note title="Menggunakan kembali" accent-color="grey" icon="stopnoteicons:book-icon" status="info" message="&#60;strong data-hax-layout=&quot;true&quot; data-hax-ray=&quot;Bold&quot;=&quot;true&quot;&#62;Gunakan kembali kode Anda di seluruh program, menggunakan fungsi dan komponen halaman.&#60;/strong&#62;
+" data-width="75" data-margin="center" url="perancangan-basis-data/page-3" remote-link-url="perancangan-basis-data/page-3"><p slot="message"><strong>Gunakan kembali kode Anda di seluruh program, menggunakan fungsi dan komponen halaman.</strong>
+</p>
+</stop-note>
 <collection-list accent-color="grey" data-margin="center" items-per-row="1" data-width="100" data-padding="data-padding" data-text-align="center">
-          <!--      ?lit$884298661$      -->
-          <!--           -->
-          <!--           -->
+          <!--       ?lit$884298661$       -->
+          <!--             -->
+          <!--             -->
         </collection-list>
 <p>Sebagian besarnya seharusnya sudah familier, tetapi ada beberapa kerutan. (Saya
           juga punya kerutan. Saya sudah sangat tua. Dan lelah. Sangat lelah.) Fungsi ini mengembalikan
@@ -377,7 +374,7 @@
 <p><code>return $result; </code>
 
         </p>
-<site-collection-list accent-color="grey" responsive-size="lg" published="" limit="8" sort="title" related-items="item-184dce37-3730-47e9-a153-96c48a5d5d05" tags="prinsip,reuse" sort-obj="{&quot;title&quot;:&quot;ASC&quot;}" edit-mode></site-collection-list>
+<site-collection-list accent-color="grey" responsive-size="lg" published="" limit="8" sort="title" related-items="item-184dce37-3730-47e9-a153-96c48a5d5d05" tags="prinsip,reuse" sort-obj="{&quot;title&quot;:&quot;ASC&quot;}" edit-mode=""></site-collection-list>
 <p>Jadi, inti dari kode di atas adalah untuk mengatur <code>$result</code>. Fungsi dimulai
           dengan membuatnya menjadi null (baris 8):</p>
 <p>$result = null;</p>
@@ -449,22 +446,21 @@
 
 
 
+
           <p slot="col-2" data-margin="center">Hei, Anda membuat fungsi lain, untuk melakukan pekerjaan itu.</p>
         </grid-plate>
 <p>Benar! Fungsi lain yang dapat digunakan kembali di perpustakaan kami. Penggunaan
           kembali menghemat waktu dan uang.</p>
-<grid-plate item-padding="16" item-margin="16" layout="1" data-margin="center" data-width="75">
-          <collection-item line1="Menggunakan kembali" line2="Gunakan kembali kode Anda di seluruh program, menggunakan fungsi dan komponen halaman." url="perancangan-basis-data/page-3" tags="prinsip, reuse" icon="courseicons:chem-connection" accent-color="indigo" slot="col-2"></collection-item>
-
-
-
-
-
-        </grid-plate>
 <p>Dengan uang sebanyak itu, kau bisa memelihara lebih banyak anjing, air mancur coklat,
           menyewa Pinkerton untuk menemukan Thomas Coyne... terserah.</p>
+<stop-note accent-color="grey" remote-link-url="perancangan-basis-data/page-3" title="Menggunakan kembali" url="perancangan-basis-data/page-3" icon="stopnoteicons:book-icon" status="info" message="&#60;strong data-hax-layout=&quot;true&quot; data-hax-ray=&quot;Bold&quot;=&quot;true&quot;&#62;Gunakan kembali kode Anda di seluruh program, menggunakan fungsi dan komponen halaman.&#60;/strong&#62;
+" data-width="75" data-margin="center" remote-link-target="{}">  <p slot="message"><strong>Gunakan kembali kode Anda di seluruh program, menggunakan fungsi dan komponen halaman.</strong>
+</p>
+
+</stop-note>
 <grid-plate item-padding="16" item-margin="16" layout="1-3" data-width="75" data-margin="center" data-border-radius="xs" data-border="sm">
           <media-image source="files/senang_pi.jpg" alt="bingung.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" data-margin="center" data-width="50" figure-label-title="Afina" modal-title="Afina" _has-caption=""></media-image>
+
 
 
 
