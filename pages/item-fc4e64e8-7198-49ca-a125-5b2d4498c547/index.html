@@ -42,7 +42,7 @@
     tangga 1, satu rumah tangga 2, dan seterusnya. Mungkin ada dua rumah tangga Mathieson
     yang berbeda. Mereka akan memiliki nama yang sama, tetapi kunci yang berbeda.&#160;</p>
 <p>Kolom <code>name</code>adalah string.&#160;</p>
-<p>Meja lainnya adalah doggos.</p>
+<p>Tabel lainnya adalah doggos.</p>
 <media-image source="files/doggos.png" alt="doggos.png" accent-color="grey" size="wide" offset="none"></media-image>
 <p>Memiliki tiga kolom: <code>doggo_id</code> kunci utama tabel, <code>name</code>: nama
     anjing, <code>household</code>: rumah tangga tempat anjing itu berada:&#160;</p>
@@ -70,8 +70,10 @@
 
 
 
+
     <p slot="col-1">Tabel Rumah tangga pemilik anjing</p>
     <media-image source="files/doggos.png" alt="doggos.png" slot="col-2" accent-color="grey" size="wide" offset="none"></media-image>
+
 
 
 
@@ -226,5 +228,6 @@ function checkName($name) {
     return $errorMessage;
 }</template></code-sample>
 <p>Tidak ada yang baru di sini.&#160;</p>
-<grid-plate item-margin="16" item-padding="16" layout="1-2-1"><site-collection-list accent-color="grey" responsive-size="lg" published limit="8" sort="title" tags="latihan, 1-n" slot="col-2" data-width="75" data-margin="center" sort-obj="{&quot;title&quot;:&quot;ASC&quot;}"></site-collection-list>
+<grid-plate item-margin="16" item-padding="16" layout="1" data-width="75" data-margin="center"><site-collection-list accent-color="grey" responsive-size="lg" limit="8" sort="title" tags="latihan, 1-n" slot="col-2" data-width="100" sort-obj="{&quot;title&quot;:&quot;ASC&quot;}" data-text-align="center"></site-collection-list>
+
 </grid-plate>
