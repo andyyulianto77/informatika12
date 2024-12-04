@@ -4534,7 +4534,7 @@
     },
     {
       "id": "item-5f80e0fc-aed6-4ef8-a5bd-c0ed6e843e52",
-      "indent": 1,
+      "indent": 0,
       "location": "pages/item-5f80e0fc-aed6-4ef8-a5bd-c0ed6e843e52/index.html",
       "slug": "perancangan-basis-data/banyak-catatan",
       "order": 11,
@@ -4543,7 +4543,7 @@
       "description": "Anda sudah mempelajari komponen dan jenis pengolahan database dengan 1 to many.\n  Mari kita memperdalam pengetahuan dengan lebih banyak contoh.\ntabel rumah tangga\n\nDaftar binatang anjing\n\nAda hubunga",
       "metadata": {
         "created": 1733044750,
-        "updated": 1733302901,
+        "updated": 1733303705,
         "images": {},
         "videos": {},
         "published": true,

@@ -39,7 +39,9 @@
 
 
 
+
   <media-image source="files/doggos.png" alt="doggos.png" slot="col-2" accent-color="grey" size="wide" offset="none"></media-image>
+
 
 
 
@@ -77,7 +79,7 @@
 <li>Rosie</li>
 </ul></template></code-sample>
 <p>Seluruh daftar berada di antara awal dan ul akhir. Setiap item daftar berada dalam pasangan li.</p>
-<h2 id="header-758f7a14-4421-a880-a7a7-b8362d5b82d8">Mengubah kueri PHP&#160;</h2>
+<h2 data-original-level="H2" id="header-758f7a14-4421-a880-a7a7-b8362d5b82d8">Mengubah kueri PHP&#160;</h2>
 <p>Tidak banyak perubahan dalam PHP yang menjalankan kueri. Ini dia. Variabel <code>$householdName</code> berisi rumah tangga yang diinginkan pengguna, diambil dari akhir URL.&#160;</p>
 <p>Hanya beberapa hal yang perlu diperhatikan.&#8203;</p>
 <code-sample type="php" copy-clipboard-button><template preserve-content="preserve-content">// // Cari anjingnya
@@ -167,25 +169,27 @@ print "</ul>\n";</template></code-sample>
     Loop body code
 }</template></code-sample>
 <p>... adalah suatu perulangan. foreach()menelusuri array yang Anda berikan, satu elemen dalam satu waktu.&#160;</p>
-<p><ol><li>Pertama kali melalui loop, $rows[0] dimasukkan ke $row, dan kode badan dijalankan. </li><li>Kali kedua melalui loop, $rows[1]dimasukkan ke $row, dan kode badan dijalankan. </li><li>Kali ketiga melalui loop, $rows[2]dimasukkan ke $row, dan kode badan dijalankan. </li><li>... </li></ol><span>Berik</span><span>ut kode badannya:</span></p>
+<p></p>
+<ol><li>Pertama kali melalui loop, $rows[0] dimasukkan ke $row, dan kode badan dijalankan. </li><li>Kali kedua melalui loop, $rows[1]dimasukkan ke $row, dan kode badan dijalankan. </li><li>Kali ketiga melalui loop, $rows[2]dimasukkan ke $row, dan kode badan dijalankan. </li><li>... </li></ol>
+<span>Berik</span><span>ut kode badannya:</span><p></p>
 <code-sample type="javascript" copy-clipboard-button><template preserve-content="preserve-content">$doggoName = $row['doggo_name'];
 print "<li>$doggoName</li>\n";</template></code-sample>
 <p>$rowadalah salah satu baris. $row['doggo_name'] adalah salah satu bidang dalam baris tersebut.&#160;</p>
-<h3 id="header-fff8d935-a393-e0d2-1987-fa23060d7ac2">Semuanya&#160;</h3>
-<p>Tujuannya adalah agar pengguna dapat bertanya anjing apa saja yang ada di rumah. Anda dapat mencobanya , dan mengunduh kodenya .&#160;</p>
+<h3 data-original-level="H3" id="header-fff8d935-a393-e0d2-1987-fa23060d7ac2">Semuanya&#160;</h3>
+<p>Tujuannya adalah agar pengguna dapat bertanya anjing apa saja yang ada di rumah. Anda dapat <a href="http://andy1.rf.gd/php/db/1-n/find-household/carianjing.php?household_name=mathieson&amp;i=1" target="_blank">mencobanya</a>, dan mengunduh <a href="files/find-doggos.zip" role="textbox" target="_blank">kodenya</a>.&#160;</p>
 <p>Kode:</p>
-<iframe-loader source="https://pastebin.com/embed_iframe/yJ0rGALu?theme=dark" height="500" width="100%"><iframe-loader source="https://haxtheweb.org" height="500" width="100%"><iframe width="100%" height="500" src="https://pastebin.com/embed_iframe/yJ0rGALu?theme=dark"></iframe></iframe-loader>
-</iframe-loader>
+<iframe-loader source="https://pastebin.com/embed_iframe/yJ0rGALu?theme=dark" height="500" width="100%">
+<iframe width="100%" height="500" src="https://pastebin.com/embed_iframe/yJ0rGALu?theme=dark"></iframe></iframe-loader>
 <p>Baris 11-32 menjalankan kueri, dan meletakkan hasil fetchAll() into $rows@.&#160;</p>
-<h6 id="header-bd688ae0-725b-31dc-2eeb-940e68332a09">Baris 57 sampai 60 berulang $rows, menghasilkan kolom doggo_name dan untuk setiap baris.</h6>
+<h6 data-original-level="H6" id="header-bd688ae0-725b-31dc-2eeb-940e68332a09">Baris 57 sampai 60 berulang $rows, menghasilkan kolom doggo_name dan untuk setiap baris.</h6>
 <code-sample type="javascript" copy-clipboard-button><template preserve-content="preserve-content">print "<ul>\n";
 foreach ($rows as $row) {
     $doggoName = $row['doggo_name'];
     print "<li>$doggoName</li>\n";
 }
 print "</ul>\n";</template></code-sample>
-<h3 id="header-9e6e4061-782b-f03f-36ec-eb101565ad1e">Menjadi nyata&#160;</h3>
+<h3 data-original-level="H3" id="header-9e6e4061-782b-f03f-36ec-eb101565ad1e">Menjadi nyata&#160;</h3>
 <p>Program kami semakin mendekati program yang digunakan dalam aplikasi web bisnis yang sebenarnya. Daftar doggo adalah sebuah laporan . Pengguna dapat mengajukan pertanyaan dalam istilah bisnis... Anjing apa saja yang ada di rumah tangga X? ... dan mendapatkan hasil yang membantu mereka melakukan pekerjaan mereka.</p>
 <p></p>
-<h3 id="header-d265e990-84c6-e056-b103-7ca7ceb7493e">Apa sekarang?&#160;</h3>
+<h3 data-original-level="H3" id="header-d265e990-84c6-e056-b103-7ca7ceb7493e">Apa sekarang?&#160;</h3>
 <p>Pada pelajaran DB terakhir, mari kita lihat kueri banyak-ke-banyak.</p>
