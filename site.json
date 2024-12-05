@@ -4926,13 +4926,17 @@
       "slug": "page/page-1",
       "order": 1,
       "parent": "item-a4f1f06a-c349-47e1-a9f8-17ddabbc4e48",
-      "title": "Page",
-      "description": "",
+      "title": "CPANEL ",
+      "description": "Anda punya akun hosting, kan? Mari kita coba.&#160;\n(Cuplikan layar di bawah merupakan yang terbaru pada saat artikel ini ditulis.)&#160;\nBuka https://dash.infinityfree.com/ . Ingat trik klik kanan d",
       "metadata": {
         "created": 1733408414,
-        "updated": 1733408414,
-        "images": [],
-        "videos": []
+        "updated": 1733411012,
+        "images": {},
+        "videos": {},
+        "published": true,
+        "hideInMenu": false,
+        "locked": false,
+        "readtime": 1
       }
     }
   ]
