@@ -4881,15 +4881,20 @@
       "indent": 0,
       "location": "pages/item-a4f1f06a-c349-47e1-a9f8-17ddabbc4e48/index.html",
       "slug": "page",
-      "order": 6,
+      "order": 7,
       "parent": null,
-      "title": "Page",
-      "description": "",
+      "title": "URL dan file",
+      "description": "\nAnda mengetik URL ke peramban, dan Anda melihat halaman web. URL adalah lokasi suatu berkas. Bagian ini membahas tentang bagaimana URL dipetakan ke berkas, dan bagaimana Anda dapat mengatur berkas s",
       "metadata": {
         "created": 1733388510,
-        "updated": 1733388510,
-        "images": [],
-        "videos": []
+        "updated": 1733388756,
+        "images": {},
+        "videos": {},
+        "published": true,
+        "pageType": "content",
+        "hideInMenu": false,
+        "locked": false,
+        "readtime": 1
       }
     }
   ]
