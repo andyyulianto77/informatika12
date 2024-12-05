@@ -4631,15 +4631,21 @@
       "indent": 0,
       "location": "pages/item-9a494e40-b011-46e7-8739-93720534b668/index.html",
       "slug": "perancangan-basis-data/page",
-      "order": 14,
+      "order": 15,
       "parent": "item-13298894-5889-4b24-b28f-5bbde3a3c6f1",
-      "title": "Page",
-      "description": "",
+      "title": "Katalog prinsip",
+      "description": "Prinsip adalah ide umum. Prinsip menjelaskan mengapa Anda melakukan sesuatu dengan cara tertentu, yaitu, menjelaskan pola . Ambil contoh pola jahit dan pertukangan kayu \"ukur dua kali, potong sekali.",
       "metadata": {
         "created": 1733384110,
-        "updated": 1733384110,
-        "images": [],
-        "videos": []
+        "updated": 1733384503,
+        "images": {},
+        "videos": {},
+        "published": true,
+        "pageType": "make",
+        "hideInMenu": false,
+        "tags": "Daftar",
+        "locked": false,
+        "readtime": 1
       }
     },
     {
