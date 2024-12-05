@@ -4939,6 +4939,22 @@
         "readtime": 1,
         "pageType": "content"
       }
+    },
+    {
+      "id": "item-894e47e3-d2f0-4d5e-bb54-84beb727a73f",
+      "indent": 0,
+      "location": "pages/item-894e47e3-d2f0-4d5e-bb54-84beb727a73f/index.html",
+      "slug": "page/page-2",
+      "order": 2,
+      "parent": "item-a4f1f06a-c349-47e1-a9f8-17ddabbc4e48",
+      "title": "Page",
+      "description": "",
+      "metadata": {
+        "created": 1733411077,
+        "updated": 1733411077,
+        "images": [],
+        "videos": []
+      }
     }
   ]
 }
