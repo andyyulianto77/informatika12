@@ -4970,15 +4970,14 @@
       "slug": "page-1",
       "order": 9,
       "parent": null,
-      "title": "Membuat HTML",
-      "description": "\nHalaman web dibuat dari HTML. Berkas HTML berisi petunjuk tentang cara membuat tampilan. Misalnya, anggaplah Anda ingin membuat tampilan ini:\n\nAnda bisa menggambarkannya seperti ini:\nBuatlah judul d",
+      "title": "Page",
+      "description": "   \n   Halaman web dibuat dari HTML. Berkas HTML berisi petunjuk tentang cara membuat tampilan.     Misalnya, anggaplah Anda ingin membuat tampilan ini:    \nAnda bisa menggambarkannya seperti ini:\n  ",
       "metadata": {
         "created": 1733413691,
-        "updated": 1733413955,
+        "updated": 1733414002,
         "images": {},
         "videos": {},
         "published": true,
-        "pageType": "content",
         "hideInMenu": false,
         "locked": false,
         "readtime": 1
