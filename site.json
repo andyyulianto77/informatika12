@@ -4962,6 +4962,22 @@
         "readtime": 3,
         "icon": "lrn:page"
       }
+    },
+    {
+      "id": "item-f7f19c6e-0234-4e10-a3b8-1aabb9d27181",
+      "indent": 0,
+      "location": "pages/item-f7f19c6e-0234-4e10-a3b8-1aabb9d27181/index.html",
+      "slug": "page-1",
+      "order": 9,
+      "parent": null,
+      "title": "Page",
+      "description": "",
+      "metadata": {
+        "created": 1733413691,
+        "updated": 1733413691,
+        "images": [],
+        "videos": []
+      }
     }
   ]
 }
