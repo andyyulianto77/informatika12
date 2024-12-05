@@ -4948,13 +4948,18 @@
       "slug": "page/page-2",
       "order": 2,
       "parent": "item-a4f1f06a-c349-47e1-a9f8-17ddabbc4e48",
-      "title": "Page",
-      "description": "",
+      "title": "Subdomain",
+      "description": "\n\n  Protokol apa yang harus digunakan aplikasi web Anda?\n  \n    \n  \n\nApa itu subdomain? Anda memiliki domain, seperti silverthoughts.org. Namun, Anda\n  ingin memiliki banyak situs web di dalamnya. Bi",
       "metadata": {
         "created": 1733411077,
-        "updated": 1733411077,
-        "images": [],
-        "videos": []
+        "updated": 1733412212,
+        "images": {},
+        "videos": {},
+        "published": true,
+        "pageType": "content",
+        "hideInMenu": false,
+        "locked": false,
+        "readtime": 1
       }
     }
   ]
