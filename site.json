@@ -4875,6 +4875,22 @@
         "icon": "lrn:page",
         "status": ""
       }
+    },
+    {
+      "id": "item-a4f1f06a-c349-47e1-a9f8-17ddabbc4e48",
+      "indent": 0,
+      "location": "pages/item-a4f1f06a-c349-47e1-a9f8-17ddabbc4e48/index.html",
+      "slug": "page",
+      "order": 6,
+      "parent": null,
+      "title": "Page",
+      "description": "",
+      "metadata": {
+        "created": 1733388510,
+        "updated": 1733388510,
+        "images": [],
+        "videos": []
+      }
     }
   ]
 }
