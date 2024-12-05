@@ -4908,14 +4908,14 @@
       "description": "\nAnda mengetik URL ke dalam browser. Seperti https://andyux.my.id, atau http://andy1.rf.gd/kucing/kity.html. Apa itu URL?\n\nURL adalah alamat \nSetiap berkas di Web memiliki URL (uniform resource ",
       "metadata": {
         "created": 1733389657,
-        "updated": 1733393230,
+        "updated": 1733396377,
         "images": {},
         "videos": {},
         "published": true,
         "pageType": "content",
         "hideInMenu": false,
         "locked": false,
-        "readtime": 2,
+        "readtime": 3,
         "icon": "lrn:page"
       }
     }
