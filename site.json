@@ -4992,13 +4992,18 @@
       "slug": "page-1/page",
       "order": 0,
       "parent": "item-f7f19c6e-0234-4e10-a3b8-1aabb9d27181",
-      "title": "Page",
-      "description": "",
+      "title": "Page template",
+      "description": "\n\n\nIsi pelajaran&#160;\nStruktur halaman Sebuah pola Memahami template Kepala dan badan Metadata Set karakter Jendela pandang Tubuh Menemukan kesalahan Ringkasan Masuk\n",
       "metadata": {
         "created": 1733414138,
-        "updated": 1733414138,
-        "images": [],
-        "videos": []
+        "updated": 1733414501,
+        "images": {},
+        "videos": {},
+        "published": true,
+        "pageType": "content",
+        "hideInMenu": false,
+        "locked": false,
+        "readtime": 1
       }
     }
   ]
