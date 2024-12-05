@@ -4905,10 +4905,10 @@
       "order": 0,
       "parent": "item-a4f1f06a-c349-47e1-a9f8-17ddabbc4e48",
       "title": "Alamat URL",
-      "description": " Anda mengetik URL ke dalam browser. Seperti https://andyux.my.id, atau http://andy1.rf.gd/kucing/kity.html. Apa itu URL? URL adalah alamat  Setiap berkas di Web memiliki URL (uniform resource ",
+      "description": "\nAnda mengetik URL ke dalam browser. Seperti https://andyux.my.id, atau http://andy1.rf.gd/kucing/kity.html. Apa itu URL?\n\nURL adalah alamat \nSetiap berkas di Web memiliki URL (uniform resource ",
       "metadata": {
         "created": 1733389657,
-        "updated": 1733407653,
+        "updated": 1733407793,
         "images": {},
         "videos": {},
         "published": true,
