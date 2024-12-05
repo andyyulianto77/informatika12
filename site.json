@@ -4918,6 +4918,22 @@
         "readtime": 5,
         "icon": "lrn:page"
       }
+    },
+    {
+      "id": "item-cad807bf-73ff-47af-8ed0-408e5411cd36",
+      "indent": 0,
+      "location": "pages/item-cad807bf-73ff-47af-8ed0-408e5411cd36/index.html",
+      "slug": "page/page-1",
+      "order": 1,
+      "parent": "item-a4f1f06a-c349-47e1-a9f8-17ddabbc4e48",
+      "title": "Page",
+      "description": "",
+      "metadata": {
+        "created": 1733408414,
+        "updated": 1733408414,
+        "images": [],
+        "videos": []
+      }
     }
   ]
 }
