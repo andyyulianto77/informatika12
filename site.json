@@ -4984,6 +4984,22 @@
         "pageType": "content",
         "icon": "lrn:page"
       }
+    },
+    {
+      "id": "item-bda1d09d-0b66-4fe9-a1f2-4153d6dd6e60",
+      "indent": 0,
+      "location": "pages/item-bda1d09d-0b66-4fe9-a1f2-4153d6dd6e60/index.html",
+      "slug": "page-1/page",
+      "order": 0,
+      "parent": "item-f7f19c6e-0234-4e10-a3b8-1aabb9d27181",
+      "title": "Page",
+      "description": "",
+      "metadata": {
+        "created": 1733414138,
+        "updated": 1733414138,
+        "images": [],
+        "videos": []
+      }
     }
   ]
 }
