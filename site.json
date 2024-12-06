@@ -2900,22 +2900,6 @@
       }
     },
     {
-      "id": "item-5bfa084a-6370-44cc-ad46-6d34a6065a49",
-      "indent": 0,
-      "location": "pages/item-5bfa084a-6370-44cc-ad46-6d34a6065a49/index.html",
-      "slug": "bersiap-siap-pro/page",
-      "order": 4,
-      "parent": "item-f61f8091-ceb3-4d8b-b1c4-d573ed0980a7",
-      "title": "Page",
-      "description": "",
-      "metadata": {
-        "created": 1733520836,
-        "updated": 1733520836,
-        "images": [],
-        "videos": []
-      }
-    },
-    {
       "id": "item-3c245611-951b-4aa7-99d3-8daf8f48dae9",
       "indent": 1,
       "location": "pages/item-3c245611-951b-4aa7-99d3-8daf8f48dae9/index.html",
