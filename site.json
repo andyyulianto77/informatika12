@@ -4970,13 +4970,18 @@
       "slug": "page/page-3",
       "order": 3,
       "parent": "item-a4f1f06a-c349-47e1-a9f8-17ddabbc4e48",
-      "title": "Page",
-      "description": "",
+      "title": "File di server Anda",
+      "description": "\n  \n  \n  \n  \n\nIsi pelajaran&#160;\n\n  Manajer File\n  Subdomain adalah folder\n  Tambahkan file ke subdomain Anda\n  Ke peramban\n  Subfolder dan URL\n  Periksa gambar di browser\n  Mengatur file\n  Latihan\n",
       "metadata": {
         "created": 1733473372,
-        "updated": 1733473372,
-        "images": [],
-        "videos": []
+        "updated": 1733477176,
+        "images": {},
+        "videos": {},
+        "published": true,
+        "pageType": "content",
+        "hideInMenu": false,
+        "locked": false,
+        "readtime": 2
       }
     },
     {
