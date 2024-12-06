@@ -4410,31 +4410,6 @@
       }
     },
     {
-      "id": "item-26f7ed9f-4c4d-4ebb-a874-1662e8647c47",
-      "indent": 1,
-      "location": "pages/item-26f7ed9f-4c4d-4ebb-a874-1662e8647c47/index.html",
-      "slug": "perancangan-basis-data/banyak-catatan-nama-kucing",
-      "order": 10,
-      "parent": "item-13298894-5889-4b24-b28f-5bbde3a3c6f1",
-      "title": "Banyak catatan Nama Kucing",
-      "description": "\n\n\n",
-      "metadata": {
-        "created": 1732774366,
-        "updated": 1733384561,
-        "images": {},
-        "videos": {},
-        "published": false,
-        "pageType": "content",
-        "hideInMenu": false,
-        "tags": "sql",
-        "locked": false,
-        "readtime": 1,
-        "icon": "lrn:page",
-        "image": "https://images-assets.nasa.gov/image/s64-29922/s64-29922~thumb.jpg",
-        "status": ""
-      }
-    },
-    {
       "id": "item-fc4e64e8-7198-49ca-a125-5b2d4498c547",
       "indent": 1,
       "location": "pages/item-fc4e64e8-7198-49ca-a125-5b2d4498c547/index.html",
