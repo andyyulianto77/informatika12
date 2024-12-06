@@ -3016,23 +3016,24 @@
     },
     {
       "id": "item-2be066c5-fb65-4006-888b-fe49125fecb1",
-      "indent": 2,
+      "indent": 0,
       "location": "pages/item-2be066c5-fb65-4006-888b-fe49125fecb1/index.html",
       "slug": "aplikasi-web/url-dan-file/page",
       "order": 3,
       "parent": "item-a4f1f06a-c349-47e1-a9f8-17ddabbc4e48",
-      "title": "Page",
+      "title": "File di Server Kamu",
       "description": "\nIsi pelajaran \n   Manajer File   Subdomain adalah folder   Tambahkan file ke subdomain Anda   Ke peramban   Subfolder dan URL   Periksa gambar di browser   Mengatur file   Latihan   Ringkasan   Beri",
       "metadata": {
         "created": 1733473372,
-        "updated": 1733521629,
+        "updated": 1733521930,
         "images": {},
         "videos": {},
         "published": true,
         "hideInMenu": false,
         "locked": false,
         "readtime": 4,
-        "status": ""
+        "status": "",
+        "pageType": "content"
       }
     },
     {
