@@ -2906,19 +2906,20 @@
       "slug": "page",
       "order": 1,
       "parent": null,
-      "title": "Page",
+      "title": "Aplikasi Web",
       "description": "Membuat aplikasi Web dengan PHP dan HTML CSS\n\n",
       "metadata": {
         "created": 1733520857,
-        "updated": 1733521086,
-        "images": [],
-        "videos": [],
+        "updated": 1733521288,
+        "images": {},
+        "videos": {},
         "published": true,
         "locked": false,
         "status": "",
         "pageType": "connection",
         "hideInMenu": false,
-        "readtime": 1
+        "readtime": 1,
+        "icon": "courseicons:chem-connection"
       }
     },
     {
