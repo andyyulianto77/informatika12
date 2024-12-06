@@ -23,7 +23,7 @@
         "gaID": null
       },
       "created": 1732016691,
-      "updated": 1733521245,
+      "updated": 1733521854,
       "git": {
         "vendor": "github",
         "branch": "gh-pages"
@@ -2354,7 +2354,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1733521170,
+        "updated": 1733521692,
         "images": {},
         "videos": {},
         "published": true,
@@ -2377,7 +2377,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1733521172,
+        "updated": 1733521693,
         "images": {},
         "videos": {},
         "published": true,
@@ -2398,7 +2398,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1733521174,
+        "updated": 1733521695,
         "images": {},
         "videos": {},
         "published": true,
@@ -2419,7 +2419,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1733521175,
+        "updated": 1733521697,
         "images": {},
         "videos": {},
         "files": [
@@ -2458,7 +2458,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1733521177,
+        "updated": 1733521699,
         "images": {},
         "videos": {},
         "published": true,
@@ -2479,7 +2479,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1733521178,
+        "updated": 1733521701,
         "images": {},
         "videos": {},
         "files": [
@@ -2510,7 +2510,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1733521179,
+        "updated": 1733521705,
         "images": {},
         "videos": {},
         "published": true,
@@ -2534,7 +2534,7 @@
         "created": 1732016685,
         "images": {},
         "videos": {},
-        "updated": 1733521180,
+        "updated": 1733521707,
         "files": [
           {
             "path": "[object Object]jurnal.JPG",
@@ -2578,7 +2578,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1733521183,
+        "updated": 1733521712,
         "images": {},
         "videos": {},
         "published": true,
@@ -2609,7 +2609,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1733521185,
+        "updated": 1733521715,
         "images": {},
         "videos": {},
         "published": true,
@@ -2630,7 +2630,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1733521184,
+        "updated": 1733521713,
         "images": {},
         "videos": {},
         "published": true,
@@ -2651,7 +2651,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1733521196,
+        "updated": 1733521732,
         "images": {},
         "videos": {},
         "published": true,
@@ -2672,7 +2672,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1733521230,
+        "updated": 1733521828,
         "images": {},
         "videos": {},
         "published": false,
@@ -2695,7 +2695,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1733521089,
+        "updated": 1733521633,
         "images": {},
         "videos": {},
         "published": true,
@@ -2718,7 +2718,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1733521090,
+        "updated": 1733521635,
         "images": {},
         "videos": {},
         "published": true,
@@ -2741,7 +2741,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1733521080,
+        "updated": 1733521615,
         "images": {},
         "videos": {},
         "published": true,
@@ -2775,7 +2775,7 @@
       "description": "Buku yang mirip buku teks ini dibagi menjadi beberapa bagian. Bagian ini disebut ",
       "metadata": {
         "created": 1732016685,
-        "updated": 1733521078,
+        "updated": 1733521613,
         "images": {},
         "videos": {},
         "published": true,
@@ -2798,7 +2798,7 @@
       "description": "Saya Andy Yulianto, instruktur kursus Anda.\n\n\n\n\n\n\nSilakan panggil saya dengan nama depan saya, jika Anda merasa nyaman dengan itu. Cara pengucapannya seperti ini.\n\n\n\n\n\n\nSaya lahir di Kediri, Indonesi",
       "metadata": {
         "created": 1732016685,
-        "updated": 1733521081,
+        "updated": 1733521616,
         "images": {},
         "videos": {},
         "files": [
@@ -2863,7 +2863,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1733521083,
+        "updated": 1733521617,
         "images": {},
         "videos": {},
         "published": true,
@@ -2886,7 +2886,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1733521085,
+        "updated": 1733521618,
         "images": {},
         "videos": {},
         "published": true,
@@ -2903,14 +2903,14 @@
       "id": "item-dcc83acf-3f28-4f75-adf5-d561edd290f2",
       "indent": 0,
       "location": "pages/item-dcc83acf-3f28-4f75-adf5-d561edd290f2/index.html",
-      "slug": "page",
+      "slug": "aplikasi-web",
       "order": 1,
       "parent": null,
       "title": "Aplikasi Web",
       "description": "Membuat aplikasi Web dengan PHP dan HTML CSS\n\n",
       "metadata": {
         "created": 1733520857,
-        "updated": 1733521288,
+        "updated": 1733521619,
         "images": {},
         "videos": {},
         "published": true,
@@ -2920,6 +2920,119 @@
         "hideInMenu": false,
         "readtime": 1,
         "icon": "courseicons:chem-connection"
+      }
+    },
+    {
+      "id": "item-a4f1f06a-c349-47e1-a9f8-17ddabbc4e48",
+      "indent": 1,
+      "location": "pages/item-a4f1f06a-c349-47e1-a9f8-17ddabbc4e48/index.html",
+      "slug": "aplikasi-web/url-dan-file",
+      "order": 0,
+      "parent": "item-dcc83acf-3f28-4f75-adf5-d561edd290f2",
+      "title": "URL dan file",
+      "description": "\nAnda mengetik URL ke peramban, dan Anda melihat halaman web. URL adalah lokasi suatu berkas. Bagian ini membahas tentang bagaimana URL dipetakan ke berkas, dan bagaimana Anda dapat mengatur berkas s",
+      "metadata": {
+        "created": 1733388510,
+        "updated": 1733521620,
+        "images": {},
+        "videos": {},
+        "published": true,
+        "pageType": "content",
+        "hideInMenu": false,
+        "locked": false,
+        "readtime": 1,
+        "status": "",
+        "icon": "lrn:page"
+      }
+    },
+    {
+      "id": "item-9a2e6f9d-9c21-4d6f-ad00-6b5a4656b1d9",
+      "indent": 2,
+      "location": "pages/item-9a2e6f9d-9c21-4d6f-ad00-6b5a4656b1d9/index.html",
+      "slug": "aplikasi-web/url-dan-file/alamat-url",
+      "order": 0,
+      "parent": "item-a4f1f06a-c349-47e1-a9f8-17ddabbc4e48",
+      "title": "Alamat URL",
+      "description": " Anda mengetik URL ke dalam browser. Seperti https://andyux.my.id, atau http://andy1.rf.gd/kucing/kity.html. Apa itu URL? URL adalah alamat  Setiap berkas di Web memiliki URL (uniform resource ",
+      "metadata": {
+        "created": 1733389657,
+        "updated": 1733521621,
+        "images": {},
+        "videos": {},
+        "published": true,
+        "pageType": "content",
+        "hideInMenu": false,
+        "locked": false,
+        "readtime": 5,
+        "icon": "lrn:page",
+        "status": ""
+      }
+    },
+    {
+      "id": "item-cad807bf-73ff-47af-8ed0-408e5411cd36",
+      "indent": 2,
+      "location": "pages/item-cad807bf-73ff-47af-8ed0-408e5411cd36/index.html",
+      "slug": "aplikasi-web/url-dan-file/cpanel",
+      "order": 1,
+      "parent": "item-a4f1f06a-c349-47e1-a9f8-17ddabbc4e48",
+      "title": "CPANEL ",
+      "description": "Anda punya akun hosting, kan? Mari kita coba. \n(Cuplikan layar di bawah merupakan yang terbaru pada saat artikel ini ditulis.) \nBuka https://dash.infinityfree.com/ . Ingat trik klik kanan d",
+      "metadata": {
+        "created": 1733408414,
+        "updated": 1733521623,
+        "images": {},
+        "videos": {},
+        "published": true,
+        "hideInMenu": false,
+        "locked": false,
+        "readtime": 1,
+        "pageType": "content",
+        "icon": "lrn:page",
+        "status": ""
+      }
+    },
+    {
+      "id": "item-894e47e3-d2f0-4d5e-bb54-84beb727a73f",
+      "indent": 2,
+      "location": "pages/item-894e47e3-d2f0-4d5e-bb54-84beb727a73f/index.html",
+      "slug": "aplikasi-web/url-dan-file/subdomain",
+      "order": 2,
+      "parent": "item-a4f1f06a-c349-47e1-a9f8-17ddabbc4e48",
+      "title": "Subdomain",
+      "description": "\n\n  Protokol apa yang harus digunakan aplikasi web Anda?\n  \n    \n  \n\nApa itu subdomain? Anda memiliki domain, seperti silverthoughts.org. Namun, Anda\n  ingin memiliki banyak situs web di dalamnya. Bi",
+      "metadata": {
+        "created": 1733411077,
+        "updated": 1733521625,
+        "images": {},
+        "videos": {},
+        "published": true,
+        "pageType": "content",
+        "hideInMenu": false,
+        "locked": false,
+        "readtime": 3,
+        "icon": "lrn:page",
+        "status": ""
+      }
+    },
+    {
+      "id": "item-2be066c5-fb65-4006-888b-fe49125fecb1",
+      "indent": 2,
+      "location": "pages/item-2be066c5-fb65-4006-888b-fe49125fecb1/index.html",
+      "slug": "aplikasi-web/url-dan-file/page",
+      "order": 3,
+      "parent": "item-a4f1f06a-c349-47e1-a9f8-17ddabbc4e48",
+      "title": "Page",
+      "description": "\nIsi pelajaran \n   Manajer File   Subdomain adalah folder   Tambahkan file ke subdomain Anda   Ke peramban   Subfolder dan URL   Periksa gambar di browser   Mengatur file   Latihan   Ringkasan   Beri",
+      "metadata": {
+        "created": 1733473372,
+        "updated": 1733521629,
+        "images": {},
+        "videos": {},
+        "published": true,
+        "hideInMenu": false,
+        "locked": false,
+        "readtime": 4,
+        "status": ""
       }
     },
     {
@@ -2933,7 +3046,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1733521167,
+        "updated": 1733521686,
         "images": {},
         "videos": {},
         "published": true,
@@ -2956,7 +3069,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1733521168,
+        "updated": 1733521688,
         "images": {},
         "videos": {},
         "published": true,
@@ -2980,7 +3093,7 @@
       "description": "kalau tanpa database sudah paham\n\n  \n  Tulis Q-2\n  \n  \n  \n\n\n  expand\n\n\n\n\n\n\n\n  \n  \n  \nDi\n\nBy the end of this lesson, you should be able to...Dapat membuat program PHP sederhana untuk melakukan perhitu",
       "metadata": {
         "created": 1732016685,
-        "updated": 1733521108,
+        "updated": 1733521644,
         "images": {},
         "videos": {},
         "published": true,
@@ -3013,7 +3126,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1733521144,
+        "updated": 1733521661,
         "images": {},
         "videos": {},
         "published": true,
@@ -3034,7 +3147,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1733521157,
+        "updated": 1733521675,
         "images": {},
         "videos": {},
         "published": true,
@@ -3057,7 +3170,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1733521092,
+        "updated": 1733521637,
         "images": {},
         "videos": {},
         "published": true,
@@ -3098,7 +3211,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1733521169,
+        "updated": 1733521689,
         "published": true,
         "hideInMenu": false,
         "locked": false,
@@ -3132,7 +3245,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1733521181,
+        "updated": 1733521710,
         "images": {},
         "videos": {},
         "published": true,
@@ -3155,7 +3268,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1733521186,
+        "updated": 1733521716,
         "images": {},
         "videos": {},
         "published": true,
@@ -3176,7 +3289,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1733521187,
+        "updated": 1733521718,
         "images": {},
         "videos": {},
         "published": true,
@@ -3197,7 +3310,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1733521188,
+        "updated": 1733521719,
         "images": {},
         "videos": {},
         "published": true,
@@ -3218,7 +3331,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1733521189,
+        "updated": 1733521721,
         "images": {},
         "videos": {},
         "published": true,
@@ -3239,7 +3352,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1733521191,
+        "updated": 1733521724,
         "images": {},
         "videos": {},
         "published": true,
@@ -3262,7 +3375,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1733521192,
+        "updated": 1733521726,
         "images": {},
         "videos": {},
         "published": true,
@@ -3283,7 +3396,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1733521194,
+        "updated": 1733521727,
         "images": {},
         "videos": {},
         "published": true,
@@ -3308,7 +3421,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1733521197,
+        "updated": 1733521740,
         "images": {},
         "videos": {},
         "published": true,
@@ -3329,7 +3442,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1733521198,
+        "updated": 1733521750,
         "images": {},
         "videos": {},
         "files": [
@@ -3360,7 +3473,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1733521200,
+        "updated": 1733521757,
         "images": {},
         "videos": {},
         "published": true,
@@ -3381,7 +3494,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1733521202,
+        "updated": 1733521761,
         "images": {},
         "videos": {},
         "files": [
@@ -3412,7 +3525,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1733521204,
+        "updated": 1733521770,
         "images": {},
         "videos": {},
         "published": true,
@@ -3435,7 +3548,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1733521206,
+        "updated": 1733521772,
         "images": {},
         "videos": {},
         "published": true,
@@ -3456,7 +3569,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1733521208,
+        "updated": 1733521774,
         "images": {},
         "videos": {},
         "published": true,
@@ -3489,7 +3602,7 @@
       "description": "",
       "metadata": {
         "created": 1732016687,
-        "updated": 1733521209,
+        "updated": 1733521776,
         "images": {},
         "videos": {},
         "files": [
@@ -3522,7 +3635,7 @@
       "description": "",
       "metadata": {
         "created": 1732016687,
-        "updated": 1733521210,
+        "updated": 1733521779,
         "images": {},
         "videos": {},
         "published": true,
@@ -3555,7 +3668,7 @@
       "description": "",
       "metadata": {
         "created": 1732016687,
-        "updated": 1733521211,
+        "updated": 1733521782,
         "images": {},
         "videos": {},
         "published": true,
@@ -3576,7 +3689,7 @@
       "description": "",
       "metadata": {
         "created": 1732016687,
-        "updated": 1733521214,
+        "updated": 1733521784,
         "images": {},
         "videos": {},
         "published": true,
@@ -3599,7 +3712,7 @@
       "description": "",
       "metadata": {
         "created": 1732016687,
-        "updated": 1733521216,
+        "updated": 1733521787,
         "images": {},
         "videos": {},
         "published": true,
@@ -3621,7 +3734,7 @@
       "description": "",
       "metadata": {
         "created": 1732016687,
-        "updated": 1733521218,
+        "updated": 1733521789,
         "images": {},
         "videos": {},
         "published": true,
@@ -3642,7 +3755,7 @@
       "description": "",
       "metadata": {
         "created": 1732016687,
-        "updated": 1733521220,
+        "updated": 1733521798,
         "images": {},
         "videos": {},
         "published": true,
@@ -3665,7 +3778,7 @@
       "description": "",
       "metadata": {
         "created": 1732016687,
-        "updated": 1733521234,
+        "updated": 1733521841,
         "images": {},
         "videos": {},
         "published": true,
@@ -3698,7 +3811,7 @@
       "description": "",
       "metadata": {
         "created": 1732016687,
-        "updated": 1733521141,
+        "updated": 1733521660,
         "images": {},
         "videos": {},
         "published": true,
@@ -3719,7 +3832,7 @@
       "description": "",
       "metadata": {
         "created": 1732016687,
-        "updated": 1733521219,
+        "updated": 1733521792,
         "images": {},
         "videos": {},
         "published": true,
@@ -3741,7 +3854,7 @@
       "description": "",
       "metadata": {
         "created": 1732016687,
-        "updated": 1733521221,
+        "updated": 1733521801,
         "images": {},
         "videos": {},
         "published": true,
@@ -3774,7 +3887,7 @@
       "description": "",
       "metadata": {
         "created": 1732016687,
-        "updated": 1733521223,
+        "updated": 1733521805,
         "images": {},
         "videos": {},
         "published": true,
@@ -3815,7 +3928,7 @@
       "description": "",
       "metadata": {
         "created": 1732016687,
-        "updated": 1733521224,
+        "updated": 1733521808,
         "images": {},
         "videos": {},
         "published": true,
@@ -3880,7 +3993,7 @@
       "description": "",
       "metadata": {
         "created": 1732016688,
-        "updated": 1733521225,
+        "updated": 1733521812,
         "images": {},
         "videos": {},
         "files": [
@@ -3937,7 +4050,7 @@
       "description": "",
       "metadata": {
         "created": 1732016688,
-        "updated": 1733521226,
+        "updated": 1733521816,
         "images": {},
         "videos": {},
         "published": true,
@@ -4050,7 +4163,7 @@
       "description": "Ini untuk membuat catatan/refleksi dari materi yang sudah dipelajari. Ikuti tutorial dari blog\nGithub + Stickblitz + HAX = penerbitan web gratis\n\nSumber Tulisan\n#situs web hax#pengembang web#komponen",
       "metadata": {
         "created": 1732016688,
-        "updated": 1733521228,
+        "updated": 1733521818,
         "images": {},
         "videos": {},
         "published": true,
@@ -4107,7 +4220,7 @@
       "description": "",
       "metadata": {
         "created": 1732016688,
-        "updated": 1733521229,
+        "updated": 1733521823,
         "images": {},
         "videos": {},
         "published": true,
@@ -4130,7 +4243,7 @@
       "description": "",
       "metadata": {
         "created": 1732016688,
-        "updated": 1733521148,
+        "updated": 1733521670,
         "images": {},
         "videos": {},
         "published": true,
@@ -4153,7 +4266,7 @@
       "description": "",
       "metadata": {
         "created": 1732016688,
-        "updated": 1733521094,
+        "updated": 1733521638,
         "images": {},
         "videos": {},
         "published": true,
@@ -4210,7 +4323,7 @@
       "description": "",
       "metadata": {
         "created": 1732016688,
-        "updated": 1733521231,
+        "updated": 1733521833,
         "images": {},
         "videos": {},
         "published": false,
@@ -4233,7 +4346,7 @@
       "description": "",
       "metadata": {
         "created": 1732016688,
-        "updated": 1733521097,
+        "updated": 1733521640,
         "images": {},
         "videos": {},
         "published": true,
@@ -4256,7 +4369,7 @@
       "description": "",
       "metadata": {
         "created": 1732016688,
-        "updated": 1733521232,
+        "updated": 1733521837,
         "images": {},
         "videos": {},
         "published": false,
@@ -4297,7 +4410,7 @@
       "description": "",
       "metadata": {
         "created": 1732016688,
-        "updated": 1733521100,
+        "updated": 1733521641,
         "images": {},
         "videos": {},
         "published": true,
@@ -4330,7 +4443,7 @@
       "description": "",
       "metadata": {
         "created": 1732016688,
-        "updated": 1733521151,
+        "updated": 1733521673,
         "images": {},
         "videos": {},
         "published": true,
@@ -4351,7 +4464,7 @@
       "description": "",
       "metadata": {
         "created": 1732016689,
-        "updated": 1733521087,
+        "updated": 1733521630,
         "images": {},
         "videos": {},
         "published": true,
@@ -4374,7 +4487,7 @@
       "description": "data siswa sudah tersimpan di tabel dan masuk ke database Latihan.\n\n  \n  kolom/field: nis, nama, alamat, dll\n  \n  \n  \n\n\n\n\n\n\n\n\n  expand\n\n\n\n\n\n\n\n\n\n  \n  \n  \nPada akhir pelajaran, Siswa dapat ...Membedaka",
       "metadata": {
         "created": 1732016689,
-        "updated": 1733521106,
+        "updated": 1733521642,
         "images": {},
         "videos": {},
         "published": true,
@@ -4397,7 +4510,7 @@
       "description": "Pada pelajaran lalu kita sudah menampilkan data siswa, membuat koneksi ke database.\n  Koneksi ini seperti pintu penghubung antara kode PHP dan database MySQL. Kita bisa\n  menulis kode PHP.  Amaz",
       "metadata": {
         "created": 1732682932,
-        "updated": 1733521110,
+        "updated": 1733521646,
         "images": {},
         "videos": {},
         "published": true,
@@ -4420,7 +4533,7 @@
       "description": "Kita sudah dapat mengambil data yang valid dengan PHP, kita harus memastikan data yang dimasukkan aman dan sesuai dengan yang dibutuhkan menggunakan fungsi tertentu.\nFungsi dari `global $thing;` dala",
       "metadata": {
         "created": 1732698500,
-        "updated": 1733521112,
+        "updated": 1733521647,
         "images": {},
         "videos": {},
         "published": true,
@@ -4443,7 +4556,7 @@
       "description": "Kita sudah menggunakan GET dengan aman di PHP, kita perlu membuat koneksi ke database menggunakan prepared statements, kita memastikan data yang dikirim aman dari serangan, seperti SQL injection",
       "metadata": {
         "created": 1732701390,
-        "updated": 1733521115,
+        "updated": 1733521648,
         "images": {},
         "videos": {},
         "published": true,
@@ -4467,7 +4580,7 @@
       "description": "\n\n",
       "metadata": {
         "created": 1732777459,
-        "updated": 1733521124,
+        "updated": 1733521652,
         "images": {},
         "videos": {},
         "published": true,
@@ -4491,7 +4604,7 @@
       "description": "Latihan\nPencarian 1:N\nSebelumnya, Anda membuat versi aplikasi wombat Anda sendiri. Mari kita gunakan kembali. \nTemukan hubungan 1:N yang dapat Anda tambahkan ke tabel Anda saat ini. Salah satu yang u",
       "metadata": {
         "created": 1732786885,
-        "updated": 1733521126,
+        "updated": 1733521653,
         "images": {},
         "videos": {},
         "published": true,
@@ -4516,7 +4629,7 @@
       "description": "Tampilkan daftar nama wombat. Setiap nama merupakan tautan ke halaman tentang detail wombat tersebut. Anda dapat mencoba solusi saya . \nBerikut halaman daftarnya:\n\nDaftar tersebut mesti berdasar",
       "metadata": {
         "created": 1733056908,
-        "updated": 1733521129,
+        "updated": 1733521654,
         "images": {},
         "videos": {},
         "published": true,
@@ -4541,7 +4654,7 @@
       "description": "Sebuah proyek untuk Anda. Anda dapat mengerjakannya sendiri atau dalam tim yang terdiri dari dua orang. \nJika Anda mengerjakan proyek bersama orang lain, tuliskan nama Anda berdua di bagian bawa",
       "metadata": {
         "created": 1733317762,
-        "updated": 1733521132,
+        "updated": 1733521656,
         "images": {},
         "videos": {},
         "published": true,
@@ -4566,7 +4679,7 @@
       "description": "Anda sudah mempelajari komponen dan jenis pengolahan database dengan 1 to many.\n  Mari kita memperdalam pengetahuan dengan lebih banyak contoh.\ntabel rumah tangga\n\nDaftar binatang anjing\n\nAda hubunga",
       "metadata": {
         "created": 1733044750,
-        "updated": 1733521118,
+        "updated": 1733521649,
         "images": {},
         "videos": {},
         "published": true,
@@ -4589,7 +4702,7 @@
       "description": "Saatnya untuk contoh baru. Podcast favorit saya adalah Nobody Listens to Paula Poundstone . Seorang pelawak, pelawak, komedian, dan penggembala, dengan tamu-tamu ahli dan grup musik house, berbicara ",
       "metadata": {
         "created": 1733057699,
-        "updated": 1733521121,
+        "updated": 1733521651,
         "images": {},
         "videos": {},
         "published": true,
@@ -4612,7 +4725,7 @@
       "description": "Prinsip adalah ide umum. Prinsip menjelaskan mengapa Anda melakukan sesuatu dengan cara tertentu, yaitu, menjelaskan pola . Ambil contoh pola jahit dan pertukangan kayu \"ukur dua kali, potong sekali.",
       "metadata": {
         "created": 1733384110,
-        "updated": 1733521135,
+        "updated": 1733521657,
         "images": {},
         "videos": {},
         "published": true,
@@ -4636,7 +4749,7 @@
       "description": "Dalam aplikasi kambing, beberapa halaman memuat data kambing, dengan id kambing. Daripada menulis kode beberapa kali, saya menulisnya sekali, dan membuat fungsi untuknya:\n\n",
       "metadata": {
         "created": 1733208794,
-        "updated": 1733521137,
+        "updated": 1733521658,
         "images": {},
         "videos": {},
         "published": true,
@@ -4660,7 +4773,7 @@
       "description": "",
       "metadata": {
         "created": 1732016689,
-        "updated": 1733521145,
+        "updated": 1733521665,
         "images": {},
         "videos": {},
         "published": true,
@@ -4683,7 +4796,7 @@
       "description": "",
       "metadata": {
         "created": 1732016689,
-        "updated": 1733521159,
+        "updated": 1733521677,
         "images": {},
         "videos": {},
         "published": true,
@@ -4706,7 +4819,7 @@
       "description": "",
       "metadata": {
         "created": 1732016689,
-        "updated": 1733521139,
+        "updated": 1733521659,
         "images": {},
         "videos": {},
         "published": false,
@@ -4730,7 +4843,7 @@
       "description": "",
       "metadata": {
         "created": 1732016689,
-        "updated": 1733521147,
+        "updated": 1733521667,
         "images": {},
         "videos": {},
         "published": true,
@@ -4753,7 +4866,7 @@
       "description": "",
       "metadata": {
         "created": 1732016689,
-        "updated": 1733521161,
+        "updated": 1733521678,
         "images": {},
         "videos": {},
         "published": true,
@@ -4776,7 +4889,7 @@
       "description": "",
       "metadata": {
         "created": 1732016689,
-        "updated": 1733521162,
+        "updated": 1733521680,
         "images": {},
         "videos": {},
         "published": true,
@@ -4797,7 +4910,7 @@
       "description": "",
       "metadata": {
         "created": 1732016689,
-        "updated": 1733521163,
+        "updated": 1733521682,
         "images": {},
         "videos": {},
         "published": true,
@@ -4818,7 +4931,7 @@
       "description": "",
       "metadata": {
         "created": 1732016690,
-        "updated": 1733521164,
+        "updated": 1733521684,
         "images": {},
         "videos": {},
         "published": true,
@@ -4839,7 +4952,7 @@
       "description": "",
       "metadata": {
         "created": 1732016690,
-        "updated": 1733521166,
+        "updated": 1733521685,
         "images": {},
         "videos": {},
         "published": true,
@@ -4862,7 +4975,7 @@
       "description": "",
       "metadata": {
         "created": 1732016690,
-        "updated": 1733521235,
+        "updated": 1733521844,
         "images": {},
         "videos": {},
         "published": false,
@@ -4875,130 +4988,17 @@
       }
     },
     {
-      "id": "item-a4f1f06a-c349-47e1-a9f8-17ddabbc4e48",
-      "indent": 0,
-      "location": "pages/item-a4f1f06a-c349-47e1-a9f8-17ddabbc4e48/index.html",
-      "slug": "url-dan-file",
-      "order": 9,
-      "parent": null,
-      "title": "URL dan file",
-      "description": "\nAnda mengetik URL ke peramban, dan Anda melihat halaman web. URL adalah lokasi suatu berkas. Bagian ini membahas tentang bagaimana URL dipetakan ke berkas, dan bagaimana Anda dapat mengatur berkas s",
-      "metadata": {
-        "created": 1733388510,
-        "updated": 1733521236,
-        "images": {},
-        "videos": {},
-        "published": true,
-        "pageType": "content",
-        "hideInMenu": false,
-        "locked": false,
-        "readtime": 1,
-        "status": "",
-        "icon": "lrn:page"
-      }
-    },
-    {
-      "id": "item-9a2e6f9d-9c21-4d6f-ad00-6b5a4656b1d9",
-      "indent": 1,
-      "location": "pages/item-9a2e6f9d-9c21-4d6f-ad00-6b5a4656b1d9/index.html",
-      "slug": "url-dan-file/alamat-url",
-      "order": 0,
-      "parent": "item-a4f1f06a-c349-47e1-a9f8-17ddabbc4e48",
-      "title": "Alamat URL",
-      "description": " Anda mengetik URL ke dalam browser. Seperti https://andyux.my.id, atau http://andy1.rf.gd/kucing/kity.html. Apa itu URL? URL adalah alamat  Setiap berkas di Web memiliki URL (uniform resource ",
-      "metadata": {
-        "created": 1733389657,
-        "updated": 1733521237,
-        "images": {},
-        "videos": {},
-        "published": true,
-        "pageType": "content",
-        "hideInMenu": false,
-        "locked": false,
-        "readtime": 5,
-        "icon": "lrn:page",
-        "status": ""
-      }
-    },
-    {
-      "id": "item-cad807bf-73ff-47af-8ed0-408e5411cd36",
-      "indent": 1,
-      "location": "pages/item-cad807bf-73ff-47af-8ed0-408e5411cd36/index.html",
-      "slug": "url-dan-file/cpanel",
-      "order": 1,
-      "parent": "item-a4f1f06a-c349-47e1-a9f8-17ddabbc4e48",
-      "title": "CPANEL ",
-      "description": "Anda punya akun hosting, kan? Mari kita coba. \n(Cuplikan layar di bawah merupakan yang terbaru pada saat artikel ini ditulis.) \nBuka https://dash.infinityfree.com/ . Ingat trik klik kanan d",
-      "metadata": {
-        "created": 1733408414,
-        "updated": 1733521239,
-        "images": {},
-        "videos": {},
-        "published": true,
-        "hideInMenu": false,
-        "locked": false,
-        "readtime": 1,
-        "pageType": "content",
-        "icon": "lrn:page",
-        "status": ""
-      }
-    },
-    {
-      "id": "item-894e47e3-d2f0-4d5e-bb54-84beb727a73f",
-      "indent": 1,
-      "location": "pages/item-894e47e3-d2f0-4d5e-bb54-84beb727a73f/index.html",
-      "slug": "url-dan-file/subdomain",
-      "order": 2,
-      "parent": "item-a4f1f06a-c349-47e1-a9f8-17ddabbc4e48",
-      "title": "Subdomain",
-      "description": "\n\n  Protokol apa yang harus digunakan aplikasi web Anda?\n  \n    \n  \n\nApa itu subdomain? Anda memiliki domain, seperti silverthoughts.org. Namun, Anda\n  ingin memiliki banyak situs web di dalamnya. Bi",
-      "metadata": {
-        "created": 1733411077,
-        "updated": 1733521240,
-        "images": {},
-        "videos": {},
-        "published": true,
-        "pageType": "content",
-        "hideInMenu": false,
-        "locked": false,
-        "readtime": 3,
-        "icon": "lrn:page",
-        "status": ""
-      }
-    },
-    {
-      "id": "item-2be066c5-fb65-4006-888b-fe49125fecb1",
-      "indent": 1,
-      "location": "pages/item-2be066c5-fb65-4006-888b-fe49125fecb1/index.html",
-      "slug": "url-dan-file/page",
-      "order": 3,
-      "parent": "item-a4f1f06a-c349-47e1-a9f8-17ddabbc4e48",
-      "title": "Page",
-      "description": "\nIsi pelajaran \n   Manajer File   Subdomain adalah folder   Tambahkan file ke subdomain Anda   Ke peramban   Subfolder dan URL   Periksa gambar di browser   Mengatur file   Latihan   Ringkasan   Beri",
-      "metadata": {
-        "created": 1733473372,
-        "updated": 1733521241,
-        "images": {},
-        "videos": {},
-        "published": true,
-        "hideInMenu": false,
-        "locked": false,
-        "readtime": 4,
-        "status": ""
-      }
-    },
-    {
       "id": "item-f7f19c6e-0234-4e10-a3b8-1aabb9d27181",
       "indent": 0,
       "location": "pages/item-f7f19c6e-0234-4e10-a3b8-1aabb9d27181/index.html",
       "slug": "membuat-html",
-      "order": 10,
+      "order": 9,
       "parent": null,
       "title": "Membuat HTML",
       "description": "\nHalaman web dibuat dari HTML. Berkas HTML berisi petunjuk tentang cara membuat tampilan. Misalnya, anggaplah Anda ingin membuat tampilan ini:\n\nAnda bisa menggambarkannya seperti ini:\nBuatlah judul d",
       "metadata": {
         "created": 1733413691,
-        "updated": 1733521242,
+        "updated": 1733521847,
         "images": {},
         "videos": {},
         "published": true,
@@ -5021,7 +5021,7 @@
       "description": "\n\n\nIsi pelajaran&#160;\nStruktur halaman Sebuah pola Memahami template Kepala dan badan Metadata Set karakter Jendela pandang Tubuh Menemukan kesalahan Ringkasan Masuk\n",
       "metadata": {
         "created": 1733414138,
-        "updated": 1733521243,
+        "updated": 1733521850,
         "images": {},
         "videos": {},
         "published": true,
