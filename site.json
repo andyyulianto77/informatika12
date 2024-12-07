@@ -3112,13 +3112,17 @@
       "slug": "aplikasi-web/page-1",
       "order": 3,
       "parent": "item-dcc83acf-3f28-4f75-adf5-d561edd290f2",
-      "title": "Page",
-      "description": "",
+      "title": "LATIHAN BUAT HTML",
+      "description": "Latihan pada bagian buat HTML\n",
       "metadata": {
         "created": 1733580832,
-        "updated": 1733580832,
-        "images": [],
-        "videos": []
+        "updated": 1733580929,
+        "images": {},
+        "videos": {},
+        "published": true,
+        "hideInMenu": false,
+        "locked": false,
+        "readtime": 1
       }
     },
     {
