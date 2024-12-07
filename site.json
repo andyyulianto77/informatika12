@@ -3159,17 +3159,19 @@
       "order": 1,
       "parent": "item-aec87073-80cf-4c7f-8978-1cd8b98d0dba",
       "title": "Isi buku",
-      "description": "Buatlah daftar isi untuk buku tentang pelatihan manusia.&#160;\nDaftar isi tersebut akan terlihat seperti ini:\n\nKirimkan URL solusi Anda.\n",
+      "description": "Buatlah daftar isi untuk buku tentang pelatihan manusia. \nDaftar isi tersebut akan terlihat seperti ini:\n\nKirimkan URL solusi Anda.\n",
       "metadata": {
         "created": 1733614988,
-        "updated": 1733615157,
+        "updated": 1733615228,
         "images": {},
         "videos": {},
         "published": true,
         "pageType": "practice",
         "hideInMenu": false,
         "locked": false,
-        "readtime": 1
+        "readtime": 1,
+        "tags": "latihan, html",
+        "icon": "hax:shovel"
       }
     },
     {
