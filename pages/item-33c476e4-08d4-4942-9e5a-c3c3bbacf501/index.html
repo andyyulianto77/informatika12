@@ -25,6 +25,7 @@
   <media-image source="files/goats-jump.gif" alt="goats-jump.gif" slot="col-2" accent-color="grey" size="wide" offset="none" data-width="75"></media-image>
 
 
+
 </grid-plate>
 <p>header dalam HTML: h1, h2, ... h6.&#160;</p>
 <p>Berikut beberapa kodenya:</p>
@@ -185,16 +186,16 @@
       <media-image source="files/izza-senang.jpg" alt="bingung.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" data-margin="center" data-width="50" figure-label-title="Izza" modal-title="Izza" _has-caption=""></media-image>
 
 
+
       <p slot="col-2" data-margin="center">Saya baru saja mencoba kedua contoh kode terakhir, dan keduanya tampak sama.
         <br>
       </p>
     </grid-plate>
 <p>Alat peraga untuk mengujinya! Hal yang baik untuk dilakukan. Sekarang tampilannya sama saja, tapi kalau kita mulai menatanya dengan CSS, tampilannya tidak akan sama lagi..</p>
-<stop-note title="Latihan" accent-color="grey" icon="stopnoteicons:stop-icon" status="stop" message="&#60;b data-hax-layout=&quot;true&quot; data-hax-ray=&quot;Bold&quot;=&quot;true&quot;&#62;Ingat aturan untuk nama file: huruf kecil , dan tanda hubung untuk spasi . Jadi bukan My File.Html , tetapi my-file.html.&#60;/b&#62;"><p slot="message"><b>Ingat aturan untuk nama file: huruf kecil , dan tanda hubung untuk spasi . Jadi bukan My File.Html , tetapi my-file.html.</b></p>
+<stop-note title="Latihan" accent-color="grey" icon="stopnoteicons:stop-icon" status="stop" message="&#60;b data-hax-layout=&quot;true&quot; data-hax-ray=&quot;Bold&quot;=&quot;true&quot;&#62;Ingat aturan untuk nama file: huruf kecil , dan tanda hubung untuk spasi. Jadi bukan My File.Html , tetapi my-file.html.&#60;/b&#62;" url="aplikasi-web/latihan-buat-html/header-dan-paragraf" remote-link-target="{}" remote-link-url="aplikasi-web/latihan-buat-html/header-dan-paragraf"><p slot="message"><b>Ingat aturan untuk nama file: huruf kecil , dan tanda hubung untuk spasi. Jadi bukan My File.Html , tetapi my-file.html.</b></p>
 </stop-note>
 <p>Daftar tidak berurutan&#160;</p>
 <p>Daftar yang tidak berurutan terlihat seperti ini:&#160;</p>
-<p></p>
 <ul><li>Sebuah barang </li><li>Barang lainnya </li><li>Item lainnya lagi</li></ul>
 <p><span>Disebut "tidak berurutan" karena hanya menampilkan poin-poin di depan setiap item, bukan angka.</span></p>
 <p><span>Berikut cara membuat daftar:</span></p>
@@ -205,7 +206,7 @@
 </ul></template></code-sample>
 <p>Tag-tag tersebut li disusun di dalam&#160;tag <code>ul</code>. Penting untuk menyusunnya dengan benar.</p>
 <p>Perhatikan bahwa saya membuat indentasi pada tag li . Tata letak visual kode sesuai dengan penumpukan tag HTML. Indentasi membuat halaman lebih mudah diubah. Jika Anda perlu menambahkan sesuatu di tengah daftar, misalnya, indentasi akan membantu Anda mengetahui dengan tepat di mana data baru Anda perlu ditempatkan.</p>
-<h2 id="header-ba2de9d4-a2b8-7a00-2229-be85e3835404">Daftar yang diurutkan&#160;</h2>
+<h2 data-original-level="H2" id="header-ba2de9d4-a2b8-7a00-2229-be85e3835404">Daftar yang diurutkan&#160;</h2>
 <p>Kode untuk daftar berurut sangat mirip. Ubah ul menjadi ol, dan Anda akan mendapatkannya.</p>
 <code-sample copy-clipboard-button type="html">  
 <template preserve-content="preserve-content"><ol>
@@ -215,5 +216,55 @@
 </ol></template></code-sample>
 <p>Kelihatannya seperti ini:&#160;</p>
 <ol><li>Sebuah barang </li><li>Barang lainnya </li><li>Item lainnya lagi</li></ol>
-<h2 id="header-17d65a74-1d3d-2333-5151-13d2d80e22d8">Daftar bersarang&#160;</h2>
+<h2 data-original-level="H2" id="header-17d65a74-1d3d-2333-5151-13d2d80e22d8">Daftar bersarang&#160;</h2>
 <p>Daftar dapat disusun bertingkat, artinya, satu daftar dapat sepenuhnya berada di dalam daftar lain. Berikut ini beberapa kodenya.</p>
+<code-sample type="javascript" copy-clipboard-button data-hax-lock="data-hax-lock"><template preserve-content="preserve-content"><ul>
+  <li>19th century
+    <ul>
+      <li>1836: Eunice (mastiff) crowned Bitch of New South Wales.</li>
+      <li>1840:
+        <ol>
+          <li>Isaac (lab) eats 15 pounds of figs at Moreton Bay.</li>
+          <li>Thark (sheltie) barks for 17 hours nonstop. Riots in Port Jackson.</li>
+        </ol>
+      </li>
+      <li>1895: Booblo (Welsh terrier) marks Barton as future PM.</li>
+    </ul>
+  </li>
+  <li>20th century
+    <ul>
+      <li>1915: Groft (border collie) rescues sausages under fire.</li>
+      <li>1967: Lilabeth (portuguese water dog) directs shark to prime ministerial snack.</li>
+      <li>1975:
+        <ol>
+          <li>Goofer (collie) bites PM.</li>
+          <li>Goofer (collie) bites PM again.</li>
+          <li>Kerr (govenor general) bites PM.</li>
+          <li>Goofer (collie) becomes PM.</li>
+        </ol>
+      </li>
+    </ul>
+  </li>
+</ul></template></code-sample>
+<p>Berikut ini tampilannya:</p>
+<media-image source="files/output4.png" alt="output4.png" accent-color="grey" size="wide" offset="wide"></media-image>
+<p>Perhatikan bahwa:&#160;</p>
+<ul><li>Daftar dapat disusun hingga kedalaman apa pun. </li><li>Daftar yang diurutkan dapat disarangkan di dalam daftar yang tidak diurutkan. Kebalikannya juga benar; daftar yang tidak diurutkan dapat disarangkan di dalam daftar yang diurutkan. </li><li>Daftar dalam sepenuhnya terdapat dalam litag daftar luar.​</li></ul>
+<h2 data-original-level="H2" id="header-d6071335-746c-9f64-64e3-ecd02586866d">Komentar&#160;</h2>
+<p>HTML untuk daftar bertingkat itu rumit. Penyusunan daftar itu mudah kacau.&#160;</p>
+<p>Saat Anda menulis kode yang kompleks, Anda dapat menambahkan komentar untuk menjelaskan apa yang sedang terjadi. Misalnya:</p>
+<code-sample type="javascript" copy-clipboard-button data-hax-lock="data-hax-lock"><template preserve-content="preserve-content"><li>Tahun 1975:
+  <!-- Daftar kejadian bertingkat tahun 1975. -->
+  <ol>
+    <li>Goofer (collie) menggigit PM.</li>
+    <li>Goofer (collie) menggigit PM lagi.</li>
+    <li>Kerr (gubernur jenderal) menggigit PM.</li>
+    <li>Goofer (collie) menjadi PM.</li>
+  <!-- Akhir dari daftar kejadian bersarang untuk tahun 1975. -->
+</ol></li></template></code-sample>
+<p>Tambahkan komentar sebanyak yang Anda suka. Komentar akan lebih bagus jika tag dibungkus dalam tag lain, seperti daftar bertingkat. Ada 26 baris HTML antara tag pertama ul dan tag penutupnya /ul. Mudah untuk lupa tag mana yang seharusnya disatukan. Indentasi dan komentar membantu.</p>
+<stop-note title="Latihan Daftar Isi Buku" accent-color="grey" icon="stopnoteicons:stop-icon" status="stop" message="&#60;strong data-hax-layout=&quot;true&quot; data-hax-ray=&quot;Bold&quot;=&quot;true&quot;&#62;Buatlah daftar isi untuk buku tentang pelatihan manusia. Daftar isi tersebut akan terlihat seperti ini:&#60;/strong&#62;
+"><p slot="message"><strong>Buatlah daftar isi untuk buku tentang pelatihan manusia. Daftar isi tersebut akan terlihat seperti ini:</strong>
+</p>
+</stop-note>
+<site-remote-content show-title element-visible uuid="item-a6241c47-46d6-4739-9df0-ab48e1a16989" breakreference><p></p></site-remote-content>
