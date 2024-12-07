@@ -1,1 +1,38 @@
+
+<multiple-choice question="Untuk apa halaman web head?" single-option randomize max-attempts="0" typeof="oer:Assessment" resource="#42a46da3-1610-9c08-d4ae-9caa28d691ce" prefix="oer:http://oerschema.org/ schema:http://schema.org/ dc:http://purl.org/dc/terms/ foaf:http://xmlns.com/foaf/0.1/ cc:http://creativecommons.org/ns# bib:http://bib.schema.org " quiz-name="default" data-hax-lock="data-hax-lock">
+</multiple-choice>
+<p>Isi pelajaran&#160;</p>
 <p></p>
+<ul><li>Judul </li><li>Paragraf </li><li>Jangan terlalu sering menggunakan br </li><li>Latihan </li><li>Daftar tidak berurutan </li><li>Daftar yang diurutkan </li><li><span>Daftar bersarang </span></li><li>Komentar </li><li>Latihan </li><li>Ringkasan</li></ul>
+<p>Judul&#160;</p>
+<grid-plate item-margin="16" item-padding="16" layout="1-3" disable-responsive><p slot="col-1">Ada enam tag</p><media-image source="files/goats-jump.gif" alt="goats-jump.gif" slot="col-2" accent-color="grey" size="wide" offset="none" data-width="75"></media-image>
+</grid-plate>
+<p>header dalam HTML: h1, h2, ... h6.&#160;</p>
+<p>Berikut beberapa kodenya:</p>
+<ul><ol><li>&lt;h1&gt;True facts about cats&lt;/h1&gt;</li><li>&lt;h2&gt;Happiness&lt;/h2&gt;</li><li>&lt;p&gt;Catsmake humans happy. They do.&lt;/p&gt;</li><li>&lt;p&gt;It's a fact.&lt;/p&gt;</li><li>&lt;h2&gt;Love&lt;/h2&gt;</li><li>&lt;p&gt;Your cats loves you.&lt;/p&gt;</li></ol></ul>
+<p>Ingat, kode ini harus ada dalam template yang Anda lihat di pelajaran terakhir. Halaman lengkapnya adalah...</p>
+<ol><li>&lt;!doctype html&gt;</li><li>&lt;html lang="en"&gt;</li><li>&lt;head&gt;</li><li>&lt;title&gt;True facts&lt;/title&gt;</li><li>&lt;meta charset="utf-8"&gt;</li><li>&lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;</li><li>&lt;/head&gt;</li><li>&lt;body&gt;</li><li>&lt;h1&gt;True facts about cats&lt;/h1&gt;</li><li>&lt;h2&gt;Happiness&lt;/h2&gt;</li><li>&lt;p&gt;Cats make humans happy. They do.&lt;/p&gt;</li><li>&lt;p&gt;It's a fact.&lt;/p&gt;</li><li>&lt;h2&gt;Love&lt;/h2&gt;</li><li>&lt;p&gt;Your cats loves you.&lt;/p&gt;</li><li>&lt;/body&gt;</li><li>&lt;/html&gt;</li></ol>
+<p>Saya akan menghilangkan kode template mulai sekarang, untuk menghemat ruang otak. Namun, setiap halaman memerlukan metadata, dsb.</p>
+<p>Berikut kodenya lagi:</p>
+<ol><li><span>&lt;h1&gt;True facts about cats&lt;/h1&gt;</span></li><li>&lt;h2&gt;Happiness&lt;/h2&gt;</li><li>&lt;p&gt;Cats make humans happy. They do.&lt;/p&gt;</li><li>&lt;p&gt;It's a fact.&lt;/p&gt;</li><li>&lt;h2&gt;Love&lt;/h2&gt;</li><li>&lt;p&gt;Your cats loves you.&lt;/p&gt;</li></ol>
+<p>Berikut ini tampilannya.</p>
+<media-image source="files/output2.png" alt="output2.png" accent-color="grey" size="wide" offset="none"></media-image>
+<p>h1 adalah teks yang lebih besar dari h2. Itu lebih besar dari h3, dan seterusnya.</p>
+<p>Angka 1 hingga 6 bukanlah urutan, melainkan tingkat pengelompokan. Untuk melihat perbedaannya, lihat daftar isi dari buku geometri ini.</p>
+<media-image source="files/headers.png" alt="headers.png" accent-color="grey" size="wide" offset="none"></media-image>
+<p>Nama babnya adalah h1, tidak peduli berapa pun nomor babnya. Bab 1, bab 2, bab 8... tidak masalah. Bagian utama dari setiap bab semuanya adalah h2. Bagian di dalam bagian tersebut adalah h3.&#160;</p>
+<p>Jadi tag hx memberikan level header dalam HTML. Ada tag yang berbeda untuk pengurutan (1, 2, 3..., a, b, c...), yang akan Anda pelajari nanti.&#160;</p>
+<p>h1 sering digunakan sebagai "judul" halaman (meskipun bukan metadata title, seperti yang Anda pelajari sebelumnya). Sering kali hanya ada satu h1 di halaman.&#8203;</p>
+<ol><li><span>&lt;h1&gt;True facts about cats&lt;/h1&gt;</span></li><li></li><li>&lt;h2&gt;Happiness&lt;/h2&gt;</li><li>&lt;p&gt;Cats make humans happy. They do.&lt;/p&gt;</li><li>&lt;p&gt;It's a fact.&lt;/p&gt;</li><li></li><li>&lt;h2&gt;Love&lt;/h2&gt;</li><li>&lt;p&gt;Your cats loves you.&lt;/p&gt;</li></ol>
+<p>Baris 2 dan 6 kosong. Baris-baris tersebut tidak mengubah tampilan halaman. Kita bisa menggunakan ini:</p>
+<ol><li><span>&lt;h1&gt;True facts about cats&lt;/h1&gt;</span></li><li><span>&lt;h2&gt;Happiness&lt;/h2&gt;</span></li><li>&lt;p&gt;Cats make humans happy. They do.&lt;/p&gt;</li><li>&lt;p&gt;It's a fact.&lt;/p&gt;</li><li><span>&lt;h2&gt;Love&lt;/h2&gt;</span></li><li>&lt;p&gt;Your cats loves you.&lt;/p&gt;</li></ol>
+<p>Hasilnya akan sama saja. Kita bisa mendapatkan ini:</p>
+<ol><li><span>&lt;h1&gt;True facts about cats&lt;/h1&gt;</span></li><li><span>&lt;h2&gt;Happiness&lt;/h2&gt;</span>&lt;p&gt;Cats make humans happy. They do.&lt;/p&gt;&lt;p&gt;It's a fact.&lt;/p&gt;</li><li><span>&lt;h2&gt;Love&lt;/h2&gt;</span>&lt;p&gt;Your cats loves you.&lt;/p&gt;</li></ol>
+<h2 id="header-3da9cfe8-c314-3677-d504-7e9ee6c3f8cd">Paragraf&#160;</h2>
+<p>Tag ini p memberi spasi di atas dan di bawah beberapa konten. Misalnya:&#8203;</p>
+<ol><li><span>&lt;p&gt;Cats make humans happy. </span></li><li>They do.&lt;/p&gt;</li><li>&lt;p&gt;It's </li><li>a </li><li>fact.&lt;/p&gt;</li><li><span>&lt;h2&gt;Love&lt;/h2&gt;</span>&lt;p&gt;Your </li><li>cats loves you.&lt;/p&gt;</li></ol>
+<p>Tata letak penting bagi manusia. Tata letak kode yang baik membuat HTML suatu halaman lebih mudah dipahami.</p>
+<p>Jangan <code>br</code>terlalu banyak menggunakannya&#160;</p>
+<p>Ada tag lain, <code>br</code>, untuk pemisah baris. Tag ini digunakan saat Anda membutuhkan pemisah baris di dalam paragraf, seperti pada haiku.&#160;</p>
+<p>Katakanlah kita menginginkan ini:&#8203;</p>
+<media-image source="files/haiku.png" alt="haiku.png" accent-color="grey" size="wide" offset="none"></media-image>

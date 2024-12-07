@@ -3090,13 +3090,18 @@
       "slug": "aplikasi-web/page",
       "order": 2,
       "parent": "item-dcc83acf-3f28-4f75-adf5-d561edd290f2",
-      "title": "Page",
-      "description": "",
+      "title": "Beberapa tag",
+      "description": "\n\nIsi pelajaran&#160;\n\nJudul Paragraf Jangan terlalu sering menggunakan br Latihan Daftar tidak berurutan Daftar yang diurutkan Daftar bersarang Komentar Latihan Ringkasan\nJudul&#160;\nAda enam tag\n\nh",
       "metadata": {
         "created": 1733575847,
-        "updated": 1733575847,
-        "images": [],
-        "videos": []
+        "updated": 1733579273,
+        "images": {},
+        "videos": {},
+        "published": true,
+        "pageType": "content",
+        "hideInMenu": false,
+        "locked": false,
+        "readtime": 2
       }
     },
     {
