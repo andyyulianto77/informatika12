@@ -3039,7 +3039,7 @@
     },
     {
       "id": "item-f7f19c6e-0234-4e10-a3b8-1aabb9d27181",
-      "indent": 1,
+      "indent": 0,
       "location": "pages/item-f7f19c6e-0234-4e10-a3b8-1aabb9d27181/index.html",
       "slug": "aplikasi-web/membuat-html",
       "order": 1,
@@ -3048,7 +3048,7 @@
       "description": "\nHalaman web dibuat dari HTML. Berkas HTML berisi petunjuk tentang cara membuat tampilan. Misalnya, anggaplah Anda ingin membuat tampilan ini:\n\nAnda bisa menggambarkannya seperti ini:\nBuatlah judul d",
       "metadata": {
         "created": 1733413691,
-        "updated": 1733581117,
+        "updated": 1733615746,
         "images": {},
         "videos": {},
         "published": true,
