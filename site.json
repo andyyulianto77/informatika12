@@ -3156,15 +3156,20 @@
       "indent": 0,
       "location": "pages/item-ff6d521d-400b-4a3d-8268-0fe3305b4ef2/index.html",
       "slug": "aplikasi-web/latihan-buat-html/page",
-      "order": 0,
+      "order": 1,
       "parent": "item-aec87073-80cf-4c7f-8978-1cd8b98d0dba",
-      "title": "Page",
-      "description": "",
+      "title": "Isi buku",
+      "description": "Buatlah daftar isi untuk buku tentang pelatihan manusia.&#160;\nDaftar isi tersebut akan terlihat seperti ini:\n\nKirimkan URL solusi Anda.\n",
       "metadata": {
         "created": 1733614988,
-        "updated": 1733614988,
-        "images": [],
-        "videos": []
+        "updated": 1733615157,
+        "images": {},
+        "videos": {},
+        "published": true,
+        "pageType": "practice",
+        "hideInMenu": false,
+        "locked": false,
+        "readtime": 1
       }
     },
     {
