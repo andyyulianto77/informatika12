@@ -3126,6 +3126,22 @@
       }
     },
     {
+      "id": "item-a6241c47-46d6-4739-9df0-ab48e1a16989",
+      "indent": 0,
+      "location": "pages/item-a6241c47-46d6-4739-9df0-ab48e1a16989/index.html",
+      "slug": "aplikasi-web/page-1/page",
+      "order": 0,
+      "parent": "item-aec87073-80cf-4c7f-8978-1cd8b98d0dba",
+      "title": "Page",
+      "description": "",
+      "metadata": {
+        "created": 1733580935,
+        "updated": 1733580935,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
       "id": "item-3c245611-951b-4aa7-99d3-8daf8f48dae9",
       "indent": 1,
       "location": "pages/item-3c245611-951b-4aa7-99d3-8daf8f48dae9/index.html",
