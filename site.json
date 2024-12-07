@@ -3132,13 +3132,19 @@
       "slug": "aplikasi-web/page-1/page",
       "order": 0,
       "parent": "item-aec87073-80cf-4c7f-8978-1cd8b98d0dba",
-      "title": "Page",
-      "description": "",
+      "title": "Header dan paragraf",
+      "description": "Header dan paragraf&#160;\nBuat halaman dengan tajuk dan paragraf. Harus ada tiga tingkat tajuk, seperti ini (tanpa teks merah):\n\nUnggah halaman Anda ke server Anda. Kirimkan URL-nya.\n\n",
       "metadata": {
         "created": 1733580935,
-        "updated": 1733580935,
-        "images": [],
-        "videos": []
+        "updated": 1733581039,
+        "images": {},
+        "videos": {},
+        "published": true,
+        "pageType": "practice",
+        "hideInMenu": false,
+        "tags": "latihan, html",
+        "locked": false,
+        "readtime": 1
       }
     },
     {
