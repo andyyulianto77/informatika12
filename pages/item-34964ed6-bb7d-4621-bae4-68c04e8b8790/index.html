@@ -14,6 +14,7 @@
 <grid-plate item-margin="16" item-padding="16" layout="1-3" data-width="75" data-margin="center" data-border-radius="xs" data-border="sm" disable-responsive>
       <media-image source="files/andy_herang.jpg" alt="bingung.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" data-margin="center" data-width="50" figure-label-title="Andy" modal-title="Andy" _has-caption=""></media-image>
 
+
       <p slot="col-2" data-margin="center">Hmm, saya ingin mengerjakannya melalui localhost. Akarnya localhost adalah C:\xampp\htdocs, di PC saya. Jadi, di sana?
         <br>
       </p>
@@ -47,5 +48,66 @@
 <p>Anda dapat melihat di mana saya meletakkan semuanya (1), dalam sebuah folder di dalam root web XAMPP (D:\xampp\htdocs).&#160;</p>
 <p>Saya membuat folder untuk setiap bagian kursus (2), dan di dalam folder tersebut untuk setiap latihan (3 dan 4).&#160;</p>
 <p>(Nama folder pada tangkapan layar itu mungkin tidak sama dengan nama pada tangkapan layar lainnya, tetapi Anda seharusnya mengerti maksudnya.)</p>
-<h2 id="header-be636241-eca2-35db-ec08-59053e7313e5">Ke Visual Studio Code&#160;</h2>
-<p>Saya akan memulai VsCode, dan membuat proyek dari file yang ada.</p>
+<h2 data-original-level="H2" id="header-be636241-eca2-35db-ec08-59053e7313e5">Ke Visual Studio Code&#160;</h2>
+<p>Saya akan memulai VsCode, dan membuka folder dari file yang ada.</p>
+<media-image source="files/open-folder-vscode-a.png" alt="open-folder-vscode.png" accent-color="grey" size="wide" offset="none"></media-image>
+<p>Jika Anda sudah membuka folder, lewati langkah ini, dan Anda akan melihat layar ini. Jika belum, pilih open folder dari menu file.</p>
+<media-image source="files/open-folder-vscode.png" alt="open-folder-vscode.png" accent-color="grey" size="wide" offset="none"></media-image>
+<p>Pada layar berikutnya, VsCode menanyakan apakah saya mau menyimpan file konfig workspace. Silakan simpan atau tidak terserah Anda.</p>
+<media-image source="files/open-folder-vscod2e.png" alt="open-folder-vscod2e.png" accent-color="grey" size="wide" offset="none"></media-image>
+<p>Berikutnya ada kotak dialog menanyakan apakah mau membuka semua folder di bawah. pilih ya karena untuk membuka semua folder di bawahnya.</p>
+<media-image source="files/open-folder-vscode3.png" alt="open-folder-vscode3.png" accent-color="grey" size="wide" offset="none"></media-image>
+<p>Pastikan Apache XAMPP berjalan.&#160;</p>
+<p>Lanjut ke langkah berikutnya.&#160;</p>
+<p>VsCode menanyakan apa root proyek tersebut. Saya memilih folder baru, dan mengetik nama folder sesuai latihan/tema. Di gambar ada panah yang menunjukkan nama foldernya yaitu <mark>webapps-course</mark>.</p>
+<media-image source="files/open-folder-vscode4.png" alt="open-folder-vscode4.png" accent-color="grey" size="wide" offset="none"></media-image>
+<p>Oke, sekarang saya melihat layar utama VsCode, dengan panel folder di sebelah kiri, dan editor di sebelah kanan.</p>
+<media-image source="files/open-folder-vscode6.png" alt="open-folder-vscode6.png" accent-color="grey" size="wide" offset="none"></media-image>
+<h2 data-original-level="H2" id="header-189d188b-ab9a-4ce3-e150-a69191178b5f">Sebuah halaman&#160;</h2>
+<p>Sebelumnya, Anda melihat beberapa HTML yang dapat Anda gunakan untuk templat halaman:</p>
+<ul>
+<ol>
+      <li>&lt;head&gt;</li>
+      <li>&lt;title&gt; Title&lt;/title&gt;</li>
+      <li>&lt;meta charset="utf-8"&gt;</li>
+      <li>&lt;meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no"&gt;</li>
+      <li>&lt;/head&gt;</li><li>&lt;body&gt;</li><li>    &lt;h1&gt; Kucing berjalan di atas genting</li><li>      &lt;p&gt; Kucing Cantik sebelumnya di bawah, kemudian naik. Besoknya makan ikan&lt;/p&gt;</li><li>&lt;p&gt;Kemarin, hari ini dan besok kucing cantik berjalan.&lt;p&gt;</li><li>&lt;/body&gt;</li><li>&lt;/html&gt;</li>
+    </ol></ul>
+<p>Mari kita sesuaikan, untuk membuat halaman seperti ini:</p>
+<media-image source="files/open-folder-vscode7.png" alt="open-folder-vscode7.png" accent-color="grey" size="wide" offset="none"></media-image>
+<p>Perhatikan URL-nya. Sebuah folder di dalam folder di dalam folder yang saya buat untuk menampung semua pekerjaan saya untuk kursus tersebut.&#160;</p>
+<p>Saya dapat membuat folder baru ( lelucon di sini) di VsCode, atau Windows. Keduanya sama-sama bagus.</p>
+<h2 data-original-level="H2" id="header-c5e7a57d-e645-c3ce-7b27-3296f58f39e9">Buat file HTML baru&#160;</h2>
+<p>Klik gambar pada akar proyek, dan buat file HTML baru.</p>
+<media-image source="files/new-filer-vscode.png" alt="new-filer-vscode.png" accent-color="grey" size="wide" offset="none"></media-image>
+<p>Saya akan menamai berkas tersebut index.html.&#160;Mengapa saya memberi nama berkas tersebut index.html? Jika Anda tidak menyertakan nama berkas di URL, server web akan mencari berkas dengan nama default. Index.html adalah salah satu nama default.</p>
+<p>Saya akan mengetikkan tanda seru ! , setelah itu tekan enter/klik. Ini akan mengaktifkan vscode untuk membuat file template html.</p>
+<media-image source="files/new-file-vscode2.png" alt="new-file-vscode2.png" accent-color="grey" size="wide" offset="none"></media-image>
+<p>Hasilnya akan tampak seperti ini.</p>
+<media-image source="files/new-file-vscode3.png" alt="new-file-vscode3.png" accent-color="grey" size="wide" offset="none"></media-image>
+<p>Perhatikan beberapa hal. Ketika sebuah berkas telah diubah tetapi belum disimpan, ada tanda * pada tabnya. Setidaknya, bagi saya ada. Jika Anda tidak melihatnya.</p>
+<p>VSCode memiliki banyak sekali pengaturan. Sebagian besar dapat Anda biarkan saja.&#160;</p>
+<p>Berikut tangkapan layarnya lagi:</p>
+<media-image source="files/new-file-vscode4.png" alt="new-file-vscode4.png" accent-color="grey" size="wide" offset="none" caption="(Templat lengkap)!" modal-title="(Templat lengkap)!" _has-caption></media-image>
+<p>Kursor saya berakhir di tag body pembuka. VSCode menyorot tag yang cocok. Ini membantu Anda memastikan semua tag pada halaman Anda seimbang.</p>
+<h2 id="header-ed57063d-3c65-77e8-1d16-01cf87f08c67">Kamu bercanda!&#160;</h2>
+<p>Saya akan menambahkan HTML untuk lelucon saya.</p>
+<media-image source="files/new-file-vscode5.png" alt="new-file-vscode5.png" accent-color="grey" size="wide" offset="none"></media-image>
+<p>Dan simpan (Ctrl+S pada Windows). Simpan sesering mungkin.</p>
+<p>Buka explorer, dan file di folder yang sudah dibuat.&#160;</p>
+<media-image source="files/open-folder-vscode8.png" alt="new-file-vscode3.png" accent-color="grey" size="wide" offset="none"></media-image>
+<p>Atau melalui server xampp. Buka browser kalian. Ketikkan localhost/webapps-course. Lalu tekan enter.</p>
+<media-image source="files/xampp-output.png" alt="xampp-output.png" accent-color="grey" size="wide" offset="none"></media-image>
+<p>Lihat alamat di atas. Di sana ada folder yang sudah dibuat yaitu buat-html. Klik folder itu. Nanti akan terlihat folder berikutnya yaitu lelucon. Klik foldernya.</p>
+<media-image source="files/xampp-output2.png" alt="xampp-output2.png" accent-color="grey" size="wide" offset="none"></media-image>
+<p>Hasilnya sama di bawah.</p>
+<media-image source="files/open-folder-vscode7.png" alt="open-folder-vscode7.png" accent-color="grey" size="wide" offset="none"></media-image>
+<p>Perhatikan URL-nya. Karena Anda memberi tahu VSCode tentang localhost dan jalur ke folder tersebut, maka URL yang benar akan ditampilkan secara otomatis. Hore!</p>
+<h2 id="header-8f68c666-3a7d-5d5b-0960-361368c40e01">Mengunggah&#160;</h2>
+<p>Katakanlah saya ingin mengunggah ini ke server saya. Saya memulai FileZilla, dan menghubungkannya. Saya dapat menyeret seluruh folder, dan semua file dalam folder tersebut diunggah. Apaan nih!&#8203;</p>
+<stop-note title="Latihan" accent-color="grey" icon="stopnoteicons:book-icon" status="info" message="&#60;span data-hax-layout=&quot;true&quot; data-hax-ray=&quot;Bold&quot;=&quot;true&quot;&#62;&#60;b&#62;Kirimkan URL halaman.&#60;/b&#62;&#60;/span&#62;"><p slot="message"><strong>Buat halaman HTML dengan lelucon. Seperti biasa, pastikan halamannya lengkap.</strong>
+</p><p slot="message"><span><b>Kirimkan URL halaman.</b></span></p>
+</stop-note>
+<p>Apa sekarang?&#160;</p>
+<p>Nanti kita bahas lebih lanjut tentang VSCode. Omong-omong, VSCode populer di kalangan pengembang web, jadi ada banyak sekali informasi tentangnya di web.&#160;</p>
+<p>Sekarang, ke PHP. Sedikit saja.&#160;</p>
