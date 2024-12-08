@@ -3153,22 +3153,6 @@
       }
     },
     {
-      "id": "item-58f3f85f-c812-4bad-906b-77f49ea3b4e3",
-      "indent": 0,
-      "location": "pages/item-58f3f85f-c812-4bad-906b-77f49ea3b4e3/index.html",
-      "slug": "aplikasi-web/membuat-html/page",
-      "order": 4,
-      "parent": "item-f7f19c6e-0234-4e10-a3b8-1aabb9d27181",
-      "title": "Page",
-      "description": "",
-      "metadata": {
-        "created": 1733632296,
-        "updated": 1733632296,
-        "images": [],
-        "videos": []
-      }
-    },
-    {
       "id": "item-aec87073-80cf-4c7f-8978-1cd8b98d0dba",
       "indent": 1,
       "location": "pages/item-aec87073-80cf-4c7f-8978-1cd8b98d0dba/index.html",
