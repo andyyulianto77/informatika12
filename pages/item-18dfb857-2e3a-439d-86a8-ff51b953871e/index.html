@@ -1,6 +1,7 @@
 
 <p>Teks sangat menarik untuk dilihat lihat</p>
-<p><type-writer delay="100" text="Ini tentang menampilkan teks/data agar menarik" speed="100" element-visible cursor-duration="0" erase-speed="80" _length="47"> </type-writer>
+<p><type-writer delay="100" text="Ini tentang menampilkan teks/data agar menarik" speed="100" element-visible="" cursor-duration="0" erase-speed="80" _length="47"> </type-writer>
+
 
 
 
@@ -27,42 +28,41 @@
 <p>Berikut kode dari terakhir kali:</p>
 <ul><ol role="textbox"><li><span>$cutestCat ​​= 'Oren';</span></li><li>    $peringkat = 12;</li><li>?&gt;&lt;!DOCTYPE html&gt;</li><li>&lt;html lang="id"&gt;</li><li>    &lt;head&gt;</li><li>        &lt;meta charset="UTF-8"&gt;</li><li>        &lt;title&gt;Kucing Terlucu&lt;/title&gt;</li><li>        &lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;</li><li>    &lt;/head&gt;</li><li>    &lt;body&gt;</li><li>        &lt;h1&gt;Kucing yang paling lucu&lt;/h1&gt;</li><li>        &lt;p&gt;Hasilnya sudah ada!&lt;/p&gt;</li><li>        &lt;p&gt;Kucing yang paling lucu: &lt;?php print $cutestCat; ?&gt;&lt;/p&gt;</li><li>        &lt;p&gt;Peringkat: &lt;?php print $rating; ?&gt; dari 10.&lt;/p&gt;</li><li>    &lt;/body&gt;</li></ol></ul>
 <p>Mari kita ubah baris 2 dan 3, untuk mendapatkan data dari URL, seperti ini:</p>
-<ul><li>$cutestDog ​​= $_GET['nama'];</li><li>$rating = $_GET['kelucuan'];</li></ul>
+<ul><li>$cutestCat ​​= $_GET['nama'];</li><li>$rating = $_GET['kelucuan'];</li></ul>
 <p>Jadi program akan mengharapkan dua parameter di URL: <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">name</code>, dan <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">cuteness</code>.</p>
 <p>Coba URL ini:</p>
-<p><a href="http://webappexamples.skilling.us/html/enter-php/cutest.php?name=Rosie&amp;cuteness=12" target="_blank" rel="noopener noreferrer">http://webappexamples.skilling.us/html/enter-php/cutest.php?name=Rosie&amp;cuteness=12</a></p>
+<p><a href="http://webappexamples.skilling.us/html/enter-php/cutest.php?name=Rosie&amp;cuteness=12" target="_blank" rel="noopener noreferrer">http://andy1.rf.gd/html/enter-php/cantik.php?nama=Persia&amp;kelucuan=12</a></p>
 <p>Di peramban Anda, ubah nama dan peringkat di URL, dan lihat apa yang terjadi.</p>
 <h6 data-original-level="H6" id="header-39197f20-a2f8-62b6-5523-3e850a055d7a" data-design-treatment="horz-50p"><p role="textbox"></p></h6>
 <p>Cobalah untuk menghilangkan data, yaitu <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">?</code>dan semua yang setelahnya.</p>
 <h6 data-original-level="H6" id="header-fd08845f-76f1-51a8-2f76-39cb81f5d5ad" data-design-treatment="horz-50p"><p role="textbox"></p></h6>
 <h3 data-original-level="H3" id="header-fbe92d5e-97be-5e96-4d88-f56e14a39469">Perhitungan</h3>
 <p>Anda dapat melakukan perhitungan, seperti di VBA. Berikut contoh lainnya:</p>
-<ol><li><span>$a = $_GET['a'];</span></li><li>    $b = $_GET['b'];</li><li>?&gt;&lt;!DOCTYPE html&gt;</li><li>&lt;html lang="id"&gt;</li><li>    &lt;kepala&gt;</li><li>        &lt;meta charset="UTF-8"&gt;</li><li>        &lt;title&gt;Perhitungan&lt;/title&gt;</li><li>        &lt;meta name="viewport" content="lebar=lebar-perangkat, skala-awal=1, menyusut-agar-pas=tidak"&gt; &lt;/head&gt;</li><li>    &lt;tubuh&gt;</li><li>        &lt;h1&gt;Perhitungan&lt;/h1&gt;</li><li><br></li><li>        $aKaliB = $a * $b;</li><li>        cetak "&lt;p&gt;$a dikali $b adalah $aKaliB.&lt;/p&gt;";</li><li>        $aDibagiDenganB = $a / $b;</li><li>        cetak "&lt;p&gt;$a dibagi $b adalah $aDividedByB&lt;/p&gt;";</li><li>        ?&gt;</li><li>    &lt;/tubuh&gt;</li></ol>
-<p>Yang ini mengharapkan dua parameter GET. Ia melakukan beberapa perhitungan, dan menunjukkan hasilnya.</p>
+<ol><li>&lt;?php</li><li>$a = $_GET['a'];</li><li>    $b = $_GET['b'];</li><li>?&gt;&lt;!DOCTYPE html&gt;</li><li>&lt;html lang="id"&gt;</li><li>    &lt;head&gt;</li><li>        &lt;meta charset="UTF-8"&gt;</li><li>        &lt;title&gt;Perhitungan&lt;/title&gt;</li><li>        &lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&amp;gt; &lt;/head&gt;</li><li>    &lt;body&gt;</li><li>        &lt;h1&gt;Perhitungan&lt;/h1&gt;</li><li><span>&lt;?php</span></li><li>$aKaliB = $a * $b;</li><li>        print "&lt;p&gt;$a dikali $b adalah $aKaliB.&lt;/p&gt;";</li><li>        $aDibagiDenganB = $a / $b;</li><li>        cetak "&lt;p&gt;$a dibagi $b adalah $aDibagiDenganB&lt;/p&gt;";</li><li>        ?&gt;</li><li>    &lt;/body&gt;</li><li>&lt;/html&gt;</li></ol>
+<?php<p>Yang ini mengharapkan dua parameter GET. Ia melakukan beberapa perhitungan, dan menunjukkan hasilnya.</p>
 <p>Lihat baris 14:</p>
-<ul><li>cetak "&lt;p&gt;$a dikali $b adalah $aKaliB.&lt;/p&gt;";</li></ul>
+<ul><li>print "&lt;p&gt;$a dikali $b adalah $aKaliB.&lt;/p&gt;";</li></ul>
 <p>Jika Anda menggunakan tanda kutip ganda (") di sekitar string, Anda dapat meletakkan nama variabel di dalam string tersebut, dan PHP akan mengganti nilainya. Hal ini tidak berlaku untuk tanda kutip tunggal. Jadi...</p>
-<ul><li>cetak '&lt;p&gt;$a dikali $b adalah $aKaliB.&lt;/p&gt;';</li></ul>
+<ul><li>print '&lt;p&gt;$a dikali $b adalah $aKaliB.&lt;/p&gt;';</li></ul>
 <p>... akan menghasilkan output persis seperti ini <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">&lt;p&gt;$a times $b is $aTimesB.&lt;/p&gt;</code>, dengan tanda dolar dan nama variabel.</p>
 <p>Terkadang Anda perlu menambahkan tanda kurung kurawal, jika PHP tidak dapat memahami maksud Anda. Misalnya, Anda dapat menggunakan...</p>
-<ul><li>cetak '&lt;p&gt;{$a} dikali {$b} adalah {$aTimesB}.&lt;/p&gt;';</li></ul>
+<ul><li>print cetak '&lt;p&gt;{$a} dikali {$b} adalah {$aTimesB}.&lt;/p&gt;';</li></ul>
 <p>Tanda kurung memberi tahu PHP bahwa hal di antara keduanya harus diganti dengan suatu nilai. Tanda kurung itu sendiri tidak ditampilkan.</p>
 <p>Kode yang kita lihat sejauh ini tidak memerlukan kurung kurawal, tetapi Anda akan menemukannya nanti dalam kursus ini.</p>
 <h6 data-original-level="H6" id="header-c66fcc83-f5b0-9d37-a0dc-b30b841aa259" data-design-treatment="horz-50p"><p role="textbox"></p></h6>
 <p>Oke, mari kita coba. Berikut URL-nya:</p>
-<p><a href="http://webappexamples.skilling.us/html/enter-php/calculation.php?a=4&amp;b=8" target="_blank" rel="noopener noreferrer">http://webappexamples.skilling.us/html/enter-php/calculation.php?a=4&amp;b=8</a></p>
-<p></p>
-<p></p>
+<p><a href="http://webappexamples.skilling.us/html/enter-php/calculation.php?a=4&amp;b=8" target="_blank" rel="noopener noreferrer">http://andy1.rf.gd/html/enter-php/perhitungan.php?a=34&amp;b=12</a></p>
 <p>Cobalah.</p>
 <p>Hore!</p>
 <h5 data-original-level="H5" id="header-63061014-28a3-aaa9-eeba-fcceefce0806" data-design-treatment="horz-50p"><p role="textbox"></p></h5>
 <p>Ini satu yang datanya hilang.</p>
 <p><a href="http://webappexamples.skilling.us/html/enter-php/calculation.php" target="_blank" rel="noopener noreferrer">http://webappexamples.skilling.us/html/enter-php/calculation.php</a></p>
-<p></p>
-<p></p>
 <p>Cobalah.</p>
-<p><img src="https://webapps.skilling.us/sites/default/files/skilling/characters/adela-smile8.jpg" alt="Adela" ="false"=""="false">Adela</p>
-<p>Apa arti NAN?</p>
+<p><grid-plate item-margin="16" item-padding="16" layout="1-3" disable-responsive data-width="75" data-margin="center" data-border-radius="xs" data-border="sm"><media-image source="files/wildan_heran.jpg" alt="bingung.jpg" slot="col-1" accent-color="grey" size="wide" offset="wide" data-margin="center" data-width="75" figure-label-title="Wildan" modal-title="Wildan" _has-caption=""></media-image>
+
+<p slot="col-2">What's NAN mean?</p></grid-plate>
+
+</p>
 <p>Bukan angka.</p>
 <h6 data-original-level="H6" id="header-038fe044-a5d6-ef25-62db-825718bdde04" data-design-treatment="horz-50p"><p role="textbox"></p></h6>
 <h3 data-original-level="H3" id="header-526ad0c2-77fd-d83e-b0f1-d93fa0666413">Perhitungan bisa sepanjang yang Anda inginkan</h3>
@@ -73,7 +73,11 @@
 <p>Apa yang akan dihasilkan kode ini?</p>
 <ul><li>$hasil = 2 + 3 * 4;</li><li>cetak $result;</li></ul>
 <em>Jika Anda masuk sebagai siswa, pelajaran akan berhenti di sini, dan Anda akan diminta untuk mengetik jawaban. Jika Anda ingin mencobanya, mintalah akun di situs ini.</em>
-<p></p>
+<p><grid-plate item-margin="16" item-padding="16" layout="1-3" disable-responsive data-width="75" data-margin="center" data-border-radius="xs" data-border="sm"><media-image source="files/wildan_heran.jpg" alt="bingung.jpg" slot="col-1" accent-color="grey" size="wide" offset="wide" data-margin="center" data-width="75" figure-label-title="Wildan" modal-title="Wildan" _has-caption=""></media-image>
+
+<p slot="col-2">What's NAN mean?</p></grid-plate>
+
+</p>
 <p><img src="https://webapps.skilling.us/sites/default/files/skilling/characters/adela-smile3.jpg" alt="Adela" ="false"=""="false">Adela</p>
 <p>14. Ia akan melakukan tanda * terlebih dahulu, kemudian tanda +.</p>
 <p>Benar!</p>
