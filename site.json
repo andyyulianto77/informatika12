@@ -3085,7 +3085,7 @@
     },
     {
       "id": "item-33c476e4-08d4-4942-9e5a-c3c3bbacf501",
-      "indent": 2,
+      "indent": 0,
       "location": "pages/item-33c476e4-08d4-4942-9e5a-c3c3bbacf501/index.html",
       "slug": "aplikasi-web/membuat-html/beberapa-tag",
       "order": 1,
@@ -3094,7 +3094,7 @@
       "description": "\n\nIsi pelajaran \n\nJudul Paragraf Jangan terlalu sering menggunakan br Latihan Daftar tidak berurutan Daftar yang diurutkan Daftar bersarang Komentar Latihan Ringkasan\nJudul \nAda enam tag\n\nh",
       "metadata": {
         "created": 1733575847,
-        "updated": 1733616708,
+        "updated": 1733616956,
         "images": {},
         "videos": {},
         "published": true,
