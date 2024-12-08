@@ -3282,8 +3282,8 @@
       "indent": 2,
       "location": "pages/item-423f3e75-dd3f-43a1-832a-2be6af784cad/index.html",
       "slug": "berpikir-komputasional-dan-algoritma-pemrograman/pemrograman-php/phpstorm",
-      "order": 0,
-      "parent": "item-984bdbe3-eae5-4a78-9ccb-abb39ed59fab",
+      "order": 100,
+      "parent": null,
       "title": "PHPSTORM",
       "description": "",
       "metadata": {
@@ -4024,27 +4024,6 @@
         "status": "",
         "pageType": "activity",
         "icon": "hax:ticket"
-      }
-    },
-    {
-      "id": "item-984bdbe3-eae5-4a78-9ccb-abb39ed59fab",
-      "indent": 1,
-      "location": "pages/item-984bdbe3-eae5-4a78-9ccb-abb39ed59fab/index.html",
-      "slug": "berpikir-komputasional-dan-algoritma-pemrograman/pemrograman-php",
-      "order": 0,
-      "parent": "item-f6a56c5c-9bb8-4c09-9e18-a4a4e8060ef8",
-      "title": "PEMROGRAMAN PHP",
-      "description": "",
-      "metadata": {
-        "created": 1732016687,
-        "updated": 1733616684,
-        "images": {},
-        "videos": {},
-        "published": true,
-        "hideInMenu": false,
-        "locked": false,
-        "readtime": 1,
-        "status": ""
       }
     },
     {
