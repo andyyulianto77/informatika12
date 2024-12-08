@@ -23,7 +23,7 @@
         "gaID": null
       },
       "created": 1732016691,
-      "updated": 1733581203,
+      "updated": 1733616778,
       "git": {
         "vendor": "github",
         "branch": "gh-pages"
@@ -2354,7 +2354,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1733581160,
+        "updated": 1733616735,
         "images": {},
         "videos": {},
         "published": true,
@@ -2377,7 +2377,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1733581161,
+        "updated": 1733616736,
         "images": {},
         "videos": {},
         "published": true,
@@ -2398,7 +2398,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1733581162,
+        "updated": 1733616737,
         "images": {},
         "videos": {},
         "published": true,
@@ -2419,7 +2419,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1733581162,
+        "updated": 1733616737,
         "images": {},
         "videos": {},
         "files": [
@@ -2458,7 +2458,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1733581163,
+        "updated": 1733616738,
         "images": {},
         "videos": {},
         "published": true,
@@ -2479,7 +2479,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1733581164,
+        "updated": 1733616739,
         "images": {},
         "videos": {},
         "files": [
@@ -2510,7 +2510,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1733581165,
+        "updated": 1733616740,
         "images": {},
         "videos": {},
         "published": true,
@@ -2534,7 +2534,7 @@
         "created": 1732016685,
         "images": {},
         "videos": {},
-        "updated": 1733581166,
+        "updated": 1733616741,
         "files": [
           {
             "path": "[object Object]jurnal.JPG",
@@ -2578,7 +2578,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1733581168,
+        "updated": 1733616743,
         "images": {},
         "videos": {},
         "published": true,
@@ -2609,7 +2609,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1733581170,
+        "updated": 1733616745,
         "images": {},
         "videos": {},
         "published": true,
@@ -2630,7 +2630,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1733581169,
+        "updated": 1733616744,
         "images": {},
         "videos": {},
         "published": true,
@@ -2651,7 +2651,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1733581177,
+        "updated": 1733616752,
         "images": {},
         "videos": {},
         "published": true,
@@ -2672,7 +2672,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1733581199,
+        "updated": 1733616777,
         "images": {},
         "videos": {},
         "published": false,
@@ -2695,7 +2695,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1733581124,
+        "updated": 1733616713,
         "images": {},
         "videos": {},
         "published": true,
@@ -2718,7 +2718,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1733581125,
+        "updated": 1733616714,
         "images": {},
         "videos": {},
         "published": true,
@@ -2741,7 +2741,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1733581107,
+        "updated": 1733616678,
         "images": {},
         "videos": {},
         "published": true,
@@ -2775,7 +2775,7 @@
       "description": "Buku yang mirip buku teks ini dibagi menjadi beberapa bagian. Bagian ini disebut ",
       "metadata": {
         "created": 1732016685,
-        "updated": 1733581105,
+        "updated": 1733616677,
         "images": {},
         "videos": {},
         "published": true,
@@ -2798,7 +2798,7 @@
       "description": "Saya Andy Yulianto, instruktur kursus Anda.\n\n\n\n\n\n\nSilakan panggil saya dengan nama depan saya, jika Anda merasa nyaman dengan itu. Cara pengucapannya seperti ini.\n\n\n\n\n\n\nSaya lahir di Kediri, Indonesi",
       "metadata": {
         "created": 1732016685,
-        "updated": 1733581108,
+        "updated": 1733616680,
         "images": {},
         "videos": {},
         "files": [
@@ -2863,7 +2863,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1733581109,
+        "updated": 1733616681,
         "images": {},
         "videos": {},
         "published": true,
@@ -2886,7 +2886,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1733581110,
+        "updated": 1733616682,
         "images": {},
         "videos": {},
         "published": true,
@@ -2904,13 +2904,13 @@
       "indent": 0,
       "location": "pages/item-dcc83acf-3f28-4f75-adf5-d561edd290f2/index.html",
       "slug": "aplikasi-web",
-      "order": 1,
+      "order": 2,
       "parent": null,
       "title": "Aplikasi Web",
       "description": "Membuat aplikasi Web dengan PHP dan HTML CSS\n\n",
       "metadata": {
         "created": 1733520857,
-        "updated": 1733581111,
+        "updated": 1733616700,
         "images": {},
         "videos": {},
         "published": true,
@@ -2933,7 +2933,7 @@
       "description": "\nAnda mengetik URL ke peramban, dan Anda melihat halaman web. URL adalah lokasi suatu berkas. Bagian ini membahas tentang bagaimana URL dipetakan ke berkas, dan bagaimana Anda dapat mengatur berkas s",
       "metadata": {
         "created": 1733388510,
-        "updated": 1733581112,
+        "updated": 1733616700,
         "images": {},
         "videos": {},
         "published": true,
@@ -2956,7 +2956,7 @@
       "description": " Anda mengetik URL ke dalam browser. Seperti https://andyux.my.id, atau http://andy1.rf.gd/kucing/kity.html. Apa itu URL? URL adalah alamat  Setiap berkas di Web memiliki URL (uniform resource ",
       "metadata": {
         "created": 1733389657,
-        "updated": 1733581113,
+        "updated": 1733616702,
         "images": {},
         "videos": {},
         "published": true,
@@ -2979,7 +2979,7 @@
       "description": "Anda punya akun hosting, kan? Mari kita coba. \n(Cuplikan layar di bawah merupakan yang terbaru pada saat artikel ini ditulis.) \nBuka https://dash.infinityfree.com/ . Ingat trik klik kanan d",
       "metadata": {
         "created": 1733408414,
-        "updated": 1733581114,
+        "updated": 1733616703,
         "images": {},
         "videos": {},
         "published": true,
@@ -3002,7 +3002,7 @@
       "description": "\n\n  Protokol apa yang harus digunakan aplikasi web Anda?\n  \n    \n  \n\nApa itu subdomain? Anda memiliki domain, seperti silverthoughts.org. Namun, Anda\n  ingin memiliki banyak situs web di dalamnya. Bi",
       "metadata": {
         "created": 1733411077,
-        "updated": 1733581115,
+        "updated": 1733616704,
         "images": {},
         "videos": {},
         "published": true,
@@ -3025,7 +3025,7 @@
       "description": "\nIsi pelajaran \n   Manajer File   Subdomain adalah folder   Tambahkan file ke subdomain Anda   Ke peramban   Subfolder dan URL   Periksa gambar di browser   Mengatur file   Latihan   Ringkasan   Beri",
       "metadata": {
         "created": 1733473372,
-        "updated": 1733581116,
+        "updated": 1733616705,
         "images": {},
         "videos": {},
         "published": true,
@@ -3039,7 +3039,7 @@
     },
     {
       "id": "item-f7f19c6e-0234-4e10-a3b8-1aabb9d27181",
-      "indent": 0,
+      "indent": 1,
       "location": "pages/item-f7f19c6e-0234-4e10-a3b8-1aabb9d27181/index.html",
       "slug": "aplikasi-web/membuat-html",
       "order": 1,
@@ -3048,7 +3048,7 @@
       "description": "\nHalaman web dibuat dari HTML. Berkas HTML berisi petunjuk tentang cara membuat tampilan. Misalnya, anggaplah Anda ingin membuat tampilan ini:\n\nAnda bisa menggambarkannya seperti ini:\nBuatlah judul d",
       "metadata": {
         "created": 1733413691,
-        "updated": 1733615904,
+        "updated": 1733616706,
         "images": {},
         "videos": {},
         "published": true,
@@ -3071,7 +3071,7 @@
       "description": "\n\n\nIsi pelajaran \nStruktur halaman Sebuah pola Memahami template Kepala dan badan Metadata Set karakter Jendela pandang Tubuh Menemukan kesalahan Ringkasan Masuk\n",
       "metadata": {
         "created": 1733414138,
-        "updated": 1733581118,
+        "updated": 1733616707,
         "images": {},
         "videos": {},
         "published": true,
@@ -3085,7 +3085,7 @@
     },
     {
       "id": "item-33c476e4-08d4-4942-9e5a-c3c3bbacf501",
-      "indent": 0,
+      "indent": 2,
       "location": "pages/item-33c476e4-08d4-4942-9e5a-c3c3bbacf501/index.html",
       "slug": "aplikasi-web/membuat-html/beberapa-tag",
       "order": 1,
@@ -3094,7 +3094,7 @@
       "description": "\n\nIsi pelajaran \n\nJudul Paragraf Jangan terlalu sering menggunakan br Latihan Daftar tidak berurutan Daftar yang diurutkan Daftar bersarang Komentar Latihan Ringkasan\nJudul \nAda enam tag\n\nh",
       "metadata": {
         "created": 1733575847,
-        "updated": 1733616475,
+        "updated": 1733616708,
         "images": {},
         "videos": {},
         "published": true,
@@ -3108,7 +3108,7 @@
     },
     {
       "id": "item-aec87073-80cf-4c7f-8978-1cd8b98d0dba",
-      "indent": 0,
+      "indent": 1,
       "location": "pages/item-aec87073-80cf-4c7f-8978-1cd8b98d0dba/index.html",
       "slug": "aplikasi-web/latihan-buat-html",
       "order": 2,
@@ -3117,7 +3117,7 @@
       "description": "Latihan pada bagian buat HTML\n",
       "metadata": {
         "created": 1733580832,
-        "updated": 1733614978,
+        "updated": 1733616709,
         "images": {},
         "videos": {},
         "published": true,
@@ -3138,7 +3138,7 @@
       "description": "Header dan paragraf&#160;\nBuat halaman dengan tajuk dan paragraf. Harus ada tiga tingkat tajuk, seperti ini (tanpa teks merah):\n\nUnggah halaman Anda ke server Anda. Kirimkan URL-nya.\n\n",
       "metadata": {
         "created": 1733580935,
-        "updated": 1733581121,
+        "updated": 1733616710,
         "images": {},
         "videos": {},
         "published": true,
@@ -3153,16 +3153,16 @@
     },
     {
       "id": "item-ff6d521d-400b-4a3d-8268-0fe3305b4ef2",
-      "indent": 0,
+      "indent": 2,
       "location": "pages/item-ff6d521d-400b-4a3d-8268-0fe3305b4ef2/index.html",
-      "slug": "aplikasi-web/latihan-buat-html/page",
+      "slug": "aplikasi-web/latihan-buat-html/isi-buku",
       "order": 1,
       "parent": "item-aec87073-80cf-4c7f-8978-1cd8b98d0dba",
       "title": "Isi buku",
       "description": "Buatlah daftar isi untuk buku tentang pelatihan manusia. \nDaftar isi tersebut akan terlihat seperti ini:\n\nKirimkan URL solusi Anda.\n",
       "metadata": {
         "created": 1733614988,
-        "updated": 1733615228,
+        "updated": 1733616711,
         "images": {},
         "videos": {},
         "published": true,
@@ -3171,7 +3171,8 @@
         "locked": false,
         "readtime": 1,
         "tags": "latihan, html",
-        "icon": "hax:shovel"
+        "icon": "hax:shovel",
+        "status": ""
       }
     },
     {
@@ -3185,7 +3186,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1733581157,
+        "updated": 1733616698,
         "images": {},
         "videos": {},
         "published": true,
@@ -3208,7 +3209,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1733581158,
+        "updated": 1733616699,
         "images": {},
         "videos": {},
         "published": true,
@@ -3232,7 +3233,7 @@
       "description": "kalau tanpa database sudah paham\n\n  \n  Tulis Q-2\n  \n  \n  \n\n\n  expand\n\n\n\n\n\n\n\n  \n  \n  \nDi\n\nBy the end of this lesson, you should be able to...Dapat membuat program PHP sederhana untuk melakukan perhitu",
       "metadata": {
         "created": 1732016685,
-        "updated": 1733581131,
+        "updated": 1733616720,
         "images": {},
         "videos": {},
         "published": true,
@@ -3265,7 +3266,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1733581145,
+        "updated": 1733616685,
         "images": {},
         "videos": {},
         "published": true,
@@ -3286,7 +3287,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1733581150,
+        "updated": 1733616691,
         "images": {},
         "videos": {},
         "published": true,
@@ -3309,7 +3310,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1733581126,
+        "updated": 1733616715,
         "images": {},
         "videos": {},
         "published": true,
@@ -3350,7 +3351,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1733581159,
+        "updated": 1733616734,
         "published": true,
         "hideInMenu": false,
         "locked": false,
@@ -3384,7 +3385,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1733581167,
+        "updated": 1733616742,
         "images": {},
         "videos": {},
         "published": true,
@@ -3407,7 +3408,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1733581171,
+        "updated": 1733616746,
         "images": {},
         "videos": {},
         "published": true,
@@ -3428,7 +3429,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1733581172,
+        "updated": 1733616747,
         "images": {},
         "videos": {},
         "published": true,
@@ -3449,7 +3450,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1733581173,
+        "updated": 1733616748,
         "images": {},
         "videos": {},
         "published": true,
@@ -3470,7 +3471,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1733581174,
+        "updated": 1733616749,
         "images": {},
         "videos": {},
         "published": true,
@@ -3491,7 +3492,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1733581175,
+        "updated": 1733616750,
         "images": {},
         "videos": {},
         "published": true,
@@ -3514,7 +3515,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1733581176,
+        "updated": 1733616751,
         "images": {},
         "videos": {},
         "published": true,
@@ -3535,7 +3536,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1733581177,
+        "updated": 1733616752,
         "images": {},
         "videos": {},
         "published": true,
@@ -3560,7 +3561,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1733581178,
+        "updated": 1733616754,
         "images": {},
         "videos": {},
         "published": true,
@@ -3581,7 +3582,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1733581179,
+        "updated": 1733616755,
         "images": {},
         "videos": {},
         "files": [
@@ -3612,7 +3613,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1733581180,
+        "updated": 1733616756,
         "images": {},
         "videos": {},
         "published": true,
@@ -3633,7 +3634,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1733581181,
+        "updated": 1733616756,
         "images": {},
         "videos": {},
         "files": [
@@ -3664,7 +3665,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1733581182,
+        "updated": 1733616757,
         "images": {},
         "videos": {},
         "published": true,
@@ -3687,7 +3688,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1733581183,
+        "updated": 1733616758,
         "images": {},
         "videos": {},
         "published": true,
@@ -3708,7 +3709,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1733581184,
+        "updated": 1733616759,
         "images": {},
         "videos": {},
         "published": true,
@@ -3741,7 +3742,7 @@
       "description": "",
       "metadata": {
         "created": 1732016687,
-        "updated": 1733581185,
+        "updated": 1733616760,
         "images": {},
         "videos": {},
         "files": [
@@ -3774,7 +3775,7 @@
       "description": "",
       "metadata": {
         "created": 1732016687,
-        "updated": 1733581186,
+        "updated": 1733616761,
         "images": {},
         "videos": {},
         "published": true,
@@ -3807,7 +3808,7 @@
       "description": "",
       "metadata": {
         "created": 1732016687,
-        "updated": 1733581187,
+        "updated": 1733616762,
         "images": {},
         "videos": {},
         "published": true,
@@ -3828,7 +3829,7 @@
       "description": "",
       "metadata": {
         "created": 1732016687,
-        "updated": 1733581188,
+        "updated": 1733616763,
         "images": {},
         "videos": {},
         "published": true,
@@ -3851,7 +3852,7 @@
       "description": "",
       "metadata": {
         "created": 1732016687,
-        "updated": 1733581189,
+        "updated": 1733616764,
         "images": {},
         "videos": {},
         "published": true,
@@ -3873,7 +3874,7 @@
       "description": "",
       "metadata": {
         "created": 1732016687,
-        "updated": 1733581190,
+        "updated": 1733616765,
         "images": {},
         "videos": {},
         "published": true,
@@ -3884,40 +3885,58 @@
       }
     },
     {
-      "id": "item-170cdb75-7620-4bc5-a8fb-4b0f13b15194",
+      "id": "item-a0a7f01a-2b12-43e1-bb85-3f7bd8cff8a6",
       "indent": 1,
-      "location": "pages/item-170cdb75-7620-4bc5-a8fb-4b0f13b15194/index.html",
-      "slug": "jaringan-komputer-dan-internet/kondisi-keamanan-siber",
-      "order": 0,
-      "parent": "item-f2440f4c-e08a-491f-a52c-51e13e10db5e",
-      "title": "Kondisi Keamanan Siber",
+      "location": "pages/item-a0a7f01a-2b12-43e1-bb85-3f7bd8cff8a6/index.html",
+      "slug": "literasi-digital/analisis-data",
+      "order": 3,
+      "parent": "item-fbc16ff7-1765-4bdc-82f0-627c990629c1",
+      "title": "Analisis Data",
       "description": "",
       "metadata": {
-        "created": 1732016687,
-        "updated": 1733581191,
+        "created": 1732016688,
+        "updated": 1733616766,
         "images": {},
         "videos": {},
-        "published": true,
-        "hideInMenu": false,
+        "published": false,
         "locked": false,
-        "readtime": 1,
         "status": "",
-        "pageType": "activity",
-        "icon": "hax:ticket"
+        "hideInMenu": false,
+        "readtime": 5,
+        "pageType": "module",
+        "icon": "hax:module",
+        "files": [
+          {
+            "path": "[object Object]satudata.JPG",
+            "fullUrl": "//home/andyyulianto77/tik12/files/satudata.JPG",
+            "url": "files/satudata.JPG",
+            "type": "image/jpeg",
+            "name": "satudata.JPG",
+            "size": 128046
+          },
+          {
+            "path": "[object Object]1b18f9396b722f0c5a26ef0f48f9e30b-satudata.JPG",
+            "fullUrl": "//home/andyyulianto77/tik12/files/1b18f9396b722f0c5a26ef0f48f9e30b-satudata.JPG",
+            "url": "files/1b18f9396b722f0c5a26ef0f48f9e30b-satudata.JPG",
+            "type": "image/jpeg",
+            "name": "1b18f9396b722f0c5a26ef0f48f9e30b-satudata.JPG",
+            "size": 128046
+          }
+        ]
       }
     },
     {
       "id": "item-16c54262-de9a-439e-bc7c-994594c2822c",
-      "indent": 1,
+      "indent": 2,
       "location": "pages/item-16c54262-de9a-439e-bc7c-994594c2822c/index.html",
-      "slug": "analisis-data/analisis-data",
+      "slug": "literasi-digital/analisis-data/analisis-data",
       "order": 0,
       "parent": "item-a0a7f01a-2b12-43e1-bb85-3f7bd8cff8a6",
       "title": "Analisis Data",
       "description": "",
       "metadata": {
         "created": 1732016687,
-        "updated": 1733581202,
+        "updated": 1733616766,
         "images": {},
         "videos": {},
         "published": true,
@@ -3940,6 +3959,52 @@
       }
     },
     {
+      "id": "item-6fd7adf5-b7b4-4214-8f02-ab835624c9d1",
+      "indent": 2,
+      "location": "pages/item-6fd7adf5-b7b4-4214-8f02-ab835624c9d1/index.html",
+      "slug": "literasi-digital/analisis-data/page-dengan-import-md",
+      "order": 1,
+      "parent": "item-a0a7f01a-2b12-43e1-bb85-3f7bd8cff8a6",
+      "title": "Page dengan import MD",
+      "description": "",
+      "metadata": {
+        "created": 1732016688,
+        "updated": 1733616767,
+        "images": {},
+        "videos": {},
+        "published": false,
+        "hideInMenu": false,
+        "tags": "soal",
+        "locked": false,
+        "readtime": 1,
+        "status": "",
+        "image": "https://images-assets.nasa.gov/image/0102626/0102626~thumb.jpg"
+      }
+    },
+    {
+      "id": "item-170cdb75-7620-4bc5-a8fb-4b0f13b15194",
+      "indent": 1,
+      "location": "pages/item-170cdb75-7620-4bc5-a8fb-4b0f13b15194/index.html",
+      "slug": "jaringan-komputer-dan-internet/kondisi-keamanan-siber",
+      "order": 0,
+      "parent": "item-f2440f4c-e08a-491f-a52c-51e13e10db5e",
+      "title": "Kondisi Keamanan Siber",
+      "description": "",
+      "metadata": {
+        "created": 1732016687,
+        "updated": 1733616769,
+        "images": {},
+        "videos": {},
+        "published": true,
+        "hideInMenu": false,
+        "locked": false,
+        "readtime": 1,
+        "status": "",
+        "pageType": "activity",
+        "icon": "hax:ticket"
+      }
+    },
+    {
       "id": "item-984bdbe3-eae5-4a78-9ccb-abb39ed59fab",
       "indent": 1,
       "location": "pages/item-984bdbe3-eae5-4a78-9ccb-abb39ed59fab/index.html",
@@ -3950,7 +4015,7 @@
       "description": "",
       "metadata": {
         "created": 1732016687,
-        "updated": 1733581144,
+        "updated": 1733616684,
         "images": {},
         "videos": {},
         "published": true,
@@ -3971,7 +4036,7 @@
       "description": "",
       "metadata": {
         "created": 1732016687,
-        "updated": 1733581191,
+        "updated": 1733616768,
         "images": {},
         "videos": {},
         "published": true,
@@ -3993,7 +4058,7 @@
       "description": "",
       "metadata": {
         "created": 1732016687,
-        "updated": 1733581192,
+        "updated": 1733616770,
         "images": {},
         "videos": {},
         "published": true,
@@ -4026,7 +4091,7 @@
       "description": "",
       "metadata": {
         "created": 1732016687,
-        "updated": 1733581193,
+        "updated": 1733616771,
         "images": {},
         "videos": {},
         "published": true,
@@ -4067,7 +4132,7 @@
       "description": "",
       "metadata": {
         "created": 1732016687,
-        "updated": 1733581194,
+        "updated": 1733616772,
         "images": {},
         "videos": {},
         "published": true,
@@ -4132,7 +4197,7 @@
       "description": "",
       "metadata": {
         "created": 1732016688,
-        "updated": 1733581195,
+        "updated": 1733616773,
         "images": {},
         "videos": {},
         "files": [
@@ -4189,7 +4254,7 @@
       "description": "",
       "metadata": {
         "created": 1732016688,
-        "updated": 1733581196,
+        "updated": 1733616774,
         "images": {},
         "videos": {},
         "published": true,
@@ -4302,7 +4367,7 @@
       "description": "Ini untuk membuat catatan/refleksi dari materi yang sudah dipelajari. Ikuti tutorial dari blog\nGithub + Stickblitz + HAX = penerbitan web gratis\n\nSumber Tulisan\n#situs web hax#pengembang web#komponen",
       "metadata": {
         "created": 1732016688,
-        "updated": 1733581197,
+        "updated": 1733616775,
         "images": {},
         "videos": {},
         "published": true,
@@ -4359,7 +4424,7 @@
       "description": "",
       "metadata": {
         "created": 1732016688,
-        "updated": 1733581198,
+        "updated": 1733616776,
         "images": {},
         "videos": {},
         "published": true,
@@ -4382,7 +4447,7 @@
       "description": "",
       "metadata": {
         "created": 1732016688,
-        "updated": 1733581148,
+        "updated": 1733616688,
         "images": {},
         "videos": {},
         "published": true,
@@ -4405,7 +4470,7 @@
       "description": "",
       "metadata": {
         "created": 1732016688,
-        "updated": 1733581127,
+        "updated": 1733616716,
         "images": {},
         "videos": {},
         "published": true,
@@ -4452,29 +4517,6 @@
       }
     },
     {
-      "id": "item-6fd7adf5-b7b4-4214-8f02-ab835624c9d1",
-      "indent": 0,
-      "location": "pages/item-6fd7adf5-b7b4-4214-8f02-ab835624c9d1/index.html",
-      "slug": "page-dengan-import-md",
-      "order": 7,
-      "parent": null,
-      "title": "Page dengan import MD",
-      "description": "",
-      "metadata": {
-        "created": 1732016688,
-        "updated": 1733581200,
-        "images": {},
-        "videos": {},
-        "published": false,
-        "hideInMenu": false,
-        "tags": "soal",
-        "locked": false,
-        "readtime": 1,
-        "status": "",
-        "image": "https://images-assets.nasa.gov/image/0102626/0102626~thumb.jpg"
-      }
-    },
-    {
       "id": "item-8aa6a35b-1bb7-47b7-aff3-31e4569cd298",
       "indent": 1,
       "location": "pages/item-8aa6a35b-1bb7-47b7-aff3-31e4569cd298/index.html",
@@ -4485,7 +4527,7 @@
       "description": "",
       "metadata": {
         "created": 1732016688,
-        "updated": 1733581128,
+        "updated": 1733616717,
         "images": {},
         "videos": {},
         "published": true,
@@ -4495,47 +4537,6 @@
         "readtime": 2,
         "icon": "lrn:page",
         "status": ""
-      }
-    },
-    {
-      "id": "item-a0a7f01a-2b12-43e1-bb85-3f7bd8cff8a6",
-      "indent": 0,
-      "location": "pages/item-a0a7f01a-2b12-43e1-bb85-3f7bd8cff8a6/index.html",
-      "slug": "analisis-data",
-      "order": 8,
-      "parent": null,
-      "title": "Analisis Data",
-      "description": "",
-      "metadata": {
-        "created": 1732016688,
-        "updated": 1733581201,
-        "images": {},
-        "videos": {},
-        "published": false,
-        "locked": false,
-        "status": "",
-        "hideInMenu": false,
-        "readtime": 5,
-        "pageType": "module",
-        "icon": "hax:module",
-        "files": [
-          {
-            "path": "[object Object]satudata.JPG",
-            "fullUrl": "//home/andyyulianto77/tik12/files/satudata.JPG",
-            "url": "files/satudata.JPG",
-            "type": "image/jpeg",
-            "name": "satudata.JPG",
-            "size": 128046
-          },
-          {
-            "path": "[object Object]1b18f9396b722f0c5a26ef0f48f9e30b-satudata.JPG",
-            "fullUrl": "//home/andyyulianto77/tik12/files/1b18f9396b722f0c5a26ef0f48f9e30b-satudata.JPG",
-            "url": "files/1b18f9396b722f0c5a26ef0f48f9e30b-satudata.JPG",
-            "type": "image/jpeg",
-            "name": "1b18f9396b722f0c5a26ef0f48f9e30b-satudata.JPG",
-            "size": 128046
-          }
-        ]
       }
     },
     {
@@ -4549,7 +4550,7 @@
       "description": "",
       "metadata": {
         "created": 1732016688,
-        "updated": 1733581129,
+        "updated": 1733616718,
         "images": {},
         "videos": {},
         "published": true,
@@ -4582,7 +4583,7 @@
       "description": "",
       "metadata": {
         "created": 1732016688,
-        "updated": 1733581149,
+        "updated": 1733616690,
         "images": {},
         "videos": {},
         "published": true,
@@ -4597,13 +4598,13 @@
       "indent": 0,
       "location": "pages/item-13298894-5889-4b24-b28f-5bbde3a3c6f1/index.html",
       "slug": "perancangan-basis-data",
-      "order": 2,
+      "order": 3,
       "parent": null,
       "title": "Perancangan Basis Data",
       "description": "",
       "metadata": {
         "created": 1732016689,
-        "updated": 1733581122,
+        "updated": 1733616712,
         "images": {},
         "videos": {},
         "published": true,
@@ -4626,7 +4627,7 @@
       "description": "data siswa sudah tersimpan di tabel dan masuk ke database Latihan.\n\n  \n  kolom/field: nis, nama, alamat, dll\n  \n  \n  \n\n\n\n\n\n\n\n\n  expand\n\n\n\n\n\n\n\n\n\n  \n  \n  \nPada akhir pelajaran, Siswa dapat ...Membedaka",
       "metadata": {
         "created": 1732016689,
-        "updated": 1733581130,
+        "updated": 1733616719,
         "images": {},
         "videos": {},
         "published": true,
@@ -4649,7 +4650,7 @@
       "description": "Pada pelajaran lalu kita sudah menampilkan data siswa, membuat koneksi ke database.\n  Koneksi ini seperti pintu penghubung antara kode PHP dan database MySQL. Kita bisa\n  menulis kode PHP.  Amaz",
       "metadata": {
         "created": 1732682932,
-        "updated": 1733581132,
+        "updated": 1733616721,
         "images": {},
         "videos": {},
         "published": true,
@@ -4672,7 +4673,7 @@
       "description": "Kita sudah dapat mengambil data yang valid dengan PHP, kita harus memastikan data yang dimasukkan aman dan sesuai dengan yang dibutuhkan menggunakan fungsi tertentu.\nFungsi dari `global $thing;` dala",
       "metadata": {
         "created": 1732698500,
-        "updated": 1733581133,
+        "updated": 1733616723,
         "images": {},
         "videos": {},
         "published": true,
@@ -4695,7 +4696,7 @@
       "description": "Kita sudah menggunakan GET dengan aman di PHP, kita perlu membuat koneksi ke database menggunakan prepared statements, kita memastikan data yang dikirim aman dari serangan, seperti SQL injection",
       "metadata": {
         "created": 1732701390,
-        "updated": 1733581134,
+        "updated": 1733616724,
         "images": {},
         "videos": {},
         "published": true,
@@ -4719,7 +4720,7 @@
       "description": "\n\n",
       "metadata": {
         "created": 1732777459,
-        "updated": 1733581137,
+        "updated": 1733616727,
         "images": {},
         "videos": {},
         "published": true,
@@ -4743,7 +4744,7 @@
       "description": "Latihan\nPencarian 1:N\nSebelumnya, Anda membuat versi aplikasi wombat Anda sendiri. Mari kita gunakan kembali. \nTemukan hubungan 1:N yang dapat Anda tambahkan ke tabel Anda saat ini. Salah satu yang u",
       "metadata": {
         "created": 1732786885,
-        "updated": 1733581138,
+        "updated": 1733616728,
         "images": {},
         "videos": {},
         "published": true,
@@ -4768,7 +4769,7 @@
       "description": "Tampilkan daftar nama wombat. Setiap nama merupakan tautan ke halaman tentang detail wombat tersebut. Anda dapat mencoba solusi saya . \nBerikut halaman daftarnya:\n\nDaftar tersebut mesti berdasar",
       "metadata": {
         "created": 1733056908,
-        "updated": 1733581139,
+        "updated": 1733616729,
         "images": {},
         "videos": {},
         "published": true,
@@ -4793,7 +4794,7 @@
       "description": "Sebuah proyek untuk Anda. Anda dapat mengerjakannya sendiri atau dalam tim yang terdiri dari dua orang. \nJika Anda mengerjakan proyek bersama orang lain, tuliskan nama Anda berdua di bagian bawa",
       "metadata": {
         "created": 1733317762,
-        "updated": 1733581140,
+        "updated": 1733616730,
         "images": {},
         "videos": {},
         "published": true,
@@ -4818,7 +4819,7 @@
       "description": "Anda sudah mempelajari komponen dan jenis pengolahan database dengan 1 to many.\n  Mari kita memperdalam pengetahuan dengan lebih banyak contoh.\ntabel rumah tangga\n\nDaftar binatang anjing\n\nAda hubunga",
       "metadata": {
         "created": 1733044750,
-        "updated": 1733581135,
+        "updated": 1733616725,
         "images": {},
         "videos": {},
         "published": true,
@@ -4841,7 +4842,7 @@
       "description": "Saatnya untuk contoh baru. Podcast favorit saya adalah Nobody Listens to Paula Poundstone . Seorang pelawak, pelawak, komedian, dan penggembala, dengan tamu-tamu ahli dan grup musik house, berbicara ",
       "metadata": {
         "created": 1733057699,
-        "updated": 1733581136,
+        "updated": 1733616726,
         "images": {},
         "videos": {},
         "published": true,
@@ -4864,7 +4865,7 @@
       "description": "Prinsip adalah ide umum. Prinsip menjelaskan mengapa Anda melakukan sesuatu dengan cara tertentu, yaitu, menjelaskan pola . Ambil contoh pola jahit dan pertukangan kayu \"ukur dua kali, potong sekali.",
       "metadata": {
         "created": 1733384110,
-        "updated": 1733581141,
+        "updated": 1733616731,
         "images": {},
         "videos": {},
         "published": true,
@@ -4888,7 +4889,7 @@
       "description": "Dalam aplikasi kambing, beberapa halaman memuat data kambing, dengan id kambing. Daripada menulis kode beberapa kali, saya menulisnya sekali, dan membuat fungsi untuknya:\n\n",
       "metadata": {
         "created": 1733208794,
-        "updated": 1733581142,
+        "updated": 1733616732,
         "images": {},
         "videos": {},
         "published": true,
@@ -4912,7 +4913,7 @@
       "description": "",
       "metadata": {
         "created": 1732016689,
-        "updated": 1733581146,
+        "updated": 1733616686,
         "images": {},
         "videos": {},
         "published": true,
@@ -4935,7 +4936,7 @@
       "description": "",
       "metadata": {
         "created": 1732016689,
-        "updated": 1733581151,
+        "updated": 1733616692,
         "images": {},
         "videos": {},
         "published": true,
@@ -4952,13 +4953,13 @@
       "indent": 0,
       "location": "pages/item-f6a56c5c-9bb8-4c09-9e18-a4a4e8060ef8/index.html",
       "slug": "berpikir-komputasional-dan-algoritma-pemrograman",
-      "order": 4,
+      "order": 1,
       "parent": null,
       "title": "BERPIKIR KOMPUTASIONAL DAN ALGORITMA PEMROGRAMAN",
       "description": "",
       "metadata": {
         "created": 1732016689,
-        "updated": 1733581144,
+        "updated": 1733616683,
         "images": {},
         "videos": {},
         "published": false,
@@ -4982,7 +4983,7 @@
       "description": "",
       "metadata": {
         "created": 1732016689,
-        "updated": 1733581147,
+        "updated": 1733616687,
         "images": {},
         "videos": {},
         "published": true,
@@ -5005,7 +5006,7 @@
       "description": "",
       "metadata": {
         "created": 1732016689,
-        "updated": 1733581152,
+        "updated": 1733616693,
         "images": {},
         "videos": {},
         "published": true,
@@ -5028,7 +5029,7 @@
       "description": "",
       "metadata": {
         "created": 1732016689,
-        "updated": 1733581153,
+        "updated": 1733616694,
         "images": {},
         "videos": {},
         "published": true,
@@ -5049,7 +5050,7 @@
       "description": "",
       "metadata": {
         "created": 1732016689,
-        "updated": 1733581154,
+        "updated": 1733616695,
         "images": {},
         "videos": {},
         "published": true,
@@ -5070,7 +5071,7 @@
       "description": "",
       "metadata": {
         "created": 1732016690,
-        "updated": 1733581155,
+        "updated": 1733616696,
         "images": {},
         "videos": {},
         "published": true,
@@ -5091,7 +5092,7 @@
       "description": "",
       "metadata": {
         "created": 1732016690,
-        "updated": 1733581156,
+        "updated": 1733616697,
         "images": {},
         "videos": {},
         "published": true,
@@ -5108,13 +5109,13 @@
       "indent": 0,
       "location": "pages/item-a5523a37-53c7-4774-8649-c9b94b73c88d/index.html",
       "slug": "pengolahan-data",
-      "order": 3,
+      "order": 4,
       "parent": null,
       "title": "Pengolahan Data",
       "description": "",
       "metadata": {
         "created": 1732016690,
-        "updated": 1733581143,
+        "updated": 1733616733,
         "images": {},
         "videos": {},
         "published": false,
