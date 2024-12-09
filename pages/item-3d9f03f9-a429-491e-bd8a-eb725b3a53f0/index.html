@@ -1,1 +1,101 @@
-<p></p>
+
+<h3 data-original-level="H3" id="header-b539561f-af6f-8dfe-37ce-75722d37ce8a">Fakta sebenarnya</h3>
+<p>Berikut halamannya.</p>
+<media-image source="files/cat.png" alt="cat.png" accent-color="grey" size="wide" offset="none"></media-image>
+<p>Penampilannya... yah, jujur &#8203;&#8203;saja, biasa saja.&#160;</p>
+<p>Kita bisa menatanya menjadi seperti ini:</p>
+<media-image source="files/cat1.png" alt="cat1.png" accent-color="grey" size="wide" offset="none"></media-image>
+<p>Baiklah, kelihatannya lebih buruk, tetapi tetap saja berbeda.&#160;</p>
+<p>Berikut HTML yang membuat tampilan tanpa gaya.</p>
+<code-sample type="html" copy-clipboard-button data-hax-lock="data-hax-lock"><template preserve-content="preserve-content"><h1>Fakta sebenarnya tentang anjing</h1>
+ 
+<h2>Kebahagiaan</h2>
+<p>Anjing membuat manusia bahagia. Mereka memang begitu.</p>
+<p>Itu fakta.</p>
+ 
+<h2>Cinta</h2>
+<p>Anjingmu mencintaimu.</p></template></code-sample>
+<p>Beberapa judul, dan beberapa paragraf.&#160;</p>
+<p>Sebenarnya, itu kurang tepat. Apa yang kurang?</p>
+<a11y-collapse heading="Tulis Q-5" heading-button accent-color="grey" icon="icons:expand-more" tooltip="expand" label="expand"><p>Apa yang hilang dari HTML di atas?</p></a11y-collapse>
+<grid-plate item-margin="16" item-padding="16" layout="1-3" data-width="75" data-margin="center" disable-responsive><p slot="col-2">Oh! Tag body itu, tag itu head, tag html itu, benda itu.</p><media-image source="files/fina_senang.jpg" alt="fina_senang.jpg" slot="col-1" accent-color="grey" size="wide" offset="none"></media-image>
+</grid-plate>
+<p>Benar! Beginilah HTML sebenarnya:</p>
+<ol><li>&lt;!doctype html&gt;</li></ol>
+<ol><li>&lt;html lang="id"&gt;</li><li>&lt;head&gt;</li><li>&lt;meta charset="UTF-8"&gt;</li><li>&lt;title&gt;Kucing Terlucu&lt;/title&gt;</li><li>&lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;</li><li>&lt;/head&gt;</li><li>&lt;body&gt;</li><li>&lt;h1&gt;Fakta sebenarnya tentang kucing&lt;/h1&gt;</li><li>&lt;h2&gt;Kebahagiaan&lt;/h2&gt;</li><li>&lt;p&gt;Itu fakta.&lt;/p&gt;</li><li>&lt;h2&gt;Love&lt;/h2&gt;</li><li>&lt;p&gt;Your cats loves you.&lt;/p&gt;</li><li>&lt;/body&gt;</li><li>&lt;html&gt;</li></ol>
+<p>Kadang-kadang saya akan menghilangkan tag yang memuatnya, dan hanya memberikan sebagian halaman. Itu hanya untuk memudahkan membaca pelajaran. Namun, selalu buat halaman yang lengkap.</p>
+<h2 data-original-level="H2" id="header-5c5916b0-0c90-3e59-3de4-bec454689749">Menghubungkan lembar gaya&#160;</h2>
+<p>Mari tambahkan garis pada kepala.&#8203;</p>
+<ol><li>&lt;html lang="id"&gt;</li><li>&lt;head&gt;</li><li>&lt;meta charset="UTF-8"&gt;</li><li>&lt;title&gt;Kucing Terlucu&lt;/title&gt;</li><li>&lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;</li><li>&lt;link rel="stylesheet" href="styles.css"&gt;</li><li>&lt;/head&gt;</li></ol>
+<p>Lihat baris ke 6:</p>
+<p>&#60;link rel="stylesheet" href="styles.css"&#62;</p>
+<p>Itu ada di bagian head , jadi itu metadata. Ia memberi tahu browser untuk melihat ke dalam file styles.css, untuk mengetahui cara memberi gaya pada HTML. Kami akan menyimpan gaya secara terpisah dari HTML, sehingga Anda dapat menggunakan kembali gaya dengan mudah.&#160;</p>
+<p>styles.css terdiri dari aturan CSS, yang memberi tahu browser tentang font, warna, dan hal lainnya.&#160;</p>
+<h2 id="header-de785642-e6b0-610a-ed90-dca9491eeaf2">Aturan CSS&#160;</h2>
+<p>Inilah yang ada di styles.css.</p>
+<code-sample type="css" copy-clipboard-button><template preserve-content="preserve-content">body {
+    font-family: sans-serif;
+    background-color: antiquewhite;
+}
+ 
+h1 {
+    color: darkred;
+    font-family: cursive
+}
+ 
+h2 {
+    color: darkgreen;
+}</template></code-sample>
+<p>Hal pertama yang perlu diperhatikan adalah bahasa ini tidak terlihat seperti HTML. Itu karena bahasa ini sepenuhnya berbeda, dengan formatnya sendiri.&#160;</p>
+<p>Ada banyak aturan . Semuanya berbentuk:</p>
+<ul><li>pemilih { </li><li>           nama properti : nilai </li><li>           .... </li><li>}</li></ul>
+<p>Pemilih memberi tahu browser aturan apa yang berlaku. Dalam kasus ini:&#160;</p>
+<p><ul><li>body { </li><li>   Cara menampilkan isi tag body. </li><li>} </li><li> h1 { </li><li> Cara menampilkan konten semua tag h1. </li><li>} </li><li> h2 { </li><li> Cara menampilkan konten semua tag h2. </li><li>} </li></ul></p>
+<p>Bentuk umum lagi:</p>
+<ul><li><mark data-primary="22">pemilih</mark>{ </li><li>           <mark data-primary="19">nama properti</mark> : <mark data-primary="13">nilai;</mark></li><li>           .... </li><li>}</li></ul>
+<p>Nama properti adalah hal yang akan diubah pada elemen yang dipilih. Kami menggunakan tiga properti berbeda di sini:&#160;</p>
+<p><ul><li>font-family:jenis huruf yang digunakan </li><li>background-color:warna latar belakang </li><li>color:warna teks</li></ul></p>
+<code-sample copy-clipboard-button type="css">  
+<template preserve-content="preserve-content">body {
+    font-family:   &lt;- Jenis huruf untuk teks dalam tag body
+    background-color:  &lt;- Warna latar belakang tag body
+}
+ 
+h1 {
+    color:  &lt;- Warna teks h1
+    font-family: &lt;- Jenis huruf untuk teks dalam tag h1
+}
+ 
+h2 {
+    color:  &lt;- Warna teks h2
+}</template></code-sample>
+<p>Bentuk umum lagi:</p>
+<ul><li><mark data-primary="22">pemilih</mark>{ </li><li>           <mark data-primary="19">nama properti</mark> : <mark data-primary="13">nilai;</mark></li><li>           .... </li><li>}</li></ul>
+<p>Nilai adalah apa yang harus digunakan.&#160;<span>Contoh: </span></p>
+<ul><li>sans-serif: Font sederhana tanpa dekorasi apa pun </li><li>cursive: Font yang terlihat seperti seseorang yang menulisnya, semacam itu </li><li>antiquewhite: Warna kuning kecoklatan muda </li><li>darkgreen: hijau tua </li><li>darkred: merah tua</li></ul>
+<h2 id="header-9b0a5289-0168-944a-4e9b-ba6486c06c99">Satukan semuanya.&#160;</h2>
+<p>Berikut CSS-nya lagi:</p>
+<code-sample copy-clipboard-button type="css">  
+  
+<template preserve-content="preserve-content">body {
+    font-family: sans-serif; 
+    background-color: antiquewhite;
+}
+ 
+h1 {
+    color: darkred; 
+    font-family: cursive; 
+}
+ 
+h2 {
+    color: darkgreen; 
+}</template></code-sample>
+<p>Bagian pertama...</p>
+<code-sample type="css" copy-clipboard-button><template preserve-content="preserve-content">body {
+font-family: sans-serif; 
+background-color: antiquewhite;
+}</template></code-sample>
+<p>... mengatakan untuk membuat seluruh badan menggunakan font sans serif polos, dan membuat warna latar belakang menjadi cokelat. Jadi kita mendapatkan:</p>
+<media-image source="files/cat1.png" alt="cat1.png" accent-color="grey" size="wide" offset="none"></media-image>
+<p><br></p>
+<p><br></p>

@@ -3183,13 +3183,17 @@
       "slug": "aplikasi-web/membuat-html/page",
       "order": 5,
       "parent": "item-f7f19c6e-0234-4e10-a3b8-1aabb9d27181",
-      "title": "Page",
-      "description": "",
+      "title": "Gaya sederhana",
+      "description": "Fakta sebenarnya\nBerikut halamannya.\n\nPenampilannya... yah, jujur &#8203;&#8203;saja, biasa saja.&#160;\nKita bisa menatanya menjadi seperti ini:\n\nBaiklah, kelihatannya lebih buruk, tetapi tetap saja ",
       "metadata": {
         "created": 1733740653,
-        "updated": 1733740653,
-        "images": [],
-        "videos": []
+        "updated": 1733745514,
+        "images": {},
+        "videos": {},
+        "published": true,
+        "hideInMenu": false,
+        "locked": false,
+        "readtime": 2
       }
     },
     {
