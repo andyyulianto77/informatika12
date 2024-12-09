@@ -3183,13 +3183,19 @@
       "slug": "aplikasi-web/membuat-html/page",
       "order": 5,
       "parent": "item-f7f19c6e-0234-4e10-a3b8-1aabb9d27181",
-      "title": "Page",
-      "description": "",
+      "title": "Biaya Perawatan",
+      "description": "Lingkaran\nTulis program PHP untuk menghitung keliling dan luas lingkaran, dari radius di URL. Buat output Anda terlihat seperti program ini\nKirimkan berkas PHP Anda dan URL-nya ke server Anda. Untuk ",
       "metadata": {
         "created": 1733736465,
-        "updated": 1733736465,
-        "images": [],
-        "videos": []
+        "updated": 1733736841,
+        "images": {},
+        "videos": {},
+        "published": true,
+        "pageType": "practice",
+        "hideInMenu": false,
+        "tags": "latihan, html",
+        "locked": false,
+        "readtime": 1
       }
     },
     {
