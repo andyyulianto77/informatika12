@@ -3206,17 +3206,20 @@
       "slug": "aplikasi-web/membuat-html/page-1",
       "order": 6,
       "parent": "item-f7f19c6e-0234-4e10-a3b8-1aabb9d27181",
-      "title": "Page",
+      "title": "Perencana Pesta",
       "description": "Anda mengelola perusahaan pesta anjing. Tulis program untuk memperkirakan biaya, berdasarkan jumlah anjing dan anak anjing yang akan diundang.\ncat dan kitten merupakan variabel input. Anda dapat menc",
       "metadata": {
         "created": 1733736848,
-        "updated": 1733739115,
+        "updated": 1733739453,
         "images": {},
         "videos": {},
         "published": true,
         "hideInMenu": false,
         "locked": false,
-        "readtime": 1
+        "readtime": 1,
+        "pageType": "practice",
+        "tags": "latihan, html",
+        "icon": "hax:shovel"
       }
     },
     {
