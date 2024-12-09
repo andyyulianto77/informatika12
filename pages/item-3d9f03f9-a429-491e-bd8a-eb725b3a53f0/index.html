@@ -20,6 +20,7 @@
 <a11y-collapse heading="Tulis Q-5" heading-button accent-color="grey" icon="icons:expand-more" tooltip="expand" label="expand"><p>Apa yang hilang dari HTML di atas?</p></a11y-collapse>
 <grid-plate item-margin="16" item-padding="16" layout="1-3" data-width="75" data-margin="center" disable-responsive><p slot="col-2">Oh! Tag body itu, tag itu head, tag html itu, benda itu.</p><media-image source="files/fina_senang.jpg" alt="fina_senang.jpg" slot="col-1" accent-color="grey" size="wide" offset="none"></media-image>
 
+
 </grid-plate>
 <p>Benar! Beginilah HTML sebenarnya:</p>
 <ol><li>&lt;!doctype html&gt;</li></ol>
@@ -105,6 +106,7 @@ background-color: antiquewhite;
 
 
 
+
 </grid-plate>
 <p>Benar!&#160;Aturan body tersebut memengaruhi seluruh halaman.&#160;Aturan h1 tersebut menggantikan aturan isi, hanya untuk&#160;elemen h1.&#160;</p>
 <p>Berikut HTML-nya lagi.&#8203;</p>
@@ -115,6 +117,7 @@ background-color: antiquewhite;
   
 
     <media-image source="files/fina_senang.jpg" alt="fina_senang.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" figure-label-title="Fina" modal-title="Fina"></media-image>
+
 
 
 
@@ -154,7 +157,7 @@ body {
 </template></code-sample>
 <p>Tampilannya akan sama persis. Yang penting adalah struktur aturan dan propertinya.&#160;</p>
 <p>Ada beberapa kasus di mana urutan itu penting, tetapi urutannya adalah urutan link rel="stylesheets" di tag head, bukan urutan aturan dalam stylesheet. Kita akan membahasnya nanti.&#160;</p>
-<h2 id="header-9ad55004-65f3-2fb1-0a44-1ed3b540384f">Standar bawaan&#160;</h2>
+<h2 data-original-level="H2" id="header-9ad55004-65f3-2fb1-0a44-1ed3b540384f">Standar bawaan&#160;</h2>
 <p>Berikut tampilannya lagi:&#8203;</p>
 <media-image source="files/cat1.png" alt="cat1.png" accent-color="grey" size="wide" offset="none"></media-image>
 <p>Beberapa HTML:</p>
@@ -173,6 +176,7 @@ body {
 
 
 
+
 </grid-plate>
 <p>Benar! Setiap properti CSS memiliki warna default. Anda dapat melihat warna teks default pada teks asli tanpa gaya.</p>
 <media-image source="files/cat.png" alt="cat.png" accent-color="grey" size="wide" offset="narrow" data-width="75" data-margin="center"></media-image>
@@ -184,7 +188,9 @@ body {
   
 
         <media-image source="files/cat1.png" alt="cat1.png" slot="col-2" accent-color="grey" size="wide" offset="none"></media-image>
+
 <p slot="col-2">Jadi mengapa mereka tidak menggunakan warna header? Bukankah seharusnya Your cats loves you berwarna hijau?</p><media-image source="files/andy_herang.jpg" alt="fina_senang.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" figure-label-title="Andy" modal-title="Andy"></media-image>
+
 
 
 
@@ -196,11 +202,15 @@ body {
 
 </grid-plate>
 <p>Benar juga, Ethan. Itu masuk akal, tetapi bukan begitu cara kerjanya. Berikut kode HTML-nya lagi:</p>
-<p><ul><li>&lt;body&gt;</li><li>     ...</li><li>    &lt;h2&gt;Cinta&lt;/h2&gt;</li><li>    &lt;p&gt;Kucingmu mencintaimu.&lt;/p&gt;</li><li>&lt;/body&gt;</li></ul></p>
+<ul><li>&lt;body&gt;</li><li>     ...</li><li>    &lt;h2&gt;Cinta&lt;/h2&gt;</li><li>    &lt;p&gt;Kucingmu mencintaimu.&lt;/p&gt;</li><li>&lt;/body&gt;</li></ul>
 <p>H2 dan p dibungkus oleh atau disarangkan di body. Jadi, gaya yang diterapkan pada juga diterapkan pada h1 dan&#160; p. Dalam istilah tag h2 dan p mewarisi properti body.</p>
 <p>Namun, tag p muncul setelah Tag h2. Tag h2 ditutup, sebelum tag p dibuka. Tag p tidak terpengaruh oleh properti yang diterapkan pada h2.&#160;</p>
-<stop-note title="Hold up there" accent-color="grey" icon="stopnoteicons:book-icon" status="info" message="&#60;strong data-hax-layout=&quot;true&quot; data-hax-ray=&quot;Bold&quot;=&quot;true&quot;&#62;Basic styles&#60;/strong&#62;
-"><p slot="message"><strong>Basic styles</strong>
+<stop-note title="Latihan" accent-color="grey" icon="stopnoteicons:book-icon" status="info" message="&#60;strong data-hax-layout=&quot;true&quot; data-hax-ray=&quot;Bold&quot;=&quot;true&quot;&#62;Basic styles&#60;/strong&#62;
+" url="aplikasi-web/latihan-buat-html/gaya-dasar" remote-link-url="aplikasi-web/latihan-buat-html/gaya-dasar"><p slot="message"><strong>Basic styles</strong>
 </p>
 </stop-note>
-<p><br></p>
+<p>Ringkasan&#160;</p>
+<ul><li>Lembar gaya memberi tahu peramban tampilan seperti apa yang harus diberikan pada HTML. </li><li>File-file stylesheet ditautkan dalam <code>head</code>. </li><li>Lembar gaya ada dalam bahasa CSS, bukan HTML. </li><li>Anda dapat mengatur font, warna, dan hal lainnya. </li></ul>
+<h2 id="header-3b19388f-51df-691d-874b-cf7ec47b7a5d"><span>Berikutnya</span></h2>
+<p>Dalam pelajaran ini, Anda mempelajari cara memberi gaya pada semua tag h1, h2, dan p pada halaman.</p>
+<p><span>Selanjutnya, Anda akan mempelajari cara menerapkan gaya pada beberapa tag p  atau tag judul saja.</span></p>

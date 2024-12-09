@@ -3178,23 +3178,24 @@
     },
     {
       "id": "item-3d9f03f9-a429-491e-bd8a-eb725b3a53f0",
-      "indent": 2,
+      "indent": 0,
       "location": "pages/item-3d9f03f9-a429-491e-bd8a-eb725b3a53f0/index.html",
       "slug": "aplikasi-web/membuat-html/page",
       "order": 5,
       "parent": "item-f7f19c6e-0234-4e10-a3b8-1aabb9d27181",
-      "title": "Page",
-      "description": "Fakta sebenarnya\nBerikut halamannya.\n\nPenampilannya... yah, jujur &#8203;&#8203;saja, biasa saja.&#160;\nKita bisa menatanya menjadi seperti ini:\n\nBaiklah, kelihatannya lebih buruk, tetapi tetap saja ",
+      "title": "Gaya Sederhana",
+      "description": "Fakta sebenarnya\nBerikut halamannya.\n\nPenampilannya... yah, jujur ​​saja, biasa saja. \nKita bisa menatanya menjadi seperti ini:\n\nBaiklah, kelihatannya lebih buruk, tetapi tetap saja ",
       "metadata": {
         "created": 1733740653,
-        "updated": 1733757286,
+        "updated": 1733757919,
         "images": {},
         "videos": {},
         "published": true,
         "hideInMenu": false,
         "locked": false,
         "readtime": 5,
-        "status": ""
+        "status": "",
+        "pageType": "content"
       }
     },
     {
