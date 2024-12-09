@@ -1,1 +1,45 @@
-<p></p>
+
+<h5p-element></h5p-element>
+<p>Isi pelajaran</p>
+<ul>
+  <li>Panduan pemilik Nouman</li>
+  <li>Kelas memberi Anda konsistensi</li>
+  <li>Membuat kelas lebih umum</li>
+  <li>Beberapa kelas</li>
+  <li>Memisahkan konten dari tampilan</li>
+  <li>Latihan</li>
+  <li>pengenal</li>
+  <li>Latihan</li>
+  <li>Ringkasan</li>
+  <li>Berikutnya</li>
+</ul>
+<h2 data-original-level="H2" id="header-0a081950-4527-287f-7330-d489165c7695">Panduan pemilik Hooman </h2>
+<p>Ketika kucing mendapatkan manusia baru, mereka akan mendapatkan buku petunjuk pemiliknya,
+  meskipun ejaannya adalah "nouman" dan bukan "human". Tidak ada yang tahu alasannya.</p>
+<p>Misalkan kita ingin manualnya seperti ini:</p>
+<p>Ada satu tag h1, dan dua&#160;tag p:</p>
+<code-sample type="html" copy-clipboard-button><template preserve-content="preserve-content"><h1>Panduan Pemilik Hooman</h1>
+<p>Selamat atas pemilikan hooman baru Anda.</p>
+<p>Perhatian! Beberapa manusia menggigit!</p></template></code-sample>
+<p>Namun, kita ingin yang kedua pterlihat berbeda dari yang pertama. Bagaimana caranya?&#160;</p>
+<p>Mari kita ubah sedikit HTML menjadi ini:&#8203;</p>
+<code-sample copy-clipboard-button type="html">  
+<template preserve-content="preserve-content"><h1>Panduan Pemilik Hooman</h1>
+<p>Selamat atas pemilikan hooman baru Anda.</p>
+<p class="warning">Peringatan! Beberapa manusia menggigit!</p></template></code-sample>
+<p>Kami telah menambahkan a class ke tag kedua p. <mark>warning</mark>itu hanya nama yang saya buat. Bisa apa saja.</p>
+<p>Sekarang kita ubah file CSS, untuk memberitahu browser bagaimana cara merender p dengan kelas warning tersebut.</p>
+<code-sample type="javascript" copy-clipboard-button><template preserve-content="preserve-content">p.warning {
+    color: red;
+}</template></code-sample>
+<p>Pemilih berarti "setiap p yang memiliki kelas warning."</p>
+<p>Anda dapat menggunakan kelas ini sebanyak yang Anda inginkan. Misalnya:</p>
+<code-sample type="javascript" copy-clipboard-button><template preserve-content="preserve-content"><h1>Panduan Pemilik Hooman</h1>
+<p>Selamat atas Pemilikan hooman baru Anda.</p>
+<p class="warning">Peringatan! Beberapa manusia menggigit!</p>
+<p>Anda dan hooman Anda dapat menikmati persahabatan selama bertahun-tahun.</p>
+<p class="warning">
+    Peringatan! Beberapa manusia tidak akan mau Anda berada di atas furnitur. Aneh!
+</p></template></code-sample>
+<p>Di sini ada dua peringatan. Hasilnya adalah:</p>
+<p><br></p>
