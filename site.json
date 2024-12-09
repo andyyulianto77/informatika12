@@ -3203,13 +3203,19 @@
       "slug": "aplikasi-web/membuat-html/page-1",
       "order": 6,
       "parent": "item-f7f19c6e-0234-4e10-a3b8-1aabb9d27181",
-      "title": "Page",
-      "description": "",
+      "title": "Gaya dasar",
+      "description": "Anda melihat ini:\n\nBuat halaman dengan beberapa fakta nyata tentang hewan lain. Gunakan warna latar belakang (bukan putih!). Gunakan setidaknya dua warna teks. Gunakan setidaknya dua jenis huruf. Let",
       "metadata": {
         "created": 1733757075,
-        "updated": 1733757075,
-        "images": [],
-        "videos": []
+        "updated": 1733757175,
+        "images": {},
+        "videos": {},
+        "published": true,
+        "pageType": "practice",
+        "hideInMenu": false,
+        "tags": "latihan, html",
+        "locked": false,
+        "readtime": 1
       }
     },
     {
