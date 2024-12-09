@@ -3417,27 +3417,6 @@
       }
     },
     {
-      "id": "item-423f3e75-dd3f-43a1-832a-2be6af784cad",
-      "indent": 0,
-      "location": "pages/item-423f3e75-dd3f-43a1-832a-2be6af784cad/index.html",
-      "slug": "phpstorm",
-      "order": 7,
-      "parent": null,
-      "title": "PHPSTORM",
-      "description": "",
-      "metadata": {
-        "created": 1732016685,
-        "updated": 1733757406,
-        "images": {},
-        "videos": {},
-        "published": true,
-        "hideInMenu": false,
-        "locked": false,
-        "readtime": 1,
-        "status": ""
-      }
-    },
-    {
       "id": "item-96c617a8-0c95-439b-abe5-0eeb2ff866cc",
       "indent": 2,
       "location": "pages/item-96c617a8-0c95-439b-abe5-0eeb2ff866cc/index.html",
