@@ -19,6 +19,7 @@
 <p>Sebenarnya, itu kurang tepat. Apa yang kurang?</p>
 <a11y-collapse heading="Tulis Q-5" heading-button accent-color="grey" icon="icons:expand-more" tooltip="expand" label="expand"><p>Apa yang hilang dari HTML di atas?</p></a11y-collapse>
 <grid-plate item-margin="16" item-padding="16" layout="1-3" data-width="75" data-margin="center" disable-responsive><p slot="col-2">Oh! Tag body itu, tag itu head, tag html itu, benda itu.</p><media-image source="files/fina_senang.jpg" alt="fina_senang.jpg" slot="col-1" accent-color="grey" size="wide" offset="none"></media-image>
+
 </grid-plate>
 <p>Benar! Beginilah HTML sebenarnya:</p>
 <ol><li>&lt;!doctype html&gt;</li></ol>
@@ -31,7 +32,7 @@
 <p>&#60;link rel="stylesheet" href="styles.css"&#62;</p>
 <p>Itu ada di bagian head , jadi itu metadata. Ia memberi tahu browser untuk melihat ke dalam file styles.css, untuk mengetahui cara memberi gaya pada HTML. Kami akan menyimpan gaya secara terpisah dari HTML, sehingga Anda dapat menggunakan kembali gaya dengan mudah.&#160;</p>
 <p>styles.css terdiri dari aturan CSS, yang memberi tahu browser tentang font, warna, dan hal lainnya.&#160;</p>
-<h2 id="header-de785642-e6b0-610a-ed90-dca9491eeaf2">Aturan CSS&#160;</h2>
+<h2 data-original-level="H2" id="header-de785642-e6b0-610a-ed90-dca9491eeaf2">Aturan CSS&#160;</h2>
 <p>Inilah yang ada di styles.css.</p>
 <code-sample type="css" copy-clipboard-button><template preserve-content="preserve-content">body {
     font-family: sans-serif;
@@ -50,11 +51,12 @@ h2 {
 <p>Ada banyak aturan . Semuanya berbentuk:</p>
 <ul><li>pemilih { </li><li>           nama properti : nilai </li><li>           .... </li><li>}</li></ul>
 <p>Pemilih memberi tahu browser aturan apa yang berlaku. Dalam kasus ini:&#160;</p>
-<p><ul><li>body { </li><li>   Cara menampilkan isi tag body. </li><li>} </li><li> h1 { </li><li> Cara menampilkan konten semua tag h1. </li><li>} </li><li> h2 { </li><li> Cara menampilkan konten semua tag h2. </li><li>} </li></ul></p>
+<ul><li>body { </li><li>   Cara menampilkan isi tag body. </li><li>} </li><li> h1 { </li><li> Cara menampilkan konten semua tag h1. </li><li>} </li><li> h2 { </li><li> Cara menampilkan konten semua tag h2. </li><li>} </li></ul>
 <p>Bentuk umum lagi:</p>
 <ul><li><mark data-primary="22">pemilih</mark>{ </li><li>           <mark data-primary="19">nama properti</mark> : <mark data-primary="13">nilai;</mark></li><li>           .... </li><li>}</li></ul>
 <p>Nama properti adalah hal yang akan diubah pada elemen yang dipilih. Kami menggunakan tiga properti berbeda di sini:&#160;</p>
-<p><ul><li>font-family:jenis huruf yang digunakan </li><li>background-color:warna latar belakang </li><li>color:warna teks</li></ul></p>
+<ul><li>font-family:jenis huruf yang digunakan </li><li>background-color:warna latar belakang </li><li>color:warna teks</li></ul>
+<p></p>
 <code-sample copy-clipboard-button type="css">  
 <template preserve-content="preserve-content">body {
     font-family:   &lt;- Jenis huruf untuk teks dalam tag body
@@ -73,7 +75,7 @@ h2 {
 <ul><li><mark data-primary="22">pemilih</mark>{ </li><li>           <mark data-primary="19">nama properti</mark> : <mark data-primary="13">nilai;</mark></li><li>           .... </li><li>}</li></ul>
 <p>Nilai adalah apa yang harus digunakan.&#160;<span>Contoh: </span></p>
 <ul><li>sans-serif: Font sederhana tanpa dekorasi apa pun </li><li>cursive: Font yang terlihat seperti seseorang yang menulisnya, semacam itu </li><li>antiquewhite: Warna kuning kecoklatan muda </li><li>darkgreen: hijau tua </li><li>darkred: merah tua</li></ul>
-<h2 id="header-9b0a5289-0168-944a-4e9b-ba6486c06c99">Satukan semuanya.&#160;</h2>
+<h2 data-original-level="H2" id="header-9b0a5289-0168-944a-4e9b-ba6486c06c99">Satukan semuanya.&#160;</h2>
 <p>Berikut CSS-nya lagi:</p>
 <code-sample copy-clipboard-button type="css">  
   
@@ -97,5 +99,108 @@ background-color: antiquewhite;
 }</template></code-sample>
 <p>... mengatakan untuk membuat seluruh badan menggunakan font sans serif polos, dan membuat warna latar belakang menjadi cokelat. Jadi kita mendapatkan:</p>
 <media-image source="files/cat1.png" alt="cat1.png" accent-color="grey" size="wide" offset="none"></media-image>
-<p><br></p>
+<a11y-collapse heading="Tulis Q-6" heading-button accent-color="grey" icon="icons:expand-more" tooltip="expand" label="expand"><p>Semua teks dalam badan menggunakan font sans serif, kecuali h1. </p><p>Mengapa?</p></a11y-collapse>
+<grid-plate item-padding="4" item-margin="12" layout="1-3" data-width="75" data-margin="center" disable-responsive style="--grid-plate-item-padding: 4px; --grid-plate-item-margin: 12px;">  <p slot="col-2">Karena kode CSS. Tepat setelah aturan body, ada aturan untuk h1.</p><p slot="col-2">h1 {     warna: merah tua;     keluarga font: cursif }</p>
+  <media-image source="files/fina_senang.jpg" alt="fina_senang.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow"></media-image>
+
+
+
+</grid-plate>
+<p>Benar!&#160;Aturan body tersebut memengaruhi seluruh halaman.&#160;Aturan h1 tersebut menggantikan aturan isi, hanya untuk&#160;elemen h1.&#160;</p>
+<p>Berikut HTML-nya lagi.&#8203;</p>
+<ul><li>&lt;body&gt;</li><li>    &lt;h1&gt;Fakta sebenarnya tentang kucing&lt;/h1&gt;</li><li>    ...</li><li>&lt;/body&gt;</li></ul>
+<p>Ada h1 di dalam body. Peramban web menerapkan aturan ke elemen luar terlebih dahulu, jadi semua yang ada di badan teks akan mendapatkan jenis huruf sans serif, termasuk h1. Kemudian peramban masuk ke dalam elemen luar, dan menggunakan aturan yang berlaku di sana. Jadi h1 akan mendapatkan jenis huruf kursif.&#160;</p>
+<p>Ini adalah bagian "berjenjang" dari "lembar gaya berjenjang" yang sedang bekerja.</p>
+<grid-plate style="--grid-plate-item-padding: 4px; --grid-plate-item-margin: 12px;" item-padding="4" item-margin="12" disable-responsive layout="1-3" data-width="75" data-margin="center">    <p slot="col-2">Apakah urutan aturan dalam berkas CSS penting? Misalnya, jika aturan h1 tersebut ada sebelum aturan body lainnya, apakah itu akan mengubah banyak hal?</p>
+  
+
+    <media-image source="files/fina_senang.jpg" alt="fina_senang.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" figure-label-title="Fina" modal-title="Fina"></media-image>
+
+
+
+
+
+</grid-plate>
+<p>Wah, Anda mengajukan pertanyaan yang hebat! Inilah yang kita miliki sekarang:</p>
+<code-sample type="css" copy-clipboard-button><template preserve-content="preserve-content">body {
+    font-family: sans-serif;
+    background-color: antiquewhite;
+}
+ 
+h1 {
+    color: darkred;
+    font-family: cursive
+}
+ 
+h2 {
+    color: darkgreen;
+}</template></code-sample>
+<p>Mari kita balikkan semuanya.</p>
+<code-sample copy-clipboard-button type="css">  
+<template preserve-content="preserve-content">h2 {
+    color: darkgreen;
+}
+
+h1 {
+    color: darkred;
+    font-family: cursive
+}
+
+body {
+    font-family: sans-serif;
+    background-color: antiquewhite;
+}
+ 
+</template></code-sample>
+<p>Tampilannya akan sama persis. Yang penting adalah struktur aturan dan propertinya.&#160;</p>
+<p>Ada beberapa kasus di mana urutan itu penting, tetapi urutannya adalah urutan link rel="stylesheets" di tag head, bukan urutan aturan dalam stylesheet. Kita akan membahasnya nanti.&#160;</p>
+<h2 id="header-9ad55004-65f3-2fb1-0a44-1ed3b540384f">Standar bawaan&#160;</h2>
+<p>Berikut tampilannya lagi:&#8203;</p>
+<media-image source="files/cat1.png" alt="cat1.png" accent-color="grey" size="wide" offset="none"></media-image>
+<p>Beberapa HTML:</p>
+<code-sample type="html" copy-clipboard-button><template preserve-content="preserve-content"><p>Kucing membuat manusia bahagia. Mereka memang begitu.</p>
+<p>Itu fakta.</p></template></code-sample>
+<a11y-collapse heading="Tulis Q-7" heading-button accent-color="grey" icon="icons:expand-more" tooltip="expand" label="expand"><p>Teks untuk p berwarna hitam. Mengapa?</p></a11y-collapse>
+<grid-plate style="--grid-plate-item-padding: 4px; --grid-plate-item-margin: 12px;" item-padding="4" item-margin="12" disable-responsive layout="1-3" data-width="75" data-margin="center">      <p slot="col-2">Anda agak membocorkannya di header bagian ini: default. Saya kira hitam adalah default, jika Anda tidak memberi warna?</p>
+
+  
+
+      <media-image source="files/fina_senang.jpg" alt="fina_senang.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" figure-label-title="Fina" modal-title="Fina"></media-image>
+
+
+
+
+
+
+
+</grid-plate>
+<p>Benar! Setiap properti CSS memiliki warna default. Anda dapat melihat warna teks default pada teks asli tanpa gaya.</p>
+<media-image source="files/cat.png" alt="cat.png" accent-color="grey" size="wide" offset="narrow" data-width="75" data-margin="center"></media-image>
+<p>Warna teks default adalah hitam, warna latar belakang default adalah putih, dan jenis huruf default adalah... seperti itu. Kelihatannya seperti Times Roman, atau semacamnya.&#160;</p>
+<p>Kecuali kita memberi tahu browser sebaliknya, propertinya akan tetap pada nilai default.</p>
+<grid-plate style="--grid-plate-item-padding: 4px; --grid-plate-item-margin: 12px;" item-padding="4" item-margin="12" disable-responsive layout="1-3" data-width="75" data-margin="center">        <p slot="col-2">Saya bingung. Huruf p pada tulisan Your cats loves you ada di bawah judul/header.</p>
+
+
+  
+
+        <media-image source="files/cat1.png" alt="cat1.png" slot="col-2" accent-color="grey" size="wide" offset="none"></media-image>
+<p slot="col-2">Jadi mengapa mereka tidak menggunakan warna header? Bukankah seharusnya Your cats loves you berwarna hijau?</p><media-image source="files/andy_herang.jpg" alt="fina_senang.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" figure-label-title="Andy" modal-title="Andy"></media-image>
+
+
+
+
+
+
+
+
+
+</grid-plate>
+<p>Benar juga, Ethan. Itu masuk akal, tetapi bukan begitu cara kerjanya. Berikut kode HTML-nya lagi:</p>
+<p><ul><li>&lt;body&gt;</li><li>     ...</li><li>    &lt;h2&gt;Cinta&lt;/h2&gt;</li><li>    &lt;p&gt;Kucingmu mencintaimu.&lt;/p&gt;</li><li>&lt;/body&gt;</li></ul></p>
+<p>H2 dan p dibungkus oleh atau disarangkan di body. Jadi, gaya yang diterapkan pada juga diterapkan pada h1 dan&#160; p. Dalam istilah tag h2 dan p mewarisi properti body.</p>
+<p>Namun, tag p muncul setelah Tag h2. Tag h2 ditutup, sebelum tag p dibuka. Tag p tidak terpengaruh oleh properti yang diterapkan pada h2.&#160;</p>
+<stop-note title="Hold up there" accent-color="grey" icon="stopnoteicons:book-icon" status="info" message="&#60;strong data-hax-layout=&quot;true&quot; data-hax-ray=&quot;Bold&quot;=&quot;true&quot;&#62;Basic styles&#60;/strong&#62;
+"><p slot="message"><strong>Basic styles</strong>
+</p>
+</stop-note>
 <p><br></p>
