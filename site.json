@@ -3209,14 +3209,15 @@
       "description": "\nIsi pelajaran\n\n  Panduan pemilik Nouman\n  Kelas memberi Anda konsistensi\n  Membuat kelas lebih umum\n  Beberapa kelas\n  Memisahkan konten dari tampilan\n  Latihan\n  pengenal\n  Latihan\n  Ringkasan\n  Be",
       "metadata": {
         "created": 1733759043,
-        "updated": 1733761341,
+        "updated": 1733763820,
         "images": {},
         "videos": {},
         "published": true,
         "pageType": "lesson",
         "hideInMenu": false,
         "locked": false,
-        "readtime": 1
+        "readtime": 1,
+        "icon": "hax:lesson"
       }
     },
     {
