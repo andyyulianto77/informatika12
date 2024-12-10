@@ -5229,20 +5229,21 @@
       "indent": 0,
       "location": "pages/item-1a42973d-ec37-484e-949e-3b114172aca1/index.html",
       "slug": "page",
-      "order": 4,
+      "order": 5,
       "parent": null,
       "title": "tes",
       "description": "\n\n\n",
       "metadata": {
         "created": 1733817108,
-        "updated": 1733817152,
+        "updated": 1733826616,
         "images": {},
         "videos": {},
         "published": true,
         "pageType": "connection",
         "hideInMenu": false,
         "locked": false,
-        "readtime": 1
+        "readtime": 1,
+        "icon": "courseicons:chem-connection"
       }
     }
   ]
