@@ -5223,6 +5223,22 @@
         "icon": "lrn:page",
         "status": ""
       }
+    },
+    {
+      "id": "item-1a42973d-ec37-484e-949e-3b114172aca1",
+      "indent": 0,
+      "location": "pages/item-1a42973d-ec37-484e-949e-3b114172aca1/index.html",
+      "slug": "page",
+      "order": 3,
+      "parent": null,
+      "title": "Page",
+      "description": "",
+      "metadata": {
+        "created": 1733817108,
+        "updated": 1733817108,
+        "images": [],
+        "videos": []
+      }
     }
   ]
 }
