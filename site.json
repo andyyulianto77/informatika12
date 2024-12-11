@@ -5243,7 +5243,17 @@
         "hideInMenu": false,
         "locked": false,
         "readtime": 1,
-        "icon": "courseicons:chem-connection"
+        "icon": "courseicons:chem-connection",
+        "files": [
+          {
+            "path": "C:\\Users\\andyy\\Downloads\\git\\andyyulianto77\\informatika12\\files\\hax-site-impor.JPG",
+            "fullUrl": "/C:\\Users\\andyy\\Downloads\\git\\andyyulianto77\\informatika12/files/hax-site-impor.JPG",
+            "url": "files/hax-site-impor.JPG",
+            "type": "image/jpeg",
+            "name": "hax-site-impor.JPG",
+            "size": 18597
+          }
+        ]
       }
     }
   ]
