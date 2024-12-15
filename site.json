@@ -3362,6 +3362,22 @@
       }
     },
     {
+      "id": "item-262c470d-8418-4a98-af4e-48e41b9e2e36",
+      "indent": 0,
+      "location": "pages/item-262c470d-8418-4a98-af4e-48e41b9e2e36/index.html",
+      "slug": "aplikasi-web/latihan-buat-html/page",
+      "order": 5,
+      "parent": "item-aec87073-80cf-4c7f-8978-1cd8b98d0dba",
+      "title": "Page",
+      "description": "",
+      "metadata": {
+        "created": 1734273970,
+        "updated": 1734273970,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
       "id": "item-3c245611-951b-4aa7-99d3-8daf8f48dae9",
       "indent": 1,
       "location": "pages/item-3c245611-951b-4aa7-99d3-8daf8f48dae9/index.html",
