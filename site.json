@@ -3201,7 +3201,7 @@
     },
     {
       "id": "item-20fd6f6b-0c3f-4d6f-9164-aa102020fe66",
-      "indent": 2,
+      "indent": 0,
       "location": "pages/item-20fd6f6b-0c3f-4d6f-9164-aa102020fe66/index.html",
       "slug": "aplikasi-web/membuat-html/kelas-dan-id",
       "order": 6,
@@ -3210,7 +3210,7 @@
       "description": " Isi pelajaran   Panduan pemilik Nouman   Kelas memberi Anda konsistensi   Membuat kelas lebih umum   Beberapa kelas   Memisahkan konten dari tampilan   Latihan   pengenal   Latihan   Ringkasan   Be",
       "metadata": {
         "created": 1733759043,
-        "updated": 1734274233,
+        "updated": 1734276198,
         "images": {},
         "videos": {},
         "published": true,
