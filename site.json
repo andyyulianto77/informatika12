@@ -3368,13 +3368,19 @@
       "slug": "aplikasi-web/latihan-buat-html/page",
       "order": 5,
       "parent": "item-aec87073-80cf-4c7f-8978-1cd8b98d0dba",
-      "title": "Page",
-      "description": "",
+      "title": "Lelang",
+      "description": "Buat katalog untuk pelelangan motor. Tampilannya akan seperti ini:\n\nWarna yang tersedia adalah hijau, coklat, hitam, dan corn silk. Jenis huruf khusus adalah kursif dan monospace.&#160;\nGunakan style",
       "metadata": {
         "created": 1734273970,
-        "updated": 1734273970,
-        "images": [],
-        "videos": []
+        "updated": 1734274135,
+        "images": {},
+        "videos": {},
+        "published": true,
+        "pageType": "practice",
+        "hideInMenu": false,
+        "tags": "latihan",
+        "locked": false,
+        "readtime": 1
       }
     },
     {
