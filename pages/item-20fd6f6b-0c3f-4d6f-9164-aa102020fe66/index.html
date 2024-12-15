@@ -1,6 +1,7 @@
 
 <p><iframe-loader source="https://app.lumi.education/api/v1/run/EW89KB/embed" height="500" width="100%"><iframe src="https://app.lumi.education/api/v1/run/EW89KB/embed" width="100%" height="500" frameborder="0" allowfullscreen="allowfullscreen" lang="en" title="tejteketwaktj"></iframe></iframe-loader>
-  <iframe src="https://idbikinweb.com/h5p/15/embed" width="638" height="296" frameborder="0" allowfullscreen="allowfullscreen" lang="en" title="Tip of the week #3 - Drag the Words"></iframe><script src="https://idbikinweb.com/modules/contrib/h5p/vendor/h5p/h5p-core/js/h5p-resizer.js" charset="UTF-8"></script>
+
+  <iframe src="https://idbikinweb.com/h5p/15/embed" width="638" height="296" frameborder="0" allowfullscreen="allowfullscreen" lang="en" title="Tip of the week #3 - Drag the Words"></iframe>&#60;script&#62;&#60;/script&#62;
 </p>
 <p>Isi pelajaran</p>
 <ul>
@@ -30,28 +31,72 @@
 <p>Namun, kita ingin yang kedua pterlihat berbeda dari yang pertama. Bagaimana caranya?</p>
 <p>Mari kita ubah sedikit HTML menjadi ini:&#8203;</p>
 <code-sample copy-clipboard-button type="html">
-  <template preserve-content="preserve-content">
-     <h1>Panduan Pemilik Hooman</h1> 
+  
+<template preserve-content="preserve-content"><h1>Panduan Pemilik Hooman</h1> 
     <p>Selamat atas pemilikan hooman baru Anda.</p>
-    <p>Peringatan! Beberapa manusia menggigit!</p>
-  </template>
-</code-sample>
-<p>Kami telah menambahkan a class ke tag kedua p.
+    <p class="warning">Peringatan! Beberapa manusia menggigit!</p></template></code-sample>
+<p>Kami telah menambahkan sebuah class ke tag kedua p.
   <mark>warning</mark>itu hanya nama yang saya buat. Bisa apa saja.</p>
 <p>Sekarang kita ubah file CSS, untuk memberitahu browser bagaimana cara merender p
   dengan kelas warning tersebut.</p>
 <code-sample type="javascript" copy-clipboard-button>
-  <template preserve-content="preserve-content">p.warning { color: red; }</template>
-</code-sample>
+  
+<template preserve-content="preserve-content">p.warning { color: red; }</template></code-sample>
 <p>Pemilih berarti "setiap p yang memiliki kelas warning."</p>
 <p>Anda dapat menggunakan kelas ini sebanyak yang Anda inginkan. Misalnya:</p>
 <code-sample type="javascript" copy-clipboard-button>
-  <template preserve-content="preserve-content">
-     <h1>Panduan Pemilik Hooman</h1> 
+  
+  <template preserve-content="preserve-content"><h1>Panduan Pemilik Hooman</h1> 
     <p>Selamat atas Pemilikan hooman baru Anda.</p>
-    <p>Peringatan! Beberapa manusia menggigit!</p>
+    <p class="warning">Peringatan! Beberapa manusia menggigit!</p>
     <p>Anda dan hooman Anda dapat menikmati persahabatan selama bertahun-tahun.</p>
-    <p>Peringatan! Beberapa manusia tidak akan mau Anda berada di atas furnitur. Aneh!</p>
-  </template>
-  </code-sample>
+    <p class="warning">Peringatan! Beberapa manusia tidak akan mau Anda berada di atas furnitur. Aneh!</p></template></code-sample>
 <p>Di sini ada dua peringatan. Hasilnya adalah:</p>
+<media-image source="files/output-html1.png" alt="output-html1.png" accent-color="grey" size="wide" offset="none"></media-image>
+<p>Gunakan kembali kelas sebanyak yang Anda suka.&#160;</p>
+<h2 id="header-90132b2f-720e-7716-bb35-ecd27e299df6">Kelas memberi Anda konsistensi&#160;</h2>
+<p>Berikut HTML dan CSS lagi:</p>
+<code-sample copy-clipboard-button type="javascript">
+  
+    
+<template preserve-content="preserve-content"><h1>Panduan Pemilik Hooman</h1> 
+    <p>Selamat atas Pemilikan hooman baru Anda.</p>
+    <p class="warning">Peringatan! Beberapa manusia menggigit!</p>
+    <p>Anda dan hooman Anda dapat menikmati persahabatan selama bertahun-tahun.</p>
+    <p class="warning">Peringatan! Beberapa manusia tidak akan mau Anda berada di atas furnitur. Aneh!</p>
+
+p.warning { 
+  color: red; 
+}</template></code-sample>
+<p>Misalnya kita juga ingin membuat teks peringatan <em>menjadi miring</em> . Kita tinggal mengubah CSS:</p>
+<code-sample copy-clipboard-button type="javascript">
+  
+  
+<template preserve-content="preserve-content">p.warning { 
+   color: red; 
+   font-style: italic;
+
+}</template></code-sample>
+<p>Sekarang semua peringatan berubah:</p>
+<media-image source="files/output-html2.png" alt="output-html2.png" accent-color="grey" size="wide" offset="none"></media-image>
+<p>Apaan nih!</p>
+<h2 id="header-e0acab0e-2b84-4c49-572a-8ae19174e3d9">Membuat kelas lebih umum&#160;</h2>
+<p>Kelas ini hanya dapat diterapkan pada <mark>tag p</mark>. Namun, kita dapat mengubahnya menjadi:&#8203;</p>
+<code-sample copy-clipboard-button type="javascript">
+  
+  
+  
+<template preserve-content="preserve-content">.warning { 
+   color: red; 
+}</template></code-sample>
+<p>Tag p dihapus. Sekarang kelas tersebut dapat diterapkan ke elemen HTML apa pun, seperti ini:</p>
+<code-sample copy-clipboard-button type="javascript">
+  
+    
+  
+<template preserve-content="preserve-content"><h1 class="warning">Panduan Pemilik Hooman</h1> 
+    <p>Selamat atas Pemilikan hooman baru Anda.</p>
+    <h2 class="warning">Peringatan! Beberapa manusia menggigit!</h2>
+    <p>Anda dan hooman Anda dapat menikmati persahabatan selama bertahun-tahun.</p>
+    <p class="warning">Peringatan! Beberapa manusia tidak akan mau Anda berada di atas furnitur. Aneh!</p></template></code-sample>
+<p><br></p>
