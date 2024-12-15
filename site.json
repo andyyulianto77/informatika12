@@ -3369,18 +3369,19 @@
       "order": 5,
       "parent": "item-aec87073-80cf-4c7f-8978-1cd8b98d0dba",
       "title": "Lelang",
-      "description": "Buat katalog untuk pelelangan motor. Tampilannya akan seperti ini:\n\nWarna yang tersedia adalah hijau, coklat, hitam, dan corn silk. Jenis huruf khusus adalah kursif dan monospace.&#160;\nGunakan style",
+      "description": "Buat katalog untuk pelelangan motor. Tampilannya akan seperti ini:\n\nWarna yang tersedia adalah hijau, coklat, hitam, dan corn silk. Jenis huruf khusus adalah kursif dan monospace. \nGunakan style",
       "metadata": {
         "created": 1734273970,
-        "updated": 1734274135,
+        "updated": 1734274161,
         "images": {},
         "videos": {},
         "published": true,
         "pageType": "practice",
         "hideInMenu": false,
-        "tags": "latihan",
+        "tags": "latihan, html",
         "locked": false,
-        "readtime": 1
+        "readtime": 1,
+        "icon": "hax:shovel"
       }
     },
     {
