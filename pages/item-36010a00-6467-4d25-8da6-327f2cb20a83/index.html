@@ -60,15 +60,19 @@
   <grid-plate item-padding="16" item-margin="16" disable-responsive layout="1-3" data-width="75" data-margin="center" data-border-radius="xs" data-border="sm">
     <media-image source="files/fina_senang.jpg" alt="bingung.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" data-margin="center" data-width="50" figure-label-title="Fina" modal-title="Fina" _has-caption=""></media-image>
 
+
   </grid-plate>
+
 
 </p>
 <p data-margin="center">Benar. Itu padding. Lebarnya sekitar satu inci.</p>
 <grid-plate item-padding="16" item-margin="16" disable-responsive layout="1-3" data-width="75" data-margin="center" data-border-radius="xs" data-border="sm">
   <media-image source="files/fina_senang.jpg" alt="bingung.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" data-margin="center" data-width="50" figure-label-title="Fina" modal-title="Fina" _has-caption=""></media-image>
 
+
   <p slot="col-2" data-margin="center">Dan ada celah antara kotak dan tepian halaman.</p>
   <media-image source="files/margin.png" alt="padding.png" slot="col-2" accent-color="grey" size="wide" offset="none"></media-image>
+
 
   <p></p>
 </grid-plate>
@@ -77,8 +81,10 @@
 <grid-plate item-padding="16" item-margin="16" disable-responsive layout="1-3" data-width="75" data-margin="center" data-border-radius="xs" data-border="sm">
   <media-image source="files/izza-senang.jpg" alt="bingung.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" data-margin="center" data-width="50" figure-label-title="Izza" modal-title="Izza" _has-caption=""></media-image>
 
+
   <p slot="col-2" data-margin="center">Tunggu, apa? Dua ems lebarnya? Apa itu?</p>
   <media-image source="files/margin.png" alt="padding.png" slot="col-2" accent-color="grey" size="wide" offset="none"></media-image>
+
 
   <p></p>
 </grid-plate>
@@ -95,7 +101,6 @@
 <p data-border-radius="xs" data-border="sm">Border/Batas 2px</p>
 <p data-border-radius="xs" data-border="md">Border/Batas 4px</p>
 <p data-border-radius="xs" data-border="lg">Border/Batas 8px</p>
-<p></p>
 <p>CSS kami:</p>
 <code-sample type="css" copy-clipboard-button>
   
@@ -118,6 +123,7 @@
     </a11y-collapse>
 <grid-plate item-padding="16" item-margin="16" disable-responsive layout="1-3" data-width="100" data-margin="center" data-border-radius="xs" data-border="sm">
       <media-image source="files/fina_senang2.jpg" alt="bingung.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" data-margin="center" data-width="50" figure-label-title="Fina" modal-title="Fina" _has-caption=""></media-image>
+
 
       <p slot="col-2" data-margin="center">Oh! Kurasa begitu. Mungkin.</p>
       <p slot="col-2" data-margin="center">Saat Anda memperbesar tampilan di browser (Ctrl-+), teks akan menjadi lebih besar.
@@ -168,6 +174,7 @@
 
 
 
+
         <p slot="col-2" data-margin="center">Ada celah antara teks di dalam kotak dan batasnya.</p>
 
         
@@ -175,12 +182,14 @@
         
 
         <media-image source="files/padding.png" alt="padding.png" slot="col-2" accent-color="grey" size="wide" offset="narrow"></media-image>
+
 <p></p>
 
     </grid-plate>
 <p>Benar. Itu padding. Lebarnya sekitar satu inci.</p>
 <grid-plate item-padding="16" item-margin="16" disable-responsive layout="1-3" data-width="100" data-margin="center" data-border-radius="xs" data-border="sm">
           <media-image source="files/fina_senang2.jpg" alt="bingung.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" data-margin="center" data-width="50" figure-label-title="Fina" modal-title="Fina" _has-caption=""></media-image>
+
 
 
 
@@ -196,6 +205,7 @@
           <media-image source="files/margin.png" alt="padding.png" slot="col-2" accent-color="grey" size="wide" offset="narrow"></media-image>
 
 
+
   <p></p>
 
 
@@ -203,7 +213,7 @@
 <p>Ya! Itu dia margin. Lebarnya dua ems.&#160;</p>
 <p>Oke, pemutaran ulang selesai, kita semua sudah mengetahuinya.&#8203;</p>
 <p>Mari tambahkan margin dan padding ke aturan CSS.</p>
-<code-sample type="javascript" copy-clipboard-button><template preserve-content="preserve-content">.attention {
+<code-sample type="css" copy-clipboard-button><template preserve-content="preserve-content">.attention {
     border: lightgrey 4px solid;
     border-radius: 4px;
     padding: 1rem
@@ -212,4 +222,49 @@
 <p>Hal ini memberi kita:</p>
 <media-image source="files/attention.png" alt="attention.png" accent-color="grey" size="wide" offset="none"></media-image>
 <p>Di dalam...</p>
-<p><br></p>
+<code-sample copy-clipboard-button type="html">
+  
+  
+  
+<template preserve-content="preserve-content"><div class="attention">
+       <h3>Attention</h3>
+
+      <p>Sub woofer bork puggorino long bois, snoot blop.</p>
+    </div>
+</template></code-sample>
+<p>... div mengelompokkan h3 dan pbersama-sama, dan mari kita menata grup tersebut.</p>
+<h2 data-original-level="H2" id="header-2fd792f0-8bbb-f2b9-c0cd-afa11ce3ab0e">Rentang&#160;</h2>
+<p>Terkadang Anda ingin memberi gaya pada teks yang ada di dalam tag lain. Berikut beberapa contohnya:&#8203;</p>
+<media-image source="files/output-html6.png" alt="output-html6.png" accent-color="grey" size="wide" offset="none"></media-image>
+<p>Tag span ini sangat cocok untuk hal ini. Berikut cara penggunaannya.</p>
+<code-sample type="javascript" copy-clipboard-button><template preserve-content="preserve-content"><p>
+        Rosie adalah seekor kucing yang <span class="cute-cat">lucu</span>!
+    </p>
+    <p>
+        Mari kita sambut sang <span class="champion">juara</span>
+        Tim bola voli wanita Golden Grizzlies!
+    </p></template></code-sample>
+<p>Seperti div, span tidak menunjukkan apa pun dengan sendirinya. Namun, ia memungkinkan Anda membungkus beberapa konten, dan menatanya.&#160;</p>
+<p>Berikut CSS yang membuat efek di atas.</p>
+<code-sample type="css" copy-clipboard-button><template preserve-content="preserve-content">.cute-cat {
+    font-weight: bold;
+    color: magenta;
+    font-style: italic;
+}
+.champion {
+    font-weight: bold;
+    color: goldenrod;
+    text-transform: uppercase;
+}</template></code-sample>
+<p>Berikut ini adalah properti yang digunakan di sini:&#160;</p>
+<ul><li>font-weight: membuat teks tebal </li><li>color: mengatur warna teks </li><li>font-style: membuat teks miring </li><li>text-transform: mengubah teks menjadi huruf besar​</li></ul>
+<h2 id="header-26fd87a8-1c5c-696b-cf41-b8b752f6e45b">Panduan video&#160;</h2>
+<p>Berikut video singkatnya, yang menggunakan ide-ide di atas.</p>
+<video-player source="https://youtu.be/ceO-B340orw" data-width="100" data-margin="center" accent-color="grey" crossorigin="anonymous" sticky-corner="none" resource="#a3204778-02f9-d01e-0310-726f82bf1e26" prefix="oer:http://oerschema.org/ schema:http://schema.org/ dc:http://purl.org/dc/terms/ foaf:http://xmlns.com/foaf/0.1/ cc:http://creativecommons.org/ns# bib:http://bib.schema.org " element-visible lang="en" t="{&quot;embeddedMedia&quot;:&quot;embedded media&quot;}" source-type="youtube" sources="[]" source-data="[{&quot;src&quot;:&quot;https://www.youtube.com/embed/ceO-B340orw&quot;,&quot;type&quot;:&quot;&quot;}]" tracks="[]"></video-player>
+<stop-note title="LATIHAN" accent-color="grey" icon="stopnoteicons:book-icon" status="info"><p slot="message">Buat halaman yang terlihat seperti di atas: </p><p slot="message">Halaman HTML lengkap, seperti biasa. Gunakan stylesheet terpisah. Unggah ke server Anda. Kirimkan URL-nya.</p><p slot="message"></p>
+<media-image source="files/goal (1).png" alt="goal (1).png" accent-color="grey" size="wide" offset="narrow" data-width="75"></media-image>
+</stop-note>
+<h2 id="header-50377792-77d6-4959-442b-b3b9ef5020a0">Ringkasan&#160;</h2>
+<p>div dan span membuat wadah, yang dapat Anda beri gaya. div berisi tag lainnya. span biasanya digunakan di dalam tag lain, untuk memberi gaya pada bagian teks.&#160;</p>
+<h2 id="header-38833ec0-9598-44aa-d309-d02409d81db1">Berikutnya&#160;</h2>
+<p>Apa yang Anda lakukan ketika gaya Anda tidak berhasil?</p>

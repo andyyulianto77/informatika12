@@ -3230,17 +3230,17 @@
       "order": 7,
       "parent": "item-f7f19c6e-0234-4e10-a3b8-1aabb9d27181",
       "title": "Div dan span",
-      "description": "Anda memiliki 15 ptag pada satu halaman. Anda ingin menerapkan tampilan khusus hanya pada tiga tag. Atribut HTML apa yang akan Anda gunakan untuk menentukan ketiga tag tersebut?\nIsi pelajaran \nD",
+      "description": "Anda memiliki 15 ptag pada satu halaman. Anda ingin menerapkan tampilan khusus hanya pada tiga tag. Atribut HTML apa yang akan Anda gunakan untuk menentukan ketiga tag tersebut? Isi pelajaran  D",
       "metadata": {
         "created": 1734321193,
-        "updated": 1734330756,
+        "updated": 1734339710,
         "images": {},
         "videos": {},
         "published": true,
         "pageType": "content",
         "hideInMenu": false,
         "locked": false,
-        "readtime": 4,
+        "readtime": 5,
         "icon": "lrn:page"
       }
     },
