@@ -4,6 +4,7 @@
 
 
 
+
   <iframe src="https://idbikinweb.com/h5p/15/embed" width="638" height="296" frameborder="0" allowfullscreen="allowfullscreen" lang="en" title="Tip of the week #3 - Drag the Words"></iframe></p>
 <p>Isi pelajaran</p>
 <ul>
@@ -106,7 +107,9 @@ p.warning {
 
 
 
+
       </grid-plate>
+
 
 </p>
 <p></p>
@@ -190,6 +193,7 @@ h2.darkred {
 
 
 
+
         <p slot="col-2" data-margin="center">Wah, ini rumit. Dengan menggunakan reddan darkred dalam HTML, Anda akan tahu seperti apa tampilan kontennya. Namun, saya rasa Anda akan menggunakan kelas warning.
         <br>
       </p>
@@ -205,16 +209,19 @@ h2.darkred {
 
 
 
+
           <p slot="col-2" data-margin="center">Tunggu, saya punya ide. Di Cina, merah bukanlah warna peringatan. Itu adalah warna keberuntungan. Jadi jika Anda punya...</p>
 
 
     <code-sample type="javascript" copy-clipboard-button slot="col-2"><template preserve-content="preserve-content"><p class="warning">Peringatan! Beberapa manusia tidak akan mau Anda berada di atas furnitur. Aneh!</p></template></code-sample>
 
 
+
 <p slot="col-2">...itulah yang Anda maksud. Apa yang terbaik untuk dilihat <b>warning</b>, mungkin berbeda di tempat yang berbeda.</p></grid-plate>
 <p></p>
 <grid-plate item-padding="16" item-margin="16" disable-responsive layout="1-3" data-width="75" data-margin="center" data-border-radius="xs" data-border="sm">
             <media-image source="files/andy_senang.jpg" alt="bingung.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" data-margin="center" data-width="50" figure-label-title="Andy" modal-title="Andy" _has-caption=""></media-image>
+
 
 
 
@@ -231,8 +238,10 @@ h2.darkred {
       <code-sample type="javascript" copy-clipboard-button slot="col-2"><template preserve-content="preserve-content"><p class="red">Peringatan! Beberapa manusia tidak akan mau Anda berada di atas furnitur. Aneh!</p></template></code-sample>
 
 
+
 <p slot="col-2">... yang tidak akan memberi tahu Anda semua yang sedang terjadi. Ini...</p><code-sample copy-clipboard-button type="javascript" slot="col-2">  
 <template preserve-content="preserve-content"><p class="warning">Peringatan! Beberapa manusia tidak akan mau Anda berada di atas furnitur. Aneh!</p></template></code-sample>
+
 
 
 
@@ -249,6 +258,7 @@ h2.darkred {
 
 
 
+
           <p slot="col-2" data-margin="center">Hei, itu pemikiran yang bagus, kalian berdua.</p>
 
 
@@ -258,6 +268,39 @@ h2.darkred {
 <template preserve-content="preserve-content"><p class="warning">Peringatan! Beberapa manusia tidak akan mau Anda berada di atas furnitur. Aneh!</p></template></code-sample>
 <p>Mereka akan mengatakan bahwa markup lebih bersifat semantik . Markup semantik lebih tentang makna, bukan detail tampilan. Biarkan detail tampilan di CSS. Taruh struktur dan maksud di HTML.&#160;</p>
 <p>Pemisahan antara maksud dalam HTML dan implementasi dalam CSS tidak selalu jelas. Tidak apa-apa. Cobalah untuk mempertahankan semantik dalam HTML dan menampilkannya dalam CSS, sebisa mungkin.</p>
-<stop-note title="Latihan CSS" accent-color="grey" icon="stopnoteicons:book-icon" status="info" message="&#60;strong data-hax-layout=&quot;true&quot; data-hax-ray=&quot;Bold&quot;=&quot;true&quot;&#62;Read these important things!&#60;/strong&#62;
-" url="aplikasi-web/latihan-buat-html/lelang" remote-link-url="aplikasi-web/latihan-buat-html/lelang"><p slot="message"><b>Buat katalog untuk pelelangan motor. Tampilannya akan seperti ini:</b></p>
+<stop-note title="Latihan CSS" accent-color="grey" icon="stopnoteicons:book-icon" status="info" message="&#60;b data-hax-layout=&quot;true&quot; data-hax-ray=&quot;Bold&quot;=&quot;true&quot;&#62;Buat katalog untuk pelelangan motor. Tampilannya akan seperti ini:&#60;/b&#62;" url="aplikasi-web/latihan-buat-html/lelang" remote-link-url="aplikasi-web/latihan-buat-html/lelang" remote-link-target="{}"><p slot="message"><b>Buat katalog untuk pelelangan motor. Tampilannya akan seperti ini:</b></p>
 </stop-note>
+<h2 id="header-57534d41-a80f-7336-ff67-3ba2d29e9204">id&#160;</h2>
+<p>Anda telah mempelajari cara menargetkan elemen HTML dengan kelas. Anda telah mempelajari cara menerapkan kelas yang sama ke lebih dari satu elemen.&#160;</p>
+<p>Masuk akal untuk dapat memiliki banyak peringatan pada satu halaman. Namun, terkadang Anda ingin elemennya menjadi unik.&#160;</p>
+<p>Berikut beberapa HTML:</p>
+<code-sample type="html" copy-clipboard-button><template preserve-content="preserve-content"><h3 class="frog">Katak Adalah Kita</h3>
+<p class="katak">Ribbit.</p></template></code-sample>
+<p>Gunakan . di stylesheet untuk memilih elemen dengan kelas:</p>
+<code-sample type="css" copy-clipboard-button><template preserve-content="preserve-content">.katak {
+  color: green;
+}</template></code-sample>
+<p>Itu membuat semua yang berkelas frogmenjadi hijau. . berarti kelas.&#160;</p>
+<p>Misalkan kita memiliki HTML ini:</p>
+<code-sample copy-clipboard-button type="html">  
+<template preserve-content="preserve-content"><h3 class="frog">Katak Adalah Kita</h3>
+<p class="katak">Ribbit.</p>
+<p id="justin" class="frog">Ribbit. Saya Justin.</p>
+</template></code-sample>
+<p>Gunakan # di stylesheet untuk memilih elemen dengan id:</p>
+<code-sample copy-clipboard-button type="css">  
+<template preserve-content="preserve-content">.katak {
+  color: green;
+}
+
+#justin {
+  font-style: italics;
+}</template></code-sample>
+<p>Segala sesuatu yang berkelas frog akan berwarna hijau.&#160;Elemen&#160;justin juga akan dicetak miring, tetapi hanya satu itu saja.&#160;</p>
+<p>Gunakan tag id saat Anda memiliki elemen individual yang ingin Anda beri gaya. Seharusnya hanya ada satu elemen pada halaman dengan id. Misalnya, halaman biasanya memiliki satu footer, satu petak halaman, dan satu menu atas.</p>
+<stop-note accent-color="grey" remote-link-target="{}" remote-link-url="aplikasi-web/latihan-buat-html/lelang" title="Barang spesial" url="aplikasi-web/latihan-buat-html/lelang" icon="stopnoteicons:book-icon" status="info" message="&#60;b data-hax-layout=&quot;true&quot; data-hax-ray=&quot;Bold&quot;=&quot;true&quot;&#62;Ulangi latihan lelang, tetapi kali ini, salah satu item diidentifikasi sebagai item khusus. Hanya boleh ada satu item. Buatlah seperti ini:&#60;/b&#62;">  <p slot="message"><b>Ulangi latihan lelang, tetapi kali ini, salah satu item diidentifikasi sebagai item khusus. Hanya boleh ada satu item. Buatlah seperti ini:</b></p>
+
+</stop-note>
+<p></p>
+<p></p>
+<p><br></p>
