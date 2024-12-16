@@ -3394,13 +3394,18 @@
       "slug": "aplikasi-web/latihan-buat-html/page",
       "order": 6,
       "parent": "item-aec87073-80cf-4c7f-8978-1cd8b98d0dba",
-      "title": "Page",
-      "description": "",
+      "title": "Barang spesial",
+      "description": "Ulangi latihan lelang, tetapi kali ini, salah satu item diidentifikasi sebagai item khusus. Hanya boleh ada satu item. Buatlah seperti ini:\n\nIdentifikasi item khusus dengan id, serta class menunjukka",
       "metadata": {
         "created": 1734320130,
-        "updated": 1734320130,
-        "images": [],
-        "videos": []
+        "updated": 1734320353,
+        "images": {},
+        "videos": {},
+        "published": true,
+        "pageType": "practice",
+        "hideInMenu": false,
+        "locked": false,
+        "readtime": 1
       }
     },
     {
