@@ -3229,13 +3229,18 @@
       "slug": "aplikasi-web/membuat-html/page",
       "order": 7,
       "parent": "item-f7f19c6e-0234-4e10-a3b8-1aabb9d27181",
-      "title": "Page",
-      "description": "",
+      "title": "Div dan span",
+      "description": "Anda memiliki 15 ptag pada satu halaman. Anda ingin menerapkan tampilan khusus hanya pada tiga tag. Atribut HTML apa yang akan Anda gunakan untuk menentukan ketiga tag tersebut?\nIsi pelajaran&#160;\nD",
       "metadata": {
         "created": 1734321193,
-        "updated": 1734321193,
-        "images": [],
-        "videos": []
+        "updated": 1734321962,
+        "images": {},
+        "videos": {},
+        "published": true,
+        "pageType": "content",
+        "hideInMenu": false,
+        "locked": false,
+        "readtime": 1
       }
     },
     {
