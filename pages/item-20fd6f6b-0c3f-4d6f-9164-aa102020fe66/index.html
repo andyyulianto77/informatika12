@@ -1,11 +1,11 @@
 
-<p><iframe-loader source="https://app.lumi.education/api/v1/run/EW89KB/embed" height="500" width="100%"><iframe src="https://app.lumi.education/api/v1/run/EW89KB/embed" width="100%" height="500" frameborder="0" allowfullscreen="allowfullscreen" lang="en" title="tejteketwaktj"></iframe></iframe-loader>
+<p>
+  <iframe-loader source="https://app.lumi.education/api/v1/run/EW89KB/embed" height="500" width="100%">
+    <iframe src="https://app.lumi.education/api/v1/run/EW89KB/embed" width="100%" height="500" frameborder="0" allowfullscreen="allowfullscreen" lang="en" title="tejteketwaktj"></iframe>
+  </iframe-loader>
 
-
-
-
-
-  <iframe src="https://idbikinweb.com/h5p/15/embed" width="638" height="296" frameborder="0" allowfullscreen="allowfullscreen" lang="en" title="Tip of the week #3 - Drag the Words"></iframe></p>
+  <iframe src="https://idbikinweb.com/h5p/15/embed" width="638" height="296" frameborder="0" allowfullscreen="allowfullscreen" lang="en" title="Tip of the week #3 - Drag the Words"></iframe>
+</p>
 <p>Isi pelajaran</p>
 <ul>
   <li>Panduan pemilik Nouman</li>
@@ -19,288 +19,274 @@
   <li>Ringkasan</li>
   <li>Berikutnya</li>
 </ul>
-<h2 data-original-level="H2" id="header-8c1e82ae-6311-fe1a-c7ef-7b7ddbcd6401">Panduan pemilik Hooman </h2>
+<h2 data-original-level="H2" id="header-8c1e82ae-6311-fe1a-c7ef-7b7ddbcd6401">Panduan pemilik Kity</h2>
 <p>Ketika kucing mendapatkan manusia baru, mereka akan mendapatkan buku petunjuk pemiliknya,
-  meskipun ejaannya adalah "nouman" dan bukan "human". Tidak ada yang tahu alasannya.</p>
+  meskipun ejaannya adalah "kucing" dan bukan "kity". Tidak ada yang tahu alasannya.</p>
 <p>Misalkan kita ingin manualnya seperti ini:</p>
 <p>Ada satu tag h1, dan dua tag p:</p>
 <code-sample type="html" copy-clipboard-button>
   <template preserve-content="preserve-content">
-     <h1>Panduan Pemilik Hooman</h1> 
-    <p>Selamat atas pemilikan hooman baru Anda.</p>
+     <h1>Panduan Pemilik kity</h1> 
+    <p>Selamat atas pemilikan kity baru Anda.</p>
     <p>Perhatian! Beberapa manusia menggigit!</p>
   </template>
 </code-sample>
 <p>Namun, kita ingin yang kedua pterlihat berbeda dari yang pertama. Bagaimana caranya?</p>
 <p>Mari kita ubah sedikit HTML menjadi ini:&#8203;</p>
 <code-sample copy-clipboard-button type="html">
-  
-<template preserve-content="preserve-content"><h1>Panduan Pemilik Hooman</h1> 
-    <p>Selamat atas pemilikan hooman baru Anda.</p>
-    <p class="warning">Peringatan! Beberapa manusia menggigit!</p></template></code-sample>
+  <template preserve-content="preserve-content">
+     <h1>Panduan Pemilik kity</h1> 
+    <p>Selamat atas pemilikan kity baru Anda.</p>
+    <p class="warning">Peringatan! Beberapa manusia menggigit!</p>
+  </template>
+</code-sample>
 <p>Kami telah menambahkan sebuah class ke tag kedua p.
   <mark>warning</mark>itu hanya nama yang saya buat. Bisa apa saja.</p>
 <p>Sekarang kita ubah file CSS, untuk memberitahu browser bagaimana cara merender p
   dengan kelas warning tersebut.</p>
 <code-sample type="javascript" copy-clipboard-button>
-  
-<template preserve-content="preserve-content">p.warning { color: red; }</template></code-sample>
+  <template preserve-content="preserve-content">p.warning { color: red; }</template>
+</code-sample>
 <p>Pemilih berarti "setiap p yang memiliki kelas warning."</p>
 <p>Anda dapat menggunakan kelas ini sebanyak yang Anda inginkan. Misalnya:</p>
 <code-sample type="javascript" copy-clipboard-button>
-  
-  <template preserve-content="preserve-content"><h1>Panduan Pemilik Hooman</h1> 
-    <p>Selamat atas Pemilikan hooman baru Anda.</p>
+  <template preserve-content="preserve-content">
+     <h1>Panduan Pemilik kity</h1> 
+    <p>Selamat atas Pemilikan kity baru Anda.</p>
     <p class="warning">Peringatan! Beberapa manusia menggigit!</p>
-    <p>Anda dan hooman Anda dapat menikmati persahabatan selama bertahun-tahun.</p>
-    <p class="warning">Peringatan! Beberapa manusia tidak akan mau Anda berada di atas furnitur. Aneh!</p></template></code-sample>
+    <p>Anda dan kity Anda dapat menikmati persahabatan selama bertahun-tahun.</p>
+    <p class="warning">Peringatan! Beberapa manusia tidak akan mau Anda berada di atas furnitur. Aneh!</p>
+  </template>
+  </code-sample>
 <p>Di sini ada dua peringatan. Hasilnya adalah:</p>
 <media-image source="files/output-html1.png" alt="output-html1.png" accent-color="grey" size="wide" offset="none"></media-image>
 <p>Gunakan kembali kelas sebanyak yang Anda suka.&#160;</p>
 <h2 data-original-level="H2" id="header-90132b2f-720e-7716-bb35-ecd27e299df6">Kelas memberi Anda konsistensi&#160;</h2>
 <p>Berikut HTML dan CSS lagi:</p>
 <code-sample copy-clipboard-button type="javascript">
-  
-    
-<template preserve-content="preserve-content"><h1>Panduan Pemilik Hooman</h1> 
-    <p>Selamat atas Pemilikan hooman baru Anda.</p>
-    <p class="warning">Peringatan! Beberapa manusia menggigit!</p>
-    <p>Anda dan hooman Anda dapat menikmati persahabatan selama bertahun-tahun.</p>
-    <p class="warning">Peringatan! Beberapa manusia tidak akan mau Anda berada di atas furnitur. Aneh!</p>
-
-p.warning { 
-  color: red; 
-}</template></code-sample>
-<p>Misalnya kita juga ingin membuat teks peringatan <em>menjadi miring</em> . Kita tinggal mengubah CSS:</p>
+    <template preserve-content="preserve-content">
+       <h1>Panduan Pemilik kity</h1> 
+      <p>Selamat atas Pemilikan kity baru Anda.</p>
+      <p class="warning">Peringatan! Beberapa manusia menggigit!</p>
+      <p>Anda dan kity Anda dapat menikmati persahabatan selama bertahun-tahun.</p>
+      <p class="warning">Peringatan! Beberapa manusia tidak akan mau Anda berada di atas furnitur. Aneh!</p>p.warning
+      { color: red; }</template>
+  </code-sample>
+<p>Misalnya kita juga ingin membuat teks peringatan <em>menjadi miring</em> . Kita tinggal
+    mengubah CSS:</p>
 <code-sample copy-clipboard-button type="javascript">
-  
-  
-<template preserve-content="preserve-content">p.warning { 
-   color: red; 
-   font-style: italic;
-
-}</template></code-sample>
+    <template preserve-content="preserve-content">p.warning { color: red; font-style: italic; }</template>
+  </code-sample>
 <p>Sekarang semua peringatan berubah:</p>
 <media-image source="files/output-html2.png" alt="output-html2.png" accent-color="grey" size="wide" offset="none"></media-image>
 <p>Apaan nih!</p>
 <h2 data-original-level="H2" id="header-e0acab0e-2b84-4c49-572a-8ae19174e3d9">Membuat kelas lebih umum&#160;</h2>
-<p>Kelas ini hanya dapat diterapkan pada <mark>tag p</mark>. Namun, kita dapat mengubahnya menjadi:&#8203;</p>
+<p>Kelas ini hanya dapat diterapkan pada
+    <mark>tag p</mark>. Namun, kita dapat mengubahnya menjadi:&#8203;</p>
 <code-sample copy-clipboard-button type="css">
-  
-  
-  
-<template preserve-content="preserve-content">.warning { 
-   color: red; 
-}</template></code-sample>
-<p>Tag p dihapus. Sekarang kelas tersebut dapat diterapkan ke elemen HTML apa pun, seperti ini:</p>
+    <template preserve-content="preserve-content">.warning { color: red; }</template>
+  </code-sample>
+<p>Tag p dihapus. Sekarang kelas tersebut dapat diterapkan ke elemen HTML apa pun,
+    seperti ini:</p>
 <code-sample copy-clipboard-button type="html">
-  
-    
-  
-<template preserve-content="preserve-content"><h1 class="warning">Panduan Pemilik Kity</h1> 
-    <p>Selamat atas Pemilikan Kity baru Anda.</p>
-    <h2 class="warning">Peringatan! Beberapa manusia menggigit!</h2>
-    <p>Anda dan hooman Anda dapat menikmati persahabatan selama bertahun-tahun.</p>
-    <p class="warning">Peringatan! Beberapa manusia tidak akan mau Anda berada di atas furnitur. Aneh!</p></template></code-sample>
-<p> <grid-plate item-margin="16" item-padding="16" layout="1-3" data-width="75" data-margin="center" data-border-radius="xs" data-border="sm" disable-responsive>
+    <template preserve-content="preserve-content">
+       <h1 class="warning">Panduan Pemilik Kity</h1> 
+      <p>Selamat atas Pemilikan Kity baru Anda.</p>
+       <h2 class="warning">Peringatan! Beberapa manusia menggigit!</h2>
+
+      <p>Anda dan kity Anda dapat menikmati persahabatan selama bertahun-tahun.</p>
+      <p class="warning">Peringatan! Beberapa manusia tidak akan mau Anda berada di atas furnitur. Aneh!</p>
+    </template>
+  </code-sample>
+<p>
+    <grid-plate item-margin="16" item-padding="16" layout="1-3" data-width="75" data-margin="center" data-border-radius="xs" data-border="sm" disable-responsive>
       <media-image source="files/fina_senang.jpg" alt="bingung.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" data-margin="center" data-width="50" figure-label-title="Fina" modal-title="Fina" _has-caption=""></media-image>
 
+    </grid-plate>
 
-
-
-      </grid-plate>
-
-
-</p>
+  </p>
 <p></p>
 <p>Tidak sama persis. Mari kita bahas HTML lagi.</p>
 <code-sample copy-clipboard-button type="html">
-  
-    
-  
-  
-<template preserve-content="preserve-content"><h1 class="warning">Panduan Pemilik Kity</h1> 
-    <p>Selamat atas Pemilikan Kity baru Anda.</p>
-    <h2 class="warning">Peringatan! Beberapa manusia menggigit!</h2>
-    <p>Anda dan hooman Anda dapat menikmati persahabatan selama bertahun-tahun.</p>
-    <p class="warning">Peringatan! Beberapa manusia tidak akan mau Anda berada di atas furnitur. Aneh!</p></template></code-sample>
-<p>Mungkin kita ingin h2 peringatannya berwarna merah tua, tetapi p <mark>peringatannya</mark>berwarna merah muda. Kita dapat melakukan ini di berkas CSS:</p>
-<code-sample copy-clipboard-button type="css">
-  
-  
-  
-  
-<template preserve-content="preserve-content">p.warning { 
-   color: red; 
-}
+    <template preserve-content="preserve-content">
+       <h1 class="warning">Panduan Pemilik Kity</h1> 
+      <p>Selamat atas Pemilikan Kity baru Anda.</p>
+       <h2 class="warning">Peringatan! Beberapa manusia menggigit!</h2>
 
-h2.warning { 
-   color: darkred; 
-}</template></code-sample>
+      <p>Anda dan kity Anda dapat menikmati persahabatan selama bertahun-tahun.</p>
+      <p class="warning">Peringatan! Beberapa manusia tidak akan mau Anda berada di atas furnitur. Aneh!</p>
+    </template>
+  </code-sample>
+<p>Mungkin kita ingin h2 peringatannya berwarna merah tua, tetapi p
+    <mark>peringatannya</mark>berwarna merah muda. Kita dapat melakukan ini di berkas CSS:</p>
+<code-sample copy-clipboard-button type="css">
+    <template preserve-content="preserve-content">p.warning { color: red; } h2.warning { color: darkred; }</template>
+    </code-sample>
 <p>Akan terlihat seperti ini:</p>
 <media-image source="files/output-html3.png" alt="output-html3.png" accent-color="grey" size="wide" offset="none"></media-image>
-<p>Jadi, tentukan tampilan seperti apa yang Anda inginkan, dan atur kelas Anda agar sesuai dengan tampilan tersebut.</p>
+<p>Jadi, tentukan tampilan seperti apa yang Anda inginkan, dan atur kelas Anda agar
+      sesuai dengan tampilan tersebut.</p>
 <h2 data-original-level="H2" id="header-d1138a63-2713-dc17-e4bc-730bbf5656bb">Beberapa kelas&#160;</h2>
 <p>Elemen dapat memiliki lebih dari satu kelas, seperti ini: &#8203;</p>
-<br/><code-sample type="css" copy-clipboard-button class="blinkfocus"><template preserve-content="preserve-content"><p class="warning silly">Perhatian! Ada kucing di depan!</p></template></code-sample>
-<p>Ada dua kelas. Kelas-kelas tersebut <code>p</code>dapat mengatur properti yang berbeda. Mungkin <code>warning</code>mengatur warna menjadi merah, dan <code>silly</code>mengubahnya menjadi font yang lucu. Bersama-sama, Anda mendapatkan font merah yang lucu.</p>
+<br/><code-sample type="css" copy-clipboard-button class="blinkfocus">
+      <template preserve-content="preserve-content">
+        <p class="warning silly">Perhatian! Ada kucing di depan!</p>
+      </template>
+    </code-sample>
+<p>Ada dua kelas. Kelas-kelas tersebut <code>p</code>dapat mengatur properti yang berbeda.
+      Mungkin <code>warning</code>mengatur warna menjadi merah, dan <code>silly</code>mengubahnya
+      menjadi font yang lucu. Bersama-sama, Anda mendapatkan font merah yang lucu.</p>
 <h2 data-original-level="H2" id="header-e6679326-c6b5-71cd-1d2b-0b6a843f7a09">Memisahkan konten dari tampilan&#160;</h2>
 <p>Coba lihat lagi. Berikut beberapa kode HTML:</p>
 <code-sample copy-clipboard-button type="html">
-  
-    
-  
-  
-  
-<template preserve-content="preserve-content"><h1 class="warning">Panduan Pemilik Kity</h1> 
-    <p>Selamat atas Pemilikan Kity baru Anda.</p>
-    <h2 class="warning">Peringatan! Beberapa manusia menggigit!</h2>
-    <p>Anda dan hooman Anda dapat menikmati persahabatan selama bertahun-tahun.</p>
-    <p class="warning">Peringatan! Beberapa manusia tidak akan mau Anda berada di atas furnitur. Aneh!</p></template></code-sample>
+        <template preserve-content="preserve-content">
+           <h1 class="warning">Panduan Pemilik Kity</h1> 
+          <p>Selamat atas Pemilikan Kity baru Anda.</p>
+           <h2 class="warning">Peringatan! Beberapa manusia menggigit!</h2>
+
+          <p>Anda dan kity Anda dapat menikmati persahabatan selama bertahun-tahun.</p>
+          <p class="warning">Peringatan! Beberapa manusia tidak akan mau Anda berada di atas furnitur. Aneh!</p>
+        </template>
+      </code-sample>
 <p>Berikut ini CSS yang menyertainya:</p>
-<code-sample type="javascript" copy-clipboard-button><template preserve-content="preserve-content">p.warning {
-    color: red;
-}
-h2.warning {
-    color: darkred;
-}</template></code-sample>
+<code-sample type="javascript" copy-clipboard-button>
+        <template preserve-content="preserve-content">p.warning { color: red; } h2.warning { color: darkred; }</template>
+      </code-sample>
 <p>Kita dapat memiliki nama kelas yang berbeda, dengan HTML ini...</p>
 <code-sample copy-clipboard-button type="html">
-  
-    
-  
-  
-  
-  
-<template preserve-content="preserve-content"><h1 class="warning">Panduan Pemilik Kity</h1> 
-    <p>Selamat atas Pemilikan Kity baru Anda.</p>
-    <h2 class="darkred">Peringatan! Beberapa manusia menggigit!</h2>
-    <p>Anda dan hooman Anda dapat menikmati persahabatan selama bertahun-tahun.</p>
-    <p class="red">Peringatan! Beberapa manusia tidak akan mau Anda berada di atas furnitur. Aneh!</p></template></code-sample>
+        <template preserve-content="preserve-content">
+           <h1 class="warning">Panduan Pemilik Kity</h1> 
+          <p>Selamat atas Pemilikan Kity baru Anda.</p>
+           <h2 class="darkred">Peringatan! Beberapa manusia menggigit!</h2>
+
+          <p>Anda dan kity Anda dapat menikmati persahabatan selama bertahun-tahun.</p>
+          <p class="red">Peringatan! Beberapa manusia tidak akan mau Anda berada di atas furnitur. Aneh!</p>
+        </template>
+        </code-sample>
 <p>... dan CSS ini:</p>
-<code-sample copy-clipboard-button type="javascript">  
-<template preserve-content="preserve-content">p.red {
-    color: red;
-}
-h2.darkred {
-    color: darkred;
-}</template></code-sample>
-<a11y-collapse heading="Tulis Q-5" heading-button accent-color="grey" icon="icons:expand-more" tooltip="expand" label="expand"><p>Nama kelas mana yang lebih baik? warning, atau red dan darkred? Mengapa?</p></a11y-collapse>
+<code-sample copy-clipboard-button type="javascript">
+          <template preserve-content="preserve-content">p.red { color: red; } h2.darkred { color: darkred; }</template>
+        </code-sample>
+<a11y-collapse heading="Tulis Q-5" heading-button accent-color="grey" icon="icons:expand-more" tooltip="expand" label="expand">
+          <p>Nama kelas mana yang lebih baik? warning, atau red dan darkred? Mengapa?</p>
+        </a11y-collapse>
 <grid-plate item-padding="16" item-margin="16" disable-responsive layout="1-3" data-width="75" data-margin="center" data-border-radius="xs" data-border="sm">
-        <media-image source="files/fina_bingung.jpg" alt="bingung.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" data-margin="center" data-width="50" figure-label-title="Fina" modal-title="Fina" _has-caption=""></media-image>
+          <media-image source="files/fina_bingung.jpg" alt="bingung.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" data-margin="center" data-width="50" figure-label-title="Fina" modal-title="Fina" _has-caption=""></media-image>
 
-
-
-
-
-
-        <p slot="col-2" data-margin="center">Wah, ini rumit. Dengan menggunakan reddan darkred dalam HTML, Anda akan tahu seperti apa tampilan kontennya. Namun, saya rasa Anda akan menggunakan kelas warning.
-        <br>
-      </p>
-
-    </grid-plate>
+          <p slot="col-2" data-margin="center">Wah, ini rumit. Dengan menggunakan reddan darkred dalam HTML, Anda akan tahu seperti
+            apa tampilan kontennya. Namun, saya rasa Anda akan menggunakan kelas warning.
+            <br>
+          </p>
+        </grid-plate>
 <p>Anda benar, warning pendekatannya lebih baik.</p>
 <grid-plate item-padding="16" item-margin="16" disable-responsive layout="1-3" data-width="75" data-margin="center" data-border-radius="xs" data-border="sm">
           <media-image source="files/wildan_bingung.jpg" alt="bingung.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" data-margin="center" data-width="50" figure-label-title="Wildan" modal-title="Wildan" _has-caption=""></media-image>
 
+          <p slot="col-2" data-margin="center">Tunggu, saya punya ide. Di Cina, merah bukanlah warna peringatan. Itu adalah warna
+            keberuntungan. Jadi jika Anda punya...</p>
+          <code-sample type="javascript" copy-clipboard-button slot="col-2">
+            <template preserve-content="preserve-content">
+              <p class="warning">Peringatan! Beberapa manusia tidak akan mau Anda berada di atas furnitur. Aneh!</p>
+            </template>
+          </code-sample>
 
-
-
-
-
-
-
-          <p slot="col-2" data-margin="center">Tunggu, saya punya ide. Di Cina, merah bukanlah warna peringatan. Itu adalah warna keberuntungan. Jadi jika Anda punya...</p>
-
-
-    <code-sample type="javascript" copy-clipboard-button slot="col-2"><template preserve-content="preserve-content"><p class="warning">Peringatan! Beberapa manusia tidak akan mau Anda berada di atas furnitur. Aneh!</p></template></code-sample>
-
-
-
-<p slot="col-2">...itulah yang Anda maksud. Apa yang terbaik untuk dilihat <b>warning</b>, mungkin berbeda di tempat yang berbeda.</p></grid-plate>
+          <p slot="col-2">...itulah yang Anda maksud. Apa yang terbaik untuk dilihat <b>warning</b>, mungkin
+            berbeda di tempat yang berbeda.</p>
+        </grid-plate>
 <p></p>
 <grid-plate item-padding="16" item-margin="16" disable-responsive layout="1-3" data-width="75" data-margin="center" data-border-radius="xs" data-border="sm">
-            <media-image source="files/andy_senang.jpg" alt="bingung.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" data-margin="center" data-width="50" figure-label-title="Andy" modal-title="Andy" _has-caption=""></media-image>
+          <media-image source="files/andy_senang.jpg" alt="bingung.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" data-margin="center" data-width="50" figure-label-title="Andy" modal-title="Andy" _has-caption=""></media-image>
 
+          <p slot="col-2" data-margin="center">Wah, itu benar sekali! Dan bagaimana jika Anda ingin menambahkan cara lain untuk
+            menampilkan peringatan? Seperti... font yang berbeda, atau font yang lebih besar,
+            atau huruf kapital semua, atau semacamnya. Jika Anda punya...</p>
+          <code-sample type="javascript" copy-clipboard-button slot="col-2">
+            <template preserve-content="preserve-content">
+              <p class="red">Peringatan! Beberapa manusia tidak akan mau Anda berada di atas furnitur. Aneh!</p>
+            </template>
+          </code-sample>
 
+          <p slot="col-2">... yang tidak akan memberi tahu Anda semua yang sedang terjadi. Ini...</p>
+          <code-sample copy-clipboard-button type="javascript" slot="col-2">
+            <template preserve-content="preserve-content">
+              <p class="warning">Peringatan! Beberapa manusia tidak akan mau Anda berada di atas furnitur. Aneh!</p>
+            </template>
+            </code-sample>
 
-
-
-
-
-
-
-
-            <p slot="col-2" data-margin="center">Wah, itu benar sekali! Dan bagaimana jika Anda ingin menambahkan cara lain untuk menampilkan peringatan? Seperti... font yang berbeda, atau font yang lebih besar, atau huruf kapital semua, atau semacamnya. Jika Anda punya...</p>
-
-
-
-      <code-sample type="javascript" copy-clipboard-button slot="col-2"><template preserve-content="preserve-content"><p class="red">Peringatan! Beberapa manusia tidak akan mau Anda berada di atas furnitur. Aneh!</p></template></code-sample>
-
-
-
-<p slot="col-2">... yang tidak akan memberi tahu Anda semua yang sedang terjadi. Ini...</p><code-sample copy-clipboard-button type="javascript" slot="col-2">  
-<template preserve-content="preserve-content"><p class="warning">Peringatan! Beberapa manusia tidak akan mau Anda berada di atas furnitur. Aneh!</p></template></code-sample>
-
-
-
-
-
-  <p slot="col-2">... akan memberi tahu Anda apa tujuannya.</p>
-</grid-plate>
+            <p slot="col-2">... akan memberi tahu Anda apa tujuannya.</p>
+        </grid-plate>
 <p></p>
 <grid-plate item-padding="16" item-margin="16" disable-responsive layout="1-3" data-width="75" data-margin="center" data-border-radius="xs" data-border="sm">
           <media-image source="files/fina_bingung.jpg" alt="bingung.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" data-margin="center" data-width="50" figure-label-title="Fina" modal-title="Fina" _has-caption=""></media-image>
 
-
-
-
-
-
-
-
           <p slot="col-2" data-margin="center">Hei, itu pemikiran yang bagus, kalian berdua.</p>
+        </grid-plate>
+<p>Tentu saja! Saya terkesan! Desainer web lebih suka...
+          <br>
+        </p>
+<code-sample copy-clipboard-button type="javascript">
+          <template preserve-content="preserve-content">
+            <p class="warning">Peringatan! Beberapa manusia tidak akan mau Anda berada di atas furnitur. Aneh!</p>
+          </template>
+        </code-sample>
+<p>Mereka akan mengatakan bahwa markup lebih bersifat semantik . Markup semantik lebih
+          tentang makna, bukan detail tampilan. Biarkan detail tampilan di CSS. Taruh struktur
+          dan maksud di HTML.&#160;</p>
+<p>Pemisahan antara maksud dalam HTML dan implementasi dalam CSS tidak selalu jelas.
+          Tidak apa-apa. Cobalah untuk mempertahankan semantik dalam HTML dan menampilkannya
+          dalam CSS, sebisa mungkin.</p>
+<stop-note title="Latihan CSS" accent-color="grey" icon="stopnoteicons:book-icon" status="info" message="&#60;b data-hax-layout=&quot;true&quot; data-hax-ray=&quot;Bold&quot;=&quot;true&quot;&#62;Buat katalog untuk pelelangan motor. Tampilannya akan seperti ini:&#60;/b&#62;" url="aplikasi-web/latihan-buat-html/lelang" remote-link-url="aplikasi-web/latihan-buat-html/lelang" remote-link-target="{}">
+          <p slot="message"><b>Buat katalog untuk pelelangan motor. Tampilannya akan seperti ini:</b>
 
-
-    </grid-plate>
-<p>Tentu saja! Saya terkesan! Desainer web lebih suka... <br></p>
-<code-sample copy-clipboard-button type="javascript">  
-<template preserve-content="preserve-content"><p class="warning">Peringatan! Beberapa manusia tidak akan mau Anda berada di atas furnitur. Aneh!</p></template></code-sample>
-<p>Mereka akan mengatakan bahwa markup lebih bersifat semantik . Markup semantik lebih tentang makna, bukan detail tampilan. Biarkan detail tampilan di CSS. Taruh struktur dan maksud di HTML.&#160;</p>
-<p>Pemisahan antara maksud dalam HTML dan implementasi dalam CSS tidak selalu jelas. Tidak apa-apa. Cobalah untuk mempertahankan semantik dalam HTML dan menampilkannya dalam CSS, sebisa mungkin.</p>
-<stop-note title="Latihan CSS" accent-color="grey" icon="stopnoteicons:book-icon" status="info" message="&#60;b data-hax-layout=&quot;true&quot; data-hax-ray=&quot;Bold&quot;=&quot;true&quot;&#62;Buat katalog untuk pelelangan motor. Tampilannya akan seperti ini:&#60;/b&#62;" url="aplikasi-web/latihan-buat-html/lelang" remote-link-url="aplikasi-web/latihan-buat-html/lelang" remote-link-target="{}"><p slot="message"><b>Buat katalog untuk pelelangan motor. Tampilannya akan seperti ini:</b></p>
-</stop-note>
-<h2 id="header-57534d41-a80f-7336-ff67-3ba2d29e9204">id&#160;</h2>
-<p>Anda telah mempelajari cara menargetkan elemen HTML dengan kelas. Anda telah mempelajari cara menerapkan kelas yang sama ke lebih dari satu elemen.&#160;</p>
-<p>Masuk akal untuk dapat memiliki banyak peringatan pada satu halaman. Namun, terkadang Anda ingin elemennya menjadi unik.&#160;</p>
+          </p>
+        </stop-note>
+<h2 data-original-level="H2" id="header-57534d41-a80f-7336-ff67-3ba2d29e9204">id&#160;</h2>
+<p>Anda telah mempelajari cara menargetkan elemen HTML dengan kelas. Anda telah mempelajari
+          cara menerapkan kelas yang sama ke lebih dari satu elemen.&#160;</p>
+<p>Masuk akal untuk dapat memiliki banyak peringatan pada satu halaman. Namun, terkadang
+          Anda ingin elemennya menjadi unik.&#160;</p>
 <p>Berikut beberapa HTML:</p>
-<code-sample type="html" copy-clipboard-button><template preserve-content="preserve-content"><h3 class="frog">Katak Adalah Kita</h3>
-<p class="katak">Ribbit.</p></template></code-sample>
+<code-sample type="html" copy-clipboard-button>
+          <template preserve-content="preserve-content">
+             <h3 class="katak">Katak Adalah Kita</h3>
+
+            <p class="katak">Ribbit.</p>
+          </template>
+        </code-sample>
 <p>Gunakan . di stylesheet untuk memilih elemen dengan kelas:</p>
-<code-sample type="css" copy-clipboard-button><template preserve-content="preserve-content">.katak {
-  color: green;
-}</template></code-sample>
-<p>Itu membuat semua yang berkelas frogmenjadi hijau. . berarti kelas.&#160;</p>
+<code-sample type="css" copy-clipboard-button>
+          <template preserve-content="preserve-content">.katak { color: green; }</template>
+        </code-sample>
+<p>Itu membuat semua yang berkelas katak menjadi hijau. . berarti kelas.&#160;</p>
 <p>Misalkan kita memiliki HTML ini:</p>
-<code-sample copy-clipboard-button type="html">  
-<template preserve-content="preserve-content"><h3 class="frog">Katak Adalah Kita</h3>
-<p class="katak">Ribbit.</p>
-<p id="justin" class="frog">Ribbit. Saya Justin.</p>
-</template></code-sample>
+<code-sample copy-clipboard-button type="html">
+          <template preserve-content="preserve-content">
+             <h3 class="katak">Katak Adalah Kita</h3>
+
+            <p class="katak">Ribbit.</p>
+            <p id="justin" class="katak">Ribbit. Saya Justin.</p>
+          </template>
+        </code-sample>
 <p>Gunakan # di stylesheet untuk memilih elemen dengan id:</p>
-<code-sample copy-clipboard-button type="css">  
-<template preserve-content="preserve-content">.katak {
-  color: green;
-}
+<code-sample copy-clipboard-button type="css">
+          <template preserve-content="preserve-content">.katak { color: green; } #justin { font-style: italics; }</template>
+        </code-sample>
+<p>Segala sesuatu yang berkelas katak akan berwarna hijau.&#160;Elemen&#160;justin juga
+          akan dicetak miring, tetapi hanya satu itu saja.&#160;</p>
+<p>Gunakan tag id saat Anda memiliki elemen individual yang ingin Anda beri gaya. Seharusnya
+          hanya ada satu elemen pada halaman dengan id. Misalnya, halaman biasanya memiliki
+          satu footer, satu petak halaman, dan satu menu atas.</p>
+<stop-note accent-color="grey" remote-link-target="{}" remote-link-url="aplikasi-web/latihan-buat-html/barang-spesial" title="Barang spesial" url="aplikasi-web/latihan-buat-html/barang-spesial" icon="stopnoteicons:book-icon" status="info" message="&#60;b data-hax-layout=&quot;true&quot; data-hax-ray=&quot;Bold&quot;=&quot;true&quot;&#62;Ulangi latihan lelang, tetapi kali ini, salah satu item diidentifikasi sebagai item khusus. Hanya boleh ada satu item. Buatlah seperti ini:&#60;/b&#62;">
+          <p slot="message"><b>Ulangi latihan lelang, tetapi kali ini, salah satu item diidentifikasi sebagai item khusus. Hanya boleh ada satu item. Buatlah seperti ini:</b>
 
-#justin {
-  font-style: italics;
-}</template></code-sample>
-<p>Segala sesuatu yang berkelas frog akan berwarna hijau.&#160;Elemen&#160;justin juga akan dicetak miring, tetapi hanya satu itu saja.&#160;</p>
-<p>Gunakan tag id saat Anda memiliki elemen individual yang ingin Anda beri gaya. Seharusnya hanya ada satu elemen pada halaman dengan id. Misalnya, halaman biasanya memiliki satu footer, satu petak halaman, dan satu menu atas.</p>
-<stop-note accent-color="grey" remote-link-target="{}" remote-link-url="aplikasi-web/latihan-buat-html/lelang" title="Barang spesial" url="aplikasi-web/latihan-buat-html/lelang" icon="stopnoteicons:book-icon" status="info" message="&#60;b data-hax-layout=&quot;true&quot; data-hax-ray=&quot;Bold&quot;=&quot;true&quot;&#62;Ulangi latihan lelang, tetapi kali ini, salah satu item diidentifikasi sebagai item khusus. Hanya boleh ada satu item. Buatlah seperti ini:&#60;/b&#62;">  <p slot="message"><b>Ulangi latihan lelang, tetapi kali ini, salah satu item diidentifikasi sebagai item khusus. Hanya boleh ada satu item. Buatlah seperti ini:</b></p>
-
-</stop-note>
-<p></p>
-<p></p>
-<p><br></p>
+          </p>
+        </stop-note>
+<h2 data-original-level="H2" id="header-4fa7c8bc-826f-2fe2-bdc2-47d58190af9f">Ringkasan&#160;</h2>
+<ul>
+          <li>Daripada membuat semua p(atau h1 apalah) tag terlihat sama, Anda dapat menggunakan
+            kelas CSS untuk membuat beberapa di antaranya terlihat berbeda.</li>
+          <li>Gunakan idproperti untuk menargetkan elemen unik pada suatu halaman.</li>
+          <li>Dalam CSS, digunakan #untuk menentukan elemen dengan id.</li>
+        </ul>
+<h2 data-original-level="H2" id="header-3c524dd4-ba92-870e-1863-e6ef4dbb0431">Berikutnya&#160;</h2>
+<p>Anda akan mempelajari cara menggunakan PHP untuk memilih gaya yang dimiliki elemen.</p>
