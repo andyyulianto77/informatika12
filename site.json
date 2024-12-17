@@ -3255,14 +3255,15 @@
       "description": "Anda dapat menggunakan PHP untuk mengontrol tampilan halaman, dengan mengubah gaya   yang digunakannya. // Hitung pesan, dan kelas CSS. $message = ''; $class = ''; if ($cats &#60; 1) {    $message = ",
       "metadata": {
         "created": 1734340292,
-        "updated": 1734396662,
+        "updated": 1734396935,
         "images": {},
         "videos": {},
         "published": true,
         "hideInMenu": false,
         "locked": false,
         "readtime": 10,
-        "pageType": "content"
+        "pageType": "content",
+        "icon": "lrn:page"
       }
     },
     {
