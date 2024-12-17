@@ -3273,15 +3273,14 @@
       "slug": "aplikasi-web/membuat-html/page-2",
       "order": 9,
       "parent": "item-f7f19c6e-0234-4e10-a3b8-1aabb9d27181",
-      "title": "Tidak, tidak di sana...",
-      "description": "Berikut ini sebuah tugas:\nTulis program yang memberi tahu berapa banyak kacang yang akan diperoleh, tergantung pada jenis hewan. Anda dapat mencobanya untuk seekor kambing: http://webappexamples.skil",
+      "title": "Page",
+      "description": "Berikut ini sebuah tugas:\nTulis program yang memberi tahu berapa banyak kacang yang akan diperoleh, tergantung   pada jenis hewan. Anda dapat mencobanya untuk seekor kambing: http://webappexamples.sk",
       "metadata": {
         "created": 1734402616,
-        "updated": 1734403153,
+        "updated": 1734403547,
         "images": {},
         "videos": {},
         "published": true,
-        "pageType": "content",
         "hideInMenu": false,
         "locked": false,
         "readtime": 1
