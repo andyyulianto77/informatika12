@@ -1,516 +1,147 @@
 
-<p>Anda dapat menggunakan PHP untuk mengontrol tampilan halaman, dengan mengubah gaya
-  yang digunakannya.</p>
-// Hitung pesan, dan kelas CSS. $message = ''; $class = ''; if ($cats &lt; 1) {    $message = "Kamu tidak punya kucing! Huu! Dapatkan kucing!"; $class = 'argh'; } if    else ($cats == 1) { $message = "Anda punya seekor kucing! Bagus, tetapi Anda butuh    satu lagi."; $class = 'adil'; } if else ($cats == 2) { $message = "Anda punya dua    kucing! Itu jumlah yang sempurna!"; $class = 'baik'; } else { $message = "Wah, banyak    sekali kucingnya!"; $class = 'adil'; } // Keluaran. cetak "    <p>$message</p>\n";<p>Coba tautan ini ke halaman PHP yang mengevaluasi jumlah kucing yang Anda miliki.
-  Jumlah kucing dimasukkan sebagai parameter URL names <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">dogs</code>.
-  Di sini, tidak ada kucing.</p>
+<p>Anda dapat menggunakan PHP untuk mengontrol tampilan halaman, dengan mengubah gaya   yang digunakannya.</p>
+<p>Berapa Jumlah Anjing/Kucing?</p>
+<p>Coba tautan ini ke halaman PHP yang mengevaluasi jumlah kucing yang Anda miliki.   Jumlah kucing dimasukkan sebagai parameter URL names <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold; ">cats</code>.   Di sini, tidak ada kucing.</p>
 <p>Coba tautan untuk seekor kucing:</p>
-<p><a href="http://webappexamples.skilling.us/html/conditional-styles/how-many-dogs.php?dogs=0" target="_blank" rel="noopener noreferrer">http://webappexamples.skilling.us/html/conditional-styles/how-many-dogs.php?dogs=0</a>
-
-</p>
-<media-image source="files/output-0-dogs.png" alt="output-0-dogs.png" accent-color="grey" size="wide" offset="none"></media-image>
+<p><a href="http://webappexamples.skilling.us/html/conditional-styles/how-many-dogs.php?dogs=0 " target="_blank " rel="noopener noreferrer ">http://webappexamples.skilling.us/html/conditional-styles/how-many-dogs.php?dogs=0</a> </p>
+<media-image source="files/output-0-dogs.png " alt="output-0-dogs.png " accent-color="grey " size="wide " offset="none "></media-image>
 <p>Sekarang untuk dua kucing:</p>
-<p><a href="http://webappexamples.skilling.us/html/conditional-styles/how-many-dogs.php?dogs=2" target="_blank" rel="noopener noreferrer">http://webappexamples.skilling.us/html/conditional-styles/how-many-dogs.php?dogs=2</a>
-
-</p>
-<media-image source="files/2020-11-21_10-03-37.png" alt="2020-11-21_10-03-37.png" accent-color="grey" size="wide" offset="none"></media-image>
+<p><a href="http://webappexamples.skilling.us/html/conditional-styles/how-many-dogs.php?dogs=2 " target="_blank " rel="noopener noreferrer ">http://webappexamples.skilling.us/html/conditional-styles/how-many-dogs.php?dogs=2</a> </p>
+<media-image source="files/2020-11-21_10-03-37.png " alt="2020-11-21_10-03-37.png " accent-color="grey " size="wide " offset="none "></media-image>
 <p>Akhirnya, tiga kucing.</p>
-<p><a href="http://webappexamples.skilling.us/html/conditional-styles/how-many-dogs.php?dogs=3" target="_blank" rel="noopener noreferrer">http://webappexamples.skilling.us/html/conditional-styles/how-many-dogs.php?dogs=3</a>
-
-</p>
-<media-image source="files/output-3-dogs.png" alt="output-3-dogs.png" accent-color="grey" size="wide" offset="none"></media-image>
-<h3 data-original-level="H3" id="header-3e2440e1-4c9e-2144-e0c9-a96b3288b5d5">Apa itu HTML?</h3>
+<p><a href="http://webappexamples.skilling.us/html/conditional-styles/how-many-dogs.php?dogs=3 " target="_blank " rel="noopener noreferrer ">http://webappexamples.skilling.us/html/conditional-styles/how-many-dogs.php?dogs=3</a> </p>
+<media-image source="files/output-3-dogs.png " alt="output-3-dogs.png " accent-color="grey " size="wide " offset="none "></media-image>
+<h3 data-original-level="H3" id="header-503ec7d9-d559-9b4f-f745-b76903cc268e">Apa itu HTML?</h3>
 <p>Periksa HTML yang dibuat program saat tidak ada kucing:</p>
-<code-sample type="html" copy-clipboard-button><template preserve-content="preserve-content">...
-<link rel="stylesheet" href="styles.css">
-...
-<p>Jumlah kucing: 0</p>
-<p class="argh">Kamu tidak punya kucing! Huu! Dapatkan kucing!</p>
-...</template></code-sample>
-<br/><ul>
-</ul>
+<code-sample type="html " copy-clipboard-button><template preserve-content="preserve-content ">...  ... <p>Jumlah kucing: 0</p><p>Kamu tidak punya kucing! Huu! Dapatkan kucing!</p> ...</template></code-sample>
+<ul> </ul>
 <p>Sekarang ketika ada dua kucing:</p>
-<code-sample type="html" copy-clipboard-button><template preserve-content="preserve-content">...
-<link rel="stylesheet" href="styles.css">
-...
-<p>Jumlah kucing: 2</p>
-<p class="good">Anda punya dua kucing! Itu jumlah yang sempurna!</p>
-...</template></code-sample>
-<br/><ul>
-</ul>
-<p>Kelas ada <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">argh</code>dalam
-  satu kasus, dan <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">good</code>dalam
-  kasus yang lain.</p>
-<h3 data-original-level="H3" id="header-4ff30004-54b9-a303-f973-5633efd59041">if</h3>
+<code-sample type="html " copy-clipboard-button><template preserve-content="preserve-content ">...  ... <p>Jumlah kucing: 2</p><p>Anda punya dua kucing! Itu jumlah yang sempurna!</p> ...</template></code-sample>
+<ul> </ul>
+<p>Kelas ada <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold; ">argh</code>dalam   satu kasus, dan <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold; ">good</code>dalam   kasus yang lain.</p>
+<h3 data-original-level="H3" id="header-e9131806-6481-cbff-23ef-577719085625">if</h3>
 <p>Berikut kodenya:</p>
-<ol>
-  <li>&lt;?php</li>
-  <li>$cats = $_GET['kucing'];</li>
-  <li>// Hitung pesan, dan kelas CSS.</li>
-  <li>$message = '';</li>
-  <li>$class = '';</li>
-  <li>if ($cats &lt; 1) {</li>
-  <li>$message = "Kamu tidak punya kucing! Huu! Dapatkan kucing!";</li>
-  <li>$class = 'argh';</li>
-  <li>}</li>
-  <li>if else ($cats == 1) {</li>
-  <li>$message = "Anda punya seekor kucing! Bagus, tetapi Anda butuh satu lagi.";</li>
-  <li>$class = 'adil';</li>
-  <li>}</li>
-  <li>if else ($cats == 2) {</li>
-  <li>$message = "Anda punya dua kucing! Itu jumlah yang sempurna!";</li>
-  <li>$class = 'baik';</li>
-  <li>}</li>
-  <li>else {</li>
-  <li>$message = "Wah, banyak sekali kucingnya!";</li>
-  <li>$class = 'adil';</li>
-  <li>}</li>
-  <li>?&gt;&lt;!DOCTYPE html&gt;</li>
-  <li>&lt;html lang="id"&gt;</li>
-  <li>&lt;kepala&gt;</li>
-  <li>&lt;meta charset="UTF-8"&gt;</li>
-  <li>&lt;judul&gt;kucing&lt;/judul&gt;</li>
-  <li>&lt;meta name="viewport" content="lebar=lebar-perangkat, skala-awal=1, menyusut-agar-sesuai=tidak"&gt;</li>
-  <li>&lt;link rel="lembar gaya" href="gaya.css"&gt;</li>
-  <li>&lt;/head&gt;</li>
-  <li>&lt;body&gt;</li>
-  <li>&lt;h1&gt;kucing&lt;/h1&gt;</li>
-  <li>&lt;p&gt;Apakah Anda memiliki cukup kucing?&lt;/p&gt;</li>
-  <li>&lt;p&gt;Jumlah kucing: &lt;?= $cats ?&gt;&lt;/p&gt;</li>
-  <li>&lt;p kelas="&lt;?= $class ?&gt;"&gt;&lt;?= $message ?&gt;&lt;/p&gt;</li>
-  <li>&lt;/body&gt;</li>
-  <li>&lt;/html&gt;</li>
-</ol>
+<ol>   <li>&lt;?php</li>   <li>$cats = $_GET['kucing'];</li>   <li>// Hitung pesan, dan kelas CSS.</li>   <li>$message = '';</li>   <li>$class = '';</li>   <li>if ($cats &lt; 1) {</li>   <li>$message = "Kamu tidak punya kucing! Huu! Dapatkan kucing! ";</li>   <li>$class = 'argh';</li>   <li>}</li>   <li>if else ($cats == 1) {</li>   <li>$message = "Anda punya seekor kucing! Bagus, tetapi Anda butuh satu lagi. ";</li>   <li>$class = 'adil';</li>   <li>}</li>   <li>if else ($cats == 2) {</li>   <li>$message = "Anda punya dua kucing! Itu jumlah yang sempurna! ";</li>   <li>$class = 'baik';</li>   <li>}</li>   <li>else {</li>   <li>$message = "Wah, banyak sekali kucingnya! ";</li>   <li>$class = 'adil';</li>   <li>}</li>   <li>?&gt;&lt;!DOCTYPE html&gt;</li>   <li>&lt;html lang="id "&gt;</li>   <li>&lt;kepala&gt;</li>   <li>&lt;meta charset="UTF-8 "&gt;</li>   <li>&lt;judul&gt;kucing&lt;/judul&gt;</li>   <li>&lt;meta name="viewport " content="lebar=lebar-perangkat, skala-awal=1, menyusut-agar-sesuai=tidak "&gt;</li>   <li>&lt;link rel="lembar gaya " href="gaya.css "&gt;</li>   <li>&lt;/head&gt;</li>   <li>&lt;body&gt;</li>   <li>&lt;h1&gt;kucing&lt;/h1&gt;</li>   <li>&lt;p&gt;Apakah Anda memiliki cukup kucing?&lt;/p&gt;</li>   <li>&lt;p&gt;Jumlah kucing: &lt;?= $cats ?&gt;&lt;/p&gt;</li>   <li>&lt;p kelas="&lt;?=$ class ?&gt; "&gt;&lt;?= $message ?&gt;&lt;/p&gt;</li>   <li>&lt;/body&gt;</li>   <li>&lt;/html&gt;</li> </ol>
 <p>Baris 2 mendapatkan jumlah kucing dari URL:</p>
-<code-sample type="php" copy-clipboard-button><template preserve-content="preserve-content">$cats = $_GET['kucing'];
-</template></code-sample>
-<span><br>baris 3 adalah:</span><code-sample type="html" copy-clipboard-button><template preserve-content="preserve-content">// Hitung pesan, dan kelas CSS.
-</template></code-sample>
+<code-sample type="php " copy-clipboard-button><template preserve-content="preserve-content ">$cats = $_GET['kucing']; </template></code-sample>
+<code-sample type="html " copy-clipboard-button><template preserve-content="preserve-content ">// Hitung pesan, dan kelas CSS. </template></code-sample>
 <p>Itu sebuah komentar. Komentar adalah Hal Baik.</p>
 <p>Mari kita lewati sedikit, dan lihat hasilnya. Baris ke-33 menampilkan jumlah kucing:</p>
-<code-sample type="php" copy-clipboard-button><template preserve-content="preserve-content">print "<p>Jumlah kucing: $cats</p>\n";
-</template></code-sample>
-<p>Hal <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">\n</code>di
-  akhir menambahkan baris baru dalam HTML, seperti menekan tombol Enter. Hal itu tidak
-  memengaruhi apa yang dilihat pengguna, tetapi memengaruhi HTML. Berikut HTML tanpa
-  <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">\n</code>...</p>
-<code-sample type="javascript" copy-clipboard-button><template preserve-content="preserve-content"><p>Jumlah kucing: 0</p><p class="argh">Anda tidak punya kucing! Hu! Dapatkan kucing!</p>
-</template></code-sample>
+<code-sample type="php " copy-clipboard-button><template preserve-content="preserve-content ">print "<p>Jumlah kucing: $cats</p>\n";</template>   </code-sample>
+<p>Hal <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">\n</code>di     akhir menambahkan baris baru dalam HTML, seperti menekan tombol Enter. Hal itu tidak     memengaruhi apa yang dilihat pengguna, tetapi memengaruhi HTML. Berikut HTML tanpa     <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">\n</code>...</p>
+<code-sample type="javascript" copy-clipboard-button>     <template preserve-content="preserve-content">       <p>Jumlah kucing: 0</p><p>Anda tidak punya kucing! Hu! Dapatkan kucing!</p>     </template>   </code-sample>
 <p>... dan dengan ini...</p>
-<code-sample type="html" copy-clipboard-button><template preserve-content="preserve-content"><p>Jumlah kucing: 0</p>
-<p class="argh">Kamu tidak punya kucing! Huu! Dapatkan kucing!</p></template></code-sample>
-<p>Seperti yang Anda lihat, menambahkan baris baru membuat HTML lebih mudah dipahami.
-  Hal ini sangat berguna saat melakukan debugging.</p>
-<p><code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">\n</code>hanya
-  berfungsi jika Anda menggunakan tanda kutip ganda (").</p>
-<p>Karya:<code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">print "&lt;p&gt;You rock!&lt;/p&gt;\n";</code>
-
-</p>
-<p>Tidak berfungsi:<code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">print '&lt;p&gt;You rock!&lt;/p&gt;\n';</code>
-
-</p>
+<code-sample type="html" copy-clipboard-button>     <template preserve-content="preserve-content">       <p>Jumlah kucing: 0</p><p>Kamu tidak punya kucing! Huu! Dapatkan kucing!</p>     </template>   </code-sample>
+<p>Seperti yang Anda lihat, menambahkan baris baru membuat HTML lebih mudah dipahami.     Hal ini sangat berguna saat melakukan debugging.</p>
+<p><code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">\n</code>hanya     berfungsi jika Anda menggunakan tanda kutip ganda (").</p>
+<p>Karya:<code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">print "&lt;p&gt;You rock!&lt;/p&gt;\n";</code>   </p>
+<p>Tidak berfungsi:<code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">print '&lt;p&gt;You rock!&lt;/p&gt;\n';</code>   </p>
 <p>Baris 34 adalah keluaran utama:</p>
-<code-sample type="html" copy-clipboard-button><template preserve-content="preserve-content"><p class="<?= $class ?>"><!--?= $message ?--></p></template></code-sample>
-<p>Itu <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">&lt;?= $variable ?&gt;</code>adalah
-  kependekan dari <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">&lt;?php print $variable; ?&gt;</code>.</p>
-<p>Perhatikan betapa <em>sederhananya</em> kode tersebut. Kode tersebut menghasilkan
-  dua variabel: <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">$class</code>,
-  dan <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">$message</code>.</p>
-<p>Pernyataan tersebut mencetak beberapa kode HTML. Berikut ini hasilnya, untuk seekor
-  kucing.</p>
-<code-sample type="html" copy-clipboard-button><template preserve-content="preserve-content"><p>Kamu punya kucing! Bagus, tapi kamu butuh satu lagi.</p></template></code-sample>
-<p><code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">$class</code>"adil",
-  dan <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">$message</code>"Kamu
-  punya kucing! Bagus, tapi kamu butuh satu lagi."</p>
+<code-sample type="html" copy-clipboard-button>     <template preserve-content="preserve-content">             </template>   </code-sample>
+<p>Itu <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">&lt;?= $variable ?&gt;</code>adalah     kependekan dari <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">&lt;?php print $variable; ?&gt;</code>.</p>
+<p>Perhatikan betapa <em>sederhananya</em> kode tersebut. Kode tersebut menghasilkan     dua variabel: <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">$class</code>,     dan <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">$message</code>.</p>
+<p>Pernyataan tersebut mencetak beberapa kode HTML. Berikut ini hasilnya, untuk seekor     kucing.</p>
+<code-sample type="html" copy-clipboard-button>     <template preserve-content="preserve-content">       <p>Kamu punya kucing! Bagus, tapi kamu butuh satu lagi.</p>     </template>   </code-sample>
+<p><code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">$class</code>"adil",     dan <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">$message</code>"Kamu     punya kucing! Bagus, tapi kamu butuh satu lagi."</p>
 <p>Inilah yang dicetaknya, untuk dua kucing:</p>
-<code-sample type="html" copy-clipboard-button><template preserve-content="preserve-content"><p class="cats">Anda punya dua kucing! Itu jumlah yang sempurna!</p></template></code-sample>
-<p>Dalam kasus tersebut, <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">$class</code>"baik",
-  dan <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">$message</code>"Kamu
-  punya dua kucing! Itu angka yang sempurna!"</p>
-<p>Program ini bekerja dengan menetapkan <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">$class</code>dan
-  <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">$message</code>ke nilai yang tepat. Kemudian, ketika sampai pada bagian output,
-    kode untuk menggunakan variabel tersebut sederhana:</p>
-<ul>
-  <li>&lt;p kelas="&lt;?= $class ?&gt;"&gt;&lt;?= $message ?&gt;&lt;/p&gt;</li>
-</ul>
-<p>Sebagian besar logika program adalah mengerjakan dua variabel. Kami meletakkan kode
-  tersebut di bagian atas berkas PHP. Itu hal yang umum. Program PHP biasanya terlihat
-  seperti ini:</p>
-<media-image source="files/page.png" alt="page.png" accent-color="grey" size="wide" offset="narrow" data-width="50"></media-image>
-<p>Kami mengerjakan sebagian besar pekerjaan di bagian atas, sehingga outputnya bisa
-  sederhana. Bit bagian atas mengisi beberapa variabel, yang hanya ditampilkan di bagian
-  bawah.</p>
-<stop-note title="Hold up there" accent-color="grey" icon="stopnoteicons:confirm-icon" status="success" message="
-    &#60;br data-hax-layout=&quot;true&quot; data-hax-ray=&quot;br&quot;=&quot;true&quot;&#62;
-  " url="l;k;lk;l" remote-link-url="l;k;lk;l" remote-link-target="{}">
-  <p slot="message">
-    <br>
-  </p>
-</stop-note>
-<p><a href="https://webapps.skilling.us/pattern/computation-top-simple-output-bottom">Perhitungan di atas, keluaran sederhana di bawah</a>
-
-</p>
-<p>Letakkan kode untuk perhitungan rumit di bagian atas program Anda. Kode tersebut
-  meletakkan nilai dalam variabel. Bagian bawah membuat HTML menggunakan variabel tersebut.</p>
+<code-sample type="html" copy-clipboard-button>     <template preserve-content="preserve-content">       <p>Anda punya dua kucing! Itu jumlah yang sempurna!</p>     </template>   </code-sample>
+<p>Dalam kasus tersebut, <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">$class</code>"baik",     dan <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">$message</code>"Kamu     punya dua kucing! Itu angka yang sempurna!"</p>
+<p>Program ini bekerja dengan menetapkan <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">$class</code>dan     <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">$message</code>ke nilai yang tepat. Kemudian, ketika sampai pada bagian output,       kode untuk menggunakan variabel tersebut sederhana:</p>
+<ul>     <li>&lt;p kelas="&lt;?= $class ?&gt;"&gt;&lt;?= $message ?&gt;&lt;/p&gt;</li>   </ul>
+<p>Sebagian besar logika program adalah mengerjakan dua variabel. Kami meletakkan kode     tersebut di bagian atas berkas PHP. Itu hal yang umum. Program PHP biasanya terlihat     seperti ini:</p>
+<media-image source="files/page.png" alt="page.png" accent-color="grey" size="wide" offset="narrow"></media-image>
+<p>Kami mengerjakan sebagian besar pekerjaan di bagian atas, sehingga outputnya bisa     sederhana. Bit bagian atas mengisi beberapa variabel, yang hanya ditampilkan di bagian     bawah.</p>
+<stop-note title="Hold up there" accent-color="grey" icon="stopnoteicons:confirm-icon" status="success" message="        " url="l;k;lk;l" remote-link-url="l;k;lk;l" remote-link-target="{}">     <p slot="message">            </p>   </stop-note>
+<p><a href="https://webapps.skilling.us/pattern/computation-top-simple-output-bottom">Perhitungan di atas, keluaran sederhana di bawah</a>   </p>
+<p>Letakkan kode untuk perhitungan rumit di bagian atas program Anda. Kode tersebut     meletakkan nilai dalam variabel. Bagian bawah membuat HTML menggunakan variabel tersebut.</p>
 <p>Berikut kode yang menetapkan variabel:</p>
-<ol><li>// Hitung pesan, dan kelas CSS.</li><li>$message= '';</li><li>$class = '';</li><li>jika ($cats &lt; 1) {</li><li>    $message = "Kamu tidak punya kucing! Huu! Dapatkan kucing!";</li><li>    $class= 'argh';</li><li>}</li><li>jika tidak ($cats == 1) {</li><li>    $message = "Anda punya seekor kucing! Bagus, tetapi Anda butuh satu lagi.";</li><li>    $class = 'adil';</li><li>}</li><li>jika tidak ($kucing== 2) {</li><li>    $message = "Anda punya dua kucing! Itu jumlah yang sempurna!";</li><li>    $class = 'baik';</li><li>}</li><li>kalau tidak {</li><li>    $message = "Wah, banyak sekali kucingnya!";</li><li>    $class = 'adil';</li><li>}</li><li>// Keluaran.</li><li>cetak "&lt;p class='$class'&gt;$message&lt;/p&gt;\n";</li></ol>
+<ol>     <li>// Hitung pesan, dan kelas CSS.</li>     <li>$message= '';</li>     <li>$class = '';</li>     <li>jika ($cats &lt; 1) {</li>     <li>$message = "Kamu tidak punya kucing! Huu! Dapatkan kucing!";</li>     <li>$class= 'argh';</li>     <li>}</li>     <li>jika tidak ($cats == 1) {</li>     <li>$message = "Anda punya seekor kucing! Bagus, tetapi Anda butuh satu lagi.";</li>     <li>$class = 'adil';</li>     <li>}</li>     <li>jika tidak ($kucing== 2) {</li>     <li>$message = "Anda punya dua kucing! Itu jumlah yang sempurna!";</li>     <li>$class = 'baik';</li>     <li>}</li>     <li>kalau tidak {</li>     <li>$message = "Wah, banyak sekali kucingnya!";</li>     <li>$class = 'adil';</li>     <li>}</li>     <li>// Keluaran.</li>     <li>cetak "&lt;p class='$class'&gt;$message&lt;/p&gt;\n";</li>   </ol>
 <p>Pertama, kita membuat variabel, dan mengaturnya ke string kosong.</p>
-<code-sample type="php" copy-clipboard-button><template preserve-content="preserve-content">$message = '';
-$class = '';</template></code-sample>
-<p>Anda tidak perlu melakukan ini; program akan berjalan dengan baik tanpa baris-baris
-  ini. Saya menambahkan baris-baris ini sebagai dokumentasi, sebagai pengingat bagi
-  saya bahwa program ini bekerja dengan menetapkan nilai-nilai variabel-variabel ini.
-  Baris-baris ini juga memberi saya tempat untuk memberikan komentar, if saya mau.</p>
+<code-sample type="php" copy-clipboard-button>     <template preserve-content="preserve-content">$message = ''; $class = '';</template>     </code-sample>
+<p>Anda tidak perlu melakukan ini; program akan berjalan dengan baik tanpa baris-baris       ini. Saya menambahkan baris-baris ini sebagai dokumentasi, sebagai pengingat bagi       saya bahwa program ini bekerja dengan menetapkan nilai-nilai variabel-variabel ini.       Baris-baris ini juga memberi saya tempat untuk memberikan komentar, if saya mau.</p>
 <p>Berikut yang pertama <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">if</code>:</p>
-<code-sample type="php" copy-clipboard-button><template preserve-content="preserve-content">if ($cats &lt; 1) {
-$message = "Kamu 'tidak' punya kucing! Huu! Dapatkan kucing!";
-$class = 'argh';
-}</template></code-sample>
-<p>Ada tes dalam tanda kurung (yang bertanda ()). Bisa benar, atau salah. (Ada sedikit
-  lagi. Nanti.) Tanda kurung tidak <em>opsional</em> . <em>Harus</em> ada di sana.</p>
-<p>Jika pengujiannya benar, kode di antara tanda kurung kurawal ({}) akan berjalan.
-  Jika pengujiannya salah, kode akan dilewati. Jadi, tanda kurung kurawal (}) berfungsi
-  seperti <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">EndIf</code>di
-  VBA.</p>
-<a11y-collapse heading="Tulis Q-5" heading-button accent-color="grey" icon="icons:expand-more" tooltip="collapse" label="collapse"><p>Baris ini menggunakan tanda kutip ganda ("):</p><code-sample type="php" copy-clipboard-button><template preserve-content="preserve-content">$message = "Kamu 'tidak' punya kucing! Huu! Dapatkan kucing!";</template></code-sample>
-<p>Mengapa? Tidak ada \n di akhir.</p></a11y-collapse>
-<br/><p><grid-plate item-padding="16" item-margin="16" disable-responsive layout="1-3" data-width="100" data-margin="center" data-border-radius="xs" data-border="sm">
-        <media-image source="files/fina_senang.jpg" alt="bingung.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" data-margin="center" data-width="50" figure-label-title="Fina" modal-title="Fina" _has-caption=""></media-image>
-
-        </grid-plate>
-</p>
-
-
-    <p></p>
+<code-sample type="php" copy-clipboard-button>       <template preserve-content="preserve-content">if ($cats &lt; 1) { $message = "Kamu 'tidak' punya kucing! Huu! Dapatkan kucing!";         $class = 'argh'; }</template>       </code-sample>
+<p>Ada tes dalam tanda kurung (yang bertanda ()). Bisa benar, atau salah. (Ada sedikit         lagi. Nanti.) Tanda kurung tidak <em>opsional</em> . <em>Harus</em> ada di sana.</p>
+<p>Jika pengujiannya benar, kode di antara tanda kurung kurawal ({}) akan berjalan.         Jika pengujiannya salah, kode akan dilewati. Jadi, tanda kurung kurawal (}) berfungsi         seperti <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">EndIf</code>di         VBA.</p>
+<a11y-collapse heading="Tulis Q-5" heading-button accent-color="grey" icon="icons:expand-more" tooltip="expand" label="expand">         <p>Baris ini menggunakan tanda kutip ganda ("):</p>         <code-sample type="php" copy-clipboard-button>           <template preserve-content="preserve-content">$message = "Kamu 'tidak' punya kucing! Huu! Dapatkan kucing!";</template>         </code-sample>
+         <p>Mengapa? Tidak ada \n di akhir.</p>       </a11y-collapse>
+<p>         <grid-plate item-padding="16" item-margin="16" disable-responsive layout="1-3">           <media-image source="files/fina_senang.jpg" alt="bingung.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" figure-label-title="Fina" modal-title="Fina" _has-caption=""></media-image>
+         </grid-plate>
+       </p>
 <p>Benar!</p>
 <p>Kode selanjutnya adalah:</p>
-<ul><li>else if ($cats == 1) {</li><li>    $message = "Anda punya seekor kucing! Bagus, tetapi Anda     butuh satu lagi.";</li><li>    $class = 'adil';</li><li>}</li></ul>
-<grid-plate item-padding="16" item-margin="16" disable-responsive layout="1-3" data-width="100" data-margin="center" data-border-radius="xs" data-border="sm">
-          <media-image source="files/fina_bingung.jpg" alt="bingung.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" data-margin="center" data-width="50" figure-label-title="Fina" modal-title="Fina" _has-caption=""></media-image>
-
-
-
-          <p slot="col-2">Ada tanda = tambahan di <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">if</code>,
-  kan? Seharusnya =, bukan ==.</p>
-  
-
-
-
-      
-</grid-plate>
+<ul>         <li>else if ($cats == 1) {</li>         <li>$message = "Anda punya seekor kucing! Bagus, tetapi Anda butuh satu lagi.";</li>         <li>$class = 'adil';</li>         <li>}</li>       </ul>
+<grid-plate item-padding="16" item-margin="16" disable-responsive layout="1-3">         <media-image source="files/fina_bingung.jpg" alt="bingung.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" figure-label-title="Fina" modal-title="Fina" _has-caption=""></media-image>
+         <p slot="col-2">Ada tanda = tambahan di <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">if</code>,           kan? Seharusnya =, bukan ==.</p>       </grid-plate>
 <p>Tidak! Sudah benar seperti itu. Dalam VBA, kita bisa menulis kode seperti ini:</p>
-<ul>
-  <li>ElseIf scats = 1 Maka</li>
-  <li>tMessage = "Anda punya kucing! Bagus, tapi Anda butuh satu lagi."</li>
-  <li>tClass = "adil";</li>
-  <li>ElseIf</li>
-</ul>
-<p>Jadi = memiliki dua arti dalam VBA. Dalam <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">If</code>,
-  = berarti "bandingkan." Dalam baris di bawah <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">If</code>,
-  = berarti "tetapkan," yaitu, ambil benda di sebelah kanan, dan masukkan ke benda
-  di sebelah kiri.</p>
-<p>PHP tidak seperti itu. "Bandingkan dengan" dan "tetapkan" ditulis secara berbeda.
-  Gunakan == untuk "bandingkan dengan". Itu akan benar atau salah. Gunakan = untuk
-  menetapkan.</p>
-<grid-plate item-padding="16" item-margin="16" disable-responsive layout="1-3" data-width="100" data-margin="center" data-border-radius="xs" data-border="sm">
-          <media-image source="files/andy_herang.jpg" alt="bingung.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" data-margin="center" data-width="50" figure-label-title="Andy" modal-title="Andy" _has-caption=""></media-image>
-
-
-
-          <p slot="col-2">Jadi, apa yang akan terjadi jika Anda mengetik <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">if ($cats = 1) {</code>,
-  dengan hanya satu =?</p>
-  
-
-
-
-      
-</grid-plate>
-<p>PHP akan memasukkan 1 ke dalam <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">$cats</code>,
-  menimpa apa yang ada di sana! Anda akan mendapatkan output yang salah, dan kehilangan
-  nilai <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">$cat</code>.</p>
+<ul>         <li>ElseIf scats = 1 Maka</li>         <li>tMessage = "Anda punya kucing! Bagus, tapi Anda butuh satu lagi."</li>         <li>tClass = "adil";</li>         <li>ElseIf</li>       </ul>
+<p>Jadi = memiliki dua arti dalam VBA. Dalam <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">If</code>,         = berarti "bandingkan." Dalam baris di bawah <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">If</code>,         = berarti "tetapkan," yaitu, ambil benda di sebelah kanan, dan masukkan ke benda         di sebelah kiri.</p>
+<p>PHP tidak seperti itu. "Bandingkan dengan" dan "tetapkan" ditulis secara berbeda.         Gunakan == untuk "bandingkan dengan". Itu akan benar atau salah. Gunakan = untuk         menetapkan.</p>
+<grid-plate item-padding="16" item-margin="16" disable-responsive layout="1-3">         <media-image source="files/andy_herang.jpg" alt="bingung.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" figure-label-title="Andy" modal-title="Andy" _has-caption=""></media-image>
+         <p slot="col-2">Jadi, apa yang akan terjadi jika Anda mengetik <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">if ($cats = 1) {</code>,           dengan hanya satu =?</p>       </grid-plate>
+<p>PHP akan memasukkan 1 ke dalam <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">$cats</code>,         menimpa apa yang ada di sana! Anda akan mendapatkan output yang salah, dan kehilangan         nilai <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">$cat</code>.</p>
 <p>Tidak bagus.</p>
-<stop-note title="Peringatan" accent-color="grey" icon="stopnoteicons:stop-icon" status="stop" message="&#60;strong data-hax-layout=&quot;true&quot; data-hax-ray=&quot;Bold&quot;=&quot;true&quot; class=&quot;&quot;&#62;Gunakan == dalam if pengujian, bukan =.&#60;/strong&#62;
-" data-width="75" data-margin="center"><p slot="message"><strong>Gunakan == dalam if pengujian, bukan =.</strong>
-</p>
-</stop-note>
+<stop-note title="Peringatan" accent-color="grey" icon="stopnoteicons:stop-icon" status="stop" message="&#60;strong75">         <p slot="message"><strong>Gunakan == dalam if pengujian, bukan =.</strong>         </p>       </stop-note>
 <p>Jika hanya ada satu kasus tersisa, kita dapat mengabaikan <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">if</code>.</p>
-<code-sample type="php" copy-clipboard-button data-hax-lock="data-hax-lock">
-  
-  <template preserve-content="preserve-content">else { $message = "Wah, banyak sekali kucingnya!"; 
-$class = 'adil'; }</template></code-sample>
+<code-sample type="php" copy-clipboard-button>         <template preserve-content="preserve-content">else { $message = "Wah, banyak sekali kucingnya!"; $class = 'adil'; }</template>         </code-sample>
 <p>Secara keseluruhan, polanya seperti ini:</p>
-<code-sample type="php" copy-clipboard-button data-hax-lock="data-hax-lock">
-    
-  <template preserve-content="preserve-content">$variable = nilai awal; 
-if (uji) { 
-$variable = sesuatu; 
-} 
-if else (tes lain) { 
-$variable = sesuatu yang lain; 
-} ... 
-else { $variable = sesuatu yang lain lagi; 
-} 
-Lakukan sesuatu dengan $variabel;</template></code-sample>
+<code-sample type="php" copy-clipboard-button>           <template preserve-content="preserve-content">$variable = nilai awal; if (uji) { $variable = sesuatu; } if else (tes lain) { $variable             = sesuatu yang lain; } ... else { $variable = sesuatu yang lain lagi; } Lakukan sesuatu             dengan $variabel;</template>         </code-sample>
 <p>Contoh lain:</p>
-<ul>
-    <li>$message = '';</li>
-    <li>if ($umur &gt;= 21) {</li>
-    <li>$message = 'Selamat datang di vlub!';</li>
-    <li>}</li>
-    <li>else {</li>
-    <li>$message = 'Maaf, Anda harus berusia minimal 21 tahun untuk masuk ke klub.';</li>
-    <li>}</li>
-    <li>print "&lt;p&gt;$message&lt;/p&gt;\n";</li>
-  </ul>
+<ul>           <li>$message = '';</li>           <li>if ($umur &gt;= 21) {</li>           <li>$message = 'Selamat datang di vlub!';</li>           <li>}</li>           <li>else {</li>           <li>$message = 'Maaf, Anda harus berusia minimal 21 tahun untuk masuk ke klub.';</li>           <li>}</li>           <li>print "&lt;p&gt;$message&lt;/p&gt;\n";</li>         </ul>
 <p>Hal yang sama:</p>
-<ul>
-    <li>$message = 'Selamat datang di klub!';</li>
-    <li>if ($umur &lt; 21) {</li>
-    <li>$message = 'Maaf, Anda harus berusia minimal 21 tahun untuk masuk ke klub.';</li>
-    <li>}</li>
-    <li>print "&lt;p&gt;$message&lt;/p&gt;\n";</li>
-  </ul>
-<p>Pada yang kedua, nilai awal variabel ditetapkan ke salah satu opsi. Nilai tersebut
-    diganti dalam <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">if</code>,
-    jika kondisinya terpenuhi.</p>
+<ul>           <li>$message = 'Selamat datang di klub!';</li>           <li>if ($umur &lt; 21) {</li>           <li>$message = 'Maaf, Anda harus berusia minimal 21 tahun untuk masuk ke klub.';</li>           <li>}</li>           <li>print "&lt;p&gt;$message&lt;/p&gt;\n";</li>         </ul>
+<p>Pada yang kedua, nilai awal variabel ditetapkan ke salah satu opsi. Nilai tersebut           diganti dalam <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">if</code>,           jika kondisinya terpenuhi.</p>
 <p>Contoh lain:</p>
-<ul>
-    <li>$tarifPajakPenjualan = 0;</li>
-    <li>// Jadikan $state menjadi huruf kecil, dan potong spasi.</li>
-    <li>$state = strtolower(trim($state));</li>
-    <li>if ($state == 'mi') {</li>
-    <li>$tarifPajakPenjualan = 0,06;</li>
-    <li>}</li>
-    <li>if else ($state == 'masuk') {</li>
-    <li>$tarifPajakPenjualan = 0,07;</li>
-    <li>}</li>
-    <li>if else ($state == 'oh') {</li>
-    <li>$tarifPajakPenjualan = 0,0575;</li>
-    <li>}</li>
-    <li>if else ($state == 'il') {</li>
-    <li>$tarifPajakPenjualan = 0,0625;</li>
-    <li>}</li>
-    <li>else {</li>
-    <li>print "&lt;p&gt;Status tidak diketahui: $state&lt;/p&gt;\n";</li>
-    <li>KELUAR();</li>
-    <li>}</li>
-    <li>$pajakpenjualan = $total * $tarifpajakpenjualan;</li>
-  </ul>
-<p>Pada baris kedua, variabel <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">$state</code>tersebut
-    dipangkas spasinya, dan diubah menjadi huruf kecil, sebelum diuji. Kami melakukan
-    hal yang sama di VBA.</p>
-<p>Jika <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">$state</code>tidak
-    valid, kode akan menampilkan pesan kesalahan dalam HTML, dan berhenti. <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">exit()</code>Sama
-    seperti <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">End</code>di
-    VBA. Kami akan meningkatkan validasi nanti.</p>
-<h3 data-original-level="H3" id="header-f414240c-f371-4d12-9a4e-067732acb9b4">Itu sebuah pola</h3>
+<ul>           <li>$tarifPajakPenjualan = 0;</li>           <li>// Jadikan $state menjadi huruf kecil, dan potong spasi.</li>           <li>$state = strtolower(trim($state));</li>           <li>if ($state == 'mi') {</li>           <li>$tarifPajakPenjualan = 0,06;</li>           <li>}</li>           <li>if else ($state == 'masuk') {</li>           <li>$tarifPajakPenjualan = 0,07;</li>           <li>}</li>           <li>if else ($state == 'oh') {</li>           <li>$tarifPajakPenjualan = 0,0575;</li>           <li>}</li>           <li>if else ($state == 'il') {</li>           <li>$tarifPajakPenjualan = 0,0625;</li>           <li>}</li>           <li>else {</li>           <li>print "&lt;p&gt;Status tidak diketahui: $state&lt;/p&gt;\n";</li>           <li>KELUAR();</li>           <li>}</li>           <li>$pajakpenjualan = $total * $tarifpajakpenjualan;</li>         </ul>
+<p>Pada baris kedua, variabel <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">$state</code>tersebut           dipangkas spasinya, dan diubah menjadi huruf kecil, sebelum diuji. Kami melakukan           hal yang sama di VBA.</p>
+<p>Jika <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">$state</code>tidak           valid, kode akan menampilkan pesan kesalahan dalam HTML, dan berhenti. <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">exit()</code>Sama           seperti <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">End</code>di           VBA. Kami akan meningkatkan validasi nanti.</p>
+<h3 data-original-level="H3" id="header-68fc6670-72d7-99aa-c1bc-ccc8b8346ce5">Itu sebuah pola</h3>
 <p>Ini...</p>
-<ul>
-    <li>$variable = nilai awal;</li>
-    <li>if (uji) {</li>
-    <li>$variable = sesuatu;</li>
-    <li>}</li>
-    <li>if else (tes lain) {</li>
-    <li>$variable = sesuatu yang lain;</li>
-    <li>}</li>
-    <li>...</li>
-    <li>else {</li>
-    <li>$variable = sesuatu yang lain lagi;</li>
-    <li>}</li>
-    <li>Lakukan sesuatu dengan $variabel;</li>
-  </ul>
-<p>... umum dalam pemrograman, dalam bahasa apa pun. Anda dapat menggunakannya berulang
-    kali, dengan cara yang berbeda. Sebut saja pola <em>if multiway</em> .</p>
+<ul>           <li>$variable = nilai awal;</li>           <li>if (uji) {</li>           <li>$variable = sesuatu;</li>           <li>}</li>           <li>if else (tes lain) {</li>           <li>$variable = sesuatu yang lain;</li>           <li>}</li>           <li>...</li>           <li>else {</li>           <li>$variable = sesuatu yang lain lagi;</li>           <li>}</li>           <li>Lakukan sesuatu dengan $variabel;</li>         </ul>
+<p>... umum dalam pemrograman, dalam bahasa apa pun. Anda dapat menggunakannya berulang           kali, dengan cara yang berbeda. Sebut saja pola <em>if multiway</em> .</p>
 <p>Pola</p>
-<p><a href="https://webapps.skilling.us/pattern/multiway-if">Multiway jika</a>
-
-  </p>
-<p>Buat rantai <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">if</code>s
-    dan <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">elseif</code>s
-    untuk variabel yang dapat memiliki beberapa nilai berbeda.</p>
-<p>Ia masuk ke <a href="https://webapps.skilling.us/patterns">katalog pola</a> . Katalog
-    adalah daftar pola yang dapat Anda gunakan kembali dalam kode Anda sendiri. Jika
-    Anda menulis sebuah program, dan tidak yakin apa yang harus dilakukan, periksa katalog.
-    Ada tautan ke sana di bawah Daftar di menu utama.</p>
-<h3 data-original-level="H3" id="header-638e904e-650f-23e3-db48-d3dd0da5a751">Indentasi dan kurung kurawal</h3>
-<p>Kami menggunakan beberapa <a href="https://webapps.skilling.us/lesson/code-standards">standar pengkodean</a> dalam
-    kursus ini.</p>
-<p>Kode dalam <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">if</code>s
-    dan loop harus diberi indentasi, sebanyak 2 atau 4 spasi. Keduanya boleh saja. Namun,
-    Anda harus konsisten dalam setiap file. Seperti ini:</p>
-<ul>
-    <li>if ($telahmeledak) {</li>
-    <li>print "Ledakan!";</li>
-    <li>}</li>
-    <li>else {</li>
-    <li>print "Tidak ada";</li>
-    <li>}</li>
-  </ul>
+<p><a href="https://webapps.skilling.us/pattern/multiway-if">Multiway jika</a>         </p>
+<p>Buat rantai <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">if</code>s           dan <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">elseif</code>s           untuk variabel yang dapat memiliki beberapa nilai berbeda.</p>
+<p>Ia masuk ke <a href="https://webapps.skilling.us/patterns">katalog pola</a> . Katalog           adalah daftar pola yang dapat Anda gunakan kembali dalam kode Anda sendiri. Jika           Anda menulis sebuah program, dan tidak yakin apa yang harus dilakukan, periksa katalog.           Ada tautan ke sana di bawah Daftar di menu utama.</p>
+<h3 data-original-level="H3" id="header-9773a5a7-4f78-ef59-78ba-52d092cfee66">Indentasi dan kurung kurawal</h3>
+<p>Kami menggunakan beberapa <a href="https://webapps.skilling.us/lesson/code-standards">standar pengkodean</a> dalam           kursus ini.</p>
+<p>Kode dalam <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">if</code>s           dan loop harus diberi indentasi, sebanyak 2 atau 4 spasi. Keduanya boleh saja. Namun,           Anda harus konsisten dalam setiap file. Seperti ini:</p>
+<ul>           <li>if ($telahmeledak) {</li>           <li>print "Ledakan!";</li>           <li>}</li>           <li>else {</li>           <li>print "Tidak ada";</li>           <li>}</li>         </ul>
 <p>Jangan tinggalkan kawat gigi. Ini akan berhasil...</p>
-<ul>
-    <li>if ($telahmeledak)</li>
-    <li>print "Ledakan!";</li>
-    <li>else</li>
-    <li>print "Tidak ada";</li>
-  </ul>
-<p>... tapi <em>jangan lakukan itu!</em> Anda mengundang serangga. Selalu pasang kawat
-    gigi.</p>
-<p>Periksa <a href="https://webapps.skilling.us/lesson/code-standards">halaman standar pengkodean</a> untuk
-    semua informasi rinci.</p>
-<h3 data-original-level="H3" id="header-23650789-56a3-7bfd-4a6b-a786fe2faf01">Uji parameter GET yang hilang</h3>
+<ul>           <li>if ($telahmeledak)</li>           <li>print "Ledakan!";</li>           <li>else</li>           <li>print "Tidak ada";</li>         </ul>
+<p>... tapi <em>jangan lakukan itu!</em> Anda mengundang serangga. Selalu pasang kawat           gigi.</p>
+<p>Periksa <a href="https://webapps.skilling.us/lesson/code-standards">halaman standar pengkodean</a> untuk           semua informasi rinci.</p>
+<h3 data-original-level="H3" id="header-9cbdedba-738e-120c-1aab-335f48ac946c">Uji parameter GET yang hilang</h3>
 <p>Berikut beberapa kode dari sebelumnya:</p>
-<ul>
-    <li>$cats = $_GET['kucing'];</li>
-  </ul>
+<ul>           <li>$cats = $_GET['kucing'];</li>         </ul>
 <p>Bagaimana jika Anda tidak memberikannya cats atau salah mengejanya?</p>
-<ul>
-    <li>sesuatu.php?logs=2</li>
-  </ul>
+<ul>           <li>sesuatu.php?logs=2</li>         </ul>
 <p>Anda akan mendapatkan kesalahan:</p>
 <p>Kalau orang yang bukan geek melihat ini, kepalanya bisa meledak.</p>
 <p>Mari kita buat pesan kesalahan yang lebih ramah, seperti ini:</p>
 <media-image source="files/nice-error.png" alt="nice-error.png" accent-color="grey" size="wide" offset="none"></media-image>
-<p>Tetap saja itu sebuah kesalahan, tetapi pesannya tidak akan membuat norma-norma
-    menjadi aneh.</p>
-<p>Berikut ini beberapa kode. Ada beberapa hal yang terjadi, jadi perhatikan baik-baik.
-    Saya hanya menunjukkan hal-hal baru.</p>
-<ol>
-    <li>&lt;?php</li>
-    <li>$errorMessage = '';</li>
-    <li>if (!isset($_GET['kucing'])) {</li>
-    <li>$errorMessage = 'Maaf, Anda harus memberi tahu saya berapa banyak kucing yang Anda
-      miliki.';</li>
-    <li>}</li>
-    <li>if ($errorMessage == '') {</li>
-    <li>$cats = $_GET['kucing'];</li>
-    <li>}</li>
-    <li>?&gt;&lt;!DOCTYPE html&gt;</li>
-    <li>&lt;html lang="id"&gt;</li>
-    <li>...</li>
-    <li>&lt;p&gt;Apakah Anda memiliki cukup kucing?&lt;/p&gt;</li>
-    <li>Bahasa Indonesia:</li>
-    <li>if ($errorMessage != '') {</li>
-    <li>print "&lt;p class='argh'&gt;$errorMessage&lt;/p&gt;\n";</li>
-    <li>}</li>
-    <li>else {</li>
-    <li>// Tampilkan jumlah kucing.</li>
-    <li>print "&lt;p&gt;Jumlah kucing: $cats&lt;/p&gt;\n";</li>
-    <li>...</li>
-    <li>}</li>
-    <li>?&gt;</li><li>&lt;/body&gt;</li>
-    <li>&lt;/html&gt;</li>
-  </ol>
-<p>Baris 2 membuat variabel bernama <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">$errorMessage</code>,
-    dan menjadikannya MT. Kita akan menggunakannya <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">$errorMessage</code>untuk
-    dua tujuan:</p>
-<ul>
-    <li>Tahan pesan kesalahan.</li>
-    <li>Tunjukkan apakah ada kesalahan.</li>
-  </ul>
-<p>Kita akan menggunakan <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">$errorMessage</code>sebagai <em>tanda</em> .
-    Jika MT, berarti tidak ada kesalahan. Jika bukan MT, berarti ada kesalahan.</p>
+<p>Tetap saja itu sebuah kesalahan, tetapi pesannya tidak akan membuat norma-norma           menjadi aneh.</p>
+<p>Berikut ini beberapa kode. Ada beberapa hal yang terjadi, jadi perhatikan baik-baik.           Saya hanya menunjukkan hal-hal baru.</p>
+<ol>           <li>&lt;?php</li>           <li>$errorMessage = '';</li>           <li>if (!isset($_GET['kucing'])) {</li>           <li>$errorMessage = 'Maaf, Anda harus memberi tahu saya berapa banyak kucing yang Anda             miliki.';</li>           <li>}</li>           <li>if ($errorMessage == '') {</li>           <li>$cats = $_GET['kucing'];</li>           <li>}</li>           <li>?&gt;&lt;!DOCTYPE html&gt;</li>           <li>&lt;html lang="id"&gt;</li>           <li>...</li>           <li>&lt;p&gt;Apakah Anda memiliki cukup kucing?&lt;/p&gt;</li>           <li>Bahasa Indonesia:</li>           <li>if ($errorMessage != '') {</li>           <li>print "&lt;p class='argh'&gt;$errorMessage&lt;/p&gt;\n";</li>           <li>}</li>           <li>else {</li>           <li>// Tampilkan jumlah kucing.</li>           <li>print "&lt;p&gt;Jumlah kucing: $cats&lt;/p&gt;\n";</li>           <li>...</li>           <li>}</li>           <li>?&gt;</li>           <li>&lt;/body&gt;</li>           <li>&lt;/html&gt;</li>         </ol>
+<p>Baris 2 membuat variabel bernama <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">$errorMessage</code>,           dan menjadikannya MT. Kita akan menggunakannya <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">$errorMessage</code>untuk           dua tujuan:</p>
+<ul>           <li>Tahan pesan kesalahan.</li>           <li>Tunjukkan apakah ada kesalahan.</li>         </ul>
+<p>Kita akan menggunakan <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">$errorMessage</code>sebagai <em>tanda</em> .           Jika MT, berarti tidak ada kesalahan. Jika bukan MT, berarti ada kesalahan.</p>
 <p>Berikut contoh penggunaannya:</p>
-<ul>
-    <li>if ($errorMessage == '') {</li>
-    <li>print 'Tidak ada kesalahan';</li>
-    <li>}</li>
-    <li>else {</li>
-    <li>print "Ada yang salah: $errorMessage";</li>
-    <li>}</li>
-  </ul>
-<p></p>
+<ul>           <li>if ($errorMessage == '') {</li>           <li>print 'Tidak ada kesalahan';</li>           <li>}</li>           <li>else {</li>           <li>print "Ada yang salah: $errorMessage";</li>           <li>}</li>         </ul>
 <p>Oke, kembali ke kode:</p>
-<ol>
-    <li>&lt;?php</li>
-    <li>$errorMessage = '';</li>
-    <li>if (!isset($_GET['kucing'])) {</li>
-    <li>$errorMessage = 'Maaf, Anda harus memberi tahu saya berapa banyak kucing yang Anda
-      miliki.';</li>
-    <li>}</li>
-    <li>if ($errorMessage == '') {</li>
-    <li>$cats = $_GET['kucing'];</li>
-    <li>}</li>
-    <li>?&gt;&lt;!DOCTYPE html&gt;</li>
-    <li>&lt;html lang="id"&gt;</li>
-    <li>...</li>
-    <li>&lt;p&gt;Apakah Anda memiliki cukup kucing?&lt;/p&gt;</li>
-    <li>Bahasa Indonesia:</li>
-    <li>if ($errorMessage != '') {</li>
-    <li>print "&lt;p class='argh'&gt;$errorMessage&lt;/p&gt;\n";</li>
-    <li>}</li>
-    <li>else {</li>
-    <li>// Tampilkan jumlah kucing.</li>
-    <li>print "&lt;p&gt;Jumlah kucing: $cats&lt;/p&gt;\n";</li>
-    <li>...</li>
-    <li>}</li>
-    <li>?&gt;</li>
-    <li>&lt;/body&gt;</li>
-    <li>&lt;/html&gt;</li>
-  </ol>
-<p>Baris 3 menggunakan <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">isset()</code>fungsi
-    tersebut. Benar jika parameternya ada, salah jika tidak ada. Jika tidak ada apa pun
-    di GET dengan indeks cats,&#160;kita tetapkan <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">$errorMessage</code>ke...,
-    ya, pesan kesalahan.</p>
+<ol>           <li>&lt;?php</li>           <li>$errorMessage = '';</li>           <li>if (!isset($_GET['kucing'])) {</li>           <li>$errorMessage = 'Maaf, Anda harus memberi tahu saya berapa banyak kucing yang Anda             miliki.';</li>           <li>}</li>           <li>if ($errorMessage == '') {</li>           <li>$cats = $_GET['kucing'];</li>           <li>}</li>           <li>?&gt;&lt;!DOCTYPE html&gt;</li>           <li>&lt;html lang="id"&gt;</li>           <li>...</li>           <li>&lt;p&gt;Apakah Anda memiliki cukup kucing?&lt;/p&gt;</li>           <li>Bahasa Indonesia:</li>           <li>if ($errorMessage != '') {</li>           <li>print "&lt;p class='argh'&gt;$errorMessage&lt;/p&gt;\n";</li>           <li>}</li>           <li>else {</li>           <li>// Tampilkan jumlah kucing.</li>           <li>print "&lt;p&gt;Jumlah kucing: $cats&lt;/p&gt;\n";</li>           <li>...</li>           <li>}</li>           <li>?&gt;</li>           <li>&lt;/body&gt;</li>           <li>&lt;/html&gt;</li>         </ol>
+<p>Baris 3 menggunakan <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">isset()</code>fungsi           tersebut. Benar jika parameternya ada, salah jika tidak ada. Jika tidak ada apa pun           di GET dengan indeks cats, kita tetapkan <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">$errorMessage</code>ke...,           ya, pesan kesalahan.</p>
 <p>Baris 6 menguji apakah tidak ada kesalahan. Saya bisa menggunakan <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">else</code>:</p>
-<ul>
-    <li>if (!isset($_GET['kucing'])) {</li>
-    <li>$errorMessage = 'Maaf, Anda harus memberi tahu saya berapa banyak kucing yang Anda
-      miliki.';</li>
-    <li>}</li>
-    <li>else {</li>
-    <li>$cats = $_GET['kucing'];</li>
-    <li>}</li>
-  </ul>
+<ul>           <li>if (!isset($_GET['kucing'])) {</li>           <li>$errorMessage = 'Maaf, Anda harus memberi tahu saya berapa banyak kucing yang Anda             miliki.';</li>           <li>}</li>           <li>else {</li>           <li>$cats = $_GET['kucing'];</li>           <li>}</li>         </ul>
 <p>Alih-alih:</p>
-<ul>
-    <li>if (!isset($_GET['kucing'])) {</li>
-    <li>$errorMessage = 'Maaf, Anda harus memberi tahu saya berapa banyak kucing yang Anda
-      miliki.';</li>
-    <li>}</li>
-    <li>if ($errorMessage == '') {</li>
-    <li>$cats = $_GET['kucing'];</li>
-    <li>}</li>
-  </ul>
-<p>Saya menggunakan second <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">if</code>,
-    karena Anda akan sering melihatnya. Ini adalah cara cepat untuk menguji apakah ada
-    kesalahan yang terjadi.</p>
+<ul>           <li>if (!isset($_GET['kucing'])) {</li>           <li>$errorMessage = 'Maaf, Anda harus memberi tahu saya berapa banyak kucing yang Anda             miliki.';</li>           <li>}</li>           <li>if ($errorMessage == '') {</li>           <li>$cats = $_GET['kucing'];</li>           <li>}</li>         </ul>
+<p>Saya menggunakan second <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">if</code>,           karena Anda akan sering melihatnya. Ini adalah cara cepat untuk menguji apakah ada           kesalahan yang terjadi.</p>
 <p>Berikut kodenya lagi:</p>
-<ol>
-    <li>&lt;?php</li>
-    <li>$errorMessage = '';</li>
-    <li>if (!isset($_GET['kucing'])) {</li>
-    <li>$errorMessage = 'Maaf, Anda harus memberi tahu saya berapa banyak kucing yang Anda
-      miliki.';</li>
-    <li>}</li>
-    <li>if ($errorMessage == '') {</li>
-    <li>$cats = $_GET['kucing'];</li>
-    <li>}</li>
-    <li>?&gt;&lt;!DOCTYPE html&gt;</li>
-    <li>&lt;html lang="id"&gt;</li>
-    <li>...</li>
-    <li>&lt;p&gt;Apakah Anda memiliki cukup kucing?&lt;/p&gt;</li>
-    <li>&lt;?php</li>
-    <li>if ($errorMessage != '') {</li>
-    <li>print "&lt;p class='argh'&gt;$errorMessage&lt;/p&gt;\n";</li>
-    <li>}</li>
-    <li>else {</li>
-    <li>// Tampilkan jumlah kucing.</li>
-    <li>print "&lt;p&gt;Jumlah kucing: $cats&lt;/p&gt;\n";</li>
-    <li>...</li>
-    <li>}</li>
-    <li>?&gt;</li>
-    <li>&lt;/body&gt;</li>
-    <li>&lt;/html&gt;</li>
-  </ol>
-<p>Baris 14 ada di area keluaran HTML. Jika ada pesan kesalahan, tampilkan. Jika tidak,
-    lakukan sisa keluaran.</p>
-<p>Kita akan menggunakan <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">$errorMessage</code>cara
-    ini sepanjang kursus. Pola ini praktis.</p>
+<ol>           <li>&lt;?php</li>           <li>$errorMessage = '';</li>           <li>if (!isset($_GET['kucing'])) {</li>           <li>$errorMessage = 'Maaf, Anda harus memberi tahu saya berapa banyak kucing yang Anda             miliki.';</li>           <li>}</li>           <li>if ($errorMessage == '') {</li>           <li>$cats = $_GET['kucing'];</li>           <li>}</li>           <li>?&gt;&lt;!DOCTYPE html&gt;</li>           <li>&lt;html lang="id"&gt;</li>           <li>...</li>           <li>&lt;p&gt;Apakah Anda memiliki cukup kucing?&lt;/p&gt;</li>           <li>&lt;?php</li>           <li>if ($errorMessage != '') {</li>           <li>print "&lt;p class='argh'&gt;$errorMessage&lt;/p&gt;\n";</li>           <li>}</li>           <li>else {</li>           <li>// Tampilkan jumlah kucing.</li>           <li>print "&lt;p&gt;Jumlah kucing: $cats&lt;/p&gt;\n";</li>           <li>...</li>           <li>}</li>           <li>?&gt;</li>           <li>&lt;/body&gt;</li>           <li>&lt;/html&gt;</li>         </ol>
+<p>Baris 14 ada di area keluaran HTML. Jika ada pesan kesalahan, tampilkan. Jika tidak,           lakukan sisa keluaran.</p>
+<p>Kita akan menggunakan <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">$errorMessage</code>cara           ini sepanjang kursus. Pola ini praktis.</p>
 <p>Pola</p>
-<p><a href="https://webapps.skilling.us/pattern/error-messages-flag">Pesan kesalahan sebagai bendera</a>
-
-  </p>
+<p><a href="https://webapps.skilling.us/pattern/error-messages-flag">Pesan kesalahan sebagai bendera</a>         </p>
 <p>Gunakan variabel yang berisi pesan kesalahan sebagai tanda. Jika MT, tidak ada kesalahan.</p>
-<h3 data-original-level="H3" id="header-f328d394-619f-17ba-5536-a5bb0a22a484">Berikutnya</h3>
-<p>Mari beralih sedikit, dan lihat bagaimana PHPStorm membantu kita menulis dan men-debug
-      program.</p>
+<h3 data-original-level="H3" id="header-6d1d7a06-6af3-1ebc-749f-737f649981ce">Berikutnya</h3>
+<p>Mari beralih sedikit, dan lihat bagaimana PHPStorm membantu kita menulis dan men-debug             program.</p>

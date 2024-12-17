@@ -3251,17 +3251,18 @@
       "slug": "aplikasi-web/membuat-html/page-1",
       "order": 8,
       "parent": "item-f7f19c6e-0234-4e10-a3b8-1aabb9d27181",
-      "title": "Page",
-      "description": "Anda dapat menggunakan PHP untuk mengontrol tampilan halaman, dengan mengubah gaya\n  yang digunakannya.\n// Hitung pesan, dan kelas CSS. $message = ''; $class = ''; if ($cats &lt; 1) {    $message = \"",
+      "title": "Gaya bersyarat",
+      "description": "Anda dapat menggunakan PHP untuk mengontrol tampilan halaman, dengan mengubah gaya   yang digunakannya. // Hitung pesan, dan kelas CSS. $message = ''; $class = ''; if ($cats &#60; 1) {    $message = ",
       "metadata": {
         "created": 1734340292,
-        "updated": 1734396406,
+        "updated": 1734396662,
         "images": {},
         "videos": {},
         "published": true,
         "hideInMenu": false,
         "locked": false,
-        "readtime": 10
+        "readtime": 10,
+        "pageType": "content"
       }
     },
     {
