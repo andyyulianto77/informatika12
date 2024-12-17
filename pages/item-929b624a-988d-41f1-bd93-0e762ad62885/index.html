@@ -5,27 +5,11 @@
 <media-image source="files/right-output.png" alt="right-output.png" accent-color="grey" size="wide" offset="narrow"></media-image>
 <p>Semua masukan menggunakan huruf kecil.</p>
 <p>Berikut adalah pesan untuk berbagai hewan:&#8203;</p>
-<p>Mari kita saksikan Fina menyelesaikannya.</p>
-<grid-plate item-padding="16" item-margin="16" layout="1-3">     <p slot="col-2">Oke, kelihatannya cukup mudah. ​​Saya akan mulai dengan memeriksa contoh di pelajaran       terakhir.</p>     <p slot="col-2">DAPATKAN... if, ==... Oke.</p>     <p slot="col-2">Jadi, mulailah dengan MENDAPATKAN input. Bidang tersebut disebut hewan, jadi...</p>     <ul>       <li>&lt;?php</li>       <li>// Get input.</li>       <li>$animal = $_GET['animal'];</li>     </ul>     <media-image source="files/right-output.png" alt="right-output.png" slot="col-2" accent-color="grey" size="wide" offset="narrow"></media-image>
-
-     <p slot="col-2">Sepertinya ini sebuah tag p. Coba saya periksa. Saya akan <a href="http://andy1.rf.gd/html/bukan-disana/index.php?hewan=kambing" target="_blank">melihat contoh halaman</a> , lalu memeriksa HTML di dalamnya:</p>     <media-image source="files/view-source.png" alt="view-source.png" slot="col-2" accent-color="grey" size="wide" offset="none"></media-image>
-
-       <p slot="col-2">Itu akan menunjukkan kepada saya HTML yang dibuat oleh program tersebut.</p>       <media-image source="files/html-hewan.png" alt="html-hewan.png" slot="col-2" accent-color="grey" size="wide" offset="none"></media-image>
-
-         <p slot="col-2">Saya akan menemukan HTML yang menunjukkan hewan tersebut:</p>         <media-image source="files/html-hewan2.png" alt="html-hewan2.png" slot="col-2" accent-color="grey" size="wide" offset="none"></media-image>
-
-         <p slot="col-2">Benar, itu sebuah ptag. Jadi...</p>         <media-image source="files/tidakoutput.png" alt="tidakoutput.png" slot="col-2" accent-color="grey" size="wide" offset="none"></media-image>
-         <ul>           <li>&lt;?php</li>           <li>// dapat masukan</li>           <li slot="col-2">$hewan = $_GET['hewan'];</li>           <li slot="col-2">print "Hewan kamu adalah $hewan";</li>         </ul>                   <ul>           <li>&lt;?php</li>           <li>// dapat masukan</li>           <li>$hewan = $_GET['hewan'];</li>           <li>print "&lt;p&gt;Hewan kamu adalah $hewan";</li>         </ul>         <ul>           <li>&lt;?php</li>           <li slot="col-2"></li>         </ul>         <ul>           <li>&lt;?php</li>           <li>// dapatkan input</li>           <li>$hewan = $_GET['hewan'];</li>           <li>print "&lt;p&gt; Hewanmu : $hewan &lt;/p&gt;";</li>         </ul>         <media-image source="files/fina_bingung.jpg" alt="bingung.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" figure-label-title="Fina" modal-title="Fina" _has-caption="" link="files/fina_bingung.jpg" disable-zoom data-width="25"></media-image>
-
-   </grid-plate>
-<a11y-collapse heading-button icon="icons:expand-more" label="expand" heading="Tulis Q-6" tooltip="expand" accent-color="grey">     <p>Benarkah itu? Apakah kodenya sejauh ini benar?</p>   </a11y-collapse>
-<grid-plate item-padding="16" item-margin="16" layout="1-3" disable-responsive>     <media-image source="files/fina_senang.jpg" alt="bingung.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" figure-label-title="Fina" modal-title="Fina" _has-caption="" data-width="25"></media-image>
-
-     <p slot="col-2">Sekarang untuk if. Mulailah dengan tupai. Mari saya periksa pesan keluarannya:</p>     <editable-table downloadable slot="col-2" accent-color="grey" column-header csv-data="&quot;Hewan&quot;,&quot;Pesan&quot;
+<editable-table downloadable accent-color="grey" bordered column-header csv-data="&quot;Hewan&quot;,&quot;Pesan&quot;
 &quot;Tupai&quot;,&quot;Ambillah beberapa kacang tanah.&quot;
 &quot;Kambing&quot;,&quot;Dapatkan banyak kacang.&quot;
 &quot;Gajah&quot;,&quot;Dapatkan banyak sekali kacang tanah!&quot;
-&quot;Lainnya&quot;,&quot;Saya tidak tahu berapa banyak kacang yang Anda butuhkan.&quot;" bordered><table bordered="" downloadable="">
+&quot;Lainnya&quot;,&quot;Saya tidak tahu berapa banyak kacang yang Anda butuhkan.&quot;"><table bordered="" downloadable="">
 	<thead class="thead">
 		<tr class="thead-tr tr">
 			<th scope="col" class="th th-or-td">Hewan</th>
@@ -51,12 +35,97 @@
 		</tr>
 	</tbody>
 </table></editable-table>
+<p>Mari kita saksikan Fina menyelesaikannya.</p>
+<grid-plate item-padding="16" item-margin="16" layout="1-3">     <p slot="col-2">Oke, kelihatannya cukup mudah. ​​Saya akan mulai dengan memeriksa contoh di pelajaran       terakhir.</p>     <p slot="col-2">DAPATKAN... if, ==... Oke.</p>     <p slot="col-2">Jadi, mulailah dengan MENDAPATKAN input. Bidang tersebut disebut hewan, jadi...</p>     <ul>       <li>&lt;?php</li>       <li>// Get input.</li>       <li>$animal = $_GET['animal'];</li>     </ul>     <media-image source="files/right-output.png" alt="right-output.png" slot="col-2" accent-color="grey" size="wide" offset="narrow"></media-image>
+
+
+     <p slot="col-2">Sepertinya ini sebuah tag p. Coba saya periksa. Saya akan <a href="http://andy1.rf.gd/html/bukan-disana/index.php?hewan=kambing" target="_blank">melihat contoh halaman</a> , lalu memeriksa HTML di dalamnya:</p>     <media-image source="files/view-source.png" alt="view-source.png" slot="col-2" accent-color="grey" size="wide" offset="none"></media-image>
+
+
+       <p slot="col-2">Itu akan menunjukkan kepada saya HTML yang dibuat oleh program tersebut.</p>       <media-image source="files/html-hewan.png" alt="html-hewan.png" slot="col-2" accent-color="grey" size="wide" offset="none"></media-image>
+
+
+         <p slot="col-2">Saya akan menemukan HTML yang menunjukkan hewan tersebut:</p>         <media-image source="files/html-hewan2.png" alt="html-hewan2.png" slot="col-2" accent-color="grey" size="wide" offset="none"></media-image>
+
+
+         <p slot="col-2">Benar, itu sebuah ptag. Jadi...</p>         <media-image source="files/tidakoutput.png" alt="tidakoutput.png" slot="col-2" accent-color="grey" size="wide" offset="none"></media-image>
+
+         <ul>           <li>&lt;?php</li>           <li>// dapat masukan</li>           <li slot="col-2">$hewan = $_GET['hewan'];</li>           <li slot="col-2">print "Hewan kamu adalah $hewan";</li>         </ul>                   <ul>           <li>&lt;?php</li>           <li>// dapat masukan</li>           <li>$hewan = $_GET['hewan'];</li>           <li>print "&lt;p&gt;Hewan kamu adalah $hewan";</li>         </ul>         <ul>           <li>&lt;?php</li>           <li slot="col-2"></li>         </ul>         <ul>           <li>&lt;?php</li>           <li>// dapatkan input</li>           <li>$hewan = $_GET['hewan'];</li>           <li>print "&lt;p&gt; Hewanmu : $hewan &lt;/p&gt;";</li>         </ul>         <media-image source="files/fina_bingung.jpg" alt="bingung.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" figure-label-title="Fina" modal-title="Fina" _has-caption="" link="files/fina_bingung.jpg" disable-zoom data-width="25"></media-image>
+
+
+   </grid-plate>
+<a11y-collapse heading-button icon="icons:expand-more" label="expand" heading="Tulis Q-6" tooltip="expand" accent-color="grey">     <p>Benarkah itu? Apakah kodenya sejauh ini benar?</p>   </a11y-collapse>
+<grid-plate item-padding="16" item-margin="16" layout="1-3" disable-responsive>     <media-image source="files/fina_senang.jpg" alt="bingung.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" figure-label-title="Fina" modal-title="Fina" _has-caption="" data-width="25"></media-image>
+
+
+     <p slot="col-2">Sekarang untuk if. Mulailah dengan tupai. Mari saya periksa pesan keluarannya:</p>     <editable-table downloadable slot="col-2" accent-color="grey" column-header csv-data="&quot;Hewan&quot;,&quot;Pesan&quot;
+&quot;Tupai&quot;,&quot;Ambillah beberapa kacang tanah.&quot;
+&quot;Kambing&quot;,&quot;Dapatkan banyak kacang.&quot;
+&quot;Gajah&quot;,&quot;Dapatkan banyak sekali kacang tanah!&quot;
+&quot;Lainnya&quot;,&quot;Saya tidak tahu berapa banyak kacang yang Anda butuhkan.&quot;" bordered><table bordered="" downloadable="">
+	<thead class="thead">
+		<tr class="thead-tr tr">
+			<th scope="col" class="th th-or-td">-</th>
+			<th scope="col" class="th th-or-td">-</th>
+			<th scope="col" class="th th-or-td">-</th>
+		</tr>
+	</thead>
+	<tbody class="tbody">
+		<tr class="tbody-tr tr">
+			<td class="td th-or-td">-</td>
+			<td class="td th-or-td">-</td>
+			<td class="td th-or-td">-</td>
+		</tr>
+		<tr class="tbody-tr tr">
+			<td class="td th-or-td">-</td>
+			<td class="td th-or-td">-</td>
+			<td class="td th-or-td">-</td>
+		</tr>
+	</tbody>
+</table></editable-table>
+
 
        <p slot="col-2">Jadi itu akan menjadi...</p>       <media-image source="files/tidakoutput2.png" alt="tidakoutput2.png" slot="col-2" accent-color="grey" size="wide" offset="none"></media-image>
+
        <ol>         <li>&lt;?php</li>         <li>// dapat masukan</li>         <li>$hewan = $_GET['hewan'];</li>         <li>print "&lt;p&gt;Hewan kamu adalah $hewan&lt;/p&gt;";         </li>         <li>// Cetak pesan yang benar.</li>         <li>jika ($hewan == 'tupai') {</li>         <li slot="col-2">print "&lt;p&gt;Ambil beberapa kacang tanah.&lt;/p&gt;;</li>         <li slot="col-2">}</li>       </ol>               Hewan kamu adalah $hewan"; if ($hewan == 'tupai') { print '       <p>Ambil beberapa kacang tanah.</p>'; } elseif ($hewan == 'kambing') { print '       <p>Dapatkan banyak kacang tanah.</p>'; } elseif ($hewan == 'gajah') { print '       <p>Dapatkan banyak sekali kacang tanah!</p>'; } else { print "       <p>Saya tidak tahu berapa banyak kacang yang Anda butuhkan.</p>"; }       <ol>         <li slot="col-2">&lt;?php</li>         <li>// dapat masukan</li>         <li>$hewan = $_GET['hewan'];</li>         <li>// Pengaturan keperluan kacang.</li>         <li>print "&lt;p&gt;Hewan kamu adalah $hewan";</li>         <li>if ($hewan == 'tupai') {</li>         <li>print '&lt;p&gt;Ambil beberapa kacang tanah.&lt;/p&gt;';</li>         <li>}</li>       </ol>        Oke,         sekarang yang lainnya...       <p>Deep thoughts..</p><p>Deep thoughts..</p>       <p slot="col-2">Oke, sekarang yang lainnya...</p>       <media-image source="files/tidakoutput3.png" alt="tidakoutput3.png" slot="col-2" accent-color="grey" size="wide" offset="none"></media-image>
+
        <ol>         <li>&lt;?php</li>         <li>// dapat masukan</li>         <li>$hewan = $_GET['hewan'];</li>         <li>print "&lt;p&gt;Hewan kamu adalah $hewan&lt;/p&gt;";         </li>         <li>// Cetak pesan yang benar.</li>         <li>jika ($hewan == 'tupai') {</li>         <li slot="col-2">print "&lt;p&gt;Ambil beberapa kacang tanah.&lt;/p&gt;;</li>         <li slot="col-2">}</li>       </ol>               <ol>         <li slot="col-2">&lt;?php</li>         <li>// dapat masukan</li>         <li>$hewan = $_GET['hewan'];</li>         <li>// Pengaturan keperluan kacang.</li>         <li>print "&lt;p&gt;Hewan kamu adalah $hewan";</li>         <li>if ($hewan == 'tupai') {</li>         <li>print '&lt;p&gt;Ambil beberapa kacang tanah.&lt;/p&gt;';</li>         <li>}</li>         <li>elseif ($hewan == 'kambing') {</li>         <li>print '&lt;p&gt;Dapatkan banyak kacang tanah.&lt;/p&gt;';</li>         <li>}</li>         <li>elseif ($hewan == 'gajah') {</li>         <li>print '&lt;p&gt;Dapatkan banyak sekali kacang tanah!&lt;/p&gt;';</li>         <li>}</li>         <li>else {</li>         <li>print "&lt;p&gt;Say$hewan = $_GET['hewan'];</li>         <li></li>         <li>print "&lt;p&gt;Saya tidak tahu berapa banyak kacang yang Anda butuhkan.&lt;/p&gt;";</li>         <li>}</li>       </ol>       <p slot="col-2">Baiklah. Anda hanya perlu menyalin templat halaman dari <a href="aplikasi-web/membuat-html/page-template" target="_blank">pelajaran sebelumnya</a> , menempelkannya,         mengubah judul dan tajuk, dan jadilah!</p>       <p slot="col-2"><iframe-loader role="textbox" disabled="" source="https://pastebin.com/embed_iframe/DfnYnBBU?theme=dark" height="500" width="100%"><iframe src="https://pastebin.com/embed_iframe/DfnYnBBU?theme=dark" style="border:none;width:100%" height="500" width="100%"></iframe></iframe-loader>
 </p>       <ol>         <li slot="col-2">&lt;?php</li>         <li>// dapat masukan</li>         <li>$hewan = $_GET['hewan'];</li>         <li>// Pengaturan keperluan kacang.</li>         <li>print "&lt;p&gt;Hewan kamu adalah $hewan";</li>         <li>if ($hewan == 'tupai') {</li>         <li>print '&lt;p&gt;Ambil beberapa kacang tanah.&lt;/p&gt;';</li>         <li>}</li>         <li>elseif ($hewan == 'kambing') {</li>         <li>print '&lt;p&gt;Dapatkan banyak kacang tanah.&lt;/p&gt;';</li>         <li>}</li>         <li>elseif ($hewan == 'gajah') {</li>         <li>print '&lt;p&gt;Dapatkan banyak sekali kacang tanah!&lt;/p&gt;';</li>         <li>}</li>         <li>else {</li>         <li>print "&lt;p&gt;Say$hewan = $_GET['hewan'];</li>         <li>// Pengaturan keperluan kacang.</li>         <li>print "&lt;p&gt;Hewan kamu adalah $hewan";</li>         <li>if ($hewan == 'tupai') {</li>         <li>print '&lt;p&gt;Ambil beberapa kacang tanah.&lt;/p&gt;';</li>         <li>}</li>         <li>elseif (</li>         <li slot="col-2">$hewan == 'kambing') {</li>         <li>print '&lt;p&gt;Dapatkan banyak kacang tanah.&lt;/p&gt;';</li>         <li>}</li>         <li>elseif ($hewan == 'gajah') {</li>         <li>print '&lt;p&gt;Dapatkan banyak sekali kacang tanah!&lt;/p&gt;';</li>         <li>}else {</li>         <li>print "&lt;p&gt;Saya tidak tahu berapa banyak kacang yang Anda butuhkan.&lt;/p&gt;";</li>         <li>}</li>       </ol>       <ul>         <li>&lt;?php</li>         <li>// Get input.</li>         <li>$animal = $_GET['animal'];</li>       </ul>       <ul>         <li>&lt;?php</li>         <li>// dapat masukan</li>         <li>$hewan = $_GET['hewan'];</li>         <li>print "&lt;p&gt;Hewan kamu adalah $hewan";</li>       </ul>       <ul>         <li>&lt;?php</li>         <li slot="col-2"></li>       </ul>       <ul>         <li>&lt;?php</li>         <li>// dapatkan input</li>         <li>$hewan = $_GET['hewan'];</li>         <li>print "&lt;p&gt; Hewanmu : $hewan &lt;/p&gt;";</li>       </ul>   </grid-plate>
 <p>Saatnya mengujinya!</p>
 <a11y-collapse heading="Tulis Q-6" heading-button accent-color="grey" icon="icons:expand-more" tooltip="expand" label="expand">     <p>Apakah kode tersebut akan berfungsi? Jika tidak, apa yang akan ditampilkan?</p>   </a11y-collapse>
 <p>Inilah yang Anda dapatkan: <a href="http://andy1.rf.gd/html/bukan-disana/wrong1.php?hewan=kambing" target="_blank">http://andy1.rf.gd/html/bukan-disana/wrong1.php?hewan=kambing</a>    </p>
 <media-image source="files/html-hewan3.png" alt="html-hewan3.png" accent-color="grey" size="wide" offset="none"></media-image>
+<p>
+<grid-plate item-padding="16" item-margin="16" disable-responsive layout="1-3" data-width="100" data-margin="center" data-border-radius="xs" data-border="sm">
+        <media-image source="files/fina_senang2.jpg" alt="bingung.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" data-margin="center" data-width="50" figure-label-title="Fina" modal-title="Fina" _has-caption=""></media-image>
+
+        <p slot="col-2" data-margin="center">Tunggu, bukan itu! Apa yang terjadi? </p><p slot="col-2" data-margin="center">Saya akan klik kanan dan memeriksa HTML yang dibuat program saya...
+        <br>
+      </p>
+
+    <media-image source="files/tidakoutput4.png" alt="tidakoutput4.png" slot="col-2" accent-color="grey" size="wide" offset="none"></media-image>
+<p slot="col-2">Wah! Saya ingin HTML hewan dan kacang di dalam , body seperti ini:</p><media-image source="files/tidakoutput5.png" alt="tidakoutput5.png" slot="col-2" accent-color="grey" size="wide" offset="none"></media-image>
+<p></p></grid-plate>
+</p>
+<p><br></p>
+<a11y-collapse heading="Tulis Q-7" heading-button accent-color="grey" icon="icons:expand-more" tooltip="expand" label="expand"><p>Berikut kode Fina</p><p><iframe-loader disabled="" source="https://pastebin.com/embed_iframe/DfnYnBBU?theme=dark" height="500" width="100%"><iframe src="https://pastebin.com/embed_iframe/DfnYnBBU?theme=dark" style="border:none;width:100%" height="500" width="100%"></iframe></iframe-loader>
+</p><p>Apa yang harus dilakukan Fina untuk memperbaiki kode tersebut?</p><p></p><p></p><p></p></a11y-collapse>
+<grid-plate item-padding="16" item-margin="16" layout="1-3" data-width="100" data-margin="center" data-border-radius="xs" data-border="sm" data-accent="9" data-primary="11" disable-responsive>
+        <media-image source="files/fina_bingung.jpg" alt="bingung.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" data-margin="center" data-width="50" figure-label-title="Fina" modal-title="Fina" _has-caption=""></media-image>
+
+        <p slot="col-2" data-margin="center">Apa yang akan saya lakukan? </p><p slot="col-2" data-margin="center">Nah, seperti yang dikatakan Pak Andy , jika ragu, carilah contoh.
+        <br>
+      </p>
+
+    </grid-plate>
+<grid-plate item-margin="16" item-padding="16" layout="1" data-border="md" data-border-radius="xs" data-width="100" data-primary="0" data-accent="1"><h2 id="header-033e8fa9-b4fb-3892-3eeb-1763778697ec" data-margin="center" slot="col-1">Memang! </h2><p data-margin="center" slot="col-1">Dia benar. Aku memang mengatakan itu.</p></grid-plate>
+<grid-plate item-padding="16" item-margin="16" disable-responsive layout="1-3" data-width="100" data-margin="center" data-border-radius="xs" data-border="sm" data-accent="9" data-primary="11">
+          <media-image source="files/fina_bingung.jpg" alt="bingung.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" data-margin="center" data-width="50" figure-label-title="Fina" modal-title="Fina" _has-caption=""></media-image>
+
+
+
+          <p slot="col-2" data-margin="center">Mari kita lihat... </p><p slot="col-2" data-margin="center" role="textbox">berikut beberapa kode dari pelajaran terakhir:</p>
+  
+
+
+    </grid-plate>
