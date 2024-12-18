@@ -5338,39 +5338,6 @@
         "icon": "lrn:page",
         "status": ""
       }
-    },
-    {
-      "id": "item-1a42973d-ec37-484e-949e-3b114172aca1",
-      "indent": 0,
-      "location": "pages/item-1a42973d-ec37-484e-949e-3b114172aca1/index.html",
-      "slug": "tes",
-      "order": 0,
-      "parent": null,
-      "title": "tes",
-      "description": "\n\n\n",
-      "metadata": {
-        "created": 1733817108,
-        "updated": 1734530024,
-        "images": {},
-        "videos": {},
-        "published": true,
-        "pageType": "connection",
-        "hideInMenu": false,
-        "locked": false,
-        "readtime": 1,
-        "icon": "courseicons:chem-connection",
-        "files": [
-          {
-            "path": "C:\\Users\\andyy\\Downloads\\git\\andyyulianto77\\informatika12\\files\\hax-site-impor.JPG",
-            "fullUrl": "/C:\\Users\\andyy\\Downloads\\git\\andyyulianto77\\informatika12/files/hax-site-impor.JPG",
-            "url": "files/hax-site-impor.JPG",
-            "type": "image/jpeg",
-            "name": "hax-site-impor.JPG",
-            "size": 18597
-          }
-        ],
-        "status": ""
-      }
     }
   ]
 }
