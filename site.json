@@ -3277,13 +3277,13 @@
       "description": "Berikut ini sebuah tugas: Tulis program yang memberi tahu berapa banyak kacang yang akan diperoleh, tergantung   pada jenis hewan. Anda dapat mencobanya untuk seekor kambing: http://webappexamples.sk",
       "metadata": {
         "created": 1734402616,
-        "updated": 1735550177,
+        "updated": 1735550231,
         "images": {},
         "videos": {},
         "published": true,
         "hideInMenu": false,
         "locked": false,
-        "readtime": 4,
+        "readtime": 5,
         "pageType": "assessment",
         "icon": "lrn:assessment"
       }
