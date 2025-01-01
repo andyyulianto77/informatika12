@@ -1,5 +1,5 @@
 
-<h2 id="header-5a8fcf20-d879-d3e7-f045-2b1d364e5dea" data-text-align="center" data-design-treatment="bg" data-border="lg" data-box-shadow="sm" data-primary="13" data-padding="s">Indentasi otomatis:&#160;<span>VSCode secara otomatis mengatur indentasi kode.</span></h2>
+<h2 data-original-level="H2" id="header-5a8fcf20-d879-d3e7-f045-2b1d364e5dea" data-text-align="center" data-design-treatment="bg" data-border="lg" data-box-shadow="sm" data-primary="13" data-padding="s">Indentasi otomatis:&#160;<span>VSCode secara otomatis mengatur indentasi kode.</span></h2>
 <p>Visual Studio Code (VSCode) adalah alat yang sangat berguna untuk mengedit kode. Mari kita lihat beberapa fitur kerennya.</p>
 <p>Misalnya, ketika kita membuat kode PHP baru, VSCode secara otomatis akan membantu kita menjaga agar kode kita tertata rapi dengan fitur indentasi otomatis. Ini sangat membantu, terutama saat kita bekerja dengan struktur kode yang kompleks seperti <code>if</code> dan <code>loop</code>.</p>
 <ul><li>&lt;?php </li><li>// Get input. </li><li>$hewan = $_GET['hewan']; </li><li>$perluKacang = ''; </li><li>if ($hewan == 'tupai') { </li><li>     $perluKacang = 'Ambillah beberapa kacang tanah..';</li><li><br></li></ul>
@@ -11,8 +11,23 @@
 <media-image source="files/nambah kurung2.png" alt="nambah kurung2.png" accent-color="grey" size="wide" offset="none"></media-image>
 <p>... VSCode menggesernya ke kiri, menyesuaikan indentasi secara otomatis.&#160;</p>
 <p>Keren sekali!&#160;</p>
+<h2 data-original-level="H2" id="header-5a8fcf20-d879-d3e7-f045-2b1d364e5dea" data-text-align="center" data-design-treatment="bg" data-border="lg" data-box-shadow="sm" data-primary="13" data-padding="s">Pelengkapan kode: VSCode menyarankan kata kunci, variabel, dan fungsi yang relevan saat kita mengetik, mempercepat proses penulisan kode.</h2>
+<p>Selain itu, VSCode juga memiliki fitur pelengkapan kode yang sangat pintar. Ia bisa menebak apa yang ingin kita tulis selanjutnya berdasarkan konteks kode yang ada. Ini sangat menghemat waktu kita, terutama saat kita bekerja dengan kode yang panjang dan kompleks.</p>
 <p>Sekarang saya tekan enter, dan ketik "el":&#8203;</p>
 <media-image source="files/auto-nulis.png" alt="auto-nulis.png" accent-color="grey" size="wide" offset="none"></media-image>
-<h2 id="header-5a8fcf20-d879-d3e7-f045-2b1d364e5dea" data-text-align="center" data-design-treatment="bg" data-border="lg" data-box-shadow="sm" data-primary="13" data-padding="s">Pelengkapan kode: VSCode menyarankan kata kunci, variabel, dan fungsi yang relevan saat kita mengetik, mempercepat proses penulisan kode.</h2>
-<p style="">Selain itu, VSCode juga memiliki fitur pelengkapan kode yang sangat pintar. Ia bisa menebak apa yang ingin kita tulis selanjutnya berdasarkan konteks kode yang ada. Ini sangat menghemat waktu kita, terutama saat kita bekerja dengan kode yang panjang dan kompleks.</p>
-<p style="text-align: center;"><br></p>
+<p>VSCode menampilkan daftar simbol yang diketahuinya yang dimulai dengan "el". VSCode meletakkan hal-hal yang menurutnya paling mungkin Anda inginkan di bagian atas daftar. VSCode melihat hal-hal ifdi atas, jadi VSCode menampilkan "else" dan "elseif" terlebih dahulu.&#160;</p>
+<p>Saya menekan tombol panah bawah, menekan enter, dan VSCode mengisi "elseif." Ia juga menambahkan beberapa tanda kurung, dan meletakkan kursor di dalamnya, karena itulah yang saya perlukan.</p>
+<media-image source="files/auto-nulis2.png" alt="auto-nulis2.png" accent-color="grey" size="wide" offset="none"></media-image>
+<p>Keren!&#160;</p>
+<p>Saya mengetik "tab". Pelengkapan otomatis pengisi VSCode aktif dan mengisi logika elseif.</p>
+<media-image source="files/auto-nulis3.png" alt="auto-nulis3.png" accent-color="grey" size="wide" offset="none"></media-image>
+<p>Saya mengetik "p". Pelengkapan otomatis VSCode aktif:</p>
+<media-image source="files/auto-nulis4.png" alt="auto-nulis4.png" accent-color="grey" size="wide" offset="none"></media-image>
+<p>Perhatikan bahwa $perluKacang ada di dekat bagian atas daftar. VSCode menganalisis kode Anda, memilih variabel, dan menambahkannya ke daftar pelengkapan otomatisnya.&#160;</p>
+<p>Salah satu fitur favorit saya adalah kemampuan VSCode untuk mengganti nama variabel secara otomatis. Fitur ini sangat berguna saat kita ingin mengubah nama variabel di seluruh proyek kita.</p>
+<h2 id="header-5a8fcf20-d879-d3e7-f045-2b1d364e5dea" data-original-level="H2" data-text-align="center" data-design-treatment="bg" data-border="lg" data-box-shadow="sm" data-primary="13" data-padding="s">Deteksi kesalahan: VSCode dapat mendeteksi kesalahan sintaksis dan memberikan peringatan</h2>
+<p>Teks dengan latar belakang hitam buram berarti aksi. Arahkan kursor tetikus pada teks pink, dan Anda akan mendapatkan keterangan alat dan aksi dengan informasi mendetail.</p>
+<media-image source="files/auto-nulis5.png" alt="auto-nulis5.png" accent-color="grey" size="wide" offset="narrow" citation="copilot github free"></media-image>
+<p>BTW, penamaan variabel yang baik sangatlah penting . Ini membantu membuat kode Anda mudah dikelola. Pastikan nama variabel sesuai dengan maknanya. Jadi $salesTaxRatelebih baik daripada $sr.&#160;</p>
+<p>Nama variabel yang baik bukanlah hal yang opsional dalam kursus ini. Seperti indentasi, nama variabel wajib.&#160;</p>
+<p>VSCode populer di kalangan pengembang PHP profesional. Cobalah membaca beberapa tutorial di internet. Ada banyak sekali.</p>

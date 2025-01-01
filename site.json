@@ -3342,18 +3342,17 @@
       "slug": "aplikasi-web/membuat-html/page",
       "order": 11,
       "parent": "item-f7f19c6e-0234-4e10-a3b8-1aabb9d27181",
-      "title": "Mengedit dengan VSCode",
+      "title": "Page",
       "description": "Indentasi otomatis:&#160;VSCode secara otomatis mengatur indentasi kode.\nVisual Studio Code (VSCode) adalah alat yang sangat berguna untuk mengedit kode. Mari kita lihat beberapa fitur kerennya.\nMisa",
       "metadata": {
         "created": 1735699108,
-        "updated": 1735704137,
+        "updated": 1735706227,
         "images": {},
         "videos": {},
         "published": true,
-        "pageType": "content",
         "hideInMenu": false,
         "locked": false,
-        "readtime": 1
+        "readtime": 2
       }
     },
     {
