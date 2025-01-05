@@ -23,12 +23,12 @@
         "gaID": null
       },
       "created": 1732016691,
-      "updated": 1736041570,
+      "updated": 1736043235,
       "git": {
         "vendor": "github",
         "branch": "gh-pages"
       },
-      "version": "9.0.21",
+      "version": "10.0.1",
       "domain": null,
       "tags": null,
       "static": {}
@@ -39,7 +39,7 @@
       "name": "Polaris - Invent",
       "thumbnail": "build/es6/node_modules/@haxtheweb/app-hax/lib/assets/images/PartyStyle.svg",
       "variables": {
-        "image": "",
+        "image": "files/psu-mark.png",
         "imageAlt": null,
         "imageLink": null,
         "hexCode": "#3f51b5",
@@ -2609,7 +2609,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1736041512,
+        "updated": 1736041312,
         "images": {},
         "videos": {},
         "published": true,
@@ -2651,7 +2651,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1736041523,
+        "updated": 1736041322,
         "images": {},
         "videos": {},
         "published": true,
@@ -2672,7 +2672,7 @@
       "description": "",
       "metadata": {
         "created": 1732016685,
-        "updated": 1736041565,
+        "updated": 1736041360,
         "images": {},
         "videos": {},
         "published": false,
@@ -3711,7 +3711,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1736041513,
+        "updated": 1736041313,
         "images": {},
         "videos": {},
         "published": true,
@@ -3732,7 +3732,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1736041514,
+        "updated": 1736041315,
         "images": {},
         "videos": {},
         "published": true,
@@ -3753,7 +3753,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1736041516,
+        "updated": 1736041316,
         "images": {},
         "videos": {},
         "published": true,
@@ -3774,7 +3774,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1736041517,
+        "updated": 1736041317,
         "images": {},
         "videos": {},
         "published": true,
@@ -3795,7 +3795,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1736041519,
+        "updated": 1736041318,
         "images": {},
         "videos": {},
         "published": true,
@@ -3818,7 +3818,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1736041520,
+        "updated": 1736041319,
         "images": {},
         "videos": {},
         "published": true,
@@ -3839,7 +3839,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1736041522,
+        "updated": 1736041320,
         "images": {},
         "videos": {},
         "published": true,
@@ -3864,7 +3864,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1736041525,
+        "updated": 1736041324,
         "images": {},
         "videos": {},
         "published": true,
@@ -3885,7 +3885,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1736041526,
+        "updated": 1736041325,
         "images": {},
         "videos": {},
         "files": [
@@ -3916,7 +3916,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1736041527,
+        "updated": 1736041327,
         "images": {},
         "videos": {},
         "published": true,
@@ -3937,7 +3937,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1736041530,
+        "updated": 1736041328,
         "images": {},
         "videos": {},
         "files": [
@@ -3968,7 +3968,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1736041532,
+        "updated": 1736041329,
         "images": {},
         "videos": {},
         "published": true,
@@ -3991,7 +3991,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1736041533,
+        "updated": 1736041330,
         "images": {},
         "videos": {},
         "published": true,
@@ -4012,7 +4012,7 @@
       "description": "",
       "metadata": {
         "created": 1732016686,
-        "updated": 1736041535,
+        "updated": 1736041332,
         "images": {},
         "videos": {},
         "published": true,
@@ -4045,7 +4045,7 @@
       "description": "",
       "metadata": {
         "created": 1732016687,
-        "updated": 1736041537,
+        "updated": 1736041333,
         "images": {},
         "videos": {},
         "files": [
@@ -4078,7 +4078,7 @@
       "description": "",
       "metadata": {
         "created": 1732016687,
-        "updated": 1736041538,
+        "updated": 1736041334,
         "images": {},
         "videos": {},
         "published": true,
@@ -4111,7 +4111,7 @@
       "description": "",
       "metadata": {
         "created": 1732016687,
-        "updated": 1736041540,
+        "updated": 1736041336,
         "images": {},
         "videos": {},
         "published": true,
@@ -4132,7 +4132,7 @@
       "description": "",
       "metadata": {
         "created": 1732016687,
-        "updated": 1736041542,
+        "updated": 1736041337,
         "images": {},
         "videos": {},
         "published": true,
@@ -4155,7 +4155,7 @@
       "description": "",
       "metadata": {
         "created": 1732016687,
-        "updated": 1736041543,
+        "updated": 1736041339,
         "images": {},
         "videos": {},
         "published": true,
@@ -4177,7 +4177,7 @@
       "description": "",
       "metadata": {
         "created": 1732016687,
-        "updated": 1736041544,
+        "updated": 1736041341,
         "images": {},
         "videos": {},
         "published": true,
@@ -4198,7 +4198,7 @@
       "description": "",
       "metadata": {
         "created": 1732016688,
-        "updated": 1736041546,
+        "updated": 1736041342,
         "images": {},
         "videos": {},
         "published": false,
@@ -4239,7 +4239,7 @@
       "description": "",
       "metadata": {
         "created": 1732016687,
-        "updated": 1736041548,
+        "updated": 1736041343,
         "images": {},
         "videos": {},
         "published": true,
@@ -4272,7 +4272,7 @@
       "description": "",
       "metadata": {
         "created": 1732016688,
-        "updated": 1736041549,
+        "updated": 1736041345,
         "images": {},
         "videos": {},
         "published": false,
@@ -4295,7 +4295,7 @@
       "description": "",
       "metadata": {
         "created": 1732016687,
-        "updated": 1736041553,
+        "updated": 1736041348,
         "images": {},
         "videos": {},
         "published": true,
@@ -4318,7 +4318,7 @@
       "description": "",
       "metadata": {
         "created": 1732016687,
-        "updated": 1736041551,
+        "updated": 1736041346,
         "images": {},
         "videos": {},
         "published": true,
@@ -4340,7 +4340,7 @@
       "description": "",
       "metadata": {
         "created": 1732016687,
-        "updated": 1736041554,
+        "updated": 1736041349,
         "images": {},
         "videos": {},
         "published": true,
@@ -4373,7 +4373,7 @@
       "description": "",
       "metadata": {
         "created": 1732016687,
-        "updated": 1736041556,
+        "updated": 1736041350,
         "images": {},
         "videos": {},
         "published": true,
@@ -4414,7 +4414,7 @@
       "description": "",
       "metadata": {
         "created": 1732016687,
-        "updated": 1736041557,
+        "updated": 1736041353,
         "images": {},
         "videos": {},
         "published": true,
@@ -4479,7 +4479,7 @@
       "description": "",
       "metadata": {
         "created": 1732016688,
-        "updated": 1736041559,
+        "updated": 1736041355,
         "images": {},
         "videos": {},
         "files": [
@@ -4536,7 +4536,7 @@
       "description": "",
       "metadata": {
         "created": 1732016688,
-        "updated": 1736041560,
+        "updated": 1736041356,
         "images": {},
         "videos": {},
         "published": true,
@@ -4649,7 +4649,7 @@
       "description": "Ini untuk membuat catatan/refleksi dari materi yang sudah dipelajari. Ikuti tutorial dari blog\nGithub + Stickblitz + HAX = penerbitan web gratis\n\nSumber Tulisan\n#situs web hax#pengembang web#komponen",
       "metadata": {
         "created": 1732016688,
-        "updated": 1736041562,
+        "updated": 1736041358,
         "images": {},
         "videos": {},
         "published": true,
@@ -4706,7 +4706,7 @@
       "description": "",
       "metadata": {
         "created": 1732016688,
-        "updated": 1736041563,
+        "updated": 1736041359,
         "images": {},
         "videos": {},
         "published": true,
@@ -5376,7 +5376,7 @@
       "description": "\n",
       "metadata": {
         "created": 1736040196,
-        "updated": 1736041566,
+        "updated": 1736041362,
         "images": {},
         "videos": {},
         "published": true,
@@ -5397,7 +5397,7 @@
       "description": "\n",
       "metadata": {
         "created": 1736040662,
-        "updated": 1736041568,
+        "updated": 1736041363,
         "images": {},
         "videos": {},
         "published": true,
@@ -5409,23 +5409,22 @@
     },
     {
       "id": "item-aa117035-8527-4bca-bada-e7278153e960",
-      "indent": 1,
+      "indent": 0,
       "location": "pages/item-aa117035-8527-4bca-bada-e7278153e960/index.html",
-      "slug": "site-things/footer",
+      "slug": "site-things/page",
       "order": 1,
       "parent": "item-cb344d64-a9ba-40cf-be72-547ed08083e0",
       "title": "Footer",
       "description": "\n",
       "metadata": {
         "created": 1736041366,
-        "updated": 1736041569,
+        "updated": 1736041382,
         "images": {},
         "videos": {},
         "published": true,
         "hideInMenu": false,
         "locked": false,
-        "readtime": 1,
-        "status": ""
+        "readtime": 1
       }
     }
   ]
