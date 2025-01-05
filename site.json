@@ -7,9 +7,9 @@
   "metadata": {
     "author": {
       "image": "",
-      "name": null,
-      "email": null,
-      "socialLink": null
+      "name": "Andy Yulianto",
+      "email": "andybelajas@gmail.com",
+      "socialLink": "https://www.facebook.com/pakandyid/"
     },
     "site": {
       "name": "informatikaxii",
@@ -23,7 +23,7 @@
         "gaID": null
       },
       "created": 1732016691,
-      "updated": 1736043491,
+      "updated": 1736044351,
       "git": {
         "vendor": "github",
         "branch": "gh-pages"
