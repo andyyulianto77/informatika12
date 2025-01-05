@@ -5393,13 +5393,17 @@
       "slug": "site-things/page",
       "order": 0,
       "parent": "item-cb344d64-a9ba-40cf-be72-547ed08083e0",
-      "title": "Page",
-      "description": "",
+      "title": "Header",
+      "description": "\n",
       "metadata": {
         "created": 1736040662,
-        "updated": 1736040662,
-        "images": [],
-        "videos": []
+        "updated": 1736040694,
+        "images": {},
+        "videos": {},
+        "published": true,
+        "hideInMenu": false,
+        "locked": false,
+        "readtime": 1
       }
     }
   ]
