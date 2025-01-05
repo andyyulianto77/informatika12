@@ -5414,13 +5414,17 @@
       "slug": "site-things/page",
       "order": 1,
       "parent": "item-cb344d64-a9ba-40cf-be72-547ed08083e0",
-      "title": "Page",
-      "description": "",
+      "title": "Footer",
+      "description": "\n",
       "metadata": {
         "created": 1736041366,
-        "updated": 1736041366,
-        "images": [],
-        "videos": []
+        "updated": 1736041382,
+        "images": {},
+        "videos": {},
+        "published": true,
+        "hideInMenu": false,
+        "locked": false,
+        "readtime": 1
       }
     }
   ]
