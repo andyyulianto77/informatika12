@@ -5400,7 +5400,30 @@
       "description": "\n",
       "metadata": {
         "created": 1736040662,
-        "updated": 1736043627,
+        "updated": 1736043898,
+        "files": [
+          {
+            "fullUrl": "/bto108/sites/haxcellence/files/psu-mark.png",
+            "url": "files/psu-mark.png",
+            "type": "image/png",
+            "name": "psu-mark.png",
+            "size": "25571"
+          },
+          {
+            "fullUrl": "/bto108/sites/haxcellence/files/PSU_ARC_RGB_REV_2C.svg",
+            "url": "files/PSU_ARC_RGB_REV_2C.svg",
+            "type": "image/svg+xml",
+            "name": "PSU_ARC_RGB_REV_2C.svg",
+            "size": "14283"
+          },
+          {
+            "fullUrl": "/bto108/sites/haxcellence/files/hax.png",
+            "url": "files/hax.png",
+            "type": "image/png",
+            "name": "hax.png",
+            "size": "343118"
+          }
+        ],
         "images": {},
         "videos": {},
         "published": true,
