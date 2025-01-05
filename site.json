@@ -5421,10 +5421,10 @@
       "description": "\n",
       "metadata": {
         "created": 1736041366,
-        "updated": 1736088470,
+        "updated": 1736088536,
         "images": {},
         "videos": {},
-        "published": false,
+        "published": true,
         "hideInMenu": false,
         "locked": false,
         "readtime": 1
