@@ -5362,6 +5362,22 @@
         "icon": "lrn:page",
         "status": ""
       }
+    },
+    {
+      "id": "item-cb344d64-a9ba-40cf-be72-547ed08083e0",
+      "indent": 0,
+      "location": "pages/item-cb344d64-a9ba-40cf-be72-547ed08083e0/index.html",
+      "slug": "page",
+      "order": 7,
+      "parent": null,
+      "title": "Page",
+      "description": "",
+      "metadata": {
+        "created": 1736040196,
+        "updated": 1736040196,
+        "images": [],
+        "videos": []
+      }
     }
   ]
 }
