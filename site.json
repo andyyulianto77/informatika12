@@ -7,9 +7,9 @@
   "metadata": {
     "author": {
       "image": "",
-      "name": "Andy Yulianto",
-      "email": "andybelajas@gmail.com",
-      "socialLink": "https://www.facebook.com/pakandyid/"
+      "name": null,
+      "email": null,
+      "socialLink": null
     },
     "site": {
       "name": "informatikaxii",
@@ -23,7 +23,7 @@
         "gaID": null
       },
       "created": 1732016691,
-      "updated": 1736044351,
+      "updated": 1736043491,
       "git": {
         "vendor": "github",
         "branch": "gh-pages"
@@ -5400,30 +5400,7 @@
       "description": "\n",
       "metadata": {
         "created": 1736040662,
-        "updated": 1736043911,
-        "files": [
-          {
-            "fullUrl": "/bto108/sites/haxcellence/files/psu-mark.png",
-            "url": "files/psu-mark.png",
-            "type": "image/png",
-            "name": "psu-mark.png",
-            "size": "25571"
-          },
-          {
-            "fullUrl": "/bto108/sites/haxcellence/files/PSU_ARC_RGB_REV_2C.svg",
-            "url": "files/PSU_ARC_RGB_REV_2C.svg",
-            "type": "image/svg+xml",
-            "name": "PSU_ARC_RGB_REV_2C.svg",
-            "size": "14283"
-          },
-          {
-            "fullUrl": "/bto108/sites/haxcellence/files/hax.png",
-            "url": "files/hax.png",
-            "type": "image/png",
-            "name": "hax.png",
-            "size": "343118"
-          }
-        ],
+        "updated": 1736044548,
         "images": {},
         "videos": {},
         "published": true,
