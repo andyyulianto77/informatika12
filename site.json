@@ -5370,13 +5370,17 @@
       "slug": "page",
       "order": 7,
       "parent": null,
-      "title": "Page",
-      "description": "",
+      "title": "site-things",
+      "description": "\n",
       "metadata": {
         "created": 1736040196,
-        "updated": 1736040196,
-        "images": [],
-        "videos": []
+        "updated": 1736040215,
+        "images": {},
+        "videos": {},
+        "published": true,
+        "hideInMenu": false,
+        "locked": false,
+        "readtime": 1
       }
     }
   ]
