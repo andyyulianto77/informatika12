@@ -23,7 +23,7 @@
         "gaID": null
       },
       "created": 1732016691,
-      "updated": 1736043235,
+      "updated": 1736043491,
       "git": {
         "vendor": "github",
         "branch": "gh-pages"
@@ -48,7 +48,10 @@
       },
       "regions": {
         "header": [
-          "null"
+          "item-4c602412-e611-4949-b6d1-80cdfc407b6b"
+        ],
+        "footerPrimary": [
+          "item-aa117035-8527-4bca-bada-e7278153e960"
         ]
       }
     },
