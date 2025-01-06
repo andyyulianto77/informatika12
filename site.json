@@ -4798,7 +4798,17 @@
         "locked": false,
         "readtime": 2,
         "icon": "lrn:page",
-        "status": ""
+        "status": "",
+        "files": [
+          {
+            "path": "/home/andyyulianto77/informatika12/files/struktur.JPG",
+            "fullUrl": "//home/andyyulianto77/informatika12/files/struktur.JPG",
+            "url": "files/struktur.JPG",
+            "type": "image/jpeg",
+            "name": "struktur.JPG",
+            "size": 108501
+          }
+        ]
       }
     },
     {
