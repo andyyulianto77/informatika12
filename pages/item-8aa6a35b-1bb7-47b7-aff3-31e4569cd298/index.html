@@ -11,35 +11,21 @@
   <p></p>
 </learning-component>
 <h6 data-original-level="H6" id="header-dc185309-d8a3-bee7-47ae-d5cf3dc1b1a7"><p role="textbox"></p></h6>
-<p>Mari kita membuat tabel tentang <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">localhost</code>.</p>
+<p>Mari kita membuat tabel tentang <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">Daftar Siswa<br></code>.</p>
+<a11y-collapse heading="Tulis Q-4" heading-button accent-color="grey" icon="icons:expand-more" tooltip="collapse" label="collapse"><p>Apa tujuan utama membuat tabel dalam database?</p></a11y-collapse>
 <p>Tabel tersebut akan disebut siswa, dan akan memiliki bidang-bidang ini.</p>
 <editable-table downloadable accent-color="grey" data-hax-lock="data-hax-lock" bordered responsive column-header><table bordered="" downloadable="" responsive="">
 	<thead class="thead">
 		<tr class="thead-tr tr">
-			<th scope="col" class="th th-or-td">- Field</th>
-			<th scope="col" class="th th-or-td">- Type</th>
-			<th scope="col" class="th th-or-td">- Special
-          <br></th>
+			<th scope="col" class="th th-or-td">-</th>
+			<th scope="col" class="th th-or-td">-</th>
+			<th scope="col" class="th th-or-td">-</th>
 		</tr>
 	</thead>
 	<tbody class="tbody">
 		<tr class="tbody-tr tr">
-			<td class="td th-or-td">NIS
-          <br></td>
-			<td class="td th-or-td">INT
-          <br></td>
 			<td class="td th-or-td">-</td>
-		</tr>
-		<tr class="tbody-tr tr">
-			<td class="td th-or-td">nama
-          <br></td>
-			<td class="td th-or-td">varchar 70
-          <br></td>
 			<td class="td th-or-td">-</td>
-		</tr>
-		<tr class="tbody-tr tr">
-			<td class="td th-or-td">gender</td>
-			<td class="td th-or-td">varchar 70</td>
 			<td class="td th-or-td">-</td>
 		</tr>
 		<tr class="tbody-tr tr">
@@ -71,6 +57,7 @@
 <p><code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">comments</code>adalah
     <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">TEXT</code>. Apa pun yang dapat Anda ketik, hingga 65.535 karakter. Bisa berupa
       null, jadi tidak diperlukan.</p>
+<a11y-collapse heading="Tulis Q-5" heading-button accent-color="grey" icon="icons:expand-more" tooltip="collapse" label="collapse"><p>Apa saja komponen utama yang diperlukan saat mendefinisikan tabel (seperti kolom, tipe data, dan constraints)?</p></a11y-collapse>
 <p>Oke, mulai phpMyAdmin di localhost (ingat tombol CP Admin lama), dan pilih DB Latihan Siswa.</p>
 <media-image source="files/choose-db.png" alt="files/choose-db.png" accent-color="grey" size="wide" offset="narrow" data-width="50"></media-image>
 <p>Pada tab Struktur, beri tahu phpMyAdmin bahwa Anda menginginkan tabel bernama
@@ -82,8 +69,10 @@
 <media-image source="files/buat-tabel.JPG" alt="buat-tabel.JPG" accent-color="grey" size="wide" offset="none"></media-image>
 <p>Sekarang beritahu phpMyAdmin bidang apa yang Anda inginkan.</p>
 <media-image source="files/simpan-tabel2.jpg" alt="simpan-tabel2.jpg" accent-color="grey" size="wide" offset="none"></media-image>
+<a11y-collapse heading="Tulis Q-7" heading-button accent-color="grey" icon="icons:expand-more" tooltip="collapse" label="collapse"><p>Bagaimana cara menentukan tipe data yang sesuai untuk kolom tabel?</p></a11y-collapse>
 <p>Klik tombol Simpan. Anda akan melihat struktur tabelnya.</p>
 <media-image source="files/struktur.JPG" alt="struktur.JPG" accent-color="grey" size="wide" offset="none"></media-image>
+<a11y-collapse heading="Tulis Q-7" heading-button accent-color="grey" icon="icons:expand-more" tooltip="collapse" label="collapse"><p>Bagaimana cara mengubah struktur tabel (misalnya menambahkan, menghapus, atau memodifikasi kolom)?</p></a11y-collapse>
 <p>Jadi kita punya DB yang disebut <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">db_latihan<br></code>,
     dan tabel yang disebut <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">siswa</code>.
     Apakah setiap DB memerlukan tabel dengan nama yang sama?</p>
