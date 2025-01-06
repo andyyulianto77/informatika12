@@ -4839,6 +4839,14 @@
             "type": "image/jpeg",
             "name": "simpan-tabel2.jpg",
             "size": 215415
+          },
+          {
+            "path": "/home/andyyulianto77/informatika12/files/choose-db.png",
+            "fullUrl": "//home/andyyulianto77/informatika12/files/choose-db.png",
+            "url": "files/choose-db.png",
+            "type": "image/png",
+            "name": "choose-db.png",
+            "size": 20341
           }
         ]
       }
