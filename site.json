@@ -4847,6 +4847,14 @@
             "type": "image/png",
             "name": "choose-db.png",
             "size": 20341
+          },
+          {
+            "path": "/home/andyyulianto77/informatika12/files/daftar-tabel.jpg",
+            "fullUrl": "//home/andyyulianto77/informatika12/files/daftar-tabel.jpg",
+            "url": "files/daftar-tabel.jpg",
+            "type": "image/jpeg",
+            "name": "daftar-tabel.jpg",
+            "size": 128824
           }
         ]
       }
