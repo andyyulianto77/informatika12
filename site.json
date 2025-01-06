@@ -4807,6 +4807,14 @@
             "type": "image/jpeg",
             "name": "struktur.JPG",
             "size": 108501
+          },
+          {
+            "path": "/home/andyyulianto77/informatika12/files/daftar-db.JPG",
+            "fullUrl": "//home/andyyulianto77/informatika12/files/daftar-db.JPG",
+            "url": "files/daftar-db.JPG",
+            "type": "image/jpeg",
+            "name": "daftar-db.JPG",
+            "size": 65525
           }
         ]
       }
