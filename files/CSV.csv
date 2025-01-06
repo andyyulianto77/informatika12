@@ -1,0 +1,7 @@
+nis,int(6),-
+nama,varchar(70),-
+gender,varchar(15),-
+agama,varchar(30),
+tmp__lahir,varchar(30),
+tgl_lahir,date,
+berat,tinyint(2),

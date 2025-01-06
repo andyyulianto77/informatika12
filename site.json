@@ -4855,6 +4855,14 @@
             "type": "image/jpeg",
             "name": "daftar-tabel.jpg",
             "size": 128824
+          },
+          {
+            "path": "C:\\Users\\Administrator\\Downloads\\git\\andyyulianto77\\informatikaxii\\files\\CSV.csv",
+            "fullUrl": "/C:\\Users\\Administrator\\Downloads\\git\\andyyulianto77\\informatikaxii/files/CSV.csv",
+            "url": "files/CSV.csv",
+            "type": "text/csv",
+            "name": "CSV.csv",
+            "size": 137
           }
         ]
       }
