@@ -1,6 +1,10 @@
 
-<p>Isi dari database adalah kumpulan tabel-tabel</p>
-<p></p>
+<p>Setelah membuat database latihan siswa. Database: Database adalah kumpulan data yang terorganisir dan tersimpan secara elektronik. Database digunakan untuk menyimpan, mengelola, dan mengambil data. Tabel: Tabel adalah struktur dasar dalam database. Tabel terdiri dari baris (record) dan kolom (field). Setiap baris mewakili satu data, sedangkan setiap kolom mewakili satu atribut dari data tersebut.</p>
+<p>Isi dari database adalah kumpulan tabel-tabel. Berikutnya kita akan membuat data siswa dengan isi kolom nis, nama, gender, agama, dll.</p>
+<a11y-collapse heading="Tulis Q-1" heading-button accent-color="grey" icon="icons:expand-more" tooltip="expand" label="expand"><p>Apa perbedaan dari database dan tabel?</p></a11y-collapse>
+<p>Mempelajari cara membuat tabel dalam database, khususnya MySQL, bukan hanya sekadar menguasai keterampilan teknis. Namun&#160;dalam konteks pengembangan aplikasi maupun dalam kehidupan sehari-hari.&#160;</p>
+<p><ol><li>Pemahaman Data yang Lebih Mendalam: Struktur Data: Dengan membuat tabel, kita secara eksplisit menentukan bagaimana data akan diorganisir dan disimpan. Normalisasi Data: Proses membuat tabel yang baik melibatkan normalisasi data, yaitu proses mengorganisasi data untuk meminimalkan redundansi dan menjaga integritas data.</li><li>Dasar untuk Pengembangan Aplikasi: Penyimpanan Data, Akses Data</li><li>Analisis Data: Pembentukan Laporan, Tabel yang dirancang dengan baik memudahkan dalam membuat laporan dan analisis data. </li><li>Kolaborasi dengan Tim: Bahasa Umum: Bahasa SQL digunakan secara luas dalam dunia database.</li><li>Pemecahan Masalah: Pemodelan Data: Dengan memahami cara membuat tabel, kita dapat memodelkan masalah dunia nyata ke dalam bentuk data yang terstruktur.</li></ol></p>
+<a11y-collapse heading="Tulis Q-2" heading-button accent-color="grey" icon="icons:expand-more" tooltip="collapse" label="collapse"><p>Tulis manfaat belajar membuat tabel di mysql</p></a11y-collapse>
 <learning-component subtitle="Tujuan Pembelajaran" type="">
   <p>Pada akhir pelajaran, siswa seharusnya dapat ...</p>
   <ol>
@@ -11,26 +15,63 @@
   <p></p>
 </learning-component>
 <h6 data-original-level="H6" id="header-dc185309-d8a3-bee7-47ae-d5cf3dc1b1a7"><p role="textbox"></p></h6>
+<a11y-collapse heading="Tulis Q-3" heading-button accent-color="grey" icon="icons:expand-more" tooltip="collapse" label="collapse"><p>Pilih tujuan yang disukai dan alasannya!</p></a11y-collapse>
+<p>Apa itu tabel.&#160;Tabel: Tabel adalah struktur dasar dalam database. Tabel terdiri dari baris (record) dan kolom (field). Setiap baris mewakili satu data, sedangkan setiap kolom mewakili satu atribut dari data tersebut.</p>
+<p>Kolom: Kolom adalah atribut atau properti dari data yang disimpan dalam tabel. Setiap kolom memiliki tipe data tertentu (misalnya, teks, angka, tanggal).&#160;</p>
+<p>Baris: Baris adalah sebuah catatan atau record dalam tabel. Setiap baris berisi nilai untuk setiap kolom dalam tabel.&#160;</p>
+<p>Kunci Utama (Primary Key): Kunci utama adalah kolom unik yang mengidentifikasi setiap baris secara unik dalam sebuah tabel.&#160;</p>
+<p>Kunci Asing (Foreign Key): Kunci asing adalah kolom dalam satu tabel yang merujuk ke kunci utama pada tabel lain. Kunci asing digunakan untuk membangun hubungan antara tabel.&#160;</p>
+<p>SQL (Structured Query Language): SQL adalah bahasa standar yang digunakan untuk mengelola database relasional seperti MySQL. Dengan SQL, Anda dapat membuat, mengubah, dan menghapus database, tabel, dan data.</p>
 <p>Mari kita membuat tabel tentang <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">Daftar Siswa<br></code>.</p>
-<a11y-collapse heading="Tulis Q-4" heading-button accent-color="grey" icon="icons:expand-more" tooltip="collapse" label="collapse"><p>Apa tujuan utama membuat tabel dalam database?</p></a11y-collapse>
+<a11y-collapse heading="Tulis Q-4" heading-button accent-color="grey" icon="icons:expand-more" tooltip="expand" label="expand"><p>Apa tujuan utama membuat tabel dalam database?</p></a11y-collapse>
 <p>Tabel tersebut akan disebut siswa, dan akan memiliki bidang-bidang ini.</p>
-<editable-table downloadable accent-color="grey" data-hax-lock="data-hax-lock" bordered responsive column-header><table bordered="" downloadable="" responsive="">
+<editable-table downloadable accent-color="grey" data-hax-lock="data-hax-lock" bordered responsive column-header csv-data="nis,int(6),-
+nama,varchar(70),-
+gender,varchar(15),-
+agama,varchar(30),
+tmp__lahir,varchar(30),
+tgl_lahir,date,
+berat,tinyint(2),
+"><table bordered="" downloadable="" responsive="">
 	<thead class="thead">
 		<tr class="thead-tr tr">
-			<th scope="col" class="th th-or-td">-</th>
-			<th scope="col" class="th th-or-td">-</th>
+			<th scope="col" class="th th-or-td">nis</th>
+			<th scope="col" class="th th-or-td">int(6)</th>
 			<th scope="col" class="th th-or-td">-</th>
 		</tr>
 	</thead>
 	<tbody class="tbody">
 		<tr class="tbody-tr tr">
-			<td class="td th-or-td">-</td>
-			<td class="td th-or-td">-</td>
+			<td class="td th-or-td">nama</td>
+			<td class="td th-or-td">varchar(70)</td>
 			<td class="td th-or-td">-</td>
 		</tr>
 		<tr class="tbody-tr tr">
+			<td class="td th-or-td">gender</td>
+			<td class="td th-or-td">varchar(15)</td>
 			<td class="td th-or-td">-</td>
+		</tr>
+		<tr class="tbody-tr tr">
+			<td class="td th-or-td">agama</td>
+			<td class="td th-or-td">varchar(30)</td>
 			<td class="td th-or-td">-</td>
+		</tr>
+		<tr class="tbody-tr tr">
+			<td class="td th-or-td">tmp__lahir</td>
+			<td class="td th-or-td">varchar(30)</td>
+			<td class="td th-or-td">-</td>
+		</tr>
+		<tr class="tbody-tr tr">
+			<td class="td th-or-td">tgl_lahir</td>
+			<td class="td th-or-td">date</td>
+			<td class="td th-or-td">-</td>
+		</tr>
+		<tr class="tbody-tr tr">
+			<td class="td th-or-td">berat</td>
+			<td class="td th-or-td">tinyint(2)</td>
+			<td class="td th-or-td">-</td>
+		</tr>
+		<tr class="tbody-tr tr">
 			<td class="td th-or-td">-</td>
 		</tr>
 	</tbody>
@@ -57,7 +98,7 @@
 <p><code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">comments</code>adalah
     <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">TEXT</code>. Apa pun yang dapat Anda ketik, hingga 65.535 karakter. Bisa berupa
       null, jadi tidak diperlukan.</p>
-<a11y-collapse heading="Tulis Q-5" heading-button accent-color="grey" icon="icons:expand-more" tooltip="collapse" label="collapse"><p>Apa saja komponen utama yang diperlukan saat mendefinisikan tabel (seperti kolom, tipe data, dan constraints)?</p></a11y-collapse>
+<a11y-collapse heading="Tulis Q-5" heading-button accent-color="grey" icon="icons:expand-more" tooltip="expand" label="expand"><p>Apa saja komponen utama yang diperlukan saat mendefinisikan tabel (seperti kolom, tipe data, dan constraints)?</p></a11y-collapse>
 <p>Oke, mulai phpMyAdmin di localhost (ingat tombol CP Admin lama), dan pilih DB Latihan Siswa.</p>
 <media-image source="files/choose-db.png" alt="files/choose-db.png" accent-color="grey" size="wide" offset="narrow" data-width="50"></media-image>
 <p>Pada tab Struktur, beri tahu phpMyAdmin bahwa Anda menginginkan tabel bernama
@@ -69,10 +110,10 @@
 <media-image source="files/buat-tabel.JPG" alt="buat-tabel.JPG" accent-color="grey" size="wide" offset="none"></media-image>
 <p>Sekarang beritahu phpMyAdmin bidang apa yang Anda inginkan.</p>
 <media-image source="files/simpan-tabel2.jpg" alt="simpan-tabel2.jpg" accent-color="grey" size="wide" offset="none"></media-image>
-<a11y-collapse heading="Tulis Q-7" heading-button accent-color="grey" icon="icons:expand-more" tooltip="collapse" label="collapse"><p>Bagaimana cara menentukan tipe data yang sesuai untuk kolom tabel?</p></a11y-collapse>
+<a11y-collapse heading="Tulis Q-7" heading-button accent-color="grey" icon="icons:expand-more" tooltip="expand" label="expand"><p>Bagaimana cara menentukan tipe data yang sesuai untuk kolom tabel?</p></a11y-collapse>
 <p>Klik tombol Simpan. Anda akan melihat struktur tabelnya.</p>
 <media-image source="files/struktur.JPG" alt="struktur.JPG" accent-color="grey" size="wide" offset="none"></media-image>
-<a11y-collapse heading="Tulis Q-7" heading-button accent-color="grey" icon="icons:expand-more" tooltip="collapse" label="collapse"><p>Bagaimana cara mengubah struktur tabel (misalnya menambahkan, menghapus, atau memodifikasi kolom)?</p></a11y-collapse>
+<a11y-collapse heading="Tulis Q-7" heading-button accent-color="grey" icon="icons:expand-more" tooltip="expand" label="expand"><p>Bagaimana cara mengubah struktur tabel (misalnya menambahkan, menghapus, atau memodifikasi kolom)?</p></a11y-collapse>
 <p>Jadi kita punya DB yang disebut <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">db_latihan<br></code>,
     dan tabel yang disebut <code style="box-sizing: border-box; font-family: SFMono-Regular, Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; font-size: 14px; color: rgb(164, 19, 87); word-break: break-word; font-weight: bold;">siswa</code>.
     Apakah setiap DB memerlukan tabel dengan nama yang sama?</p>
