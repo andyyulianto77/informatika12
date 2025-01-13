@@ -5496,6 +5496,22 @@
         "readtime": 1,
         "status": ""
       }
+    },
+    {
+      "id": "item-8717b277-2966-4fc7-a866-6a78c2793912",
+      "indent": 0,
+      "location": "pages/item-8717b277-2966-4fc7-a866-6a78c2793912/index.html",
+      "slug": "page",
+      "order": 5,
+      "parent": null,
+      "title": "Page",
+      "description": "",
+      "metadata": {
+        "created": 1736807773,
+        "updated": 1736807773,
+        "images": [],
+        "videos": []
+      }
     }
   ]
 }
