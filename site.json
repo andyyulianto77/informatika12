@@ -5504,13 +5504,18 @@
       "slug": "page",
       "order": 5,
       "parent": null,
-      "title": "Page",
-      "description": "",
+      "title": "coba",
+      "description": "\n\n",
       "metadata": {
         "created": 1736807773,
-        "updated": 1736807773,
-        "images": [],
-        "videos": []
+        "updated": 1736808065,
+        "images": {},
+        "videos": {},
+        "published": true,
+        "pageType": "reflect",
+        "hideInMenu": false,
+        "locked": false,
+        "readtime": 1
       }
     }
   ]
