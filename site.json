@@ -5435,6 +5435,22 @@
       }
     },
     {
+      "id": "item-ffc91f6f-3c84-4c5e-84cd-d2f1042ec906",
+      "indent": 0,
+      "location": "pages/item-ffc91f6f-3c84-4c5e-84cd-d2f1042ec906/index.html",
+      "slug": "pengolahan-data/page",
+      "order": 0,
+      "parent": "item-a5523a37-53c7-4774-8649-c9b94b73c88d",
+      "title": "Page",
+      "description": "",
+      "metadata": {
+        "created": 1736748449,
+        "updated": 1736748449,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
       "id": "item-cb344d64-a9ba-40cf-be72-547ed08083e0",
       "indent": 0,
       "location": "pages/item-cb344d64-a9ba-40cf-be72-547ed08083e0/index.html",
