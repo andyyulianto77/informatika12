@@ -5441,18 +5441,19 @@
       "slug": "page",
       "order": 5,
       "parent": null,
-      "title": "Page",
+      "title": "coba",
       "description": "\n   \n\n     \n\n      \n        Run ❯ Get your  own PHP server\n\n         Result Size: 858 x 324\n        \n  \n\n\n\n\n   ×\n\n     Change Orientation\n\n      Change Theme, Dark/Light\n\n         Go to Spaces \n  \n  ",
       "metadata": {
         "created": 1736748449,
-        "updated": 1736748738,
+        "updated": 1736807412,
         "images": {},
         "videos": {},
-        "published": true,
+        "published": false,
         "hideInMenu": false,
         "locked": false,
         "readtime": 1,
-        "status": ""
+        "status": "",
+        "pageType": "reflect"
       }
     },
     {
