@@ -17,11 +17,7 @@
 <p>Setiap orang di lingkungan Anda mendapatkan salinan program tersebut, karena setiap orang ingin tahu tentang kucing-kucing lucu. Masalahnya, datanya selalu berubah, seiring orang-orang pindah masuk dan keluar dari lingkungan tersebut, mendapatkan lebih banyak kucing lucu, dan seterusnya. Apa yang harus dilakukan, agar setiap orang memiliki akses ke informasi terkini?</p>
 <h4 data-original-level="H4" id="header-8aac5c7b-9b32-2a62-2efc-2f2e6134c952"><p role="textbox"></p></h4>
 <p>Solusinya adalah dengan membagi aplikasi menjadi beberapa bagian. Letakkan data kucing di lokasi terpusat. Saat seseorang ingin tahu tentang kucing, aplikasi akan mengambil data dari sana.</p>
-<p>Jika data berubah, hanya <vocab-term term="basis data " information="Database adalah koleksi data yang sistematis dan sistematis yang disimpan secara elektronik. Ini dapat berisi semua jenis data, termasuk kata, angka, gambar, video, dan file. Anda dapat menggunakan perangkat lunak yang disebut sistem manajemen database (DBMS) untuk menyimpan, mengambil, dan mengedit data." popover-mode links="[{&quot;title&quot;:&quot;[{\&quot;title\&quot;:\&quot;[{\\\&quot;title\\\&quot;:\\\&quot;[]\\\&quot;}]\&quot;}]&quot;}]">basis data </vocab-term>
-
-
-
-pusat yang perlu diperbarui. Setiap orang yang menggunakan aplikasi tersebut akan mendapatkan data baru.</p>
+<p>Jika data berubah, hanya <abbr title="Database atau basis data adalah kumpulan data yang disimpan secara elektronik dan terorganisir secara sistematis. Data dalam database dapat berupa kata, angka, gambar, video, dan file.  Database memiliki beberapa fungsi, di antaranya:  Menyimpan, mengambil, dan mengedit data Mengumpulkan data, arsip, atau tabel Membuat penyimpanan dan pengelolaan data lebih efisien Menyimpan data dalam berbagai format, seperti tabel, grafik, atau dokumen teks Untuk mengakses, menambah, memperbarui, dan menghapus data dalam database, digunakan bahasa yang disebut Database Access Language.">basis data</abbr>&#160;pusat yang perlu diperbarui. Setiap orang yang menggunakan aplikasi tersebut akan mendapatkan data baru.</p>
 <media-image source="files/clients-server.png" card citation="https://webapps.skilling.us/lesson/clients-and-servers" accent-color="grey" size="wide" offset="none" caption="SERVER bertugas melayani permintaan data dari komputer Anda, Sarah, Teagan dan Joe" modal-title="SERVER bertugas melayani permintaan data dari komputer Anda, Sarah, Teagan dan Joe" _has-caption></media-image>
 <p>Mari kita uraikan lebih lanjut.</p>
 <h3 data-original-level="H3" id="header-35b8125e-3399-350d-d7e9-06bafb16b623">Klien</h3>
@@ -39,7 +35,6 @@ pusat yang perlu diperbarui. Setiap orang yang menggunakan aplikasi tersebut aka
 <p>Browser:</p>
 <ul><li>Dapatkan HTML dari server.</li><li>Render HTML (membuat UI).</li><li>Tunggu sesuatu terjadi.</li></ul>
 <br/><ul><li><span>Ketika pengguna mengklik tombol:</span><br></li><li>Kirim rumah tangga yang dipilih pengguna ke program PHP di server.</li><li>Tunggu server mengirimkan kembali beberapa HTML.</li><li>Tampilkan HTML.</li></ul>
-<h4 data-original-level="H4" id="header-8d7c9edf-fcb9-8f8e-9f4e-ff1891fce768" data-margin="m" data-design-treatment="horz-50p"><br></h4>
 <h3 data-original-level="H3" id="header-3aca69bc-9394-d850-10ee-4fa257bff450">Server</h3>
 <p>Sementara itu, server perlu mengetahui apa yang harus dilakukan saat klien mengirimkannya sebuah rumah tangga.</p>
 <ul><li>Dapatkan data yang mengidentifikasi rumah tangga dari klien.</li><li>Carilah kucing-kucing di rumah itu.</li><li>Buat HTML untuk UI, yang menyertakan data cats.</li></ul>
@@ -47,17 +42,15 @@ pusat yang perlu diperbarui. Setiap orang yang menggunakan aplikasi tersebut aka
 <ul><li>Basis data (DB), dengan data tentang kucing mana yang berada di rumah tangga mana.</li><li>Program PHP yang akan memeriksa basis data, membuat HTML dari hasilnya, dan mengirimkan HTML kembali ke klien.</li></ul>
 <p>Begini situasinya.</p>
 <p><img alt="Pelayan" src="https://webapps.skilling.us/sites/default/files/lessons/how-web-apps-work/clients-and-servers/server.png" title="Pelayan" ="false"=""="false"></p>
-<h4 data-original-level="H4" id="header-8d7c9edf-fcb9-8f8e-9f4e-ff1891fce768" data-margin="m" data-design-treatment="horz-50p"><br></h4>
 <h5 data-original-level="H5" id="header-8b1c182c-5113-0b80-4044-ca6f7032ac57">Server web</h5>
 <p>Dalam gambar, program Anda tampak terhubung langsung ke web. Jika demikian, Anda harus menulis kode untuk mengemas data, membongkar data, mengirim dan menerima data di jaringan... Astaga! Kedengarannya sulit!</p>
 <p>Sulit <em>.</em> Jangan lakukan itu. Biarlah server web yang menanganinya untuk kita.</p>
 <p><img alt="Server web" src="https://webapps.skilling.us/sites/default/files/lessons/how-web-apps-work/clients-and-servers/with-apache.png" title="Server web" ="false"=""="false"></p>
 <p>Server web tidak memerlukan banyak perhatian. Mereka hanya berfungsi. Sebagian besar waktu. Kita tidak akan mengutak-atik konfigurasi server web di kelas.</p>
-<p>Apache adalah server web di Reclaim dan XAMPP. Ini adalah server web yang paling banyak digunakan.</p>
-<h4 data-original-level="H4" id="header-8d7c9edf-fcb9-8f8e-9f4e-ff1891fce768" data-margin="m" data-design-treatment="horz-50p"><br></h4>
+<p>Apache adalah server web di <vocab-term term="InfinityFree" information="web hosting gratis (Hosting Gratis atau free hosting merupakan layanan penyedia hosting gratis yang menyajikan kepada user atau penggunanya tanpa harus dibayar.)" popover-mode links="[]">InfinityFree</vocab-term>
+ dan XAMPP. Ini adalah server web yang paling banyak digunakan.</p>
 <h5 data-original-level="H5" id="header-fba3fb8e-e4cb-d404-ebc0-54373cfcd3ed">Bekerja bersama&#160;</h5>
 <p>Klien dan server bekerja sama untuk menyelesaikan pekerjaan. Klien menampilkan UI. Saat pengguna menginginkan sesuatu, klien mengirimkan permintaan ke server. Server melakukan apa yang perlu dilakukan, dan mengirimkan hasilnya kembali ke klien.&#160;</p>
 <p>Misalkan salah satu klien (mungkin milik Anda) dapat mengubah data doggo di server. Begitu data diubah, setiap klien akan mendapatkan data baru saat diminta. W00t!</p>
-<h4 data-original-level="H4" id="header-8d7c9edf-fcb9-8f8e-9f4e-ff1891fce768" data-margin="m" data-design-treatment="horz-50p"><br></h4>
 <h5 data-original-level="H5" id="header-c1f849f7-997c-7724-f8fe-e1ae1b517c09">Berikutnya</h5>
 <p>Mari kita periksa basis datanya lebih lanjut.</p>
