@@ -5478,16 +5478,16 @@
     },
     {
       "id": "item-aa117035-8527-4bca-bada-e7278153e960",
-      "indent": 1,
+      "indent": 0,
       "location": "pages/item-aa117035-8527-4bca-bada-e7278153e960/index.html",
       "slug": "site-things/footer",
-      "order": 1,
+      "order": 0,
       "parent": "item-cb344d64-a9ba-40cf-be72-547ed08083e0",
       "title": "Footer",
       "description": "\n",
       "metadata": {
         "created": 1736041366,
-        "updated": 1736748816,
+        "updated": 1746887506,
         "images": {},
         "videos": {},
         "published": true,
@@ -5508,7 +5508,7 @@
       "description": " ",
       "metadata": {
         "created": 1746839900,
-        "updated": 1746872100,
+        "updated": 1746885740,
         "images": {},
         "videos": {},
         "published": true,
