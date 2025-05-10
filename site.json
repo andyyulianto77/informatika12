@@ -23,7 +23,7 @@
         "gaID": null
       },
       "created": 1732016691,
-      "updated": 1746862342,
+      "updated": 1746862971,
       "git": {
         "vendor": "github",
         "branch": "gh-pages"
@@ -34,10 +34,10 @@
       "static": {}
     },
     "theme": {
-      "element": "polaris-invent-theme",
-      "path": "@haxtheweb/polaris-theme/lib/polaris-invent-theme.js",
-      "name": "Polaris - Invent",
-      "thumbnail": "build/es6/node_modules/@haxtheweb/app-hax/lib/assets/images/PartyStyle.svg",
+      "element": "bootstrap-theme",
+      "path": "@haxtheweb/bootstrap-theme/bootstrap-theme.js",
+      "name": "BootstrapCSS theme",
+      "thumbnail": "build/es6/node_modules/@haxtheweb/app-hax/lib/assets/images/BlueStyle.svg",
       "variables": {
         "image": "files/psu-mark.png",
         "imageAlt": null,
