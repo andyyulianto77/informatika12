@@ -1,562 +1,568 @@
-import{HAXCMSLitElementTheme as t,autorun as e,toJS as i,store as a,css as o,html as s}from"@haxtheweb/haxcms-elements/lib/core/HAXCMSLitElementTheme.js";import"@haxtheweb/haxcms-elements/lib/ui-components/active-item/site-active-title.js";import"@haxtheweb/haxcms-elements/lib/ui-components/magic/site-collection-list.js";import"@haxtheweb/haxcms-elements/lib/ui-components/navigation/site-breadcrumb.js";import"@haxtheweb/simple-cta/simple-cta.js";import{DDDAllStyles as r}from"@haxtheweb/d-d-d/lib/DDDStyles.js";import"@haxtheweb/simple-tooltip/simple-tooltip.js";import"@haxtheweb/simple-icon/lib/simple-icon-button-lite.js";import"@haxtheweb/scroll-button/scroll-button.js";import{licenseList as n}from"@haxtheweb/license-element/license-element.js";
+import{css as e,html as t}from"lit";import{HAXCMSLitElementTheme as i}from"@haxtheweb/haxcms-elements/lib/core/HAXCMSLitElementTheme.js";import{HAXCMSThemeParts as o}from"@haxtheweb/haxcms-elements/lib/core/utils/HAXCMSThemeParts.js";import{HAXCMSMobileMenuMixin as a}from"@haxtheweb/haxcms-elements/lib/core/utils/HAXCMSMobileMenu.js";import{HAXCMSOperationButtons as r}from"@haxtheweb/haxcms-elements/lib/core/utils/HAXCMSOperationButtons.js";import{store as n}from"@haxtheweb/haxcms-elements/lib/core/haxcms-site-store.js";import{MicroFrontendRegistry as s}from"@haxtheweb/micro-frontend-registry/micro-frontend-registry.js";import{HAXCMSRememberRoute as l}from"@haxtheweb/haxcms-elements/lib/core/utils/HAXCMSRememberRoute.js";import{QRCodeMixin as d}from"@haxtheweb/haxcms-elements/lib/core/utils/QRCodeMixin.js";import{EmailPageMixin as c}from"@haxtheweb/haxcms-elements/lib/core/utils/EmailPageMixin.js";import{PrintBranchMixin as p}from"@haxtheweb/haxcms-elements/lib/core/utils/PrintBranchMixin.js";import{PDFPageMixin as m}from"@haxtheweb/haxcms-elements/lib/core/utils/PDFPageMixin.js";import"@haxtheweb/scroll-button/scroll-button.js";import"@haxtheweb/haxcms-elements/lib/ui-components/site/site-title.js";import"@haxtheweb/haxcms-elements/lib/ui-components/active-item/site-active-title.js";import"@haxtheweb/haxcms-elements/lib/ui-components/active-item/site-active-tags.js";import"@haxtheweb/haxcms-elements/lib/ui-components/navigation/site-menu.js";import"@haxtheweb/haxcms-elements/lib/ui-components/layout/site-modal.js";import"@haxtheweb/haxcms-elements/lib/ui-components/layout/site-region.js";import{autorun as h,toJS as g}from"mobx";import{DDDSuper as b}from"@haxtheweb/d-d-d/d-d-d.js";import{HAXCMSToastInstance as u}from"@haxtheweb/haxcms-elements/lib/core/haxcms-toast.js";import{LTIResizingMixin as x}from"@haxtheweb/haxcms-elements/lib/core/utils/LTIResizingMixin.js";
 /**
- * Copyright 2025 btopro
+ * Copyright 2020 The Pennsylvania State University
  * @license Apache-2.0, see License.md for full text.
- */class l extends t{static get tag(){return"custom-journey-theme"}constructor(){super(),this.HAXCMSThemeSettings.autoScroll=!1,this.siteTheme="",this.dataPrimary=2,this._items=[],this.location=null,this.activeItem={},this.basePath=null,this.manifest={},this.t={readMore:"Read more",home:"Home"};try{this.basePath=globalThis.document.querySelector("base").href}catch(t){this.basePath=globalThis.location.origin}e(()=>{this.manifest=i(a.manifest);let t=new n;this.manifest.license&&t[this.manifest.license]&&(this.licenseName=t[this.manifest.license].name,this.licenseLink=t[this.manifest.license].link,this.licenseImage=t[this.manifest.license].image),this._items=this.getItemChildren(null)}),e(()=>{this.activeItem=i(a.activeItem)}),e(()=>{let t=i(a.location);globalThis.document&&globalThis.document.startViewTransition?globalThis.document.startViewTransition(()=>{this.shadowRoot.querySelector(".lower-header-box").scrollIntoView(),this.location=t,this.shadowRoot.querySelector(".lower-header-box").scrollIntoView(),setTimeout(()=>{this.shadowRoot.querySelector(".lower-header-box").scrollIntoView()},10)}):this.location=t})}getItemChildren(t){if(this.manifest&&this.manifest.items)return this.manifest.items.filter(e=>e.parent===t)}static get properties(){return{...super.properties,activeItem:{type:Object},location:{type:String},basePath:{type:String},dataPrimary:{type:String,attribute:"data-primary",reflect:!0},_items:{type:Array},licenseName:{type:String},licenseLink:{type:String},licenseImage:{type:String},siteTheme:{type:String,reflect:!0,attribute:"site-theme"}}}HAXCMSGlobalStyleSheetContent(){return[...super.HAXCMSGlobalStyleSheetContent(),o`
-      :root {
-        --haxcms-site-theme-low-tone: white;
-        --haxcms-site-theme-high-tone: var(--ddd-theme-default-coalyGray);
-        --color: light-dark(var(--haxcms-site-theme-low-tone), var(--haxcms-site-theme-high-tone));
-        --bg: light-dark(var(--haxcms-site-theme-low-tone), var(--haxcms-site-theme-high-tone));
-      }
-      body {
-        padding: var(--ddd-spacing-0);
-        margin: var(--ddd-spacing-0);
-        background-color: var(--haxcms-site-theme-low-tone);
-      }
-      custom-journey-theme::before {
-        height: 100vh;
-        content: "";
-        transition: var(--haxcms-site-transition);
-        border-left: 8px dashed var(--haxcms-site-theme-color-2);
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 50%;
-        margin: 0 auto;
-        z-index: -1;
-      }
-      @media (max-width: 800px) {
-        custom-journey-theme::before {
-          display: none;
-        }
-      }
-      body.dark-mode {
-        background-color: var(--haxcms-site-theme-high-tone);
-        color: var(--haxcms-site-theme-low-tone);
-        --color: light-dark(var(--haxcms-site-theme-low-tone), var(--haxcms-site-theme-high-tone));
-        --bg: light-dark(var(--haxcms-site-theme-low-tone), var(--haxcms-site-theme-high-tone));
-      }
-      @media (prefers-color-scheme: dark) {
-        body {
-          background-color: var(--haxcms-site-theme-high-tone);
-          color: var(--haxcms-site-theme-low-tone);
-          --color: light-dark(var(--haxcms-site-theme-low-tone), var(--haxcms-site-theme-high-tone));
-          --bg: light-dark(var(--haxcms-site-theme-low-tone), var(--haxcms-site-theme-high-tone));
-        }
-      }
-      `]}static get styles(){return[r,super.styles,o`
+ */class v extends(x(r(l(c(m(p(d(o(a(b(i))))))))))){static get styles(){return[super.styles,e`
         :host {
-          scroll-behavior: auto;
           display: block;
-          padding: var(--ddd-spacing-0);
-          margin: var(--ddd-spacing-0);
-          --haxcms-site-theme-color-1: var(--ddd-primary-2);
-          --haxcms-site-theme-color-2: var(--ddd-primary-8);
-          --haxcms-site-transition: .3s all ease-in-out;
+          --polaris-content-bg-color: light-dark(
+            var(--ddd-accent-6),
+            var(--ddd-primary-4)
+          );
+          --polaris-header-bg-color: #1e417b;
+          --polaris-nav-color: var(--ddd-accent-6);
+          --polaris-nav-bg-color: light-dark(
+            var(--ddd-theme-default-skyBlue),
+            var(--ddd-theme-default-nittanyNavy)
+          );
+          --polaris-footer-secondary-bg-color: var(
+            --ddd-theme-default-beaverBlue
+          );
+          --polaris-footer-primary-bg-color: var(
+            --ddd-theme-default-nittanyNavy
+          );
+
+          background-color: light-dark(
+            var(--ddd-accent-6),
+            var(--ddd-primary-4)
+          );
+          color: light-dark(black, var(--ddd-accent-6));
+
+          --video-player-color: var(--ddd-theme-default-white);
+          --video-player-bg-color: var(--ddd-theme-default-nittanyNavy);
+          --video-player-border-color: var(--ddd-theme-default-limestoneLight);
+          --video-player-caption-color: var(--ddd-theme-default-white);
+          --video-player-hover-color: var(--ddd-theme-default-inventOrange);
+          --video-player-hover-bg-color: var(--ddd-theme-default-beaver80);
+          --video-player-accent-color: var(--ddd-theme-default-inventOrange);
+          --video-player-faded-accent-color: var(--ddd-theme-default-beaver80);
+          --video-player-disabled-color: var(--ddd-theme-default-disabled);
         }
 
-        :host([site-theme="earth"]) {
-          --haxcms-site-theme-color-1: var(--ddd-primary-17);
-          --haxcms-site-theme-color-2: var(--ddd-primary-18);
+        :host([is-safari]) {
+          background-color: var(--ddd-accent-6);
+          color: black;
+          --polaris-content-bg-color: var(--ddd-accent-6);
+          --polaris-nav-bg-color: var(--ddd-theme-default-skyBlue);
         }
 
-        :host([site-theme="water"]) {
-          --haxcms-site-theme-color-1: var(--ddd-primary-7);
-          --haxcms-site-theme-color-2: var(--ddd-primary-1);
+        scroll-button {
+          position: fixed;
+          right: 0px;
+          bottom: 0px;
+          z-index: 10000;
+          --scroll-button-background-color: var(
+            --ddd-theme-default-inventOrange
+          );
+          --simple-icon-width: 32px;
+          --simple-icon-height: 32px;
+          --simple-icon-button-border-radius: none;
+        }
+        .entry-content a {
+          color: #1173ca;
         }
 
-        :host([site-theme="fire"]) {
-          --haxcms-site-theme-color-1: var(--ddd-primary-11);
-          --haxcms-site-theme-color-2: var(--ddd-primary-12);
-        }
-
-        :host([site-theme="sand"]) {
-          --haxcms-site-theme-color-1: var(--ddd-primary-15);
-          --haxcms-site-theme-color-2: var(--ddd-primary-23);
-        }
-
-        header {
-          display: flex;
-          text-align: center;
-          justify-content: center;
-          align-items: center;
-          color: var(--haxcms-site-theme-low-tone);
-          background-color: var(--haxcms-site-theme-color-1);
-          height: 50vh;
-          overflow: hidden;
-          padding: var(--ddd-spacing-10);
-          z-index: 1;
-          transition: var(--haxcms-site-transition);
-        }
-        .theme-picker {
-          z-index: 1;
-          color: var(--haxcms-site-theme-color-2);
-          background-color: var(--haxcms-site-theme-color-1);
-          padding: var(--ddd-spacing-1);
-          --simple-icon-width: var(--ddd-spacing-8);
-          --simple-icon-height: var(--ddd-spacing-8);
-        }
-        header .theme-picker {
-          position: absolute;
-          color: var(--haxcms-site-theme-color-1);
-          background-color: var(--haxcms-site-theme-color-2);
-          right: var(--ddd-spacing-2);
-          top: var(--ddd-spacing-2);
-        }
-        .lower-header-box {
-          background-color: var(--haxcms-site-theme-color-2);
-          transition: var(--haxcms-site-transition);
-          height: var(--ddd-spacing-12);
-          padding: var(--ddd-spacing-6);
-          display: flex;
-          justify-content: center;
-          z-index: 1;
-          position: relative;
-        }
-
-        .author a {
-          color: var(--haxcms-site-theme-low-tone);
-          text-decoration: none;
-        }
-        footer .author .spacing {
-          display: flex;
-          justify-content: space-evenly;
-          align-items: center;
-        }
-        footer .author {
-          --component-color: var(--lowContrast-override, var(--haxcms-site-theme-low-tone));
-          color: var(--component-color);
-        }
-        footer .author .h1 {
-          font-size: var(--ddd-font-size-m);
-          margin: 0;
+        site-active-title h1 {
+          font-size: var(--ddd-font-size-l);
           padding: 0;
-        }
-        footer .author .h2 {
-          font-size: var(--ddd-font-size-s);
-          margin: 0;
-          padding: 0;
-        }
-        .author-image {
-          border-radius: 50%;
-          width: 15vw;
-          height: 15vw;
-          border: 4px solid var(--haxcms-site-theme-color-2)
-        }
-        .author-image:hover,
-        .author-image:focus-within {
-          transition: var(--haxcms-site-transition);
-          transform: scale(1.1);
-        }
-        footer .author-image {
-          width: 5vw;
-          height: 5vw;
-          border: 4px solid var(--haxcms-site-theme-color-1)
-        }
-        header h1 {
-          font-size: var(--ddd-font-size-4xl);
+          margin: 0 0 var(--ddd-spacing-5) 0;
+          text-align: start;
+          line-height: normal;
         }
 
-        header h2 {
-          font-size: var(--ddd-font-size-xl);
+        header .wrap {
+          padding: 40px 0;
+        }
+
+        .site-inner {
+          display: flex;
+        }
+
+        .wrap {
+          margin: 0 auto;
+          max-width: 1140px;
         }
 
         article {
-          display: block;
-        }
-        .articles article {
-          display: flex;
-        }
-        simple-icon-button-lite {
-          --simple-icon-width: var(--ddd-spacing-12);
-          --simple-icon-height: var(--ddd-spacing-12);
-          padding: 0;
-          border-radius: 50%;
-        }
-        simple-tooltip {
-          --simple-tooltip-font-size: var(--page-section-tooltip-font-size, var(--ddd-font-size-s, 16px));
-          --simple-tooltip-background: var(--page-section-tooltip-background, #000000);
-          --simple-tooltip-opacity: var(--page-section-tooltip-opacity, 0.8);
-          --simple-tooltip-text-color: var(--page-section-tooltip-text-color, var(--haxcms-site-theme-low-tone));
-          --simple-tooltip-delay-in: var(--page-section-tooltip-delay-in, 300);
-          --simple-tooltip-delay-out: var(--page-section-tooltip-delay-out, 0);
-          --simple-tooltip-duration-in: var(--page-section-tooltip-duration-in, 300);
-          --simple-tooltip-duration-out: var(--page-section-tooltip-duration-out, 0);
-        }
-        scroll-button {
-          --scroll-button-color: var(--haxcms-site-theme-color-2);
-          --scroll-button-background-color: var(--haxcms-site-theme-color-1);
-          --simple-icon-width: var(--ddd-spacing-8);
-          --simple-icon-height: var(--ddd-spacing-8);
-        }
-        .article-link-icon.top {
-          color: var(--haxcms-site-theme-color-1);
-          margin: 0 var(--ddd-spacing-3);
-          padding-left: 4px;
-        }
-        .article-link-icon.top:not(.active) simple-icon-button-lite::part(button):hover,
-        .article-link-icon.top:not(.active) simple-icon-button-lite::part(button):focus-within {
-          transition: var(--haxcms-site-transition);
-          transform: scale(1.05);
-          background-color: white;
-          opacity: 1;
+          padding: 16px 40px 16px 16px;
+          background-color: var(--polaris-content-bg-color);
+          font-family: var(--ddd-font-primary);
+          min-width: 280px;
+          min-height: 50vh;
         }
 
-        .article-link-icon.top::before {
-          transition: var(--haxcms-site-transition);
-          border-top: 4px dashed var(--haxcms-site-theme-low-tone);
-          content: "";
+        header:not(:empty) {
+          background-color: var(--polaris-header-bg-color);
+        }
+
+        .nav {
+          background-color: var(--polaris-nav-bg-color);
+          color: var(--polaris-nav-color);
+        }
+
+        #slot {
+          line-break: auto;
+          min-height: 50vh;
+        }
+
+        site-menu {
+          font-family: var(--ddd-font-navigation);
+          --site-menu-font-size: var(--ddd-font-size-3xs);
+          --map-menu-item-a-active-background-color: var(
+            --polaris-header-bg-color
+          );
+          --map-menu-item-button-active-color: white;
+          --map-menu-item-button-active-background-color: var(
+            --ddd-theme-default-inventOrange
+          );
+          --map-menu-overflow: visible;
+          --site-menu-container-background-color: var(--ddd-accent-6);
+          --map-menu-item-a-active-color: var(--ddd-accent-6);
+          --map-menu-item-icon-active-color: black;
+        }
+
+        site-modal {
+          --simple-modal-titlebar-background: var(--polaris-nav-bg-color);
+        }
+
+        .link-actions {
+          margin: 0;
           display: block;
-          width: 80px;
-          position: absolute;
-          margin-top: 22px;
+          padding: 0;
+          border-top: 2px solid #e6ecf1;
+          margin-top: 16px;
+          align-items: center;
+          padding-top: 16px;
+          flex-direction: row;
+          -webkit-box-align: center;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
         }
-        .article-link-icon.top:last-of-type::before {
-          display: none;
-        }
-        .article-link-icon.top  simple-icon-button-lite::part(button) {
-          background-color: var(--haxcms-site-theme-color-2);
-          transition: var(--haxcms-site-transition);
-        }
-        .home .article-link-icon.top  simple-icon-button-lite::part(button) {
-          background-color: white;
-        }
-        .article-link-icon.active simple-icon-button-lite.article {
-          color: var(--haxcms-site-theme-low-tone);
-        }
-        .article-link-icon.active  simple-icon-button-lite::part(button) {
-          background-color: var(--ddd-primary-4);
-        }
-        a {
+        .link-actions .inner {
+          width: auto;
+          margin: 16px;
           display: block;
         }
-        
-        simple-icon-button-lite.article {
-          color: var(--haxcms-site-theme-color-1);
+
+      //   element.style {
+      //     text-align: center;
+      // }
+      header h2 {
+        text-align: center;
+      }
+
+        @media screen and (min-width: 900px) {
+          .link-actions .inner {
+            margin: 0;
+            display: grid;
+            padding: 0;
+            -ms-grid-rows: auto;
+            grid-column-gap: 24px;
+            -ms-grid-columns: 1fr 1fr;
+            grid-template-rows: auto;
+            grid-template-areas: "previous next";
+            grid-template-columns: 1fr 1fr;
+          }
         }
-        simple-icon-button-lite::part(button) {
-          height: auto;
-          background-color: var(--haxcms-site-theme-low-tone);
+        site-menu-button {
+          --site-menu-button-link-decoration: none;
+          --site-menu-button-button-hover-color: black;
+          --site-menu-button-icon-fill-color: white;
+          color: white;
+          background-color: var(--ddd-theme-default-inventOrange);
+          border: 1px solid var(--ddd-theme-default-inventOrange);
+          margin: 8px;
+          display: block;
+          padding: 0;
+          position: relative;
+          align-self: stretch;
+          box-shadow: 0 3px 8px 0 rgba(116, 129, 141, 0.1);
+          transition: border 300ms ease;
+          align-items: center;
+          justify-self: stretch;
+          text-overflow: ellipsis;
+          border-radius: 3px;
+          flex-direction: row;
+          text-decoration: none;
+          -webkit-box-align: center;
+          page-break-inside: avoid;
+          -ms-grid-row-align: stretch;
+          -webkit-box-orient: horizontal;
+          -ms-grid-column-align: stretch;
+          -webkit-box-direction: normal;
         }
-        .even .article-link-icon {
-          margin-left: -20px;          
+        site-menu-button[disabled] {
+          display: none !important;
         }
-        .odd .article-link-icon {
-          margin-right: -28px;
+
+        site-menu-button[edit-mode][disabled] {
+          display: block;
         }
-        
-        .even {
-          margin-left: 50%;
+        site-menu-button[type="prev"] {
+          grid-area: previous;
         }
-        .articles a.article-link-icon {
-          display: flex;
-          width: 48px;
-          vertical-align: middle;
-          align-content: flex-end;
+        site-menu-button[type="next"] {
+          grid-area: next;
         }
-        .odd {
-          margin-right: 50%;
-          flex-direction: row-reverse;
+        site-menu-button div.wrapper {
+          flex: 1;
+          margin: 0;
+          display: block;
+          padding: 16px;
+          text-overflow: ellipsis;
+          text-decoration: none;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 1.5;
+          text-transform: none;
+        }
+        site-menu-button div .top {
+          font-size: 18px;
+          font-weight: 800;
+          line-height: 1.625;
+          color: white;
+        }
+        site-menu-button div .bottom {
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 1.5;
+          max-height: 50px;
+          overflow: hidden;
+        }
+        site-menu-button[type="next"] div {
+          text-align: left;
+        }
+        site-menu-button[type="prev"] div {
           text-align: right;
         }
-        .article-wrap {
-          padding: var(--ddd-spacing-10);
-        }
-        .article-wrap h3 {
-          font-size: var(--ddd-font-size-xl);
-          margin-top: 0;
-        }
-        .article-wrap p {
-          font-size: var(--ddd-font-size-s);
-          margin-left: var(--ddd-spacing-4);
-          min-width: 200px;
-          display: flex;
-          line-height: normal;
-          font-family: var(--ddd-font-secondary);
+
+        .footer-secondary {
+          background-color: var(--polaris-footer-secondary-bg-color);
+          color: white;
+          clear: both;
+          padding: 40px 16px 16px;
         }
 
-        .child-pages-container {
-          display: block;
-          margin-bottom: var(--ddd-spacing-6);
-        }
-
-        .child-page-link {
-          display: inline-block;
-          width: var(--ddd-spacing-20);
-          height: var(--ddd-spacing-20);
-          line-height: normal;
-          margin: var(--ddd-spacing-4);
-        }
-        .child-page-link img {
-          width: var(--ddd-spacing-20);
-          height: var(--ddd-spacing-20);
-          border: 4px solid var(--haxcms-site-theme-color-2);
-          transition: var(--haxcms-site-transition);
-        }
-        .child-page-link img:hover,
-        .child-page-link:focus-within img {
-          border-radius: 50%;
-          transform: scale(1.1);
-        }        
-        .odd .article-wrap p {
-          margin-right: var(--ddd-spacing-4);
-          justify-content: right;
-          min-height: var(--ddd-spacing-10);
-        }
-        .even .article-wrap p {
-          margin-left: var(--ddd-spacing-4);
-        }
-        .article-wrap simple-cta {
-          margin-top: var(--ddd-spacing-4);
-          --component-background-color: var(--haxcms-site-theme-color-2);
-          --component-color: var(--lowContrast-override, var(--haxcms-site-theme-low-tone));
-        }
-        .article-wrap simple-cta:hover,
-        .article-wrap simple-cta:focus-visible {
-          --component-color: var(--lowContrast-override, var(--haxcms-site-theme-low-tone));
-          --component-background-color: var(--haxcms-site-theme-color-1);
-        }
-        main {
-          padding: var(--ddd-spacing-10);
-        }
-        footer {
-          display: block;
-          padding: var(--ddd-spacing-10);
-          background-color: var(--haxcms-site-theme-color-2);
-          color: var(--haxcms-site-theme-low-tone);
-          min-height: var(--ddd-spacing-5);
-          transition: var(--haxcms-site-transition);
-        }
-
-        site-collection-list {
-          max-width: 70vw;
-          margin: 0 auto;
-        }
-
-        main.not-home {
-          background-color: var(--bg);
-          padding: var(--ddd-spacing-15);
-          max-width: 960px;
-          margin: 0 auto;
-        }
-        article.home {
-          display: none;
-        }
-        .home simple-icon-button-lite::part(button):hover,
-        .home simple-icon-button-lite::part(button):focus-within {
-          transition: var(--haxcms-site-transition);
-          transform: scale(1.05);
-          background-color: white;
-          opacity: 1;
-        }
-        site-active-title {
-          line-height: normal;
-        }
-        site-breadcrumb {
-          display: flex;
-          min-height: 20px;
-          --site-breadcrumb-margin: 0 0 var(--ddd-spacing-1) 2px;
-        }
-        site-active-title h1 {
-          font-size: var(--ddd-font-size-4xl);
-          margin: 0;
-        }
-        main.home .articles article:last-of-type {
-          border-bottom: none;
-        }
-
-        #scolltop {
-          position: fixed;
-          right: 0px;
-          bottom: 125px;
-          z-index: 10000;
-          --simple-icon-width: 48px;
-          --simple-icon-height: 48px;
-          --simple-icon-button-border-radius: none;
-        }
-
-        @media (max-width: 800px) {
-          header {
-            height: unset;
-            padding: var(--ddd-spacing-5);
-          }
-          .lower-header-box {
-            padding: var(--ddd-spacing-2);
-          }
-          header h1 {
-            font-size: var(--ddd-font-size-xl);
-          }
-          header h2 {
-            font-size: var(--ddd-font-size-sm);
-          }
+        @media screen and (max-width: 400px) {
           main {
-            padding: var(--ddd-spacing-0);
+            width: calc(100vw - 48px);
+            overflow: hidden;
           }
-          main.not-home {
-            padding: var(--ddd-spacing-5);
+
+          footer {
+            width: calc(100vw - 8px);
           }
-          main.not-home article {
-            border-bottom: none;
+        }
+
+        footer {
+          font-family: var(--ddd-font-secondary);
+          background-color: var(--polaris-footer-primary-bg-color);
+        }
+
+        .footer-primary {
+          color: white;
+          font-size: 14px;
+          padding: 40px 16px;
+          text-align: center;
+          font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+          line-height: 22px;
+          font-weight: 300;
+        }
+
+        /** stuff to refactor out after this is initially working visually */
+        #mark {
+          display: inline-flex;
+          width: 218px;
+          float: left;
+          margin: 0px 30px 0px 40px;
+        }
+        #mark a {
+          display: block;
+        }
+        @media only screen and (max-width: 1023px) {
+          #mark {
+            float: none;
+            margin: 15px auto;
+            max-width: 218px;
+            width: 100%;
+            text-align: center;
+            display: block;
           }
-          article {
-            padding: var(--ddd-spacing-5);
-            font-size: var(--ddd-font-size-3xs);
-            border-bottom: 4px dashed var(--haxcms-site-theme-color-2);
+        }
+
+        img {
+          height: auto;
+          width: auto;
+        }
+        embed,
+        iframe,
+        img,
+        object,
+        video,
+        .wp-caption {
+          max-width: 100%;
+        }
+        .wrap:after {
+          clear: both;
+          content: " ";
+          display: table;
+        }
+        .wrap:before {
+          content: " ";
+          display: table;
+        }
+
+        .footer-secondary a:hover {
+          color: #ddd;
+        }
+
+        .footer-secondary a {
+          border-bottom: 1px solid #666;
+          color: #999;
+        }
+        .footer-secondary p {
+          margin: 0 0 24px;
+          padding: 0;
+          font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+          font-size: 16px;
+          font-weight: 300;
+          line-height: 26px;
+        }
+        .footer-logo img {
+          width: 110px;
+        }
+        .footer-logo {
+          float: left;
+          margin-right: 30px;
+        }
+
+        a img {
+          margin-bottom: -4px;
+        }
+        img {
+          height: auto;
+          width: auto;
+        }
+        .footer_links a {
+          margin: 0 8px;
+        }
+        .footer_links {
+          text-align: left;
+          padding-top: 3px;
+        }
+
+        .footer-primary a {
+          color: #2c76c7;
+          border-bottom: 1px solid #2c76c7;
+        }
+        .footer-primary a:hover {
+          color: #fff;
+          border-bottom: 1px solid #fff;
+        }
+        a {
+          color: #1173ca;
+          text-decoration: none;
+        }
+        #haxcmsmobilemenubutton {
+          padding: 0px;
+          --simple-icon-height: 30px;
+          --simple-icon-width: 30px;
+          margin: 2px 6px 0 6px;
+        }
+        @media only screen and (max-width: 1139px) {
+          .wrap {
+            max-width: 960px;
           }
+        }
+        @media only screen and (max-width: 1023px) {
           site-active-title h1 {
-            font-size: var(--ddd-font-size-xl);
+            font-size: var(--ddd-font-size-xs);
+            margin: 0 0 var(--ddd-spacing-2) 0;
           }
-          .even {
-            margin-left: unset;
+          header .wrap {
+            padding: 20px 0;
           }
-          .odd {
-            margin-right: unset;
-            text-align: unset;
+          scroll-button {
+            --simple-icon-width: 20px;
+            --simple-icon-height: 20px;
           }
-          .odd .article-wrap p {
-            margin-right: 0;
-            margin-left: 0;
-            justify-content: unset;
+        }
+        :host([responsive-size="xl"]) main {
+          width: calc(var(--menu-size) + 70%);
+        }
+        :host([responsive-size="lg"]) main {
+          width: calc(var(--menu-size) + 70%);
+        }
+        :host([responsive-size="md"]) main {
+          width: calc(var(--menu-size) + 65%);
+        }
+        :host([responsive-size="sm"]) main {
+          width: calc(var(--menu-size) + 40%);
+        }
+        :host([responsive-size="xs"]) main {
+          width: calc(var(--menu-size) + 20%);
+        }
+        /* ensure iframe content doesn't get bigger than the main area */
+        :host([responsive-size]) main ::slotted(iframe) {
+          max-width: 100%;
+        }
+
+        .left-col {
+          display: -webkit-box;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          flex: 0 1 0%;
+          margin: 0;
+          padding: 0;
+          margin-left: -300px;
+          transition: margin 300ms ease;
+          height: fit-content;
+        }
+        :host {
+          --menu-size: 300px;
+        }
+        :host([menu-open]) {
+          --menu-size: 0px;
+        }
+        :host([menu-open]) .left-col {
+          margin-left: 0px;
+          position: sticky;
+          margin-top: 8px;
+        }
+
+        .pdf-page-btn,
+        .print-branch-btn,
+        .search-modal-btn,
+        #emailbtnwrapper,
+        #qrcodebtnwrapper {
+          --simple-icon-height: 24px;
+          --simple-icon-width: 24px;
+          margin: 8px 4px 0 8px;
+          transition: 0.3s ease-in all;
+        }
+
+        :host([menu-open]) .pdf-page-btn,
+        :host([menu-open]) .search-modal-btn,
+        :host([menu-open]) .print-branch-btn,
+        :host([menu-open]) #emailbtnwrapper,
+        :host([menu-open]) #qrcodebtnwrapper {
+          display: inline-flex;
+          --simple-icon-height: 24px;
+          --simple-icon-width: 24px;
+        }
+
+        @media screen and (min-width: 900px) {
+          article {
+            padding: 64px 80px 40px 40px;
           }
-          .even .article-wrap p {
-            margin-right: 0;
-            margin-left: 0;
+          .left-col {
+            flex: 0 0 auto;
+            width: auto;
+            z-index: 15;
+            width: 300px;
+            align-items: stretch;
+            flex-direction: column;
+            -webkit-box-align: stretch;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
           }
-          article simple-icon-button-lite.article {
-            display: none;
-          }
-          .article-wrap simple-cta {
-            margin-top: var(--ddd-spacing-2);
-          }
-          .article-wrap {
-            padding: var(--ddd-spacing-5);
-          }
-          .even .article-wrap p {
-            margin-left: unset;
-          }
-          .article-wrap p {
-            min-width: unset;
-            max-width: unset;
-            font-size: var(--ddd-font-size-s);
-          }
-          footer .author .h1 {
-            display: none;
-          }
-          footer .author .h2 {
-            display: none;
-          }
-        } 
-      `]}firstUpdated(t){super.firstUpdated(t),this.HAXCMSThemeSettings.autoScroll=!1,this.HAXCMSThemeSettings.scrollTarget=this.shadowRoot.querySelector(".lower-header-box"),globalThis.AbsolutePositionStateManager.requestAvailability().scrollTarget=this.HAXCMSThemeSettings.scrollTarget}toggleSiteTheme(t){switch(this.siteTheme){case"earth":this.siteTheme="water",this.dataPrimary=1;break;case"water":this.siteTheme="fire",this.dataPrimary=11;break;case"fire":this.siteTheme="sand",this.dataPrimary=23;break;case"sand":this.siteTheme="",this.dataPrimary=2;break;default:this.siteTheme="earth",this.dataPrimary=1}}render(){return s`
-    <header>
-      <simple-icon-button-lite icon="image:style" class="theme-picker" @click="${this.toggleSiteTheme}"></simple-icon-button-lite>
-      <div class="author">
-        <a href="${this.basePath}">${this.manifest.metadata.author.image?s`
-          <img 
-            class="author-image"
-            loading="lazy"
-            decoding="async"
-            fetchpriority="low"
-            src="${this.manifest.metadata.author.image}"
-            alt="${this.manifest.metadata.author.name}"
-          />`:""}
-          <h1>${this.manifest.title}</h1>
-          <h2>${this.manifest.description}</h2>
-        </a>
-      </div>
-    </header>
-    <div class="lower-header-box ${this.location&&"home"===this.location.route.name?"home":"not-home"}"">
-      <simple-tooltip for="top" position="bottom">${this.t.home}</simple-tooltip>
-      <a tabindex="-1" href="${this.basePath}" class="top article-link-icon"><simple-icon-button-lite id="top" label="${this.t.home}" icon="${this.manifest.metadata.icon?this.manifest.metadata.icon:"av:album"}"></simple-icon-button-lite></a>
-      ${this.location&&"home"!==this.location.route.name?s`
-          ${this._items.map((t,e)=>s`
-            <simple-tooltip for="${t.id}" position="bottom">${t.title}</simple-tooltip>
-            <a tabindex="-1" href="${t.slug}" class="article-link-icon top ${!this.activeItem||t.id!==this.activeItem.id&&t.id!==this.activeItem.parent?"":"active"}"><simple-icon-button-lite id="${t.id}" class="article" icon="${t.metadata.icon?t.metadata.icon:"av:album"}"></simple-icon-button-lite></a>
-          `)}`:""}
-    </div>
-    <main class="main ${this.location&&"home"===this.location.route.name?"home":"not-home"}"> 
-      <div class="articles">
-        ${this.location&&"home"===this.location.route.name?s`
-          ${this._items.map((t,e)=>s`
-            <article class="post ${e%2==0?"even":"odd"}">
-            <simple-tooltip for="v-${t.id}" position="${e%2==0?"left":"right"}"">${t.title}</simple-tooltip>
-            <a tabindex="-1" href="${t.slug}" class="article-link-icon"><simple-icon-button-lite id="v-${t.id}" class="article" icon="${t.metadata.icon?t.metadata.icon:"av:album"}"></simple-icon-button-lite></a>
-              <div class="article-wrap">
-                <h3>${t.title}</h3>
-                <div>
-                  <p>${t.description}</p>
-                </div>
-                ${this.getItemChildren(t.id).length>0?s`
-                  <div class="child-pages-container">
-                    ${this.getItemChildren(t.id).map(t=>s`
-                      <simple-tooltip for="v-${t.id}" position="bottom">${t.title}</simple-tooltip>
-                      <a id="v-${t.id}" href="${t.slug}" class="child-page-link">${t.metadata.image?s`<img src="${t.metadata.image}" loading="lazy"
-                        decoding="async"
-                        fetchpriority="low" alt="${t.title}"/>`:s`<img 
-                          loading="lazy"
-                          decoding="async"
-                          fetchpriority="low"
-                          src="${this.manifest.metadata.author.image}"
-                          alt="${this.manifest.metadata.author.name}"
-                        />`}
-                      </a>
-                      `)}
-                  </div>`:""}
-                <simple-cta link="${t.slug}" label="${this.t.readMore}"></simple-cta>
-              </div>
-            </article>
-          `)}`:""}
-      </div>
-      <article part="transitioncontent" class="${this.location&&"home"===this.location.route.name?"home":"not-home"}">
-        ${this.location&&"home"!==this.location.route.name?s`
-        <site-breadcrumb></site-breadcrumb>
-        <site-active-title></site-active-title>
-        `:""}
-        <!-- this block and names are required for HAX to edit the content of the page. contentcontainer, slot, and wrapping the slot. -->
-        <div id="contentcontainer"><div id="slot">${this.location&&"home"!==this.location.route.name?s`<slot></slot>
-        <site-collection-list published limit="0" sort="order" parent="${this.activeItem?this.activeItem.id:null}"></site-collection-list>`:""}</div></div>
-      </article>
-    </main>
-    <footer>
-      <div class="author">
-        <div class="spacing"><a href="${this.basePath}">${this.manifest.metadata.author.image?s`
-          <img 
-            class="author-image"
-            loading="lazy"
-            decoding="async"
-            fetchpriority="low"
-            src="${this.manifest.metadata.author.image}"
-            alt="${this.manifest.metadata.author.name}"
-          />`:""}
-          </a>
-          <div class="h1">${this.manifest.title}</div>
-          <div class="h2">${this.manifest.description}</div class="h2">
-          <div
-            class="license-body"
-            xmlns:cc="${this.licenseLink}"
-            xmlns:dc="http://purl.org/dc/elements/1.1/"
+        }
+      `]}firstUpdated(e){super.firstUpdated(e),this.HAXCMSThemeSettings.scrollTarget=this.shadowRoot.querySelector("#main"),globalThis.AbsolutePositionStateManager.requestAvailability().scrollTarget=this.HAXCMSThemeSettings.scrollTarget,this.shadowRoot.querySelector("scroll-button").target=this.shadowRoot.querySelector("#main")}render(){return t`
+      <div id="haxcms-theme-top"></div>
+      <header itemtype="http://schema.org/WPHeader">
+        <div class="wrap">
+          <site-region name="header"></site-region>
+          <slot name="header"></slot>
+          <p>tes</p>
+        </div>
+      </header>
+      <div class="content site-inner">
+        <div class="nav">
+          ${this.HAXCMSMobileMenuButton("right")}
+          <site-modal
+            @site-modal-click="${this.siteModalClick}"
+            .part="${this.editMode?"edit-mode-active":""}"
+            ?disabled="${this.editMode}"
+            icon="icons:search"
+            title="Search site"
+            class="search-modal-btn"
+            button-label="Search"
+            part="search-btn"
+            position="right"
           >
-          ${this.licenseImage?s`
-                <a
-                  class="big-license-link"
-                  target="_blank"
-                  href="${this.licenseLink}"
-                  rel="noopener noreferrer"
-                  >
-                  <img
-                    loading="lazy"
-                    decoding="async"
-                    fetchpriority="low"
-                    alt="${this.licenseName} graphic"
-                    src="${this.licenseImage}"
-                  />
-                </a>
-              `:""}
+            <site-search></site-search>
+          </site-modal>
+          ${s.has("@core/htmlToPdf")?this.PDFPageButton("right"):""}
+          ${s.has("@haxcms/siteToHtml")?this.PrintBranchButton("right"):t`<replace-tag
+                with="site-print-button"
+                position="right"
+                class="btn js-toolbar-action"
+                import-method="view"
+                part="print-btn"
+              ></replace-tag>`}
+          ${this.QRCodeButton("right")} ${this.EmailPageButton("right")}
+          <div class="left-col ddd-font-navigation" part="left-col">
+            ${this.HAXCMSMobileMenu()}
           </div>
-          <simple-icon-button-lite icon="image:style" class="theme-picker" @click="${this.toggleSiteTheme}"></simple-icon-button-lite>
-          <scroll-button></scroll-button>
         </div>
-        </div>
-      <slot name="footer"></slot>
-    </footer>
-    `}}globalThis.customElements.define(l.tag,l);
+        <main id="main">
+          <article id="contentcontainer">
+            <site-active-title part="page-title"></site-active-title>
+            <site-active-tags
+              part="page-tags"
+              auto-accent-color
+            ></site-active-tags>
+            <section id="slot" part="slot">
+              <slot></slot>
+            </section>
+          </article>
+          <div class="link-actions">
+            <div class="inner">
+              <replace-tag with="site-menu-button" import-only></replace-tag>
+              <site-menu-button
+                hide-label
+                type="prev"
+                position="right"
+                class="navigation"
+                data-primary="4"
+              >
+                <div slot="suffix" class="wrapper">
+                  <div class="top">Go back</div>
+                </div>
+              </site-menu-button>
+              <site-menu-button
+                hide-label
+                type="next"
+                position="left"
+                class="navigation"
+                data-primary="4"
+              >
+                <div slot="prefix" class="wrapper">
+                  <div class="top">Continue</div>
+                </div>
+              </site-menu-button>
+            </div>
+          </div>
+        </main>
+      </div>
+      <footer
+        itemtype="http://schema.org/WPFooter"
+        .part="${this.editMode?"edit-mode-active":""}"
+      >
+        <section class="footer-secondary">
+          <div class="wrap">
+            <slot name="footer-secondary"></slot>
+            <site-region name="footerSecondary"></site-region>
+          </div>
+        </section>
+        <section class="footer-primary">
+          <div class="wrap">
+            <slot name="footer-primary"></slot>
+            <site-region name="footerPrimary"></site-region>
+          </div>
+        </section>
+        <scroll-button position="left"></scroll-button>
+      </footer>
+    `}static get properties(){let e={};return super.properties&&(e=super.properties),{...e,searchTerm:{type:String},siteDescription:{type:String},imageLink:{type:String},image:{type:String},imageAlt:{type:String},pageTimestamp:{type:Number}}}static get tag(){return"polaris-invent-theme"}appStoreReady(e){if(globalThis.HaxStore&&globalThis.HaxStore.requestAvailability()){let e=globalThis.HaxStore.requestAvailability();["polaris-cta","polaris-mark","polaris-story-card","polaris-tile","media-quote"].map(t=>{let i=globalThis.document.createElement(t);e.haxAutoloader.appendChild(i)}),this.windowControllersLoaded.abort()}}constructor(){super(),u.style.setProperty("--rpg-character-toast-display","none"),u.style.setProperty("--rpg-character-toast-mid-background-image","none"),u.style.setProperty("--rpg-character-toast-right-background-image","none"),u.style.setProperty("--rpg-character-toast-left-background-image","none"),u.style.setProperty("--rpg-character-toast-mid-padding",0),u.style.setProperty("--rpg-character-toast-height","96px"),u.style.backgroundColor="light-dark(var(--ddd-accent-6), var(--ddd-primary-4))",this.windowControllersLoaded=new AbortController,globalThis.addEventListener("hax-store-app-store-loaded",this.appStoreReady.bind(this),{once:!0,passive:!0,signal:this.windowControllersLoaded.signal}),this.searchTerm="",this.imageAlt="",this.image="",this.imageLink="",this.__disposer=this.__disposer?this.__disposer:[],h(e=>{if(n.themeData&&n.themeData.variables){const e=g(n.themeData.variables);this.imageAlt=e.imageAlt,this.image=e.image,this.imageLink=e.imageLink}this.__disposer.push(e)}),h(e=>{this.siteDescription=g(n.siteDescription),this.__disposer.push(e)}),h(e=>{this.activeManifestIndex=g(n.activeManifestIndex),this.__disposer.push(e)}),h(e=>{n.activeItem&&n.activeItem.metadata&&n.activeItem.metadata.updated&&(this.pageTimestamp=g(n.activeItem.metadata.updated)),this.__disposer.push(e)})}siteModalClick(e){import("@haxtheweb/haxcms-elements/lib/ui-components/site/site-search.js").then(e=>{"search"!==n.getInternalRoute()&&globalThis.history.replaceState({},null,"x/search");const t=new URLSearchParams(n.currentRouterLocation.search),i=globalThis.SimpleModal.requestAvailability().querySelector("site-search").shadowRoot.querySelector("simple-fields-field");i.focus(),t.get("search")&&(i.value=t.get("search"),setTimeout(()=>{i.select()},0))})}disconnectedCallback(){for(var e in this.__disposer)this.__disposer[e].dispose();super.disconnectedCallback()}}customElements.define(v.tag,v);
