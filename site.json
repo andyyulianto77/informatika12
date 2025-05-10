@@ -34,10 +34,10 @@
       "static": {}
     },
     "theme": {
-      "element": "bootstrap-theme",
-      "path": "@haxtheweb/bootstrap-theme/bootstrap-theme.js",
-      "name": "BootstrapCSS theme",
-      "thumbnail": "build/es6/node_modules/@haxtheweb/app-hax/lib/assets/images/BlueStyle.svg",
+      "element": "polaris-invent-theme",
+      "path": "./custom/build/custom.es6.js",
+      "name": "Polaris - Invent",
+      "thumbnail": "build/es6/node_modules/@haxtheweb/app-hax/lib/assets/images/PartyStyle.svg",
       "variables": {
         "image": "files/psu-mark.png",
         "imageAlt": null,
@@ -5502,13 +5502,13 @@
       "indent": 0,
       "location": "pages/item-ad185790-1b6f-4e60-a9c5-32d46685b9ae/index.html",
       "slug": "site-things/page",
-      "order": 2,
+      "order": 1,
       "parent": "item-cb344d64-a9ba-40cf-be72-547ed08083e0",
       "title": "Header",
       "description": " ",
       "metadata": {
         "created": 1746839900,
-        "updated": 1746841521,
+        "updated": 1746867097,
         "images": {},
         "videos": {},
         "published": true,

@@ -1,8 +1,124 @@
-import{HAXCMSLitElementTheme as t,autorun as e,toJS as i,store as a,css as o,html as s}from"@haxtheweb/haxcms-elements/lib/core/HAXCMSLitElementTheme.js";import"@haxtheweb/haxcms-elements/lib/ui-components/active-item/site-active-title.js";import"@haxtheweb/haxcms-elements/lib/ui-components/magic/site-collection-list.js";import"@haxtheweb/haxcms-elements/lib/ui-components/navigation/site-breadcrumb.js";import"@haxtheweb/simple-cta/simple-cta.js";import{DDDAllStyles as r}from"@haxtheweb/d-d-d/lib/DDDStyles.js";import"@haxtheweb/simple-tooltip/simple-tooltip.js";import"@haxtheweb/simple-icon/lib/simple-icon-button-lite.js";import"@haxtheweb/scroll-button/scroll-button.js";import{licenseList as n}from"@haxtheweb/license-element/license-element.js";
 /**
  * Copyright 2025 btopro
  * @license Apache-2.0, see License.md for full text.
- */class l extends t{static get tag(){return"custom-journey-theme"}constructor(){super(),this.HAXCMSThemeSettings.autoScroll=!1,this.siteTheme="",this.dataPrimary=2,this._items=[],this.location=null,this.activeItem={},this.basePath=null,this.manifest={},this.t={readMore:"Read more",home:"Home"};try{this.basePath=globalThis.document.querySelector("base").href}catch(t){this.basePath=globalThis.location.origin}e(()=>{this.manifest=i(a.manifest);let t=new n;this.manifest.license&&t[this.manifest.license]&&(this.licenseName=t[this.manifest.license].name,this.licenseLink=t[this.manifest.license].link,this.licenseImage=t[this.manifest.license].image),this._items=this.getItemChildren(null)}),e(()=>{this.activeItem=i(a.activeItem)}),e(()=>{let t=i(a.location);globalThis.document&&globalThis.document.startViewTransition?globalThis.document.startViewTransition(()=>{this.shadowRoot.querySelector(".lower-header-box").scrollIntoView(),this.location=t,this.shadowRoot.querySelector(".lower-header-box").scrollIntoView(),setTimeout(()=>{this.shadowRoot.querySelector(".lower-header-box").scrollIntoView()},10)}):this.location=t})}getItemChildren(t){if(this.manifest&&this.manifest.items)return this.manifest.items.filter(e=>e.parent===t)}static get properties(){return{...super.properties,activeItem:{type:Object},location:{type:String},basePath:{type:String},dataPrimary:{type:String,attribute:"data-primary",reflect:!0},_items:{type:Array},licenseName:{type:String},licenseLink:{type:String},licenseImage:{type:String},siteTheme:{type:String,reflect:!0,attribute:"site-theme"}}}HAXCMSGlobalStyleSheetContent(){return[...super.HAXCMSGlobalStyleSheetContent(),o`
+ */
+import { HAXCMSLitElementTheme, css, unsafeCSS, html, store, autorun, toJS } from "@haxtheweb/haxcms-elements/lib/core/HAXCMSLitElementTheme.js";
+import "@haxtheweb/haxcms-elements/lib/ui-components/active-item/site-active-title.js";
+import "@haxtheweb/haxcms-elements/lib/ui-components/magic/site-collection-list.js";
+import "@haxtheweb/haxcms-elements/lib/ui-components/navigation/site-breadcrumb.js";
+import "@haxtheweb/simple-cta/simple-cta.js";
+import { DDDAllStyles } from "@haxtheweb/d-d-d/lib/DDDStyles.js";
+import "@haxtheweb/simple-tooltip/simple-tooltip.js";
+import "@haxtheweb/simple-icon/lib/simple-icon-button-lite.js";
+import "@haxtheweb/scroll-button/scroll-button.js";
+import { licenseList } from "@haxtheweb/license-element/license-element.js";
+
+/**
+ * `CustomJourneyTheme`
+ * `CustomJourneyTheme based on HAXCMS theming ecosystem`
+ * `This theme is an example of extending an existing theme component`
+ *
+ * @microcopy - language worth noting:
+ *  - HAXcms - A headless content management system
+ *  - HAXCMSLitElementTheme - A class that provides correct baseline wiring to build a new theme that HAX can use
+ *
+ * @documentation - see HAX docs to learn more about theming
+ *  - Custom theme development - https://haxtheweb.org/documentation/developers/haxsite/custom-theme-development
+ *  - Theme Blocks - https://haxtheweb.org/documentation/developers/theme-blocks
+ *  - DDD - https://haxtheweb.org/documentation/ddd
+ *  - Data Store - https://haxtheweb.org/documentation/developers/haxsite/data-store
+ * @element custom-journey-theme
+ */
+class CustomJourneyTheme extends (HAXCMSLitElementTheme) {
+  /**
+   * Store the tag name to make it easier to obtain directly.
+   * @notice function name must be here for tooling to operate correctly
+   */
+  static get tag() {
+    return "custom-journey-theme";
+  }
+
+  // set defaults or tie into the store
+  constructor() {
+    super();
+    this.HAXCMSThemeSettings.autoScroll = false;
+    this.siteTheme = "";
+    this.dataPrimary = 2;
+    this._items = [];
+    this.location = null;
+    this.activeItem = {};
+    this.basePath = null;
+    this.manifest = {};
+    this.t = {
+      readMore: "Read more",
+      home: "Home",
+    };
+    try {
+      this.basePath = globalThis.document.querySelector('base').href;
+    }
+    catch (e) {
+      this.basePath = globalThis.location.origin;
+    }
+    autorun(() => {
+      this.manifest = toJS(store.manifest);
+      let LList = new licenseList();
+      if (this.manifest.license && LList[this.manifest.license]) {
+        this.licenseName = LList[this.manifest.license].name;
+        this.licenseLink = LList[this.manifest.license].link;
+        this.licenseImage = LList[this.manifest.license].image;
+      }
+      this._items = this.getItemChildren(null);
+    });
+    autorun(() => {
+      this.activeItem = toJS(store.activeItem);
+    });
+    autorun(() => {
+      let location = toJS(store.location);
+      if (globalThis.document && globalThis.document.startViewTransition) {
+        globalThis.document.startViewTransition(() => {
+          this.shadowRoot.querySelector('.lower-header-box').scrollIntoView();
+          this.location = location;
+          this.shadowRoot.querySelector('.lower-header-box').scrollIntoView();
+          setTimeout(() => {
+            this.shadowRoot.querySelector('.lower-header-box').scrollIntoView();
+          }, 10);
+        });
+      }
+      else {
+        this.location = location;
+      }
+    });
+  }
+
+  getItemChildren(itemId) {
+    if (this.manifest && this.manifest.items) {
+      return this.manifest.items.filter((item) => item.parent === itemId);
+    }
+  }
+
+  static get properties() {
+    return {
+      ...super.properties,
+      activeItem: { type: Object },
+      location: { type: String },
+      basePath: { type: String },
+      dataPrimary: { type: String, attribute: "data-primary", reflect: true },
+      _items: { type: Array },
+      licenseName: { type: String },
+      licenseLink: { type: String },
+      licenseImage: { type: String },
+      siteTheme: { type: String, reflect: true, attribute: 'site-theme' },
+    };
+  }
+
+  // allows for global styles to be set against the entire document
+  // you can also use this to cascade styles down to the theme
+  // but the more common reason is to influence the body or other things
+  // put into the global index.html context by the system itself
+  HAXCMSGlobalStyleSheetContent() {
+    return [
+      ...super.HAXCMSGlobalStyleSheetContent(),
+      css`
       :root {
         --haxcms-site-theme-low-tone: white;
         --haxcms-site-theme-high-tone: var(--ddd-theme-default-coalyGray);
@@ -45,7 +161,16 @@ import{HAXCMSLitElementTheme as t,autorun as e,toJS as i,store as a,css as o,htm
           --bg: light-dark(var(--haxcms-site-theme-low-tone), var(--haxcms-site-theme-high-tone));
         }
       }
-      `]}static get styles(){return[r,super.styles,o`
+      `,
+    ];
+  }
+
+  //styles function
+  static get styles() {
+    return [
+      DDDAllStyles,
+      super.styles,
+      css`
         :host {
           scroll-behavior: auto;
           display: block;
@@ -447,11 +572,57 @@ import{HAXCMSLitElementTheme as t,autorun as e,toJS as i,store as a,css as o,htm
             display: none;
           }
         } 
-      `]}firstUpdated(t){super.firstUpdated(t),this.HAXCMSThemeSettings.autoScroll=!1,this.HAXCMSThemeSettings.scrollTarget=this.shadowRoot.querySelector(".lower-header-box"),globalThis.AbsolutePositionStateManager.requestAvailability().scrollTarget=this.HAXCMSThemeSettings.scrollTarget}toggleSiteTheme(t){switch(this.siteTheme){case"earth":this.siteTheme="water",this.dataPrimary=1;break;case"water":this.siteTheme="fire",this.dataPrimary=11;break;case"fire":this.siteTheme="sand",this.dataPrimary=23;break;case"sand":this.siteTheme="",this.dataPrimary=2;break;default:this.siteTheme="earth",this.dataPrimary=1}}render(){return s`
+      `,
+    ];
+  }
+
+  firstUpdated(changedProperties) {
+    super.firstUpdated(changedProperties);
+    this.HAXCMSThemeSettings.autoScroll = false;
+    this.HAXCMSThemeSettings.scrollTarget =
+      this.shadowRoot.querySelector(".lower-header-box");
+    globalThis.AbsolutePositionStateManager.requestAvailability().scrollTarget =
+      this.HAXCMSThemeSettings.scrollTarget;
+   // console.log(this.HAXCMSThemeSettings);
+  }
+
+  toggleSiteTheme(e) {
+    switch (this.siteTheme) {
+      // make this the captain planet powers
+      // earth
+      // wind
+      // fire
+      // water
+      // heart???????
+      case "earth":
+        this.siteTheme = "water";
+        this.dataPrimary = 1;
+      break;
+      case "water":
+        this.siteTheme = "fire";
+        this.dataPrimary = 11;
+      break;
+      case "fire":
+        this.siteTheme = "sand";
+        this.dataPrimary = 23;
+      break;
+      case "sand":
+        this.siteTheme = "";
+        this.dataPrimary = 2;
+      break;
+      default:
+        this.siteTheme = "earth";
+        this.dataPrimary = 1;
+      break;
+    }
+  }
+
+  render() {
+    return html`
     <header>
       <simple-icon-button-lite icon="image:style" class="theme-picker" @click="${this.toggleSiteTheme}"></simple-icon-button-lite>
       <div class="author">
-        <a href="${this.basePath}">${this.manifest.metadata.author.image?s`
+        <a href="${this.basePath}">${this.manifest.metadata.author.image ? html`
           <img 
             class="author-image"
             loading="lazy"
@@ -459,40 +630,44 @@ import{HAXCMSLitElementTheme as t,autorun as e,toJS as i,store as a,css as o,htm
             fetchpriority="low"
             src="${this.manifest.metadata.author.image}"
             alt="${this.manifest.metadata.author.name}"
-          />`:""}
+          />`: ``}
           <h1>${this.manifest.title}</h1>
           <h2>${this.manifest.description}</h2>
         </a>
       </div>
     </header>
-    <div class="lower-header-box ${this.location&&"home"===this.location.route.name?"home":"not-home"}"">
+    <div class="lower-header-box ${this.location && this.location.route.name === "home" ? "home" : "not-home"}"">
       <simple-tooltip for="top" position="bottom">${this.t.home}</simple-tooltip>
-      <a tabindex="-1" href="${this.basePath}" class="top article-link-icon"><simple-icon-button-lite id="top" label="${this.t.home}" icon="${this.manifest.metadata.icon?this.manifest.metadata.icon:"av:album"}"></simple-icon-button-lite></a>
-      ${this.location&&"home"!==this.location.route.name?s`
-          ${this._items.map((t,e)=>s`
-            <simple-tooltip for="${t.id}" position="bottom">${t.title}</simple-tooltip>
-            <a tabindex="-1" href="${t.slug}" class="article-link-icon top ${!this.activeItem||t.id!==this.activeItem.id&&t.id!==this.activeItem.parent?"":"active"}"><simple-icon-button-lite id="${t.id}" class="article" icon="${t.metadata.icon?t.metadata.icon:"av:album"}"></simple-icon-button-lite></a>
-          `)}`:""}
+      <a tabindex="-1" href="${this.basePath}" class="top article-link-icon"><simple-icon-button-lite id="top" label="${this.t.home}" icon="${this.manifest.metadata.icon ? this.manifest.metadata.icon : "av:album"}"></simple-icon-button-lite></a>
+      ${this.location && this.location.route.name !== "home" ? html`
+          ${this._items.map((item, index) => {
+          return html`
+            <simple-tooltip for="${item.id}" position="bottom">${item.title}</simple-tooltip>
+            <a tabindex="-1" href="${item.slug}" class="article-link-icon top ${this.activeItem && (item.id === this.activeItem.id || item.id === this.activeItem.parent) ? "active" : ""}"><simple-icon-button-lite id="${item.id}" class="article" icon="${item.metadata.icon ? item.metadata.icon : "av:album"}"></simple-icon-button-lite></a>
+          `;
+        })}` : ``}
     </div>
-    <main class="main ${this.location&&"home"===this.location.route.name?"home":"not-home"}"> 
+    <main class="main ${this.location && this.location.route.name === "home" ? "home" : "not-home"}"> 
       <div class="articles">
-        ${this.location&&"home"===this.location.route.name?s`
-          ${this._items.map((t,e)=>s`
-            <article class="post ${e%2==0?"even":"odd"}">
-            <simple-tooltip for="v-${t.id}" position="${e%2==0?"left":"right"}"">${t.title}</simple-tooltip>
-            <a tabindex="-1" href="${t.slug}" class="article-link-icon"><simple-icon-button-lite id="v-${t.id}" class="article" icon="${t.metadata.icon?t.metadata.icon:"av:album"}"></simple-icon-button-lite></a>
+        ${this.location && this.location.route.name === "home" ? html`
+          ${this._items.map((item, index) => {
+          return html`
+            <article class="post ${index % 2 === 0 ? "even" : "odd"}">
+            <simple-tooltip for="v-${item.id}" position="${index % 2 === 0 ? "left" : "right"}"">${item.title}</simple-tooltip>
+            <a tabindex="-1" href="${item.slug}" class="article-link-icon"><simple-icon-button-lite id="v-${item.id}" class="article" icon="${item.metadata.icon ? item.metadata.icon : "av:album"}"></simple-icon-button-lite></a>
               <div class="article-wrap">
-                <h3>${t.title}</h3>
+                <h3>${item.title}</h3>
                 <div>
-                  <p>${t.description}</p>
+                  <p>${item.description}</p>
                 </div>
-                ${this.getItemChildren(t.id).length>0?s`
+                ${this.getItemChildren(item.id).length > 0 ? html`
                   <div class="child-pages-container">
-                    ${this.getItemChildren(t.id).map(t=>s`
-                      <simple-tooltip for="v-${t.id}" position="bottom">${t.title}</simple-tooltip>
-                      <a id="v-${t.id}" href="${t.slug}" class="child-page-link">${t.metadata.image?s`<img src="${t.metadata.image}" loading="lazy"
+                    ${this.getItemChildren(item.id).map((child) => 
+                    html`
+                      <simple-tooltip for="v-${child.id}" position="bottom">${child.title}</simple-tooltip>
+                      <a id="v-${child.id}" href="${child.slug}" class="child-page-link">${child.metadata.image ? html`<img src="${child.metadata.image}" loading="lazy"
                         decoding="async"
-                        fetchpriority="low" alt="${t.title}"/>`:s`<img 
+                        fetchpriority="low" alt="${child.title}"/>` : html`<img 
                           loading="lazy"
                           decoding="async"
                           fetchpriority="low"
@@ -501,25 +676,26 @@ import{HAXCMSLitElementTheme as t,autorun as e,toJS as i,store as a,css as o,htm
                         />`}
                       </a>
                       `)}
-                  </div>`:""}
-                <simple-cta link="${t.slug}" label="${this.t.readMore}"></simple-cta>
+                  </div>` : ``}
+                <simple-cta link="${item.slug}" label="${this.t.readMore}"></simple-cta>
               </div>
             </article>
-          `)}`:""}
+          `;
+        })}` : ``}
       </div>
-      <article part="transitioncontent" class="${this.location&&"home"===this.location.route.name?"home":"not-home"}">
-        ${this.location&&"home"!==this.location.route.name?s`
+      <article part="transitioncontent" class="${this.location && this.location.route.name === "home" ? "home" : "not-home"}">
+        ${this.location && this.location.route.name !== "home" ? html`
         <site-breadcrumb></site-breadcrumb>
         <site-active-title></site-active-title>
-        `:""}
+        ` : ``}
         <!-- this block and names are required for HAX to edit the content of the page. contentcontainer, slot, and wrapping the slot. -->
-        <div id="contentcontainer"><div id="slot">${this.location&&"home"!==this.location.route.name?s`<slot></slot>
-        <site-collection-list published limit="0" sort="order" parent="${this.activeItem?this.activeItem.id:null}"></site-collection-list>`:""}</div></div>
+        <div id="contentcontainer"><div id="slot">${this.location && this.location.route.name !== "home" ? html`<slot></slot>
+        <site-collection-list published limit="0" sort="order" parent="${this.activeItem ? this.activeItem.id : null}"></site-collection-list>` : ``}</div></div>
       </article>
     </main>
     <footer>
       <div class="author">
-        <div class="spacing"><a href="${this.basePath}">${this.manifest.metadata.author.image?s`
+        <div class="spacing"><a href="${this.basePath}">${this.manifest.metadata.author.image ? html`
           <img 
             class="author-image"
             loading="lazy"
@@ -527,7 +703,7 @@ import{HAXCMSLitElementTheme as t,autorun as e,toJS as i,store as a,css as o,htm
             fetchpriority="low"
             src="${this.manifest.metadata.author.image}"
             alt="${this.manifest.metadata.author.name}"
-          />`:""}
+          />`: ``}
           </a>
           <div class="h1">${this.manifest.title}</div>
           <div class="h2">${this.manifest.description}</div class="h2">
@@ -536,7 +712,8 @@ import{HAXCMSLitElementTheme as t,autorun as e,toJS as i,store as a,css as o,htm
             xmlns:cc="${this.licenseLink}"
             xmlns:dc="http://purl.org/dc/elements/1.1/"
           >
-          ${this.licenseImage?s`
+          ${this.licenseImage
+            ? html`
                 <a
                   class="big-license-link"
                   target="_blank"
@@ -551,7 +728,7 @@ import{HAXCMSLitElementTheme as t,autorun as e,toJS as i,store as a,css as o,htm
                     src="${this.licenseImage}"
                   />
                 </a>
-              `:""}
+              ` : ``}
           </div>
           <simple-icon-button-lite icon="image:style" class="theme-picker" @click="${this.toggleSiteTheme}"></simple-icon-button-lite>
           <scroll-button></scroll-button>
@@ -559,4 +736,9 @@ import{HAXCMSLitElementTheme as t,autorun as e,toJS as i,store as a,css as o,htm
         </div>
       <slot name="footer"></slot>
     </footer>
-    `}}globalThis.customElements.define(l.tag,l);
+    `;
+  }
+
+}
+globalThis.customElements.define(CustomJourneyTheme.tag, CustomJourneyTheme);
+export { CustomJourneyTheme };

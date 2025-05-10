@@ -12,16 +12,17 @@
     "watch": "rollup --watch -c rollup.config.js"
   },
   "dependencies": {
+    "@haxtheweb/polaris-theme": "^10.0.2"
   },
   "devDependencies": {
-    "@babel/plugin-transform-modules-amd": "^7.2.0",
     "@babel/core": "^7.3.3",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/plugin-syntax-import-meta": "^7.2.0",
+    "@babel/plugin-transform-modules-amd": "^7.2.0",
     "@babel/polyfill": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
-    "rollup-plugin-terser": "5.2.0",
+    "rollup": "^1.6.0",
     "rollup-plugin-rewrite-imports": "^2.0.0",
-    "rollup": "^1.6.0"
+    "rollup-plugin-terser": "5.2.0"
   }
 }
