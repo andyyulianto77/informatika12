@@ -144,12 +144,9 @@ import{css as e,html as t}from"lit";import{HAXCMSLitElementTheme as i}from"@haxt
           display: block;
         }
 
-      //   element.style {
-      //     text-align: center;
-      // }
-      header h2 {
-        text-align: center;
-      }
+        h2 #header-center {
+          text-align: center;
+        }
 
         @media screen and (min-width: 900px) {
           .link-actions .inner {
@@ -475,7 +472,6 @@ import{css as e,html as t}from"lit";import{HAXCMSLitElementTheme as i}from"@haxt
         <div class="wrap">
           <site-region name="header"></site-region>
           <slot name="header"></slot>
-          <p>tes</p>
         </div>
       </header>
       <div class="content site-inner">
