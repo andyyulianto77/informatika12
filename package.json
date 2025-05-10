@@ -1,6 +1,6 @@
 {
   "name": "informatikaxii",
-  "version": "10.0.1",
+  "version": "10.0.2",
   "description": "haxcms import",
   "main": "index.html",
   "author": {
@@ -13,7 +13,7 @@
   },
   "scripts": {
     "start": "npm run dev",
-    "ghpages:build": "rm dist && rm assets/babel* && rm build && rm node_modules && rm wc-registry.json",
+    "ghpages:build": "rm assets/babel* && rm build && rm wc-registry.json",
     "dev": "npx @haxtheweb/haxcms-nodejs",
     "dev-theme": "cd custom && npm start"
   }

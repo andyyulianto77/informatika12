@@ -23,12 +23,12 @@
         "gaID": null
       },
       "created": 1732016691,
-      "updated": 1736748817,
+      "updated": 1746840184,
       "git": {
         "vendor": "github",
         "branch": "gh-pages"
       },
-      "version": "10.0.1",
+      "version": "10.0.2",
       "domain": null,
       "tags": null,
       "static": {}
@@ -48,7 +48,7 @@
       },
       "regions": {
         "header": [
-          "item-4c602412-e611-4949-b6d1-80cdfc407b6b"
+          "item-ad185790-1b6f-4e60-a9c5-32d46685b9ae"
         ],
         "footerPrimary": [
           "item-aa117035-8527-4bca-bada-e7278153e960"
@@ -5478,23 +5478,41 @@
     },
     {
       "id": "item-4c602412-e611-4949-b6d1-80cdfc407b6b",
-      "indent": 1,
+      "indent": 0,
       "location": "pages/item-4c602412-e611-4949-b6d1-80cdfc407b6b/index.html",
       "slug": "site-things/header",
       "order": 0,
       "parent": "item-cb344d64-a9ba-40cf-be72-547ed08083e0",
-      "title": "Header",
+      "title": "Header22",
       "description": " ",
       "metadata": {
         "created": 1736040662,
-        "updated": 1736748814,
+        "updated": 1746839919,
         "images": {},
         "videos": {},
         "published": true,
         "hideInMenu": false,
         "locked": false,
         "readtime": 1,
-        "status": ""
+        "status": "",
+        "files": [
+          {
+            "path": "C:\\Users\\Administrator\\Downloads\\git\\pesanweb\\informatika12-del\\files\\jatim.png",
+            "fullUrl": "/C:\\Users\\Administrator\\Downloads\\git\\pesanweb\\informatika12-del/files/jatim.png",
+            "url": "files/jatim.png",
+            "type": "image/png",
+            "name": "jatim.png",
+            "size": 95579
+          },
+          {
+            "path": "C:\\Users\\Administrator\\Downloads\\git\\pesanweb\\informatika12-del\\files\\logo-sman-4-kediri.png",
+            "fullUrl": "/C:\\Users\\Administrator\\Downloads\\git\\pesanweb\\informatika12-del/files/logo-sman-4-kediri.png",
+            "url": "files/logo-sman-4-kediri.png",
+            "type": "image/png",
+            "name": "logo-sman-4-kediri.png",
+            "size": 173106
+          }
+        ]
       }
     },
     {
@@ -5516,6 +5534,33 @@
         "locked": false,
         "readtime": 1,
         "status": ""
+      }
+    },
+    {
+      "id": "item-ad185790-1b6f-4e60-a9c5-32d46685b9ae",
+      "indent": 0,
+      "location": "pages/item-ad185790-1b6f-4e60-a9c5-32d46685b9ae/index.html",
+      "slug": "site-things/page",
+      "order": 2,
+      "parent": "item-cb344d64-a9ba-40cf-be72-547ed08083e0",
+      "title": "Header",
+      "description": " ",
+      "metadata": {
+        "created": 1746839900,
+        "updated": 1746841521,
+        "images": {},
+        "videos": {},
+        "published": true,
+        "hideInMenu": false,
+        "locked": false,
+        "readtime": 1,
+        "theme": {
+          "element": "haxcms-blank-theme",
+          "path": "@haxtheweb/haxcms-elements/lib/core/themes/haxcms-blank-theme.js",
+          "name": "Blank theme",
+          "thumbnail": "build/es6/node_modules/@haxtheweb/app-hax/lib/assets/images/GreyStyle.svg",
+          "key": "haxcms-blank-theme"
+        }
       }
     }
   ]
