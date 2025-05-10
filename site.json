@@ -23,7 +23,7 @@
         "gaID": null
       },
       "created": 1732016691,
-      "updated": 1746862064,
+      "updated": 1746862342,
       "git": {
         "vendor": "github",
         "branch": "gh-pages"
@@ -34,9 +34,9 @@
       "static": {}
     },
     "theme": {
-      "element": "clean-portfolio-theme",
-      "path": "@haxtheweb/clean-portfolio-theme/clean-portfolio-theme.js",
-      "name": "Clean Portfolio theme",
+      "element": "polaris-invent-theme",
+      "path": "@haxtheweb/polaris-theme/lib/polaris-invent-theme.js",
+      "name": "Polaris - Invent",
       "thumbnail": "build/es6/node_modules/@haxtheweb/app-hax/lib/assets/images/PartyStyle.svg",
       "variables": {
         "image": "files/psu-mark.png",
