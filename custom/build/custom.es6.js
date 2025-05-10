@@ -144,9 +144,7 @@ import{css as e,html as t}from"lit";import{HAXCMSLitElementTheme as i}from"@haxt
           display: block;
         }
 
-        h2 #header-center {
-          text-align: center;
-        }
+  
 
         @media screen and (min-width: 900px) {
           .link-actions .inner {
@@ -366,6 +364,10 @@ import{css as e,html as t}from"lit";import{HAXCMSLitElementTheme as i}from"@haxt
           --simple-icon-width: 30px;
           margin: 2px 6px 0 6px;
         }
+
+        // #header-center {
+        //   text-align: center;
+        // }
         @media only screen and (max-width: 1139px) {
           .wrap {
             max-width: 960px;
