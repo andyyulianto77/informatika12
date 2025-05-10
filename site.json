@@ -5477,45 +5477,6 @@
       }
     },
     {
-      "id": "item-4c602412-e611-4949-b6d1-80cdfc407b6b",
-      "indent": 0,
-      "location": "pages/item-4c602412-e611-4949-b6d1-80cdfc407b6b/index.html",
-      "slug": "site-things/header",
-      "order": 0,
-      "parent": "item-cb344d64-a9ba-40cf-be72-547ed08083e0",
-      "title": "Header22",
-      "description": " ",
-      "metadata": {
-        "created": 1736040662,
-        "updated": 1746839919,
-        "images": {},
-        "videos": {},
-        "published": true,
-        "hideInMenu": false,
-        "locked": false,
-        "readtime": 1,
-        "status": "",
-        "files": [
-          {
-            "path": "C:\\Users\\Administrator\\Downloads\\git\\pesanweb\\informatika12-del\\files\\jatim.png",
-            "fullUrl": "/C:\\Users\\Administrator\\Downloads\\git\\pesanweb\\informatika12-del/files/jatim.png",
-            "url": "files/jatim.png",
-            "type": "image/png",
-            "name": "jatim.png",
-            "size": 95579
-          },
-          {
-            "path": "C:\\Users\\Administrator\\Downloads\\git\\pesanweb\\informatika12-del\\files\\logo-sman-4-kediri.png",
-            "fullUrl": "/C:\\Users\\Administrator\\Downloads\\git\\pesanweb\\informatika12-del/files/logo-sman-4-kediri.png",
-            "url": "files/logo-sman-4-kediri.png",
-            "type": "image/png",
-            "name": "logo-sman-4-kediri.png",
-            "size": 173106
-          }
-        ]
-      }
-    },
-    {
       "id": "item-aa117035-8527-4bca-bada-e7278153e960",
       "indent": 1,
       "location": "pages/item-aa117035-8527-4bca-bada-e7278153e960/index.html",
