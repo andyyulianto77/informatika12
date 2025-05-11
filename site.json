@@ -2371,16 +2371,16 @@
     },
     {
       "id": "item-5ec6a7be-793f-466f-86b6-309a7e041fb5",
-      "indent": 2,
+      "indent": 0,
       "location": "pages/item-5ec6a7be-793f-466f-86b6-309a7e041fb5/index.html",
       "slug": "literasi-digital/mesin-pencari/menemukan-informasi-di-era-digital",
       "order": 0,
       "parent": "item-217c8430-43fb-49a8-b953-1084cb31f0cb",
       "title": "Menemukan Informasi di Era Digital",
-      "description": "",
+      "description": "\n\n",
       "metadata": {
         "created": 1732016685,
-        "updated": 1736748743,
+        "updated": 1746875064,
         "images": {},
         "videos": {},
         "published": true,
@@ -2392,16 +2392,16 @@
     },
     {
       "id": "item-b4236a08-9f70-4722-b4fc-6b826a1d5e34",
-      "indent": 2,
+      "indent": 0,
       "location": "pages/item-b4236a08-9f70-4722-b4fc-6b826a1d5e34/index.html",
       "slug": "literasi-digital/mesin-pencari/cara-kerja",
       "order": 1,
       "parent": "item-217c8430-43fb-49a8-b953-1084cb31f0cb",
       "title": "Cara Kerja",
-      "description": "",
+      "description": "\n\nTuliskan cara kerja dari mesin pencari!\n",
       "metadata": {
         "created": 1732016685,
-        "updated": 1736748744,
+        "updated": 1746884802,
         "images": {},
         "videos": {},
         "published": true,
@@ -2880,19 +2880,19 @@
     },
     {
       "id": "item-a8c72ce1-89a5-4bb6-ade7-5c1b34f35eab",
-      "indent": 1,
+      "indent": 0,
       "location": "pages/item-a8c72ce1-89a5-4bb6-ade7-5c1b34f35eab/index.html",
       "slug": "bersiap-siap-pro/ulangan-akhir-semester",
       "order": 3,
       "parent": "item-f61f8091-ceb3-4d8b-b1c4-d573ed0980a7",
       "title": "Ulangan Akhir Semester",
-      "description": "Kunci &#8203;jawaban &#8203;\n\n",
+      "description": "Kunci ​jawaban ​\n\n",
       "metadata": {
         "created": 1732016685,
-        "updated": 1736748647,
+        "updated": 1747003187,
         "images": {},
         "videos": {},
-        "published": true,
+        "published": false,
         "pageType": "quiz",
         "hideInMenu": false,
         "tags": "soal",
@@ -5284,10 +5284,10 @@
       "order": 1,
       "parent": null,
       "title": "BERPIKIR KOMPUTASIONAL DAN ALGORITMA PEMROGRAMAN",
-      "description": "",
+      "description": "Pada kelas sebelumnya Anda sudah belajar tentang bahasa C dan python. Saatnya untuk menambah bahasa pemrograman yang lain.\n\nTulis Istilah bahasa pemrograman apa yang disukai, dan alasannya!\nBy the en",
       "metadata": {
         "created": 1732016689,
-        "updated": 1736748648,
+        "updated": 1746876418,
         "images": {},
         "videos": {},
         "published": false,
@@ -5478,16 +5478,16 @@
     },
     {
       "id": "item-aa117035-8527-4bca-bada-e7278153e960",
-      "indent": 0,
+      "indent": 1,
       "location": "pages/item-aa117035-8527-4bca-bada-e7278153e960/index.html",
       "slug": "site-things/footer",
-      "order": 0,
+      "order": 1,
       "parent": "item-cb344d64-a9ba-40cf-be72-547ed08083e0",
       "title": "Footer",
       "description": "\n",
       "metadata": {
         "created": 1736041366,
-        "updated": 1746948283,
+        "updated": 1736748816,
         "images": {},
         "videos": {},
         "published": true,
@@ -5508,7 +5508,7 @@
       "description": " ",
       "metadata": {
         "created": 1746839900,
-        "updated": 1746947922,
+        "updated": 1746884482,
         "images": {},
         "videos": {},
         "published": true,
@@ -5521,7 +5521,17 @@
           "name": "Blank theme",
           "thumbnail": "build/es6/node_modules/@haxtheweb/app-hax/lib/assets/images/GreyStyle.svg",
           "key": "haxcms-blank-theme"
-        }
+        },
+        "files": [
+          {
+            "path": "/home/andyyulianto77/informatika12/files/logo-pemprov-jatim.jpeg",
+            "fullUrl": "//home/andyyulianto77/informatika12/files/logo-pemprov-jatim.jpeg",
+            "url": "files/logo-pemprov-jatim.jpeg",
+            "type": "image/jpeg",
+            "name": "logo-pemprov-jatim.jpeg",
+            "size": 45676
+          }
+        ]
       }
     }
   ]
