@@ -5,6 +5,7 @@
   <p>
     <br>
   </p>
+
 </a11y-collapse>
 <p>Apa itu subdomain? Anda memiliki domain, seperti silverthoughts.org. Namun, Anda
   ingin memiliki banyak situs web di dalamnya. Bisakah Anda melakukannya?&#160;</p>
@@ -20,36 +21,44 @@
 <p>Yang lebih penting, situs-situs tersebut tidak saling mengganggu. Saya dapat mengutak-atik
   situs utama <a href="andyux.my.id" rel="noopener noreferrer" target="_blank">andyux.my.id</a>&#160;(menambahkan
   file, menghapus file, apa pun), dan situs ini tidak akan terpengaruh.</p>
-<h3 data-original-level="H3" id="header-1daa896f-51f1-d082-21a1-0871233e19b5">Lebih, lebih, LEBIH BANYAK!&#160;</h3>
+<h3 id="header-1daa896f-51f1-d082-21a1-0871233e19b5">Lebih, lebih, LEBIH BANYAK!&#160;</h3>
 <p>Ada situs web kursus lain, tentang pemrograman Excel VBA. Itu ada di vba.skilling.us.
   Ada kursus lain tentang dasar-dasar web, di learnweb.skilling.us.&#160;</p>
 <p>Jadi ada empat situs terpisah:&#160;</p>
-<p><ul><li>skilling.us:situs proyek utama </li><li>learnweb.skilling.us: kursus dasar web </li><li>vba.skilling.us: kursus pemrograman </li><li>webapps.skilling.us:kursus ini </li></ul></p>
+<p></p>
+<ul><li>andyux.my.id:situs proyek utama</li><li>appdb.andyux.my.id: kursus dasar web</li><li>vba.skilling.us: kursus pemrograman </li><li>webapps.skilling.us:kursus ini </li></ul>
+<p></p>
 <p>(Sebenarnya ada lebih dari itu.)&#160;</p>
-<h3 data-original-level="H3" id="header-62d77259-ee00-40ad-373e-d013d54c6435">Subdomain memiliki folder di server Anda&#160;</h3>
+<h3 id="header-62d77259-ee00-40ad-373e-d013d54c6435">Subdomain memiliki folder di server Anda&#160;</h3>
 <p>Setiap subdomain memiliki foldernya sendiri di server Anda. Begitulah cara subdomain
   dipisahkan.&#160;</p>
 <p>Berikut adalah folder untuk subdomain di atas. ~ adalah hal yang biasa di Linux.
   Itu adalah singkatan dari folder root akun pengguna saya.&#160;</p>
 <grid-plate item-margin="16" item-padding="16" layout="1-1">
-  <p slot="col-1"><b>Subdomain</b></p>
-  <p slot="col-1">skilling.us</p>
-  <p slot="col-1">learnweb.skilling.us</p>
+  <p slot="col-1" data-text-align="center"><b>Subdomain</b></p>
+
+  <p slot="col-1"><a href="andyux.my.id" rel="noopener noreferrer" target="_blank">andyux.my.id</a></p>
+
+  <p slot="col-1"><a href="appdb.andyux.my.id" target="_blank">appdb.andyux.my.id</a><a href="andyux.my.id" rel="noopener noreferrer" target="_blank"></a></p>
+
   <p slot="col-1">vba.skilling.us</p>
   <p slot="col-1">webapps.skilling.us</p>sk
-  <p slot="col-2"><b>folder server</b></p>
+  <p slot="col-2" data-text-align="center"><b>folder server</b></p>
+
   <p slot="col-2"><span>~/public_html</span>
 
   </p>
-  <p slot="col-2"><span>~/learnweb.skilling.us</span>
 
-  </p>
+  <p slot="col-2">~/appdb.andyux.my.id<a href="appdb.andyux.my.id" rel="noopener noreferrer" target="_blank"></a><a href="appdb.andyux.my.id" rel="noopener noreferrer" target="_blank"></a></p>
+
   <p slot="col-2"><span>~/public.html</span>
 
   </p>
+
   <p slot="col-2"><span>~/webapps.skilling.us</span>
 
   </p>
+
   
   </grid-plate>
 <p>Pemetaan dari domain ( skilling.us) ke
@@ -57,14 +66,16 @@
   Subdomain, saya buat sendiri. Saya dapat menamai folder dengan nama apa pun yang
   saya inginkan (misalnya, anything-i-wanted), tetapi saya memberi folder dengan nama
   yang sama dengan subdomainnya, agar lebih mudah bagi saya. Mudah itu bagus.</p>
-<p><br></p>
+<p></p>
 <grid-plate item-margin="16" item-padding="16" layout="1-3" data-width="75" data-margin="center" data-border-radius="xs" data-border="sm">
       <media-image source="files/fina_bingung.jpg" alt="bingung.jpg" slot="col-1" accent-color="grey" size="wide" offset="narrow" data-margin="center" data-width="50" figure-label-title="Afina" modal-title="Afina" _has-caption=""></media-image>
+
 
 
       <p slot="col-2" data-margin="center">Tunggu. Bisakah sebuah titik menjadi bagian dari nama folder?
         <br>
       </p>
+
     </grid-plate>
 <p>Ya. Di Windows juga. Cobalah. Buat folder baru dengan titik di namanya.</p>
 <grid-plate item-padding="16" item-margin="16" layout="1-3" data-width="75" data-margin="center" data-border-radius="xs" data-border="sm">
@@ -73,23 +84,25 @@
 
 
 
+
         <p slot="col-2" data-margin="center">Oke... Hei! Berhasil!
         <br>
       </p>
 
+
     </grid-plate>
-<p>Membuat subdomain&#160;</p>
+<h3 id="header-77a6ffde-e11d-7ad9-6d4a-95d848ecf794">Membuat subdomain&#160;</h3>
 <p>Anda juga dapat memiliki subdomain di domain Anda. Misalnya, Anda dapat memiliki satu untuk proyek akhir Anda, dan satu lagi untuk latihan Anda yang lain. Memisahkan semuanya berarti file-file Anda tidak akan saling bertabrakan.&#160;</p>
-<p>Ayo kita lakukan.</p>
+<p><mark>Ayo kita lakukan.</mark></p>
 <grid-plate item-margin="16" item-padding="16" layout="1" data-width="75" data-margin="center" data-border-radius="xs" data-border="sm"><h3 id="header-afe9e853-db41-19f4-21c6-9fa9fa0a8c35" slot="col-1" data-padding="s">Catatan </h3><p slot="col-1">Jika Anda lupa cara membuat subdomain, kembali ke sini untuk mendapatkan pengingat.</p></grid-plate>
-<p>Klik ikon Domain di beranda cPanel Anda, lalu buat yang baru. Ketik nama subdomain yang Anda inginkan untuk proyek akhir Anda, seperti final.ragingmonkeys.com atau final.kitsrule.net.&#160;</p>
+<p>Klik ikon Domain di beranda cPanel Anda, lalu buat yang baru. Ketik nama subdomain yang Anda inginkan untuk proyek akhir Anda, seperti <i>final.andyux.my.id</i> atau <i>final.animasilogo.net</i>&#160;</p>
 <p>cPanel akan menyarankan nama untuk Document Root (Lokasi Sistem Berkas). Di situlah berkas untuk subdomain Anda akan disimpan di server Anda. Kita akan membahasnya di pelajaran berikutnya. Jadikan root sama dengan nama domain Anda, agar lebih mudah, tetapi Anda dapat membuatnya dengan nama lain jika Anda suka.&#160;</p>
 <p>Jangan centang Bagikan akar dokumen. Inilah yang saya lakukan untuk membuat subdomain baru:</p>
 <media-image source="files/create-subdomain-new.png" alt="create-subdomain-new.png" accent-color="grey" size="wide" offset="none"></media-image>
 <p>Root Dokumen adalah folder tempat file-file untuk subdomain Anda akan disimpan. Kita akan membahasnya di pelajaran berikutnya. Sekarang buat subdomain lain. Beri nama "exercises". Perhatikan akar dokumen. Ini akan menjadi seperti exercises.yourdomain.com.&#160;</p>
-<h3 data-original-level="H3" id="header-53b50fe6-9ab4-dddf-f8ca-ee0d4456922b">Latihan</h3>
+<h3 id="header-53b50fe6-9ab4-dddf-f8ca-ee0d4456922b">Latihan</h3>
 <media-image source="files/subdomains-cpanel.png" alt="subdomains-cpanel.png" accent-color="grey" size="wide" offset="none"></media-image>
-<p>Ringkasan&#160;</p>
+<h3 id="header-f5b6ee73-e709-e718-23b5-3cf0bc8e562a">Ringkasan&#160;</h3>
 <p></p>
 <ul><li>Subdomain menambahkan sesuatu di bagian depan domain, seperti rosie.kid.com. </li><li>Subdomain berfungsi sebagai situs web terpisah. Buat sebanyak yang Anda inginkan, dari cPanel. Berikutnya Mari kita lihat bagaimana Anda mengacaukan berkas pada server Anda.</li></ul>
 <p></p>

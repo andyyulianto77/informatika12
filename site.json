@@ -2996,7 +2996,7 @@
     },
     {
       "id": "item-894e47e3-d2f0-4d5e-bb54-84beb727a73f",
-      "indent": 2,
+      "indent": 0,
       "location": "pages/item-894e47e3-d2f0-4d5e-bb54-84beb727a73f/index.html",
       "slug": "aplikasi-web/url-dan-file/subdomain",
       "order": 2,
@@ -3005,7 +3005,7 @@
       "description": "\n\n  Protokol apa yang harus digunakan aplikasi web Anda?\n  \n    \n  \n\nApa itu subdomain? Anda memiliki domain, seperti silverthoughts.org. Namun, Anda\n  ingin memiliki banyak situs web di dalamnya. Bi",
       "metadata": {
         "created": 1733411077,
-        "updated": 1736748670,
+        "updated": 1749092310,
         "images": {},
         "videos": {},
         "published": true,
